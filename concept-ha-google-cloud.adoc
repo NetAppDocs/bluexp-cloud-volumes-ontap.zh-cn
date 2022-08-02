@@ -24,9 +24,6 @@ Google Cloud中的Cloud Volumes ONTAP HA配置包括以下组件：
 
 * 两个 Cloud Volumes ONTAP 节点之间的数据同步镜像。
 * 一种调解器实例，在节点之间提供通信通道以帮助存储接管和恢复过程。
-+
-调解器在一个 f1-micro 实例上运行 Linux 操作系统，并使用两个标准永久性磁盘，每个磁盘均为 10 GB 。
-
 * 一个或三个分区（建议）。
 +
 如果选择三个分区，则这两个节点和调解器位于不同的 Google Cloud 分区中。
@@ -50,8 +47,8 @@ image:diagram_gcp_ha.png[""]
 
 下面是有关 Google Cloud 中调解器实例的一些关键详细信息：
 
-Instance type:: f1-micro
-Disks:: 两个标准永久性磁盘，每个磁盘 10 GiB 。
+Instance type:: E2-micro (以前使用过一个f1-micro实例)
+Disks:: 两个标准永久性磁盘、每个磁盘10 GiB
 操作系统:: Debian 11
 +
 --

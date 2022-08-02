@@ -26,7 +26,11 @@ Cloud Volumes ONTAP 的安全组需要入站和出站规则。
 
 === 入站规则
 
-预定义安全组中入站规则的源代码为 0.0.0.0/0 。
+在创建工作环境并选择预定义的安全组时、您可以选择允许以下其中一个范围内的流量：
+
+* *仅选定VPC*：入站流量的源是Cloud Volumes ONTAP 系统的VPC子网范围以及连接器所在VPC的子网范围。这是建议的选项。
+* 所有vPC：入站流量的源IP范围为0.0.0.0/0。
+
 
 [cols="10,10,80"]
 |===
@@ -197,10 +201,13 @@ NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
 | TCP | 749 | 数据 LIF （ NFS 、 CIFS ） | Active Directory 目录林 | Kerberos V 更改和设置密码（ RPCSEC_GSS ） 
 
 
-.2+| AutoSupport | HTTPS | 443. | 节点管理 LIF | support.netapp.com | AutoSupport （默认设置为 HTTPS ） 
+.3+| AutoSupport | HTTPS | 443. | 节点管理 LIF | support.netapp.com | AutoSupport （默认设置为 HTTPS ） 
 
 
 | HTTP | 80 | 节点管理 LIF | support.netapp.com | AutoSupport （仅当传输协议从 HTTPS 更改为 HTTP 时） 
+
+
+| TCP | 3128 | 节点管理 LIF | 连接器 | 如果出站Internet连接不可用、则通过Connector上的代理服务器发送AutoSupport 消息 
 
 
 | 备份到 S3 | TCP | 5010 | 集群间 LIF | 备份端点或还原端点 | 备份到 S3 功能的备份和还原操作 
@@ -374,7 +381,7 @@ Connector 的安全组需要入站和出站规则。
 | HTTPS | 443. | 提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问 
 
 
-| TCP | 3128 | 如果您的 AWS 网络不使用 NAT 或代理，则可为云数据感知实例提供 Internet 访问 
+| TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。部署连接器后、您必须手动打开此端口。 
 |===
 
 

@@ -18,4 +18,4 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Clou
 
 此高级视图可作为Cloud Volumes ONTAP 9.10.0及更高版本的预览版提供。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
 
-link:task-administer-advanced-view.html["了解有关高级视图的更多信息"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["了解有关高级视图的更多信息"]。

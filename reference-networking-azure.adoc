@@ -26,7 +26,7 @@ summary: 设置 Azure 网络，以便 Cloud Volumes ONTAP 系统可以正常运�
 
 === 出站 Internet 访问
 
-Cloud Volumes ONTAP 要求出站 Internet 访问向 NetApp AutoSupport 发送消息、 NetApp AutoSupport 主动监控存储的运行状况。
+Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、NetApp会主动监控系统运行状况并向NetApp技术支持发送消息。
 
 路由和防火墙策略必须允许通过 HTTP/HTTPS 流量访问以下端点，以便 Cloud Volumes ONTAP 可以发送 AutoSupport 消息：
 
@@ -34,7 +34,11 @@ Cloud Volumes ONTAP 要求出站 Internet 访问向 NetApp AutoSupport 发送消
 * https://support.netapp.com/asupprod/post/1.0/postAsup
 
 
-link:task-verify-autosupport["了解如何验证 AutoSupport"]。
+如果出站Internet连接不可用于发送AutoSupport 消息、则Cloud Manager会自动将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
+
+如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。
+
+确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 文档：设置 AutoSupport"^]。
 
 
 
@@ -105,7 +109,11 @@ Cloud Volumes ONTAP 的安全组需要入站和出站规则。
 
 ==== 单节点系统的入站规则
 
-除非问题描述注意到它会阻止特定入站流量，否则以下规则允许流量。
+在创建工作环境并选择预定义的安全组时、您可以选择允许以下其中一个范围内的流量：
+
+* *仅选定vNet *：入站流量的源是Cloud Volumes ONTAP 系统的vNet子网范围以及Connector所在的vNet的子网范围。这是建议的选项。
+* 所有VNets*：入站流量的源为0.0.0.0/0 IP范围。
+
 
 [cols="4*"]
 |===
@@ -187,7 +195,11 @@ Cloud Volumes ONTAP 的安全组需要入站和出站规则。
 
 ==== HA 系统的入站规则
 
-除非问题描述注意到它会阻止特定入站流量，否则以下规则允许流量。
+在创建工作环境并选择预定义的安全组时、您可以选择允许以下其中一个范围内的流量：
+
+* *仅选定vNet *：入站流量的源是Cloud Volumes ONTAP 系统的vNet子网范围以及Connector所在的vNet的子网范围。这是建议的选项。
+* 所有VNets*：入站流量的源为0.0.0.0/0 IP范围。
+
 
 
 NOTE: 与单节点系统相比， HA 系统的入站规则更少，因为入站数据流量通过 Azure 标准负载平衡器。因此，来自负载平衡器的流量应处于打开状态，如 "AllowAzureLoadBalancerInBound" 规则中所示。
@@ -310,10 +322,13 @@ NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
 | 749 | TCP | 数据 LIF （ NFS 、 CIFS ） | Active Directory 目录林 | Kerberos V 更改和设置密码（ RPCSEC_GSS ） 
 
 
-.2+| AutoSupport | HTTPS | 443. | 节点管理 LIF | support.netapp.com | AutoSupport （默认设置为 HTTPS ） 
+.3+| AutoSupport | HTTPS | 443. | 节点管理 LIF | support.netapp.com | AutoSupport （默认设置为 HTTPS ） 
 
 
 | HTTP | 80 | 节点管理 LIF | support.netapp.com | AutoSupport （仅当传输协议从 HTTPS 更改为 HTTP 时） 
+
+
+| TCP | 3128 | 节点管理 LIF | 连接器 | 如果出站Internet连接不可用、则通过Connector上的代理服务器发送AutoSupport 消息 
 
 
 | DHCP | 68 | UDP | 节点管理 LIF | DHCP | 首次设置 DHCP 客户端 
@@ -409,6 +424,9 @@ Connector 的安全组需要入站和出站规则。
 
 
 | 443. | HTTPS | 提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问 
+
+
+| TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。部署连接器后、您必须手动打开此端口。 
 |===
 
 

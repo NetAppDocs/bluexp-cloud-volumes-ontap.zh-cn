@@ -30,19 +30,30 @@ summary: 了解默认情况下如何配置 Cloud Volumes ONTAP 可以帮助您�
 ** FlexCache
 ** FlexClone
 ** iSCSI
+** 多租户加密密钥管理(MTEKM)、从Cloud Volumes ONTAP 9.11.1开始
 ** NetApp 卷加密（仅适用于 BYOL 或已注册的 PAYGO 系统）
 ** NFS
-** SnapMirror
-** SnapRestore
-** SnapVault
 
 
-* 默认情况下会创建多个网络接口：
+
+
+ifdef::aws[]
+
+endif::aws[]
+
+ifdef::azure[]
+
+endif::azure[]
+
+* SnapMirror
+* SnapRestore
+* SnapVault
 +
-** 集群管理 LIF
-** 集群间 LIF
+** 默认情况下会创建多个网络接口：
 
 
+* 集群管理 LIF
+* 集群间 LIF
 
 
 ifdef::azure[]

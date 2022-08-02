@@ -262,7 +262,7 @@ Cloud Manager 将启动软件升级。软件更新完成后，您可以在工作
 
 NOTE: 默认情况下，预定义的 Cloud Volumes ONTAP 安全组允许出站 HTTP 连接。
 
-. 从获取软件映像 https://mysupport.netapp.com/products/p/cloud_ontap.html["NetApp 支持站点"^]。
+. 从获取软件映像 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NetApp 支持站点"^]。
 . 将软件映像复制到 Connector 或 HTTP 服务器上要从中提供文件的目录中。
 +
 例如，您可以将软件映像复制到 Connector 上的以下路径：

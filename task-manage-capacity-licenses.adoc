@@ -111,6 +111,35 @@ image:screenshot-digital-wallet-packages.png["显示专业版、优化版和基�
 
 
 
+== 更改充电方法
+
+您可以更改使用基于容量的许可的Cloud Volumes ONTAP 系统的收费方法。例如、如果您使用Essentials软件包部署了Cloud Volumes ONTAP 系统、则可以在业务需求发生变化时将其更改为"Professional软件包"。
+
+ifdef::azure[]
+
+目前、不支持更改为优化充电方法。
+
+endif::azure[]
+
+.步骤
+. 从左侧导航菜单中、选择*数字电子夹*。
+. 在* Cloud Volumes ONTAP *选项卡上、单击*更改充电方法*。
++
+image:screenshot-digital-wallet-charging-method-button.png["数字电子钱包中Cloud Volumes ONTAP 页面的屏幕截图、其中更改充电方法按钮位于表正上方。"]
+
+. 选择一个工作环境、选择新的充电方式、然后确认您已了解更改软件包类型将影响服务费用。
++
+image:screenshot-digital-wallet-charging-method.png["更改充电方法对话框的屏幕截图、在此可以为Cloud Volumes ONTAP 工作环境选择新的充电方法。"]
+
+. 单击*更改充电方法*。
+
+
+Cloud Manager更改了Cloud Volumes ONTAP 系统的充电方法。
+
+此外、您可能还会注意到、Digital Wallet会刷新每个软件包类型的已用容量、以考虑您刚才所做的更改。
+
+
+
 == 删除基于容量的许可证
 
 如果基于容量的许可证已过期且不再使用，则可以随时将其删除。

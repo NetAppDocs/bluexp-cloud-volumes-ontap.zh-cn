@@ -10,7 +10,7 @@ Cloud Volumes ONTAP 聚合支持Amazon EBS弹性卷功能、可提高性能并�
 
 从_new_ Cloud Volumes ONTAP 9.11.0系统以及GP3和IO1 EBS磁盘类型开始、可支持弹性卷。
 
-link:concept-aws-elastic-volumes.html["了解有关支持弹性卷的更多信息"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["了解有关支持弹性卷的更多信息"]。
 
 请注意、要支持弹性卷、需要为Connector提供新的AWS权限：
 

@@ -82,7 +82,11 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 ** https://docs.netapp.com/us-en/cloud-manager-monitoring/concept-monitoring.html["了解有关监控服务的更多信息"^]。
 
 
-. * 位置和连接 * ：选择一个位置，一个资源组，一个安全组，然后选中此复选框以确认连接器与目标位置之间的网络连接。
+. *位置*：选择一个区域、可用性区域、vNet和子网、然后选中此复选框以确认连接器与目标位置之间的网络连接。
++
+对于单节点系统，您可以选择要在其中部署 Cloud Volumes ONTAP 的可用性区域。如果不选择 AZ ， Cloud Manager 将为您选择一个。
+
+. *连接*：选择一个新资源组或现有资源组、然后选择是使用预定义的安全组还是使用您自己的资源组。
 +
 下表介绍了可能需要指导的字段：
 
@@ -92,7 +96,7 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | 字段 | Description 
 
 
-| 位置 | 对于单节点系统，您可以选择要在其中部署 Cloud Volumes ONTAP 的可用性区域。如果不选择 AZ ， Cloud Manager 将为您选择一个。 
+| Availability Zone | 对于单节点系统，您可以选择要在其中部署 Cloud Volumes ONTAP 的可用性区域。如果不选择 AZ ， Cloud Manager 将为您选择一个。 
 
 
 | Resource Group  a| 
@@ -105,7 +109,16 @@ TIP: 如果您正在使用的 Azure 帐户具有 https://docs.netapp.com/us-en/c
 
 
 
-| 安全组 | 如果选择现有安全组，则该组必须满足 Cloud Volumes ONTAP 要求。 link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["查看默认安全组"]。 
+| 已生成安全组  a| 
+如果您让Cloud Manager为您生成安全组、则需要选择允许流量的方式：
+
+** 如果选择*仅选定vNet *、则入站流量的源是选定vNet的子网范围以及Connector所在的vNet的子网范围。这是建议的选项。
+** 如果选择*所有VNets*、则入站流量的源IP范围为0.0.0.0/0。
+
+
+
+
+| 使用现有 | 如果选择现有安全组，则该组必须满足 Cloud Volumes ONTAP 要求。 link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["查看默认安全组"]。 
 |===
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +

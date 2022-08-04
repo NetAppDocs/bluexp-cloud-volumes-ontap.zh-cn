@@ -24,7 +24,7 @@ summary: 您应始终从 Cloud Manager 中删除 Cloud Volumes ONTAP 系统，�
 NOTE: 当 Cloud Manager 在云提供商中部署 Cloud Volumes ONTAP 时，它会对实例启用终止保护。此选项有助于防止意外终止。
 
 .步骤
-. 如果您在工作环境中启用了 Cloud Backup ，请确定是否仍需要备份的数据，然后再执行此操作 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-managing-backups.html#deleting-backups["如有必要，删除备份"^]。
+. 如果您在工作环境中启用了 Cloud Backup ，请确定是否仍需要备份的数据，然后再执行此操作 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-backups["如有必要，删除备份"^]。
 +
 Cloud Backup 在设计上独立于 Cloud Volumes ONTAP 。删除 Cloud Volumes ONTAP 系统时， Cloud Backup 不会自动删除备份，并且当前 UI 不支持在删除系统后删除这些备份。
 

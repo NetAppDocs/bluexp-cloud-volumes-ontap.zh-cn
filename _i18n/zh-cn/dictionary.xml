@@ -429,7 +429,6 @@
   <block id="1b044bb64b9bbe28f6c0512f65cdaa86" category="paragraph">删除工作环境时，不会删除由 Cloud Backup 备份和 Cloud Data Asense and Monitoring 实例等其他服务管理的资源。您需要手动自行删除它们。否则，您将继续收到这些资源的费用。</block>
   <block id="a4b6dd7a7574be8d2cc8a2fe53d10bd1" category="admonition">当 Cloud Manager 在云提供商中部署 Cloud Volumes ONTAP 时，它会对实例启用终止保护。此选项有助于防止意外终止。</block>
   <block id="ab3fdba113c7d85bf4272c78761ef0b8" category="inline-link">如有必要，删除备份</block>
-  <block id="8e7b1963d43e3f3ba3b7bfa84c9d8060" category="list-text">如果您在工作环境中启用了 Cloud Backup ，请确定是否仍需要备份的数据，然后再执行此操作<block ref="05162ddbcf131729dac461924d397f23" category="inline-link-rx"></block>。</block>
   <block id="a06dfc814bad1cf7d8af36ecb8d7caf2" category="paragraph">Cloud Backup 在设计上独立于 Cloud Volumes ONTAP 。删除 Cloud Volumes ONTAP 系统时， Cloud Backup 不会自动删除备份，并且当前 UI 不支持在删除系统后删除这些备份。</block>
   <block id="953135468f926ef23950412ea3483834" category="list-text">如果在此工作环境中启用了 Cloud Data sense 或 Monitoring ，并且任何其他工作环境都不使用这些服务，则需要删除这些服务的实例。</block>
   <block id="7121e7b9f702c61fbd2b509d05e53715" category="inline-link">详细了解 Cloud Data sense 实例</block>
@@ -4308,4 +4307,5 @@
   <block id="ee76810836e6a3bb9dd07dfba26221a1" category="paragraph"><block ref="ddf7de7bfe14bcbf78a072c21440c1a8" category="inline-link-rx"></block>。</block>
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*仅选定vNet *：入站流量的源是Cloud Volumes ONTAP 系统的vNet子网范围以及Connector所在的vNet的子网范围。这是建议的选项。</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">所有VNets*：入站流量的源为0.0.0.0/0 IP范围。</block>
+  <block id="4c6b5df3fe9b762b973dc2bdcbd77ada" category="list-text">如果您在工作环境中启用了 Cloud Backup ，请确定是否仍需要备份的数据，然后再执行此操作<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>。</block>
 </blocks>

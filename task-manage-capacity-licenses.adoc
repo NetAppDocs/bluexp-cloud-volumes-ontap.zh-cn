@@ -117,9 +117,14 @@ image:screenshot-digital-wallet-packages.png["显示专业版、优化版和基�
 
 ifdef::azure[]
 
-目前、不支持更改为优化充电方法。
+.限制
+* 不支持更改为优化的充电方法。
+* 不支持更改Edge Cache许可证或从Edge Cache许可证更改。
+
 
 endif::azure[]
+
+如果您在云提供商的市场上有私人优惠或合同、则更改为合同中未包含的收费方式将导致对BYOL (如果您从NetApp购买了许可证)或PAYGO进行收费。
 
 .步骤
 . 从左侧导航菜单中、选择*数字电子夹*。

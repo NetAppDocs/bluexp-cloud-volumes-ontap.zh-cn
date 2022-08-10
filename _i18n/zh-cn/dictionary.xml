@@ -4233,7 +4233,6 @@
   <block id="3ae1886c49dab0e65e020c2758daff67" category="paragraph"><block ref="6f81c4ca34877706a163afe91c466abd" category="inline-link-rx"></block>。</block>
   <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">更改充电方法</block>
   <block id="a117b4a94f6f90aef089573b1f002d26" category="paragraph">您可以更改使用基于容量的许可的Cloud Volumes ONTAP 系统的收费方法。例如、如果您使用Essentials软件包部署了Cloud Volumes ONTAP 系统、则可以在业务需求发生变化时将其更改为"Professional软件包"。</block>
-  <block id="856fccc2c5d9211dbd784e97c60dd9bc" category="paragraph">目前、不支持更改为优化充电方法。</block>
   <block id="3397777d22d2d5f746157ca31f0d8460" category="list-text">在* Cloud Volumes ONTAP *选项卡上、单击*更改充电方法*。</block>
   <block id="731d5463e4c6962d26d5b5d4b345930e" category="inline-image-macro">数字电子钱包中Cloud Volumes ONTAP 页面的屏幕截图、其中更改充电方法按钮位于表正上方。</block>
   <block id="e98a6fb0343d664e817b1f922b7a92f1" category="paragraph"><block ref="e98a6fb0343d664e817b1f922b7a92f1" category="inline-image-macro-rx" type="image"></block></block>
@@ -4258,7 +4257,6 @@
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">单独为配置的容量和I/O操作付费。</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP 单节点或HA</block>
   <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">费用按两个成本组成部分计算：存储和使用情况(I/O)</block>
-  <block id="5bf349d9a4df0ebb199c8dedb951539e" category="paragraph">请注意、用于数据复制的I/O不会计入计费I/O使用量。</block>
   <block id="050a8b75e1382967bf1140508c5b62b6" category="list-text">仅在Azure Marketplace中以按需购买或按年订约的形式提供</block>
   <block id="cd709b16b7a535f5ecfcfbe3f849b353" category="list-text">支持以下选定VM类型：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 和E8ds_v4</block>
   <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">边缘缓存</block>
@@ -4308,4 +4306,8 @@
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*仅选定vNet *：入站流量的源是Cloud Volumes ONTAP 系统的vNet子网范围以及Connector所在的vNet的子网范围。这是建议的选项。</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">所有VNets*：入站流量的源为0.0.0.0/0 IP范围。</block>
   <block id="4c6b5df3fe9b762b973dc2bdcbd77ada" category="list-text">如果您在工作环境中启用了 Cloud Backup ，请确定是否仍需要备份的数据，然后再执行此操作<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>。</block>
+  <block id="af54c7f362b7672b7ad2b66397fd230c" category="list-text">不支持更改为优化的充电方法。</block>
+  <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">不支持更改Edge Cache许可证或从Edge Cache许可证更改。</block>
+  <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您在云提供商的市场上有私人优惠或合同、则更改为合同中未包含的收费方式将导致对BYOL (如果您从NetApp购买了许可证)或PAYGO进行收费。</block>
+  <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">您不会因与数据复制(SnapMirror)或NDMP相关的I/O费用。</block>
 </blocks>

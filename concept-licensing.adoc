@@ -76,7 +76,7 @@ ifdef::azure[]
 * Cloud Volumes ONTAP 单节点或HA
 * 费用按两个成本组成部分计算：存储和使用情况(I/O)
 +
-请注意、用于数据复制的I/O不会计入计费I/O使用量。
+您不会因与数据复制(SnapMirror)或NDMP相关的I/O费用。
 
 * 仅在Azure Marketplace中以按需购买或按年订约的形式提供
 * 支持以下选定VM类型：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 和E8ds_v4

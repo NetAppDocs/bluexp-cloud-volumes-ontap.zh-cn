@@ -141,7 +141,7 @@ Cloud Volumes ONTAP 的安全组需要入站和出站规则。
 | 1006 inbound_161-162_UDP | 161-162 UDP | 任意到任意 | 简单网络管理协议 
 
 
-| 1007 inbound_443 | 443/TCP | 任意到任意 | 使用集群管理 LIF 的 IP 地址对 System Manager Web 控制台进行 HTTPS 访问 
+| 1007 inbound_443 | 443/TCP | 任意到任意 | 使用集群管理LIF的IP地址连接Connector并通过HTTPS访问System Manager Web控制台 
 
 
 | 1008 inbound_445 | 445 TCP | 任意到任意 | Microsoft SMB/CIFS over TCP （通过 TCP ）和 NetBIOS 成帧 
@@ -209,7 +209,7 @@ NOTE: 与单节点系统相比， HA 系统的入站规则更少，因为入站�
 | 优先级和名称 | 端口和协议 | 源和目标 | Description 
 
 
-| 100 inbound_443 | 443 任何协议 | 任意到任意 | 使用集群管理 LIF 的 IP 地址对 System Manager Web 控制台进行 HTTPS 访问 
+| 100 inbound_443 | 443 任何协议 | 任意到任意 | 使用集群管理LIF的IP地址连接Connector并通过HTTPS访问System Manager Web控制台 
 
 
 | 101 inbound_111_tcp | 111 任何协议 | 任意到任意 | 远程过程调用 NFS 

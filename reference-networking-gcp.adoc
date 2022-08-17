@@ -245,7 +245,7 @@ Cloud Volumes ONTAP 的防火墙规则需要入站和出站规则。
 | HTTP | 80 | 使用集群管理 LIF 的 IP 地址对系统管理器 Web 控制台进行 HTTP 访问 
 
 
-| HTTPS | 443. | 使用集群管理 LIF 的 IP 地址对 System Manager Web 控制台进行 HTTPS 访问 
+| HTTPS | 443. | 使用集群管理LIF的IP地址连接Connector并通过HTTPS访问System Manager Web控制台 
 
 
 | SSH | 22. | SSH 访问集群管理 LIF 或节点管理 LIF 的 IP 地址 

@@ -4310,4 +4310,5 @@
   <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">不支持更改Edge Cache许可证或从Edge Cache许可证更改。</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您在云提供商的市场上有私人优惠或合同、则更改为合同中未包含的收费方式将导致对BYOL (如果您从NetApp购买了许可证)或PAYGO进行收费。</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">您不会因与数据复制(SnapMirror)或NDMP相关的I/O费用。</block>
+  <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">使用集群管理LIF的IP地址连接Connector并通过HTTPS访问System Manager Web控制台</block>
 </blocks>

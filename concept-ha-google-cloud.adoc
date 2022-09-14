@@ -39,7 +39,7 @@ link:reference-networking-gcp.html["了解网络连接要求"]，包括有关负
 
 以下概念图显示了 Cloud Volumes ONTAP HA 对及其组件：
 
-image:diagram_gcp_ha.png[""]
+image:diagram_gcp_ha.png["Cloud Volumes ONTAP HA对及其组件的概念映像。"]
 
 
 

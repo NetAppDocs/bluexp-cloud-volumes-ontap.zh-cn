@@ -72,7 +72,7 @@ HA 对的一个或多个分区:: 您可以通过在多个或单个分区中部�
 * vPC-0 ，用于与数据和节点的入站连接
 * VPC-1 ， VPC-2 和 VPC-3 ，用于节点与 HA 调解器之间的内部通信
 +
-image:diagram_gcp_ha.png[""]
+image:diagram_gcp_ha.png["一个概念映像、显示了一个云卷HA对以及配置所需的四个vPC。"]
 
 
 

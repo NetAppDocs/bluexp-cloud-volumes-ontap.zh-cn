@@ -1061,7 +1061,6 @@
   <block id="bc41c927b050313fabe4e7bfa9c82224" category="paragraph">此模板应使您的工作更轻松，因为模板中已定义某些卷参数，例如磁盘类型，大小，协议，快照策略，云提供程序， 等等。如果已预定义某个参数，则只需跳到下一个 volume 参数即可。</block>
   <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">使用模板时，您只能创建 NFS 或 CIFS 卷。</block>
   <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">在 " 画布 " 页面上，单击要配置卷的 Cloud Volumes ONTAP 系统的名称。</block>
-  <block id="5bc96ba8ddc4433dd0df94e6350c496e" category="list-text">单击 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> &gt; * 从模板添加卷 * 。</block>
   <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">显示如何从模板添加新卷的屏幕截图。</block>
   <block id="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="paragraph"><block ref="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">在 _Select Template_ 页面中，选择要用于创建卷的模板，然后单击 * 下一步 * 。</block>
@@ -1851,7 +1850,6 @@
   <block id="b66539d8d1c1e3f97e751ce32b201932" category="inline-link-macro">了解网络连接要求</block>
   <block id="fa82d38edfafbee1bb2495dc75783c94" category="paragraph"><block ref="55406c74e90bdab2257c25eee887aa79" category="inline-link-macro-rx"></block>，包括有关负载平衡器， vPC ，内部 IP 地址，子网等的更多详细信息。</block>
   <block id="b176654c993f9caf39e56971d244d457" category="paragraph">以下概念图显示了 Cloud Volumes ONTAP HA 对及其组件：</block>
-  <block id="e957cab16552d6fdb00d1af0f33ad800" category="paragraph"><block ref="e957cab16552d6fdb00d1af0f33ad800" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ed4ce2b9693ec306d333d8aa7807aa9" category="paragraph">下面是有关 Google Cloud 中调解器实例的一些关键详细信息：</block>
   <block id="48c4b347a69acc97f71ef6775bf6260d" category="list-text">对于 Debian ，默认云用户为 `admin` 。在通过 Google Cloud 控制台或 gcloud 命令行请求 SSH 访问时， Google Cloud 会为 `admin` 用户创建并添加证书。您可以指定 `sudo` 来获取 root 权限。</block>
   <block id="b9c7a6d43bec359b40ab04efb944c7c4" category="list-text">恢复点目标（ RPO ）为 0 秒。</block>
@@ -4311,4 +4309,10 @@
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您在云提供商的市场上有私人优惠或合同、则更改为合同中未包含的收费方式将导致对BYOL (如果您从NetApp购买了许可证)或PAYGO进行收费。</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">您不会因与数据复制(SnapMirror)或NDMP相关的I/O费用。</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">使用集群管理LIF的IP地址连接Connector并通过HTTPS访问System Manager Web控制台</block>
+  <block id="9de6e01935c802f21691e7efbefa9680" category="inline-image-macro">由三个并排点组成的图标。</block>
+  <block id="4cd7acfcbb86932901020185b1df1ec0" category="list-text">单击 <block ref="231de61ef434abbab90a4356a7d32c83" category="inline-image-macro-rx" type="image"></block> &gt; * 从模板添加卷 * 。</block>
+  <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HA对及其组件的概念映像。</block>
+  <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59d7031e8dd126031d49f14da3eb9662" category="inline-image-macro">一个概念映像、显示了一个云卷HA对以及配置所需的四个vPC。</block>
+  <block id="5f244177e38ddb1ab2243352007aaca2" category="paragraph"><block ref="5f244177e38ddb1ab2243352007aaca2" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

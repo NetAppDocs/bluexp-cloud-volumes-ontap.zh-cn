@@ -42,6 +42,8 @@ Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、
 
 确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 文档：设置 AutoSupport"^]。
 
+如果Cloud Manager通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
+
 
 
 === HA 调解器的出站 Internet 访问

@@ -58,7 +58,7 @@ Keystone Flex 订阅:: 基于订阅的按需购买服务，可为 HA 对提供�
 * 在任何云提供商中，每个 NetApp 帐户最多可以使用 10 个 Cloud Volumes ONTAP 系统以及免费提供的产品。
 * 如果为 Cloud Volumes ONTAP 系统配置的容量超过 500 GiB ，则 Cloud Manager 会将该系统转换为 Essentials 软件包。
 +
-系统转换为Essentials软件包后、即会显示 <<Notes about charging,最低费用>> 适用。
+系统转换为Essentials软件包后、即会显示  about charging,最低费用 适用。
 
 +
 配置容量小于 500 GiB 的任何其他系统都会保留在 Freemium 上（只要这些系统是使用 Freemium 产品部署的）。

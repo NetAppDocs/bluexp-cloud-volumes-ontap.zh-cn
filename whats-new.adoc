@@ -20,6 +20,45 @@ summary: 了解 Cloud Manager 中 Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2022年9月18日
+
+连接器3.9.22版引入了以下更改。
+
+
+
+=== 数字电子钱包增强功能
+
+* 现在、"数字电子钱包"将显示您的帐户中Cloud Volumes ONTAP 系统的优化I/O许可包和已配置WORM容量的摘要。
++
+这些详细信息可以帮助您更好地了解如何为您付费以及是否需要购买额外容量。
+
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["了解如何查看帐户中的已用容量"]。
+
+* 现在、您可以从一种充电方法更改为优化充电方法。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["了解如何更改充电方法"]。
+
+
+
+
+
+=== 优化成本和性能
+
+现在、您可以直接从Canvas优化Cloud Volumes ONTAP 系统的成本和性能。
+
+选择工作环境后、您可以选择*优化成本和性能*选项来更改Cloud Volumes ONTAP 的实例类型。选择规模较小的实例有助于降低成本、而更改到规模较大的实例则有助于优化性能。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-optimize-cost-performance.png["选择工作环境后、可从\"画布\"中查看优化成本与性能选项的屏幕截图。"]
+
+
+
+=== AutoSupport 通知
+
+现在、如果Cloud Volumes ONTAP 系统无法发送AutoSupport 消息、Cloud Manager将生成通知。此通知包含一个指向说明的链接、可用于对网络问题进行故障排除。
+
+
+
 == 2022年7月31日
 
 连接器3.9.21版引入了以下更改。

@@ -24,27 +24,27 @@ summary: 通过将热数据的 SSD 或 HDD 性能层与非活动数据的对象�
 [role="quick-margin-list"]
 ifdef::aws[]
 
-* 对于 AWS ， S3 需要一个 VPC 端点。 <<Requirements to tier cold data to AWS S3,了解更多信息。>>。
+* 对于 AWS ， S3 需要一个 VPC 端点。  to tier cold data to AWS S3,了解更多信息。。
 
 
 endif::aws[]
 
 ifdef::azure[]
 
-* 对于 Azure ，只要 Cloud Manager 具有所需权限，您就无需执行任何操作。 <<Requirements to tier cold data to Azure Blob storage,了解更多信息。>>。
+* 对于 Azure ，只要 Cloud Manager 具有所需权限，您就无需执行任何操作。  to tier cold data to Azure Blob storage,了解更多信息。。
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* 对于Google Cloud、您需要为专用Google Access配置子网并设置服务帐户。 <<Requirements to tier cold data to a Google Cloud Storage bucket,了解更多信息。>>。
+* 对于Google Cloud、您需要为专用Google Access配置子网并设置服务帐户。  to tier cold data to a Google Cloud Storage bucket,了解更多信息。。
 
 
 endif::gcp[]
 
 [role="quick-margin-para"]
-必须在聚合上启用数据分层，才能在卷上启用数据分层。您应了解新卷和现有卷的要求。 <<Ensuring that tiering is enabled on aggregates,了解更多信息。>>。
+必须在聚合上启用数据分层，才能在卷上启用数据分层。您应了解新卷和现有卷的要求。  that tiering is enabled on aggregates,了解更多信息。。
 
 [role="quick-margin-para"]
 在创建，修改或复制卷时， Cloud Manager 会提示您选择分层策略。
@@ -60,7 +60,7 @@ endif::gcp[]
 * 您无需为容量层创建对象存储。云管理器可以为您提供这种功能。
 * 您无需在系统级别启用数据分层。
 +
-Cloud Manager 会在创建系统时为冷数据创建一个对象存储， <<Enabling data tiering after implementing the requirements,只要没有连接或权限问题>>。之后，您只需在卷上启用数据分层（在某些情况下， <<Ensuring that tiering is enabled on aggregates,在聚合上>>）。
+Cloud Manager 会在创建系统时为冷数据创建一个对象存储，  data tiering after implementing the requirements,只要没有连接或权限问题。之后，您只需在卷上启用数据分层（在某些情况下，  that tiering is enabled on aggregates,在聚合上）。
 
 
 
@@ -193,7 +193,7 @@ endif::gcp[]
 Cloud Manager 会在创建系统时为冷数据创建一个对象存储，前提是不存在连接或权限问题。如果在创建系统之前未实施上述要求，则需要手动启用分层，从而创建对象存储。
 
 .步骤
-. <<Requirements,确保满足所有要求>>。
+. ,确保满足所有要求。
 . 在 " 画布 " 页面上，双击 Cloud Volumes ONTAP 实例的名称。
 . 单击菜单图标并选择 * 启用容量分层 * 。
 +
@@ -203,7 +203,7 @@ image:screenshot_enable_capacity_tiering.gif["如果在 Cloud Manager 尝试启�
 只有在 Cloud Manager 创建系统时无法启用数据分层时，您才会看到此选项。
 
 +
-在Google Cloud中、必须先将服务帐户附加到Cloud Volumes ONTAP 、然后才会显示此选项。 <<Requirements,确保满足所有要求>>。
+在Google Cloud中、必须先将服务帐户附加到Cloud Volumes ONTAP 、然后才会显示此选项。 ,确保满足所有要求。
 
 . 单击 * 启用 * ，以便 Cloud Manager 可以创建此 Cloud Volumes ONTAP 系统将用于分层数据的对象存储。
 

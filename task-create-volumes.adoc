@@ -18,10 +18,10 @@ summary: 如果在启动初始 Cloud Volumes ONTAP 系统后需要更多存储�
 
 Cloud Manager 提供了多种创建新卷的方法：
 
-* 指定新卷的详细信息，并让 Cloud Manager 为您处理底层数据聚合。 <<Create a volume,了解更多信息。>>。
-* 在您选择的数据聚合上创建卷。 <<Create a volume,了解更多信息。>>。
-* 使用模板创建卷，以根据特定应用程序（例如数据库或流式服务）的工作负载要求优化卷。 <<Create a volume from a template,了解更多信息。>>。
-* 在 HA 配置中的第二个节点上创建卷。 <<Create a volume on the second node in an HA configuration,了解更多信息。>>。
+* 指定新卷的详细信息，并让 Cloud Manager 为您处理底层数据聚合。  a volume,了解更多信息。。
+* 在您选择的数据聚合上创建卷。  a volume,了解更多信息。。
+* 使用模板创建卷，以根据特定应用程序（例如数据库或流式服务）的工作负载要求优化卷。  a volume from a template,了解更多信息。。
+* 在 HA 配置中的第二个节点上创建卷。  a volume on the second node in an HA configuration,了解更多信息。。
 
 
 
@@ -30,7 +30,7 @@ Cloud Manager 提供了多种创建新卷的方法：
 
 有关卷配置的一些注意事项：
 
-* 创建 iSCSI 卷时， Cloud Manager 会自动为您创建 LUN 。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后， <<Connect a LUN to a host,使用 IQN 从主机连接到 LUN>>。
+* 创建 iSCSI 卷时， Cloud Manager 会自动为您创建 LUN 。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后，  a LUN to a host,使用 IQN 从主机连接到 LUN。
 * 您可以从 System Manager 或 CLI 创建其他 LUN 。
 
 
@@ -247,7 +247,7 @@ image:screenshot_define_cvo_vol_from_template.png["显示创建卷所需填写�
 NOTE: 如果要查看这些参数的值，可以单击 * 显示只读参数 * 复选框以显示模板锁定的所有字段。默认情况下，这些预定义字段将被隐藏，并且仅显示需要填写的字段。
 
 . 在 _context_ 区域中，工作环境将使用您启动的工作环境的名称进行填充。您需要选择要在其中创建卷的 * Storage VM* 。
-. 为模板中未硬编码的所有参数添加值。请参见 <<create a volume,创建卷>> 有关部署 Cloud Volumes ONTAP 卷所需完成的所有参数的详细信息。
+. 为模板中未硬编码的所有参数添加值。请参见  a volume,创建卷 有关部署 Cloud Volumes ONTAP 卷所需完成的所有参数的详细信息。
 . 如果不需要定义任何其他操作（例如配置 Cloud Backup ），请单击 * 运行模板 * 。
 +
 如果还有其他操作，请单击左窗格中的操作以显示需要完成的参数。

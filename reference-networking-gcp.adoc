@@ -122,6 +122,10 @@ TIP: 如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访
 
 
 --
+
+
+如果Cloud Manager通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
+
 专用 IP 地址:: Cloud Manager 将以下数量的专用 IP 地址分配给 GCP 中的 Cloud Volumes ONTAP ：
 +
 --
@@ -157,8 +161,8 @@ LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要使�
 --
 请注意， HA 配置需要两组防火墙规则：
 
-* VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。 <<Firewall rules for Cloud Volumes ONTAP,了解更多信息。>>。
-* VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。 <<Firewall rules for Cloud Volumes ONTAP,了解更多信息。>>。
+* VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。  rules for Cloud Volumes ONTAP,了解更多信息。。
+* VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。  rules for Cloud Volumes ONTAP,了解更多信息。。
 
 
 --
@@ -457,7 +461,7 @@ NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
 
 == VPC-1 ， VPC-2 和 VPC-3 的防火墙规则
 
-在 GCP 中， HA 配置部署在四个 VPC 上。VPC-0 中的 HA 配置所需的防火墙规则为 <<Firewall rules for Cloud Volumes ONTAP,上面列出的 Cloud Volumes ONTAP>>。
+在 GCP 中， HA 配置部署在四个 VPC 上。VPC-0 中的 HA 配置所需的防火墙规则为  rules for Cloud Volumes ONTAP,上面列出的 Cloud Volumes ONTAP。
 
 同时， Cloud Manager 为 VPC-1 ， VPC-2 和 VPC-3 中的实例创建的预定义防火墙规则可通过 _all_ 协议和端口进行传入通信。这些规则允许 HA 节点之间进行通信。
 

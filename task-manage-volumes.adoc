@@ -209,11 +209,11 @@ Cloud Manager 可能会显示一条 " 需要操作 " 消息，指出移动卷对
 TIP: 当聚合已使用容量达到 90% 时， Cloud Manager 会显示这些 " 需要采取操作 " 消息。如果启用了数据分层，则在聚合已达到 80% 已用容量时会显示消息。默认情况下，为数据分层预留 10% 的可用空间。 link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["详细了解数据分层的可用空间比率"]。
 
 .步骤
-. <<Identify how to correct capacity issues,确定如何解决此问题。>>。
+.  how to correct capacity issues,确定如何解决此问题。。
 . 根据您的分析、移动卷以避免容量问题：
 +
-** <<Move volumes to another system to avoid capacity issues,将卷移动到另一个系统。>>。
-** <<Move volumes to another aggregate to avoid capacity issues,将卷移动到同一系统上的另一个聚合。>>。
+**  volumes to another system to avoid capacity issues,将卷移动到另一个系统。。
+**  volumes to another aggregate to avoid capacity issues,将卷移动到同一系统上的另一个聚合。。
 
 
 

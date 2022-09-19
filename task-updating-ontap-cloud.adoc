@@ -137,10 +137,10 @@ Cloud Manager还会在Cloud Volumes ONTAP 升级过程中根据需要更新调�
 
 在执行升级之前，您必须验证系统是否已准备就绪，并进行任何必要的配置更改。
 
-* <<Plan for downtime>>
-* <<Verify that automatic giveback is still enabled>>
-* <<Suspend SnapMirror transfers>>
-* <<Verify that aggregates are online>>
+*  for downtime
+*  that automatic giveback is still enabled
+*  SnapMirror transfers
+*  that aggregates are online
 
 
 
@@ -209,9 +209,9 @@ image:screenshot_aggr_state.gif["屏幕抓图：显示查看聚合信息时的�
 
 == 升级 Cloud Volumes ONTAP
 
-当有新版本可供升级时， Cloud Manager 会向您发出通知。您可以从此通知启动升级过程。有关详细信息，请参见 <<Upgrade from Cloud Manager notifications>>。
+当有新版本可供升级时， Cloud Manager 会向您发出通知。您可以从此通知启动升级过程。有关详细信息，请参见  from Cloud Manager notifications。
 
-使用外部 URL 上的映像执行软件升级的另一种方式。如果 Cloud Manager 无法访问 S3 存储分段来升级软件或为您提供了修补程序，则此选项很有用。有关详细信息，请参见 <<Upgrade from an image available at a URL>>。
+使用外部 URL 上的映像执行软件升级的另一种方式。如果 Cloud Manager 无法访问 S3 存储分段来升级软件或为您提供了修补程序，则此选项很有用。有关详细信息，请参见  from an image available at a URL。
 
 
 
@@ -250,7 +250,16 @@ Cloud Manager 将启动软件升级。软件更新完成后，您可以在工作
 
 您可以将 Cloud Volumes ONTAP 软件映像放置在连接器或 HTTP 服务器上，然后从 Cloud Manager 启动软件升级。如果 Cloud Manager 无法访问 S3 存储分段来升级软件，您可以使用此选项。
 
-不得在 Cloud Volumes ONTAP 系统上执行 Cloud Manager 操作，例如创建卷或聚合。
+.开始之前
+* 不得在 Cloud Volumes ONTAP 系统上执行 Cloud Manager 操作，例如创建卷或聚合。
+* 如果使用HTTPS托管ONTAP 映像、则升级可能会因缺少证书而导致SSL身份验证问题失败。临时解决策 将生成并安装CA签名的证书、用于在ONTAP 和Cloud Manager之间进行身份验证。
++
+请访问NetApp知识库以查看分步说明：
+
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["NetApp知识库：如何将Cloud Manager配置为HTTPS服务器以托管升级映像"^]
+
+
 
 .步骤
 . 可选：设置可托管 Cloud Volumes ONTAP 软件映像的 HTTP 服务器。

@@ -39,7 +39,7 @@ Cloud Backup 在设计上独立于 Cloud Volumes ONTAP 。删除 Cloud Volumes O
 .. 在 " 画布 " 页面上，双击要删除的 Cloud Volumes ONTAP 工作环境的名称。
 .. 单击菜单图标，然后单击 * 删除 * 。
 +
-image:screenshot_delete_cloud_volumes_ontap.gif["屏幕截图显示了包含删除操作的工作环境中提供的菜单。"]
+image:screenshot_delete_cloud_volumes_ontap.png["屏幕截图显示了包含删除操作的工作环境中提供的菜单。"]
 
 .. 键入工作环境的名称，然后单击 * 删除 * 。
 +

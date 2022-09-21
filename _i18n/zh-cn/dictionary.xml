@@ -439,7 +439,6 @@
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">在 " 画布 " 页面上，双击要删除的 Cloud Volumes ONTAP 工作环境的名称。</block>
   <block id="ce57c223c9772471dcabe8db7fec79ea" category="list-text">单击菜单图标，然后单击 * 删除 * 。</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">屏幕截图显示了包含删除操作的工作环境中提供的菜单。</block>
-  <block id="67b59933503284b540d89d3f2ae03808" category="paragraph"><block ref="67b59933503284b540d89d3f2ae03808" category="inline-image-macro-rx" type="image"></block></block>
   <block id="27bf96ea2dd4c98f397498424680c167" category="list-text">键入工作环境的名称，然后单击 * 删除 * 。</block>
   <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">删除工作环境最多可能需要 5 分钟。</block>
   <block id="db92c6272e176121a6764c57a49a7cf2" category="summary">Cloud Manager 可简化和高级管理 Cloud Volumes ONTAP 存储。</block>
@@ -1333,7 +1332,6 @@
   <block id="4dbaad4c9dc389d54a40700cf043efae" category="list-text">选择 Cloud Volumes ONTAP 系统的类型。</block>
   <block id="e5274090bc4227c2e22055ba915c593c" category="list-text">单击此链接可发现现有系统。</block>
   <block id="40017add8025d214a0f7daaa7b0901e1" category="inline-image-macro">屏幕截图显示了用于发现现有 Cloud Volumes ONTAP 系统的链接。</block>
-  <block id="d4324b56e309570d8b82ab9a959b9228" category="paragraph"><block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff41b305e511b8485cd86e974b8b33c3" category="list-text">在区域页面上、选择实例运行所在的区域、然后选择实例。</block>
   <block id="3e46ae3398c8487fda843885c6277e38" category="list-text">在凭据页面上，输入 Cloud Volumes ONTAP 管理员用户的密码，然后单击 * 执行 * 。</block>
   <block id="aa048985cab469f3a8d3545c3be61fab" category="paragraph">Cloud Manager 会将 Cloud Volumes ONTAP 实例添加到工作空间。</block>
@@ -1731,7 +1729,6 @@
   <block id="4e1072c8d03d554d91c9ea5beb4a0a35" category="cell">NAS 数据</block>
   <block id="0bd553a2f6a75cf87e90b66a190b1601" category="cell">通过 NAS 协议进行客户端访问。</block>
   <block id="2b5d2bf6818bd886c073127322cc2693" category="cell">iSCSI 数据</block>
-  <block id="9a21ebc65d84ea40bda91a7e1c5849b5" category="cell">通过 iSCSI 协议进行客户端访问。</block>
   <block id="44ad9619101b8a07619c995d81024ea9" category="cell">集群连接</block>
   <block id="6f1799c861ef34376e02156b71030428" category="cell">Eth1</block>
   <block id="583e4b5135a301f1049902ce637a4b4c" category="cell">使节点可以彼此通信并在集群中移动数据。</block>
@@ -2022,8 +2019,6 @@
   <block id="7eeac5ac06af86bf7a05d8897d8f378c" category="list-text"><block ref="7eeac5ac06af86bf7a05d8897d8f378c" category="inline-link-rx"></block></block>
   <block id="0566b6e2df4ff947b8313e081a6e1f8f" category="paragraph">从 3.7.2 版开始， Cloud Manager 将为所有新的 Cloud Volumes ONTAP 系统生成 FlexCache 许可证。此许可证包含 500 GiB 的使用量限制。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
-  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">有关 Cloud Manager 3.9 的注意事项</block>
-  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="paragraph"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="7a0f0cbfb576252735561bf366791b09" category="summary">通过几个步骤开始使用适用于 GCP 的 Cloud Volumes ONTAP 。</block>
   <block id="c816d65f45a034b0842bc039567fcb6b" category="doc">在 Google Cloud 中快速启动 Cloud Volumes ONTAP</block>
   <block id="b1602fa6fa97985ef68ff003c11124ae" category="inline-link">了解如何在 GCP 中创建连接器</block>
@@ -4387,4 +4382,9 @@
   <block id="cb5d65dde5ba628055d30cfdbb698a3d" category="inline-link">NetApp知识库：如何将Cloud Manager配置为HTTPS服务器以托管升级映像</block>
   <block id="ab7e8c89ebea2d737c45db6eb8a87508" category="paragraph"><block ref="ab7e8c89ebea2d737c45db6eb8a87508" category="inline-link-rx"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
+  <block id="d38645c03f986a35ce2fbd6c505f7cb1" category="cell">通过iSCSI协议进行客户端访问、并使用系统进行重要的网络工作流。这些LIF是必需的、不应删除。</block>
+  <block id="2d3838f6845c3ac0398071b3ad7e14f5" category="paragraph"><block ref="2d3838f6845c3ac0398071b3ad7e14f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="99c8d21234f18ca8a3a220793fea2262" category="paragraph">+<block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d14a27b37d19411318313c75f11baf13" category="inline-link">Cloud Manager注意事项</block>
+  <block id="8f4eecef1c8abf547a153a1486d48ab2" category="paragraph"><block ref="8f4eecef1c8abf547a153a1486d48ab2" category="inline-link-rx"></block></block>
 </blocks>

@@ -23,8 +23,13 @@ summary: 您可以发现现有的 Cloud Volumes ONTAP 系统并将其添加到 C
 . 选择系统所在的云提供商。
 . 选择 Cloud Volumes ONTAP 系统的类型。
 . 单击此链接可发现现有系统。
-+
-image:screenshot_discover.gif["屏幕截图显示了用于发现现有 Cloud Volumes ONTAP 系统的链接。"]
+
+
+ifdef::aws[]
+
++image:screenshot_discover.gif["屏幕截图显示了用于发现现有 Cloud Volumes ONTAP 系统的链接。"]
+
+endif::aws[]
 
 . 在区域页面上、选择实例运行所在的区域、然后选择实例。
 . 在凭据页面上，输入 Cloud Volumes ONTAP 管理员用户的密码，然后单击 * 执行 * 。

@@ -99,8 +99,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["屏幕截图显示了在选择安全组时工作环境向导中提供的允许流量范围选项。"]
 
-ifdef::azure[]
-
 
 
 == 2022年7月18日
@@ -117,8 +115,6 @@ ifdef::azure[]
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["了解有关这些许可包的更多信息"]。
 
-endif::azure[]
-
 
 
 == 2022年7月3日
@@ -132,8 +128,6 @@ endif::azure[]
 现在、Digital Wallet将按许可包显示您帐户中的总已用容量和已用容量。这有助于您了解如何为您付费以及是否需要购买额外容量。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["屏幕截图显示了基于容量的许可证的\"数字电子钱包\"页面。此页面概述了您帐户中的已用容量、然后按许可包细分已用容量。"]
-
-ifdef::aws[]
 
 
 
@@ -151,10 +145,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elas
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 新增Azure Cloud区域支持
@@ -170,14 +160,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["查看Cloud Volumes ONTAP
 现在、在Azure中运行版本9.9.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统中提供了ONTAP S3许可证。
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-在<stdin>中未解析的指令-包括：_include/whats-new-July-Gcp.adoc]]
-
-endif::gcp[]
 
 
 
@@ -202,8 +184,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Clou
 此高级视图可作为Cloud Volumes ONTAP 9.10.0及更高版本的预览版提供。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["了解有关高级视图的更多信息"]。
-
-ifdef::aws[]
 
 
 
@@ -232,10 +212,6 @@ Cloud Volumes ONTAP 9.11.1支持AWS VPC共享。通过此版本的Connector、�
 
 link:task-deploy-aws-shared-vpc.html["了解如何在共享子网中部署HA对"]。
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 使用服务端点时网络访问受限
@@ -243,10 +219,6 @@ ifdef::azure[]
 现在、当使用vNet服务端点在Cloud Volumes ONTAP 和存储帐户之间建立连接时、Cloud Manager会限制网络访问。如果禁用Azure Private Link连接、Cloud Manager将使用服务端点。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["了解有关使用Cloud Volumes ONTAP 连接Azure专用链路的更多信息"]。
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -266,8 +238,6 @@ ifdef::gcp[]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["详细了解Google Cloud中的Storage VM限制"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["了解如何在Google Cloud中为Cloud Volumes ONTAP 创建提供数据的Storage VM"]
 
-
-endif::gcp[]
 
 
 
@@ -297,8 +267,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Clou
 
 https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["了解Cloud Manager中的Kubernetes数据管理"^]
 
-ifdef::azure[]
-
 
 
 === Azure中的年度合同
@@ -308,10 +276,6 @@ Essentials和Professional软件包现在可通过一份年度合同在Azure中�
 在NetApp与您共享私人优惠后、您可以在创建工作环境期间从Azure Marketplace订阅年度计划。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["了解有关许可的更多信息"]。
-
-endif::azure[]
-
-ifdef::aws[]
 
 
 
@@ -335,10 +299,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 现在、要优化Cloud Manager创建布局组的方式、需要这些权限。
 
 请务必为您添加到Cloud Manager的每组AWS凭据提供这些权限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看AWS的最新Connector策略"^]。
-
-endif::aws[]
-
-ifdef::gcp[]
 
 
 
@@ -380,8 +340,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 当您选择要与Cloud Volumes ONTAP 结合使用的Google云服务帐户时、Cloud Manager现在会显示与每个服务帐户关联的电子邮件地址。通过查看电子邮件地址、可以更轻松地区分同名服务帐户。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["服务帐户字段的屏幕截图"]
-
-endif::gcp[]
 
 
 

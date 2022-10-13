@@ -353,7 +353,7 @@ CMK 可以是 AWS 管理的 CMK 或客户管理的 CMK 。
 
 . 从连接到 Connector 实例的主机设置 Cloud Manager ：
 +
-.. 打开 Web 浏览器并输入以下 URL ： http://ipaddress:80[]
+.. 打开 Web 浏览器并输入以下 URL ： http://ipaddress[]
 .. 指定用于连接到 AWS 服务的代理服务器。
 .. 上传您在步骤 1 中获得的证书。
 .. 完成设置向导中的步骤以设置 Cloud Manager 。

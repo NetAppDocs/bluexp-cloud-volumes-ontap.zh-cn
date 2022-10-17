@@ -274,10 +274,12 @@ NOTE: 默认情况下，预定义的 Cloud Volumes ONTAP 安全组允许出站 H
 . 从获取软件映像 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NetApp 支持站点"^]。
 . 将软件映像复制到 Connector 或 HTTP 服务器上要从中提供文件的目录中。
 +
-例如，您可以将软件映像复制到 Connector 上的以下路径：
+有两个可用路径。正确的路径取决于您的Connector版本。
 
 +
-` /opt/application/netapp/cloudmanager/docker_occm/data/ontap/images/`
+** ` /opt/application/netapp/cloudmanager/docker_occm/data/ontap/images/`
+** `/opt/application/netapp/cloudmanager/ontap/images/`
+
 
 . 在 Cloud Manager 的工作环境中，单击菜单图标，然后单击 * 高级 > 更新 Cloud Volumes ONTAP * 。
 . 在更新软件页面上，输入 URL ，然后单击 * 更改映像 * 。

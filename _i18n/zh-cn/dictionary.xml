@@ -1991,7 +1991,6 @@
   <block id="f5de24cfcd33a2271ffc824aa8782176" category="admonition">默认情况下，预定义的 Cloud Volumes ONTAP 安全组允许出站 HTTP 连接。</block>
   <block id="a0b1807d647c5ece7bc49bd539f7dcc6" category="inline-link">NetApp 支持站点</block>
   <block id="3e3318ff6382b95c2c0c29be3a83b97d" category="list-text">将软件映像复制到 Connector 或 HTTP 服务器上要从中提供文件的目录中。</block>
-  <block id="622d340226a193aeab33f4890e2110c9" category="paragraph">例如，您可以将软件映像复制到 Connector 上的以下路径：</block>
   <block id="1b19ae48e0693419e1e905991459c290" category="paragraph">` /opt/application/netapp/cloudmanager/docker_occm/data/ontap/images/`</block>
   <block id="8919f7617af870f4013e0e66ecfec431" category="list-text">在 Cloud Manager 的工作环境中，单击菜单图标，然后单击 * 高级 &gt; 更新 Cloud Volumes ONTAP * 。</block>
   <block id="593130e23abb8f92a3863f44a5070ba6" category="list-text">在更新软件页面上，输入 URL ，然后单击 * 更改映像 * 。</block>
@@ -4436,4 +4435,6 @@
   <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">通过支持信息板、您可以添加和管理NetApp 支持站点 帐户、以便与Cloud Manager结合使用。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您拥有客户级别的帐户、则可以添加一个或多个NSS帐户。</block>
   <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">如果您有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户一起添加。</block>
+  <block id="752a2c1ba3bb227b061216ee70132a08" category="paragraph">有两个可用路径。正确的路径取决于您的Connector版本。</block>
+  <block id="93f9a2aa0331918bf3f1a44fb42f791e" category="list-text">`/opt/application/netapp/cloudmanager/ontap/images/`</block>
 </blocks>

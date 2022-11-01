@@ -56,7 +56,7 @@ Keystone Flex 订阅:: 基于订阅的按需购买服务，可为 HA 对提供�
 * 不包括 NetApp 的支持。
 * 每个 Cloud Volumes ONTAP 系统的已配置容量限制为 500 GiB 。
 * 在任何云提供商中，每个 NetApp 帐户最多可以使用 10 个 Cloud Volumes ONTAP 系统以及免费提供的产品。
-* 如果为 Cloud Volumes ONTAP 系统配置的容量超过 500 GiB ，则 Cloud Manager 会将该系统转换为 Essentials 软件包。
+* 如果为Cloud Volumes ONTAP 系统配置的容量超过500 GiB、则BlueXP会将该系统转换为Essentials软件包。
 +
 系统转换为Essentials软件包后、即会显示  about charging,最低费用 适用。
 
@@ -178,7 +178,7 @@ link:task-manage-capacity-licenses.html["了解如何更改充电方法"]。
 
 === 定价
 
-有关定价的详细信息，请访问 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp Cloud Central"^]。
+有关定价的详细信息，请访问 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP网站"^]。
 
 
 
@@ -191,7 +191,7 @@ link:task-manage-capacity-licenses.html["了解如何更改充电方法"]。
 Cloud Volumes ONTAP 无需每小时支付软件许可证费用、但云提供商提供的基础架构费用仍然适用。
 
 
-TIP: 免费试用开始、剩余7天以及剩余1天时、您将在Cloud Manager中收到通知。例如：image:screenshot-free-trial-notification.png["Cloud Manager界面中通知的屏幕截图、指出免费试用只剩7天。"]
+TIP: 当免费试用开始、剩余7天以及剩余1天时、您将在BlueXP中收到通知。例如：image:screenshot-free-trial-notification.png["BlueXP界面中通知的屏幕截图、其中指出免费试用只剩7天。"]
 
 
 
@@ -245,7 +245,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.
 
 ==== 最低费用
 
-对于至少具有一个主(读写)卷的每个提供数据的Storage VM、最低费用为4 TiB。如果主卷的总和小于4 TiB、则Cloud Manager会将4 TiB的最低费用应用于该Storage VM。
+对于至少具有一个主(读写)卷的每个提供数据的Storage VM、最低费用为4 TiB。如果主卷的总和小于4 TiB、则BlueXP会将4 TiB的最低费用应用于该Storage VM。
 
 如果尚未配置任何卷、则最低费用不适用。
 

@@ -22,9 +22,9 @@ Cloud Volumes ONTAP 高可用性（ High Availability ， HA ）对可在云环�
 
 Azure 中的 Cloud Volumes ONTAP HA 配置包括以下组件：
 
-image:diagram_ha_azure.png["一个概念映像，其中显示了一个负载平衡器，用于管理来自 Cloud Manager 和客户端的传入流量，一个可用性集中的两个 Cloud Volumes ONTAP 节点，用于启动数据的 SSD 磁盘以及用于客户数据的页面 Blob 。"]
+image:diagram_ha_azure.png["一个概念映像、其中显示了一个负载平衡器、用于管理来自BlueXP和客户端的传入流量、一个可用性集中的两个Cloud Volumes ONTAP 节点、用于启动数据的SSD磁盘以及用于客户数据的页面Blob。"]
 
-请注意以下有关 Cloud Manager 为您部署的 Azure 组件的信息：
+请注意以下有关BlueXP为您部署的Azure组件的信息：
 
 Azure 标准负载平衡器:: 负载平衡器管理传入 Cloud Volumes ONTAP HA 对的流量。
 可用性集:: Azure 可用性集是 Cloud Volumes ONTAP 节点的逻辑分组。可用性集可确保节点位于不同的故障和更新域中，以提供冗余和可用性。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["在 Azure 文档中了解有关可用性集的更多信息"^]。
@@ -38,7 +38,7 @@ Disks:: 客户数据位于高级存储页面 Blobs 上。每个节点都可以�
 https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Azure 文档：存储帐户的 Azure 存储可扩展性和性能目标"^]。
 
 * 要将数据分层到 Azure Blob 存储，需要一个存储帐户。
-* 从 Cloud Volumes ONTAP 9.7 开始， Cloud Manager 为 HA 对创建的存储帐户为通用 v2 存储帐户。
+* 从Cloud Volumes ONTAP 9.7开始、BlueXP为HA对创建的存储帐户为通用v2存储帐户。
 * 在创建工作环境时，您可以启用从 Cloud Volumes ONTAP 9.7 HA 对到 Azure 存储帐户的 HTTPS 连接。请注意，启用此选项可能会影响写入性能。创建工作环境后，您无法更改此设置。
 
 

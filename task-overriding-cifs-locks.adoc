@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-overriding-cifs-locks.html 
 keywords: CIFS locks, azure maintenance, maintenance events, cifs sessions, storage failover, storage giveback, giveback 
-summary: 帐户管理员可以在 Cloud Manager 中启用一项设置，以防止在 Azure 维护事件期间出现 Cloud Volumes ONTAP 存储交还问题。启用此设置后， Cloud Volumes ONTAP 将否决 CIFS 锁定并重置活动 CIFS 会话。 
+summary: 帐户管理员可以在BlueXP中启用一项设置、以防止在Azure维护事件期间出现Cloud Volumes ONTAP 存储交还问题。启用此设置后， Cloud Volumes ONTAP 将否决 CIFS 锁定并重置活动 CIFS 会话。 
 ---
 = 覆盖Azure中Cloud Volumes ONTAP HA对的CIFS锁定
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 帐户管理员可以在 Cloud Manager 中启用一项设置，以防�
 
 
 [role="lead"]
-帐户管理员可以在 Cloud Manager 中启用一项设置，以防止在 Azure 维护事件期间出现 Cloud Volumes ONTAP 存储交还问题。启用此设置后， Cloud Volumes ONTAP 将否决 CIFS 锁定并重置活动 CIFS 会话。
+帐户管理员可以在BlueXP中启用一项设置、以防止在Azure维护事件期间出现Cloud Volumes ONTAP 存储交还问题。启用此设置后， Cloud Volumes ONTAP 将否决 CIFS 锁定并重置活动 CIFS 会话。
 
 Microsoft Azure 会在其虚拟机上计划定期维护事件。在 Cloud Volumes ONTAP HA 对上发生维护事件时， HA 对将启动存储接管。如果在此维护事件期间存在活动的 CIFS 会话，则锁定 CIFS 文件可能会阻止存储交还。
 
@@ -23,12 +23,12 @@ Microsoft Azure 会在其虚拟机上计划定期维护事件。在 Cloud Volume
 
 CAUTION: 此过程可能会对 CIFS 客户端造成中断。未从 CIFS 客户端提交的数据可能会丢失。
 
-您需要先创建 Connector ，然后才能更改 Cloud Manager 设置。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#how-to-create-a-connector["了解如何操作"^]。
+您需要先创建Connector、然后才能更改BlueXP设置。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#how-to-create-a-connector["了解如何操作"^]。
 
 .步骤
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 连接器设置 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图，显示 Cloud Manager 控制台右上角的设置图标。"]
+image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
 . 在 * Azure * 下，单击 * 适用于 Azure HA 工作环境的 Azure CIFS 锁定 * 。
 . 单击复选框以启用此功能，然后单击 * 保存 * 。

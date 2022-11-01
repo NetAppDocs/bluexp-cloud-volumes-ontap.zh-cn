@@ -20,11 +20,11 @@ summary: 了解默认情况下如何配置 Cloud Volumes ONTAP 可以帮助您�
 
 == 默认设置
 
-* Cloud Manager 在部署 Cloud Volumes ONTAP 时会创建一个提供数据的 Storage VM 。某些配置支持额外的 Storage VM 。 link:task-managing-svms.html["了解有关管理 Storage VM 的更多信息"]。
+* 在部署Cloud Volumes ONTAP 时、BlueXP会创建一个提供数据的Storage VM。某些配置支持额外的 Storage VM 。 link:task-managing-svms.html["了解有关管理 Storage VM 的更多信息"]。
 +
-从 Cloud Manager 3.9.5 版开始，将在初始 Storage VM 上启用逻辑空间报告。如果以逻辑方式报告空间，则 ONTAP 会报告卷空间，以便存储效率功能节省的所有物理空间也会报告为已用空间。
+从BlueXP 3.9.5版开始、将在初始Storage VM上启用逻辑空间报告。如果以逻辑方式报告空间，则 ONTAP 会报告卷空间，以便存储效率功能节省的所有物理空间也会报告为已用空间。
 
-* Cloud Manager 会自动在 Cloud Volumes ONTAP 上安装以下 ONTAP 功能许可证：
+* BlueXP会自动在Cloud Volumes ONTAP 上安装以下ONTAP 功能许可证：
 +
 ** CIFS
 ** FlexCache
@@ -97,14 +97,14 @@ NOTE: 由于云提供商的要求、Cloud Volumes ONTAP 默认禁用LIF故障转
 +
 可从访问这些备份 https://ipaddress/occm/offboxconfig/[] 其中 _ipaddress_ 是 Connector 主机的 IP 地址。
 
-** 与其他管理工具（例如 System Manager 或 CLI ）不同、 Cloud Manager 设置了几个卷属性。
+** 与其他管理工具(例如System Manager或CLI)不同、BlueXP设置了一些卷属性。
 +
-下表列出了 Cloud Manager 设置的与默认设置不同的卷属性：
+下表列出了BlueXP与默认设置不同的卷属性：
 
 +
 [cols="15,85"]
 |===
-| 属性 | 由 Cloud Manager 设置的价值 
+| 属性 | 由BlueXP设置的值 
 
 
 | 自动调整模式 | 增长 
@@ -137,7 +137,7 @@ NOTE: 帐户管理员可以从 " 设置 " 页面修改此值。
 
 == 用于系统数据的内部磁盘
 
-除了用户数据存储之外， Cloud Manager 还为系统数据购买云存储。
+除了用户数据存储之外、BlueXP还为系统数据购买云存储。
 
 ifdef::aws[]
 
@@ -230,7 +230,7 @@ endif::gcp[]
 
 === 磁盘驻留的位置
 
-Cloud Manager 将存储布局如下：
+BlueXP将存储布局如下：
 
 * 启动数据驻留在与实例或虚拟机连接的磁盘上。
 +

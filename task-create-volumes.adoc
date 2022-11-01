@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-create-volumes.html 
 keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
-summary: 如果在启动初始 Cloud Volumes ONTAP 系统后需要更多存储，则可以从 Cloud Manager 为 NFS ， CIFS 或 iSCSI 创建新的 FlexVol 卷。 
+summary: 如果在启动初始Cloud Volumes ONTAP 系统后需要更多存储、则可以从BlueXP为NFS、CIFS或iSCSI创建新的FlexVol 卷。 
 ---
 = 创建 FlexVol 卷
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: 如果在启动初始 Cloud Volumes ONTAP 系统后需要更多存储�
 
 
 [role="lead"]
-如果在启动初始 Cloud Volumes ONTAP 系统后需要更多存储，则可以从 Cloud Manager 为 NFS ， CIFS 或 iSCSI 创建新的 FlexVol 卷。
+如果在启动初始Cloud Volumes ONTAP 系统后需要更多存储、则可以从BlueXP为NFS、CIFS或iSCSI创建新的FlexVol 卷。
 
-Cloud Manager 提供了多种创建新卷的方法：
+BlueXP提供了多种创建新卷的方法：
 
-* 指定新卷的详细信息，并让 Cloud Manager 为您处理底层数据聚合。  a volume,了解更多信息。。
+* 指定新卷的详细信息、并让BlueXP为您处理底层数据聚合。  a volume,了解更多信息。。
 * 在您选择的数据聚合上创建卷。  a volume,了解更多信息。。
 * 使用模板创建卷，以根据特定应用程序（例如数据库或流式服务）的工作负载要求优化卷。  a volume from a template,了解更多信息。。
 * 在 HA 配置中的第二个节点上创建卷。  a volume on the second node in an HA configuration,了解更多信息。。
@@ -30,7 +30,7 @@ Cloud Manager 提供了多种创建新卷的方法：
 
 有关卷配置的一些注意事项：
 
-* 创建 iSCSI 卷时， Cloud Manager 会自动为您创建 LUN 。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后，  a LUN to a host,使用 IQN 从主机连接到 LUN。
+* 创建iSCSI卷时、BlueXP会自动为您创建LUN。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后，  a LUN to a host,使用 IQN 从主机连接到 LUN。
 * 您可以从 System Manager 或 CLI 创建其他 LUN 。
 
 
@@ -46,11 +46,12 @@ endif::aws[]
 
 == 创建卷
 
-创建卷的最常见方法是指定所需的卷类型，然后 Cloud Manager 为您处理磁盘分配。但是，您也可以选择要在其中创建卷的特定聚合。
+创建卷的最常见方法是指定所需的卷类型、然后由BlueXP为您处理磁盘分配。但是，您也可以选择要在其中创建卷的特定聚合。
 
 .步骤
+. 从左侧导航菜单中、选择*存储>画布*。
 . 在 " 画布 " 页面上，双击要配置 FlexVol 卷的 Cloud Volumes ONTAP 系统的名称。
-. 通过让 Cloud Manager 为您处理磁盘分配来创建新卷，或者为此卷选择特定聚合。
+. 通过让BlueXP为您处理磁盘分配来创建新卷、或者为此卷选择特定聚合。
 +
 只有在您很好地了解 Cloud Volumes ONTAP 系统上的数据聚合时，才建议选择特定聚合。
 
@@ -93,7 +94,7 @@ endif::aws[]
 |===
 .. * 协议 * ：选择卷的协议（ NFS ， CIFS 或 iSCSI ），然后提供所需信息。
 +
-如果您选择 CIFS 但服务器未设置，则在单击 * 下一步 * 后， Cloud Manager 将提示您设置 CIFS 连接。
+如果您选择CIFS并且服务器未设置、则在单击*下一步*后、BlueXP将提示您设置CIFS连接。
 
 +
 link:concept-client-protocols.html["了解支持的客户端协议和版本"]。
@@ -107,7 +108,7 @@ link:concept-client-protocols.html["了解支持的客户端协议和版本"]。
 .NFS
 --
 访问控制:: 选择一个自定义导出策略以使此卷可供客户端使用。
-导出策略:: 定义子网中可访问卷的客户端。默认情况下， Cloud Manager 会输入一个值、用于访问子网中的所有实例。
+导出策略:: 定义子网中可访问卷的客户端。默认情况下、BlueXP输入一个值、用于访问子网中的所有实例。
 
 
 --
@@ -154,7 +155,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS 域:: Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。
-NTP 服务器:: 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 自动化文档"^] 了解详细信息。
+NTP 服务器:: 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自动化文档"^] 了解详细信息。
 +
 --
 请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。
@@ -165,7 +166,7 @@ NTP 服务器:: 选择 * 使用 Active Directory 域 * 以使用 Active Director
 --
 .iSCSI
 --
-LUN:: iSCSI 存储目标称为 LUN （逻辑单元），并作为标准块设备提供给主机。创建 iSCSI 卷时， Cloud Manager 会自动为您创建 LUN 。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后， link:task-connect-lun.html["使用 IQN 从主机连接到 LUN"]。
+LUN:: iSCSI 存储目标称为 LUN （逻辑单元），并作为标准块设备提供给主机。创建iSCSI卷时、BlueXP会自动为您创建LUN。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后， link:task-connect-lun.html["使用 IQN 从主机连接到 LUN"]。
 启动程序组:: 启动程序组（ igroup ）指定哪些主机可以访问存储系统上的指定 LUN
 主机启动程序（ IQN ）:: iSCSI 目标通过标准以太网网络适配器（ NIC ），带软件启动程序的 TCP 卸载引擎（ TOE ）卡，融合网络适配器（ CNA ）或专用主机总线适配器（ HBA ）连接到网络，并通过 iSCSI 限定名称（ IQN ）进行标识。
 
@@ -213,7 +214,7 @@ ONTAP 包含多种存储效率功能、可以减少您所需的存储总量。Ne
 . * 审阅 * ：查看有关卷的详细信息，然后单击 * 添加 * 。
 
 
-Cloud Manager 会在 Cloud Volumes ONTAP 系统上创建卷。
+BlueXP会在Cloud Volumes ONTAP 系统上创建卷。
 
 
 
@@ -227,6 +228,7 @@ Cloud Manager 会在 Cloud Volumes ONTAP 系统上创建卷。
 NOTE: 使用模板时，您只能创建 NFS 或 CIFS 卷。
 
 .步骤
+. 从左侧导航菜单中、选择*存储>画布*。
 . 在 " 画布 " 页面上，单击要配置卷的 Cloud Volumes ONTAP 系统的名称。
 . 单击 image:screenshot_gallery_options.gif["由三个并排点组成的图标。"] > * 从模板添加卷 * 。
 +
@@ -271,18 +273,19 @@ image:screenshot_template_creating_resource_cvo.png["显示通过模板创建新
 
 == 在 HA 配置中的第二个节点上创建卷
 
-默认情况下， Cloud Manager 会在 HA 配置中的第一个节点上创建卷。如果需要双活动配置（两个节点都将数据提供给客户端）、则必须在第二个节点上创建聚合和卷。
+默认情况下、BlueXP会在HA配置中的第一个节点上创建卷。如果需要双活动配置（两个节点都将数据提供给客户端）、则必须在第二个节点上创建聚合和卷。
 
 .步骤
+. 从左侧导航菜单中、选择*存储>画布*。
 . 在 " 画布 " 页面上，双击要管理聚合的 Cloud Volumes ONTAP 工作环境的名称。
 . 单击菜单图标，然后单击 * 高级 > 高级分配 * 。
 . 单击 * 添加聚合 * ，然后创建聚合。
 . 对于主节点，请在 HA 对中选择第二个节点。
-. Cloud Manager 创建聚合后，选择该聚合，然后单击 * 创建卷 * 。
+. 在BlueXP创建聚合后、选择该聚合、然后单击*创建卷*。
 . 输入新卷的详细信息，然后单击 * 创建 * 。
 
 
-Cloud Manager 会在 HA 对中的第二个节点上创建卷。
+BlueXP会在HA对中的第二个节点上创建卷。
 
 ifdef::aws[]
 

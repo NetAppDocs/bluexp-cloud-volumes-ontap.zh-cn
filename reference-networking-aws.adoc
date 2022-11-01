@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-networking-aws.html 
 keywords: networking, network, requirements, connection, connections, vpc, security group, security groups, subnets, vpn, internet, nat, s3, dns, ad, active directory, az, availability zone, floating IP, floating, SVM, management LIF, route, route tables, proxy, HTTP, private, tier, s3 endpoint, tiering, storage tier, storage tiering, proxy server, nat device, vpn, snapmanager, snapcenter, iscsi, nfs, cifs, nas, san, outbound, inbound, connections, autosupport, ha, ha pair, high availability 
-summary: Cloud Manager 负责为 Cloud Volumes ONTAP 设置网络组件，例如 IP 地址，网络掩码和路由。您需要确保出站 Internet 访问可用，有足够的专用 IP 地址可用，正确的连接到位等。 
+summary: BlueXP负责为Cloud Volumes ONTAP 设置网络组件、例如IP地址、网络掩码和路由。您需要确保出站 Internet 访问可用，有足够的专用 IP 地址可用，正确的连接到位等。 
 ---
 = AWS 中的 Cloud Volumes ONTAP 的网络要求
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager 负责为 Cloud Volumes ONTAP 设置网络组件，例如
 
 
 [role="lead"]
-Cloud Manager 负责为 Cloud Volumes ONTAP 设置网络组件，例如 IP 地址，网络掩码和路由。您需要确保出站 Internet 访问可用，有足够的专用 IP 地址可用，正确的连接到位等。
+BlueXP (以前称为Cloud Manager)负责为Cloud Volumes ONTAP 设置网络组件、例如IP地址、网络掩码和路由。您需要确保出站 Internet 访问可用，有足够的专用 IP 地址可用，正确的连接到位等。
 
 
 
@@ -36,13 +36,13 @@ Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、
 
 如果您有 NAT 实例、则必须定义允许 HTTPS 流量从私有子网传输到 Internet 的入站安全组规则。
 
-如果出站Internet连接不可用于发送AutoSupport 消息、则Cloud Manager会自动将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
+如果无法通过出站Internet连接发送AutoSupport 消息、则BlueXP会自动将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
 
 如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。
 
 确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 文档：设置 AutoSupport"^]。
 
-如果Cloud Manager通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
+如果BlueXP通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
 
 
 
@@ -56,15 +56,15 @@ HA 调解器实例必须具有与 AWS EC2 服务的出站连接、以便能够�
 
 === 专用 IP 地址
 
-Cloud Manager 会自动为 Cloud Volumes ONTAP 分配所需数量的专用 IP 地址。您需要确保网络具有足够的可用专用 IP 地址。
+BlueXP会自动为Cloud Volumes ONTAP 分配所需数量的专用IP地址。您需要确保网络具有足够的可用专用 IP 地址。
 
-Cloud Manager 为 Cloud Volumes ONTAP 分配的 LIF 数量取决于您部署的是单节点系统还是 HA 对。LIF 是与物理端口关联的 IP 地址。
+BlueXP为Cloud Volumes ONTAP 分配的LIF数量取决于您部署的是单节点系统还是HA对。LIF 是与物理端口关联的 IP 地址。
 
 
 
 ==== 单节点系统的 IP 地址
 
-Cloud Manager 会将 6 个 IP 地址分配给一个节点系统：
+BlueXP会将6个IP地址分配给一个节点系统：
 
 * 集群管理 LIF
 * 节点管理 LIF
@@ -160,7 +160,7 @@ TIP: 如果部署在多个可用性区域中，则会与多个 LIF 关联 link:r
 
 === 安全组
 
-您不需要创建安全组，因为 Cloud Manager 可以为您提供这些功能。如果您需要使用自己的，请参见 link:reference-security-groups.html["安全组规则"]。
+您无需创建安全组、因为BlueXP可以为您创建安全组。如果您需要使用自己的，请参见 link:reference-security-groups.html["安全组规则"]。
 
 
 
@@ -200,7 +200,7 @@ link:task-deploy-aws-shared-vpc.html["了解如何在共享子网中部署HA对"
 
 == 多个 AZs 中 HA 对的要求
 
-其他 AWS 网络要求适用于使用多可用性区域（ Azs ）的 Cloud Volumes ONTAP HA 配置。在启动 HA 对之前，您应查看这些要求，因为在创建工作环境时，您必须在 Cloud Manager 中输入网络详细信息。
+其他 AWS 网络要求适用于使用多可用性区域（ Azs ）的 Cloud Volumes ONTAP HA 配置。在启动HA对之前、您应查看这些要求、因为在创建工作环境时、您必须在BlueXP中输入网络详细信息。
 
 要了解 HA 对的工作原理，请参见 link:concept-ha.html["高可用性对"]。
 
@@ -218,7 +218,7 @@ link:task-deploy-aws-shared-vpc.html["了解如何在共享子网中部署HA对"
 
 NOTE: 如果将 SnapDrive for Windows 或 SnapCenter 与 HA 对结合使用，则 SVM 管理 LIF 需要浮动 IP 地址。
 
-创建 Cloud Volumes ONTAP HA 工作环境时，您需要在 Cloud Manager 中输入浮动 IP 地址。在启动系统时， Cloud Manager 会将 IP 地址分配给 HA 对。
+创建Cloud Volumes ONTAP HA工作环境时、您需要在BlueXP中输入浮动IP地址。BlueXP在启动系统时会将IP地址分配给HA对。
 
 对于部署 HA 配置的 AWS 区域中的所有 vPC ，浮动 IP 地址必须不在 CIDR 块的范围内。将浮动 IP 地址视为您所在地区 VPC 之外的逻辑子网。
 
@@ -227,14 +227,14 @@ NOTE: 如果将 SnapDrive for Windows 或 SnapCenter 与 HA 对结合使用，�
 image:diagram_ha_floating_ips.png["一个概念图，显示了 AWS 区域中五个 vPC 的 CIDR 块以及 VPC 的 CIDR 块之外的三个浮动 IP 地址。"]
 
 
-NOTE: Cloud Manager 可自动创建用于 iSCSI 访问和从 VPC 外部的客户端进行 NAS 访问的静态 IP 地址。您无需满足这些类型的 IP 地址的任何要求。
+NOTE: BlueXP会自动创建静态IP地址、用于从VPC外部的客户端进行iSCSI访问和NAS访问。您无需满足这些类型的 IP 地址的任何要求。
 
 --
 传输网关，用于从 VPC 外部启用浮动 IP 访问:: 如果需要， link:task-setting-up-transit-gateway.html["设置 AWS 传输网关"] 允许从 HA 对所在的 VPC 外部访问 HA 对的浮动 IP 地址。
-路由表:: 在 Cloud Manager 中指定浮动 IP 地址后，系统会提示您选择应包含浮动 IP 地址路由的路由表。这将启用客户端对 HA 对的访问。
+路由表:: 在BlueXP中指定浮动IP地址后、系统将提示您选择应包含浮动IP地址路由的路由表。这将启用客户端对 HA 对的访问。
 +
 --
-如果 VPC 中的子网只有一个路由表（主路由表），则 Cloud Manager 会自动将浮动 IP 地址添加到该路由表中。如果您有多个路由表，则在启动 HA 对时选择正确的路由表非常重要。否则，某些客户端可能无法访问 Cloud Volumes ONTAP 。
+如果VPC中的子网只有一个路由表(主路由表)、则BlueXP会自动将浮动IP地址添加到该路由表中。如果您有多个路由表，则在启动 HA 对时选择正确的路由表非常重要。否则，某些客户端可能无法访问 Cloud Volumes ONTAP 。
 
 例如，您可能有两个子网与不同的路由表相关联。如果选择路由表 A ，而不选择路由表 B ，则与路由表 A 关联的子网中的客户端可以访问 HA 对，但与路由表 B 关联的子网中的客户端无法访问。
 
@@ -290,7 +290,7 @@ TIP: 如果您的网络使用代理服务器与 Internet 进行所有通信，�
 | https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
 
 
-| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在 Cloud Manager 中提供 SaaS 功能和服务。 
+| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能和服务。 
 
 
 | https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 

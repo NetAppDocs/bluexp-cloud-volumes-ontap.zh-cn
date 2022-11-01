@@ -26,7 +26,7 @@ link:concept-licensing.html["了解有关 Cloud Volumes ONTAP 许可证的更多
 
 == 授权您的帐户
 
-在 Cloud Manager 中使用和管理 Keystone Flex 订阅之前，您需要联系 NetApp 为您的 Cloud Manager 用户帐户授予 Keystone Flex 订阅的权限。
+在BlueXP中使用和管理Keystone Flex订阅之前、您需要联系NetApp为您的BlueXP用户帐户授予Keystone Flex订阅的权限。
 
 .步骤
 . 从左侧导航菜单中、选择*数字电子夹*。
@@ -58,13 +58,13 @@ image:screenshot-keystone-link.png["显示订阅链接选项的屏幕截图。"]
 
 
 
-现在，订阅将链接到您的 Cloud Manager 帐户，并可在创建 Cloud Volumes ONTAP 工作环境时进行选择。
+现在、订阅将链接到您的BlueXP帐户、并可在创建Cloud Volumes ONTAP 工作环境时进行选择。
 
 
 
 == 请求更多或更少的已提交容量
 
-如果您需要调整订阅的已提交容量，可以直接从 Cloud Manager 界面发送请求。
+如果您需要调整订阅的已提交容量、可以直接从BlueXP界面发送请求。
 
 .步骤
 . 从左侧导航菜单中、选择*数字电子夹*。
@@ -91,4 +91,4 @@ image:screenshot-keystone-request.png["屏幕截图显示了请求更改订阅�
 . 对于要取消链接的订阅，请单击 image:icon-action.png["一个由三个并排点组成的图标"] 并选择 * 取消链接 * 。
 
 
-此订阅将从您的 Cloud Manager 帐户取消链接，并且在创建 Cloud Volumes ONTAP 工作环境时无法再选择。
+订阅将与您的BlueXP帐户解除链接、并且在创建Cloud Volumes ONTAP 工作环境时无法再选择此订阅。

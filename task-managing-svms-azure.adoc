@@ -632,4 +632,4 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 
 --
 ====
-在 HA 对上创建 Storage VM 后，最好等待 12 小时，然后再在该 SVM 上配置存储。从 Cloud Volumes ONTAP 9.10.1 版开始， Cloud Manager 会每 12 小时扫描一次 HA 对的负载平衡器设置。如果存在新的 SVM ， Cloud Manager 将启用一个设置，以缩短计划外故障转移时间。
+在 HA 对上创建 Storage VM 后，最好等待 12 小时，然后再在该 SVM 上配置存储。从Cloud Volumes ONTAP 9.10.1版开始、BlueXP会每12小时扫描一次HA对的负载平衡器设置。如果存在新的SVM、则BlueXP将启用一个设置、以缩短计划外故障转移时间。

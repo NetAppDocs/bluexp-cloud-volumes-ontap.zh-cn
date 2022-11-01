@@ -20,20 +20,20 @@ Cloud Volumes ONTAP 使用Azure专用链路连接到其关联的存储帐户。�
 
 == 概述
 
-默认情况下、Cloud Manager会为Cloud Volumes ONTAP 与其关联存储帐户之间的连接启用Azure专用链路。Azure Private Link可确保Azure中端点之间的连接安全、并可提供性能优势。
+默认情况下、BlueXP会为Cloud Volumes ONTAP 与其关联存储帐户之间的连接启用Azure专用链路。Azure Private Link可确保Azure中端点之间的连接安全、并可提供性能优势。
 
 如果需要、您可以将Cloud Volumes ONTAP 配置为使用服务端点、而不是Azure专用链路。
 
-无论采用哪种配置、Cloud Manager都始终限制Cloud Volumes ONTAP 与存储帐户之间的连接的网络访问。网络访问仅限于部署了Cloud Volumes ONTAP 的vNet和部署了连接器的vNet。
+无论采用哪种配置、BlueXP都会始终限制Cloud Volumes ONTAP 与存储帐户之间的连接的网络访问。网络访问仅限于部署了Cloud Volumes ONTAP 的vNet和部署了连接器的vNet。
 
 
 
 == 请禁用Azure专用链路并改用服务端点
 
-如果您的企业需要、您可以更改Cloud Manager中的设置、以便将Cloud Volumes ONTAP 配置为使用服务端点、而不是Azure专用链路。更改此设置将适用场景 添加您创建的新Cloud Volumes ONTAP 系统。
+如果您的企业需要、您可以更改BlueXP中的设置、以便将Cloud Volumes ONTAP 配置为使用服务端点、而不是Azure专用链路。更改此设置将适用场景 添加您创建的新Cloud Volumes ONTAP 系统。
 
 .步骤
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 连接器设置 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
 . 在 * Azure * 下，单击 * 使用 Azure 专用链接 * 。
 . 取消选择 * Cloud Volumes ONTAP 与存储帐户之间的专用链路连接 * 。
 . 单击 * 保存 * 。
@@ -43,13 +43,13 @@ Cloud Volumes ONTAP 使用Azure专用链路连接到其关联的存储帐户。�
 
 == 使用Azure专用链路
 
-在大多数情况下、您无需执行任何操作即可使用Cloud Volumes ONTAP 设置Azure专用链路。Cloud Manager可为您管理Azure专用链路。但是，如果您使用 Azure 私有 DNS ，则需要编辑配置文件。此外、您还应了解Azure中连接器位置的要求。
+在大多数情况下、您无需执行任何操作即可使用Cloud Volumes ONTAP 设置Azure专用链路。BlueXP为您管理Azure专用链路。但是，如果您使用 Azure 私有 DNS ，则需要编辑配置文件。此外、您还应了解Azure中连接器位置的要求。
 
 
 
 === 专用链路连接的工作原理
 
-当 Cloud Manager 在 Azure 中部署 Cloud Volumes ONTAP 时，它会在资源组中创建一个私有端点。专用端点与Cloud Volumes ONTAP 的存储帐户关联。因此，对 Cloud Volumes ONTAP 存储的访问会通过 Microsoft 主干网络进行。
+当BlueXP在Azure中部署Cloud Volumes ONTAP 时、它会在资源组中创建一个私有端点。专用端点与Cloud Volumes ONTAP 的存储帐户关联。因此，对 Cloud Volumes ONTAP 存储的访问会通过 Microsoft 主干网络进行。
 
 如果客户端与 Cloud Volumes ONTAP 位于同一个 vNet 中，位于对等 VNets 中，或者使用专用 VPN 或 ExpressRoute 连接到 VNet ，则客户端访问将通过专用链路进行。
 
@@ -65,9 +65,9 @@ image:diagram_azure_private_link.png["一个概念映像，用于显示通过专
 
 
 
-=== 向 Cloud Manager 提供有关 Azure 私有 DNS 的详细信息
+=== 向BlueXP提供有关Azure私有DNS的详细信息
 
-如果您使用 https://docs.microsoft.com/en-us/azure/dns/private-dns-overview["Azure 专用 DNS"^]，然后您需要修改每个 Connector 上的配置文件。否则， Cloud Manager 将无法在 Cloud Volumes ONTAP 与其关联存储帐户之间启用 Azure 专用链路连接。
+如果您使用 https://docs.microsoft.com/en-us/azure/dns/private-dns-overview["Azure 专用 DNS"^]，然后您需要修改每个 Connector 上的配置文件。否则、BlueXP无法在Cloud Volumes ONTAP 与其关联存储帐户之间启用Azure专用链路连接。
 
 请注意， DNS 名称必须与 Azure DNS 命名要求匹配 https://docs.microsoft.com/en-us/azure/storage/common/storage-private-endpoints#dns-changes-for-private-endpoints["如 Azure 文档中所示"^]。
 
@@ -104,11 +104,11 @@ image:diagram_azure_private_link.png["一个概念映像，用于显示通过专
 
 === 启用故障回滚
 
-如果 Cloud Manager 无法在特定操作中创建 Azure 专用链路，则它将在没有 Azure 专用链路连接的情况下完成此操作。在创建新的工作环境（单节点或 HA 对）或对 HA 对执行以下操作时，可能会发生这种情况：创建新聚合，向现有聚合添加磁盘或在超过 32 TiB 时创建新存储帐户。
+如果在特定操作中、BlueXP无法创建Azure专用链路、则它将在没有Azure专用链路连接的情况下完成此操作。在创建新的工作环境（单节点或 HA 对）或对 HA 对执行以下操作时，可能会发生这种情况：创建新聚合，向现有聚合添加磁盘或在超过 32 TiB 时创建新存储帐户。
 
-如果 Cloud Manager 无法创建 Azure 专用链路，您可以通过启用回滚来更改此默认行为。这有助于确保您完全符合公司的安全法规。
+如果BlueXP无法创建Azure专用链路、您可以通过启用回滚来更改此默认行为。这有助于确保您完全符合公司的安全法规。
 
-如果启用回滚， Cloud Manager 将停止此操作并回滚此操作中创建的所有资源。
+如果启用回滚、则BlueXP将停止此操作并回滚此操作中创建的所有资源。
 
 仅支持通过 API 启用回滚。
 

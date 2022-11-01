@@ -56,7 +56,7 @@ Disks:: 两个标准永久性磁盘、每个磁盘10 GiB
 NOTE: 对于 Cloud Volumes ONTAP 9.10.0 及更早版本，在调解器上安装了 Debian 10 。
 
 --
-升级:: 升级 Cloud Volumes ONTAP 时， Cloud Manager 还会根据需要更新调解器实例。
+升级:: 升级Cloud Volumes ONTAP 时、BlueXP还会根据需要更新调解器实例。
 对实例的访问:: 对于 Debian ，默认云用户为 `admin` 。在通过 Google Cloud 控制台或 gcloud 命令行请求 SSH 访问时， Google Cloud 会为 `admin` 用户创建并添加证书。您可以指定 `sudo` 来获取 root 权限。
 第三方代理:: 此调解器实例不支持第三方代理或 VM 扩展。
 
@@ -112,7 +112,7 @@ HA 配置可保持数据的高可用性，如下所示：
 
 === 存储分配
 
-创建新卷并需要附加磁盘时、 Cloud Manager 会为两个节点分配相同数量的磁盘、创建镜像聚合、然后创建新卷。例如，如果卷需要两个磁盘、则 Cloud Manager 会为每个节点分配两个磁盘、总共四个磁盘。
+创建新卷时、如果需要更多磁盘、则BlueXP会将相同数量的磁盘分配给两个节点、创建镜像聚合、然后创建新卷。例如、如果卷需要两个磁盘、则BlueXP会为每个节点分配两个磁盘、总共分配四个磁盘。
 
 
 
@@ -141,7 +141,7 @@ Cloud Volumes ONTAP HA 配置可同步复制节点之间的数据、从而消耗
 
 TIP: 如果在 HA 对中的节点之间移动卷、则应使用其他节点的 IP 地址重新装入卷。否则，您可能会遇到性能降低的问题。如果客户机支持 NFSv4 引用或 CIFS 文件夹重定向、则可以在 Cloud Volumes ONTAP 系统上启用这些功能以避免重新装入卷。有关详细信息，请参见 ONTAP 文档。
 
-您可以从 Cloud Manager 轻松确定正确的 IP 地址。
+您可以从BlueXP轻松识别正确的IP地址：
 
 image:screenshot_mount.gif["屏幕抓图：显示选择卷时可用的挂载命令。"]
 

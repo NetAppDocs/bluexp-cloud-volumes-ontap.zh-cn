@@ -17,7 +17,7 @@ summary: 了解 Cloud Volumes ONTAP 如何使用云存储可以帮助您了解�
 了解 Cloud Volumes ONTAP 如何使用云存储可以帮助您了解存储成本。
 
 
-CAUTION: 必须直接从 Cloud Manager 创建和删除所有磁盘和聚合。不应从其他管理工具执行这些操作。这样做可能会影响系统稳定性、妨碍将来添加磁盘的能力、并可能产生冗余云提供商费用。
+CAUTION: 必须直接从BlueXP创建和删除所有磁盘和聚合。不应从其他管理工具执行这些操作。这样做可能会影响系统稳定性、妨碍将来添加磁盘的能力、并可能产生冗余云提供商费用。
 
 
 
@@ -30,7 +30,7 @@ image:diagram_storage.png["此图显示了由磁盘组成的聚合以及 Cloud V
 支持多种类型的云磁盘。您可以在创建卷时选择磁盘类型，在部署 Cloud Volumes ONTAP 时选择默认磁盘大小。
 
 
-TIP: 从云提供商购买的存储总量为 _raw capacity_ 。可用容量 _ 较小，因为预留给 Cloud Volumes ONTAP 使用的开销约为 12 到 14% 。例如，如果 Cloud Manager 创建了一个 500 GiB 聚合、则可用容量为 442.94 GiB 。
+TIP: 从云提供商购买的存储总量为 _raw capacity_ 。可用容量 _ 较小，因为预留给 Cloud Volumes ONTAP 使用的开销约为 12 到 14% 。例如、如果BlueXP创建500 GiB聚合、则可用容量为442.94 GiB。
 
 ifdef::aws[]
 

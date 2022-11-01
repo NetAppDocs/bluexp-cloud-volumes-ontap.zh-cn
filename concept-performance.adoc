@@ -56,4 +56,4 @@ endif::gcp[]
 
 从您的云提供商的监控工具中可以看到 Cloud Volumes ONTAP 节点利用率很高（超过 90% ）。这是因为 ONTAP 会保留提供给虚拟机的所有 vCPU ，以便在需要时可用。
 
-https://docs.netapp.com/us-en/cloud-manager-monitoring/concept-monitoring.html["了解如何监控 Cloud Volumes ONTAP 性能"^]或查看此信息 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["有关如何使用命令行界面监控 ONTAP CPU 利用率的 NetApp 知识库文章"^]
+有关帮助、请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["有关如何使用命令行界面监控 ONTAP CPU 利用率的 NetApp 知识库文章"^]

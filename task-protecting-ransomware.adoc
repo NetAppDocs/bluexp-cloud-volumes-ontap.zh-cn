@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-protecting-ransomware.html 
 keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks 
-summary: 勒索软件攻击可能会耗费业务时间，资源和声誉。您可以通过 Cloud Manager 实施 NetApp 解决方案 for 勒索软件，它可以提供有效的工具来实现可见性，检测和补救。 
+summary: 勒索软件攻击可能会耗费业务时间，资源和声誉。借助BlueXP、您可以实施NetApp解决方案 for勒索软件、它可以提供有效的工具来实现可见性、检测和补救。 
 ---
 = 提高防范勒索软件的能力
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 勒索软件攻击可能会耗费业务时间，资源和声誉。您�
 
 
 [role="lead"]
-勒索软件攻击可能会耗费业务时间，资源和声誉。您可以通过 Cloud Manager 实施 NetApp 解决方案 for 勒索软件，它可以提供有效的工具来实现可见性，检测和补救。
+勒索软件攻击可能会耗费业务时间，资源和声誉。借助BlueXP、您可以实施NetApp解决方案 for勒索软件、它可以提供有效的工具来实现可见性、检测和补救。
 
 .步骤
 . 在工作环境中，单击 * 勒索软件 * 图标。
@@ -39,7 +39,7 @@ NetApp Snapshot 技术可为勒索软件补救提供业内最佳的解决方案�
 
 +
 
-TIP: 当您在 Cloud Volumes ONTAP 上激活 FPolicy 时， Cloud Manager 将创建此范围。此列表基于常见的勒索软件文件类型。您可以使用 Cloud Volumes ONTAP 命令行界面中的 _vserver fpolicy policy scopes_ 命令来自定义阻止的文件扩展名。
+TIP: 当您在Cloud Volumes ONTAP 上激活FPolicy时、BlueXP会创建此范围。此列表基于常见的勒索软件文件类型。您可以使用 Cloud Volumes ONTAP 命令行界面中的 _vserver fpolicy policy scopes_ 命令来自定义阻止的文件扩展名。
 
 
 

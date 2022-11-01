@@ -19,14 +19,14 @@ summary: 如果要在 Cloud Volumes ONTAP 中使用 Amazon 加密，则需要设
 .步骤
 . 确保存在有效的客户主密钥（ CMK ）。
 +
-CMK 可以是 AWS 管理的 CMK 或客户管理的 CMK 。它可以与 Cloud Manager 和 Cloud Volumes ONTAP 位于同一个 AWS 帐户中，也可以位于不同的 AWS 帐户中。
+CMK 可以是 AWS 管理的 CMK 或客户管理的 CMK 。它可以与BlueXP和Cloud Volumes ONTAP 位于同一个AWS帐户中、也可以位于不同的AWS帐户中。
 
 +
 https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys["AWS 文档：客户主密钥（ CMK ）"^]
 
-. 通过添加 IAM 角色来修改每个 CMK 的密钥策略，该角色以 _key user__ 的身份为 Cloud Manager 提供权限。
+. 通过添加IAM角色来修改每个CMK的密钥策略、该角色以_key user__的身份为BlueXP提供权限。
 +
-将 IAM 角色添加为密钥用户可为 Cloud Manager 提供在 Cloud Volumes ONTAP 中使用 CMK 的权限。
+如果将IAM角色添加为密钥用户、则BlueXP将获得在Cloud Volumes ONTAP 中使用CMK的权限。
 
 +
 https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 文档：编辑密钥"^]
@@ -37,11 +37,11 @@ https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 文
 .. 选择密钥。
 .. 在 * 常规配置 * 窗格中，复制密钥的 ARN 。
 +
-创建 Cloud Volumes ONTAP 系统时，您需要为 Cloud Manager 提供 ARN 。
+创建Cloud Volumes ONTAP 系统时、您需要为BlueXP提供ARN。
 
-.. 在 * 其他 AWS 帐户 * 窗格中，添加为 Cloud Manager 提供权限的 AWS 帐户。
+.. 在*其他AWS帐户*窗格中、添加为BlueXP提供权限的AWS帐户。
 +
-在大多数情况下，这是 Cloud Manager 所在的帐户。如果 Cloud Manager 未安装在 AWS 中，则您会为其提供 Cloud Manager 的 AWS 访问密钥。
+在大多数情况下、这是BlueXP所在的帐户。如果BlueXP未安装在AWS中、则您会为其提供对BlueXP的AWS访问密钥。
 
 +
 image:screenshot_cmk_add_accounts.gif["此屏幕截图显示了 AWS KMS 控制台中的 \" 添加其他 AWS 帐户 \" 按钮。"]
@@ -49,11 +49,11 @@ image:screenshot_cmk_add_accounts.gif["此屏幕截图显示了 AWS KMS 控制�
 +
 image:screenshot_cmk_add_accounts_dialog.gif["此屏幕截图显示了 AWS KMS 控制台中的 \" 其他 AWS 帐户 \" 对话框。"]
 
-.. 现在，切换到为 Cloud Manager 提供权限的 AWS 帐户，然后打开 IAM 控制台。
+.. 现在、切换到为BlueXP提供权限的AWS帐户、然后打开IAM控制台。
 .. 创建一个包含以下权限的 IAM 策略。
-.. 将策略附加到为 Cloud Manager 提供权限的 IAM 角色或 IAM 用户。
+.. 将策略附加到为BlueXP提供权限的IAM角色或IAM用户。
 +
-以下策略提供了 Cloud Manager 从外部 AWS 帐户使用 CMK 所需的权限。请务必在 " 资源 " 部分中修改区域和帐户 ID 。
+以下策略提供了BlueXP从外部AWS帐户使用CMK所需的权限。请务必在 " 资源 " 部分中修改区域和帐户 ID 。
 
 +
 [source, json]

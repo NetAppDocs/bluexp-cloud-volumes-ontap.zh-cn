@@ -31,7 +31,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 == 创建Storage VM
 
-如果许可证支持、您可以在单节点系统或HA对上创建多个Storage VM。请注意、您必须使用Cloud Manager API在HA对上创建Storage VM、而可以使用CLI或System Manager在单节点系统上创建Storage VM。
+如果许可证支持、您可以在单节点系统或HA对上创建多个Storage VM。请注意、您必须使用BlueXP API在HA对上创建Storage VM、而可以使用CLI或System Manager在单节点系统上创建Storage VM。
 
 
 
@@ -101,9 +101,9 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 
 === HA 对
 
-您必须使用Cloud Manager API在Google Cloud的Cloud Volumes ONTAP 系统上创建Storage VM。需要使用API (而不是System Manager或CLI)、因为Cloud Manager会为Storage VM配置所需的LIF服务以及出站SMB/CIFS通信所需的iSCSI LIF。
+您必须使用BlueXP API在Google Cloud中的Cloud Volumes ONTAP 系统上创建Storage VM。需要使用API (而不是System Manager或CLI)、因为BlueXP会为Storage VM配置所需的LIF服务以及出站SMB/CIFS通信所需的iSCSI LIF。
 
-请注意、Cloud Manager会在Google Cloud中分配所需的IP地址、并创建具有用于SMB/NFS访问的数据LIF和用于出站SMB通信的iSCSI LIF的Storage VM。
+请注意、BlueXP会在Google Cloud中分配所需的IP地址、并创建具有用于SMB/NFS访问的数据LIF和用于出站SMB通信的iSCSI LIF的Storage VM。
 
 从3.9.19版开始、连接器需要以下权限才能为Cloud Volumes ONTAP HA对创建和管理Storage VM：
 
@@ -133,7 +133,7 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 
 == 管理HA对上的Storage VM
 
-Cloud Manager API还支持重命名和删除HA对上的Storage VM。
+此外、BlueXP API还支持重命名和删除HA对上的Storage VM。
 
 
 

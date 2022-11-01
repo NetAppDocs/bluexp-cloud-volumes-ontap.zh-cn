@@ -21,10 +21,10 @@ summary: 您可以通过添加磁盘，查看聚合相关信息以及删除聚�
 要修改Connector设置、需要帐户管理员权限。
 
 .步骤
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 连接器设置 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
 . 在*容量*下、修改以下任何设置：
 +
-容量管理模式:: 选择Cloud Manager是否通知您存储容量决策、或者Cloud Manager是否自动管理您的容量需求。
+容量管理模式:: 选择BlueXP是否通知您存储容量决策、或者BlueXP是否自动管理您的容量需求。
 +
 --
 link:concept-storage-management.html#capacity-management["了解容量管理模式的工作原理"]。

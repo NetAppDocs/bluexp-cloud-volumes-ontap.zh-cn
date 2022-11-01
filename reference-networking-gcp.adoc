@@ -24,7 +24,7 @@ summary: 设置您的 Google 云平台网络，以便 Cloud Volumes ONTAP 系统
 
 以下要求必须在 GCP 中满足。
 
-内部负载平衡器:: Cloud Manager 会自动创建四个 Google Cloud 内部负载平衡器（ TCP/UDP ），用于管理传入到 Cloud Volumes ONTAP HA 对的流量。您无需进行任何设置我们将此列为一项要求，只是为了告知您网络流量并缓解任何安全问题。
+内部负载平衡器:: BlueXP会自动创建四个Google Cloud内部负载平衡器(TCP/UDP)、用于管理传入到Cloud Volumes ONTAP HA对的流量。您无需进行任何设置我们将此列为一项要求，只是为了告知您网络流量并缓解任何安全问题。
 +
 --
 一个负载平衡器用于集群管理，一个负载平衡器用于 Storage VM （ SVM ）管理，一个负载平衡器用于向节点 1 发送 NAS 流量，另一个负载平衡器用于向节点 2 发送 NAS 流量。
@@ -47,7 +47,7 @@ summary: 设置您的 Google 云平台网络，以便 Cloud Volumes ONTAP 系统
 
 
 --
-HA 对的一个或多个分区:: 您可以通过在多个或单个分区中部署 HA 配置来确保数据的高可用性。创建 HA 对时， Cloud Manager 将提示您选择多个分区或单个分区。
+HA 对的一个或多个分区:: 您可以通过在多个或单个分区中部署 HA 配置来确保数据的高可用性。在创建HA对时、BlueXP将提示您选择多个分区或单个分区。
 +
 --
 * 多个分区（建议）
@@ -67,7 +67,7 @@ HA 对的一个或多个分区:: 您可以通过在多个或单个分区中部�
 适用于 HA 对的四个虚拟私有云:: 一个 HA 配置需要四个虚拟私有云（ Virtual Private Cloud ， vPC ）。需要四个 VPC ，因为 GCP 要求每个网络接口驻留在一个单独的 VPC 网络中。
 +
 --
-创建 HA 对时， Cloud Manager 将提示您选择四个 vPC ：
+在创建HA对时、BlueXP将提示您选择四个vPC：
 
 * vPC-0 ，用于与数据和节点的入站连接
 * VPC-1 ， VPC-2 和 VPC-3 ，用于节点与 HA 调解器之间的内部通信
@@ -107,7 +107,7 @@ Cloud Volumes ONTAP 的出站 Internet 访问:: Cloud Volumes ONTAP 需要对Net
 * https://support.netapp.com/aods/asupmessage
 * https://support.netapp.com/asupprod/post/1.0/postAsup
 +
-如果出站Internet连接不可用于发送AutoSupport 消息、则Cloud Manager会自动将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。唯一的要求是确保Connector的防火墙允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
+如果无法通过出站Internet连接发送AutoSupport 消息、则BlueXP会自动将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。唯一的要求是确保Connector的防火墙允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
 
 +
 如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 防火墙允许通过端口3128进行_outout_连接。
@@ -124,9 +124,9 @@ TIP: 如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访
 --
 
 
-如果Cloud Manager通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
+如果BlueXP通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
 
-专用 IP 地址:: Cloud Manager 将以下数量的专用 IP 地址分配给 GCP 中的 Cloud Volumes ONTAP ：
+专用 IP 地址:: BlueXP在GCP中为Cloud Volumes ONTAP 分配以下数量的专用IP地址：
 +
 --
 * * 单节点 * ： 3 或 4 个专用 IP 地址
@@ -156,7 +156,7 @@ LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要使�
 
 
 --
-防火墙规则:: 您无需创建防火墙规则，因为 Cloud Manager 可以为您创建。如果您需要使用自己的防火墙规则，请参见下面列出的防火墙规则。
+防火墙规则:: 您无需创建防火墙规则、因为BlueXP可以为您创建防火墙规则。如果您需要使用自己的防火墙规则，请参见下面列出的防火墙规则。
 +
 --
 请注意， HA 配置需要两组防火墙规则：
@@ -169,7 +169,7 @@ LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要使�
 从 Cloud Volumes ONTAP 连接到 Google 云存储以进行数据分层:: 如果您要将冷数据分层到 Google 云存储分段，则必须为 Cloud Volumes ONTAP 所在的子网配置专用 Google 访问（如果您使用的是 HA 对，则此子网位于 VPC-0 中）。有关说明，请参见 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 文档：配置私有 Google Access"^]。
 +
 --
-有关在 Cloud Manager 中设置数据分层所需的其他步骤，请参见 link:task-tiering.html["将冷数据分层到低成本对象存储"]。
+有关在BlueXP中设置数据分层所需的其他步骤、请参见 link:task-tiering.html["将冷数据分层到低成本对象存储"]。
 
 --
 连接到其他网络中的 ONTAP 系统:: 要在 GCP 中的 Cloud Volumes ONTAP 系统与其他网络中的 ONTAP 系统之间复制数据，您必须在 VPC 与其他网络（例如公司网络）之间建立 VPN 连接。
@@ -211,7 +211,7 @@ TIP: 如果您的网络使用代理服务器与 Internet 进行所有通信，�
 | https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
 
 
-| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在 Cloud Manager 中提供 SaaS 功能和服务。 
+| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能和服务。 
 
 
 | https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
@@ -220,7 +220,7 @@ TIP: 如果您的网络使用代理服务器与 Internet 进行所有通信，�
 
 == Cloud Volumes ONTAP 的防火墙规则
 
-Cloud Manager 可创建包含 Cloud Volumes ONTAP 成功运行所需入站和出站规则的 GCP 防火墙规则。您可能需要参考端口进行测试，或者如果您希望使用自己的防火墙规则。
+BlueXP会创建包含Cloud Volumes ONTAP 成功运行所需的入站和出站规则的GCP防火墙规则。您可能需要参考端口进行测试，或者如果您希望使用自己的防火墙规则。
 
 Cloud Volumes ONTAP 的防火墙规则需要入站和出站规则。
 
@@ -463,7 +463,7 @@ NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
 
 在 GCP 中， HA 配置部署在四个 VPC 上。VPC-0 中的 HA 配置所需的防火墙规则为  rules for Cloud Volumes ONTAP,上面列出的 Cloud Volumes ONTAP。
 
-同时， Cloud Manager 为 VPC-1 ， VPC-2 和 VPC-3 中的实例创建的预定义防火墙规则可通过 _all_ 协议和端口进行传入通信。这些规则允许 HA 节点之间进行通信。
+同时、BlueXP为VPC-1、VPC-2和VPC-3中的实例创建的预定义防火墙规则可以通过_all_协议和端口进行传入通信。这些规则允许 HA 节点之间进行通信。
 
 从 HA 节点到 HA 调解器的通信通过端口 3260 （ iSCSI ）进行。
 
@@ -532,5 +532,5 @@ NOTE: 源 IP 地址是 Connector 主机。
 | API 调用和 AutoSupport | HTTPS | 443. | 出站 Internet 和 ONTAP 集群管理 LIF | API 调用 GCP 和 ONTAP ，云数据感知，勒索软件服务以及向 NetApp 发送 AutoSupport 消息 
 
 
-| DNS | UDP | 53. | DNS | 用于云管理器进行 DNS 解析 
+| DNS | UDP | 53. | DNS | 用于BlueXP的DNS解析 
 |===

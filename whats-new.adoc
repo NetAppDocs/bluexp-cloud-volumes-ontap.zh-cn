@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
-summary: 了解 Cloud Manager 中 Cloud Volumes ONTAP 管理的新增功能。 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager' 
+summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为Cloud Manager)。' 
 ---
 = 新增功能
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: 了解 Cloud Manager 中 Cloud Volumes ONTAP 管理的新增功能。
 
 
 [role="lead"]
-了解 Cloud Manager 中 Cloud Volumes ONTAP 管理的新增功能。
+了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为Cloud Manager)。
 
-此页面上介绍的增强功能专用于支持 Cloud Volumes ONTAP 管理的 Cloud Manager 功能。要了解 Cloud Volumes ONTAP 软件本身的新增功能， https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["转至《 Cloud Volumes ONTAP 发行说明》"^]
+此页面上介绍的增强功能专用于支持Cloud Volumes ONTAP 管理的BlueXP功能。要了解 Cloud Volumes ONTAP 软件本身的新增功能， https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["转至《 Cloud Volumes ONTAP 发行说明》"^]
 
 
 
@@ -55,7 +55,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 === AutoSupport 通知
 
-现在、如果Cloud Volumes ONTAP 系统无法发送AutoSupport 消息、Cloud Manager将生成通知。此通知包含一个指向说明的链接、可用于对网络问题进行故障排除。
+现在、如果Cloud Volumes ONTAP 系统无法发送AutoSupport 消息、BlueXP将生成通知。此通知包含一个指向说明的链接、可用于对网络问题进行故障排除。
 
 
 
@@ -77,7 +77,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 === 代理服务器
 
-现在、Cloud Manager会自动将您的Cloud Volumes ONTAP 系统配置为在出站Internet连接不可用于发送AutoSupport 消息时将Connector用作代理服务器。
+现在、如果无法通过出站Internet连接发送AutoSupport 消息、则BlueXP会自动将Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。
 
 AutoSupport 会主动监控系统的运行状况，并向 NetApp 技术支持发送消息。
 
@@ -133,7 +133,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 === 弹性卷增强功能
 
-现在、Cloud Manager可在通过用户界面创建Cloud Volumes ONTAP 工作环境时支持Amazon EBS弹性卷功能。使用GP3或IO1磁盘时、弹性卷功能默认处于启用状态。您可以根据存储需求选择初始容量、并在部署Cloud Volumes ONTAP 后进行修改。
+现在、在通过用户界面创建Cloud Volumes ONTAP 工作环境时、BlueXP支持Amazon EBS弹性卷功能。使用GP3或IO1磁盘时、弹性卷功能默认处于启用状态。您可以根据存储需求选择初始容量、并在部署Cloud Volumes ONTAP 后进行修改。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["了解有关在AWS中支持弹性卷的更多信息"]。
 
@@ -171,7 +171,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解
 
 === Cloud Volumes ONTAP 9.11.1
 
-Cloud Manager现在可以部署和管理Cloud Volumes ONTAP 9.11.1、其中包括对新功能的支持以及其他云提供商区域的支持。
+现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.11.1、其中包括对新功能的支持以及其他云提供商区域的支持。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]
 
@@ -179,7 +179,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Clou
 
 === 新建高级视图
 
-如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用ONTAP 系统管理器来执行此操作、该管理器是随ONTAP 系统提供的一个管理界面。我们直接在Cloud Manager中提供了System Manager界面、因此您无需离开Cloud Manager进行高级管理。
+如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用ONTAP 系统管理器来执行此操作、该管理器是随ONTAP 系统提供的一个管理界面。我们直接在BlueXP中提供了System Manager界面、因此您无需离开BlueXP进行高级管理。
 
 此高级视图可作为Cloud Volumes ONTAP 9.10.0及更高版本的预览版提供。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
 
@@ -189,7 +189,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-
 
 === 支持Amazon EBS弹性卷
 
-Cloud Volumes ONTAP 聚合支持Amazon EBS弹性卷功能、可提高性能并增加容量、同时支持Cloud Manager根据需要自动增加底层磁盘容量。
+通过Cloud Volumes ONTAP 聚合支持Amazon EBS弹性卷功能、可提高性能并增加容量、同时支持BlueXP根据需要自动增加底层磁盘容量。
 
 从_new_ Cloud Volumes ONTAP 9.11.0系统以及GP3和IO1 EBS磁盘类型开始、可支持弹性卷。
 
@@ -202,7 +202,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elas
 "ec2:DescribeVolumesModifications",
 "ec2:ModifyVolume",
 ----
-请务必为您添加到Cloud Manager的每组AWS凭据提供这些权限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看AWS的最新Connector策略"^]。
+请务必为您添加到BlueXP中的每组AWS凭据提供这些权限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看AWS的最新Connector策略"^]。
 
 
 
@@ -216,7 +216,7 @@ link:task-deploy-aws-shared-vpc.html["了解如何在共享子网中部署HA对"
 
 === 使用服务端点时网络访问受限
 
-现在、当使用vNet服务端点在Cloud Volumes ONTAP 和存储帐户之间建立连接时、Cloud Manager会限制网络访问。如果禁用Azure Private Link连接、Cloud Manager将使用服务端点。
+现在、当使用vNet服务端点在Cloud Volumes ONTAP 和存储帐户之间建立连接时、BlueXP会限制网络访问。如果禁用Azure专用链路连接、则BlueXP将使用服务端点。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["了解有关使用Cloud Volumes ONTAP 连接Azure专用链路的更多信息"]。
 
@@ -224,7 +224,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 
 === 支持在Google Cloud中创建Storage VM
 
-从9.11.1版开始、Google Cloud中的Cloud Volumes ONTAP 现在支持多个Storage VM。从此版本的Connector开始、您可以通过Cloud Manager使用API在Google Cloud中的Cloud Volumes ONTAP HA对上创建Storage VM。
+从9.11.1版开始、Google Cloud中的Cloud Volumes ONTAP 现在支持多个Storage VM。从此版本的Connector开始、您可以使用BlueXP在Google Cloud中的Cloud Volumes ONTAP HA对上创建Storage VM。
 
 要支持创建Storage VM、需要为Connector提供新的Google Cloud权限：
 
@@ -249,7 +249,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 
 === Cloud Volumes ONTAP 9.11.0
 
-Cloud Manager现在可以部署和管理Cloud Volumes ONTAP 9.11.0。
+BlueXP现在可以部署和管理Cloud Volumes ONTAP 9.11.0。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
@@ -257,7 +257,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Clou
 
 === 调解器升级增强功能
 
-当Cloud Manager升级HA对的调解器时、它现在会先验证新的调解器映像是否可用、然后再删除启动磁盘。此更改可确保调解器在升级过程失败时能够继续成功运行。
+当BlueXP升级HA对的调解器时、它现在会先验证新的调解器映像是否可用、然后再删除启动磁盘。此更改可确保调解器在升级过程失败时能够继续成功运行。
 
 
 
@@ -265,7 +265,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Clou
 
 先前已弃用K8s选项卡、现已将其删除。如果要将Kubernetes与Cloud Volumes ONTAP 结合使用、可以将受管Kubernetes集群添加到Canvas中、作为一个用于高级数据管理的工作环境。
 
-https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["了解Cloud Manager中的Kubernetes数据管理"^]
+https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["了解BlueXP中的Kubernetes数据管理"^]
 
 
 
@@ -296,9 +296,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 "ec2:DescribePlacementGroups",
 "iam:GetRolePolicy",
 ----
-现在、要优化Cloud Manager创建布局组的方式、需要这些权限。
+现在、要优化BlueXP创建布局组的方式、需要这些权限。
 
-请务必为您添加到Cloud Manager的每组AWS凭据提供这些权限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看AWS的最新Connector策略"^]。
+请务必为您添加到BlueXP中的每组AWS凭据提供这些权限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看AWS的最新Connector策略"^]。
 
 
 
@@ -326,9 +326,9 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 
 === Google Cloud防火墙策略增强功能
 
-* 在Google Cloud中创建Cloud Volumes ONTAP HA对时、Cloud Manager现在将在VPC中显示所有现有防火墙策略。
+* 在Google Cloud中创建Cloud Volumes ONTAP HA对时、BlueXP现在将在VPC中显示所有现有防火墙策略。
 +
-以前、Cloud Manager不会在VPC-1、VPC-2或VPC-3中显示任何没有目标标记的策略。
+以前、BlueXP不会在VPC-1、VPC-2或VPC-3中显示任何没有目标标记的策略。
 
 * 在Google Cloud中创建Cloud Volumes ONTAP 单节点系统时、您现在可以选择是希望预定义的防火墙策略仅允许选定VPC (建议)内的流量、还是允许所有VPC内的流量。
 
@@ -337,7 +337,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 
 === Google Cloud服务帐户增强功能
 
-当您选择要与Cloud Volumes ONTAP 结合使用的Google云服务帐户时、Cloud Manager现在会显示与每个服务帐户关联的电子邮件地址。通过查看电子邮件地址、可以更轻松地区分同名服务帐户。
+当您选择要在Cloud Volumes ONTAP 中使用的Google云服务帐户时、BlueXP现在会显示与每个服务帐户关联的电子邮件地址。通过查看电子邮件地址、可以更轻松地区分同名服务帐户。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["服务帐户字段的屏幕截图"]
 
@@ -391,7 +391,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volu
 如果您已在云市场订阅，则也会自动订阅这些新产品。在部署新的 Cloud Volumes ONTAP 工作环境时，您可以选择按容量收费。
 
 +
-如果您是新客户， Cloud Manager 将在您创建新的工作环境时提示您订阅。
+如果您是新客户、在创建新的工作环境时、BlueXP将提示您订阅。
 
 * 所有云提供商市场的逐节点许可均已弃用、不再适用于新订阅者。其中包括年度合同和每小时订阅（ Explore ， Standard 和 Premium ）。
 +
@@ -467,7 +467,7 @@ endif::azure[]
 
 === 此时将显示充电方法
 
-现在， Cloud Manager 会在 " 画布 " 的右侧面板中显示每个 Cloud Volumes ONTAP 工作环境的充电方法。
+现在、BlueXP会在画布的右侧面板中显示每个Cloud Volumes ONTAP 工作环境的充电方法。
 
 image:screenshot-cvo-charging-method.png["从画布中选择工作环境后，右侧面板上会显示一个屏幕截图，其中显示了 Cloud Volumes ONTAP 工作环境的充电方法。"]
 
@@ -502,7 +502,7 @@ image:screenshot-cvo-create-volume.png["创建新卷时显示 \" 协议 \" 页�
 
 === Cloud Volumes ONTAP 9.10.1
 
-Cloud Manager 现在可以部署和管理 Cloud Volumes ONTAP 9.10.1 。
+BlueXP现在可以部署和管理Cloud Volumes ONTAP 9.10.1。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
@@ -514,10 +514,10 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Clou
 
 Keystone Flex 订阅是一种按需购买，基于订阅的服务，可为优先采用运营支出消费模式而不是前期资本支出或租赁模式的客户提供无缝的混合云体验。
 
-您可以从 Cloud Manager 部署的所有新版本的 Cloud Volumes ONTAP 均支持 Keystone Flex 订阅。
+您可以从BlueXP部署的所有新版本的Cloud Volumes ONTAP 均支持Keystone Flex订阅。
 
 * https://www.netapp.com/services/subscriptions/keystone/flex-subscription/["了解有关 Keystone Flex 订阅的更多信息"^]。
-* link:task-manage-keystone.html["了解如何在 Cloud Manager 中开始使用 Keystone Flex 订阅"]。
+* link:task-manage-keystone.html["了解如何在BlueXP中开始使用Keystone Flex订阅"]。
 
 
 ifdef::aws[]
@@ -552,7 +552,7 @@ endif::azure[]
 
 === Cloud Volumes ONTAP 9.10.0
 
-Cloud Manager 现在可以部署和管理 Cloud Volumes ONTAP 9.10.0 。
+BlueXP现在可以部署和管理Cloud Volumes ONTAP 9.10.0。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-9100-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
@@ -571,7 +571,7 @@ ifdef::azure[]
 数据会使用在 Azure 中的 Cloud Volumes ONTAP 上自动加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 存储服务加密"^] 使用 Microsoft 管理的密钥。但是，您现在可以通过完成以下步骤来使用自己的客户管理的加密密钥：
 
 . 从 Azure 创建密钥存储，然后在该存储中生成密钥。
-. 在 Cloud Manager 中，使用 API 创建使用密钥的 Cloud Volumes ONTAP 工作环境。
+. 在BlueXP中、使用API创建使用密钥的Cloud Volumes ONTAP 工作环境。
 
 
 link:task-set-up-azure-encryption.html["详细了解这些步骤"]。
@@ -631,26 +631,26 @@ ifdef::azure[]
 
 image:screenshot_azure_resource_group.png["创建工作环境向导的屏幕截图，您可以在其中选择现有资源组。"]
 
-在部署失败或删除时， Cloud Manager 可以通过以下权限从资源组中删除 Cloud Volumes ONTAP 资源：
+在部署失败或删除时、通过以下权限、BlueXP可以从资源组中删除Cloud Volumes ONTAP 资源：
 
 [source, json]
 ----
 "Microsoft.Network/privateEndpoints/delete",
 "Microsoft.Compute/availabilitySets/delete",
 ----
-请务必为您添加到 Cloud Manager 的每组 Azure 凭据提供这些权限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["查看Azure的最新Connector策略"^]。
+请务必为您添加到BlueXP中的每组Azure凭据提供这些权限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["查看Azure的最新Connector策略"^]。
 
 
 
 === Blob 公有 访问现在在 Azure 中已禁用
 
-作为一项安全增强功能， Cloud Manager 现在可在为 Cloud Volumes ONTAP 创建存储帐户时禁用 * Blob 公有访问 * 。
+作为一项安全增强功能、在为Cloud Volumes ONTAP 创建存储帐户时、BlueXP现在会禁用* Blob公有 访问*。
 
 
 
 === Azure Private Link 增强功能
 
-默认情况下， Cloud Manager 现在可在新 Cloud Volumes ONTAP 系统的启动诊断存储帐户上启用 Azure 专用链路连接。
+默认情况下、BlueXP现在可在新Cloud Volumes ONTAP 系统的启动诊断存储帐户上启用Azure专用链路连接。
 
 这意味着 Cloud Volumes ONTAP 的 _all_ 存储帐户现在将使用专用链接。
 
@@ -702,7 +702,7 @@ ifdef::aws[]
 
 === AWS 中 EBS 卷上的标记
 
-现在， Cloud Manager 可在创建新的 Cloud Volumes ONTAP 工作环境时向 EBS 卷添加标记。这些标记先前是在部署 Cloud Volumes ONTAP 后创建的。
+现在、当BlueXP创建新的Cloud Volumes ONTAP 工作环境时、它会向EBS卷添加标记。这些标记先前是在部署 Cloud Volumes ONTAP 后创建的。
 
 如果您的组织使用服务控制策略（ Service Control Policies ， SCP ）来管理权限，此更改将很有帮助。
 
@@ -720,13 +720,13 @@ link:task-tiering.html#changing-the-cooling-period-for-the-auto-tiering-policy["
 
 === 自定义导出策略的增强功能
 
-现在，在创建新 NFS 卷时， Cloud Manager 会按升序显示自定义导出策略，以便于您查找所需的导出策略。
+在创建新NFS卷时、BlueXP现在会按升序显示自定义导出策略、从而使您可以更轻松地找到所需的导出策略。
 
 
 
 === 删除旧的云快照
 
-现在， Cloud Manager 会删除在部署 Cloud Volumes ONTAP 系统以及每次关闭系统时创建的根磁盘和启动磁盘的旧云快照。对于根卷和启动卷，只会保留两个最新的快照。
+现在、BlueXP将删除在部署Cloud Volumes ONTAP 系统以及每次关闭系统时创建的根磁盘和启动磁盘的旧云快照。对于根卷和启动卷，只会保留两个最新的快照。
 
 此增强功能可通过删除不再需要的快照来帮助降低云提供商成本。
 
@@ -748,7 +748,7 @@ endif::azure[]
 
 === Cloud Volumes ONTAP 9.9.1
 
-Cloud Manager 现在可以部署和管理 Cloud Volumes ONTAP 9.1.1 。
+BlueXP现在可以部署和管理Cloud Volumes ONTAP 9.1.1。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-991-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
@@ -762,7 +762,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-991-relnotes["了解此版本 
 
 === 逻辑空间报告
 
-现在， Cloud Manager 可以对为 Cloud Volumes ONTAP 创建的初始 Storage VM 进行逻辑空间报告。
+现在、BlueXP可以对其为Cloud Volumes ONTAP 创建的初始Storage VM进行逻辑空间报告。
 
 如果以逻辑方式报告空间，则 ONTAP 会报告卷空间，以便存储效率功能节省的所有物理空间也会报告为已用空间。
 
@@ -790,7 +790,7 @@ ifdef::azure[]
 
 === 适用于 Azure 存储帐户的 TLS 1.2
 
-当 Cloud Manager 在 Azure for Cloud Volumes ONTAP 中创建存储帐户时，存储帐户的 TLS 版本现在为 1.2 版。
+当BlueXP在Azure for Cloud Volumes ONTAP 中创建存储帐户时、存储帐户的TLS版本现在为1.2版。
 
 endif::azure[]
 
@@ -804,7 +804,7 @@ endif::azure[]
 
 === Cloud Volumes ONTAP 9.9.0
 
-Cloud Manager 现在可以部署和管理 Cloud Volumes ONTAP 9.0.0 。
+BlueXP现在可以部署和管理Cloud Volumes ONTAP 9.0.0。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-990-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
@@ -822,7 +822,7 @@ link:task-getting-started-aws-c2s.html["了解如何开始使用 C2S"]。
 
 === 使用客户管理的 CMK 进行 AWS 加密
 
-Cloud Manager 始终支持您使用 AWS 密钥管理服务（ KMS ）对 Cloud Volumes ONTAP 数据进行加密。从 Cloud Volumes ONTAP 9.0.0 开始，如果选择客户管理的 CMK ， EBS 磁盘上的数据以及分层到 S3 的数据将被加密。以前，只会对 EBS 数据进行加密。
+BlueXP始终支持您使用AWS密钥管理服务(KMS)对Cloud Volumes ONTAP 数据进行加密。从 Cloud Volumes ONTAP 9.0.0 开始，如果选择客户管理的 CMK ， EBS 磁盘上的数据以及分层到 S3 的数据将被加密。以前，只会对 EBS 数据进行加密。
 
 请注意，您需要为 Cloud Volumes ONTAP IAM 角色提供访问权限才能使用 CMK 。
 
@@ -872,7 +872,7 @@ ifdef::aws[]
 
 === AWS 前哨
 
-几个月前，我们宣布 Cloud Volumes ONTAP 已获得 Amazon Web Services （ AWS ）前台就绪称号。今天，我们很高兴地宣布，我们已经通过 AWS 前台验证了 Cloud Manager 和 Cloud Volumes ONTAP 。
+几个月前，我们宣布 Cloud Volumes ONTAP 已获得 Amazon Web Services （ AWS ）前台就绪称号。今天、我们很高兴地宣布、我们已通过AWS前台验证了BlueXP和Cloud Volumes ONTAP。
 
 如果您有 AWS 前台，则可以通过在 " 工作环境 " 向导中选择前台 VPC 来在该前台部署 Cloud Volumes ONTAP 。体验与 AWS 中的任何其他 VPC 相同。请注意，您需要先在 AWS 前台部署 Connector 。
 
@@ -899,7 +899,7 @@ VNVRAM 可提高写入性能。
 
 === 选择 Azure 中的可用性区域
 
-现在，您可以选择要在其中部署单节点 Cloud Volumes ONTAP 系统的可用性区域。如果不选择 AZ ， Cloud Manager 将为您选择一个。
+现在，您可以选择要在其中部署单节点 Cloud Volumes ONTAP 系统的可用性区域。如果不选择AZ、BlueXP将为您选择一个。
 
 image:screenshot_azure_az.gif["选择区域后提供的可用性区域下拉列表的屏幕截图。"]
 
@@ -941,7 +941,7 @@ ifdef::azure[]
 
 === 适用于 Cloud Volumes ONTAP 的 Azure 专用链路
 
-默认情况下， Cloud Manager 现在可在 Cloud Volumes ONTAP 及其关联存储帐户之间启用 Azure 专用链路连接。专用链路可确保 Azure 中端点之间的连接安全。
+默认情况下、BlueXP现在可在Cloud Volumes ONTAP 及其关联存储帐户之间启用Azure专用链路连接。专用链路可确保 Azure 中端点之间的连接安全。
 
 * https://docs.microsoft.com/en-us/azure/private-link/private-link-overview["了解有关 Azure 专用链接的更多信息"^]
 * link:task-enabling-private-link.html["了解有关将 Azure 专用链路与 Cloud Volumes ONTAP 结合使用的更多信息"]

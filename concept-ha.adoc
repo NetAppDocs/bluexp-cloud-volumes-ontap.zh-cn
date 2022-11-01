@@ -41,8 +41,8 @@ Disks:: 一个 EBS 磁性磁盘，大约为 8 GiB 。
 NOTE: 对于 Cloud Volumes ONTAP 9.10.0 及更早版本，在调解器上安装了 Debian 10 。
 
 --
-升级:: 升级 Cloud Volumes ONTAP 时， Cloud Manager 还会根据需要更新调解器实例。
-对实例的访问:: 从 Cloud Manager 创建 Cloud Volumes ONTAP HA 对时，系统会提示您为调解器实例提供一个密钥对。您可以使用 `admin` user 使用该密钥对进行 SSH 访问。
+升级:: 升级Cloud Volumes ONTAP 时、BlueXP还会根据需要更新调解器实例。
+对实例的访问:: 从BlueXP创建Cloud Volumes ONTAP HA对时、系统会提示您为调解器实例提供一个密钥对。您可以使用该密钥对进行SSH访问 `admin` 用户。
 第三方代理:: 此调解器实例不支持第三方代理或 VM 扩展。
 
 
@@ -86,7 +86,7 @@ HA 配置可保持数据的高可用性，如下所示：
 
 如果无法设置传输网关，则 VPC 外部的 NAS 客户端可以使用专用 IP 地址。但是，这些 IP 地址是静态的，无法在节点之间进行故障转移。
 
-在跨多个可用性区域部署 HA 配置之前，应先检查浮动 IP 地址和路由表的要求。部署配置时，必须指定浮动 IP 地址。私有 IP 地址由 Cloud Manager 自动创建。
+在跨多个可用性区域部署 HA 配置之前，应先检查浮动 IP 地址和路由表的要求。部署配置时，必须指定浮动 IP 地址。专用IP地址由BlueXP自动创建。
 
 有关详细信息，请参见 link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["适用于多个 AWS 中的 Cloud Volumes ONTAP HA 的 AWS 网络要求"]。
 
@@ -117,7 +117,7 @@ image:diagram_takeover_giveback.png["在 Cloud Volumes ONTAP HA 对中显示存�
 
 故障节点重新联机后、使用原始 IP 地址将客户端重新装入卷。需要执行此步骤以避免在两个 HA 节点之间传输不必要的数据、这可能会对性能和稳定性造成重大影响。
 
-通过选择卷并单击 * 挂载命令 * ，您可以从 Cloud Manager 轻松识别正确的 IP 地址。
+通过选择卷并单击*挂载命令*、您可以从BlueXP轻松识别正确的IP地址。
 
 
 
@@ -126,7 +126,7 @@ image:diagram_takeover_giveback.png["在 Cloud Volumes ONTAP HA 对中显示存�
 如果运行 Cloud Volumes ONTAP 节点的实例出现故障、在单可用性区域 (AZ) 中部署 HA 配置可以确保数据的高可用性。所有数据均可从 VPC 外部本地访问。
 
 
-NOTE: Cloud Manager 将创建 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 分布放置组"^] 并启动该放置组中的两个 HA 节点。放置组通过将实例分散在不同的底层硬件上，降低同时发生故障的风险。此功能可从计算角度而不是从磁盘故障角度提高冗余。
+NOTE: BlueXP会创建 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 分布放置组"^] 并启动该放置组中的两个 HA 节点。放置组通过将实例分散在不同的底层硬件上，降低同时发生故障的风险。此功能可从计算角度而不是从磁盘故障角度提高冗余。
 
 
 
@@ -159,7 +159,7 @@ NOTE: 有关哪些特定主机配置支持 ALUA 的信息，请参见 http://mys
 
 === 存储分配
 
-创建新卷并需要附加磁盘时、 Cloud Manager 会为两个节点分配相同数量的磁盘、创建镜像聚合、然后创建新卷。例如，如果卷需要两个磁盘、则 Cloud Manager 会为每个节点分配两个磁盘、总共四个磁盘。
+创建新卷时、如果需要更多磁盘、则BlueXP会将相同数量的磁盘分配给两个节点、创建镜像聚合、然后创建新卷。例如、如果卷需要两个磁盘、则BlueXP会为每个节点分配两个磁盘、总共分配四个磁盘。
 
 
 
@@ -168,7 +168,7 @@ NOTE: 有关哪些特定主机配置支持 ALUA 的信息，请参见 http://mys
 您可以将 HA 对用作主动 - 主动配置、两个节点都将数据提供给客户端、也可以用作主动 - 被动配置、仅当被动节点接管了主动节点的存储时才响应数据请求。
 
 
-NOTE: 仅当在存储系统视图中使用 Cloud Manager 时，您才可以设置主动 - 主动配置。
+NOTE: 只有在存储系统视图中使用BlueXP时、才能设置主动-主动配置。
 
 
 
@@ -191,6 +191,6 @@ Cloud Volumes ONTAP HA 配置可同步复制节点之间的数据、从而消耗
 
 TIP: 如果在 HA 对中的节点之间移动卷、则应使用其他节点的 IP 地址重新装入卷。否则，您可能会遇到性能降低的问题。如果客户机支持 NFSv4 引用或 CIFS 文件夹重定向、则可以在 Cloud Volumes ONTAP 系统上启用这些功能以避免重新装入卷。有关详细信息，请参见 ONTAP 文档。
 
-您可以从 Cloud Manager 轻松确定正确的 IP 地址。
+您可以从BlueXP轻松识别正确的IP地址：
 
 image:screenshot_mount.gif["屏幕抓图：显示选择卷时可用的挂载命令。"]

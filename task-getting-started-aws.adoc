@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-getting-started-aws.html 
-keywords: amazon web services, aws, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, vpc, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, cloud central, get started, network, vpn, multi-cloud, tier, tiering, storage tier, data tier, vpc endpoint, endpoint, S3, subscribe, subscribing, marketplace, granting, permissions, policy, iam policy, ec2 console, ami, mediator, connectivity, internet, outbound, endpoint, connection, networks, replicating, ec2 service, policies, attach, iam user, access key, secret key, keys, sign up, cloud manager, cloud volumes ontap, cloud ontap, create 
+keywords: amazon web services, aws, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, vpc, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, cloud central, get started, network, vpn, multi-cloud, tier, tiering, storage tier, data tier, vpc endpoint, endpoint, S3, subscribe, subscribing, marketplace, granting, permissions, policy, iam policy, ec2 console, ami, mediator, connectivity, internet, outbound, endpoint, connection, networks, replicating, ec2 service, policies, attach, iam user, access key, secret key, keys, sign up, cloud manager, BlueXP, cloud volumes ontap, cloud ontap, create 
 summary: 只需几步即可开始使用适用于 AWS 的 Cloud Volumes ONTAP 。 
 ---
 = 在 AWS 中快速启动 Cloud Volumes ONTAP
@@ -20,10 +20,10 @@ summary: 只需几步即可开始使用适用于 AWS 的 Cloud Volumes ONTAP 。
 如果您没有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["了解如何在 AWS 中创建连接器"^]。
 
 [role="quick-margin-para"]
-在创建首个 Cloud Volumes ONTAP 工作环境时，如果尚未部署 Connector ，则 Cloud Manager 会提示您部署一个。
+在创建首个Cloud Volumes ONTAP 工作环境时、如果尚未部署Connector、BlueXP (以前称为Cloud Manager)会提示您部署一个。
 
 [role="quick-margin-para"]
-Cloud Manager 可提供符合您的工作负载要求的预配置软件包，您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。 link:task-planning-your-config.html["了解更多信息。"]。
+BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。 link:task-planning-your-config.html["了解更多信息。"]。
 
 .跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt-Three "></span> 设置您的网络连接
 . 确保您的 VPC 和子网支持连接器和 Cloud Volumes ONTAP 之间的连接。
@@ -47,8 +47,8 @@ link:reference-networking-aws.html["详细了解网络要求"]。
 单击 * 添加工作环境 * ，选择要部署的系统类型，然后完成向导中的步骤。 link:task-deploying-otc-aws.html["阅读分步说明"]。
 
 .相关链接
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["使用 Cloud Manager 创建连接器"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["从BlueXP创建连接器"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html["从 AWS Marketplace 启动 Connector"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在 Linux 主机上安装 Connector 软件"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Cloud Manager 如何使用 AWS 权限"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["BlueXP对AWS权限的作用"^]
 

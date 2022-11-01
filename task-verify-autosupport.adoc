@@ -30,7 +30,7 @@ Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、
 * https://support.netapp.com/asupprod/post/1.0/postAsup
 
 
-如果出站Internet连接不可用于发送AutoSupport 消息、则Cloud Manager会自动将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
+如果无法通过出站Internet连接发送AutoSupport 消息、则BlueXP会自动将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
 
 如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。
 
@@ -40,7 +40,7 @@ Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、
 
 == 对AutoSupport 配置进行故障排除
 
-如果出站连接不可用、并且Cloud Manager无法将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器、则您将从Cloud Manager收到一条通知、标题为"<工作环境名称>无法发送AutoSupport 消息"。
+如果出站连接不可用、并且BlueXP无法将您的Cloud Volumes ONTAP 系统配置为使用此连接器作为代理服务器、您将从BlueXP收到一条通知、标题为"<工作环境名称>无法发送AutoSupport 消息"。
 
 您很可能会因为网络问题而收到此消息。
 

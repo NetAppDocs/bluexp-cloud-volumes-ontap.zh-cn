@@ -17,9 +17,9 @@ summary: 如果 HA 对中的某个节点不可用，则另一个节点将为其�
 如果 HA 对中的某个节点不可用，则另一个节点将为其配对节点提供数据，以提供持续的数据服务。这称为 _storage takeover_ 。在存储交还完成之前，无法执行多项操作。
 
 
-TIP: 如果 HA 对中的节点不可用，则 Cloud Manager 中工作环境的状态为 _Degraded_.
+TIP: 如果HA对中的节点不可用、则BlueXP中工作环境的状态为_Degraded_.
 
-在存储接管期间， Cloud Manager 无法执行以下操作：
+无法从BlueXP存储接管执行以下操作：
 
 * 支持注册
 * 许可证更改

@@ -30,7 +30,7 @@ image:diagram-aws-vpc-sharing.png["共享VPC中Cloud Volumes ONTAP HA部署的�
 
 如以下步骤所述、您需要与参与者帐户共享子网、然后在VPC所有者帐户中创建IAM角色和安全组。
 
-创建Cloud Volumes ONTAP 工作环境时、Cloud Manager会自动创建IAM角色并将其附加到调解器。此角色将承担您在VPC所有者帐户中创建的IAM角色、以便更改与HA对关联的路由表。
+创建Cloud Volumes ONTAP 工作环境时、BlueXP会自动创建IAM角色并将其附加到调解器。此角色将承担您在VPC所有者帐户中创建的IAM角色、以便更改与HA对关联的路由表。
 
 .步骤
 . 与参与者帐户共享VPC所有者帐户中的子网。
@@ -42,7 +42,7 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-sh
 
 . 在VPC所有者帐户中、为Cloud Volumes ONTAP 创建一个安全组。
 +
-link:reference-security-groups.html["请参见Cloud Volumes ONTAP 的安全组规则"]。请注意、您不需要为HA调解器创建安全组。云管理器可以为您提供这种功能。
+link:reference-security-groups.html["请参见Cloud Volumes ONTAP 的安全组规则"]。请注意、您不需要为HA调解器创建安全组。BlueXP可以为您提供这种服务。
 
 . 在VPC所有者帐户中、创建一个包含以下权限的IAM角色：
 +
@@ -58,7 +58,7 @@ Action": [
                 "ec2:ReplaceRoute",
                 "ec2:UnassignPrivateIpAddresses"
 ----
-. 使用Cloud Manager API创建新的Cloud Volumes ONTAP 工作环境。
+. 使用BlueXP API创建新的Cloud Volumes ONTAP 工作环境。
 +
 请注意、您必须指定以下字段：
 

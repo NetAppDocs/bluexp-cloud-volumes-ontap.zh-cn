@@ -4,7 +4,7 @@ permalink: task-managing-svms.html
 keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported 
 summary: Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其视为 SVM 或 SVM 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但某些配置支持额外的 Storage VM 。 
 ---
-= 在 Cloud Manager 中管理 Storage VM
+= 在BlueXP中管理Storage VM
 :toc: macro
 :hardbreaks:
 :allow-uri-read: 
@@ -29,7 +29,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 == 使用多个 Storage VM
 
-Cloud Manager 支持您通过 System Manager 或 CLI 创建的任何其他 Storage VM 。
+BlueXP支持您通过System Manager或CLI创建的任何其他Storage VM。
 
 例如，下图显示了在创建卷时如何选择 Storage VM 。
 
@@ -43,9 +43,9 @@ image:screenshot_replicate_volume_svm.gif["屏幕截图显示了选择要复制�
 
 == 修改默认 Storage VM 的名称
 
-Cloud Manager 会自动为其为 Cloud Volumes ONTAP 创建的单个 Storage VM 命名。如果具有严格的命名标准，则可以修改 Storage VM 的名称。例如，您可能希望此名称与您为 ONTAP 集群命名 Storage VM 的方式一致。
+BlueXP会自动为其为Cloud Volumes ONTAP 创建的单个Storage VM命名。如果具有严格的命名标准，则可以修改 Storage VM 的名称。例如，您可能希望此名称与您为 ONTAP 集群命名 Storage VM 的方式一致。
 
-如果您为 Cloud Volumes ONTAP 创建了任何其他 Storage VM ，则不能从 Cloud Manager 重命名这些 Storage VM 。您需要使用 System Manager 或命令行界面直接从 Cloud Volumes ONTAP 执行此操作。
+如果您为Cloud Volumes ONTAP 创建了任何其他Storage VM、则不能从BlueXP重命名这些Storage VM。您需要使用 System Manager 或命令行界面直接从 Cloud Volumes ONTAP 执行此操作。
 
 .步骤
 . 在工作环境中，单击菜单图标，然后单击 * 信息 * 。
@@ -60,7 +60,7 @@ image:screenshot_svm.gif["屏幕抓图：显示 SVM 名称字段和必须单击�
 
 == 管理用于灾难恢复的 Storage VM
 
-Cloud Manager 不为 Storage VM 灾难恢复提供任何设置或编排支持。您必须使用 System Manager 或 CLI 。
+BlueXP不为Storage VM灾难恢复提供任何设置或编排支持。您必须使用 System Manager 或 CLI 。
 
 * https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["《 SVM 灾难恢复准备快速指南》"^]
 * https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["《 SVM 灾难恢复快速指南》"^]

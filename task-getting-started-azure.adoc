@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-getting-started-azure.html 
-keywords: microsoft, azure, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, marketplace, virtual machine, vnet, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, cloud central, permissions, custom role, role, json, permissions, virtual machine, video, connectivity, internet, outbound, endpoint, connection, networks, vpn, replicating, policy, iam, setupasservice, sign up, cloud manager, cloud volumes ontap, cloud ontap, subscription, create 
+keywords: microsoft, azure, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, marketplace, virtual machine, vnet, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, cloud central, permissions, custom role, role, json, permissions, virtual machine, video, connectivity, internet, outbound, endpoint, connection, networks, vpn, replicating, policy, iam, setupasservice, sign up, cloud manager, BlueXP, cloud volumes ontap, cloud ontap, subscription, create 
 summary: 只需几步即可开始使用适用于 Azure 的 Cloud Volumes ONTAP 。 
 ---
 = 在 Azure 中快速启动 Cloud Volumes ONTAP
@@ -20,10 +20,10 @@ summary: 只需几步即可开始使用适用于 Azure 的 Cloud Volumes ONTAP �
 如果您没有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["了解如何在 Azure 中创建 Connector"^]。
 
 [role="quick-margin-para"]
-在创建首个 Cloud Volumes ONTAP 工作环境时，如果尚未部署 Connector ，则 Cloud Manager 会提示您部署一个。
+在创建首个Cloud Volumes ONTAP 工作环境时、如果尚未部署Connector、BlueXP (以前称为Cloud Manager)会提示您部署一个。
 
 [role="quick-margin-para"]
-Cloud Manager 可提供符合您的工作负载要求的预配置软件包，您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。 link:task-planning-your-config-azure.html["了解更多信息。"]。
+BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。 link:task-planning-your-config-azure.html["了解更多信息。"]。
 
 .跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt-Three "></span> 设置您的网络连接
 . 确保您的 vNet 和子网支持连接器和 Cloud Volumes ONTAP 之间的连接。
@@ -40,8 +40,8 @@ link:reference-networking-azure.html["详细了解网络要求"]。
 单击 * 添加工作环境 * ，选择要部署的系统类型，然后完成向导中的步骤。 link:task-deploying-otc-azure.html["阅读分步说明"]。
 
 .相关链接
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["使用 Cloud Manager 创建连接器"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["从BlueXP创建连接器"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-azure-mktp.html["从 Azure Marketplace 创建 Connector"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在 Linux 主机上安装 Connector 软件"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Cloud Manager 对权限的作用"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["BlueXP对权限执行的操作"^]
 

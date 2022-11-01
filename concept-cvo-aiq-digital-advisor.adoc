@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-cvo-aiq-digital-advisor.html 
 keywords: concepts, active iq digital advisor, cloud volumes ontap 
-summary: Active IQ 数字顾问集成在 Cloud Manager UI 中，因此您可以在一个管理平台中优化 ONTAP 集群的操作，安全性和性能。 
+summary: Active IQ 数字顾问集成在BlueXP用户界面中、因此您可以在一个管理平台中优化ONTAP 集群的操作、安全性和性能。 
 ---
 = 使用 Active IQ 数字顾问优化 Cloud Volumes ONTAP 系统
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Active IQ 数字顾问集成在 Cloud Manager UI 中，因此您可以�
 
 
 [role="lead"]
-https://www.netapp.com/services/support/active-iq/["Active IQ 数字顾问"] 集成到 Cloud Manager UI 中，以便您可以在一个管理平台中优化 Cloud Volumes ONTAP 系统的操作，安全性和性能。
+https://www.netapp.com/services/support/active-iq/["Active IQ 数字顾问"] 集成到BlueXP (以前称为Cloud Manager) UI中、以便您可以在一个管理平台中优化Cloud Volumes ONTAP 系统的操作、安全性和性能。
 
 
 
@@ -38,21 +38,21 @@ Active IQ 数字顾问可提供有关您的 NSS 帐户中所有内部 ONTAP 系�
 
 == 成本
 
-通过 Cloud Manager 使用此服务无需任何成本。
+通过BlueXP免费使用此服务。
 
 
 
-== Active IQ 数字顾问如何与 Cloud Manager 配合使用
+== Active IQ 数字顾问如何与BlueXP配合使用
 
-Active IQ 数字顾问用户界面完全集成在 Cloud Manager 中。
+Active IQ 数字顾问用户界面完全集成在BlueXP中。
 
-在云管理器中，单击 * Active IQ * 服务。
+在BlueXP中、单击* Active IQ *服务。
 
-* 如果您已经在 Cloud Manager 中注册了现有的 NSS 帐户，则 Active IQ 数字顾问用户界面就像您在中的独立实施中看到的一样 https://activeiq.netapp.com/[]。
+* 如果您已在BlueXP中注册了现有的NSS帐户、则Active IQ 数字顾问用户界面就像您在中的独立实施中看到的一样 https://activeiq.netapp.com/[]。
 +
-image:screenshot_aiq_digital_advisor.png["Cloud Manager 中 Active IQ 数字顾问用户界面的屏幕截图。"]
+image:screenshot_aiq_digital_advisor.png["BlueXP中Active IQ 数字顾问用户界面的屏幕截图。"]
 
-* 如果您尚未在 Cloud Manager 中注册 NSS 帐户， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["立即注册 NSS 帐户"^] 然后，将显示 Active IQ 数字顾问用户界面。
+* 如果您尚未在BlueXP中注册NSS帐户、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["立即注册 NSS 帐户"^] 然后，将显示 Active IQ Digital Advisor 用户界面。
 
 
 

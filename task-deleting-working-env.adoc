@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deleting-working-env.html 
 keywords: terminate, delete, working environment, remove, terminate working environment, terminate instance, delete cloud volumes ontap, delete instance, delete working environment, delete backups 
-summary: 您应始终从 Cloud Manager 中删除 Cloud Volumes ONTAP 系统，而不是从云提供商的控制台删除。例如，如果您从云提供商终止了已获得许可的 Cloud Volumes ONTAP 实例，则不能将此许可证密钥用于其他实例。您必须从 Cloud Manager 中删除工作环境才能发布许可证。 
+summary: 您应始终从BlueXP中删除Cloud Volumes ONTAP 系统、而不是从云提供商的控制台中删除。例如，如果您从云提供商终止了已获得许可的 Cloud Volumes ONTAP 实例，则不能将此许可证密钥用于其他实例。要释放许可证、您必须从BlueXP中删除工作环境。 
 ---
 = 删除 Cloud Volumes ONTAP 系统
 :hardbreaks:
@@ -14,25 +14,23 @@ summary: 您应始终从 Cloud Manager 中删除 Cloud Volumes ONTAP 系统，�
 
 
 [role="lead"]
-您应始终从 Cloud Manager 中删除 Cloud Volumes ONTAP 系统，而不是从云提供商的控制台删除。例如，如果您从云提供商终止了已获得许可的 Cloud Volumes ONTAP 实例，则不能将此许可证密钥用于其他实例。您必须从 Cloud Manager 中删除工作环境才能发布许可证。
+您应始终从BlueXP中删除Cloud Volumes ONTAP 系统、而不是从云提供商的控制台中删除。例如，如果您从云提供商终止了已获得许可的 Cloud Volumes ONTAP 实例，则不能将此许可证密钥用于其他实例。要释放许可证、您必须从BlueXP中删除工作环境。
 
-删除工作环境后， Cloud Manager 将终止 Cloud Volumes ONTAP 实例并删除磁盘和快照。
+删除工作环境后、BlueXP将终止Cloud Volumes ONTAP 实例并删除磁盘和快照。
 
 删除工作环境时，不会删除由 Cloud Backup 备份和 Cloud Data Asense and Monitoring 实例等其他服务管理的资源。您需要手动自行删除它们。否则，您将继续收到这些资源的费用。
 
 
-NOTE: 当 Cloud Manager 在云提供商中部署 Cloud Volumes ONTAP 时，它会对实例启用终止保护。此选项有助于防止意外终止。
+NOTE: 当BlueXP在您的云提供商中部署Cloud Volumes ONTAP 时、它会对实例启用终止保护。此选项有助于防止意外终止。
 
 .步骤
 . 如果您在工作环境中启用了 Cloud Backup ，请确定是否仍需要备份的数据，然后再执行此操作 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-backups["如有必要，删除备份"^]。
 +
 Cloud Backup 在设计上独立于 Cloud Volumes ONTAP 。删除 Cloud Volumes ONTAP 系统时， Cloud Backup 不会自动删除备份，并且当前 UI 不支持在删除系统后删除这些备份。
 
-. 如果在此工作环境中启用了 Cloud Data sense 或 Monitoring ，并且任何其他工作环境都不使用这些服务，则需要删除这些服务的实例。
+. 如果您在此工作环境中启用了Cloud Data sense、并且没有其他工作环境使用此服务、则需要删除此服务的实例。
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#the-cloud-data-sense-instance["详细了解 Cloud Data sense 实例"^]。
-** https://docs.netapp.com/us-en/cloud-manager-monitoring/concept-monitoring.html#the-acquisition-unit["了解有关监控采集单元的更多信息"^]。
-
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#the-cloud-data-sense-instance["详细了解 Cloud Data sense 实例"^]。
 
 . 删除 Cloud Volumes ONTAP 工作环境。
 +

@@ -76,7 +76,7 @@ GCP 磁盘类型:: 在为 Cloud Volumes ONTAP 创建卷时，您需要选择 Clo
 
 
 --
-GCP 磁盘大小:: 部署 Cloud Volumes ONTAP 系统时，您需要选择初始磁盘大小。之后，您可以让 Cloud Manager 为您管理系统的容量，但如果您要自行构建聚合，请注意以下事项：
+GCP 磁盘大小:: 部署 Cloud Volumes ONTAP 系统时，您需要选择初始磁盘大小。之后、您可以让BlueXP为您管理系统的容量、但如果您要自行构建聚合、请注意以下事项：
 +
 --
 * 聚合中的所有磁盘大小必须相同。
@@ -99,7 +99,7 @@ GCP 磁盘大小:: 部署 Cloud Volumes ONTAP 系统时，您需要选择初始�
 
 == 查看默认系统磁盘
 
-除了用户数据存储之外， Cloud Manager 还为 Cloud Volumes ONTAP 系统数据（启动数据，根数据，核心数据和 NVRAM ）购买云存储。出于规划目的，在部署 Cloud Volumes ONTAP 之前查看这些详细信息可能会有所帮助。
+除了用户数据存储之外、BlueXP还为Cloud Volumes ONTAP 系统数据(启动数据、根数据、核心数据和NVRAM)购买云存储。出于规划目的，在部署 Cloud Volumes ONTAP 之前查看这些详细信息可能会有所帮助。
 
 * link:reference-default-configs.html#google-cloud-single-node["在 Google Cloud 中查看 Cloud Volumes ONTAP 系统数据的默认磁盘"]。
 * https://cloud.google.com/compute/quotas["Google Cloud 文档：资源配额"^]
@@ -202,13 +202,13 @@ TIP: 此连接器还需要一个系统磁盘。 https://docs.netapp.com/us-en/cl
 
 == 选择写入速度
 
-您可以通过 Cloud Manager 为 Cloud Volumes ONTAP 选择写入速度设置，但 Google Cloud 中的高可用性（ HA ）对除外。在选择写入速度之前、您应该了解正常和高设置之间的差异、以及使用高速写入速度时的风险和建议。 link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
+您可以通过BlueXP为Cloud Volumes ONTAP 选择写入速度设置、但Google Cloud中的高可用性(HA)对除外。在选择写入速度之前、您应该了解正常和高设置之间的差异、以及使用高速写入速度时的风险和建议。 link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
 
 
 
 == 选择卷使用情况配置文件
 
-ONTAP 包含多种存储效率功能、可以减少您所需的存储总量。在 Cloud Manager 中创建卷时，您可以选择启用这些功能的配置文件或禁用这些功能的配置文件。您应该了解有关这些功能的更多信息、以帮助您确定要使用的配置文件。
+ONTAP 包含多种存储效率功能、可以减少您所需的存储总量。在BlueXP中创建卷时、您可以选择启用这些功能的配置文件或禁用这些功能的配置文件。您应该了解有关这些功能的更多信息、以帮助您确定要使用的配置文件。
 
 NetApp 存储效率功能具有以下优势：
 

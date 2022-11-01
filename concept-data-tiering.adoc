@@ -40,9 +40,9 @@ ifdef::aws[]
 Capacity tier:: Cloud Volumes ONTAP 系统会将非活动数据分层到一个S3存储分段。
 +
 --
-Cloud Manager 会为每个工作环境创建一个 S3 存储分段，并将其命名为 fabric-pool-_cluster unique identifier_ 。不会为每个卷创建不同的 S3 存储分段。
+BlueXP会为每个工作环境创建一个S3存储分段、并将其命名为fabric-pool-_cluster unique identifier_。不会为每个卷创建不同的 S3 存储分段。
 
-当Cloud Manager创建S3存储分段时、它会使用以下默认设置：
+当BlueXP创建S3存储分段时、它会使用以下默认设置：
 
 * 存储类：标准
 * 默认加密：已禁用
@@ -81,9 +81,9 @@ ifdef::azure[]
 Capacity tier:: Cloud Volumes ONTAP 系统会将非活动数据分层到一个Blob容器中。
 +
 --
-Cloud Manager会为每个Cloud Volumes ONTAP 工作环境创建一个包含容器的新存储帐户。存储帐户的名称是随机的。不会为每个卷创建不同的容器。
+BlueXP会为每个Cloud Volumes ONTAP 工作环境创建一个包含容器的新存储帐户。存储帐户的名称是随机的。不会为每个卷创建不同的容器。
 
-Cloud Manager将使用以下设置创建存储帐户：
+BlueXP将使用以下设置创建存储帐户：
 
 * 访问层：热
 * 性能：标准
@@ -124,9 +124,9 @@ ifdef::gcp[]
 Capacity tier:: Cloud Volumes ONTAP 系统将非活动数据分层到一个Google云存储分段。
 +
 --
-Cloud Manager会为每个工作环境创建一个分段、并将其命名为fabric-pool-_cluster unique identifier_。不会为每个卷创建不同的存储分段。
+BlueXP会为每个工作环境创建一个分段、并将其命名为fabric-pool-_cluster unique identifier_。不会为每个卷创建不同的存储分段。
 
-Cloud Manager创建存储分段时、将使用以下默认设置：
+在BlueXP创建存储分段时、它会使用以下默认设置：
 
 * 位置类型：区域
 * 存储类：标准
@@ -168,7 +168,7 @@ endif::gcp[]
 
 TIP: 您可以将最小冷却期和默认聚合阈值更改为 50% （下文将提供更多信息）。 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-AD522711-01F9-4413-A254-929EAE871EBF.html["了解如何更改冷却期"^] 和 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-8FC4BFD5-F258-4AA6-9FCB-663D42D92CAA.html["了解如何更改阈值"^]。
 
-通过 Cloud Manager ，您可以在创建或修改卷时从以下卷分层策略中进行选择：
+通过BlueXP、您可以在创建或修改卷时从以下卷分层策略中进行选择：
 
 仅快照:: 在聚合达到 50% 容量后、 Cloud Volumes ONTAP 将不与活动文件系统关联的 Snapshot 副本的冷用户数据分层到容量层。冷却时间约为 2 天。
 +
@@ -193,7 +193,7 @@ TIP: 您可以将最小冷却期和默认聚合阈值更改为 50% （下文将�
 无:: 将卷的数据保留在性能层中、防止将其移动到容量层。
 
 
-复制卷时，您可以选择是否将数据分层到对象存储。否则， Cloud Manager 会将 * 备份 * 策略应用于数据保护卷。从 Cloud Volumes ONTAP 9.6 开始， * 所有 * 分层策略将取代备份策略。
+复制卷时，您可以选择是否将数据分层到对象存储。否则、BlueXP会将*备份*策略应用于数据保护卷。从 Cloud Volumes ONTAP 9.6 开始， * 所有 * 分层策略将取代备份策略。
 
 
 

@@ -2485,11 +2485,8 @@
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">如果创建新版本的密钥， Cloud Volumes ONTAP 将自动使用最新版本的密钥。</block>
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">如何对数据进行加密</block>
   <block id="145da5369fc47bfb6b1cd09c08d698b0" category="paragraph">创建配置为使用客户管理的密钥的 Cloud Volumes ONTAP 工作环境后， Cloud Volumes ONTAP 数据将按如下所示进行加密。</block>
-  <block id="6a3d2b5873e00648ba601f7a2af1a7a4" category="list-text">适用于 Cloud Volumes ONTAP 的所有 Azure 存储帐户均使用客户管理的密钥进行加密。</block>
-  <block id="51037ebff676c4939694e74fa5a85b6e" category="list-text">任何新存储帐户（例如，添加磁盘或聚合时）也会使用相同的密钥。</block>
   <block id="2301d2b9fcb3fe6f26482aff37ea2c54" category="inline-link">磁盘加密集</block>
   <block id="5dab396463f2f277886102bf78fe661b" category="list-text">任何新数据磁盘也会使用相同的磁盘加密集。</block>
-  <block id="cfdbba0560e1880e7195e870b6813736" category="list-text">NVRAM 和核心磁盘会使用 Microsoft 管理的密钥进行加密，而不是使用客户管理的密钥进行加密。</block>
   <block id="8764c9ec9f17252b7df37e1710ec9e5a" category="section-title">创建密钥存储并生成密钥</block>
   <block id="d01b7a4314685f64d972ad7a1fad92aa" category="paragraph">密钥存储必须位于您计划创建 Cloud Volumes ONTAP 系统的同一 Azure 订阅和区域中。</block>
   <block id="0355ddb77a5b72eb0604153dc1393f12" category="inline-link">在 Azure 订阅中创建密钥存储</block>
@@ -2499,7 +2496,6 @@
   <block id="1be48617ce5825c4bd54ef885eef8a65" category="list-text">应启用以下选项：</block>
   <block id="ba6db2df53167b0fe62e3b5c762cbbf1" category="list-text">* 软删除 * （默认情况下，此选项处于启用状态，但必须禁用 _not_ ）</block>
   <block id="fd08f80d1ec5aa4440248321eace716f" category="list-text">* 清除保护 *</block>
-  <block id="75914e843b290769c8b2944ccc107c89" category="list-text">* 用于卷加密的 Azure 磁盘加密 * （仅适用于单节点 Cloud Volumes ONTAP 系统）</block>
   <block id="8079302cfd5fd5ac16a06e331392b172" category="inline-link">在密钥存储中生成密钥</block>
   <block id="08226457c01755d5b1d666bac6bf1add" category="list-text"><block ref="f3e81382631201ff959343d3ba9dea1c" category="inline-link-rx"></block>。</block>
   <block id="4bad1b88b2d24ff3ad1376a54e1bddbd" category="paragraph">请注意此密钥的以下要求：</block>
@@ -4431,4 +4427,37 @@
   <block id="edeea5f1bc7f7fc7a2966961ec39210e" category="sidebar">在BlueXP中使用Storage VM</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXP网站博客</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
+  <block id="1223a21ec0a7e82e77ac43bd74628f1e" category="list-text">Azure HA单一可用性区域</block>
+  <block id="dcd61ff34229ba534213e8501446885a" category="list-text">Cloud Volumes ONTAP 的所有Azure存储帐户均使用客户管理的密钥进行加密。^1^</block>
+  <block id="08408518b6366a9a8bb69802d83d5e3c" category="list-text">任何新存储帐户(例如、添加磁盘或聚合时)也会使用相同的密钥。^1^</block>
+  <block id="efbd2c7930ae2087a4719eb7c262b95d" category="list-text">从ONTAP 9.10.1P3开始、对于NVRAM和核心磁盘、BlueXP使用<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>，用于管理具有受管磁盘的加密密钥。较低版本将使用Microsoft管理的密钥、而不是客户管理的密钥。</block>
+  <block id="9dca67fbd1fac23e7aff5774ec0afa2a" category="list-text">适用于 Cloud Volumes ONTAP 的所有 Azure 存储帐户均使用客户管理的密钥进行加密。^1^</block>
+  <block id="6d69087e8037af0164a0779028792a7b" category="list-text">从ONTAP 9.9.91P7开始、对于NVRAM和核心磁盘、BlueXP使用磁盘加密集、通过该加密集可以管理具有受管磁盘的加密密钥。较低版本将使用Microsoft管理的密钥、而不是客户管理的密钥。</block>
+  <block id="8b213ded385c637758f8c3705eb6386a" category="list-title">脚注</block>
+  <block id="ab9a6656c154c96464d829868998ba40" category="list-text">如果要在创建存储帐户期间对其进行加密、则必须在Cloud Volumes ONTAP 创建请求中创建并提供资源的ID。这适用于所有类型的部署。如果您不提供此信息、则存储帐户仍将加密、但BlueXP将首先使用Microsoft管理的密钥加密创建存储帐户、然后更新存储帐户以使用客户管理的密钥。</block>
+  <block id="d07f270590b573e1e499b9c9aed87fb4" category="list-text">*用于卷加密的Azure磁盘加密*</block>
+  <block id="619dc876da25600cdf36ffbec25d908e" category="summary">Cloud Volumes ONTAP 支持Azure资源组移动、但工作流仅在Azure控制台中执行。</block>
+  <block id="6c2dc09b272a4aed6d56a3438a190129" category="doc">移动资源组</block>
+  <block id="26d9e2ceeedec062543b6a4a27db01a1" category="paragraph">您可以在同一Azure订阅中将工作环境从一个资源组移动到Azure中的其他资源组。不支持在不同Azure订阅之间移动资源组。</block>
+  <block id="d88235dd3e716412ac91be3dfa4023a4" category="list-text">从*画布*中删除工作环境。</block>
+  <block id="02c73c19fdf0f5023f8a72d040197018" category="paragraph">要了解如何删除工作环境、请参见 <block ref="9dd47557c6bc134ec03be5246bea41e0" category="inline-link-macro-rx"></block>。</block>
+  <block id="2432571dc15a8d67f6eec5f65d85e73f" category="list-text">在Azure控制台中执行资源组移动。</block>
+  <block id="4593d9667ed2d90debaf928ba5605850" category="inline-link-macro">将资源移动到Microsoft Azure文档中的新资源组或订阅</block>
+  <block id="341c978d4ed833ff82feb36aba36ade0" category="paragraph">要完成移动、请参见 <block ref="252fa4d56b2364e5af99ca61bfb066f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="f2fe5653f91dfb127425583565d157db" category="list-text">在*画布*中、了解工作环境。</block>
+  <block id="628dfcbee044de30f5862101a64854ef" category="list-text">在工作环境信息中查找新资源组。</block>
+  <block id="268c52a1e1197b595712cb880346cba4" category="paragraph">工作环境及其资源(VM、磁盘、存储帐户、网络接口、快照)位于新资源组中。</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
+  <block id="2325f561a20765def93d682f14cae306" category="paragraph">连接器3.9.23版引入了以下更改。</block>
+  <block id="6d5ba1b41fa03c2fdf0d747769a6b053" category="section-title">在Azure中移动资源组</block>
+  <block id="ea55da5ec5028d99103c938ded49761c" category="paragraph">现在、您可以在同一Azure订阅中将工作环境从一个资源组移动到Azure中的其他资源组。</block>
+  <block id="d015054d89d4ecbe893f21f5ab9700c0" category="paragraph">有关详细信息，请参见 <block ref="8d94a006f1853b408e5763a514426526" category="inline-link-macro-rx"></block>。</block>
+  <block id="b6a2ac7b66db8e93b936023f17401626" category="section-title">NDMP副本认证</block>
+  <block id="c348c640ca478b45f3a3d9e14bb0695b" category="paragraph">NDMP-copy现已通过认证、可与云卷ONTAP 配合使用。</block>
+  <block id="ab5a83d8e39547c5fb30a1fda984aebb" category="inline-link">NDMP 配置概述</block>
+  <block id="e4b4f60ab9fe08116659a5e12d6db4a8" category="paragraph">有关如何配置和使用NDMP的信息、请参见<block ref="9c57f7cf04e123991a3c88e286feb189" category="inline-link-rx"></block>。</block>
+  <block id="5e7de773a189ac8974753f9ce70a3dc5" category="section-title">支持Azure的受管磁盘加密</block>
+  <block id="a09181ba1488df77bf9950cb483e97e8" category="paragraph">添加了一个新的Azure权限、现在允许您在创建时对所有受管磁盘进行加密。</block>
+  <block id="7343d251ecc72fc362a0ce85cf11a9fe" category="paragraph">有关此新功能的详细信息、请参见<block ref="91da0725d8642ccf887bde4d4604033e" category="inline-link-rx"></block>。</block>
+  <block id="a81c707e35ab82b2b21b18864fb458e9" category="sidebar">移动资源组</block>
 </blocks>

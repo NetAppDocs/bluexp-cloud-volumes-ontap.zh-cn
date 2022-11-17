@@ -111,9 +111,6 @@ EBS 磁盘大小:: 如果您选择的配置不支持 link:concept-aws-elastic-vo
 --
 
 
-有关在 AWS 中调整 Cloud Volumes ONTAP 系统规模的更多详细信息，请观看以下视频：
-
-video::GELcXmOuYPw[youtube,width=848,height=480]
 
 
 == 查看默认系统磁盘

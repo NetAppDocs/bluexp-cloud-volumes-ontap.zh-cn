@@ -20,6 +20,24 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 
 
 
+== 2022年12月4日
+
+连接器3.9.24版引入了以下更改。
+
+
+
+=== 现在、在创建Cloud Volumes ONTAP 期间、可以使用WORM +云备份
+
+现在、在Cloud Volumes ONTAP 创建过程中、可以同时激活一次写入、多次读取(WORM)和云备份功能。
+
+
+
+=== 现在、Google Cloud支持以色列地区
+
+现在、适用于Cloud Volumes ONTAP 的Google Cloud以及适用于Cloud Volumes ONTAP 9.11.1 P3及更高版本的Connector均支持以色列地区。
+
+
+
 == 2022年11月6日
 
 连接器3.9.23版引入了以下更改。

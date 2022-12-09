@@ -20,6 +20,12 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 
 
 
+=== Cloud Volumes ONTAP 9.12.1
+
+现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.12.1、其中包括对新功能的支持以及其他云提供商区域的支持。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]
+
+
+
 == 2022年12月4日
 
 连接器3.9.24版引入了以下更改。
@@ -35,6 +41,20 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 === 现在、Google Cloud支持以色列地区
 
 现在、适用于Cloud Volumes ONTAP 的Google Cloud以及适用于Cloud Volumes ONTAP 9.11.1 P3及更高版本的Connector均支持以色列地区。
+
+
+
+== 2022年11月15日
+
+连接器3.9.23版引入了以下更改。
+
+
+
+=== GCP中的ONTAP S3许可证
+
+现在、在Google云平台中运行9.12.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统上均包含ONTAP S3许可证。
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
 
 
 

@@ -104,9 +104,6 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | 字段 | Description 
 
 
-| Availability Zone | 对于单节点系统，您可以选择要在其中部署 Cloud Volumes ONTAP 的可用性区域。如果不选择AZ、BlueXP将为您选择一个。 
-
-
 | Resource Group  a| 
 为 Cloud Volumes ONTAP 创建新资源组或使用现有资源组。最佳实践是为 Cloud Volumes ONTAP 使用新的专用资源组。虽然可以在现有共享资源组中部署 Cloud Volumes ONTAP ，但由于存在数据丢失的风险，建议不要这样做。有关详细信息，请参见上述警告。
 
@@ -159,19 +156,12 @@ link:concept-data-tiering.html["了解有关数据分层的更多信息。"]。
 
 
 
-. * 写入速度和 WORM* （仅限单节点系统）：选择 * 正常 * 或 * 高 * 写入速度，并根据需要激活一次写入，多次读取（ WORM ）存储。
+. * 写入速度和 WORM* ：选择 * 正常 * 或 * 高 * 写入速度，并根据需要激活一次写入，多次读取（ WORM ）存储。
 +
 link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
 
 +
 如果启用了数据分层，则无法启用 WORM 。
-
-+
-link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
-
-. * 安全通信到存储和 WORM* （仅限 HA ）：选择是否启用与 Azure 存储帐户的 HTTPS 连接，并根据需要激活一次写入，多次读取（ WORM ）存储。
-+
-HTTPS 连接从 Cloud Volumes ONTAP 9.7 HA 对连接到 Azure 存储帐户。请注意，启用此选项可能会影响写入性能。创建工作环境后，您无法更改此设置。
 
 +
 link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
@@ -332,9 +322,6 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | 字段 | Description 
 
 
-| Availability Zone | 对于单节点系统，您可以选择要在其中部署 Cloud Volumes ONTAP 的可用性区域。如果不选择AZ、BlueXP将为您选择一个。 
-
-
 | Resource Group  a| 
 为 Cloud Volumes ONTAP 创建新资源组或使用现有资源组。最佳实践是为 Cloud Volumes ONTAP 使用新的专用资源组。虽然可以在现有共享资源组中部署 Cloud Volumes ONTAP ，但由于存在数据丢失的风险，建议不要这样做。有关详细信息，请参见上述警告。
 
@@ -377,7 +364,6 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 请注意以下事项：
 
 +
-** 磁盘类型用于初始卷。您可以为后续卷选择不同的磁盘类型。
 ** 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 +
 有关选择磁盘大小的帮助、请参见 link:task-planning-your-config-azure.html#sizing-your-system-in-azure["在 Azure 中估算系统规模"]。
@@ -389,9 +375,12 @@ link:concept-data-tiering.html["了解有关数据分层的更多信息。"]。
 
 
 
-. * 写入速度和 WORM* （仅限单节点系统）：选择 * 正常 * 或 * 高 * 写入速度，并根据需要激活一次写入，多次读取（ WORM ）存储。
+. * 写入速度和 WORM* ：选择 * 正常 * 或 * 高 * 写入速度，并根据需要激活一次写入，多次读取（ WORM ）存储。
 +
 link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
+
++
+此选项仅适用于某些VM类型。要了解支持的VM类型、请参见 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA对支持按许可证配置"]。
 
 +
 如果启用了数据分层，则无法启用 WORM 。
@@ -399,9 +388,9 @@ link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
 +
 link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
 
-. * 安全通信到存储和 WORM* （仅限 HA ）：选择是否启用与 Azure 存储帐户的 HTTPS 连接，并根据需要激活一次写入，多次读取（ WORM ）存储。
+. *安全通信到存储和WORM*：选择是否启用与Azure存储帐户的HTTPS连接、并根据需要激活一次写入、多次读取(WORM)存储。
 +
-HTTPS 连接从 Cloud Volumes ONTAP 9.7 HA 对连接到 Azure 存储帐户。请注意，启用此选项可能会影响写入性能。创建工作环境后，您无法更改此设置。
+HTTPS连接从Cloud Volumes ONTAP 9.7 HA对连接到Azure页面Blob存储帐户。请注意，启用此选项可能会影响写入性能。创建工作环境后，您无法更改此设置。
 
 +
 link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。

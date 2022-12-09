@@ -106,7 +106,7 @@ NOTE: iSCSI IP可通过iSCSI协议提供客户端访问。系统也会将其用�
 
 
 
-NOTE: NIC3仅适用于使用页面Blob系统的HA部署。
+NOTE: NIC3仅适用于使用页面Blob存储的HA部署。
 
 上述IP地址不会在发生故障转移事件时迁移。
 
@@ -122,9 +122,9 @@ NOTE: NIC3仅适用于使用页面Blob系统的HA部署。
 
 === 安全连接到 Azure 服务
 
-默认情况下、BlueXP会为Cloud Volumes ONTAP 和Azure存储帐户之间的连接启用Azure专用链路。
+默认情况下、BlueXP会为Cloud Volumes ONTAP 和Azure页面Blob存储帐户之间的连接启用Azure专用链接。
 
-在大多数情况下、您无需执行任何操作—​BlueXP为您管理Azure专用链路。但是，如果您使用 Azure 私有 DNS ，则需要编辑配置文件。此外、您还应了解Azure中连接器位置的要求。
+在大多数情况下、您无需执行任何操作—BlueXP为您管理Azure专用链路。但是，如果您使用 Azure 私有 DNS ，则需要编辑配置文件。此外、您还应了解Azure中连接器位置的要求。
 
 如果业务需要、您还可以禁用专用链路连接。如果禁用此链接、则BlueXP会将Cloud Volumes ONTAP 配置为使用服务端点。
 
@@ -460,7 +460,20 @@ TIP: 如果您的网络使用代理服务器与 Internet 进行所有通信，�
 | https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
 
 
-| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能和服务。 
+ a| 
+https://*.api.bluexp.netapp.com
+
+https://api.bluexp.netapp.com
+
+https://*.cloudmanager.cloud.netapp.com
+
+https://cloudmanager.cloud.netapp.com
+ a| 
+在BlueXP中提供SaaS功能和服务。
+
+
+NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
+
 
 
 | https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 

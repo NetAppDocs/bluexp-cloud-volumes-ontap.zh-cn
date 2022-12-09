@@ -87,7 +87,14 @@ ifdef::azure[]
 
 
 --
-HA 对:: HA 对使用高级页面 Blobs ，这些页面的最大磁盘大小为 8 TiB 。
+HA 对:: HA对使用两种类型的磁盘、以较高的成本为I/O密集型工作负载提供高性能：
++
+--
+* _Premium页面blobs_、最大磁盘大小为8 TiB
+* _Managed Disks_最大 磁盘大小为32 TiB
+
+
+--
 
 
 * 相关链接 *

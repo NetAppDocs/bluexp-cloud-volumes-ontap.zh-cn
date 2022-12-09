@@ -137,10 +137,10 @@ TIP: 未注册支持的系统仍会收到新版本可用时在BlueXP中显示的
 
 在执行升级之前，您必须验证系统是否已准备就绪，并进行任何必要的配置更改。
 
-*  for downtime
-*  that automatic giveback is still enabled
-*  SnapMirror transfers
-*  that aggregates are online
+* <<规划停机时间>>
+* <<验证是否仍启用自动交还>>
+* <<暂停 SnapMirror 传输>>
+* <<验证聚合是否联机>>
 
 
 
@@ -168,6 +168,7 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D
 
 NOTE: 尽管 Cloud Backup 使用 SnapMirror 的实施来创建备份文件（称为 SnapMirror Cloud ），但在升级系统时，备份不需要暂停。
 
+.关于此任务
 这些步骤介绍了如何将 System Manager 用于版本 9.3 和更高版本。
 
 .步骤
@@ -189,6 +190,7 @@ NOTE: 要访问BlueXP的计算机必须与Cloud Volumes ONTAP 建立网络连接
 
 在更新软件之前， Cloud Volumes ONTAP 的聚合必须处于联机状态。聚合在大多数配置中都应该联机、但如果不联机、则应将其联机。
 
+.关于此任务
 这些步骤介绍了如何将 System Manager 用于版本 9.3 和更高版本。
 
 .步骤
@@ -209,9 +211,9 @@ image:screenshot_aggr_state.gif["屏幕抓图：显示查看聚合信息时的�
 
 == 升级 Cloud Volumes ONTAP
 
-当有新版本可供升级时、BlueXP会向您发出通知。您可以从此通知启动升级过程。有关详细信息，请参见  from BlueXP notifications。
+当有新版本可供升级时、BlueXP会向您发出通知。您可以从此通知启动升级过程。有关详细信息，请参见 <<从BlueXP通知升级>>。
 
-使用外部 URL 上的映像执行软件升级的另一种方式。如果BlueXP无法访问S3存储分段来升级软件或为您提供了修补程序、则此选项很有用。有关详细信息，请参见  from an image available at a URL。
+使用外部 URL 上的映像执行软件升级的另一种方式。如果BlueXP无法访问S3存储分段来升级软件或为您提供了修补程序、则此选项很有用。有关详细信息，请参见 <<从 URL 上提供的映像升级>>。
 
 
 
@@ -223,6 +225,7 @@ image:screenshot_cot_upgrade.gif["屏幕截图：显示选择工作环境后在 
 
 您可以从此通知开始升级过程、通过从 S3 存储区获取软件映像、安装映像、然后重新启动系统来自动执行该过程。
 
+.开始之前
 Cloud Volumes ONTAP 系统上不得执行诸如卷或聚合创建等BlueXP操作。
 
 .步骤
@@ -240,8 +243,10 @@ image:screenshot_cot_upgrade.gif["屏幕截图：显示选择工作环境后在 
 . 在 Review and Approve 页面中，阅读重要说明，选择 * 我了解 ...* ，然后单击 * 执行 * 。
 
 
+.结果
 BlueXP开始软件升级。软件更新完成后，您可以在工作环境中执行操作。
 
+.完成后
 如果暂停了 SnapMirror 传输、请使用 System Manager 恢复传输。
 
 
@@ -292,8 +297,10 @@ http://<Connector-private-IP-address>/ontap/images/<image-file-name>
 . 单击 * 继续 * 进行确认。
 
 
+.结果
 BlueXP将启动软件更新。软件更新完成后，您可以在工作环境中执行操作。
 
+.完成后
 如果暂停了 SnapMirror 传输、请使用 System Manager 恢复传输。
 
 ifdef::gcp[]

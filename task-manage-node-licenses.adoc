@@ -67,6 +67,7 @@ image:screenshot_paygo_licenses.png["一个屏幕截图，显示 \" 数字电子
 . 单击 * 添加许可证 * 。
 
 
+.结果
 BlueXP将许可证添加到数字市场。在将许可证与新的 Cloud Volumes ONTAP 系统关联之前，此许可证将被标识为未分配。发生这种情况后，许可证将移至数字电子邮件中的 * BYOL* 选项卡。
 
 
@@ -96,6 +97,7 @@ image:screenshot-exchange-license.png["显示在未分配许可证页面上的 E
 . 阅读法律同意书，然后单击 * 同意 * 。
 
 
+.结果
 BlueXP会将未分配的许可证转换为您选择的服务。您可以在 * 数据服务许可证 * 选项卡中查看新许可证。
 
 
@@ -133,6 +135,7 @@ image:screenshot_license_generator.gif["屏幕截图：显示填写的 NetApp �
 . 单击 * 更新许可证 * 。
 
 
+.结果
 BlueXP会更新Cloud Volumes ONTAP 系统上的许可证。
 
 
@@ -208,6 +211,7 @@ BlueXP会更新Cloud Volumes ONTAP 系统上的许可证。
 . 单击 * 转换许可证 * 。
 
 
+.结果
 BlueXP将启动转换过程。在此过程中， Cloud Volumes ONTAP 会自动重新启动。备份时，许可信息将反映新许可证。
 
 

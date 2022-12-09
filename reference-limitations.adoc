@@ -26,7 +26,7 @@ summary: 已知限制确定了本产品版本不支持的平台、设备或功�
 
 
 
-== BlueXP不支持使用Cloud Volumes ONTAP 的S3
+== 在Cloud Volumes ONTAP 中、BlueXP不支持S3
 
 虽然Cloud Volumes ONTAP 支持在某些云提供商中使用S3作为横向扩展存储的选项、但BlueXP不为此功能提供任何管理功能。最好使用命令行界面从 Cloud Volumes ONTAP 配置 S3 客户端访问。有关详细信息，请参见 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["《 S3 配置高级指南》"^]。
 

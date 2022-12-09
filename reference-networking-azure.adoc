@@ -46,16 +46,77 @@ Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、
 
 === IP 地址
 
-BlueXP会将以下数量的IP地址分配给Azure中的Cloud Volumes ONTAP ：
+BlueXP会自动将所需数量的专用IP地址分配给Azure中的Cloud Volumes ONTAP。您需要确保网络具有足够的可用专用IP地址。
 
-* 单个节点： 5 个 IP 地址
-* HA 对： 16 个 IP 地址
+Cloud Manager 为 Cloud Volumes ONTAP 分配的 LIF 数量取决于您部署的是单节点系统还是 HA 对。LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要 SVM 管理 LIF 。
 
+
+NOTE: iSCSI LIF可通过iSCSI协议提供客户端访问、并由系统用于其他重要的网络工作流。这些LIF是必需的、不应删除。
+
+
+
+==== 单节点系统的 IP 地址
+
+BlueXP会将5或6个IP地址分配给单节点系统：
+
+* 集群管理IP
+* 节点管理IP
+* SnapMirror的集群间IP
+* NFS/CIFS IP
+* iSCSI IP
++
+
+NOTE: iSCSI IP可通过iSCSI协议提供客户端访问。系统也会将其用于其他重要的网络工作流。此LIF为必填项、不应删除。
+
+* SVM管理(可选—默认情况下未配置)
+
+
+
+
+==== HA 对的 IP 地址
+
+在部署期间、BlueXP会将IP地址分配给4个NIC (每个节点)。
 
 请注意、BlueXP会在HA对上创建SVM管理LIF、但不会在Azure中的单节点系统上创建。
 
+*NIC0*
 
-TIP: LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要 SVM 管理 LIF 。
+* 节点管理IP
+* 集群间IP
+* iSCSI IP
++
+
+NOTE: iSCSI IP可通过iSCSI协议提供客户端访问。系统也会将其用于其他重要的网络工作流。此LIF为必填项、不应删除。
+
+
+
+* NIC 1*
+
+* 集群网络IP
+
+
+*NIC2*
+
+* 集群互连IP (HA IC)
+
+
+* NIC 3*
+
+* Pageblob NIC IP (磁盘访问)
+
+
+
+NOTE: NIC3仅适用于使用页面Blob系统的HA部署。
+
+上述IP地址不会在发生故障转移事件时迁移。
+
+此外、还配置了4个前端IP (FIPS)、以便在发生故障转移事件时进行迁移。这些前端IP位于负载平衡器中。
+
+* 集群管理IP
+* 节点A数据IP (NFS/CIFS)
+* NodeB数据IP (NFS/CIFS)
+* SVM管理IP
+
 
 
 

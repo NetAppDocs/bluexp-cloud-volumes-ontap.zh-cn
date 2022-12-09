@@ -16,19 +16,22 @@ summary: 通过几个步骤开始使用适用于 GCP 的 Cloud Volumes ONTAP 。
 [role="lead"]
 通过几个步骤开始使用适用于 GCP 的 Cloud Volumes ONTAP 。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 创建连接器
 [role="quick-margin-para"]
 如果您没有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["了解如何在 GCP 中创建连接器"^]。
 
 [role="quick-margin-para"]
 在创建首个Cloud Volumes ONTAP 工作环境时、如果尚未部署Connector、BlueXP (以前称为Cloud Manager)会提示您部署一个。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 规划您的配置
 [role="quick-margin-para"]
 BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。
 
 [role="quick-margin-para"]
 link:task-planning-your-config-gcp.html["了解有关规划配置的更多信息"]。
 
-.跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt-Three "></span> 设置您的网络连接
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 设置网络
+[role="quick-margin-list"]
 . 确保您的 VPC 和子网支持连接器和 Cloud Volumes ONTAP 之间的连接。
 . 如果您计划启用数据分层， https://cloud.google.com/vpc/docs/configure-private-google-access["为专用 Google 访问配置 Cloud Volumes ONTAP 子网"^]。
 . 如果要部署 HA 对，请确保您有四个 vPC ，每个 vPC 都有自己的子网。
@@ -42,6 +45,7 @@ link:task-planning-your-config-gcp.html["了解有关规划配置的更多信息
 [role="quick-margin-para"]
 link:reference-networking-gcp.html["详细了解网络要求"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 设置服务帐户
 [role="quick-margin-para"]
 Cloud Volumes ONTAP 需要一个 Google Cloud 服务帐户，用于两种目的。第一种情况是启用时 link:concept-data-tiering.html["数据分层"] 在 Google Cloud 中将冷数据分层到低成本对象存储。第二种情况是在启用时 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup Service"^] 将卷备份到低成本对象存储。
 
@@ -51,9 +55,11 @@ Cloud Volumes ONTAP 需要一个 Google Cloud 服务帐户，用于两种目的�
 [role="quick-margin-para"]
 link:task-creating-gcp-service-account.html["阅读分步说明"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五个"] 启用 Google Cloud API
 [role="quick-margin-para"]
 https://cloud.google.com/apis/docs/getting-started#enabling_apis["在项目中启用以下 Google Cloud API"^]。部署连接器和 Cloud Volumes ONTAP 需要使用这些 API 。
 
+[role="quick-margin-list"]
 * Cloud Deployment Manager V2 API
 * 云日志记录 API
 * Cloud Resource Manager API
@@ -61,6 +67,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["在项目中�
 * 身份和访问管理（ IAM ） API
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六个"] 使用BlueXP启动Cloud Volumes ONTAP
 [role="quick-margin-para"]
 单击 * 添加工作环境 * ，选择要部署的系统类型，然后完成向导中的步骤。 link:task-deploying-gcp.html["阅读分步说明"]。
 

@@ -35,14 +35,14 @@ summary: 将Azure密钥存储用于第三方密钥管理服务。
 
 == 配置过程
 
-概述的步骤将介绍如何向Azure注册Cloud Volumes ONTAP 配置以及如何创建Azure密钥存储和密钥。如果您已完成这些步骤、请确保配置设置正确、尤其是在中 、然后继续 。
+概述的步骤将介绍如何向Azure注册Cloud Volumes ONTAP 配置以及如何创建Azure密钥存储和密钥。如果您已完成这些步骤、请确保配置设置正确、尤其是在中 <<create-akv>>、然后继续 <<ontap>>。
 
-* 
-* 
-* 
-* 
-* 
-* 
+* <<azure-app>>
+* <<secret>>
+* <<create-akv>>
+* <<key>>
+* <<AAD>>
+* <<ontap>>
 
 
 [[azure-app]]

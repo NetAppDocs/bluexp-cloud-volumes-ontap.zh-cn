@@ -30,7 +30,7 @@ link:concept-licensing.html["了解有关 Cloud Volumes ONTAP 许可证的更多
 
 同时、BlueXP会自动查询NetApp的许可服务、以获取与您的NetApp 支持站点 帐户关联的许可证的详细信息。如果没有错误、BlueXP会自动将许可证添加到数字电子钱包中。
 
-如果BlueXP无法添加许可证、您需要手动将其添加到Digital Wallet中。例如、如果Connector安装在无法访问Internet的位置、则您需要自己添加许可证。  purchased licenses to your account,了解如何向您的帐户添加已购买的许可证。
+如果BlueXP无法添加许可证、您需要手动将其添加到Digital Wallet中。例如、如果Connector安装在无法访问Internet的位置、则您需要自己添加许可证。 <<将已购买的许可证添加到您的帐户,了解如何向您的帐户添加已购买的许可证>>。
 
 
 
@@ -77,7 +77,7 @@ image:screenshot-digital-wallet-packages.png["显示专业版、优化版和基�
 
 如果您在数字电子钱包中看不到已购买的许可证、则需要将这些许可证添加到BlueXP中、以便为Cloud Volumes ONTAP 提供容量。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您需要为BlueXP提供许可证或许可证文件的序列号。
 * 如果要输入序列号，首先需要输入 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["将您的NetApp 支持站点 帐户添加到BlueXP"^]。这是有权访问序列号的 NetApp 支持站点帐户。
 
@@ -100,6 +100,7 @@ image:screenshot-digital-wallet-packages.png["显示专业版、优化版和基�
 
 但是、如果您在无法访问Internet的位置部署了BlueXP、则需要在BlueXP中手动更新许可证。
 
+.您需要的内容
 许可证文件（如果有 HA 对，则为 _files_ ）。
 
 .步骤
@@ -117,10 +118,12 @@ image:screenshot-digital-wallet-packages.png["显示专业版、优化版和基�
 
 ifdef::azure[]
 
+.限制
 不支持更改Edge Cache许可证或从Edge Cache许可证更改。
 
 endif::azure[]
 
+.重要注意事项
 如果您在云提供商的市场上有私人优惠或合同、则更改为合同中未包含的收费方式将导致对BYOL (如果您从NetApp购买了许可证)或PAYGO进行收费。
 
 .步骤
@@ -136,6 +139,7 @@ image:screenshot-digital-wallet-charging-method.png["更改充电方法对话框
 . 单击*更改充电方法*。
 
 
+.结果
 BlueXP更改了Cloud Volumes ONTAP 系统的充电方法。
 
 此外、您可能还会注意到、Digital Wallet会刷新每个软件包类型的已用容量、以考虑您刚才所做的更改。

@@ -16,6 +16,7 @@ summary: Cloud Volumes ONTAP 命令行界面可用于运行所有管理命令，
 [role="lead"]
 Cloud Volumes ONTAP 命令行界面可用于运行所有管理命令，也是执行高级任务或使用命令行界面更自如的理想选择。您可以使用 Secure Shell （ SSH ）连接到 CLI 。
 
+.开始之前
 使用 SSH 连接到 Cloud Volumes ONTAP 的主机必须与 Cloud Volumes ONTAP 建立网络连接。例如、您可能需要从云提供商网络中的跳转主机进行SSH。
 
 ifdef::aws[]

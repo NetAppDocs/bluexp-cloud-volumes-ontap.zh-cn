@@ -18,37 +18,42 @@ summary: 通过将热数据的 SSD 或 HDD 性能层与非活动数据的对象�
 
 要设置数据分层，您需要执行以下操作：
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 选择支持的配置
 [role="quick-margin-para"]
 支持大多数配置。如果您的 Cloud Volumes ONTAP 系统运行的是最新版本，则最好继续操作。 link:task-tiering.html#configurations-that-support-data-tiering["了解更多信息。"]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 确保 Cloud Volumes ONTAP 与对象存储之间的连接
 [role="quick-margin-list"]
 ifdef::aws[]
 
-* 对于 AWS ， S3 需要一个 VPC 端点。  to tier cold data to AWS S3,了解更多信息。。
+* 对于 AWS ， S3 需要一个 VPC 端点。 <<将冷数据分层到 AWS S3 的要求,了解更多信息。>>。
 
 
 endif::aws[]
 
 ifdef::azure[]
 
-* 对于Azure、只要BlueXP具有所需权限、您就无需执行任何操作。  to tier cold data to Azure Blob storage,了解更多信息。。
+* 对于Azure、只要BlueXP具有所需权限、您就无需执行任何操作。 <<将冷数据分层到 Azure Blob 存储的要求,了解更多信息。>>。
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* 对于Google Cloud、您需要为专用Google Access配置子网并设置服务帐户。  to tier cold data to a Google Cloud Storage bucket,了解更多信息。。
+* 对于Google Cloud、您需要为专用Google Access配置子网并设置服务帐户。 <<将冷数据分层到 Google Cloud 存储分段的要求,了解更多信息。>>。
 
 
 endif::gcp[]
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 确保已启用分层的聚合
 [role="quick-margin-para"]
-必须在聚合上启用数据分层，才能在卷上启用数据分层。您应了解新卷和现有卷的要求。  that tiering is enabled on aggregates,了解更多信息。。
+必须在聚合上启用数据分层，才能在卷上启用数据分层。您应了解新卷和现有卷的要求。 <<确保在聚合上启用分层,了解更多信息。>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 创建，修改或复制卷时，请选择分层策略
 [role="quick-margin-para"]
 在创建、修改或复制卷时、BlueXP会提示您选择分层策略。
 
+[role="quick-margin-list"]
 * link:task-tiering.html#tiering-data-from-read-write-volumes["对读写卷上的数据进行分层"]
 * link:task-tiering.html#tiering-data-from-data-protection-volumes["分层数据保护卷上的数据"]
 
@@ -60,7 +65,7 @@ endif::gcp[]
 * 您无需为容量层创建对象存储。BlueXP可以为您提供这种服务。
 * 您无需在系统级别启用数据分层。
 +
-在创建系统时、BlueXP会为冷数据创建一个对象存储、  data tiering after implementing the requirements,只要没有连接或权限问题。之后，您只需在卷上启用数据分层（在某些情况下，  that tiering is enabled on aggregates,在聚合上）。
+在创建系统时、BlueXP会为冷数据创建一个对象存储、 <<在实施要求后启用数据分层,只要没有连接或权限问题>>。之后，您只需在卷上启用数据分层（在某些情况下， <<确保在聚合上启用分层,在聚合上>>）。
 
 
 
@@ -193,7 +198,7 @@ endif::gcp[]
 只要不存在连接或权限问题、BlueXP就会在创建系统时为冷数据创建一个对象存储。如果在创建系统之前未实施上述要求，则需要手动启用分层，从而创建对象存储。
 
 .步骤
-. ,确保满足所有要求。
+. <<要求,确保满足所有要求>>。
 . 从左侧导航菜单中、选择*存储>画布*。
 . 在 " 画布 " 页面上，双击 Cloud Volumes ONTAP 实例的名称。
 . 单击菜单图标并选择 * 启用容量分层 * 。
@@ -204,7 +209,7 @@ image:screenshot_enable_capacity_tiering.gif["如果在BlueXP尝试启用数据�
 只有在BlueXP创建系统时无法启用数据分层时、您才会看到此选项。
 
 +
-在Google Cloud中、必须先将服务帐户附加到Cloud Volumes ONTAP 、然后才会显示此选项。 ,确保满足所有要求。
+在Google Cloud中、必须先将服务帐户附加到Cloud Volumes ONTAP 、然后才会显示此选项。 <<要求,确保满足所有要求>>。
 
 . 单击*启用*、以便BlueXP可以创建此Cloud Volumes ONTAP 系统将用于分层数据的对象存储。
 
@@ -240,6 +245,7 @@ image:screenshot_aggr_tiering.gif["一个屏幕截图、用于显示有关BlueXP
 . 选择要附加的云层，然后单击 * 保存 * 。
 
 
+.下一步是什么？
 现在，您可以在新卷和现有卷上启用数据分层，如下一节所述。
 
 

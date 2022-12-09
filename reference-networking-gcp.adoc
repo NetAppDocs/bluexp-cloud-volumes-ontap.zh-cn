@@ -161,8 +161,8 @@ LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要使�
 --
 请注意， HA 配置需要两组防火墙规则：
 
-* VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。  rules for Cloud Volumes ONTAP,了解更多信息。。
-* VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。  rules for Cloud Volumes ONTAP,了解更多信息。。
+* VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。 <<Cloud Volumes ONTAP 的防火墙规则,了解更多信息。>>。
+* VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。 <<Cloud Volumes ONTAP 的防火墙规则,了解更多信息。>>。
 
 
 --
@@ -461,7 +461,7 @@ NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
 
 == VPC-1 ， VPC-2 和 VPC-3 的防火墙规则
 
-在 GCP 中， HA 配置部署在四个 VPC 上。VPC-0 中的 HA 配置所需的防火墙规则为  rules for Cloud Volumes ONTAP,上面列出的 Cloud Volumes ONTAP。
+在 GCP 中， HA 配置部署在四个 VPC 上。VPC-0 中的 HA 配置所需的防火墙规则为 <<Cloud Volumes ONTAP 的防火墙规则,上面列出的 Cloud Volumes ONTAP>>。
 
 同时、BlueXP为VPC-1、VPC-2和VPC-3中的实例创建的预定义防火墙规则可以通过_all_协议和端口进行传入通信。这些规则允许 HA 节点之间进行通信。
 

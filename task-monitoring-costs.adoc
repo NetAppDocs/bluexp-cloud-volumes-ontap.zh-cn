@@ -16,6 +16,7 @@ summary: 通过BlueXP、您可以查看与在AWS中运行Cloud Volumes ONTAP 相
 [role="lead"]
 通过BlueXP、您可以查看与在AWS中运行Cloud Volumes ONTAP 相关的资源成本。您还可以了解使用 NetApp 功能可以降低存储成本节省了多少资金。
 
+.关于此任务
 BlueXP会在您刷新页面时更新成本。有关最终成本详细信息，请参阅 AWS 。
 
 .步骤

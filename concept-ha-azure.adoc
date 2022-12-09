@@ -20,7 +20,11 @@ Cloud Volumes ONTAP 高可用性（ High Availability ， HA ）对可在云环�
 
 == HA 组件
 
-Azure 中的 Cloud Volumes ONTAP HA 配置包括以下组件：
+
+
+=== HA页面Blob配置
+
+Azure中的Cloud Volumes ONTAP HA页面Blob配置包括以下组件：
 
 image:diagram_ha_azure.png["一个概念映像、其中显示了一个负载平衡器、用于管理来自BlueXP和客户端的传入流量、一个可用性集中的两个Cloud Volumes ONTAP 节点、用于启动数据的SSD磁盘以及用于客户数据的页面Blob。"]
 
@@ -39,6 +43,29 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 * 要将数据分层到 Azure Blob 存储，需要一个存储帐户。
 * 从Cloud Volumes ONTAP 9.7开始、BlueXP为HA对创建的存储帐户为通用v2存储帐户。
+* 在创建工作环境时，您可以启用从 Cloud Volumes ONTAP 9.7 HA 对到 Azure 存储帐户的 HTTPS 连接。请注意，启用此选项可能会影响写入性能。创建工作环境后，您无法更改此设置。
+
+
+--
+
+
+
+
+=== HA多可用性区域配置
+
+Azure中的Cloud Volumes ONTAP HA多可用性区域配置包括以下组件：
+
+image:diagram_ha_azure_maz.png["一个概念映像、其中显示了一个负载平衡器、用于管理来自BlueXP和客户端的传入流量、两个可用性区域中的两个Cloud Volumes ONTAP 节点、用于启动数据的SSD磁盘以及用于客户数据的受管磁盘。"]
+
+请注意以下有关BlueXP为您部署的Azure组件的信息：
+
+Azure 标准负载平衡器:: 负载平衡器管理传入 Cloud Volumes ONTAP HA 对的流量。
+可用性区域:: 两个Cloud Volumes ONTAP 节点部署在不同的可用性区域中。可用性区域可确保节点位于不同的故障域中。 https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy["在Azure文档中了解有关Azure存储冗余的更多信息"^]。
+Disks:: 客户数据驻留在分区冗余存储(ZRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["启动、根、配对节点根和核心数据"]。
+存储帐户::
++
+--
+* 受管磁盘需要一个存储帐户。BlueXP为HA对创建的存储帐户是通用v2存储帐户。
 * 在创建工作环境时，您可以启用从 Cloud Volumes ONTAP 9.7 HA 对到 Azure 存储帐户的 HTTPS 连接。请注意，启用此选项可能会影响写入性能。创建工作环境后，您无法更改此设置。
 
 

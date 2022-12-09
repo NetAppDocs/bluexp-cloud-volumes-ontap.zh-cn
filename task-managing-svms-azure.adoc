@@ -59,6 +59,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 如果要创建 SVM 管理 LIF ，请重复这些步骤以创建其他 IP 地址。
 
+.完成后
 复制刚刚创建的专用 IP 地址。在为新 Storage VM 创建 LIF 时，您需要指定这些 IP 地址。
 
 
@@ -242,6 +243,7 @@ image:screenshot_azure_lb_rule.gif["在 Azure 门户中添加负载平衡规则�
 
 --
 ====
+.完成后
 复制刚刚创建的专用 IP 地址。在为新 Storage VM 创建 LIF 时，您需要指定这些 IP 地址。
 
 
@@ -632,4 +634,5 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 
 --
 ====
+.下一步是什么？
 在 HA 对上创建 Storage VM 后，最好等待 12 小时，然后再在该 SVM 上配置存储。从Cloud Volumes ONTAP 9.10.1版开始、BlueXP会每12小时扫描一次HA对的负载平衡器设置。如果存在新的SVM、则BlueXP将启用一个设置、以缩短计划外故障转移时间。

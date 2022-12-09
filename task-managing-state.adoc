@@ -57,6 +57,7 @@ image:screenshot_shutdown.gif["屏幕截图：显示了关闭计划、该计划�
 . 单击 * 保存 * 。
 
 
+.结果
 BlueXP将保存此计划。时钟图标将发生变化以指示已设置计划： image:screenshot_shutdown_icon_scheduled.gif["屏幕截图：在定义计划后显示自动关机图标。"]
 
 
@@ -68,6 +69,7 @@ BlueXP将保存此计划。时钟图标将发生变化以指示已设置计划�
 
 NOTE: 为了降低成本、BlueXP会定期删除根磁盘和启动磁盘的旧快照。对于根磁盘和启动磁盘，只会保留两个最新的快照。
 
+.关于此任务
 停止HA对时、BlueXP会关闭两个节点。
 
 .步骤

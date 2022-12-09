@@ -16,6 +16,7 @@ summary: 您可以发现现有Cloud Volumes ONTAP 系统并将其添加到BlueXP
 [role="lead"]
 您可以发现现有Cloud Volumes ONTAP 系统并将其添加到BlueXP中。如果您部署了新的BlueXP系统、则可以执行此操作。
 
+.开始之前
 您必须知道 Cloud Volumes ONTAP 管理员用户帐户的密码。
 
 .步骤
@@ -36,4 +37,5 @@ endif::aws[]
 . 在凭据页面上，输入 Cloud Volumes ONTAP 管理员用户的密码，然后单击 * 执行 * 。
 
 
+.结果
 BlueXP会将Cloud Volumes ONTAP 实例添加到工作空间中。

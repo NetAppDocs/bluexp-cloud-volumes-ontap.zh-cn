@@ -106,7 +106,7 @@ image:diagram-aws-elastic-volumes-two-raid-groups.png["一个概念映像、显�
 虽然不太可能出现这种情况、但在以下两种情况下可能会出现这种情况：
 
 ** 在使用API创建聚合时、您明确禁用了弹性卷功能。
-** 您通过用户界面创建了一个新的Cloud Volumes ONTAP 系统、在这种情况下、初始聚合会禁用弹性卷功能。请查看  了解更多信息。
+** 您通过用户界面创建了一个新的Cloud Volumes ONTAP 系统、在这种情况下、初始聚合会禁用弹性卷功能。请查看 <<限制>> 了解更多信息。
 
 
 ====
@@ -146,7 +146,7 @@ link:task-deploying-otc-aws.html["了解如何创建Cloud Volumes ONTAP 系统"]
 
 * 在已启用弹性卷的聚合上创建新卷
 +
-如果您创建的卷使用GP3或IO1磁盘、则BlueXP会自动在启用了弹性卷的聚合上创建此卷。有关详细信息，请参见  happens when you create a volume。
+如果您创建的卷使用GP3或IO1磁盘、则BlueXP会自动在启用了弹性卷的聚合上创建此卷。有关详细信息，请参见 <<创建卷时会发生什么情况>>。
 
 +
 link:task-create-volumes.html["了解如何创建卷"]。

@@ -33,6 +33,7 @@ endif::gcp[]
 
 Cloud Volumes ONTAP 不支持板载密钥管理。
 
+.您需要的内容
 您的 Cloud Volumes ONTAP 系统应向 NetApp 支持部门注册。向 NetApp 支持部门注册的每个 Cloud Volumes ONTAP 系统都会自动安装 NetApp 卷加密许可证。
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["将NetApp 支持站点 帐户添加到BlueXP"^]

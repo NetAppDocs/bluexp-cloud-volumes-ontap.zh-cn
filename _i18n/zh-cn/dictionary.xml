@@ -1547,12 +1547,7 @@
   <block id="b3f2fa100e111e8d78c1729bbe7330b9" category="inline-image-macro">显示 Cloud Volumes ONTAP HA 架构中组件的概念映像：两个 Cloud Volumes ONTAP 节点和一个调解器实例，每个节点位于不同的可用性区域。</block>
   <block id="8baf5cc352903972240801715cac9720" category="paragraph"><block ref="8baf5cc352903972240801715cac9720" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a02218676e4b3b1478891bbfdaee427f" category="section-title">连接器的要求</block>
-  <block id="93fd4230b4afd5ccd3311e78e4c88ac9" category="paragraph">设置您的网络，以便 Connector 能够管理公有云环境中的资源和流程。最重要的步骤是确保对各种端点的出站 Internet 访问。</block>
-  <block id="20f41095471130e3ee55ad0782eeccd0" category="inline-link">将 Connector 配置为使用代理服务器</block>
-  <block id="e50f8e178601a7a1b4960a62843eb210" category="admonition">如果您的网络使用代理服务器与 Internet 进行所有通信，则可以从设置页面指定代理服务器。请参见<block ref="cce1b522253c2a5c153b8d2850e93a7a" category="inline-link-rx"></block>。</block>
   <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">连接到目标网络</block>
-  <block id="9c4e8356ff1f50418474478350731782" category="paragraph">连接器要求与要部署 Cloud Volumes ONTAP 的 VPC 和 VN 集建立网络连接。</block>
-  <block id="c3a5da2edea375289d166ef749b9bd1e" category="paragraph">例如，如果您在公司网络中安装了连接器，则必须设置与启动 Cloud Volumes ONTAP 的 VPC 或 vNet 的 VPN 连接。</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">出站 Internet 访问</block>
   <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">连接器需要通过出站 Internet 访问来管理公有云环境中的资源和流程。</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端点</block>
@@ -2210,8 +2205,6 @@
   <block id="fc0a76ff0c6111ef71c66554bb9f5a6e" category="cell">121 inbound_53</block>
   <block id="9962024a88bf4c8d55fd2f86b1873618" category="cell">53 任何协议</block>
   <block id="4038a3ad82c98f912a97fe2f042964cd" category="cell">DNS 和 CIFS</block>
-  <block id="49b6be736ceeb184c7d4cfd9132cd282" category="admonition">如果您的网络使用代理服务器与 Internet 进行所有通信，则可以从设置页面指定代理服务器。请参见 <block ref="6a702607d02fdf72fc33f667cfb9124d" category="inline-link-macro-rx"></block>。</block>
-  <block id="8f83d4a2626dac354314d5394d1f9d21" category="section-title">连接到目标网络</block>
   <block id="e70747c71702cdc100bd5f592ed452be" category="summary">Cloud Volumes ONTAP 提供了多种许可选项。每个选项都可用于选择满足您需求的配置。</block>
   <block id="0ff1cb70b28d71c56ee0165393cbd500" category="doc">Cloud Volumes ONTAP 许可</block>
   <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择一种满足您需求的消费模式。</block>
@@ -2339,7 +2332,6 @@
   <block id="14725afebf967c0c497c447ebcaf1764" category="list-text">要在 GCP 中的 Cloud Volumes ONTAP 系统与其他网络中的 ONTAP 系统之间复制数据，您必须在 VPC 与其他网络（例如公司网络）之间建立 VPN 连接。</block>
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Google Cloud 文档： Cloud VPN 概述</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">有关说明，请参见<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>。</block>
-  <block id="4b87bb8b88ced4d50758693e3dabd924" category="paragraph">连接器要求与要部署 Cloud Volumes ONTAP 的 VPC 建立网络连接。如果要部署 HA 对，则 Connector 只需要连接到 VPC-0 。</block>
   <block id="e0ab516914623c72df4ff708af6cdd54" category="section-title">Cloud Volumes ONTAP 的防火墙规则</block>
   <block id="4907f0fb8777892173f7e34fa56bfcdb" category="paragraph">Cloud Volumes ONTAP 的防火墙规则需要入站和出站规则。</block>
   <block id="bcf66fd73f27e271725271d68f4723a9" category="paragraph">如果要部署 HA 配置，这些是 VPC-0 中 Cloud Volumes ONTAP 的防火墙规则。</block>
@@ -3455,8 +3447,6 @@
   <block id="4094070de63eb60a22dafb42ecab40fb" category="paragraph">如果您在部署期间未选择服务帐户、则需要关闭Cloud Volumes ONTAP 、转到Google云控制台、然后将服务帐户附加到Cloud Volumes ONTAP 实例。然后、您可以按照下一节所述启用数据分层。</block>
   <block id="03b060a90dee73a6134cc6c1ebdf7458" category="paragraph">在Google Cloud中、必须先将服务帐户附加到Cloud Volumes ONTAP 、然后才会显示此选项。 <block ref="066865d547a10de791f5772d517b17f7" category="inline-xref-macro-rx"></block>。</block>
   <block id="870789b9d0beec538c84e00432400091" category="list-text">在Google Cloud中、转至Cloud Volumes ONTAP 实例并为每个LIF添加一个IP地址到nic0。</block>
-  <block id="8ad37a38e1be1cd56ba8016e897e15c5" category="inline-link">了解有关VPC网络对等的更多信息</block>
-  <block id="3af417bcb28902bf6e018910cab4b830" category="paragraph">如果您计划在独立于连接器的VPC中部署Cloud Volumes ONTAP 、则需要设置VPC网络对等关系。<block ref="7da1fe3c3eb485cc3c06acb3359fc320" category="inline-link-rx"></block></block>
   <block id="b961ba228f0253598e8fe47f55865219" category="list-text">输入前端IP的名称、选择Cloud Volumes ONTAP HA对的子网、并保留*动态*选项、在具有可用性区域的区域中、保留*区域冗余*选项、以确保在区域发生故障时IP地址仍然可用。</block>
   <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5505ffcb759fb1c9c3793b2dd386cd82" category="inline-link-macro">了解如何在PAYGO和BYOL之间切换</block>
@@ -4441,7 +4431,6 @@
   <block id="b04fd67a98a3b32956894024aa6fcf4f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 设置 AWS KMS</block>
   <block id="3af67a9dfd37709bb6e502fd7f303262" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 使用BlueXP启动Cloud Volumes ONTAP</block>
   <block id="96f4c574f3909d1105768df05940587b" category="paragraph">BlueXP会自动将所需数量的专用IP地址分配给Azure中的Cloud Volumes ONTAP。您需要确保网络具有足够的可用专用IP地址。</block>
-  <block id="03739fdb4fd68641a3dd276274b59b91" category="paragraph">Cloud Manager 为 Cloud Volumes ONTAP 分配的 LIF 数量取决于您部署的是单节点系统还是 HA 对。LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要 SVM 管理 LIF 。</block>
   <block id="99b06d2510cf563a2d5a3bb1e854c0be" category="admonition">iSCSI LIF可通过iSCSI协议提供客户端访问、并由系统用于其他重要的网络工作流。这些LIF是必需的、不应删除。</block>
   <block id="efd5eb8fe39e72876a227a2a5666b829" category="paragraph">BlueXP会将5或6个IP地址分配给单节点系统：</block>
   <block id="40800f2ceb1fadf0fb67562c1b95ca89" category="list-text">集群管理IP</block>
@@ -4498,7 +4487,6 @@
   <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">https://cloudmanager.cloud.netapp.com</block>
   <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。</block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA多可用性区域</block>
-  <block id="bf8536c9790d590866c905e06322f99d" category="list-text">对于根磁盘、启动磁盘、NVRAM磁盘、核心磁盘和数据磁盘、Cloud Manager使用磁盘加密集、通过该加密集可以管理具有受管磁盘的加密密钥。</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">从ONTAP 9.10.1P3开始、对于NVRAM和核心磁盘、BlueXP使用<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>，用于管理具有受管磁盘的加密密钥。较低版本将使用Microsoft管理的密钥、而不是客户管理的密钥。</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">单个节点</block>
   <block id="41668006fb357f569acf8441fc16a00c" category="list-text">如果要在创建存储帐户期间对其进行加密、则必须在CVO创建请求中创建并提供资源的ID。这适用于所有类型的部署。如果您不提供此密钥、则存储帐户仍将加密、但BlueXP将首先使用Microsoft管理的密钥加密创建存储帐户、然后更新存储帐户以使用客户管理的密钥。</block>
@@ -4519,7 +4507,6 @@
   <block id="bdb764a539084c79daf35d5d881ae82c" category="list-text">客户数据驻留在本地冗余存储(LRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 <block ref="9f11431b4ce0e30551c89e37c48c22cd" category="inline-link-macro-rx"></block>。</block>
   <block id="c69ac98b36cf0e598f3cae6b175a8eec" category="list-text">存储帐户用于基于受管磁盘的部署、以处理诊断日志并分层到Blob存储。</block>
   <block id="dba89da91170934734e847dcfe4ad5d0" category="section-title">Cloud Volumes ONTAP 9.12.1</block>
-  <block id="6cfcf66978702040453f6b0622a89aaa" category="paragraph">现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.12.1、其中包括对新功能的支持以及其他云提供商区域的支持。<block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block></block>
   <block id="2dd09f45720a8f94b29c4d048b61ff4e" category="section-title">2022年11月15日</block>
   <block id="cca494b1b1d22bc8b5c8a8ecd5367bf8" category="section-title">GCP中的ONTAP S3许可证</block>
   <block id="44f72ae2127b89a470e082ae9f772acf" category="paragraph">现在、在Google云平台中运行9.12.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统上均包含ONTAP S3许可证。</block>
@@ -4581,4 +4568,24 @@
   <block id="8a7f23615316304155b79b66eb77b5b8" category="paragraph">Cloud Manager 将启动 Cloud Volumes ONTAP 实例。您可以跟踪时间链中的进度。</block>
   <block id="579a953172073c3fe33dc907abd6b3f8" category="paragraph">Cloud Manager 创建的安全组包含 Cloud Manager 和 Cloud Volumes ONTAP 在云中成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。</block>
   <block id="f4b34b24cc464b0154bd81cd6d906233" category="paragraph">为 Cloud Volumes ONTAP HA 调解器预定义的内部安全组包括以下规则。Cloud Manager 始终会创建此安全组。您无法选择使用自己的。</block>
+  <block id="3f2a41d3e64efd3d137a5132f84eb8b6" category="paragraph">BlueXP为Cloud Volumes ONTAP 分配的LIF数量取决于您部署的是单节点系统还是HA对。LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要 SVM 管理 LIF 。</block>
+  <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">设置您的网络，以便 Connector 可以管理公有云环境中的资源和流程。除了为Connector提供虚拟网络和子网之外、您还需要确保满足以下要求。</block>
+  <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">Connector需要与您要创建的工作环境类型以及计划启用的服务建立网络连接。</block>
+  <block id="3f92e0c134aea90b900c9d9fb8728adc" category="paragraph">例如、如果您在公司网络中安装了连接器、则必须设置与启动Cloud Volumes ONTAP 的虚拟网络的VPN连接。</block>
+  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">如果您的组织要求为所有传出Internet流量部署HTTP代理、请获取有关HTTP代理的以下信息：</block>
+  <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP 地址</block>
+  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">凭据</block>
+  <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS证书</block>
+  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">安全组</block>
+  <block id="ae6252cb830dbd695650f78870fe4309" category="inline-link">本地 UI</block>
+  <block id="4f85ea1fc2337ca87ea3957b6ed0f523" category="paragraph">没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问<block ref="b66a5441ef03e9f48be36352f5f78769" category="inline-link-rx"></block>，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。</block>
+  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IP地址限制</block>
+  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link">了解有关此限制的更多信息</block>
+  <block id="9b1f033bcac0595326d8acd1ef89e52c" category="paragraph">可能与172范围内的IP地址冲突。<block ref="120cc620882c590412757bc531a4f583" category="inline-link-rx"></block>。</block>
+  <block id="236afd214a59ab065a50ccb9cbbbe4c2" category="cell">9.12.0</block>
+  <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">2022年12月15日</block>
+  <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">Cloud Volumes ONTAP 9.12.0</block>
+  <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">现在、BlueXP可以在AWS和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.0。</block>
+  <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.12.1、其中包括对新功能的支持以及其他云提供商区域的支持。</block>
+  <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">对于根磁盘、启动磁盘、NVRAM磁盘、核心磁盘和数据磁盘、BlueXP使用磁盘加密集、通过该加密集可以管理具有受管磁盘的加密密钥。</block>
 </blocks>

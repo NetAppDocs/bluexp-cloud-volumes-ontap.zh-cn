@@ -4329,7 +4329,6 @@
   <block id="1456e010de4447704584caa0f583807b" category="cell">标签是 GCP 资源的元数据。BlueXP会将标签添加到与系统关联的Cloud Volumes ONTAP 系统和GCP资源中。在创建工作环境时，您最多可以从用户界面添加四个标签，然后可以在创建后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标签。有关标签的信息，请参见<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>。</block>
   <block id="23b98688a84e3975fec56c5adda952e4" category="paragraph">选择要 Cloud Volumes ONTAP 驻留的项目。默认项目是BlueXP所在的项目。</block>
   <block id="851527495c0afb57caeba39ab6e50d4f" category="paragraph">如果您在下拉列表中未看到任何其他项目、则表示您尚未将BlueXP服务帐户与其他项目关联。转到 Google Cloud 控制台，打开 IAM 服务，然后选择项目。将具有BlueXP角色的服务帐户添加到该项目中。您需要对每个项目重复此步骤。</block>
-  <block id="f521dfd49dba963e7b19cc773f33be00" category="admonition">这是您为BlueXP设置的服务帐户、 <block ref="d1082cc762c3232516ac569780f04ada" category="inline-link-macro-rx"></block>。</block>
   <block id="e11609cdeba36e9154797798b7bb710f" category="paragraph">如果您让BlueXP为您生成防火墙策略、则需要选择允许流量的方式：</block>
   <block id="4f4736bd9b3e508042a30af6279a85b0" category="list-text">BlueXP在Cloud Volumes ONTAP 实例上设置服务帐户。此服务帐户提供将数据分层到 Google Cloud Storage 存储分段的权限。请务必以分层服务帐户的用户身份添加Connector服务帐户、否则无法从BlueXP中选择它</block>
   <block id="a696f74c5e0abf27caa52c3cb3b4a270" category="list-text">单击*更多信息*可查看有关支持和BlueXP将购买的GCP资源的详细信息。</block>
@@ -4588,4 +4587,5 @@
   <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">现在、BlueXP可以在AWS和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.0。</block>
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.12.1、其中包括对新功能的支持以及其他云提供商区域的支持。</block>
   <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">对于根磁盘、启动磁盘、NVRAM磁盘、核心磁盘和数据磁盘、BlueXP使用磁盘加密集、通过该加密集可以管理具有受管磁盘的加密密钥。</block>
+  <block id="da9740256f1fda9e06aa732d86702abc" category="admonition">这是您为BlueXP设置的服务帐户、 <block ref="0f8a0ed359c33dd5dbb02a467fa98093" category="inline-link-macro-rx"></block>。</block>
 </blocks>

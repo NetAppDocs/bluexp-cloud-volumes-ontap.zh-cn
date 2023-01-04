@@ -20,6 +20,28 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 
 
 
+== 2023年1月3日
+
+连接器3.9.25版引入了以下更改。
+
+
+
+=== Google Cloud提供许可包
+
+在Google云市场中、Cloud Volumes ONTAP 可以通过按需购买或按年订立的合同获得经过优化且基于边缘缓存容量的许可包。
+
+请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP 许可"^]。
+
+
+
+=== Cloud Volumes ONTAP 的默认配置
+
+新的Cloud Volumes ONTAP 部署不再包括多租户加密密钥管理(MTEKM)许可证。
+
+有关随Cloud Volumes ONTAP 自动安装的ONTAP 功能许可证的详细信息、请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP 的默认配置"^]。
+
+
+
 == 2022年12月15日
 
 

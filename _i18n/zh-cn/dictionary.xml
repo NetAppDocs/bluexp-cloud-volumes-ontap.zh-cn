@@ -3143,7 +3143,6 @@
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="list-title">前提条件</block>
   <block id="0dbc3b305b67f45cc077782f1bde33be" category="list-text">Cloud Volumes ONTAP 必须运行9.10.1或更高版本</block>
   <block id="3db7729c3f93b51e237e9f64f77736ce" category="list-text">已安装卷加密（ VE ）许可证</block>
-  <block id="1343117a59836c5996c8be9e9914ce4b" category="list-text">已安装多租户加密密钥管理（ MTEKM ）许可证</block>
   <block id="941d09f50e1c95a1d21454ff759fc757" category="list-text">您必须是集群管理员或SVM管理员</block>
   <block id="4da5254130066f3f3262c3aa07f10759" category="list-text">Active Azure订阅</block>
   <block id="0c7af18d6ac0bf65ef1d6aec6f629263" category="list-text">只能在数据SVM上配置AKV</block>
@@ -3681,8 +3680,6 @@
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">单独为配置的容量和I/O操作付费。</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP 单节点或HA</block>
   <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">费用按两个成本组成部分计算：存储和使用情况(I/O)</block>
-  <block id="050a8b75e1382967bf1140508c5b62b6" category="list-text">仅在Azure Marketplace中以按需购买或按年订约的形式提供</block>
-  <block id="cd709b16b7a535f5ecfcfbe3f849b353" category="list-text">支持以下选定VM类型：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 和E8ds_v4</block>
   <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">边缘缓存</block>
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">为Cloud Volumes Edge Cache提供许可。</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">具有与专业软件包相同的功能、为分布式企业提供业务连续性和数据保护</block>
@@ -3705,7 +3702,6 @@
   <block id="de908965dc022756e01253bb2ab070dc" category="list-text">*连接*：选择一个新资源组或现有资源组、然后选择是使用预定义的安全组还是使用您自己的资源组。</block>
   <block id="c62cb6ffba40dfccd9137c53e13ffa06" category="list-text">如果选择*仅选定vNet *、则入站流量的源是选定vNet的子网范围以及Connector所在的vNet的子网范围。这是建议的选项。</block>
   <block id="af5480ae1c406371c200cbecf7ae3ae3" category="list-text">如果选择*所有VNets*、则入站流量的源IP范围为0.0.0.0/0。</block>
-  <block id="37fce366f49fadbb4cd779195ad526fd" category="list-text">多租户加密密钥管理(MTEKM)、从Cloud Volumes ONTAP 9.11.1开始</block>
   <block id="8f2c4dcc319947ae616fd10e4743c3f2" category="paragraph"><block ref="8f2c4dcc319947ae616fd10e4743c3f2" category="inline-link-rx"></block></block>
   <block id="99ac8cc27f368522d020a76c65551219" category="list-text">Cloud Volumes ONTAP 需要对NetApp AutoSupport 进行出站Internet访问、NetApp会主动监控系统的运行状况并向NetApp技术支持发送消息。</block>
   <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 防火墙允许通过端口3128进行_outout_连接。</block>
@@ -4588,4 +4584,17 @@
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.12.1、其中包括对新功能的支持以及其他云提供商区域的支持。</block>
   <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">对于根磁盘、启动磁盘、NVRAM磁盘、核心磁盘和数据磁盘、BlueXP使用磁盘加密集、通过该加密集可以管理具有受管磁盘的加密密钥。</block>
   <block id="da9740256f1fda9e06aa732d86702abc" category="admonition">这是您为BlueXP设置的服务帐户、 <block ref="0f8a0ed359c33dd5dbb02a467fa98093" category="inline-link-macro-rx"></block>。</block>
+  <block id="f85c96fab0937fb6abf38c354668c165" category="section-title">2023年1月3日</block>
+  <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">连接器3.9.25版引入了以下更改。</block>
+  <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Google Cloud提供许可包</block>
+  <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">在Google云市场中、Cloud Volumes ONTAP 可以通过按需购买或按年订立的合同获得经过优化且基于边缘缓存容量的许可包。</block>
+  <block id="d1f7ea60f001f689d734c007e925b17e" category="paragraph">请参见 <block ref="0fb2e984675bc2d20107c292ded47d43" category="inline-link-macro-rx"></block>。</block>
+  <block id="fced3090ff990434831b838f07c6a3a7" category="paragraph">新的Cloud Volumes ONTAP 部署不再包括多租户加密密钥管理(MTEKM)许可证。</block>
+  <block id="a1299d36f8821164c4414c1a5ab986dd" category="inline-link-macro">Cloud Volumes ONTAP 的默认配置</block>
+  <block id="a8e8ca53febeb9bd58edbc0647eb9a34" category="paragraph">有关随Cloud Volumes ONTAP 自动安装的ONTAP 功能许可证的详细信息、请参见 <block ref="79578e78303d1a240e8fa9c178a9de63" category="inline-link-macro-rx"></block>。</block>
+  <block id="d4a6e54c4d6405336cdeb07c50490008" category="list-text">在Azure Marketplace中以按需购买或按年订约的形式提供</block>
+  <block id="18daf9881514241d393343911b3c6b0d" category="list-text">在Google Cloud Marketplace中以按需购买或按年订约的形式提供</block>
+  <block id="0fbc0a0fa746d19ef30c136beb33ee6e" category="list-text">选定虚拟机类型支持：</block>
+  <block id="e2bb4238e5d918b51d049ce1e69dc93c" category="list-text">对于Azure：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、和E8ds_v4</block>
+  <block id="2efd0683ed3ad3ba3a383a25bc466303" category="list-text">对于Google Cloud：n2-standard-4、n2-standard-8</block>
 </blocks>

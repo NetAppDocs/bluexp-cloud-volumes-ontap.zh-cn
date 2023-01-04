@@ -22,7 +22,6 @@ summary: 将Azure密钥存储用于第三方密钥管理服务。
 .前提条件
 * Cloud Volumes ONTAP 必须运行9.10.1或更高版本
 * 已安装卷加密(VE)许可证(已向NetApp支持部门注册的每个Cloud Volumes ONTAP 系统会自动安装NetApp卷加密许可证)
-* 已安装多租户加密密钥管理（ MTEKM ）许可证
 * 您必须是集群管理员或SVM管理员
 * Active Azure订阅
 

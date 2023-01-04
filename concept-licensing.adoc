@@ -65,8 +65,6 @@ Keystone Flex 订阅:: 基于订阅的按需购买服务，可为 HA 对提供�
 
 
 
-ifdef::azure[]
-
 
 
 ==== 已优化
@@ -78,12 +76,41 @@ ifdef::azure[]
 +
 您不会因与数据复制(SnapMirror)或NDMP相关的I/O费用。
 
-* 仅在Azure Marketplace中以按需购买或按年订约的形式提供
-* 支持以下选定VM类型：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、 和E8ds_v4
-* 增加 NetApp 的任何云数据服务，但需额外付费
+
+
+ifdef::azure[]
+
+* 在Azure Marketplace中以按需购买或按年订约的形式提供
 
 
 endif::azure[]
+
+ifdef::gcp[]
+
+* 在Google Cloud Marketplace中以按需购买或按年订约的形式提供
+
+
+endif::gcp[]
+
+* 选定虚拟机类型支持：
+
+
+ifdef::azure[]
+
+* 对于Azure：E4s_v3、E4ds_v4、DS4_v2、DS13_v2、E8s_v3、和E8ds_v4
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* 对于Google Cloud：n2-standard-4、n2-standard-8
+
+
+endif::gcp[]
+
+* 增加 NetApp 的任何云数据服务，但需额外付费
+
 
 
 
@@ -114,8 +141,6 @@ endif::azure[]
 * 增加 NetApp 的任何云数据服务，但需额外付费
 
 
-ifdef::azure[]
-
 
 
 ==== 边缘缓存
@@ -126,12 +151,23 @@ ifdef::azure[]
 * 通过每个位置的占用空间较小的Windows VM实现智能边缘缓存
 * 至少30 TiB、包括六个边缘节点
 * 每购买3 Tib的额外容量、一个边缘节点
-* 仅在Azure Marketplace中以按需购买或按年订约的形式提供
 
 
-https://cloud.netapp.com/cloud-volumes-edge-cache["详细了解Cloud Volumes Edge Cache如何帮助您的业务"^]
+ifdef::azure[]
+
+* 在Azure Marketplace中以按需购买或按年订约的形式提供
+
 
 endif::azure[]
+
+ifdef::gcp[]
+
+* 在Google Cloud Marketplace中以按需购买或按年订约的形式提供
+
+
+endif::gcp[]
+
+https://cloud.netapp.com/cloud-volumes-edge-cache["详细了解Cloud Volumes Edge Cache如何帮助您的业务"^]
 
 
 

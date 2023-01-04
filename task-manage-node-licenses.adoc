@@ -113,7 +113,7 @@ BlueXP会将未分配的许可证转换为您选择的服务。您可以在 * �
 * 示例 *
 
 +
-image:screenshot_license_generator.gif["屏幕截图：显示填写的 NetApp 许可证文件生成器网页示例，包括密码，产品（ NetApp Cloud Volumes ONTAP BYOL for AWS ）和产品序列号。"]
+image:screenshot-license-generator.png["屏幕截图：显示了NetApp许可证生成器网页的示例、其中包含可用的产品线。"]
 
 . 选择是通过电子邮件还是直接下载接收 serialnumber.nlf JSON 文件。
 

@@ -20,7 +20,7 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 
 
 
-== 2023年1月3日
+== 2023年1月1日
 
 连接器3.9.25版引入了以下更改。
 
@@ -50,7 +50,7 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 
 现在、BlueXP可以在AWS和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.0。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9120-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 
@@ -281,7 +281,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解
 
 现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.11.1、其中包括对新功能的支持以及其他云提供商区域的支持。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9111-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]
 
 
 
@@ -359,7 +359,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 
 BlueXP现在可以部署和管理Cloud Volumes ONTAP 9.11.0。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9110-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 
@@ -612,7 +612,7 @@ image:screenshot-cvo-create-volume.png["创建新卷时显示 \" 协议 \" 页�
 
 BlueXP现在可以部署和管理Cloud Volumes ONTAP 9.10.1。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9101-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 

@@ -840,11 +840,6 @@
   <block id="487d92711c834ef6ed6c245a4ade969b" category="paragraph">保留期结束后、您将负责删除不再需要的任何文件。</block>
   <block id="d7b54fc61b65b19c4694a29b6044aacd" category="section-title">正在充电</block>
   <block id="74f13d97ea448b8140308bf35c78920e" category="section-title">激活 WORM 存储</block>
-  <block id="82389b2fd96eb0a8c75af9a934cf690c" category="paragraph">您可以在创建新的工作环境时在 Cloud Volumes ONTAP 系统上激活 WORM 存储。其中包括设置文件的默认保留期限。</block>
-  <block id="99726e6dac736d4f262968c3400fc895" category="admonition">您不能在单个卷上激活 WORM 存储—必须在系统级别激活 WORM 。</block>
-  <block id="34d0ed563f1f75350e0269592f33c876" category="paragraph">下图显示了如何在创建工作环境时激活 WORM 存储：</block>
-  <block id="c7c2875ea001d781c82d348606d491d5" category="inline-image-macro">显示了创建新工作环境时可用的 WORM 选项。</block>
-  <block id="e8c8f94a99b5ff03b2c26b3348becb8a" category="paragraph"><block ref="e8c8f94a99b5ff03b2c26b3348becb8a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="785248b65164fa7ba3b7948c05afc1cc" category="section-title">将文件提交到 WORM</block>
   <block id="3fd6e3cd7f26f44db79e5d9fabdbeda0" category="paragraph">您可以使用应用程序通过 NFS 或 CIFS 将文件提交到 WORM ，或者使用 ONTAP CLI 自动将文件提交到 WORM 。您还可以使用 WORM 附加文件来保留增量写入的数据，例如日志信息。</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">ONTAP 文档</block>
@@ -4614,4 +4609,16 @@
   <block id="79abc1902ac261d36290f5ef58f42833" category="paragraph"><block ref="91e4737b8b6f603b26f3f35aca1dbafa" category="inline-link-rx"></block>。</block>
   <block id="7260bbc39295ef94e60be19b73affac6" category="inline-image-macro">屏幕截图：显示了NetApp许可证生成器网页的示例、其中包含可用的产品线。</block>
   <block id="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="paragraph"><block ref="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="770d7d25a250359f096cca82c310f07b" category="paragraph">激活WORM存储的方式取决于所使用的Cloud Volumes ONTAP 版本。</block>
+  <block id="f7bdab9f1b3e432deef3bba2021d518d" category="section-title">9.10.1及更高版本</block>
+  <block id="634f99868031f4c19cc89185a03da350" category="paragraph">从Cloud Volumes ONTAP 9.10.1开始、您可以选择在卷级别启用或禁用WORM。选择如何启用WORM取决于您的需求。</block>
+  <block id="2c404b5c40a30cea75e4486ca42855d7" category="paragraph">创建新的Cloud Volumes ONTAP 工作环境时、系统会提示您启用或禁用WORM存储：</block>
+  <block id="1000fd534e8c9bff4332bafb5a9125aa" category="list-text">如果在创建工作环境时启用了WORM存储、则从BlueXP创建的每个卷都会启用WORM。但是、您可以使用System Manager或CLI创建已禁用WORM的卷。</block>
+  <block id="8614dac2e3bd328ce10de870996db0f5" category="paragraph">如果要为WORM存储创建专用系统、则此选项是一个不错的选择。</block>
+  <block id="53c068d69d7edf4c467cf5bb2a3193dd" category="list-text">如果在创建工作环境时禁用WORM存储、则从BlueXP创建的每个卷都会禁用WORM。但是、您可以使用System Manager或命令行界面创建启用了WORM的卷。</block>
+  <block id="03b892a4c3b15391f53e9a5afe77bb58" category="paragraph">如果要在同一系统上混用不同类型的卷、则此选项是一个不错的选择。</block>
+  <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">了解充电的工作原理</block>
+  <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">无论选择哪种方案、您都应选择此选项 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0及更早版本</block>
+  <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">您可以在创建新的工作环境时在 Cloud Volumes ONTAP 系统上激活 WORM 存储。您不能在单个卷上激活 WORM 存储—必须在系统级别激活 WORM 。只有在创建工作环境时、才能激活它。</block>
 </blocks>

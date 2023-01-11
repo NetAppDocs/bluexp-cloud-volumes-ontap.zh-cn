@@ -26,6 +26,38 @@ summary: 您可以在 Cloud Volumes ONTAP 系统上激活一次写入、多次�
 
 
 
+== 激活 WORM 存储
+
+激活WORM存储的方式取决于所使用的Cloud Volumes ONTAP 版本。
+
+
+
+=== 9.10.1及更高版本
+
+从Cloud Volumes ONTAP 9.10.1开始、您可以选择在卷级别启用或禁用WORM。选择如何启用WORM取决于您的需求。
+
+创建新的Cloud Volumes ONTAP 工作环境时、系统会提示您启用或禁用WORM存储：
+
+* 如果在创建工作环境时启用了WORM存储、则从BlueXP创建的每个卷都会启用WORM。但是、您可以使用System Manager或CLI创建已禁用WORM的卷。
++
+如果要为WORM存储创建专用系统、则此选项是一个不错的选择。
+
+* 如果在创建工作环境时禁用WORM存储、则从BlueXP创建的每个卷都会禁用WORM。但是、您可以使用System Manager或命令行界面创建启用了WORM的卷。
++
+如果要在同一系统上混用不同类型的卷、则此选项是一个不错的选择。
+
+
+
+无论选择哪种方案、您都应选择此选项 <<正在充电,了解充电的工作原理>>。
+
+
+
+=== 9.10.0及更早版本
+
+您可以在创建新的工作环境时在 Cloud Volumes ONTAP 系统上激活 WORM 存储。您不能在单个卷上激活 WORM 存储—必须在系统级别激活 WORM 。只有在创建工作环境时、才能激活它。
+
+
+
 == 正在充电
 
 根据 WORM 卷的总配置容量， WORM 存储的费用为每小时一次。
@@ -38,19 +70,6 @@ summary: 您可以在 Cloud Volumes ONTAP 系统上激活一次写入、多次�
 
 
 https://cloud.netapp.com/pricing["了解 WORM 存储的定价"^]
-
-
-
-== 激活 WORM 存储
-
-您可以在创建新的工作环境时在 Cloud Volumes ONTAP 系统上激活 WORM 存储。其中包括设置文件的默认保留期限。
-
-
-NOTE: 您不能在单个卷上激活 WORM 存储—必须在系统级别激活 WORM 。
-
-下图显示了如何在创建工作环境时激活 WORM 存储：
-
-image:screenshot_enable_worm.png["显示了创建新工作环境时可用的 WORM 选项。"]
 
 
 

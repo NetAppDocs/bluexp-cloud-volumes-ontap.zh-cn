@@ -3676,8 +3676,6 @@
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">为Cloud Volumes Edge Cache提供许可。</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">具有与专业软件包相同的功能、为分布式企业提供业务连续性和数据保护</block>
   <block id="90083db3dbad73e69a817501be172673" category="list-text">通过每个位置的占用空间较小的Windows VM实现智能边缘缓存</block>
-  <block id="c42bae5dc6b1d94a8229aa520a055d09" category="list-text">至少30 TiB、包括六个边缘节点</block>
-  <block id="9228e835b818682287047b781e3a92b5" category="list-text">每购买3 Tib的额外容量、一个边缘节点</block>
   <block id="7c4c7c30514b4cc21e76f21acfaacf2a" category="inline-link">详细了解Cloud Volumes Edge Cache如何帮助您的业务</block>
   <block id="20044e95e1ba41fb44c428898ee01dc2" category="paragraph"><block ref="20044e95e1ba41fb44c428898ee01dc2" category="inline-link-rx"></block></block>
   <block id="54dcd2c31a61414eef44d6ac931b8f57" category="paragraph">+请注意、经过优化的和Edge Cache软件包不适用于BYOL。</block>
@@ -4621,4 +4619,5 @@
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">无论选择哪种方案、您都应选择此选项 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0及更早版本</block>
   <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">您可以在创建新的工作环境时在 Cloud Volumes ONTAP 系统上激活 WORM 存储。您不能在单个卷上激活 WORM 存储—必须在系统级别激活 WORM 。只有在创建工作环境时、才能激活它。</block>
+  <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">每购买3 Tib容量一个边缘节点</block>
 </blocks>

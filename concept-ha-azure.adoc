@@ -76,7 +76,7 @@ image:diagram_ha_azure_maz.png["一个概念映像、其中显示了一个负载
 请注意以下有关BlueXP为您部署的Azure组件的信息：
 
 Azure 标准负载平衡器:: 负载平衡器管理传入 Cloud Volumes ONTAP HA 对的流量。
-可用性区域:: 两个Cloud Volumes ONTAP 节点部署在不同的可用性区域中。可用性区域可确保节点位于不同的故障域中。 https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy["在Azure文档中了解有关Azure存储冗余的更多信息"^]。
+可用性区域:: 两个Cloud Volumes ONTAP 节点部署在不同的可用性区域中。可用性区域可确保节点位于不同的故障域中。 https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["在Azure文档中了解有关适用于受管磁盘的Azure分区冗余存储的更多信息"^]。
 Disks:: 客户数据驻留在分区冗余存储(ZRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["启动、根、配对节点根和核心数据"]。
 存储帐户:: 存储帐户用于基于受管磁盘的部署、以处理诊断日志并分层到Blob存储。
 

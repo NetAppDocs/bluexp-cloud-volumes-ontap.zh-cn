@@ -4409,8 +4409,6 @@
   <block id="3d9563c3da13e16d8921ac243a987129" category="paragraph">Azure中的Cloud Volumes ONTAP HA多可用性区域配置包括以下组件：</block>
   <block id="ad6e11a5573fe6579ae1e6dcdce60d8b" category="inline-image-macro">一个概念映像、其中显示了一个负载平衡器、用于管理来自BlueXP和客户端的传入流量、两个可用性区域中的两个Cloud Volumes ONTAP 节点、用于启动数据的SSD磁盘以及用于客户数据的受管磁盘。</block>
   <block id="af874ecaf1a103d4d596315556c66e56" category="paragraph"><block ref="af874ecaf1a103d4d596315556c66e56" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="77a1f8867dc12013c0da2ead2b6c9ca3" category="inline-link">在Azure文档中了解有关Azure存储冗余的更多信息</block>
-  <block id="2b6a2a78ba6ba0d1bf316591f2c9f89b" category="list-text">两个Cloud Volumes ONTAP 节点部署在不同的可用性区域中。可用性区域可确保节点位于不同的故障域中。<block ref="c8912f6a29cb2653305e1189cf1fa38a" category="inline-link-rx"></block>。</block>
   <block id="0297170537ff589d5fd67ec8db7c4ae4" category="inline-link-macro">启动、根、配对节点根和核心数据</block>
   <block id="419c5f0dee6c475074f478e8aca659fd" category="list-text">客户数据驻留在分区冗余存储(ZRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 <block ref="21b5d37c4ebe0dabed7cc2a884c8db5a" category="inline-link-macro-rx"></block>。</block>
   <block id="b04fd67a98a3b32956894024aa6fcf4f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 设置 AWS KMS</block>
@@ -4620,4 +4618,14 @@
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0及更早版本</block>
   <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">您可以在创建新的工作环境时在 Cloud Volumes ONTAP 系统上激活 WORM 存储。您不能在单个卷上激活 WORM 存储—必须在系统级别激活 WORM 。只有在创建工作环境时、才能激活它。</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">每购买3 Tib容量一个边缘节点</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支持云提供商解决方案</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">有关已集成到BlueXP中的以下云提供商解决方案的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">适用于 ONTAP 的 Amazon FSX</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">适用于 Google Cloud 的 Cloud Volumes Service</block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="6d50c94851edb68865f91b19a7c8e802" category="inline-link">在Azure文档中了解有关适用于受管磁盘的Azure分区冗余存储的更多信息</block>
+  <block id="d0dd1e24dc3eec7e346159d97577b2a5" category="list-text">两个Cloud Volumes ONTAP 节点部署在不同的可用性区域中。可用性区域可确保节点位于不同的故障域中。<block ref="ac08b397e7ae08c3f76d7057ac214476" category="inline-link-rx"></block>。</block>
 </blocks>

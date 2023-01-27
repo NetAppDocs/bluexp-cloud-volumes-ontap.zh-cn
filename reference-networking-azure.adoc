@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-networking-azure.html 
 keywords: networking, network, requirements, connection, connections, vnet, security group, security groups, subnet, vpn, internet, proxy, HTTP, private, proxy server, routing, firewall, autosupport, connection, jump host, outbound, ports, blob, service endpoint 
-summary: 设置 Azure 网络，以便 Cloud Volumes ONTAP 系统可以正常运行。其中包括连接器和 Cloud Volumes ONTAP 的网络连接。 
+summary: 设置 Azure 网络，以便 Cloud Volumes ONTAP 系统可以正常运行。 
 ---
 = Azure 中的 Cloud Volumes ONTAP 的网络要求
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 设置 Azure 网络，以便 Cloud Volumes ONTAP 系统可以正常运�
 
 
 [role="lead"]
-设置 Azure 网络，以便 Cloud Volumes ONTAP 系统可以正常运行。其中包括连接器和 Cloud Volumes ONTAP 的网络连接。
+设置 Azure 网络，以便 Cloud Volumes ONTAP 系统可以正常运行。
 
 
 
@@ -433,135 +433,6 @@ NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
 
 == 连接器的要求
 
-设置您的网络，以便 Connector 可以管理公有云环境中的资源和流程。除了为Connector提供虚拟网络和子网之外、您还需要确保满足以下要求。
+如果尚未创建Connector、则还应查看Connector的网络要求。
 
-
-
-=== 连接到目标网络
-
-Connector需要与您要创建的工作环境类型以及计划启用的服务建立网络连接。
-
-例如、如果您在公司网络中安装了连接器、则必须设置与启动Cloud Volumes ONTAP 的虚拟网络的VPN连接。
-
-
-
-=== 出站 Internet 访问
-
-连接器需要通过出站 Internet 访问来管理公有云环境中的资源和流程。
-
-[cols="2*"]
-|===
-| 端点 | 目的 
-
-
-| https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
-
-
- a| 
-https://*.api.bluexp.netapp.com
-
-https://api.bluexp.netapp.com
-
-https://*.cloudmanager.cloud.netapp.com
-
-https://cloudmanager.cloud.netapp.com
- a| 
-在BlueXP中提供SaaS功能和服务。
-
-
-NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
-
-
-
-| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
-|===
-
-
-=== 代理服务器
-
-如果您的组织要求为所有传出Internet流量部署HTTP代理、请获取有关HTTP代理的以下信息：
-
-* IP 地址
-* 凭据
-* HTTPS证书
-
-
-
-
-=== 安全组
-
-没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#the-local-user-interface["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
-
-
-
-=== IP地址限制
-
-可能与172范围内的IP地址冲突。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["了解有关此限制的更多信息"]。
-
-
-
-=== 安全组规则
-
-Connector 的安全组需要入站和出站规则。
-
-
-
-==== 入站规则
-
-[cols="3*"]
-|===
-| Port | 协议 | 目的 
-
-
-| 22. | SSH | 提供对 Connector 主机的 SSH 访问 
-
-
-| 80 | HTTP | 提供从客户端 Web 浏览器到本地用户界面的 HTTP 访问 
-
-
-| 443. | HTTPS | 提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问 
-
-
-| TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。部署连接器后、您必须手动打开此端口。 
-|===
-
-
-==== 出站规则
-
-连接器的预定义安全组将打开所有出站流量。如果可以接受，请遵循基本出站规则。如果您需要更严格的规则、请使用高级出站规则。
-
-
-
-===== 基本外向规则
-
-Connector 的预定义安全组包括以下出站规则。
-
-[cols="3*"]
-|===
-| Port | 协议 | 目的 
-
-
-| 全部 | 所有 TCP | 所有出站流量 
-
-
-| 全部 | 所有 UDP | 所有出站流量 
-|===
-
-
-===== 高级出站规则
-
-如果您需要对出站流量设置严格的规则，则可以使用以下信息仅打开 Connector 进行出站通信所需的端口。
-
-
-NOTE: 源 IP 地址是 Connector 主机。
-
-[cols="5*"]
-|===
-| 服务 | Port | 协议 | 目标 | 目的 
-
-
-| API 调用和 AutoSupport | 443. | HTTPS | 出站 Internet 和 ONTAP 集群管理 LIF | API调用Azure和ONTAP 、云数据感知、勒索软件服务以及向NetApp发送AutoSupport 消息 
-
-
-| DNS | 53. | UDP | DNS | 用于BlueXP的DNS解析 
-|===
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["查看连接器的网络要求"^]

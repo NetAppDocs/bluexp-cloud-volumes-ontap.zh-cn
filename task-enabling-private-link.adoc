@@ -81,6 +81,7 @@ image:diagram_azure_private_link.png["一个概念映像，用于显示通过专
    "resource-group" : "<resource group name of the DNS zone>",
    "subscription" : "<subscription ID>",
    "use-existing" : true
+   "create-private-dns-zone-link" : true
 }
 ....
 +

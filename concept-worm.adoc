@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-worm.html 
-keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage 
+keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage, tiering 
 summary: 您可以在 Cloud Volumes ONTAP 系统上激活一次写入、多次读取（ WORM ）存储、以在指定的保留期内以未经修改的形式保留文件。云 WORM 存储由 SnapLock 技术提供支持，这意味着 WORM 文件在文件级别受到保护。 
 ---
 = WORM 存储
@@ -81,9 +81,21 @@ https://cloud.netapp.com/pricing["了解 WORM 存储的定价"^]
 
 
 
+== WORM和数据分层
+
+创建新的Cloud Volumes ONTAP 9.8或更高版本系统时、您可以同时启用数据分层和WORM存储。通过使用WORM存储启用数据分层、您可以将数据分层到云中的对象存储。
+
+您应了解以下有关启用数据分层和WORM存储的信息：
+
+* 分层到对象存储的数据不包括ONTAP WORM功能。要确保端到端WORM功能、您需要正确设置存储分段权限。
+* 分层到对象存储的数据不具有WORM功能、这意味着从技术上讲、对存储分段和容器具有完全访问权限的任何人都可以转到并删除ONTAP 分层的对象。
+* 启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。
+
+
+
+
 == 限制
 
 * Cloud Volumes ONTAP 中的 WORM 存储在 " 可信存储管理员 " 模式下运行。虽然 WORM 文件不受更改或修改的影响，但集群管理员可以删除卷，即使这些卷包含未过期的 WORM 数据也是如此。
 * 除了可信存储管理员模式之外， Cloud Volumes ONTAP 中的 WORM 存储还隐式地在 " 可信云管理员 " 模式下运行。云管理员可以通过直接从云提供商中删除或编辑云存储，在 WORM 数据到期之前将其删除。
-* 激活 WORM 存储后，无法启用对象存储的数据分层。
 

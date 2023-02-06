@@ -91,6 +91,10 @@ TIP: 如果多个 IAM 用户在同一个 AWS 帐户中工作，则每个用户�
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["了解有关 Cloud Data sense 的更多信息"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["了解有关 Cloud Backup 的更多信息"^]
++
+
+TIP: 如果您要使用WORM和数据分层、则必须禁用云备份并部署9.8或更高版本的Cloud Volumes ONTAP 工作环境。
+
 
 
 . * 位置和连接 * ：输入您在中记录的网络信息 link:task-planning-your-config.html#aws-network-information-worksheet["AWS 工作表"]。
@@ -169,15 +173,21 @@ link:concept-data-tiering.html["了解数据分层的工作原理"]。
 
 
 
-. * 写入速度和 WORM* ：选择 * 正常 * 或 * 高 * 写入速度，并根据需要激活一次写入，多次读取（ WORM ）存储。
+. *写入速度和WORM*：
++
+.. 如果需要、选择*正常*或*高*写入速度。
 +
 link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
 
+.. 根据需要激活一次写入、多次读取(WORM)存储。
 +
-如果启用了数据分层，则无法启用 WORM 。
+如果为Cloud Volumes ONTAP 9.7及更低版本启用了数据分层、则无法启用WORM。启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。
 
 +
 link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
+
+.. 如果激活了WORM存储、请选择保留期限。
+
 
 . * 创建卷 * ：输入新卷的详细信息或单击 * 跳过 * 。
 +
@@ -321,6 +331,10 @@ TIP: 如果多个 IAM 用户在同一个 AWS 帐户中工作，则每个用户�
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["了解有关 Cloud Data sense 的更多信息"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["了解有关 Cloud Backup 的更多信息"^]
++
+
+TIP: 如果您要使用WORM和数据分层、则必须禁用云备份并部署9.8或更高版本的Cloud Volumes ONTAP 工作环境。
+
 
 
 . * 高可用性部署模式 * ：选择一个高可用性配置。
@@ -409,15 +423,21 @@ link:concept-data-tiering.html["了解数据分层的工作原理"]。
 
 
 
-. * 写入速度和 WORM* ：选择 * 正常 * 或 * 高 * 写入速度，并根据需要激活一次写入，多次读取（ WORM ）存储。
+. *写入速度和WORM*：
++
+.. 如果需要、选择*正常*或*高*写入速度。
 +
 link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
 
+.. 根据需要激活一次写入、多次读取(WORM)存储。
 +
-如果启用了数据分层，则无法启用 WORM 。
+如果为Cloud Volumes ONTAP 9.7及更低版本启用了数据分层、则无法启用WORM。启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。
 
 +
 link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
+
+.. 如果激活了WORM存储、请选择保留期限。
+
 
 . * 创建卷 * ：输入新卷的详细信息或单击 * 跳过 * 。
 +

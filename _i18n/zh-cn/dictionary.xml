@@ -214,7 +214,6 @@
   <block id="9ee8a2504ba9f03aae4b30973ea35ad4" category="inline-link">GCP 中支持的 Cloud Volumes ONTAP 配置</block>
   <block id="5356346579bd6c821def647592378a8a" category="paragraph">Cloud Volumes ONTAP 系统的原始容量限制与许可证相关。附加限制会影响聚合和卷的大小。在规划配置时，您应该了解这些限制。</block>
   <block id="9265447fe548064ca54a98dd4a111bc0" category="inline-link">GCP 中 Cloud Volumes ONTAP 的存储限制</block>
-  <block id="a15ee6cc62f2676af04c7221ef99fc86" category="section-title">在 GCP 中估算系统规模</block>
   <block id="d1d964d1db8731b3b8174fa845b85de0" category="paragraph">对 Cloud Volumes ONTAP 系统进行规模估算有助于满足性能和容量要求。在选择计算机类型，磁盘类型和磁盘大小时，您应注意几个要点：</block>
   <block id="3ea4bf9da7622edeeae1bf80e9c5cded" category="list-text">计算机类型</block>
   <block id="c216ce09fef0e1ef250512b3b43005f3" category="list-text">在中查看支持的计算机类型<block ref="f922a7787320953a33ee2591f979f78c" category="inline-link-rx"></block> 然后查看 Google 提供的有关每个受支持计算机类型的详细信息。将工作负载要求与此计算机类型的 vCPU 和内存数量相匹配。请注意，每个 CPU 核心都会提高网络连接性能。</block>
@@ -308,11 +307,8 @@
   <block id="fcdf2fd9d6e147f33f4e8d5f15a8724a" category="inline-link-macro">了解如何实施适用于勒索软件的 NetApp 解决方案</block>
   <block id="8d9f62f251a8a411876740e6611a61cf" category="paragraph"><block ref="f1b4d319a2908121f0a6e639ae6c7cdc" category="inline-link-macro-rx"></block>。</block>
   <block id="eef256fe1f25b0dfdcc3971d7f0a9974" category="summary">您可以在单系统配置中启动 Cloud Volumes ONTAP ，也可以在 Google 云平台中作为 HA 对启动。</block>
-  <block id="fdbc311c4dd4bb425160f22f166435fa" category="doc">在 GCP 中启动 Cloud Volumes ONTAP</block>
-  <block id="74b0825a91f70136708bc63f9253e89c" category="paragraph">您可以在单节点配置中启动 Cloud Volumes ONTAP ，也可以在 Google 云平台中作为 HA 对启动。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">开始之前</block>
   <block id="3a2e3bd3692b5b10d4e8d1876ea764e4" category="list-text">您应具有<block ref="31efb472d9740ae4bd5b3185af479587" category="inline-link-rx"></block>。</block>
-  <block id="af2fe545c466e4cd2bff03fb7e3dd4f2" category="paragraph">您应该已准备好选择配置并从管理员处获取 GCP 网络信息。有关详细信息，请参见 <block ref="7c40283f4f533a5903d1033c57ef27f4" category="inline-link-macro-rx"></block>。</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">已在项目中启用</block>
   <block id="3f7dd317abe229076594c229e96f375d" category="list-text">Google Cloud API 应为<block ref="2bf1d71c4d11fe94040400dbdd9bbe2e" category="inline-link-rx"></block>：</block>
   <block id="d82c8fcef9b6dd8fb6808c96dcbc5bb5" category="list-text">Cloud Deployment Manager V2 API</block>
@@ -320,7 +316,6 @@
   <block id="9e636409b20980fb5089c87705851b4d" category="list-text">Cloud Resource Manager API</block>
   <block id="1101b09020ade12e90a562489e315c8d" category="list-text">计算引擎 API</block>
   <block id="71660685d00034957db3f9a31c160978" category="list-text">身份和访问管理（ IAM ） API</block>
-  <block id="2418d4e79163fe8a8ee473ee02e56b0d" category="section-title">在 GCP 中启动单节点系统</block>
   <block id="02468344d7eb024c93087ede43938890" category="list-text">* 选择一个位置 * ：选择 * Google Cloud* 和 * Cloud Volumes ONTAP * 。</block>
   <block id="a52ac8a7b02f1fcb4758ef8608df8657" category="list-text">如果出现提示，<block ref="3902ae0ac0b84277d412c62a8daa1bac" category="inline-link-rx"></block>。</block>
   <block id="47e8755e148fbe2f9d687cce086d2e82" category="list-text">* 详细信息和凭据 * ：选择项目，指定集群名称，选择服务帐户，添加标签并指定凭据。</block>
@@ -334,36 +329,21 @@
   <block id="c9dac17a844d646dfb54058f973d40a5" category="cell">编辑项目</block>
   <block id="380bfdc134190af310ad2f9812d7569f" category="inline-link-macro">如本页所述</block>
   <block id="27d9b3c82bd8da92f73b89a66c20ba04" category="paragraph">单击 * 添加订阅 * 将选定凭据与订阅关联。</block>
-  <block id="b878d292874b3ab2ea5568d71ba31a73" category="paragraph">要创建按需购买的 Cloud Volumes ONTAP 系统，您需要从 GCP 市场中选择与 Cloud Volumes ONTAP 订阅关联的 GCP 项目。</block>
-  <block id="0b6a93a12e94b586f0634222ff996760" category="inline-link">将 Marketplace 订阅与 GCP 凭据关联</block>
-  <block id="c6183bf47ae03a5fca3043b995daf4ad" category="paragraph">以下视频介绍了如何将按需购买的 Marketplace 订阅与您的 GCP 项目相关联：或者，也可以按照中的步骤进行订阅<block ref="1ca5652e3bd427104a4f5f3fa595cbd8" category="inline-link-rx"></block> 部分。</block>
   <block id="440dfcc60c7c21a1c797e881b2dd7646" category="list-text">* 服务 * ：选择要在此系统上使用的服务。要选择 Cloud Backup 或使用分层，您必须已在步骤 3 中指定服务帐户。</block>
   <block id="2e5f3aa65f18453c5c51b5ffcf2214d5" category="inline-link">Google Cloud 文档：配置私有 Google Access</block>
   <block id="f72d7e736d5c07e6650c7c59c1d4beae" category="list-text">* 底层存储资源 * ：选择初始聚合的设置：磁盘类型和每个磁盘的大小。</block>
-  <block id="46c8ec27dde6a17388de3058e4f90f1b" category="paragraph">有关选择磁盘类型和大小的帮助，请参见 <block ref="648252a904437aee014f01faec9e87c4" category="inline-link-macro-rx"></block>。</block>
-  <block id="8ee28f71a3913c6cd38d72baee984fef" category="list-text">* 写入速度和 WORM* ：选择 * 正常 * 或 * 高 * 写入速度，并根据需要激活一次写入，多次读取（ WORM ）存储。</block>
-  <block id="95fb8b2c3ed7d9abbd6c24af1369553c" category="paragraph">仅单节点系统支持选择写入速度。</block>
-  <block id="bd33ad636739b8c6eade3eaa425ba1d4" category="list-text">* Google Cloud Platform* 中的数据分层：选择是否在初始聚合上启用数据分层，为分层数据选择存储类，然后选择具有预定义存储管理员角色的服务帐户（对于 Cloud Volumes ONTAP 9.7 或更高版本为必需）， 或者选择一个 GCP 帐户（对于 Cloud Volumes ONTAP 9.6 为必需帐户）。</block>
-  <block id="528caeb1301c53d77a1cb7331729c1de" category="inline-link">使用 9.6 设置和添加用于数据分层的 GCP 帐户</block>
-  <block id="256547a64d3e41d9a7c6a18d8d4243c1" category="list-text">有关添加 GCP 帐户的帮助，请参见<block ref="73ec53281b5c885e66f789300c61c2d4" category="inline-link-rx"></block>。</block>
-  <block id="158462e318c84b41ed7070989fee5b8c" category="list-text">如果禁用数据分层，则可以在后续聚合上启用该功能，但您需要关闭系统并从 GCP 控制台添加服务帐户。</block>
   <block id="03cb85499f4837ea1e2f43864e39d856" category="cell">AD 域中要与 CIFS 服务器关联的组织单元。默认值为 cn = computers 。</block>
   <block id="547635b81ffb0f5ff05913c2836c7d9a" category="paragraph">有关详细信息，请参见 <block ref="3385123430547e9830342b8fdb19e3d3" category="inline-link-macro-rx"></block> 和 <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
-  <block id="031ff168f42bf83e7c6ebec1250cef3f" category="section-title">在 GCP 中启动 HA 对</block>
   <block id="7289ff9561bd8f3124de5e821bd3e8e0" category="list-text">在 " 画布 " 页面上，单击 * 添加工作环境 * 并按照提示进行操作。</block>
   <block id="b5a7d19f6788ad4a9fa68128eabe2be1" category="list-text">* 选择位置 * ：选择 * Google Cloud* 和 * Cloud Volumes ONTAP HA* 。</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link-macro">分层</block>
   <block id="44c4ed2245bcd5288c91b50f9a330bf4" category="cell">如果您计划使用 <block ref="1295a10079ec492e012aa129538498c1" category="inline-link-macro-rx"></block> 或<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block> 服务，您需要启用 * 服务帐户 * 开关，然后选择具有预定义存储管理员角色的服务帐户。</block>
-  <block id="65be3455c2d9a55c35fcbb66e8968d88" category="paragraph">以下视频介绍了如何将按需购买的 Marketplace 订阅与您的 GCP 项目相关联：或者，也可以按照中的步骤进行订阅<block ref="1ca5652e3bd427104a4f5f3fa595cbd8" category="inline-link-rx"></block> 部分。</block>
   <block id="166a4b640ff9a34dd7447ebf0e16518b" category="list-text">* 高可用性部署模式 * ：为高可用性配置选择多个分区（建议）或一个分区。然后选择一个区域和分区。</block>
   <block id="96c883d1fa1e7ebdc724bb5cec521bbd" category="inline-link-macro">了解有关 HA 部署模式的更多信息</block>
   <block id="c03cb5d06936cb14d5f6dff824cc7c90" category="paragraph"><block ref="978980a9148c052b6f4164e267b317c3" category="inline-link-macro-rx"></block>。</block>
   <block id="74c223c0ac10d19fc933bf44bdfae707" category="list-text">* 连接 * ：为 HA 配置选择四个不同的 VPC ，每个 VPC 中选择一个子网，然后选择防火墙策略。</block>
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">详细了解网络要求</block>
   <block id="7e1b099e8ddd48733a860e9dc84718f9" category="paragraph"><block ref="81d7ec58de725abfb78667b4f46a89ab" category="inline-link-macro-rx"></block>。</block>
-  <block id="09c7f0ffca918d21158d7ea36691dcf2" category="list-text">* WORM* ：根据需要激活一次写入，多次读取（ WORM ）存储。</block>
-  <block id="279b45ef0c8a71337da715b526ec30ed" category="paragraph">如果启用了数据分层，则无法启用 WORM 。 <block ref="b8e9389aa16366d8b675fc0ac72edf2e" category="inline-link-macro-rx"></block>。</block>
-  <block id="5a491f1bb01a92203592595fdf6ce353" category="list-text">* Google Cloud Platform* 中的数据分层：选择是否在初始聚合上启用数据分层，为分层数据选择存储类，然后选择具有预定义的存储管理员角色的服务帐户。</block>
   <block id="243c363888d8a767b0c39057fd91bece" category="doc">删除 Cloud Volumes ONTAP 系统</block>
   <block id="1b044bb64b9bbe28f6c0512f65cdaa86" category="paragraph">删除工作环境时，不会删除由 Cloud Backup 备份和 Cloud Data Asense and Monitoring 实例等其他服务管理的资源。您需要手动自行删除它们。否则，您将继续收到这些资源的费用。</block>
   <block id="ab3fdba113c7d85bf4272c78761ef0b8" category="inline-link">如有必要，删除备份</block>
@@ -847,7 +827,6 @@
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">Cloud Volumes ONTAP 中的 WORM 存储在 " 可信存储管理员 " 模式下运行。虽然 WORM 文件不受更改或修改的影响，但集群管理员可以删除卷，即使这些卷包含未过期的 WORM 数据也是如此。</block>
   <block id="6d0cc0f6b100bdce8cb06276811faff9" category="list-text">除了可信存储管理员模式之外， Cloud Volumes ONTAP 中的 WORM 存储还隐式地在 " 可信云管理员 " 模式下运行。云管理员可以通过直接从云提供商中删除或编辑云存储，在 WORM 数据到期之前将其删除。</block>
-  <block id="eb57ade58504f4d5c09cb5e8cd78ae55" category="list-text">激活 WORM 存储后，无法启用对象存储的数据分层。</block>
   <block id="c65544a3678422a2d15f8bc1a12dec12" category="doc">创建 FlexVol 卷</block>
   <block id="6a6295e49dd6d445ae2c708b064bab15" category="list-text">在您选择的数据聚合上创建卷。 <block ref="f87b905002e05e67a79602c0e20e2e8c" category="inline-xref-macro-rx"></block>。</block>
   <block id="e016f8b4ca56502e28a613178565fc27" category="list-text">使用模板创建卷，以根据特定应用程序（例如数据库或流式服务）的工作负载要求优化卷。 <block ref="924dba442370e336c9e9ec48f12c601d" category="inline-xref-macro-rx"></block>。</block>
@@ -4220,7 +4199,6 @@
   <block id="6f3d93af7507d9ff7bead94d1ffc9cc1" category="paragraph">默认情况下、BlueXP会为Cloud Volumes ONTAP 与其关联存储帐户之间的连接启用Azure专用链路。Azure Private Link可确保Azure中端点之间的连接安全、并可提供性能优势。</block>
   <block id="7dfd5068a6c1386a24bb81164b3321f3" category="paragraph">无论采用哪种配置、BlueXP都会始终限制Cloud Volumes ONTAP 与存储帐户之间的连接的网络访问。网络访问仅限于部署了Cloud Volumes ONTAP 的vNet和部署了连接器的vNet。</block>
   <block id="2172036a4fb1da374a247000f3d0760e" category="paragraph">如果您的企业需要、您可以更改BlueXP中的设置、以便将Cloud Volumes ONTAP 配置为使用服务端点、而不是Azure专用链路。更改此设置将适用场景 添加您创建的新Cloud Volumes ONTAP 系统。</block>
-  <block id="b2ae1e45589e149ddbd92b2a29aa5bd3" category="paragraph">在大多数情况下、您无需执行任何操作即可使用Cloud Volumes ONTAP 设置Azure专用链路。BlueXP为您管理Azure专用链路。但是，如果您使用 Azure 私有 DNS ，则需要编辑配置文件。此外、您还应了解Azure中连接器位置的要求。</block>
   <block id="497286b7c4a76755ff0535ba3414dce0" category="paragraph">当BlueXP在Azure中部署Cloud Volumes ONTAP 时、它会在资源组中创建一个私有端点。专用端点与Cloud Volumes ONTAP 的存储帐户关联。因此，对 Cloud Volumes ONTAP 存储的访问会通过 Microsoft 主干网络进行。</block>
   <block id="77bb2abfb8f3c95b3fdaf2c2e6814b89" category="section-title">向BlueXP提供有关Azure私有DNS的详细信息</block>
   <block id="c6862ef0bb5d25a7ed0231faab734f0d" category="paragraph">如果您使用<block ref="35609e050ed0963e042a408dda682719" category="inline-link-rx"></block>，然后您需要修改每个 Connector 上的配置文件。否则、BlueXP无法在Cloud Volumes ONTAP 与其关联存储帐户之间启用Azure专用链路连接。</block>
@@ -4268,14 +4246,10 @@
   <block id="43b4e2bfc7554b142c2e386bdb5e5828" category="paragraph">几个月前，我们宣布 Cloud Volumes ONTAP 已获得 Amazon Web Services （ AWS ）前台就绪称号。今天、我们很高兴地宣布、我们已通过AWS前台验证了BlueXP和Cloud Volumes ONTAP。</block>
   <block id="bada065bfea7e34e9203e33edc44d46a" category="paragraph">现在，您可以选择要在其中部署单节点 Cloud Volumes ONTAP 系统的可用性区域。如果不选择AZ、BlueXP将为您选择一个。</block>
   <block id="4f0678a9e095858a4fa747c1c08210ee" category="paragraph">默认情况下、BlueXP现在可在Cloud Volumes ONTAP 及其关联存储帐户之间启用Azure专用链路连接。专用链路可确保 Azure 中端点之间的连接安全。</block>
-  <block id="e7fc9bf2d5b3fc237c8223fb2e9678d6" category="paragraph">在BlueXP中创建工作环境、以便在GCP中启动Cloud Volumes ONTAP。</block>
-  <block id="3cc94422ed10580ec406e0e90e02ed57" category="cell">BlueXP使用工作环境名称来命名Cloud Volumes ONTAP 系统和GCP VM实例。如果您选择了预定义安全组的前缀，则它还会使用该名称作为前缀。</block>
-  <block id="1456e010de4447704584caa0f583807b" category="cell">标签是 GCP 资源的元数据。BlueXP会将标签添加到与系统关联的Cloud Volumes ONTAP 系统和GCP资源中。在创建工作环境时，您最多可以从用户界面添加四个标签，然后可以在创建后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标签。有关标签的信息，请参见<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>。</block>
   <block id="23b98688a84e3975fec56c5adda952e4" category="paragraph">选择要 Cloud Volumes ONTAP 驻留的项目。默认项目是BlueXP所在的项目。</block>
   <block id="851527495c0afb57caeba39ab6e50d4f" category="paragraph">如果您在下拉列表中未看到任何其他项目、则表示您尚未将BlueXP服务帐户与其他项目关联。转到 Google Cloud 控制台，打开 IAM 服务，然后选择项目。将具有BlueXP角色的服务帐户添加到该项目中。您需要对每个项目重复此步骤。</block>
   <block id="e11609cdeba36e9154797798b7bb710f" category="paragraph">如果您让BlueXP为您生成防火墙策略、则需要选择允许流量的方式：</block>
   <block id="4f4736bd9b3e508042a30af6279a85b0" category="list-text">BlueXP在Cloud Volumes ONTAP 实例上设置服务帐户。此服务帐户提供将数据分层到 Google Cloud Storage 存储分段的权限。请务必以分层服务帐户的用户身份添加Connector服务帐户、否则无法从BlueXP中选择它</block>
-  <block id="a696f74c5e0abf27caa52c3cb3b4a270" category="list-text">单击*更多信息*可查看有关支持和BlueXP将购买的GCP资源的详细信息。</block>
   <block id="04429fb60c702313423187ef9f61c183" category="list-text">BlueXP在Cloud Volumes ONTAP 实例上设置服务帐户。此服务帐户提供将数据分层到 Google Cloud Storage 存储分段的权限。请务必以分层服务帐户的用户身份添加Connector服务帐户、否则无法从BlueXP中选择它。</block>
   <block id="5d46d9d34dce758984570380cdc60f89" category="summary">选择使用VPC服务控制锁定Google环境时、您应了解BlueXP和Cloud Volumes ONTAP 如何与Google API交互、以及如何配置服务参数以部署BlueXP和Cloud Volumes ONTAP。</block>
   <block id="ad5571e5652bf6da2a87ff238427dd83" category="paragraph">选择使用VPC服务控制锁定Google云环境时、您应了解BlueXP和Cloud Volumes ONTAP 如何与Google云API交互、以及如何配置服务边界以部署BlueXP和Cloud Volumes ONTAP。</block>
@@ -4600,4 +4574,59 @@
   <block id="0f5cc196efac5a9fadb7272e55c7d686" category="summary">设置 Azure 网络，以便 Cloud Volumes ONTAP 系统可以正常运行。</block>
   <block id="323c8a1d29b771e63edf9d7a9968be4e" category="paragraph"><block ref="323c8a1d29b771e63edf9d7a9968be4e" category="inline-link-rx"></block></block>
   <block id="f483cdf3bbc75344ed7ba476a346b3ae" category="paragraph"><block ref="f483cdf3bbc75344ed7ba476a346b3ae" category="inline-link-rx"></block></block>
+  <block id="7dca2de7042f01604c6fa18e67e28e36" category="section-title">WORM和数据分层</block>
+  <block id="83f865c2acfa2b30d8adc34128a9b741" category="paragraph">创建新的Cloud Volumes ONTAP 9.8或更高版本系统时、您可以同时启用数据分层和WORM存储。通过使用WORM存储启用数据分层、您可以将数据分层到云中的对象存储。</block>
+  <block id="125acd88196259df48335a29149824c8" category="paragraph">您应了解以下有关启用数据分层和WORM存储的信息：</block>
+  <block id="a915bf61fc4da5557d359b0301ad21ef" category="list-text">分层到对象存储的数据不包括ONTAP WORM功能。要确保端到端WORM功能、您需要正确设置存储分段权限。</block>
+  <block id="998c3b79cbc9135556e51847e16ca6c3" category="list-text">分层到对象存储的数据不具有WORM功能、这意味着从技术上讲、对存储分段和容器具有完全访问权限的任何人都可以转到并删除ONTAP 分层的对象。</block>
+  <block id="795cfc8480eae289c5de0d65352581a1" category="list-text">启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。</block>
+  <block id="8f3a22fee1fcc35025e3e68b3c7b5499" category="paragraph">在大多数情况下、您无需执行任何操作即可使用Cloud Volumes ONTAP 设置Azure专用链路。BlueXP为您管理Azure专用链路。但是，如果您使用 Azure 私有 DNS ，则需要编辑配置文件。此外、您还应了解Azure中连接器位置的要求。</block>
+  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
+  <block id="078640757da4b274abf89709c42d7741" category="paragraph">连接器3.9.26版引入了以下更改。</block>
+  <block id="72c6f65b45015ee1135ff4bc2cce8860" category="section-title">在AWS中创建放置组</block>
+  <block id="b743dbbfdeafb74e0c5a918472cb8000" category="paragraph">现在、可以通过AWS HA单可用性区域(AZ)部署创建放置组、并使用新的配置设置。现在、您可以选择绕过失败的放置组创建、并允许AWS HA单AZ部署成功完成。</block>
+  <block id="a461eabe3ab382f71ac2e2f6d1e640ac" category="inline-link-macro">为AWS HA Single AZ配置放置组创建</block>
+  <block id="f8574b4ca8450ebb66b430e6a34a7af0" category="paragraph">有关如何配置放置组创建设置的详细信息、请参见 <block ref="76b771ebcb3b2314cb6a5531c78c8c56" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d236ccded1ae841f7032a1cfa719500" category="section-title">专用DNS区域配置更新</block>
+  <block id="c07e7cfc7f9b172f2a6463f65a2a4b56" category="paragraph">现在、您可以使用新的配置设置、以便在使用Azure专用链路时避免在专用DNS区域和虚拟网络之间创建链路。默认情况下、创建处于启用状态。</block>
+  <block id="b4f6cf785c09e40247b4fa3feac5c2a6" category="paragraph"><block ref="b4f6cf785c09e40247b4fa3feac5c2a6" category="inline-link-macro-rx"></block></block>
+  <block id="9790d5e9d3f702b3255ef268a7bcfc80" category="section-title">WORM存储和数据分层</block>
+  <block id="3277463bf1ddcca922f85a2efd92c721" category="paragraph">现在、在创建Cloud Volumes ONTAP 9.8或更高版本系统时、您可以同时启用数据分层和WORM存储。通过使用WORM存储启用数据分层、您可以将数据分层到云中的对象存储。</block>
+  <block id="2179dc7c2201ce007bdd7f0a37e78d5e" category="inline-link-macro">了解WORM存储。</block>
+  <block id="fc76ca2a106ecf45415f92e5b6f34f21" category="paragraph"><block ref="fc76ca2a106ecf45415f92e5b6f34f21" category="inline-link-macro-rx"></block></block>
+  <block id="cd46599be4a268656c67fc0d154a21ec" category="admonition">如果您要使用WORM和数据分层、则必须禁用云备份并部署9.8或更高版本的Cloud Volumes ONTAP 工作环境。</block>
+  <block id="a0657ff0e169aee7a5734487716bb0c4" category="list-text">*写入速度和WORM*：</block>
+  <block id="8423b054b8164151c3151be7c37415ed" category="list-text">如果需要、选择*正常*或*高*写入速度。</block>
+  <block id="0a44bfce0bc775d87f0ac6a57bdba584" category="list-text">根据需要激活一次写入、多次读取(WORM)存储。</block>
+  <block id="6aeb3713e488b71d0dcbb96914a7951f" category="paragraph">如果为Cloud Volumes ONTAP 9.7及更低版本启用了数据分层、则无法启用WORM。启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。</block>
+  <block id="02675533e5e8f922a01de0dd3f2892ad" category="list-text">如果激活了WORM存储、请选择保留期限。</block>
+  <block id="94fb201facd8c99956b25af1c56a2562" category="paragraph">Cloud Volumes ONTAP 将失败、每当创建放置组失败时、都会回滚在单个可用性区域(AZ)中部署的新AWS高可用性(HA)配置。如果需要、您可以通过配置放置组来强制成功完成部署、以便在创建失败时绕过回滚过程。</block>
+  <block id="4b80314a98cf05dbcb3b2c5f33f9e79f" category="paragraph">默认情况下、只要放置组在HA单个可用性区域工作环境的创建过程中失败、部署就会失败并回滚。如果Cloud Volumes ONTAP 节点和调解器实例不存在、则创建放置组也会失败并回滚。</block>
+  <block id="65f98964e7d8889df16715139a88da9d" category="paragraph">您可以在放置组创建失败时绕过回滚过程、并通过配置app.conf文件允许部署继续进行。绕过回滚过程后、部署将成功完成、系统将生成通知、指出放置组创建失败、状态为"未完成"。</block>
+  <block id="8dbf64cf105a5f307a9741aab14c6d90" category="section-title">在放置组出现故障时禁用回滚</block>
+  <block id="103d8850bfd2b5f919a2c306256386e7" category="paragraph">要关闭放置组故障、必须将"rollback-on-placement-group-failure"标志设置为"false"。</block>
+  <block id="53db5515d90522545dd9493db83f9ad7" category="list-text">使用SSH连接到Connector主机并登录。</block>
+  <block id="e5d0a443064f8c75bf5b7e1c953ec5f9" category="list-text">通过将"rollback-on-placement-group-failure"参数的值更改为"false"来编辑app.conf：</block>
+  <block id="6b90ec112441f6a2ffc873da4c8cb544" category="admonition">默认情况下、rollback-on-placement-group-failure参数设置为"True"。</block>
+  <block id="abb2030a97b8fa0f26925ca21ccacdce" category="paragraph">不需要重新启动。</block>
+  <block id="254d5c87d5ab437395f866390ea49cd0" category="doc">在 Google Cloud 中启动 Cloud Volumes ONTAP</block>
+  <block id="952f472ceaa325aaac5f1352ed448f4e" category="paragraph">您可以在单节点配置中启动Cloud Volumes ONTAP 、也可以在Google Cloud中作为HA对启动。</block>
+  <block id="5ce440fd1a40346ea0f26ec2424bfcb2" category="paragraph">您应已准备好选择配置并从管理员处获取Google Cloud网络信息。有关详细信息，请参见 <block ref="7c40283f4f533a5903d1033c57ef27f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="733156037751f70e529112a458e8ade6" category="section-title">在Google Cloud中启动单节点系统</block>
+  <block id="ee5b769fad1fe9446cc03d19d0a3d607" category="paragraph">在BlueXP中创建工作环境、以便在Google Cloud中启动Cloud Volumes ONTAP。</block>
+  <block id="aeeff95df93d5139e77aaa023ae4f78d" category="cell">BlueXP使用工作环境名称来命名Cloud Volumes ONTAP 系统和Google Cloud VM实例。如果您选择了预定义安全组的前缀，则它还会使用该名称作为前缀。</block>
+  <block id="a4bf88119cf04fd8c616db4b8cc720b8" category="cell">标签是指Google Cloud资源的元数据。BlueXP会将这些标签添加到与该系统关联的Cloud Volumes ONTAP 系统和Google云资源中。在创建工作环境时，您最多可以从用户界面添加四个标签，然后可以在创建后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标签。有关标签的信息，请参见<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>。</block>
+  <block id="9825444762440cb7be1345336853f4a6" category="paragraph">要创建按需购买的Cloud Volumes ONTAP 系统、您需要从Google云市场中选择与Cloud Volumes ONTAP 订阅关联的Google云项目。</block>
+  <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="inline-link">将Marketplace订阅与Google Cloud凭据关联</block>
+  <block id="493552d486a035ce25ba041dbe0317cc" category="paragraph">以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。或者，也可以按照中的步骤进行订阅<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> 部分。</block>
+  <block id="c328f8a7342e88f617f6d5b5de3ddde7" category="paragraph">有关选择磁盘类型和大小的帮助，请参见 <block ref="d149bf4b730fbae097705dc422facd68" category="inline-link-macro-rx"></block>。</block>
+  <block id="06017a9b77812f0002c0c97398d0c75e" category="list-text">* Google Cloud Platform*中的数据分层：选择是否在初始聚合上启用数据分层、为分层数据选择存储类、然后选择具有预定义存储管理员角色的服务帐户(对于Cloud Volumes ONTAP 9.7或更高版本为必需)、或者选择Google Cloud帐户(对于Cloud Volumes ONTAP 9.6为必需帐户)。</block>
+  <block id="bb74d89743a44b4a44d7b815ee74a08e" category="inline-link">使用9.6设置和添加用于数据分层的Google Cloud帐户</block>
+  <block id="a7e78bd76ee63b56217658f0ca0d9ae8" category="list-text">有关添加Google Cloud帐户的帮助、请参见<block ref="d5ddd655d9651722d04dce7a3fd75f04" category="inline-link-rx"></block>。</block>
+  <block id="cd6afa4ed61f071f47165012e4286043" category="list-text">如果禁用数据分层、则可以在后续聚合上启用该功能、但您需要关闭系统并从Google Cloud控制台添加服务帐户。</block>
+  <block id="5e80d11354160f3330ae3fb0f2186edf" category="list-text">单击*更多信息*可查看有关支持和BlueXP将购买的Google Cloud资源的详细信息。</block>
+  <block id="f23467ff8f84fc95ca2baa4b362c7865" category="section-title">在Google Cloud中启动HA对</block>
+  <block id="1ed50148a7aaf99d753c01a51f01ef11" category="paragraph">以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。或者，也可以按照中的步骤进行订阅<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> 部分。</block>
+  <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud中的数据分层*：选择是否在初始聚合上启用数据分层、为分层数据选择存储类、然后选择具有预定义的存储管理员角色的服务帐户。</block>
+  <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">配置放置组创建</block>
 </blocks>

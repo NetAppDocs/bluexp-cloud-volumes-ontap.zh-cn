@@ -20,6 +20,36 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 
 
 
+== 2023年2月5日
+
+连接器3.9.26版引入了以下更改。
+
+
+
+=== 在AWS中创建放置组
+
+现在、可以通过AWS HA单可用性区域(AZ)部署创建放置组、并使用新的配置设置。现在、您可以选择绕过失败的放置组创建、并允许AWS HA单AZ部署成功完成。
+
+有关如何配置放置组创建设置的详细信息、请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["为AWS HA Single AZ配置放置组创建"^]。
+
+
+
+=== 专用DNS区域配置更新
+
+现在、您可以使用新的配置设置、以便在使用Azure专用链路时避免在专用DNS区域和虚拟网络之间创建链路。默认情况下、创建处于启用状态。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["向BlueXP提供有关Azure私有DNS的详细信息"^]
+
+
+
+=== WORM存储和数据分层
+
+现在、在创建Cloud Volumes ONTAP 9.8或更高版本系统时、您可以同时启用数据分层和WORM存储。通过使用WORM存储启用数据分层、您可以将数据分层到云中的对象存储。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["了解WORM存储。"^]
+
+
+
 == 2023年1月1日
 
 连接器3.9.25版引入了以下更改。

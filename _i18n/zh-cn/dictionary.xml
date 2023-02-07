@@ -3047,7 +3047,6 @@
   <block id="8e3273e621dd5a9485259171b1b535e9" category="section-title">在Azure中调整系统大小</block>
   <block id="e17d83fdb14af6aea9c5838dcc9ece55" category="paragraph"><block ref="b2908e7df27905e20924b93b3ff0b803" category="inline-link-macro-rx"></block>。</block>
   <block id="96440bf30cd20c7ed50d0d7a8279917e" category="doc">在Google Cloud中规划Cloud Volumes ONTAP 配置</block>
-  <block id="9b79239dba046d18af2dfc2ca929db17" category="list-text"><block ref="9b79239dba046d18af2dfc2ca929db17" category="inline-link-macro-rx"></block></block>
   <block id="18ff4ec9e6259918d45028a5d6040d91" category="section-title">选择支持的计算机类型</block>
   <block id="0d705fad98d8ea6c4ffe75e2508e2f92" category="section-title">在GCP中调整系统大小</block>
   <block id="9b183a2167e00c4527ad8d66a1342c3c" category="list-text">在*详细信息和凭据*页面上、单击*编辑凭据&gt;添加订阅*、然后按照提示订阅Google Cloud Marketplace中的按需购买服务。</block>
@@ -4629,4 +4628,5 @@
   <block id="1ed50148a7aaf99d753c01a51f01ef11" category="paragraph">以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。或者，也可以按照中的步骤进行订阅<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> 部分。</block>
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud中的数据分层*：选择是否在初始聚合上启用数据分层、为分层数据选择存储类、然后选择具有预定义的存储管理员角色的服务帐户。</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">配置放置组创建</block>
+  <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
 </blocks>

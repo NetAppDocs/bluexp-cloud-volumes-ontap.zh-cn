@@ -23,7 +23,7 @@ summary: 部署 Cloud Volumes ONTAP 时、您可以选择符合工作负载要�
 Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择一种满足您需求的消费模式。
 
 * link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"]
-* link:task-set-up-licensing-gcp.html["了解如何设置许可"]
+* link:task-set-up-licensing-google.html["了解如何设置许可"]
 
 
 

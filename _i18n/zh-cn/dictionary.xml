@@ -2034,21 +2034,7 @@
   <block id="fa1cddc8ac392ea41880d5f31e86fbf3" category="cell">帮助进行存储故障转移</block>
   <block id="1e56718e9810cd52e22fd292a9b32245" category="admonition">您可以创建从目标子网到 AWS EC2 服务的接口 VPC 端点，而不是打开端口 443 和 53 。</block>
   <block id="75fb76c71939b7f9f3ee363c4aec2044" category="section-title">Connector 的规则</block>
-  <block id="e41468f89241b53dc9a8cebeff010b25" category="cell">提供从客户端 Web 浏览器到本地用户界面的 HTTP 访问以及从 Cloud Data sense 建立的连接</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">连接器的预定义安全组将打开所有出站流量。如果可以接受，请遵循基本出站规则。如果您需要更严格的规则、请使用高级出站规则。</block>
-  <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">如果您需要对出站流量设置严格的规则，则可以使用以下信息仅打开 Connector 进行出站通信所需的端口。</block>
-  <block id="a94c44d83136ca0aa23c397adb28b116" category="admonition">源 IP 地址是 Connector 主机。</block>
-  <block id="241b5fab8e737eaa79c543efe7307059" category="cell">API 调用和 AutoSupport</block>
-  <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">出站 Internet 和 ONTAP 集群管理 LIF</block>
-  <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API 调用</block>
-  <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">ONTAP HA 调解器</block>
-  <block id="ad4167f20adb487bdfdd71a56ab00120" category="cell">与 ONTAP HA 调解器通信</block>
-  <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
-  <block id="168342a53455f99d5b1d8d7d95e99567" category="cell">对备份到 S3 进行 API 调用</block>
-  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="cell">云数据感知</block>
-  <block id="6cf25d0dcbf586ed6aff3b930e4d8019" category="cell">云数据感知实例</block>
-  <block id="059ace13ef3980df592dafb754ef8883" category="cell">适用于 Cloud Volumes ONTAP 的云数据感知</block>
   <block id="f5c4745b8a5809c2aa248d1297288719" category="summary">Cloud Volumes ONTAP 高可用性（ High Availability ， HA ）对可在云环境发生故障时提供企业级可靠性和持续运行。在 Azure 中，存储在两个节点之间共享。</block>
   <block id="ca010532511b0575d0c11648404720a6" category="doc">Azure 中的高可用性对</block>
   <block id="957e0d287584ed2cb6cff5c8c76e1be1" category="list-text">Azure 标准负载平衡器</block>
@@ -2710,7 +2696,6 @@
   <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">了解如何在 ONTAP 中配置和管理 S3 对象存储服务</block>
   <block id="cad02caeb4ee636c87f28b0bb1263080" category="inline-link-macro">了解支持的客户端协议和版本</block>
   <block id="f0ddee23dd0d83f105bbdaa15ff5d87a" category="paragraph"><block ref="43c09f3d08ec80b50648a2a905bca06c" category="inline-link-macro-rx"></block>。</block>
-  <block id="a6a8d3a613b6b7ece18f688d168e5cda" category="cell">API 调用 AWS 和 ONTAP ，云数据感知，勒索软件服务以及向 NetApp 发送 AutoSupport 消息</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">帮助菜单的屏幕截图，其中列出的第一个选项为支持</block>
   <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">单击 * NSS 管理 &gt; 添加 NSS 帐户 * 。</block>
@@ -3638,7 +3623,6 @@
   <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 防火墙允许通过端口3128进行_outout_连接。</block>
   <block id="72d5371b4a8014dbf2df076044553ab6" category="paragraph">在创建工作环境时、您可以在部署期间为预定义的防火墙策略选择源筛选器：</block>
   <block id="6cf46adb3fb6177f186428a0cac9190b" category="cell">如果出站Internet连接不可用、则通过Connector上的代理服务器发送AutoSupport 消息</block>
-  <block id="2fcfd53faae8a46d655bdd5bf49e4324" category="cell">为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。部署连接器后、您必须手动打开此端口。</block>
   <block id="84d78cb2b5253a0b7912f4b35a0a5276" category="list-text">从获取软件映像<block ref="66da4490d1acc2c130b3158cd12dade2" category="inline-link-rx"></block>。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="5d95d03306d738eddc1fcb7b61b6151a" category="paragraph">连接器3.9.21版引入了以下更改。</block>
@@ -3869,9 +3853,7 @@
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">请注意、BlueXP会在HA对上创建SVM管理LIF、但不会在Azure中的单节点系统上创建。</block>
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">如果业务需要、您还可以禁用专用链路连接。如果禁用此链接、则BlueXP会将Cloud Volumes ONTAP 配置为使用服务端点。</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">如果您尝试在Azure资源组中部署第二个Cloud Volumes ONTAP HA对、则BlueXP会遇到连接问题。</block>
-  <block id="ce23ccd5f69f45f3f2a022750ab9d6e7" category="paragraph">您无需创建安全组、因为BlueXP可以为您创建安全组。如果您需要使用自己的，请参阅下面列出的安全组规则。</block>
   <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXP会创建包含Cloud Volumes ONTAP 成功运行所需入站和出站规则的Azure安全组。您可能希望参考这些端口进行测试或使用自己的安全组。</block>
-  <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">用于BlueXP的DNS解析</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">在部署Cloud Volumes ONTAP 时、BlueXP会创建一个提供数据的Storage VM。某些配置支持额外的 Storage VM 。 <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>。</block>
   <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">从BlueXP 3.9.5版开始、将在初始Storage VM上启用逻辑空间报告。如果以逻辑方式报告空间，则 ONTAP 会报告卷空间，以便存储效率功能节省的所有物理空间也会报告为已用空间。</block>
   <block id="0dbf08a19cabe7472c89a9c1e7157737" category="list-text">BlueXP会自动在Cloud Volumes ONTAP 上安装以下ONTAP 功能许可证：</block>
@@ -4109,7 +4091,6 @@
   <block id="b28334323356fda049acaa1568ee382c" category="paragraph">BlueXP会自动为Cloud Volumes ONTAP 分配所需数量的专用IP地址。您需要确保网络具有足够的可用专用 IP 地址。</block>
   <block id="bdc0bf1240a907023821eccea893d017" category="paragraph">BlueXP为Cloud Volumes ONTAP 分配的LIF数量取决于您部署的是单节点系统还是HA对。LIF 是与物理端口关联的 IP 地址。</block>
   <block id="7a4fc6df5acc7a338525efe76c970bd8" category="paragraph">BlueXP会将6个IP地址分配给一个节点系统：</block>
-  <block id="939507fbe623e8fd878f92a352424732" category="paragraph">您无需创建安全组、因为BlueXP可以为您创建安全组。如果您需要使用自己的，请参见 <block ref="6b621ae9e3deb16d56da37977cce65f3" category="inline-link-macro-rx"></block>。</block>
   <block id="7fbad4788d127b35618996584caa5cbf" category="paragraph">其他 AWS 网络要求适用于使用多可用性区域（ Azs ）的 Cloud Volumes ONTAP HA 配置。在启动HA对之前、您应查看这些要求、因为在创建工作环境时、您必须在BlueXP中输入网络详细信息。</block>
   <block id="79b99f78668311f7164df3fbc2b1ab13" category="paragraph">创建Cloud Volumes ONTAP HA工作环境时、您需要在BlueXP中输入浮动IP地址。BlueXP在启动系统时会将IP地址分配给HA对。</block>
   <block id="fbf22458f97f1e958f61f1269da5e0dc" category="admonition">BlueXP会自动创建静态IP地址、用于从VPC外部的客户端进行iSCSI访问和NAS访问。您无需满足这些类型的 IP 地址的任何要求。</block>
@@ -4192,8 +4173,6 @@
   <block id="156a3c6e72f6f36b96ffa2a53bc4b125" category="list-text">从Cloud Volumes ONTAP 9.7开始、BlueXP为HA对创建的存储帐户为通用v2存储帐户。</block>
   <block id="5891037085a8d7a4e0c6d1c1177dc1b1" category="paragraph">创建Cloud Volumes ONTAP 工作环境时、BlueXP会提示您订阅AWS Marketplace中提供的协议。然后、该订阅将与工作环境关联以进行收费。您可以对其他工作环境使用相同的订阅。</block>
   <block id="762aad63fdd6b79217c19517ed5983a5" category="paragraph">与每小时订阅类似、BlueXP会提示您订阅AWS Marketplace中提供的年度合同。</block>
-  <block id="313ffec3230aa3292dde2f11b0bfa481" category="summary">BlueXP会创建AWS安全组、其中包含BlueXP和Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者需要使用自己的端口。</block>
-  <block id="dfd7076c3cd05fe305cbd204cf4845a9" category="paragraph">BlueXP会创建AWS安全组、其中包含Connector和Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能希望参考这些端口进行测试或使用自己的安全组。</block>
   <block id="4c06e1c4065aa853ffa68ddc60e138c3" category="paragraph">BlueXP始终会创建此安全组。您没有使用自己的选项。</block>
   <block id="6f3d93af7507d9ff7bead94d1ffc9cc1" category="paragraph">默认情况下、BlueXP会为Cloud Volumes ONTAP 与其关联存储帐户之间的连接启用Azure专用链路。Azure Private Link可确保Azure中端点之间的连接安全、并可提供性能优势。</block>
   <block id="7dfd5068a6c1386a24bb81164b3321f3" category="paragraph">无论采用哪种配置、BlueXP都会始终限制Cloud Volumes ONTAP 与存储帐户之间的连接的网络访问。网络访问仅限于部署了Cloud Volumes ONTAP 的vNet和部署了连接器的vNet。</block>
@@ -4629,4 +4608,18 @@
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud中的数据分层*：选择是否在初始聚合上启用数据分层、为分层数据选择存储类、然后选择具有预定义的存储管理员角色的服务帐户。</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">配置放置组创建</block>
   <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
+  <block id="2626748206273dbf0d13d2fffdb79c5b" category="summary">BlueXP会创建AWS安全组、其中包含Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能希望参考这些端口进行测试或使用自己的安全组。</block>
+  <block id="eb19784d052e3e9a0aa941090082ebbe" category="inline-link">查看Connector的安全组规则</block>
+  <block id="c456915aac0f612541f35dc3bfc19faf" category="paragraph"><block ref="c456915aac0f612541f35dc3bfc19faf" category="inline-link-rx"></block></block>
+  <block id="a6c935eff93c3c2a81864fdabc1d1951" category="inline-link">查看Connector的防火墙规则</block>
+  <block id="fd21d6325b77b856e27ff0f3a2769254" category="admonition">正在查找有关连接器的信息？<block ref="b4a1b1e09448c4916df7db5a89b51b2b" category="inline-link-rx"></block></block>
+  <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloud中的防火墙规则</block>
+  <block id="2cfdb7ae537da608249744d8e40289a8" category="list-text"><block ref="2cfdb7ae537da608249744d8e40289a8" category="inline-link-rx"></block></block>
+  <block id="314f455c046d8114edc23b21e45ae3e0" category="admonition">正在查找有关连接器的信息？<block ref="03f0ff9a2503a569189cff8aff64ae33" category="inline-link-rx"></block></block>
+  <block id="569fe31933e5918613ae1efa70e82d16" category="inline-link">Azure中的安全组规则</block>
+  <block id="c3122c19fb459588f8438e668beb5f88" category="list-text"><block ref="c3122c19fb459588f8438e668beb5f88" category="inline-link-rx"></block></block>
+  <block id="0b79e4862d28fb04132c84c8aab97cc4" category="paragraph">您无需创建安全组、因为BlueXP可以为您创建安全组。如果您需要使用自己的，请参见 <block ref="6b621ae9e3deb16d56da37977cce65f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="a8fd24da5145000ecce0c3f4f64ade44" category="admonition">正在查找有关连接器的信息？<block ref="388760eab464a72355382b7e30fcff50" category="inline-link-rx"></block></block>
+  <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWS中的安全组规则</block>
+  <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
 </blocks>

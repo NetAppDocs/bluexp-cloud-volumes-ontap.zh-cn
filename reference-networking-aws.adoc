@@ -163,6 +163,9 @@ TIP: 如果部署在多个可用性区域中，则会与多个 LIF 关联 link:r
 您无需创建安全组、因为BlueXP可以为您创建安全组。如果您需要使用自己的，请参见 link:reference-security-groups.html["安全组规则"]。
 
 
+TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["查看Connector的安全组规则"^]
+
+
 
 === 数据分层连接
 
@@ -265,4 +268,6 @@ image:diagram_ha_networking.png["显示 Cloud Volumes ONTAP HA 架构中组件�
 
 如果尚未创建Connector、则还应查看Connector的网络要求。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["查看连接器的网络要求"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["查看连接器的网络要求"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS中的安全组规则"^]
+

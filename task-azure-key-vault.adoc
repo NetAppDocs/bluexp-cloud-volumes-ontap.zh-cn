@@ -8,7 +8,7 @@ summary: 将Azure密钥存储用于第三方密钥管理服务。
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 您可以使用 link:https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts["Azure 密钥存储（ AKV ）"^] 保护Azure部署应用程序中的ONTAP 加密密钥。
@@ -22,6 +22,7 @@ summary: 将Azure密钥存储用于第三方密钥管理服务。
 .前提条件
 * Cloud Volumes ONTAP 必须运行9.10.1或更高版本
 * 已安装卷加密(VE)许可证(已向NetApp支持部门注册的每个Cloud Volumes ONTAP 系统会自动安装NetApp卷加密许可证)
+* 您必须具有多租户加密密钥管理(MT_EK_Mgmt)许可证
 * 您必须是集群管理员或SVM管理员
 * Active Azure订阅
 
@@ -54,31 +55,47 @@ summary: 将Azure密钥存储用于第三方密钥管理服务。
 
 [[secret]]
 .创建Azure客户端密钥
-. 在Cloud Volumes ONTAP 应用程序的Azure门户中、选择"证明 和机密"窗格。
-. 选择"*新客户端密钥"*输入一个有意义的客户端密钥名称。NetApp建议使用24个月的到期期限、但您的特定云监管策略可能需要其他设置。
-. 选择"*添加"以保存客户端密钥。立即复制该机密的"*值"、并将其存储在安全的位置、以供将来配置时使用。离开此页面后、不会显示此机密值。
+. 在Azure密钥存储应用注册的Azure门户中、选择"*证书和密钥"窗格。
+. 选择"*新建客户端密钥"*。为您的客户端密钥输入一个有意义的名称。NetApp建议使用24个月的到期期限；但是、您的特定云监管策略可能需要其他设置。
+. 单击"**添加"以创建客户端密钥。复制"**value"列中列出的机密字符串、并将其存储在安全位置、以供稍后在中使用 <<ontap>>。离开页面后、不会再显示此机密值。
 
 
 [[create-akv]]
 .创建Azure密钥存储
-. 如果您已有Azure密钥存储、则可以将其连接到Cloud Volumes ONTAP 配置、但您必须根据此过程中的设置调整访问策略。
+. 如果您已有Azure密钥存储、则可以将其连接到Cloud Volumes ONTAP 配置；但是、您必须根据此过程中的设置调整访问策略。
 . 在Azure门户中、导航到"*密钥存储"部分。
-. 选择"*创建"*。输入所需信息、包括资源组、区域和定价层、并选择保留已删除存储的天数以及是否启用了清除保护。对于此配置、默认值足以满足要求、但您的特定云监管策略可能需要不同的设置。
+. 单击"**+Create"(创建)、然后输入所需信息、包括资源组、区域和定价层。此外、输入保留已删除存储的天数、然后在密钥存储上选择"*启用清除保护"*。
 . 选择"*下一步"以选择访问策略。
-. 对于卷加密选项、请选择"** Azure磁盘加密"；对于权限模型、请选择"*。存储访问策略"。
-. 选择"*添加访问策略"*。
-. 选择"**从模板配置(可选)"*字段旁边的插入项。然后、选择"*密钥"、"机密"和"认证管理"
+. 选择以下选项：
++
+.. 在"*访问配置"下、选择"*存储访问策略"。
+.. 在"*资源访问权限"下、选择"*用于卷加密的Azure磁盘加密"。
+
+
+. 选择"**+Create"以添加访问策略。
+. 在"*从模板配置"*下、单击下拉菜单、然后选择"*密钥"、"机密"和"证书管理"*模板。
 . 选择每个下拉权限菜单(密钥、密钥、证书)、然后选择菜单列表顶部的"**全选"*以选择所有可用权限。您应具备：
 +
-** "*关键权限"*：已选择19个
+** "*关键权限"*：已选择20个
 ** "**机密权限"*：已选择8个
 ** "**证书权限"*：已选择16个
++
+image:screenshot-azure-key-secret-cert-all-list.png["创建访问策略的屏幕截图、其中显示了创建访问策略所需的所有权限选择"]
 
 
-. 选择"*添加"以创建访问策略。
+
+. 单击"*下一步"以选择您在中创建的"*主体"*已注册Azure应用程序 <<azure-app>>。选择"*下一步"*。
++
+
+NOTE: 每个策略只能分配一个主体。
+
++
+image:screenshot-azure-key-secret-cert-principal.png["创建访问策略主体选项卡的屏幕截图"]
+
+. 单击两次"*下一步"*、直到到达"*查看并创建"*。然后、单击"**创建"。
 . 选择"*下一步"*以进入"*网络连接"*选项。
 . 选择适当的网络访问方法或选择"**所有网络"*和"*查看+创建"*以创建密钥存储。(网络访问方法可能由监管策略或您的企业云安全团队规定。)
-. 记录密钥存储URI：在您创建的密钥存储中、导航到概述菜单并从右侧列复制"*存储URI"。您将在后续步骤中使用此功能。
+. 记录密钥存储URI：在您创建的密钥存储中、导航到概述菜单并从右侧列复制"*存储URI"。您需要在后续步骤中使用此功能。
 
 
 [[key]]
@@ -106,22 +123,32 @@ summary: 将Azure密钥存储用于第三方密钥管理服务。
 . 在Azure门户中、导航到"**虚拟网络"。
 . 选择部署Cloud Volumes ONTAP 工作环境的虚拟网络、然后选择页面左侧的"*子网"*菜单。
 . 从列表中选择Cloud Volumes ONTAP 部署的子网名称。
-. 导航到"**服务端点"*标题。在下拉菜单中、从列表中选择"4.microsoft.AzureActiveDirectory"。
+. 导航到"**服务端点"*标题。在下拉菜单中、选择以下内容：
++
+** "10.microsoft.AzureActiveDirectory"
+** **microsoft.KeyVaule*
+** "10.microsoft.Storage"*(可选)
++
+image:screenshot-azure-service-endpoints-services.png["显示三个选定服务的服务端点的屏幕截图"]
+
+
+
 . 选择"*保存"*以捕获设置。
 
 
 [[ontap]]
 .Cloud Volumes ONTAP 配置
 . 使用首选SSH客户端连接到集群管理LIF。
-. 在ONTAP 中进入高级权限模式：`set advanced -con off``
+. 在ONTAP 中进入高级权限模式：
+`set advanced -con off`
 . 确定所需的数据SVM并验证其DNS配置：`vserver services name-service dns show`
 +
 .. 如果所需数据SVM的DNS条目存在、并且其中包含Azure DNS的条目、则无需执行任何操作。如果不支持、请为指向Azure DNS、专用DNS或内部部署服务器的数据SVM添加DNS服务器条目。这应与集群管理SVM的条目匹配：`vserver services name-service dns create -vserver _svm_name_-domains _domain_-name-servers _ip_address_`
 .. 验证是否已为数据SVM创建DNS服务：`vserver services name-service dns show`
 
 
-. 使用应用程序注册后保存的客户端ID和租户ID启用Azure密钥存储：`security key-manager external azure enable -vserver _svm_name_-client-id _Azure_client_ID_-tenant-id _Azure_tenant_ID_-name _Azure_key_name_-key-id _Azure_key_ID_`
-. 验证密钥管理器配置：`security key-manager external azure show`
+. 使用应用程序注册后保存的客户端ID和租户ID启用Azure密钥存储：
+`security key-manager external azure enable -vserver _SVM_name_ -client-id _Azure_client_ID_ -tenant-id _Azure_tenant_ID_ -name _Azure_key_vault_name_ -key-id _Azure_key_ID_`
 . 检查密钥管理器的状态：`security key-manager external azure check` The output will look like：
 +
 [source]
@@ -144,7 +171,10 @@ Category: kms_wrapped_key_status
 3 entries were displayed.
 ----
 +
-如果`sservice_reachability` status为not `OK`、则SVM无法使用所有必需的连接和权限访问Azure密钥存储服务。在初始配置时、`kms_Wraped_key_status`将报告`unknown`。对第一个卷加密后、其状态将更改为`OK`。
+如果 `service_reachability` 状态不是 `OK`、SVM无法使用所需的所有连接和权限访问Azure密钥存储服务。确保您的Azure网络策略和路由不会阻止您的专用vNet访问Azure KeyVault公共端点。如果有、请考虑使用Azure私有端点从vNet中访问密钥存储。您可能还需要在SVM上添加静态主机条目、以解析端点的专用IP地址。
+
++
+。 `kms_wrapped_key_status` 将报告 `UNKNOWN` 初始配置时。其状态将更改为 `OK` 对第一个卷进行加密后。
 
 . 可选：创建测试卷以验证NVE的功能。
 +

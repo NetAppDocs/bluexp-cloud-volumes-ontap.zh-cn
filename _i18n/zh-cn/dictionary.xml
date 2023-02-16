@@ -1419,7 +1419,6 @@
   <block id="c9ff61dbb68bf63fc7a40ac1d8f9a2cd" category="paragraph">预定义的安全组包括以下出站规则。</block>
   <block id="5fbc523d8d2ad241522a15100f23bef2" category="doc">Flash Cache</block>
   <block id="3a36e6b466e0265c25d241c486f64e02" category="paragraph">Flash Cache 通过实时智能缓存最近读取的用户数据和 NetApp 元数据来加快数据访问速度。它适用于随机读取密集型工作负载，包括数据库，电子邮件和文件服务。</block>
-  <block id="341cc964e0c52fec40f9705182116dda" category="list-text">必须在所有卷上禁用数据压缩，才能利用 Flash Cache 性能改进功能。</block>
   <block id="405cb575e50b611a22ec99d1abb3f202" category="inline-link">使用命令行界面禁用数据压缩</block>
   <block id="444f10b28a63ab25d9664d0647602d07" category="list-text">Cloud Volumes ONTAP 不支持在重新启动后重新恢复缓存。</block>
   <block id="fa6508c512d74f7de26a21390af6951b" category="doc">AWS 中的 Cloud Volumes ONTAP 的网络要求</block>
@@ -4637,4 +4636,5 @@
   <block id="65533a408ee230b29deae5fd1634c46a" category="list-text">使用应用程序注册后保存的客户端ID和租户ID启用Azure密钥存储：<block ref="fc019c518ce1e237021d337077bd96cc" prefix=" " category="inline-code"></block></block>
   <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">如果<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 状态不是<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>、SVM无法使用所需的所有连接和权限访问Azure密钥存储服务。确保您的Azure网络策略和路由不会阻止您的专用vNet访问Azure KeyVault公共端点。如果有、请考虑使用Azure私有端点从vNet中访问密钥存储。您可能还需要在SVM上添加静态主机条目、以解析端点的专用IP地址。</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">。<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 将报告<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 初始配置时。其状态将更改为<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 对第一个卷进行加密后。</block>
+  <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">必须在所有卷上禁用数据压缩、才能利用Cloud Volumes ONTAP 9.12.0之前的Flash Cache性能改进功能。在部署或升级到Cloud Volumes ONTAP 9.12.1时、无需禁用数据压缩。</block>
 </blocks>

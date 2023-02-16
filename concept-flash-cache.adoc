@@ -32,7 +32,7 @@ Flash Cache 通过实时智能缓存最近读取的用户数据和 NetApp 元数
 
 == 限制
 
-* 必须在所有卷上禁用数据压缩，才能利用 Flash Cache 性能改进功能。
+* 必须在所有卷上禁用数据压缩、才能利用Cloud Volumes ONTAP 9.12.0之前的Flash Cache性能改进功能。在部署或升级到Cloud Volumes ONTAP 9.12.1时、无需禁用数据压缩。
 +
 从BlueXP创建卷时选择"无存储效率"、或者先创建卷、然后再创建卷 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用命令行界面禁用数据压缩"^]。
 

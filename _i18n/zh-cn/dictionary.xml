@@ -2712,7 +2712,6 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
-  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">自助支持</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">这些选项每周 7 天，每天 24 小时免费提供：</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知识库</block>
   <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
@@ -2720,8 +2719,6 @@
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文档。</block>
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com （反馈电子邮件）</block>
-  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp 支持</block>
-  <block id="f5052c65917d7341726235d4d4941461" category="list-text">在 "Technical Support" 下选择一个可用选项：</block>
   <block id="c2a34cad77f0451e7d0f58a7e0e6e450" category="inline-link">AWS 文档：允许其他帐户中的用户使用 KMS 密钥</block>
   <block id="21adb1598ef7a554ecf87a6c0bffbd4c" category="paragraph">有关此过程的其他详细信息，请参见<block ref="9601f431d0df2b9877da4b65b53342b6" category="inline-link-rx"></block>。</block>
   <block id="21daef3fadb3dd64defa83d39be31db2" category="paragraph">如果要配置 Google Managed Active Directory ，则默认情况下可以使用 169.254.169.254 IP 地址访问 AD 。</block>
@@ -3651,7 +3648,6 @@
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">了解如何注册获取支持</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您要通过电话与某人通话、请单击*致电我们*。系统会将您定向到netapp.com上的一个页面、其中列出了您可以拨打的电话号码。</block>
-  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">单击*创建案例*、向NetApp支持专家开一个服务单：</block>
   <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">* NetApp 支持站点 Account*：选择与创建支持案例的人员关联的适用帐户。除下面提供的其他电子邮件外、此人还将是NetApp的主要联系人。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作环境*：如果适用于存储、请选择* Cloud Volumes ONTAP *或* on-Prem*、然后选择关联的工作环境。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例优先级*：选择案例的优先级、可以是"低"、"中"、"高"或"严重"。</block>
@@ -4397,7 +4393,6 @@
   <block id="a75a698e7d0ed400565763b148a6d0db" category="list-text">HA系统使用高级SSD共享受管磁盘、这两种磁盘均以较高的成本为I/O密集型工作负载提供高性能。9.12.1版之前创建的HA部署使用高级页面Blobs。</block>
   <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="section-title">S3</block>
   <block id="cc5f50b3903dc30a3a3545bb58fcdd14" category="paragraph">Cloud Volumes ONTAP 支持将S3作为横向扩展存储的选项。通过S3协议支持、您可以配置S3客户端对Storage VM (SVM)中存储分段中所含对象的访问权限。</block>
-  <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>。</block>
   <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="cell">9.12.1</block>
   <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">2022年12月8日</block>
   <block id="5e1976febada1fa49b700760dd574954" category="paragraph">与标准 AWS 区域类似，您可以在中使用 Cloud Manager<block ref="5d288b71381e3fb57ca0bda26da6a1f9" category="inline-link-rx"></block> 部署 Cloud Volumes ONTAP 的环境，为您的云存储提供企业级功能。AWS C2S 是一个特定于美国的封闭区域智能社区；此页面上的说明仅适用于 AWS C2S 区域用户。</block>
@@ -4643,4 +4638,10 @@
   <block id="85fa376f75ded218650eec5453f272cf" category="paragraph">您可以通过API或更新app.conf文件启用回滚。</block>
   <block id="631d5d58329754fe0bb44ea77f068c95" category="paragraph">*通过APi*启用回滚</block>
   <block id="07c460b15c5d7df22ee3bebc2fd32aaa" category="paragraph">*通过更新app.conf启用回滚</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自助支持选项</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">向NetApp支持部门创建案例</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在*资源*页面上、在技术支持下选择一个可用选项：</block>
+  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">单击*创建案例*、向NetApp支持专家开一个服务单：</block>
+  <block id="5db69347f06a9f63ed1f4c90e8b874e5" category="inline-link-macro">了解S3多协议的工作原理</block>
+  <block id="e48cc3153e7d667d87986f8e162ea872" category="paragraph"><block ref="8674fe872330e1769235c43fb746c3f7" category="inline-link-macro-rx"></block>。<block ref="5b24747aa1a4fd51dbcea213f97833c7" category="inline-link-macro-rx"></block>。</block>
 </blocks>

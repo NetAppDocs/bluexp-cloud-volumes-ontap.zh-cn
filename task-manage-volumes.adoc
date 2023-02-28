@@ -120,7 +120,7 @@ NOTE: BlueXP会将卷移动到使用选定磁盘类型进行分层的现有聚�
 
 默认情况下，卷在空间不足时会自动增长到最大大小。默认值为 1 ， 000 ，这意味着卷可以增长到其大小的 11 倍。此值可在 Connector 的设置中进行配置。
 
-如果需要调整卷大小，可以通过执行此操作 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP 系统管理器"^]。调整卷大小时，请务必考虑系统的容量限制。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 有关详细信息：
+如果需要调整卷大小，可以通过执行此操作 link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP 系统管理器"^]。调整卷大小时，请务必考虑系统的容量限制。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 有关详细信息：
 
 
 
@@ -161,14 +161,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-** 要将 Azure AD 域服务配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=AADDC Computers * 或 * OU=AADDC Users* 。https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure 文档：在 Azure AD 域服务托管域中创建组织单位（ OU ）"^]
+** 要将 Azure AD 域服务配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=AADDC Computers * 或 * OU=AADDC Users* 。link:https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure 文档：在 Azure AD 域服务托管域中创建组织单位（ OU ）"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-** 要将 Google Managed Microsoft AD 配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=Computers ， OU=Cloud* 。https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud 文档： Google Managed Microsoft AD 中的组织单位"^]
+** 要将 Google Managed Microsoft AD 配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=Computers ， OU=Cloud* 。link:https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud 文档： Google Managed Microsoft AD 中的组织单位"^]
 
 
 endif::gcp[]
@@ -197,7 +197,7 @@ Cloud Volumes ONTAP 会根据更改更新 CIFS 服务器。
 在大多数情况下，您可以使用 System Manager 移动卷。
 
 +
-有关说明，请参见 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《 ONTAP 9 卷移动快速指南》"^]。
+有关说明，请参见 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《 ONTAP 9 卷移动快速指南》"^]。
 
 
 
@@ -208,14 +208,14 @@ Cloud Volumes ONTAP 会根据更改更新 CIFS 服务器。
 BlueXP可能会显示一条"需要操作"消息、指出移动卷对于避免容量问题是必要的、但您需要自行更正问题描述。如果发生这种情况，您需要确定如何更正问题、然后移动一个或多个卷。
 
 
-TIP: 当聚合已达到90%的已用容量时、BlueXP会显示这些"需要执行操作"消息。如果启用了数据分层，则在聚合已达到 80% 已用容量时会显示消息。默认情况下，为数据分层预留 10% 的可用空间。 link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["详细了解数据分层的可用空间比率"]。
+TIP: 当聚合已达到90%的已用容量时、BlueXP会显示这些"需要执行操作"消息。如果启用了数据分层，则在聚合已达到 80% 已用容量时会显示消息。默认情况下，为数据分层预留 10% 的可用空间。 link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["详细了解数据分层的可用空间比率"^]。
 
 .步骤
-. <<确定如何更正容量问题,确定如何解决此问题。>>。
+. <<确定如何更正容量问题>>。
 . 根据您的分析、移动卷以避免容量问题：
 +
-** <<将卷移动到另一个系统以避免容量问题,将卷移动到另一个系统。>>。
-** <<将卷移动到另一个聚合以避免容量问题,将卷移动到同一系统上的另一个聚合。>>。
+** <<将卷移动到另一个系统以避免容量问题>>。
+** <<将卷移动到另一个聚合以避免容量问题>>。
 
 
 
@@ -273,20 +273,24 @@ image:screenshot_aggr_volumes.gif["屏幕抓图：显示聚合中聚合中卷的
 .关于此任务
 您可以按照此任务中的步骤更正以下需要执行的操作消息：
 
- Moving a volume is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you because the system has reached the disk limit.
+[]
+====
+要避免容量问题、必须移动卷；但是、BlueXP无法为您执行此操作、因为系统已达到磁盘限制。
+
+====
 .步骤
 . 确定具有可用容量的 Cloud Volumes ONTAP 系统或部署新系统。
 . 将源工作环境拖放到目标工作环境中以执行卷的一次性数据复制。
 +
-有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在系统之间复制数据"^]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在系统之间复制数据"^]。
 
 . 转到复制状态页，然后中断 SnapMirror 关系、将复制的卷从数据保护卷转换为读 / 写卷。
 +
-有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理数据复制计划和关系"^]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理数据复制计划和关系"^]。
 
 . 配置卷以进行数据访问。
 +
-有关为数据访问配置目标卷的信息，请参见 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["《 ONTAP 9 卷灾难恢复快速指南》"^]。
+有关为数据访问配置目标卷的信息，请参见 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["《 ONTAP 9 卷灾难恢复快速指南》"^]。
 
 . 删除原始卷。
 +
@@ -303,7 +307,11 @@ image:screenshot_aggr_volumes.gif["屏幕抓图：显示聚合中聚合中卷的
 .关于此任务
 您可以按照此任务中的步骤更正以下需要执行的操作消息：
 
- Moving two or more volumes is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you.
+[]
+====
+要避免容量问题、必须移动两个或更多卷；但是、BlueXP无法为您执行此操作。
+
+====
 .步骤
 . 验证现有聚合是否具有需要移动的卷的可用容量：
 +
@@ -327,7 +335,7 @@ image:screenshot_aggr_capacity.gif["屏幕抓图：显示聚合信息对话框�
 . 使用 System Manager 或 CLI 将卷移动到聚合。
 . 在大多数情况下，您可以使用 System Manager 移动卷。
 +
-有关说明，请参见 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《 ONTAP 9 卷移动快速指南》"^]。
+有关说明，请参见 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《 ONTAP 9 卷移动快速指南》"^]。
 
 
 

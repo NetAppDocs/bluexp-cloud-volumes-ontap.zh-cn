@@ -30,6 +30,7 @@ summary: 了解默认情况下如何配置 Cloud Volumes ONTAP 可以帮助您�
 ** FlexCache
 ** FlexClone
 ** iSCSI
+** 多租户加密密钥管理(MTEKM)、从Cloud Volumes ONTAP 9.12.1 GA开始
 ** NetApp 卷加密（仅适用于 BYOL 或已注册的 PAYGO 系统）
 ** NFS
 

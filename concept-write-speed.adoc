@@ -96,7 +96,7 @@ ifdef::gcp[]
 
 如果使用单节点系统，则 Cloud Volumes ONTAP 支持对所有计算机类型使用高写入速度。
 
-Cloud Volumes ONTAP 不支持在 Google Cloud 中对 HA 对使用高写入速度。
+如果使用HA对、则从9.13.0版开始、Cloud Volumes ONTAP 支持对多种VM类型使用高写入速度。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["《 Cloud Volumes ONTAP 发行说明》"^] 可查看支持高写入速度的 VM 类型。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["详细了解 Cloud Volumes ONTAP 支持的 Google Cloud 计算机类型"^]。
 

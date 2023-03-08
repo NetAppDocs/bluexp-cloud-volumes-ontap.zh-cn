@@ -106,14 +106,7 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 请注意、BlueXP会在Google Cloud中分配所需的IP地址、并创建具有用于SMB/NFS访问的数据LIF和用于出站SMB通信的iSCSI LIF的Storage VM。
 
 .所需的Google Cloud权限
-从3.9.19版开始、连接器需要以下权限才能为Cloud Volumes ONTAP HA对创建和管理Storage VM：
-
-[source, yaml]
-----
-- compute.instanceGroups.get
-- compute.addresses.get
-----
-中包括这些权限 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["NetApp 提供的策略"]。
+连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需权限包括在中 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["NetApp 提供的策略"]。
 
 .步骤
 . 使用以下API调用创建Storage VM：

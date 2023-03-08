@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-getting-started-gcp.html 
 keywords: google cloud platform, gcp, cloud manager, deploy BlueXP, launch BlueXP, create BlueXP, getting started, networking, gcp networking, service account, tiering, data tiering, bucket, fabricpool, cloud backup, storage access key, gcp role, role, iam role, permissions, gcp permissions 
-summary: 通过几个步骤开始使用适用于 GCP 的 Cloud Volumes ONTAP 。 
+summary: 只需几步即可开始使用适用于Google Cloud的Cloud Volumes ONTAP。 
 ---
 = 在 Google Cloud 中快速启动 Cloud Volumes ONTAP
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: 通过几个步骤开始使用适用于 GCP 的 Cloud Volumes ONTAP 。
 
 
 [role="lead"]
-通过几个步骤开始使用适用于 GCP 的 Cloud Volumes ONTAP 。
+只需几步即可开始使用适用于Google Cloud的Cloud Volumes ONTAP。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 创建连接器
 [role="quick-margin-para"]
-如果您没有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["了解如何在 GCP 中创建连接器"^]。
+如果您没有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["了解如何在 Google Cloud 中创建 Connector"^]
 
 [role="quick-margin-para"]
-在创建首个Cloud Volumes ONTAP 工作环境时、如果尚未部署Connector、BlueXP (以前称为Cloud Manager)会提示您部署一个。
+请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["了解如何在无法访问Internet的位置手动安装Connector"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 规划您的配置
 [role="quick-margin-para"]
@@ -36,9 +36,9 @@ link:task-planning-your-config-gcp.html["了解有关规划配置的更多信息
 . 如果您计划启用数据分层， https://cloud.google.com/vpc/docs/configure-private-google-access["为专用 Google 访问配置 Cloud Volumes ONTAP 子网"^]。
 . 如果要部署 HA 对，请确保您有四个 vPC ，每个 vPC 都有自己的子网。
 . 如果您使用的是共享 VPC ，请为 Connector 服务帐户提供 _Compute Network User_ 角色。
-. 从目标 VPC 启用出站 Internet 访问，以便连接器和 Cloud Volumes ONTAP 可以联系多个端点。
+. 从NetApp AutoSupport 的目标VPC启用出站Internet访问。
 +
-此步骤非常重要，因为没有出站 Internet 访问， Connector 无法管理 Cloud Volumes ONTAP 。如果需要限制出站连接，请参阅的端点列表 link:reference-networking-gcp.html["连接器和 Cloud Volumes ONTAP"]。
+如果您要在无法访问Internet的位置部署Cloud Volumes ONTAP 、则无需执行此步骤。
 
 
 
@@ -74,5 +74,5 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["在项目中�
 .相关链接
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["从BlueXP创建连接器"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在 Linux 主机上安装 Connector 软件"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["BlueXP对GCP权限的作用"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["BlueXP对Google Cloud权限的作用"^]
 

@@ -18,10 +18,10 @@ summary: 只需几步即可开始使用适用于 AWS 的 Cloud Volumes ONTAP 。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 创建连接器
 [role="quick-margin-para"]
-如果您没有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["了解如何在 AWS 中创建连接器"^]。
+如果您没有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["了解如何在 AWS 中创建连接器"^]
 
 [role="quick-margin-para"]
-在创建首个Cloud Volumes ONTAP 工作环境时、如果尚未部署Connector、BlueXP (以前称为Cloud Manager)会提示您部署一个。
+请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["了解如何在无法访问Internet的位置手动安装Connector"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 规划您的配置
 [role="quick-margin-para"]
@@ -30,9 +30,9 @@ BlueXP可提供符合您的工作负载要求的预配置软件包、您也可�
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 设置网络
 [role="quick-margin-list"]
 . 确保您的 VPC 和子网支持连接器和 Cloud Volumes ONTAP 之间的连接。
-. 从目标 VPC 启用出站 Internet 访问，以便连接器和 Cloud Volumes ONTAP 可以联系多个端点。
+. 从NetApp AutoSupport 的目标VPC启用出站Internet访问。
 +
-此步骤非常重要，因为没有出站 Internet 访问， Connector 无法管理 Cloud Volumes ONTAP 。如果需要限制出站连接，请参阅的端点列表 link:reference-networking-aws.html["连接器和 Cloud Volumes ONTAP"]。
+如果您要在无法访问Internet的位置部署Cloud Volumes ONTAP 、则无需执行此步骤。
 
 . 将 VPC 端点设置为 S3 服务。
 +

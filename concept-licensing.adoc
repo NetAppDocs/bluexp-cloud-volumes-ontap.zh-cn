@@ -137,7 +137,7 @@ endif::gcp[]
 +
 主卷和二级卷的容量充电速度相同的单节点或HA
 
-* 包括使用Cloud Backup的无限卷备份、但仅适用于使用专业版软件包部署的Cloud Volumes ONTAP 系统
+* 包括使用Cloud Backup的无限卷备份、但仅适用于使用专业版软件包的Cloud Volumes ONTAP 系统
 * 增加 NetApp 的任何云数据服务，但需额外付费
 
 

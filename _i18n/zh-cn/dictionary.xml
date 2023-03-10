@@ -1034,7 +1034,6 @@
   <block id="98fdd008687283335edf23e9e287cb83" category="paragraph">您可以在创建工作环境时选择一个存储层，之后可以随时对其进行更改。有关更改存储层的详细信息，请参见 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="a38b9b490932e9d5b5db3e24784ec656" category="paragraph">用于数据分层的存储访问层是系统范围的，而不是每个卷。</block>
   <block id="3b8940895816a07ee6f7b4cd2d7353e3" category="list-text">性能层可以是 SSD 永久性磁盘，平衡永久性磁盘或标准永久性磁盘。</block>
-  <block id="56fcb51b5b1e4760266f6a808fa6396a" category="list-text">分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时，如果 30 天后未访问非活动数据，则非活动数据将从标准存储类开始，并过渡到选定的存储类。</block>
   <block id="5097a121ff5ccfae7cb78986b23616f8" category="inline-link">了解有关 Google Cloud Storage 存储类的更多信息</block>
   <block id="3f1b0a674f5325ee098ce0196eda6d56" category="paragraph">如果您确实访问数据，访问成本会更高，因此在更改存储类之前，请考虑这一点。<block ref="12bb21ea227f99e4e5df122704c6f379" category="inline-link-rx"></block>。</block>
   <block id="f273810af2be19da638a9463cfa6e62a" category="paragraph">您可以在创建工作环境时选择一个存储层，之后可以随时对其进行更改。有关更改存储类的详细信息，请参见 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
@@ -2908,8 +2907,6 @@
   <block id="4fbd5770a6fd5de01bbbcf2a407118d7" category="list-text">存储帐户密钥访问：已启用</block>
   <block id="c826704ed8ef326581305fef2036bfb6" category="list-text">最低TLS版本：1.2</block>
   <block id="276a9219319519ae3ee8b320e4458068" category="list-text">基础架构加密：已禁用</block>
-  <block id="fb3bd9a69b565a8866ad383666b98f8c" category="list-text">Azure 中分层数据的默认存储访问层为 _hot_ 层。热层非常适合经常访问的数据。</block>
-  <block id="45c06cdb409b9857a0b2089bf2cff7a0" category="paragraph">如果您不打算访问非活动数据，可以通过更改为 _cool_ 存储层来降低存储成本。更改存储层时，如果 30 天后未访问非活动数据，则非活动数据将从热存储层开始，并过渡到冷存储层。</block>
   <block id="f2bc66356d174d95b97b4e9b8b873540" category="list-text">Cloud Volumes ONTAP 系统将非活动数据分层到一个Google云存储分段。</block>
   <block id="bd15f9947281cda8b8713ff72eb007f8" category="list-text">位置类型：区域</block>
   <block id="95e66c145ec5a9c6db0940e3c8b89f10" category="list-text">公有 访问：受对象ACL限制</block>
@@ -3413,7 +3410,6 @@
   <block id="0d007d44f30aa9582772f6ca7709803f" category="paragraph">按容量为任意类型的Cloud Volumes ONTAP 配置付费、备份不受限制。</block>
   <block id="fdb568933703a9268c5ba46f3208f414" category="list-text">为任何 Cloud Volumes ONTAP 配置提供许可</block>
   <block id="2b7a2bda81dcf84ff8d6b600415c5e52" category="paragraph">主卷和二级卷的容量充电速度相同的单节点或HA</block>
-  <block id="2d856ef929513d16aba9286266a2ea92" category="list-text">包括使用Cloud Backup的无限卷备份、但仅适用于使用专业版软件包部署的Cloud Volumes ONTAP 系统</block>
   <block id="728fd439c2abdc887c4a5e678d7c8708" category="paragraph">基于容量的许可包可用于以下消费模式：</block>
   <block id="fcbd09a2622ccd7b58495c6277262566" category="list-text">* BYOL*：从NetApp购买的许可证、可用于在任何云提供商中部署Cloud Volumes ONTAP。</block>
   <block id="1e101142b61a711e7fbc92238adf9d20" category="list-text">* PAYGO*：从云提供商的市场按小时订阅。</block>
@@ -4314,7 +4310,6 @@
   <block id="f30b44d93ffa429590bd7907a3d0099c" category="paragraph">您应了解Cloud Volumes ONTAP 9.10.1及更高版本的以下充电行为：</block>
   <block id="0514cef4c1e1a5949a3acc085ee50110" category="list-text">从ONTAP 9.10.1开始、WORM卷和非WORM卷可以位于同一聚合上。</block>
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">如果在创建Cloud Volumes ONTAP 工作环境时启用了WORM、则从BlueXP创建的每个卷都会启用WORM。但是、您可以使用ONTAP 命令行界面或系统管理器创建已禁用WORM的卷。这些卷不按WORM速率充电。</block>
-  <block id="3101fb677e91832ce5fd2af7de4c1850" category="list-text">如果在创建工作环境时未启用WORM、则从BlueXP创建的每个卷都会禁用WORM。这些卷不按WORM速率计费。但是、您可以使用ONTAP 命令行界面或系统管理器创建启用了WORM的卷。这些卷将按WORM速率收费。</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA多可用性区域</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">从ONTAP 9.10.1P3开始、对于NVRAM和核心磁盘、BlueXP使用<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>，用于管理具有受管磁盘的加密密钥。较低版本将使用Microsoft管理的密钥、而不是客户管理的密钥。</block>
@@ -4440,16 +4435,11 @@
   <block id="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="paragraph"><block ref="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="770d7d25a250359f096cca82c310f07b" category="paragraph">激活WORM存储的方式取决于所使用的Cloud Volumes ONTAP 版本。</block>
   <block id="f7bdab9f1b3e432deef3bba2021d518d" category="section-title">9.10.1及更高版本</block>
-  <block id="634f99868031f4c19cc89185a03da350" category="paragraph">从Cloud Volumes ONTAP 9.10.1开始、您可以选择在卷级别启用或禁用WORM。选择如何启用WORM取决于您的需求。</block>
   <block id="2c404b5c40a30cea75e4486ca42855d7" category="paragraph">创建新的Cloud Volumes ONTAP 工作环境时、系统会提示您启用或禁用WORM存储：</block>
   <block id="1000fd534e8c9bff4332bafb5a9125aa" category="list-text">如果在创建工作环境时启用了WORM存储、则从BlueXP创建的每个卷都会启用WORM。但是、您可以使用System Manager或CLI创建已禁用WORM的卷。</block>
-  <block id="8614dac2e3bd328ce10de870996db0f5" category="paragraph">如果要为WORM存储创建专用系统、则此选项是一个不错的选择。</block>
-  <block id="53c068d69d7edf4c467cf5bb2a3193dd" category="list-text">如果在创建工作环境时禁用WORM存储、则从BlueXP创建的每个卷都会禁用WORM。但是、您可以使用System Manager或命令行界面创建启用了WORM的卷。</block>
-  <block id="03b892a4c3b15391f53e9a5afe77bb58" category="paragraph">如果要在同一系统上混用不同类型的卷、则此选项是一个不错的选择。</block>
   <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">了解充电的工作原理</block>
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">无论选择哪种方案、您都应选择此选项 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0及更早版本</block>
-  <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">您可以在创建新的工作环境时在 Cloud Volumes ONTAP 系统上激活 WORM 存储。您不能在单个卷上激活 WORM 存储—必须在系统级别激活 WORM 。只有在创建工作环境时、才能激活它。</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">每购买3 Tib容量一个边缘节点</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支持云提供商解决方案</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">有关已集成到BlueXP中的以下云提供商解决方案的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
@@ -4756,4 +4746,15 @@
   <block id="686559ad5b35ebcac7c3039ba4d273ec" category="paragraph">如果您没有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="5057dc0bf3c81969de0b1b1e5a9bc718" category="inline-link-rx"></block></block>
   <block id="a646f605cbf6ed0d1902ed148dff6a02" category="paragraph">如果您没有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="e02c55c05c6081d62516fdec2316cf6c" category="inline-link-rx"></block></block>
   <block id="60a5bfe73545b12bdf2f8c33e65bedb4" category="paragraph">连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需权限包括在中<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>。</block>
+  <block id="256b759fe821d1e6df4108737b419291" category="list-text">包括使用Cloud Backup的无限卷备份、但仅适用于使用专业版软件包的Cloud Volumes ONTAP 系统</block>
+  <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">从Cloud Volumes ONTAP 9.10.1开始、您可以选择在卷级别启用或禁用WORM。</block>
+  <block id="686bb3ee7d23fdaf656f41328b5449e7" category="list-text">如果在创建工作环境时禁用WORM存储、则从BlueXP、System Manager或CLI创建的每个卷都会禁用WORM。如果要在创建期间未启用的Cloud Volumes ONTAP 工作环境中启用WORM、则必须向NetApp支持部门创建一个支持服务单以获得帮助。</block>
+  <block id="f4b6aa85f64f47d1816ec182949156ef" category="paragraph">您可以在创建新的工作环境时在 Cloud Volumes ONTAP 系统上激活 WORM 存储。从BlueXP创建的每个卷都已启用WORM。您不能在单个卷上禁用WORM存储。</block>
+  <block id="60e4218f85755238d0c16943a070de88" category="list-text">如果在创建工作环境时未启用WORM、则从BlueXP创建的每个卷都会禁用WORM。这些卷不按WORM速率计费。</block>
+  <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">如果禁用了Azure专用链路、并且Connector使用代理服务器、则必须启用直接API流量。</block>
+  <block id="40e86593118ce089551b3691f6bba919" category="inline-link">了解如何在Connector上启用直接API流量</block>
+  <block id="fd4c1859263bee09c6463abbca610eae" category="paragraph"><block ref="fd4c1859263bee09c6463abbca610eae" category="inline-link-rx"></block></block>
+  <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure 中分层数据的默认存储访问层为 _hot_ 层。热层非常适合容量层中经常访问的数据。</block>
+  <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">如果您不打算访问容量层中的非活动数据、则可以通过更改为_cool_存储层来降低存储成本。将存储层更改为冷存储层后、非活动容量层数据将直接移至冷存储层。</block>
+  <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时、非活动数据会直接移至选定的类。</block>
 </blocks>

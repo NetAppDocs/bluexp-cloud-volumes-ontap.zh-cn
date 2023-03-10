@@ -96,10 +96,10 @@ BlueXP将使用以下设置创建存储帐户：
 
 
 --
-存储访问层:: Azure 中分层数据的默认存储访问层为 _hot_ 层。热层非常适合经常访问的数据。
+存储访问层:: Azure 中分层数据的默认存储访问层为 _hot_ 层。热层非常适合容量层中经常访问的数据。
 +
 --
-如果您不打算访问非活动数据，可以通过更改为 _cool_ 存储层来降低存储成本。更改存储层时，如果 30 天后未访问非活动数据，则非活动数据将从热存储层开始，并过渡到冷存储层。
+如果您不打算访问容量层中的非活动数据、则可以通过更改为_cool_存储层来降低存储成本。将存储层更改为冷存储层后、非活动容量层数据将直接移至冷存储层。
 
 如果您确实访问数据，访问成本会更高，因此在更改存储层之前，请考虑这一点。 https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["详细了解 Azure Blob 存储访问层"^]。
 
@@ -137,7 +137,7 @@ BlueXP会为每个工作环境创建一个分段、并将其命名为fabric-pool
 
 
 --
-存储类:: 分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时，如果 30 天后未访问非活动数据，则非活动数据将从标准存储类开始，并过渡到选定的存储类。
+存储类:: 分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时、非活动数据会直接移至选定的类。
 +
 --
 如果您确实访问数据，访问成本会更高，因此在更改存储类之前，请考虑这一点。 https://cloud.google.com/storage/docs/storage-classes["了解有关 Google Cloud Storage 存储类的更多信息"^]。

@@ -4757,4 +4757,7 @@
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure 中分层数据的默认存储访问层为 _hot_ 层。热层非常适合容量层中经常访问的数据。</block>
   <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">如果您不打算访问容量层中的非活动数据、则可以通过更改为_cool_存储层来降低存储成本。将存储层更改为冷存储层后、非活动容量层数据将直接移至冷存储层。</block>
   <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时、非活动数据会直接移至选定的类。</block>
+  <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
+  <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">现在、BlueXP可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.0。</block>
+  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
 </blocks>

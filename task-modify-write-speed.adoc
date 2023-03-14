@@ -31,5 +31,9 @@ summary: '随着存储需求的变化，您可能需要更改 Cloud Volumes ONTA
 +
 如果您选择 " 高 " ，则需要阅读 " 我了解 ..." 陈述并通过选中此复选框进行确认。
 
++
+
+NOTE: 从9.13.0版开始、Google Cloud中的Cloud Volumes ONTAP HA对支持*高*写入速度选项。
+
 . 单击 * 保存 * ，查看确认消息，然后单击 * 继续 * 。
 

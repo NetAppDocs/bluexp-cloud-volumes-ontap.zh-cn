@@ -4674,7 +4674,6 @@
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*关闭案例*：提供关闭案例的详细信息、然后单击*关闭案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">屏幕截图、显示在表的最后一列中选择菜单后可以执行的操作。</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c6506a0407767fa4ee430c24f3b89e2" category="admonition">通过使用n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64实例类型的*高*写入速度选项、可以使用_Flash Cache_、高写入速度和更高的最大传输单元(MTU) 8、896。此外、较高的MTU 8、896要求在部署时选择VCP-1、VPC-2或VCP-3。_Flash Cache_、高写入速度和8、896的MTU与功能相关、不能在已配置的实例中单独禁用。</block>
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">如果使用HA对、则从9.13.0版开始、Cloud Volumes ONTAP 支持对多种VM类型使用高写入速度。转至<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> 可查看支持高写入速度的 VM 类型。</block>
   <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">安装了多租户加密密钥管理(MTEKM)许可证、从Cloud Volumes ONTAP 9.12.1 GA开始。</block>
   <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">通过Cloud Volumes ONTAP 映像摘要文件工具验证导出的Google云映像文件签名。</block>
@@ -4760,4 +4759,12 @@
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">现在、BlueXP可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.0。</block>
   <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
+  <block id="12169a51b108f73888655f2a089d493a" category="list-text">中国地区仅支持采用BYOL的单节点系统。</block>
+  <block id="80dcfd22a2b6d14e887c1030b67098dd" category="admonition">通过使用n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64实例类型的*高*写入速度选项、可以使用_Flash Cache_、高写入速度和更高的最大传输单元(MTU) 8、896字节。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。_Flash Cache_、高写入速度和8、896的MTU与功能相关、不能在已配置的实例中单独禁用。有关VPC-1、VPC-2和VPC-3的详细信息、请参见<block ref="4cee9c1f75c8867521472d51adc68a19" category="inline-link-rx"></block>。</block>
+  <block id="ac1c722990c18687e956d9488b59bd3d" category="admonition">要为新的Google Cloud HA对部署启用高写入速度、VPC-1、VPC-2和VPC-3需要至少8、896字节的最大传输单元(MTU)。如果选择将现有VPC-1、VPC-2和VPC-3升级到8、896字节的MTU、则必须在配置过程中使用这些VPC关闭所有现有HA系统。</block>
+  <block id="8ffbbcac612c8285be31d80ec1c1454d" category="admonition">从9.13.0版开始、Google Cloud中的Cloud Volumes ONTAP HA对支持*高*写入速度选项。</block>
+  <block id="98f6dc87e7c206ec16da559a2af45beb" category="section-title">Google Cloud中的Flash Cache和高写入速度</block>
+  <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">现在、对于Cloud Volumes ONTAP 9.13.0版本的特定实例、可支持闪存、高写入速度和8、896字节的高最大传输单元(MTU)。</block>
+  <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">支持Google Cloud按许可证配置</block>
+  <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">了解更多信息 <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>。</block>
 </blocks>

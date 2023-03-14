@@ -63,6 +63,14 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 
 
+=== Google Cloud中的Flash Cache和高写入速度
+
+现在、对于Cloud Volumes ONTAP 9.13.0版本的特定实例、可支持闪存、高写入速度和8、896字节的高最大传输单元(MTU)。
+
+了解更多信息 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["支持Google Cloud按许可证配置"^]。
+
+
+
 == 2023年2月5日
 
 连接器3.9.26版引入了以下更改。

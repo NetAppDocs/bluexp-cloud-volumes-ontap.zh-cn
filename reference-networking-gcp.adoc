@@ -459,6 +459,9 @@ NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
 从 HA 节点到 HA 调解器的通信通过端口 3260 （ iSCSI ）进行。
 
 
+NOTE: 要为新的Google Cloud HA对部署启用高写入速度、VPC-1、VPC-2和VPC-3需要至少8、896字节的最大传输单元(MTU)。如果选择将现有VPC-1、VPC-2和VPC-3升级到8、896字节的MTU、则必须在配置过程中使用这些VPC关闭所有现有HA系统。
+
+
 
 == 连接器的要求
 

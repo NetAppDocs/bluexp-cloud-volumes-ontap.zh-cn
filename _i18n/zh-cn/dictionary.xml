@@ -4767,4 +4767,12 @@
   <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">现在、对于Cloud Volumes ONTAP 9.13.0版本的特定实例、可支持闪存、高写入速度和8、896字节的高最大传输单元(MTU)。</block>
   <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">支持Google Cloud按许可证配置</block>
   <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">了解更多信息 <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>。</block>
+  <block id="0eeac28a6eb03f47165f3c65b5e13cea" category="section-title">2023年3月13日</block>
+  <block id="5eeac325d343b1bb90074e1be60dd1ae" category="section-title">中国地区支持</block>
+  <block id="f3818f17dde36b1601ccfef8ceab6cbe" category="paragraph">从Cloud Volumes ONTAP 9.12.1 GA开始、Azure现在支持中国地区支持、如下所示。</block>
+  <block id="49b72186e2fe2638cbb520201b58bc02" category="list-text">中国北部3支持Cloud Volumes ONTAP。</block>
+  <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">支持单节点系统。</block>
+  <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">支持直接从 NetApp 购买的许可证。</block>
+  <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">适用于Cloud Volumes ONTAP 的全局区域映射</block>
+  <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">有关区域可用性、请参见 <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -2002,12 +2002,9 @@
   <block id="74082482ea0cad59170e3d4dce025b4e" category="cell">系统日志服务器</block>
   <block id="a21848ca8e1b04c74552ca38f4284f2b" category="cell">系统日志转发消息</block>
   <block id="a476a8c72bef590ea37867c7275919b7" category="section-title">HA 调解器外部安全组的规则</block>
-  <block id="1975a8843b2153f2d02f2a63ead63c6d" category="paragraph">入站规则的源代码为 0.0.0.0/0 。</block>
   <block id="decc3cc349f3757e43ecd0c47a092341" category="paragraph">HA 调解器的预定义安全组将打开所有出站通信。如果可以接受，请遵循基本出站规则。如果您需要更严格的规则、请使用高级出站规则。</block>
   <block id="9528bcb068299f44f7850e2e930d3f00" category="paragraph">如果需要严格的出站通信规则、可以使用以下信息仅打开 HA 调解器出站通信所需的端口。</block>
-  <block id="6c8a72bb428eef0fb772b736267a33ca" category="cell">连接器 IP 地址</block>
   <block id="2b14ebecd08152e1467e0863951e038a" category="cell">下载调解器升级</block>
-  <block id="4fa494f1ae1d15d791b8daf53f3d2a55" category="cell">AWS API 服务</block>
   <block id="fa1cddc8ac392ea41880d5f31e86fbf3" category="cell">帮助进行存储故障转移</block>
   <block id="1e56718e9810cd52e22fd292a9b32245" category="admonition">您可以创建从目标子网到 AWS EC2 服务的接口 VPC 端点，而不是打开端口 443 和 53 。</block>
   <block id="75fb76c71939b7f9f3ee363c4aec2044" category="section-title">Connector 的规则</block>
@@ -4787,4 +4784,8 @@
   <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">单击刚刚创建的IP配置的名称、将"Assignment"更改为"Static"、然后单击*保存*。</block>
   <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">输入以下命令以访问高级模式。</block>
   <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">创建iSCSI LIF以提供DNS通信：</block>
+  <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">HA调解器的预定义安全组包括以下入站规则。</block>
+  <block id="52554fb81854d42f02280f83a1067574" category="cell">连接器的CIDR</block>
+  <block id="cdbb82146d412877f64f943229bd9533" category="cell">AWS EC2实例上连接器的IP地址</block>
+  <block id="2e7f33375cb03e7deb01286344bbca46" category="cell">ec2.amazonaws.com</block>
 </blocks>

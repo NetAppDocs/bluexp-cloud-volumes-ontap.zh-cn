@@ -267,17 +267,14 @@ Cloud Volumes ONTAP HA 调解器的预定义外部安全组包括以下入站和
 
 === 入站规则
 
-入站规则的源代码为 0.0.0.0/0 。
+HA调解器的预定义安全组包括以下入站规则。
 
-[cols="20,20,60"]
+[cols="20,20,20,40"]
 |===
-| 协议 | Port | 目的 
+| 协议 | Port | 源 | 目的 
 
 
-| SSH | 22. | SSH 与 HA 调解器的连接 
-
-
-| TCP | 3000 | 从 Connector 进行 RESTful API 访问 
+| TCP | 3000 | 连接器的CIDR | 从 Connector 进行 RESTful API 访问 
 |===
 
 
@@ -312,13 +309,13 @@ HA 调解器的预定义安全组包括以下出站规则。
 | 协议 | Port | 目标 | 目的 
 
 
-| HTTP | 80 | 连接器 IP 地址 | 下载调解器升级 
+| HTTP | 80 | AWS EC2实例上连接器的IP地址 | 下载调解器升级 
 
 
-| HTTPS | 443. | AWS API 服务 | 帮助进行存储故障转移 
+| HTTPS | 443. | ec2.amazonaws.com | 帮助进行存储故障转移 
 
 
-| UDP | 53. | AWS API 服务 | 帮助进行存储故障转移 
+| UDP | 53. | ec2.amazonaws.com | 帮助进行存储故障转移 
 |===
 
 NOTE: 您可以创建从目标子网到 AWS EC2 服务的接口 VPC 端点，而不是打开端口 443 和 53 。

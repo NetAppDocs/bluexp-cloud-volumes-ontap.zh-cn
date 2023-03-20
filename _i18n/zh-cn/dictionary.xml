@@ -2726,10 +2726,8 @@
   <block id="aba6d4795536d5c4e61cf75ce0ddd22c" category="list-text">一个 IP 地址，用于从节点 2 访问 NAS 数据 LIF</block>
   <block id="7a5be31086b3ad69d1c6b2c5abafcc64" category="list-text">为从节点 1 访问数据 LIF 创建一个前端 IP 配置，为从节点 2 访问数据 LIF 创建另一个前端 IP 配置，并为 Storage VM （ SVM ）管理 LIF 创建另一个可选前端 IP 。</block>
   <block id="c09d6988bf61135b41e7b195d446e2b9" category="paragraph">用于 SMB 数据的 IP 地址会在负载平衡器中分配，以便在发生故障转移事件时， IP 地址可以迁移到另一个节点。</block>
-  <block id="da253cd0d6c8d87b61a60f7e67560913" category="list-text">节点 1 上 iSCSI LIF 的一个 IP 地址</block>
   <block id="5aa1fc4c5c5e3c602f89524b94fcaf47" category="list-text">节点 2 上 iSCSI LIF 的一个 IP 地址</block>
   <block id="d31b2ca2df7d7ec89a597cf3ff166e6d" category="paragraph">DNS 和 SMB 通信需要 iSCSI LIF 。为此，我们使用了 iSCSI LIF ，因为它不会在故障转移时迁移。</block>
-  <block id="ccc2da4a96a5d07ea0b03ab18f4ed608" category="list-text">创建所需数量的前端 IP 配置：</block>
   <block id="3ad6e3f460248126da5c801e403088c1" category="paragraph">在 Azure 中分配 IP 地址后，您可以在单节点系统或 HA 对上创建新的 Storage VM 。</block>
   <block id="5683cfda0c67cd1651e904160b0a5460" category="paragraph">如何在单节点系统上创建 Storage VM 和 LIF 取决于所使用的存储协议。</block>
   <block id="2d376cf045c4838856b9429d7fecf7a5" category="paragraph">按照以下步骤创建新的 Storage VM 以及所需的 LIF 。</block>
@@ -2738,7 +2736,6 @@
   <block id="83871791a7611e5a981ec0b38a662078" category="list-text">使用以下命令在节点 2 上创建 iSCSI LIF 。</block>
   <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">使用以下命令在节点 2 上创建 NAS LIF 。</block>
   <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">创建 NAS 数据 LIF ：</block>
-  <block id="477dc9bfd99f5e3ed09c8dbdc76a2c7c" category="list-text">创建 iSCSI LIF 以提供 DNS 和 SMB 通信：</block>
   <block id="1d690a933c240dda520f6527f56da475" category="paragraph">从 9.7 版开始，特定 Cloud Volumes ONTAP 配置支持多个 Storage VM 。转至<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。</block>
   <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">*仅选定VPC*：入站流量的源筛选器是Cloud Volumes ONTAP 系统VPC的子网范围以及连接器所在VPC的子网范围。这是建议的选项。</block>
   <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">所有VPC*：入站流量的源筛选器为0.0.0.0/0 IP范围。</block>
@@ -4775,4 +4772,19 @@
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">支持直接从 NetApp 购买的许可证。</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">适用于Cloud Volumes ONTAP 的全局区域映射</block>
   <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">有关区域可用性、请参见 <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>。</block>
+  <block id="8a83d5aff252fbe923fc5b8ce4cab9f9" category="paragraph">DNS通信需要iSCSI LIF。为此，我们使用了 iSCSI LIF ，因为它不会在故障转移时迁移。</block>
+  <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">您需要在负载平衡器中创建以下IP地址：</block>
+  <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">每个VM各自NIC 0中节点1上的iSCSI LIF的一个IP地址</block>
+  <block id="6f2174023153761cdb987311021eaf2b" category="list-text">仅为数据和SVM LIF创建所需数量的前端IP配置：</block>
+  <block id="37dd90c0b5c3c64f5ce58ece1a549527" category="admonition">只能在NIC0下为每个相应的SVM创建前端IP。有关如何将IP地址添加到SVM NIC0的详细信息、请参见第7步[hyperlink]</block>
+  <block id="b31c05988fa937699345307f0d088b5e" category="list-text">对于iSCSI LIF、请为NIC0添加IP地址。</block>
+  <block id="d8268f30cad7ca754b650b30d5a9fb20" category="list-text">在设置下、单击* IP配置*。</block>
+  <block id="f14404f1eb77db8c34dfa687da4e9969" category="inline-image-macro">Azure门户中IP配置页面的屏幕截图</block>
+  <block id="d3f503b2101b1859a2272746e61a2bca" category="paragraph"><block ref="d3f503b2101b1859a2272746e61a2bca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d8292c375cfd1e8785887fa2307c216e" category="list-text">输入IP配置的名称、选择动态、然后单击*确定*。</block>
+  <block id="d139a8131606839195ad605bafe04b07" category="inline-image-macro">添加IP配置窗口的屏幕截图</block>
+  <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">单击刚刚创建的IP配置的名称、将"Assignment"更改为"Static"、然后单击*保存*。</block>
+  <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">输入以下命令以访问高级模式。</block>
+  <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">创建iSCSI LIF以提供DNS通信：</block>
 </blocks>

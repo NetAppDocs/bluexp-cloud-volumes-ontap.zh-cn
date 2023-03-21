@@ -95,7 +95,7 @@ NOTE: 由于云提供商的要求、Cloud Volumes ONTAP 默认禁用LIF故障转
 +
 ** Cloud Volumes ONTAP 使用HTTP将配置备份发送到连接器。
 +
-可从访问这些备份 http://ipaddress/occm/offboxconfig/[] 其中 _ipaddress_ 是 Connector 主机的 IP 地址。
+备份可从\http://ipaddress/occm/offboxconfig/访问、其中_ipaddress_是Connector主机的IP地址。
 
 ** 与其他管理工具(例如System Manager或CLI)不同、BlueXP设置了一些卷属性。
 +

@@ -93,9 +93,9 @@ endif::gcp[]
 NOTE: 由于云提供商的要求、Cloud Volumes ONTAP 默认禁用LIF故障转移。将 LIF 迁移到另一个端口会中断实例上 IP 地址和网络接口之间的外部映射、从而使 LIF 无法访问。
 
 +
-** Cloud Volumes ONTAP 使用 HTTPS 将配置备份发送到连接器。
+** Cloud Volumes ONTAP 使用HTTP将配置备份发送到连接器。
 +
-可从访问这些备份 https://ipaddress/occm/offboxconfig/[] 其中 _ipaddress_ 是 Connector 主机的 IP 地址。
+可从访问这些备份 http://ipaddress/occm/offboxconfig/[] 其中 _ipaddress_ 是 Connector 主机的 IP 地址。
 
 ** 与其他管理工具(例如System Manager或CLI)不同、BlueXP设置了一些卷属性。
 +

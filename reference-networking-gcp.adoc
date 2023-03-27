@@ -124,16 +124,16 @@ NOTE: iSCSI LIF可通过iSCSI协议提供客户端访问、并由系统用于其
 
 
 
-* *高可用性对* BlueXP会将14个IP地址分配给一个高可用性对：
+* *高可用性对* BlueXP会将12-13个IP地址分配给一个高可用性对：
 +
 ** 2个节点管理LIF (e0a)
+** 1个集群管理LIF (e0a)
 ** 2个iSCSI LIF (e0a)
 +
 
 NOTE: iSCSI LIF可通过iSCSI协议提供客户端访问、并由系统用于其他重要的网络工作流。这些LIF是必需的、不应删除。
 
-** 2个NAS LIF (e0a)
-** 2个集群间LIF (e0a)
+** 1个或2个NAS LIF (e0a)
 ** 2个集群LIF (e0b)
 ** 2个HA互连IP地址(e0c)
 ** 2个RSM iSCSI IP地址(e0d)

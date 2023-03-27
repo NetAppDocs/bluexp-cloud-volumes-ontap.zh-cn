@@ -104,7 +104,7 @@ image:diagram_gcp_ha.png["一个概念映像、显示了一个云卷HA对以及�
 
 BlueXP会自动将所需数量的专用IP地址分配给GCP中的Cloud Volumes ONTAP。您需要确保网络具有足够的可用私有地址。
 
-+ Cloud Manager为Cloud Volumes ONTAP 分配的LIF数量取决于您部署的是单节点系统还是HA对。LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要 SVM 管理 LIF 。
+Cloud Manager 为 Cloud Volumes ONTAP 分配的 LIF 数量取决于您部署的是单节点系统还是 HA 对。LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要 SVM 管理 LIF 。
 
 * *单节点* BlueXP将4个IP地址分配给单节点系统：
 +

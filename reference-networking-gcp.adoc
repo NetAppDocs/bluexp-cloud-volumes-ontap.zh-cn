@@ -102,18 +102,49 @@ image:diagram_gcp_ha.png["一个概念映像、显示了一个云卷HA对以及�
 
 ==== 专用 IP 地址
 
-BlueXP会将14或15个专用IP地址分配给Google Cloud中的HA对：
+BlueXP会自动将所需数量的专用IP地址分配给GCP中的Cloud Volumes ONTAP。您需要确保网络具有足够的可用私有地址。
 
-* VPC-0 的 7 或 8 个专用 IP 地址
++ Cloud Manager为Cloud Volumes ONTAP 分配的LIF数量取决于您部署的是单节点系统还是HA对。LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要 SVM 管理 LIF 。
+
+* *单节点* BlueXP将4个IP地址分配给单节点系统：
++
+** 节点管理 LIF
+** 集群管理 LIF
+** iSCSI 数据 LIF
++
+
+NOTE: iSCSI LIF可通过iSCSI协议提供客户端访问、并由系统用于其他重要的网络工作流。这些LIF是必需的、不应删除。
+
+** NAS LIF
 +
 如果您使用 API 部署 Cloud Volumes ONTAP 并指定以下标志，则可以跳过创建 Storage VM （ SVM ）管理 LIF ：
 
 +
 `skipSvmManagementLif ： true`
 
-* VPC-1 的两个专用 IP 地址
-* VPC-2 的两个专用 IP 地址
-* VPC-3 的三个专用 IP 地址
+
+
+* *高可用性对* BlueXP会将14个IP地址分配给一个高可用性对：
++
+** 2个节点管理LIF (e0a)
+** 2个iSCSI LIF (e0a)
++
+
+NOTE: iSCSI LIF可通过iSCSI协议提供客户端访问、并由系统用于其他重要的网络工作流。这些LIF是必需的、不应删除。
+
+** 2个NAS LIF (e0a)
+** 2个集群间LIF (e0a)
+** 2个集群LIF (e0b)
+** 2个HA互连IP地址(e0c)
+** 2个RSM iSCSI IP地址(e0d)
++
+如果您使用 API 部署 Cloud Volumes ONTAP 并指定以下标志，则可以跳过创建 Storage VM （ SVM ）管理 LIF ：
+
++
+`skipSvmManagementLif ： true`
+
+
+
 
 
 
@@ -184,9 +215,17 @@ TIP: 如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访
 
 如果BlueXP通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
 
+防火墙规则:: 您无需创建防火墙规则、因为BlueXP可以为您创建防火墙规则。如果您需要使用自己的防火墙规则，请参见下面列出的防火墙规则。
++
+--
+请注意， HA 配置需要两组防火墙规则：
+
+* VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。 <<Firewall rules for Cloud Volumes ONTAP,了解更多信息。>>。
+* VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。 <<Firewall rules for Cloud Volumes ONTAP,了解更多信息。>>。
 
 
-=== 连接到Google Cloud Storage进行数据分层
+--
+
 
 如果您要将冷数据分层到 Google 云存储分段，则必须为 Cloud Volumes ONTAP 所在的子网配置专用 Google 访问（如果您使用的是 HA 对，则此子网位于 VPC-0 中）。有关说明，请参见 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 文档：配置私有 Google Access"^]。
 

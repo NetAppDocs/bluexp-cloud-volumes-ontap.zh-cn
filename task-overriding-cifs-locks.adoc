@@ -30,7 +30,7 @@ CAUTION: 此过程可能会对 CIFS 客户端造成中断。未从 CIFS 客户�
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+image:screenshot_settings_icon.png["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
 . 在 * Azure * 下，单击 * 适用于 Azure HA 工作环境的 Azure CIFS 锁定 * 。
 . 单击复选框以启用此功能，然后单击 * 保存 * 。

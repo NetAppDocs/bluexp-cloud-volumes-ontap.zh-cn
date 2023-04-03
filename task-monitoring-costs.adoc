@@ -33,7 +33,11 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aw
 
 
 . 从左侧导航菜单中、选择*存储>画布*。
-. 在 " 画布 " 页面上，选择一个 Cloud Volumes ONTAP 工作环境，然后单击 * 成本 * 。
+. 在"画布"页面上、选择一个Cloud Volumes ONTAP 工作环境、
+. 单击菜单图标、然后单击*查看成本报告*。
++
+image:screenshot_view_cost_report.png["屏幕截图：显示查看成本报告菜单选项。"]
+
 +
 如果您在卷上启用了 NetApp 的成本节省功能，则成本页面将显示当前月份和前几个月的成本，并显示 NetApp 每年节省的成本。
 

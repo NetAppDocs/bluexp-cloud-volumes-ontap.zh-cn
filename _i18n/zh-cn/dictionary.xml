@@ -159,22 +159,16 @@
   <block id="4df66712f957d539001edc73bbb48742" category="list-text">此任务会安排 HA 对中两个节点的自动关闭。</block>
   <block id="a38060fa2aae177f0fbef99ef2923324" category="list-text">通过计划的关闭关闭关闭 Cloud Volumes ONTAP 时，不会创建启动磁盘和根磁盘的快照。</block>
   <block id="1f9d590b21cddc0cc992effc141a9be2" category="paragraph">只有在执行手动关闭时，才会自动创建快照，如下一节所述。</block>
-  <block id="8a1b478d84a6f80cc4e08b04f317d63b" category="list-text">在工作环境中，单击时钟图标：</block>
   <block id="34e70391062bd14a2cecba6e39595285" category="inline-image-macro">屏幕抓图：显示加载自动关机页面的图标。</block>
-  <block id="3bbcb84741fc1c9468cb750fd8649a74" category="paragraph"><block ref="3bbcb84741fc1c9468cb750fd8649a74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f95206b8c2df1268bd8a4454e57f5df" category="list-text">指定关机计划：</block>
   <block id="3a3fb4513da1ae453de12bb3293a3aa1" category="list-text">选择是每天、每工作日、每周末还是三个选项的任意组合来关闭系统。</block>
   <block id="063dc598b5df43ce8c2ce8aebd705d40" category="list-text">指定关闭系统的时间以及关闭系统的时间。</block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 示例 *</block>
-  <block id="fe684206be5bfef48a19e96654dd77eb" category="inline-image-macro">屏幕截图：显示了关闭计划、该计划每周末在上午 12:00 关闭 Cloud Volumes ONTAP 48 小时。</block>
-  <block id="dcf55005a499d7c230aed9db69cce7cc" category="paragraph"><block ref="dcf55005a499d7c230aed9db69cce7cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">单击 * 保存 * 。</block>
-  <block id="bb0a5bced808713247ccd116ba565493" category="inline-image-macro">屏幕截图：在定义计划后显示自动关机图标。</block>
   <block id="743f723fb93463aec3e7652a73bd3890" category="section-title">停止 Cloud Volumes ONTAP</block>
   <block id="9db86a680f4bae1de09076b7c830129a" category="paragraph">停止 Cloud Volumes ONTAP 可以节省计算成本并创建根磁盘和引导磁盘的快照，这有助于排除故障。</block>
   <block id="07bd6b4bc48913b55530949bce54eea8" category="list-text">在工作环境中，单击 * 关闭 * 图标。</block>
   <block id="b47a0575c3200f7dd372fe15d0a725a2" category="inline-image-macro">屏幕截图：显示关闭 Cloud Volumes ONTAP 系统的图标。</block>
-  <block id="b23fbf5cfb02f1455245e12c56aee2f3" category="paragraph"><block ref="b23fbf5cfb02f1455245e12c56aee2f3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8fa2551f6408bfa93fe493745bac6f4" category="list-text">启用创建快照的选项、因为快照可以启用系统恢复。</block>
   <block id="bb7e6cfdc4746a614a2674f0e2c56e43" category="list-text">单击 * 关闭 * 。</block>
   <block id="5f2e3fd1b057bcc33ab14fddf0b6d211" category="paragraph">可能需要几分钟才能停止系统。您可以在以后从 " 工作环境 " 页重新启动系统。</block>
@@ -351,9 +345,7 @@
   <block id="b684a678c3e505841ebacb9d4d1cb66d" category="list-text"><block ref="ac2e95b9536af713edc378ae2cd06df9" category="inline-link-rx"></block>。</block>
   <block id="57cbefe39109ab51b31e818f9ce6d9c4" category="list-text">删除 Cloud Volumes ONTAP 工作环境。</block>
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">在 " 画布 " 页面上，双击要删除的 Cloud Volumes ONTAP 工作环境的名称。</block>
-  <block id="ce57c223c9772471dcabe8db7fec79ea" category="list-text">单击菜单图标，然后单击 * 删除 * 。</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">屏幕截图显示了包含删除操作的工作环境中提供的菜单。</block>
-  <block id="27bf96ea2dd4c98f397498424680c167" category="list-text">键入工作环境的名称，然后单击 * 删除 * 。</block>
   <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">删除工作环境最多可能需要 5 分钟。</block>
   <block id="bfd15aa26ba0ced782240c4a8b7e517e" category="doc">存储管理</block>
   <block id="6ba6ceafe8bda6d338b883b2b39f45f1" category="section-title">存储配置</block>
@@ -441,47 +433,31 @@
   <block id="69e28a1ba6bc5233cc60dd248c362636" category="paragraph">在更改写入速度之前，您应先执行此操作 <block ref="eb987e41d6a04bba64a9af2bb235fccb" category="inline-link-macro-rx"></block>。</block>
   <block id="d9072539538ac46d98e04043ff27fe64" category="list-text">确保卷或聚合创建等操作未在进行中。</block>
   <block id="48e74d5adada7060074e975baf48822e" category="list-text">请注意，此更改将重新启动 Cloud Volumes ONTAP 系统。这是一个中断过程，需要停机整个系统。</block>
-  <block id="95f9e248ac6da6c5225434c857ed26af" category="list-text">在工作环境中，单击菜单图标，然后单击 * 高级 &gt; 写入速度 * 。</block>
   <block id="96f68979b7e20270904a489e3ffb5590" category="list-text">选择 * 正常 * 或 * 高 * 。</block>
   <block id="1dc9045fa2256d31acd9a9e96f728946" category="paragraph">如果您选择 " 高 " ，则需要阅读 " 我了解 ..." 陈述并通过选中此复选框进行确认。</block>
-  <block id="b020ae609de3aa70a34f31ba07ba8917" category="list-text">单击 * 保存 * ，查看确认消息，然后单击 * 继续 * 。</block>
   <block id="9038e7cfcfe9bb9df9afd31371070be8" category="doc">管理现有卷</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="section-title">管理卷</block>
   <block id="78b58016122bb23db763832d3df72599" category="paragraph">您可以在存储需求发生变化时管理卷。您可以查看、编辑、克隆、恢复和删除卷。</block>
   <block id="ad125360a406d7d2d9b4c68551674284" category="list-text">在 " 画布 " 页面上，双击要管理卷的 Cloud Volumes ONTAP 工作环境。</block>
-  <block id="75ab567efb1db447b59b0343c1a2ceb3" category="list-text">管理卷：</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">任务</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">Action</block>
   <block id="289d57ca7886b8016f08f4d17ad68a55" category="cell">查看有关卷的信息</block>
-  <block id="af7d09d8e320bd6a243e7e191eb7025d" category="cell">选择一个卷，然后单击 * 信息 * 。</block>
   <block id="fa66a5498542b41c797489000210e5cb" category="cell">编辑卷（仅限读写卷）</block>
-  <block id="3a952a555dd0c4bc3d26bcf0d7fde45e" category="list-text">选择一个卷，然后单击 * 编辑 * 。</block>
-  <block id="fbec2ab2a5e28a01696c847ad1605c40" category="list-text">修改卷的 Snapshot 策略， NFS 协议版本， NFS 访问控制列表（导出策略）或共享权限，然后单击 * 更新 * 。</block>
   <block id="4d72f256b7a978be1277616666d0ce81" category="admonition">如果需要自定义 Snapshot 策略，可以使用 System Manager 创建这些策略。</block>
   <block id="d50044469c0bf9ab38eff9cf7243fb25" category="cell">克隆卷</block>
-  <block id="94c63f19be46a66b73356db561854603" category="list-text">选择一个卷，然后单击 * 克隆 * 。</block>
   <block id="50086f0f77547b0171b7a431d6a39fa0" category="list-text">根据需要修改克隆名称，然后单击 * 克隆 * 。</block>
   <block id="4cc808195cbf18422cb9719f962fd525" category="paragraph">此过程将创建 FlexClone 卷。FlexClone 卷是一个可写的时间点副本、节省空间、因为它对元数据使用少量空间、然后仅在更改或添加数据时占用额外空间。</block>
   <block id="0fa0071d4364b9114c15a5d2758f2577" category="inline-link">《 ONTAP 9 逻辑存储管理指南》</block>
   <block id="4717b449094c1b48fb9da6fe4ec03c44" category="paragraph">要了解有关 FlexClone 卷的详细信息，请参见<block ref="3ae98799f9586e965a749204c2b3e8f9" category="inline-link-rx"></block>。</block>
   <block id="dc86e5cdedf617184e568612bb0f4b0e" category="cell">将数据从 Snapshot 副本恢复到新卷</block>
-  <block id="0e7e803934c43587ce046f079fb159ae" category="list-text">选择一个卷，然后单击 * 从 Snapshot 副本还原 * 。</block>
   <block id="d68e4493e40c36ff887078a04d29a0c7" category="list-text">选择 Snapshot 副本，输入新卷的名称，然后单击 * 还原 * 。</block>
   <block id="7037507985b932c715517fcf78ae11e3" category="cell">按需创建 Snapshot 副本</block>
-  <block id="60e2cc66323270a764c3d126ddbdb292" category="list-text">选择一个卷，然后单击 * 创建 Snapshot 副本 * 。</block>
   <block id="4e421f73920c619b2a88e35f954c3429" category="list-text">根据需要更改名称，然后单击 * 创建 * 。</block>
   <block id="9fe2538a2d5bb7e8ab50729192e9bae8" category="cell">获取 NFS 挂载命令</block>
-  <block id="93b75fd4fe38319058f69c169a51599d" category="list-text">选择一个卷，然后单击 * 挂载命令 * 。</block>
   <block id="a9320a3f6836ed5a97720b08ba97994a" category="list-text">单击 * 复制 * 。</block>
-  <block id="b4791f5803f8c06f9ebe79fab64eb94c" category="cell">查看 iSCSI 卷的目标 IQN</block>
-  <block id="c2a685651a77d71812f2c11efaa07339" category="list-text">选择一个卷，然后单击 * 目标 IQN* 。</block>
-  <block id="ff898fbdb96b746cb44abc417a9434e1" category="inline-link-macro">使用 IQN 从主机连接到 LUN</block>
-  <block id="ef0b4c9a075f5ca377b2629e230fb1bf" category="list-text"><block ref="294b9b4974581388516e364caa79c936" category="inline-link-macro-rx"></block>。</block>
   <block id="e85050d3f9317d1eb563323469b5f697" category="cell">更改底层磁盘类型</block>
-  <block id="0a669a096950b6abbcba32005af805c3" category="list-text">选择一个卷，然后单击 * 更改磁盘类型和分层策略 * 。</block>
   <block id="73ffd7bf843e4fa686f3e89c1e8480d8" category="list-text">选择磁盘类型，然后单击 * 更改 * 。</block>
   <block id="9f4aa892debf403a854859b0ca9c9ff6" category="cell">更改分层策略</block>
-  <block id="df36c1d5436d58b70c3730737e5458b1" category="list-text">单击 * 编辑策略 * 。</block>
   <block id="460e97605d9d46a32c5b9fbf3be9143b" category="list-text">选择其他策略，然后单击 * 更改 * 。</block>
   <block id="8e9a64bda9d21f945b6489df2e7946e1" category="cell">删除卷</block>
   <block id="150cd3111dfd7ae68aaeb429e7e50847" category="list-text">选择一个卷，然后单击 * 删除 * 。</block>
@@ -491,7 +467,6 @@
   <block id="6ad5e0a20f49ad6a370454bb3afc9a9e" category="inline-link">ONTAP 系统管理器</block>
   <block id="6b851ed63a549d28a80d2c974afcec80" category="section-title">修改 CIFS 服务器</block>
   <block id="fd549a6bcd2d53b8accb49a7225fcfa0" category="paragraph">如果您更改了 DNS 服务器或 Active Directory 域、则需要在 Cloud Volumes ONTAP 中修改 CIFS 服务器、以便它可以继续为客户端提供存储。</block>
-  <block id="26eb89266cb77257e69e50bb61b2da4e" category="list-text">在工作环境中，单击菜单图标，然后单击 * 高级 &gt; CIFS 设置 * 。</block>
   <block id="47839a059e385e1317a08bc188364e78" category="list-text">指定 CIFS 服务器的设置：</block>
   <block id="fb0f1ebb01626c50d4db72222f7f93b8" category="cell">AD 域中要与 CIFS 服务器关联的组织单元。默认值为 cn = computers 。如果将 AWS 托管 Microsoft AD 配置为 Cloud Volumes ONTAP 的 AD 服务器，则应在此字段中输入 * OU=Computers ， OU=corp* 。</block>
   <block id="d72f7fe99597ed8f22050ed88031cb7e" category="paragraph">Cloud Volumes ONTAP 会根据更改更新 CIFS 服务器。</block>
@@ -507,12 +482,7 @@
   <block id="5a31c45fe6b6d37f4ceeb5b86c4346da" category="list-text">查看“ Action Required ”（需要操作）消息中的高级信息以确定已达到其容量限制的聚合。</block>
   <block id="34b14acb1a2ab9863c3c5dad4fd43a16" category="paragraph">例如，高级信息应显示类似于以下内容的内容：聚合 aggr1 已达到其容量限制。</block>
   <block id="d741de259d45adde48602bde8af2fa1e" category="list-text">确定要从聚合中移出的一个或多个卷：</block>
-  <block id="13c88f068a7d567935bc3e57b6ac65e9" category="list-text">在工作环境中，单击菜单图标，然后单击 * 高级 &gt; 高级分配 * 。</block>
-  <block id="2b0c89ca25e54b64f2450bc1ed62e7dd" category="list-text">选择聚合，然后单击 * 信息 * 。</block>
-  <block id="a03fe4765cf778bd609159dbd02518f9" category="list-text">展开卷列表。</block>
   <block id="44996e2a556779f9e9d262677dc18a32" category="inline-image-macro">屏幕抓图：显示聚合中聚合中卷的列表（在 " 聚合信息 " 对话框中）。</block>
-  <block id="ebb164430899be4a43aac5ed08017381" category="paragraph"><block ref="ebb164430899be4a43aac5ed08017381" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9c288511bce9b8d3e44ff0677a0b22b" category="list-text">检查每个卷的大小并选择一个或多个卷以从聚合中移出。</block>
   <block id="1ac63b40afca7dec0b6be58237e990c5" category="paragraph">您应该选择足够大的卷来释放聚合中的空间、以便将来避免出现额外的容量问题。</block>
   <block id="a64d88ebebbadd18db492923a6de8f40" category="list-text">如果系统未达到磁盘限制、则应将卷移动到同一系统上的现有聚合或新聚合。</block>
   <block id="b665b3a7d068d10da4bb1ff6a9eebc76" category="inline-link-macro">将卷移动到另一个聚合以避免容量问题</block>
@@ -538,11 +508,8 @@
   <block id="9b75835d1597be290e865df9d9c03011" category="section-title">将卷移动到另一个聚合以避免容量问题</block>
   <block id="46532ea93f05a647dcfb9dbb7724acf3" category="paragraph">您可以将一个或多个卷移动到另一个聚合中以避免容量问题。</block>
   <block id="b9caee734c459ea1d440e0f169eb1723" category="list-text">验证现有聚合是否具有需要移动的卷的可用容量：</block>
-  <block id="a2d464b6fa7b04c397c84554c3e39809" category="list-text">选择每个聚合，单击 * 信息 * ，然后查看可用容量（聚合容量减去已用聚合容量）。</block>
   <block id="82cf261b628d223daf02ae88b056b424" category="inline-image-macro">屏幕抓图：显示聚合信息对话框中可用的总聚合容量和已用聚合容量。</block>
-  <block id="fc8b427ea07afce711bc9c553569a274" category="paragraph"><block ref="fc8b427ea07afce711bc9c553569a274" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b8bd018e0e8deb966bda4a09610591ac" category="list-text">如果需要，请将磁盘添加到现有聚合：</block>
-  <block id="5e3902fe134d9ed2c4f422ab0316579f" category="list-text">选择聚合，然后单击 * 添加磁盘 * 。</block>
   <block id="3425dbe0168b60aed62d54b2290baad1" category="list-text">选择要添加的磁盘数，然后单击 * 添加 * 。</block>
   <block id="e272fdd11a7aa99158a093a41c65fdd9" category="list-text">如果没有聚合可用容量，请创建新聚合。</block>
   <block id="0e725e4f9ac82ce0408528d6e38105f1" category="inline-link-macro">创建聚合</block>
@@ -606,8 +573,6 @@
   <block id="c8d8c076494c2c4a46c774a2f999d907" category="list-text">该操作将重新启动 Cloud Volumes ONTAP 。</block>
   <block id="e8fafc5515dbe922c9cd7f7101d3a661" category="paragraph">对于单节点系统， I/O 中断。</block>
   <block id="0da5cbb23a0a7d13b0f40ce06d29d3b4" category="paragraph">对于 HA 对、更改不会中断。HA 对继续为数据提供服务。</block>
-  <block id="7ad9575195738d8c7f1b3ae6cea26ee2" category="list-text">如果您使用的是基于节点的 PAYGO 许可证，则可以选择其他许可证。</block>
-  <block id="124da972831d8567648a5d865ca52285" category="list-text">选择计算机类型，选中复选框以确认您了解更改的含义，然后单击 * 确定 * 。</block>
   <block id="a8e111d8043785d9d556635c64194b73" category="paragraph">Cloud Volumes ONTAP 会使用新配置重新启动。</block>
   <block id="f6e43df1ac65ed84364d47e2313ea212" category="doc">验证 AutoSupport 设置</block>
   <block id="57f882d4d9318a77bccc1fe367a42ab5" category="paragraph">AutoSupport 会主动监控系统的运行状况，并向 NetApp 技术支持发送消息。默认情况下，每个节点都启用了 AutoSupport ，以便使用 HTTPS 传输协议向技术支持发送消息。最好验证 AutoSupport 是否可以发送这些消息。</block>
@@ -635,14 +600,10 @@
   <block id="4df04bd818b4ec915902bb9d71d89e11" category="summary">在 AWS 中启动 Cloud Volumes ONTAP 时，您可以从多个实例或类型中进行选择。如果您确定实例类型的大小不足或过大，则可以随时更改此实例类型。</block>
   <block id="58cfda201064f1899f15aad3e019b071" category="doc">更改 Cloud Volumes ONTAP 的 EC2 实例类型</block>
   <block id="64001104830dfdff90f2cf316af055f4" category="list-text">更改实例类型可能会影响 AWS 服务费用。</block>
-  <block id="ba1aa64af19fe534f8edf051425fc04d" category="list-text">选择一个实例类型，选中此复选框以确认您了解更改的含义，然后单击 * 确定 * 。</block>
   <block id="f9ca6b49a548c69b9daaf623a10c70fe" category="summary">帐户管理员可以删除 Cloud Volumes ONTAP 工作环境以将其移至其他系统或对发现问题进行故障排除。</block>
   <block id="345811bf0383d75dd95a07e487d8b29b" category="doc">删除 Cloud Volumes ONTAP 工作环境</block>
   <block id="8a5743c35b84714fc6fe40c2cfab576b" category="list-text">在另一个工作空间中重新发现它</block>
   <block id="c0745336f44247c724e2de0e640b4daa" category="list-text">如果在初始查找期间遇到问题，请重新发现该问题</block>
-  <block id="125c3f7f1a34115bd5d7a3312f502185" category="list-text">在工具页面中，单击 * 启动 * 。</block>
-  <block id="c9c1fe399a016eb71ef77b98d9d3908c" category="list-text">选择要删除的 Cloud Volumes ONTAP 工作环境。</block>
-  <block id="844581166f3d6c9fef0c12b72220bb3d" category="list-text">在 Review and Approve 页面上，单击 * 执行 * 。</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
   <block id="06a685f653628719e2e70fedf9b250a9" category="section-title">重新设计的卷向导</block>
   <block id="dd787088b52e69b3d8bf590e16c8413c" category="paragraph">现在，在通过 * 高级分配 * 选项在特定聚合上创建卷时，可以使用我们最近推出的创建新卷向导。</block>
@@ -829,13 +790,8 @@
   <block id="7b706b41f05f9caa3f36f827554b9f72" category="list-text">在 " 画布 " 页面上，双击要配置 FlexVol 卷的 Cloud Volumes ONTAP 系统的名称。</block>
   <block id="8fe21d93cbc571a932071994087670db" category="paragraph">只有在您很好地了解 Cloud Volumes ONTAP 系统上的数据聚合时，才建议选择特定聚合。</block>
   <block id="71c3e1e405ad66b5bff9ec466ea6a3f4" category="open-title">任何聚合</block>
-  <block id="26b392aa05064fe814836b0694a9882f" category="paragraph">在卷选项卡中，单击 * 添加卷 * &gt; * 新建卷 * 。</block>
   <block id="8f16078272611a0f4398b213c95246b5" category="open-title">特定聚合</block>
-  <block id="d56f9c2528e1e01328b3a8b34a35154d" category="list-text">单击菜单图标，然后单击 * 高级 &gt; 高级分配 * 。</block>
-  <block id="c838714246a1663c8542bc0fc4ad1aab" category="list-text">单击聚合的菜单。</block>
-  <block id="e980b61c0751016af2c2c6c2323619ea" category="list-text">单击 * 创建卷 * 。</block>
   <block id="108a74a6cbb575c986177039e07dc411" category="list-text">按照向导中的步骤创建卷。</block>
-  <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">* 详细信息，保护和标记 * ：输入有关卷的基本详细信息并选择 Snapshot 策略。</block>
   <block id="3b0e375a08fe94a129cba31916c9d2dc" category="paragraph">此页面上的某些字段不言自明。以下列表介绍了可能需要指导的字段：</block>
   <block id="191fac23c2b2ea4e948178972521292f" category="cell">卷大小</block>
   <block id="7b975bd58356ec64d88f70d7f167a299" category="cell">您可以输入的最大大小在很大程度上取决于您是否启用精简配置、这样您就可以创建一个大于当前可用物理存储的卷。</block>
@@ -874,29 +830,20 @@
   <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">使用模板时，您只能创建 NFS 或 CIFS 卷。</block>
   <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">在 " 画布 " 页面上，单击要配置卷的 Cloud Volumes ONTAP 系统的名称。</block>
   <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">显示如何从模板添加新卷的屏幕截图。</block>
-  <block id="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="paragraph"><block ref="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">在 _Select Template_ 页面中，选择要用于创建卷的模板，然后单击 * 下一步 * 。</block>
   <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">可用应用程序模板的屏幕截图。</block>
   <block id="f2a6f7bb83d518b8832e241b44419c17" category="paragraph"><block ref="f2a6f7bb83d518b8832e241b44419c17" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8675916eaff2fb10955e8a3b1b14108f" category="paragraph">此时将显示 _Define Parameters_页面 。</block>
   <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">显示创建卷所需填写的空白模板的屏幕截图。</block>
   <block id="f9fb39421cb5c84a9897e58b19c84510" category="paragraph"><block ref="f9fb39421cb5c84a9897e58b19c84510" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c5ebc721265bff6f5891df31595f9db9" category="admonition">如果要查看这些参数的值，可以单击 * 显示只读参数 * 复选框以显示模板锁定的所有字段。默认情况下，这些预定义字段将被隐藏，并且仅显示需要填写的字段。</block>
-  <block id="f916a27cf580c1cb72d910a796827151" category="list-text">在 _context_ 区域中，工作环境将使用您启动的工作环境的名称进行填充。您需要选择要在其中创建卷的 * Storage VM* 。</block>
-  <block id="7c40758a149a5a65989345e1641d496d" category="list-text">如果不需要定义任何其他操作（例如配置 Cloud Backup ），请单击 * 运行模板 * 。</block>
   <block id="db382d688e4cb3e09b6e7a743ce00edb" category="paragraph">如果还有其他操作，请单击左窗格中的操作以显示需要完成的参数。</block>
   <block id="a31e4f2aa7f454321015e4c5b02bae97" category="inline-image-macro">显示如何选择需要完成的其他操作的屏幕截图。</block>
   <block id="0fdf861b8e72c9acd6caea0924545667" category="paragraph"><block ref="0fdf861b8e72c9acd6caea0924545667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="805efa3cb5ac86159dc412d73e3ea0ee" category="paragraph">例如，如果 " 启用云备份 " 操作要求您选择备份策略，则可以立即执行此操作。</block>
-  <block id="4e4c407dde2bf455a9c4fcfb4d35f0cb" category="list-text">单击 * 运行模板 * 。</block>
   <block id="f97c61e27cbf22f850ec5f0412358f0b" category="paragraph">Cloud Volumes ONTAP 会配置卷并显示一个页面，以便您可以查看进度。</block>
   <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">显示通过模板创建新卷的进度的屏幕截图。</block>
   <block id="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="paragraph"><block ref="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0ca2ea4d1ed88de2980b88af718eedaf" category="paragraph">此外，如果在模板中实施了任何二级操作，例如在卷上启用 Cloud Backup ，则也会执行此操作。</block>
   <block id="841221afb195f2b9f58a8b1dc6a57132" category="section-title">在 HA 配置中的第二个节点上创建卷</block>
   <block id="60a2834a97bdfe49641e5ed1d42e4116" category="list-text">在 " 画布 " 页面上，双击要管理聚合的 Cloud Volumes ONTAP 工作环境的名称。</block>
-  <block id="be6c4e6315a42d6166b9bdefd99b4175" category="list-text">单击菜单图标，然后单击 * 高级 &gt; 高级分配 * 。</block>
-  <block id="ad8627b73ca7a7c5d40024a795bad541" category="list-text">单击 * 添加聚合 * ，然后创建聚合。</block>
   <block id="c8f3514620e31924fc247388a82834fa" category="list-text">对于主节点，请在 HA 对中选择第二个节点。</block>
   <block id="3e508ca38cc9707d385da2b9195e69c1" category="list-text">输入新卷的详细信息，然后单击 * 创建 * 。</block>
   <block id="8da4ea7971e73407bb70003f96f11e26" category="admonition">对于部署在多个 AWS 可用性区域中的 HA 对，您必须使用卷所在节点的浮动 IP 地址将卷挂载到客户端。</block>
@@ -909,13 +856,10 @@
   <block id="47a29d3d79731f5f3ac2e35595cdd5a9" category="list-text">在 " 画布 " 页面上，双击要管理聚合的 Cloud Volumes ONTAP 工作环境。</block>
   <block id="4ee08bb978546541b2d29cc9458a50b6" category="list-text">管理聚合：</block>
   <block id="6fb0fc660dff117671a3212aa98c1e9a" category="cell">查看有关聚合的信息</block>
-  <block id="a40afba5e0bd72803969dff1b0ed7469" category="cell">选择一个聚合并单击 * 信息 * 。</block>
   <block id="b50c158eaf466db16b58f00ceffdc6e1" category="cell">在特定聚合上创建卷</block>
-  <block id="90f1a1f2730a3abc2245b4a979df10f4" category="cell">选择一个聚合并单击 * 创建卷 * 。</block>
   <block id="ee1ffb740641bd768beada794d582fc1" category="cell">将磁盘添加到聚合</block>
   <block id="b98fc1f56f56b03e2525b90a45df7e45" category="list-text">选择要添加的磁盘数，然后单击 * 添加 * 。</block>
   <block id="8ce62ed0fdfe7abb736c3597956922c2" category="cell">删除聚合</block>
-  <block id="55acf40831b2a6bbebbb0948c51c7dad" category="list-text">选择不包含任何卷的聚合，然后单击 * 删除 * 。</block>
   <block id="c8448275713faf6fe02a71468ed251d8" category="summary">事件管理系统收集并显示有关 ONTAP 系统上发生的事件的信息。要接收事件通知，您可以为特定事件严重性设置事件目标和事件路由。</block>
   <block id="b1bf30693cbd3a53c3081b47d5526717" category="doc">配置 EMS</block>
   <block id="ae72beb81d5834d2f01cddc522f75aab" category="paragraph">事件管理系统（ EMS ）收集并显示有关 ONTAP 系统上发生的事件的信息。要接收事件通知、您可以为特定事件严重性设置事件目标（电子邮件地址、 SNMP 陷阱主机或系统日志服务器）和事件路由。</block>
@@ -928,10 +872,6 @@
   <block id="145677a5a159dfbbd80d693eb835dd56" category="paragraph">要使用任何方法升级 ONTAP 软件，需要向 NetApp 注册 PAYGO 系统 <block ref="a298d5e88f2fe29dd7b686b16fbea686" category="inline-link-macro-rx"></block>。</block>
   <block id="17a487ae56e17c3c175366c070697ba7" category="inline-link">了解如何添加 NetApp 支持站点帐户</block>
   <block id="8e396ea0aa1df92258d1f707577a2a06" category="paragraph"><block ref="15f23b395848b815304786c7c573b912" category="inline-link-rx"></block>。</block>
-  <block id="598a7189c0a8955db5d1e7c0795da2a6" category="list-text">在 " 画布 " 页面上，双击要注册的系统的名称。</block>
-  <block id="ddfc5fbf9d4116f75fab6bc240ee3629" category="list-text">单击菜单图标，然后单击 * 支持注册 * ：</block>
-  <block id="c91422d2af44df29262eeef0050de7fb" category="inline-image-macro">屏幕截图：显示了在 Cloud Volumes ONTAP 系统的菜单图标中选择的支持注册选项。</block>
-  <block id="f82fe496603bf204ff4b4b1c2f2016dc" category="paragraph"><block ref="f82fe496603bf204ff4b4b1c2f2016dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5e09b978da9c03ac56e9ae009a493fb2" category="list-text">选择一个 NetApp 支持站点帐户，然后单击 * 注册 * 。</block>
   <block id="ce526ab58111a5389fb309107879b9a8" category="paragraph">Cloud Volumes ONTAP 命令行界面可用于运行所有管理命令，也是执行高级任务或使用命令行界面更自如的理想选择。您可以使用 Secure Shell （ SSH ）连接到 CLI 。</block>
   <block id="3b1f07734e1995c8bb4477cd9ebabf4d" category="admonition">当部署在多个 Azs 中时、 Cloud Volumes ONTAP HA 配置将浮动 IP 地址用于集群管理界面、这意味着外部路由不可用。您必须从属于同一路由域的主机进行连接。</block>
@@ -945,8 +885,6 @@
   <block id="4760896a3351a42c072a61eb664108e5" category="summary">您可以修改 AWS 路由表，其中包含部署在多个 AWS 可用性区域中的 HA 对的浮动 IP 地址的路由。如果新的 NFS 或 CIFS 客户端需要访问 AWS 中的 HA 对，则可以执行此操作。</block>
   <block id="f431a02cb5c1646114365a3adfa4233b" category="doc">更改多个 AZs 中 HA 对的路由表</block>
   <block id="89cac051c93d21ebf3a23db9a240bbd1" category="paragraph">您可以修改 AWS 路由表，其中包含部署在多个 AWS 可用性区域（ AZs ）中的 HA 对的浮动 IP 地址的路由。如果新的 NFS 或 CIFS 客户端需要访问 AWS 中的 HA 对，则可以执行此操作。</block>
-  <block id="e60243467f676326e36a7e657bc20970" category="list-text">在工作环境中，单击菜单图标，然后单击 * 信息 * 。</block>
-  <block id="411f67726812722e40994bad9091a5ac" category="list-text">单击 * 路由表 * 。</block>
   <block id="ce501a2e9d8b238043619a3db4abc141" category="list-text">修改选定路由表的列表，然后单击 * 保存 * 。</block>
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Azure 区域对</block>
   <block id="b2de829903c040e99b02d3d155ca0528" category="paragraph">如果客户端与 Cloud Volumes ONTAP 位于同一个 vNet 中，位于对等 VNets 中，或者使用专用 VPN 或 ExpressRoute 连接到 VNet ，则客户端访问将通过专用链路进行。</block>
@@ -1068,7 +1006,6 @@
   <block id="0131f05be010a429416bcb6f853b54f6" category="doc">监控 AWS 资源成本</block>
   <block id="de4e4bb6bc85c14c6a8601fd20afdca3" category="inline-link">激活 * 工作环境 Id* 标记</block>
   <block id="ee0050b628db7de40e04e661d528d91f" category="list-text"><block ref="541edff71c56eae6d36d5f7a463cfcca" category="inline-link-rx"></block>。</block>
-  <block id="525637918edc816fd2dd073b6aa98f41" category="list-text">在 " 画布 " 页面上，选择一个 Cloud Volumes ONTAP 工作环境，然后单击 * 成本 * 。</block>
   <block id="9dfa1bfa6d369f6aee8b4ba09ac15642" category="paragraph">如果您在卷上启用了 NetApp 的成本节省功能，则成本页面将显示当前月份和前几个月的成本，并显示 NetApp 每年节省的成本。</block>
   <block id="c58c67877e90861ec92c90c10b7ad7f4" category="paragraph">下图显示了成本页面示例：</block>
   <block id="37423695a33e814084966c17d451584a" category="inline-image-macro">屏幕截图：显示 Cloud Volumes ONTAP 实例的每月成本。</block>
@@ -1186,7 +1123,6 @@
   <block id="21d971c1fd1bf90d09fc9c3acbf89eef" category="paragraph">客户端应使用卷所在节点的数据 IP 地址访问 NFS 和 CIFS 卷。如果 NAS 客户端使用伙伴节点的 IP 地址访问卷、则两个节点之间的通信量都会降低性能。</block>
   <block id="7dc27ef59812147ac25a6539ca8487d1" category="admonition">如果在 HA 对中的节点之间移动卷、则应使用其他节点的 IP 地址重新装入卷。否则，您可能会遇到性能降低的问题。如果客户机支持 NFSv4 引用或 CIFS 文件夹重定向、则可以在 Cloud Volumes ONTAP 系统上启用这些功能以避免重新装入卷。有关详细信息，请参见 ONTAP 文档。</block>
   <block id="d0eb9723d8f743b568ca7af03af706b0" category="inline-image-macro">屏幕抓图：显示选择卷时可用的挂载命令。</block>
-  <block id="a5061c073213535809d187195725e86c" category="paragraph"><block ref="a5061c073213535809d187195725e86c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="987e6a12f4054c7d2b4fb12b670fd3e2" category="summary">了解默认情况下如何配置 Cloud Volumes ONTAP 可以帮助您设置和管理系统、尤其是在您熟悉 ONTAP 的情况下、因为 Cloud Volumes ONTAP 的默认设置不同于 ONTAP 。</block>
   <block id="f280b5a5c0eeaf41d31a8a2661b341cb" category="doc">Cloud Volumes ONTAP 的默认配置</block>
   <block id="bd87106622bcf823ab94ad8e03ed23db" category="inline-link-macro">了解有关管理 Storage VM 的更多信息</block>
@@ -1625,22 +1561,14 @@
   <block id="502ba236a1cae83a29d3574451caea8b" category="list-text">选择关系，然后单击 * 操作 &gt; 暂停 * 。</block>
   <block id="58f03f4aa156a72c372951a943f6b4d3" category="section-title">验证聚合是否联机</block>
   <block id="8934d548c1104122f0b1a27daeb92ffa" category="paragraph">在更新软件之前， Cloud Volumes ONTAP 的聚合必须处于联机状态。聚合在大多数配置中都应该联机、但如果不联机、则应将其联机。</block>
-  <block id="bad0781b91218856a150922e68d07abe" category="list-text">选择一个聚合，单击 * 信息 * ，然后验证此状态是否为联机。</block>
   <block id="8a58bd2f86c7acb1b532ae3d8d8ffea5" category="inline-image-macro">屏幕抓图：显示查看聚合信息时的状态字段。</block>
-  <block id="9a995e2acb4483a9819c1ce69c1838e4" category="paragraph"><block ref="9a995e2acb4483a9819c1ce69c1838e4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3c9582501e322eb574b7a8f727a9838c" category="list-text">如果聚合处于脱机状态，请使用 System Manager 使聚合联机：</block>
   <block id="9f4fc08ee817c29b22638b7544f0a27a" category="list-text">单击 * 存储 &gt; 聚合和磁盘 &gt; 聚合 * 。</block>
   <block id="c8a8f302f21fc7d1accf5a0eb3025496" category="list-text">选择聚合，然后单击 * 更多操作 &gt; 状态 &gt; 联机 * 。</block>
   <block id="3a3843b2672bd389702bef2d50b13ac2" category="section-title">升级 Cloud Volumes ONTAP</block>
   <block id="31d167cba5cdd422c65657c793b962dc" category="inline-image-macro">屏幕截图：显示选择工作环境后在 " 画布 " 页面中显示的 " 新版本可用 " 通知。</block>
-  <block id="93e69b27c99652c72cf49fd51a487813" category="paragraph"><block ref="93e69b27c99652c72cf49fd51a487813" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1e565fae8cb8375a73df9abf2e99667a" category="paragraph">您可以从此通知开始升级过程、通过从 S3 存储区获取软件映像、安装映像、然后重新启动系统来自动执行该过程。</block>
   <block id="d51a07decbe601cbb24e543eb1a87686" category="list-text">选择工作环境。</block>
-  <block id="253804b3f61f30ff9abeb479b2c10701" category="paragraph">如果有新版本可用，则右窗格中将显示通知：</block>
-  <block id="3ff5bd4f7d1ec1b55544ace7c0a77dbc" category="list-text">如果有新版本，请单击 * 升级 * 。</block>
-  <block id="04f69386f5a6c4daab4b7332e06cb8ea" category="list-text">在发行信息页面中，单击链接以阅读指定版本的发行说明，然后选中 * 我已阅读 ...* 复选框。</block>
-  <block id="ba897f4b2dc97e3650f4751a409565f3" category="list-text">在最终用户许可协议（ EULA ）页面中，阅读 EULA ，然后选择 * 我阅读并批准 EULA * 。</block>
-  <block id="f475ec9a2d7eef21df387d22c2657629" category="list-text">在 Review and Approve 页面中，阅读重要说明，选择 * 我了解 ...* ，然后单击 * 执行 * 。</block>
   <block id="9a5aec1f134672fe587fc8acffcdf87f" category="paragraph">如果暂停了 SnapMirror 传输、请使用 System Manager 恢复传输。</block>
   <block id="8a2e35e048f2fec22cf01ac1e91ac6e6" category="section-title">从 URL 上提供的映像升级</block>
   <block id="478a47fb7018b29c05bb8f425afdc456" category="list-text">可选：设置可托管 Cloud Volumes ONTAP 软件映像的 HTTP 服务器。</block>
@@ -1758,9 +1686,6 @@
   <block id="a2f3899afcc452f690cc60c38609343a" category="cell">虚拟网络（ VNet ）</block>
   <block id="23e95605ee0aa909f15e50833d6671a9" category="cell">网络安全组（如果使用您自己的组）</block>
   <block id="0c0c93dcca58dc6ba5a46ef2bf56980b" category="doc">提高防范勒索软件的能力</block>
-  <block id="3e2be8b5f27f1aa296209f82d9266254" category="list-text">在工作环境中，单击 * 勒索软件 * 图标。</block>
-  <block id="b4d57e3816d3dc9005d5675c781d08bf" category="inline-image-macro">显示查看工作环境时页面右上角的勒索软件图标的屏幕截图。</block>
-  <block id="7e750d159c031938f4193b0bd8d03636" category="paragraph"><block ref="7e750d159c031938f4193b0bd8d03636" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6fd2a34cb3ac050adc4e4ef8cbaf3727" category="list-text">实施 NetApp 解决方案 for 勒索软件：</block>
   <block id="630bed2396b7232862aa978bb71ea4a6" category="list-text">如果卷未启用 Snapshot 策略，请单击 * 激活 Snapshot 策略 * 。</block>
   <block id="939f63aeda74246a5fa38c869770bd7c" category="paragraph">NetApp Snapshot 技术可为勒索软件补救提供业内最佳的解决方案。成功恢复的关键在于从未受感染的备份中还原。Snapshot 副本为只读副本，可防止勒索软件损坏。它们还可以提供创建单个文件副本或完整灾难恢复解决方案映像的粒度。</block>
@@ -1771,8 +1696,6 @@
   <block id="3346762ff8f7a33c4ab0e7fa6f5ae4bf" category="summary">从数字电子钱包中管理基于容量的许可证，以确保您的 NetApp 帐户具有足够的容量来容纳您的 Cloud Volumes ONTAP 系统。</block>
   <block id="56a50532d8da2bebb09d6190c126140c" category="doc">管理基于容量的许可证</block>
   <block id="93ed65a89f306426be7980ddc22595e8" category="paragraph">_capacity-based licenses_ 使您能够按每 TiB 容量为 Cloud Volumes ONTAP 付费。</block>
-  <block id="8881e3192df3d6a5d7efc284f0e0beee" category="inline-image-macro">屏幕截图显示了专业软件包和基础软件包的已配置容量与已许可容量。</block>
-  <block id="a67c1e3fa166897e8cc4f860ff4aa0c5" category="paragraph"><block ref="a67c1e3fa166897e8cc4f860ff4aa0c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b2dfe525c9a6bec7392826fba889fe07" category="section-title">将已购买的许可证添加到您的帐户</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">单击 * 添加许可证 * 。</block>
   <block id="5c55b043854250a04085395d6b5a3a9d" category="list-text">输入基于容量的许可证的序列号或上传许可证文件。</block>
@@ -1920,7 +1843,6 @@
   <block id="b171537681ac6ab38d6353435252c4f1" category="list-text">单击 * 转换许可证 * 。</block>
   <block id="c165494898bc0fbf27151d6359a27936" category="doc">创建聚合</block>
   <block id="67ea3f429e13cb33e66f1359eb85cc04" category="list-text">在 " 画布 " 页面上，双击要管理聚合的 Cloud Volumes ONTAP 实例的名称。</block>
-  <block id="ff4facf1a49a9f339fdb4bf4880c23f1" category="list-text">单击 * 添加聚合 * ，然后指定聚合的详细信息。</block>
   <block id="833ac412ce32368430680596235b2009" category="list-text">单击 * 执行 * ，然后单击 * 批准和购买 * 。</block>
   <block id="ff12fe6f5d97035a37481ab9694afb95" category="doc">AWS 的安全组规则</block>
   <block id="01cc3f2faf08762df2ba5632863fa9b9" category="section-title">Cloud Volumes ONTAP 的规则</block>
@@ -2273,7 +2195,6 @@
   <block id="350a5f4a5776c36c5a3cd04127fb4fe5" category="section-title">在实施要求后启用数据分层</block>
   <block id="153099ca90154cd624989c2d0ba20c2b" category="inline-xref">确保满足所有要求</block>
   <block id="87d6e798cac3a87c0353ec294be704dd" category="list-text"><block ref="066865d547a10de791f5772d517b17f7" category="inline-xref-macro-rx"></block>。</block>
-  <block id="b9abd7055dd68825b2f07a610643808b" category="list-text">在 " 画布 " 页面上，双击 Cloud Volumes ONTAP 实例的名称。</block>
   <block id="8bafa552ca08956804ea81c5b66b12db" category="list-text">单击菜单图标并选择 * 启用容量分层 * 。</block>
   <block id="75a38ac7969fd8d12bc86993fd41536a" category="section-title">确保在聚合上启用分层</block>
   <block id="d1795f03cc65928e7e6c681acf520582" category="paragraph">必须在聚合上启用数据分层，才能在卷上启用数据分层。您应了解新卷和现有卷的要求。</block>
@@ -2281,8 +2202,6 @@
   <block id="7837a0921d66e4bb13eaadfbd4e230b5" category="list-text">* 现有卷 *</block>
   <block id="603cb1023afc4d427cec5523f7e57a44" category="paragraph">如果要在现有卷上启用数据分层，则需要确保在底层聚合上启用数据分层。如果现有聚合未启用数据分层，则需要使用 System Manager 将现有聚合附加到对象存储。</block>
   <block id="8ccc20b42c5589bb063180b688f1b75c" category="list-title">确认是否已在聚合上启用分层的步骤</block>
-  <block id="164a2b16a831f0be194767eec1e394e9" category="list-text">单击菜单图标，单击 * 高级 * ，然后单击 * 高级分配 * 。</block>
-  <block id="42e0fd08a018bc4ebe85c982dcdbf69e" category="list-text">验证是否已在聚合上启用分层。</block>
   <block id="f996b43685fd706b80aeb790d46b2ba2" category="list-title">在聚合上启用分层的步骤</block>
   <block id="fa993d0910660bdcad473652ec5f6fd9" category="list-text">在 System Manager 中，单击 * 存储 &gt; 层 * 。</block>
   <block id="a81d10975a3cf570e21398a50ce230b9" category="list-text">单击聚合的操作菜单并选择 * 附加云层 * 。</block>
@@ -2290,15 +2209,11 @@
   <block id="a323b1a6695991c4c107a123436089fb" category="paragraph">现在，您可以在新卷和现有卷上启用数据分层，如下一节所述。</block>
   <block id="4378a09b2897cb95172610f9ab82105b" category="section-title">对读写卷中的数据进行分层</block>
   <block id="38f85b7b21b44c9b59780ab299932eff" category="paragraph">Cloud Volumes ONTAP 可以将读写卷上的非活动数据分层到经济高效的对象存储中，从而腾出性能层来存储热数据。</block>
-  <block id="cdf6af3897d6557455ac809e1ffde97c" category="list-text">在工作环境中、创建新卷或更改现有卷的层：</block>
   <block id="39bd65df7752a24493d186f47c1c4bcd" category="cell">创建新卷</block>
   <block id="e0e02b01eefffa92ef6dd41ca0bfddaa" category="cell">单击 * 添加新卷 * 。</block>
   <block id="182706d5a3d41050c9687bc12322e932" category="cell">修改现有卷</block>
-  <block id="5db974b5f3510ad309e326c50b08ea61" category="cell">选择卷并单击 * 更改磁盘类型和分层策略 * 。</block>
   <block id="8e18d8c821310741023d16bcccb5aa95" category="list-text">选择分层策略。</block>
   <block id="9566ee0b8867f3b42d0387e3792c2561" category="paragraph">有关这些策略的问题描述，请参见 <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
-  <block id="ed3fffd1e98b6ea6e3c87bde5d798945" category="inline-image-macro">屏幕快照，显示了启用对对象存储分层的图标。</block>
-  <block id="6173457770f08d006795bfe77a9ee1ff" category="paragraph"><block ref="6173457770f08d006795bfe77a9ee1ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbef357c8db2518419bffde441df9910" category="section-title">对数据保护卷中的数据进行分层</block>
   <block id="f7ace3ec87f10c0e3afcafcb4cf7b425" category="paragraph">Cloud Volumes ONTAP 可以将数据从数据保护卷分层到容量层。如果激活目标卷、则数据将在读取时逐渐移动到性能层。</block>
   <block id="29e71d65fc647320e822efb6ec422c56" category="list-text">在 " 画布 " 页面上，选择包含源卷的工作环境，然后将其拖动到要将该卷复制到的工作环境。</block>
@@ -2320,15 +2235,12 @@
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">在 * 容量 * 下，单击 * 聚合容量阈值 - 数据分层的可用空间比率 * 。</block>
   <block id="c389556b61d8e54624252a2563fdfc17" category="list-text">根据需要更改可用空间比率，然后单击 * 保存 * 。</block>
   <block id="24c979ae168264040ca2c88e59f2902a" category="section-title">更改自动分层策略的冷却期</block>
-  <block id="314e806b4e1a10feefefa7b140062fab" category="paragraph">如果您使用 _auto_tiering 策略在 Cloud Volumes ONTAP 卷上启用了数据分层，则可以根据业务需求调整默认冷却期。仅使用 API 支持此操作。</block>
   <block id="77ac5bdafcd5300a46db8d23117433c1" category="paragraph">冷却期是指卷中的用户数据在被视为 " 冷 " 并移至对象存储之前必须保持非活动状态的天数。</block>
   <block id="15d3560479839db873ba3a7d6309b50c" category="paragraph">自动分层策略的默认冷却期为 31 天。您可以按如下所示更改冷却期：</block>
   <block id="07c1e6ebf913a40fd18f3f57f20d6d68" category="list-text">9.8 或更高版本： 2 天到 183 天</block>
   <block id="a6f44cada6b6ce69a44f85c0c202e270" category="list-text">9.7 或更早版本： 2 天到 63 天</block>
   <block id="2e1602577b506088aeed8165e506d1e4" category="list-text">创建卷或修改现有卷时，请在 API 请求中使用 _minimumCoolingDays_ 参数。</block>
   <block id="95d79008b0be56c31d097e76b7584763" category="doc">更改 Cloud Volumes ONTAP 的密码</block>
-  <block id="8ade5dd9392dfe1171a2a14523929e7d" category="list-text">在工作环境中，单击菜单图标，然后单击 * 高级 &gt; 设置密码 * 。</block>
-  <block id="4ca6940bf893c214ac89a699b609845c" category="list-text">输入新密码两次，然后单击 * 保存 * 。</block>
   <block id="809993be97183c1aad51ef5ea989cd2a" category="paragraph">新密码必须不同于您使用的最后六个密码之一。</block>
   <block id="aec821c01e23f20e98a9438c7d2dd253" category="summary">在 Azure 中的 Cloud Volumes ONTAP 上使用 Azure 存储服务加密和 Microsoft 管理的密钥自动对数据进行加密。但是，您可以按照此页面上的步骤使用自己的加密密钥。</block>
   <block id="e76c0365dfa8d6b43992d790f582e6c4" category="doc">设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥</block>
@@ -2525,7 +2437,6 @@
   <block id="282267afd7416dee4eb19ac3837e1b47" category="summary">在 Microsoft Azure 中启动 Cloud Volumes ONTAP 时，您可以从多种 VM 类型中进行选择。如果您确定虚拟机类型的大小不足或过大，则可以随时根据您的需要更改此虚拟机类型。</block>
   <block id="a03c706f9aecdf2cb0f407d0f08a1656" category="doc">更改 Cloud Volumes ONTAP 的 Azure VM 类型</block>
   <block id="9f257b11a56fb0990bae90687da210c7" category="list-text">更改虚拟机类型可能会影响 Microsoft Azure 服务费用。</block>
-  <block id="611a1fa2f8a37527bbcb1f0228321b4d" category="list-text">选择 VM 类型，选中复选框以确认您了解更改的含义，然后单击 * 确定 * 。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
   <block id="2971acb1ab572cfb61b7c86d49e2b300" category="sidebar">Cloud Volumes ONTAP 文档</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
@@ -2622,7 +2533,6 @@
   <block id="06c86f2b2f40c7b5ae916f820dace6f3" category="inline-link">转至《 Cloud Volumes ONTAP 发行说明》</block>
   <block id="eaae0996b48caf454deb2608523a1af2" category="paragraph"><block ref="a3830f1e68e521753c115aa90de96c67" category="inline-link-rx"></block>。</block>
   <block id="cd46020b2ca09f66f5c79bd35fe2da2e" category="paragraph"><block ref="4107f790de2a45bc9a00a9b75db49bc5" category="inline-link-rx"></block>。</block>
-  <block id="0149fd22e5722b132cbafe2d3e86e10b" category="list-text">为模板中未硬编码的所有参数添加值。请参见 <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> 有关部署 Cloud Volumes ONTAP 卷所需完成的所有参数的详细信息。</block>
   <block id="17f0fae3c5e44f9a095562194f423343" category="paragraph"><block ref="17f0fae3c5e44f9a095562194f423343" category="inline-link-rx"></block></block>
   <block id="82defe4f45724f0ce17f1a11c6980420" category="paragraph"><block ref="82defe4f45724f0ce17f1a11c6980420" category="inline-link-rx"></block></block>
   <block id="cc88253744d31e3bf2a7ccc252a7265a" category="paragraph">有关说明，请参见<block ref="6317d940bb63c8479a9b48e6dec2fde3" category="inline-link-rx"></block>。</block>
@@ -2791,7 +2701,6 @@
   <block id="331320477ecac4cca1b63e686d99f8d3" category="section-title">如何将许可证添加到数字电子钱包中</block>
   <block id="792eeb7f686f2ad37b664f6478d40bed" category="paragraph">从NetApp销售代表购买许可证后、NetApp将向您发送一封电子邮件、其中包含序列号和其他许可详细信息。</block>
   <block id="ad0be4bc913a8026a3f5e42fc7656d23" category="inline-xref">了解如何向您的帐户添加已购买的许可证</block>
-  <block id="0558557eddde3c400b73684dfb49fdbb" category="list-text">选择一个聚合、然后单击*添加磁盘*。</block>
   <block id="3e385957b42bff8380e99a914d474fb1" category="list-text">*详细信息和凭据*：选择项目、指定集群名称、选择服务帐户、添加标签并指定凭据。</block>
   <block id="1adb02ac235ed181f81480b00aa116f6" category="list-text">*位置和连接*：选择一个位置、选择防火墙策略并确认与Google Cloud存储的网络连接以进行数据分层。</block>
   <block id="3450bc9327f985ff43682b683cb1eee9" category="cell">连接验证</block>
@@ -3146,11 +3055,8 @@
   <block id="bb1ef255816e8724de2a508f11ab6faa" category="list-text">在"画布"页面上、双击Cloud Volumes ONTAP 系统的名称。</block>
   <block id="a31b079030fd3d406e06a9ce180abf58" category="list-text">在右上角、单击*切换到高级视图*。</block>
   <block id="4764848a2e939676e46196b57ed3d239" category="inline-image-macro">Cloud Volumes ONTAP 工作环境的屏幕截图、其中显示了切换到高级视图选项。</block>
-  <block id="3ee38239984a2c6b3ae4074ced0704c7" category="paragraph"><block ref="3ee38239984a2c6b3ae4074ced0704c7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="74d668d6c47cd0c55c4ff8f77ad621bd" category="list-text">如果显示确认消息、请通读该消息并单击*关闭*。</block>
   <block id="f0da217269d7f8fb37fd503f586df2ef" category="list-text">使用System Manager管理Cloud Volumes ONTAP。</block>
-  <block id="c7c80403ddad5bf0ae3c78cf20ad2cf1" category="inline-image-macro">Cloud Volumes ONTAP 工作环境的屏幕截图、其中显示了切换到标准视图选项。</block>
-  <block id="b98d787e610274d7cf438bd9dacb5eb3" category="paragraph"><block ref="b98d787e610274d7cf438bd9dacb5eb3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9091c5cdacecb3d4082594d5d5a31855" category="section-title">有关使用System Manager的帮助</block>
   <block id="29b2dad08499788ccf25f529167b3782" category="paragraph">如果在Cloud Volumes ONTAP 中使用System Manager需要帮助、请参见<block ref="e4712fca3ed0fd9138bc58dbf36327e9" category="inline-link-rx"></block> 了解分步说明。以下链接可能会有所帮助：</block>
   <block id="b9cf2d579e6b088870d384fe9910b52f" category="inline-link">卷和LUN管理</block>
@@ -3177,8 +3083,6 @@
   <block id="45d56c7397375528eb877ce509812ff1" category="paragraph"><block ref="45d56c7397375528eb877ce509812ff1" category="inline-link-rx"></block></block>
   <block id="f544f5509c6658bd68f3e69072dd7145" category="admonition">此行为不适用于支持Amazon EBS弹性卷功能的聚合。启用了弹性卷的聚合由一个或两个RAID组组成。每个RAID组都有四个容量相同的相同磁盘。 <block ref="e64e49a1cded5f4109adae46b4faa045" category="inline-link-macro-rx"></block>。</block>
   <block id="149dd55e6760c710e611c0480e5069ac" category="cell">增加支持Amazon EBS弹性卷的聚合的容量</block>
-  <block id="f17996ff912274a89bd46a09126f54a0" category="list-text">选择一个聚合并单击*增加容量*。</block>
-  <block id="c2ee080a41f3128dec50564d5d2cf945" category="list-text">输入要添加的其他容量、然后单击*添加*。</block>
   <block id="ddc70e48be52170226876f32fd0d0955" category="paragraph">请注意、您必须将聚合的容量至少增加256 GiB或聚合大小的10%。</block>
   <block id="457b4b096cd2396d1dc52e52b77f7f16" category="paragraph">例如、如果您使用的是1.77 TiB聚合、则10%为181 GiB。该值低于256 GiB、因此聚合的大小必须增加到最小256 GiB。</block>
   <block id="a787df3b454348b29e66a5e26381efe1" category="inline-link-macro">了解有关Elastic Volumes支持的更多信息</block>
@@ -3264,9 +3168,6 @@
   <block id="d842642316b39be001efb718a0cad4bd" category="inline-link-macro">了解如何创建聚合</block>
   <block id="3af655005fd29fbbd8824a6ef2f040dc" category="paragraph"><block ref="bdaa17f2dfe16043f8bea33e0b6d1ef8" category="inline-link-macro-rx"></block>。</block>
   <block id="71ce9ba1a5339afe1098587175217b4b" category="list-text">确定已启用弹性卷的聚合</block>
-  <block id="71ba010a4e2b551c25de28ee7b4f8a9a" category="paragraph">转到"高级分配"页面时、您可以确定是否已在聚合上启用弹性卷功能。在以下示例中、aggr2启用了弹性卷、而aggr1未启用。</block>
-  <block id="090c5fa182e6b93f4da9c8d06195700f" category="inline-image-macro">显示两个聚合的屏幕截图、其中一个聚合的字段显示文本Elastic Volumes Enabled。</block>
-  <block id="ee7cf33bd0cd0b3af6a7cc58c5d43380" category="paragraph"><block ref="ee7cf33bd0cd0b3af6a7cc58c5d43380" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13cb5ebd8c0b7becb3143ed413ade223" category="list-text">向聚合添加容量</block>
   <block id="dc71aae1559eb6f97026da188f10aa46" category="inline-link-macro">了解如何增加聚合容量</block>
   <block id="aeef03dd397a861db5fa8e9873d3c379" category="paragraph"><block ref="ea7cf76a282dc5fbb196162d820ca1ce" category="inline-link-macro-rx"></block>。</block>
@@ -3327,11 +3228,9 @@
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">在*容量*下、修改以下任何设置：</block>
   <block id="af1f64d74440547a71a0dfdd077d8a15" category="inline-link-macro">了解容量管理模式的工作原理</block>
   <block id="46e6171a2e84c75269ac8bcb3c5004d8" category="paragraph"><block ref="f8a3c55f9fa8638c083e126aaf830b07" category="inline-link-macro-rx"></block>。</block>
-  <block id="562e73580c466cead324e6a17fbfe1c8" category="list-text">可用空间比率</block>
   <block id="314b05c3387324c9621b3b3cd58816d4" category="list-text">当聚合上的可用空间比率降至指定阈值以下时触发通知。</block>
   <block id="a27b16792f86cfcc4c0f28d5d58e43f4" category="paragraph">可用空间比率的计算方法如下：</block>
   <block id="b9fbc310908f08e909d0f601f964b6d5" category="paragraph">(聚合容量-聚合上的总已用容量)/聚合容量</block>
-  <block id="1bf0c6edc1ff4a9b211fcdf6bda9cef9" category="list-text">数据分层的可用空间比率</block>
   <block id="0bc3c683bdb3389ca9d8d2211fce0878" category="list-text">定义将数据分层到容量层(对象存储)时、性能层(磁盘)需要多少可用空间。</block>
   <block id="3e230a58ba269a917d314abcc623818e" category="paragraph">此比率对于灾难恢复情形非常重要。从容量层读取数据时、Cloud Volumes ONTAP 会将数据移至性能层以提高性能。如果空间不足，则 Cloud Volumes ONTAP 无法移动数据。</block>
   <block id="99a583bf10de030bdac538c8b15f5b45" category="paragraph">此行为由连接器上的_Capacity Management Modes_确定。容量管理模式会影响由该连接器管理的所有Cloud Volumes ONTAP 系统。如果您有另一个连接器、则可以对其进行不同的配置。</block>
@@ -3423,18 +3322,12 @@
   <block id="e1d61ff8b15b12854145940279164504" category="paragraph">总共有六个系统。然后、您的帐户中还可以再添加14个系统。</block>
   <block id="03021ab228ad1d1c921bbf536e2913a4" category="section-title">查看帐户中的已用容量</block>
   <block id="e54d493645f297f788982c1215f721bf" category="paragraph">"数字电子钱包"按许可包显示帐户中的总已用容量和已用容量。这有助于您了解如何为您付费以及是否需要购买额外容量。</block>
-  <block id="d5dde91fb8d63e816b49f1eaaf1b31f0" category="list-text">选择*基于容量的许可证*后、查看软件包摘要、其中显示了您已用容量、已许可总容量和总PAYGO容量。</block>
   <block id="29f9c9781f75b695cb6c7c93910280cd" category="list-text">_Total consumed capacity_是您的NetApp帐户中所有Cloud Volumes ONTAP 系统的总已配置容量。费用根据每个卷的配置大小计算、而不考虑卷中的本地、已用、已存储或有效空间。</block>
-  <block id="2895d33d8798ea34fbece2f03c7b1a44" category="list-text">_Total licensed_是您从NetApp购买的总许可容量(BYOL)。</block>
   <block id="4cca90046112da5c5d3a703dafebbb7e" category="list-text">_Total PAYGO_是使用云市场订阅的总配置容量。只有当消耗的容量高于许可容量或数字电子钱包中没有BYOL许可证时、才会通过PAYGO进行收费。</block>
-  <block id="fa5b039d6c7312346b7c921f81258971" category="paragraph">下面是一个已用容量为2000 TiB的帐户示例：</block>
   <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">在摘要下、查看每个许可包的已用容量。</block>
-  <block id="39d8821e12869173bcc44d49a6c82619" category="list-text">_consumed capacity_显示该软件包中卷的总容量。有关特定软件包的详细信息、请将鼠标悬停在工具提示上。</block>
   <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link-macro">了解Essentials软件包的收费信息</block>
   <block id="33b4838dec7acdb2df64d13961f0a255" category="paragraph">要更好地了解Essentials软件包显示的容量、您应熟悉充电的工作原理。 <block ref="eee0a6ebb632d7e4c34635f35e9b54cf" category="inline-link-macro-rx"></block>。</block>
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">以下是具有多个许可包的帐户的示例：</block>
-  <block id="9dbb08096054a8593f55c8cd3e2863d6" category="inline-image-macro">显示专业版、优化版和基础版软件包的已用容量的屏幕截图。</block>
-  <block id="943b03ddb77b543ab329dfed996ad4ac" category="paragraph"><block ref="943b03ddb77b543ab329dfed996ad4ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
   <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">从左侧导航菜单中、选择*数字电子夹*。</block>
@@ -3452,8 +3345,6 @@
   <block id="3bc8827b2b8b4b47a25fb21994526d52" category="paragraph">如果由于写入速度较快而导致数据丢失、事件管理系统(EMS)将报告以下两个事件：</block>
   <block id="7cd42532925d5e610a9d3694b57652da" category="list-text">Cloud Volumes ONTAP 9.8到9.10.1</block>
   <block id="deae9d093dee266b166a3693474231a9" category="paragraph">发生这种情况时、Cloud Volumes ONTAP 应能够启动并继续提供数据、而无需用户干预。</block>
-  <block id="4f68f7a47531b2df7b7a4db5225d57b5" category="list-text">_BYOL_显示您从NetApp购买的许可容量。</block>
-  <block id="0c27ea3454ff74c09bafc9361752d263" category="list-text">_PAYGO_按许可证使用模式显示总使用容量。</block>
   <block id="37bd0d8d0efdd824ed9e36094f3c2c1c" category="paragraph">中包括这些权限<block ref="98fe8f9430f05dddae3f56358643ae7b" category="inline-link-rx"></block></block>
   <block id="d0cc9b5d406e02bdbb6a1a9848e6af5f" category="inline-link">查看所需权限</block>
   <block id="0fcac0fe9e3d9ae4416e83b6bf0316d1" category="paragraph"><block ref="0fcac0fe9e3d9ae4416e83b6bf0316d1" category="inline-link-rx"></block></block>
@@ -3573,18 +3464,11 @@
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您在云提供商的市场上有私人优惠或合同、则更改为合同中未包含的收费方式将导致对BYOL (如果您从NetApp购买了许可证)或PAYGO进行收费。</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">您不会因与数据复制(SnapMirror)或NDMP相关的I/O费用。</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">使用集群管理LIF的IP地址连接Connector并通过HTTPS访问System Manager Web控制台</block>
-  <block id="9de6e01935c802f21691e7efbefa9680" category="inline-image-macro">由三个并排点组成的图标。</block>
-  <block id="4cd7acfcbb86932901020185b1df1ec0" category="list-text">单击 <block ref="231de61ef434abbab90a4356a7d32c83" category="inline-image-macro-rx" type="image"></block> &gt; * 从模板添加卷 * 。</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HA对及其组件的概念映像。</block>
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="59d7031e8dd126031d49f14da3eb9662" category="inline-image-macro">一个概念映像、显示了一个云卷HA对以及配置所需的四个vPC。</block>
   <block id="5f244177e38ddb1ab2243352007aaca2" category="paragraph"><block ref="5f244177e38ddb1ab2243352007aaca2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2963bb3da6cd2f26e6b000d48fda5b9c" category="inline-link-macro">对AutoSupport 配置进行故障排除</block>
-  <block id="10b7e2e8f5f0b89386db5d8f54c2583a" category="list-text">在Canvas中、选择工作环境。</block>
-  <block id="26adcf62b4b0748e28f414b46e0ad443" category="list-text">在右侧窗格中、单击菜单图标并选择*优化成本和性能*。</block>
-  <block id="bbcd7b9a3e132961d93ea08d77eb732e" category="inline-image-macro">"画布"中提供的"优化成本和性能"选项的屏幕截图。</block>
-  <block id="84fb9846fd45aafb7e227dceba2bf483" category="paragraph"><block ref="41ee20c5926363ecd6aaed7cd5cd1cdd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d0e6517b6c0b570b620f706f71cb176c" category="admonition">也可以通过进入工作环境、打开操作菜单并选择*更改VM*来使用此选项。</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="440be74a67502f9c3d55890782329328" category="paragraph">连接器3.9.22版引入了以下更改。</block>
   <block id="83bad7a989a8ab61893e9cfb7497cefd" category="section-title">数字电子钱包增强功能</block>
@@ -3599,7 +3483,6 @@
   <block id="f929bd53055100ea5034e258d5828a45" category="inline-image-macro">选择工作环境后、可从"画布"中查看优化成本与性能选项的屏幕截图。</block>
   <block id="b04af3108aa064fb53015f188d417418" category="paragraph"><block ref="740982637064d815add45193172173b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa5f0abcdf06ead83ea7fc11be56d19a" category="section-title">AutoSupport 通知</block>
-  <block id="5ed78720df0a22827c77c0f200597bec" category="admonition">也可以通过进入工作环境、打开操作菜单并选择*更改计算机*来使用此选项。</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">了解如何注册获取支持</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您要通过电话与某人通话、请单击*致电我们*。系统会将您定向到netapp.com上的一个页面、其中列出了您可以拨打的电话号码。</block>
@@ -3617,7 +3500,6 @@
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"您无权针对选定服务创建案例"</block>
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">使用产品内聊天功能</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">通过提交非技术案例<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
-  <block id="9097b7003d9efcc9b19c4d5073cdcd3b" category="admonition">也可以通过进入工作环境、打开操作菜单并选择*更改实例*来使用此选项。</block>
   <block id="ad6a05badd8d020ceea1ccb2534365ab" category="section-title">AutoSupport 要求</block>
   <block id="295477dc121353b83198c98d83f89695" category="section-title">对AutoSupport 配置进行故障排除</block>
   <block id="db5287528bed608802655c082c0e89b3" category="paragraph">您很可能会因为网络问题而收到此消息。</block>
@@ -3652,8 +3534,6 @@
   <block id="ea92910b55077f3c4e27aa9df66efbf8" category="list-text">返回到Cloud Volumes ONTAP 命令行界面并验证Cloud Volumes ONTAP 是否可以发送AutoSupport 消息：</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
   <block id="434256b12ce281ef5e4d73836f3321d4" category="paragraph">请访问NetApp知识库以查看分步说明：</block>
-  <block id="2d3838f6845c3ac0398071b3ad7e14f5" category="paragraph"><block ref="2d3838f6845c3ac0398071b3ad7e14f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="99c8d21234f18ca8a3a220793fea2262" category="paragraph">+<block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a8bfe07e1e703ed3692dbea8b2a81de" category="inline-link">Cloud Volumes ONTAP 调解器通知</block>
   <block id="b8a867ef3334c621e08f3cfef506f53b" category="list-text"><block ref="b8a867ef3334c621e08f3cfef506f53b" category="inline-link-rx"></block></block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP 注意事项</block>
@@ -3873,7 +3753,6 @@
   <block id="00ab90255b4d6e7b956ddf02ccf0b78e" category="inline-image-macro">BlueXP的屏幕截图、其中显示了集群管理接口、两个NFS和CIFS数据接口以及SVM管理接口的浮动IP地址。</block>
   <block id="0793fb2aa91da8227ea7295e5891ea57" category="paragraph"><block ref="0793fb2aa91da8227ea7295e5891ea57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="27f1a07e4eef2fc0ab102135404da657" category="paragraph">下图示例显示了 VPC 1 的路由表。它包括一条指向浮动 IP 地址和客户端所在 VPC 2 的路由。在部署HA对时、BlueXP会自动将浮动IP添加到路由表中。</block>
-  <block id="9036b8f651252283ddfb9a00295cfa70" category="paragraph">通过选择卷并单击*挂载命令*、您可以在BlueXP中找到正确的IP地址。</block>
   <block id="e0bda1591b7559424f02d1adbbd3965d" category="summary">与标准AWS区域类似、您可以在AWS商用云服务(C2S)环境中使用BlueXP (以前称为Cloud Manager)来部署Cloud Volumes ONTAP 、从而为您的云存储提供企业级功能。AWS C2S 是一个特定于美国的封闭区域智能社区；此页面上的说明仅适用于 AWS C2S 区域用户。</block>
   <block id="d9bc9104669da346ed2fadb2cb686999" category="paragraph">BlueXP将启动Cloud Volumes ONTAP 实例。您可以跟踪时间链中的进度。</block>
   <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">在BlueXP中管理Storage VM</block>
@@ -3899,7 +3778,6 @@
   <block id="bf75afe84fa4d8e8637d67f46da78447" category="admonition">BlueXP会创建<block ref="69dad99e4ae4952ff167137be3a42452" category="inline-link-rx"></block> 并启动该放置组中的两个 HA 节点。放置组通过将实例分散在不同的底层硬件上，降低同时发生故障的风险。此功能可从计算角度而不是从磁盘故障角度提高冗余。</block>
   <block id="c884e72132fe774e964d45203b2dda4d" category="paragraph">创建新卷时、如果需要更多磁盘、则BlueXP会将相同数量的磁盘分配给两个节点、创建镜像聚合、然后创建新卷。例如、如果卷需要两个磁盘、则BlueXP会为每个节点分配两个磁盘、总共分配四个磁盘。</block>
   <block id="6b014a111978e615d8d143759130afe1" category="admonition">只有在存储系统视图中使用BlueXP时、才能设置主动-主动配置。</block>
-  <block id="00c9595bc5cbf65901adf1c05dbc4c08" category="paragraph">您可以从BlueXP轻松识别正确的IP地址：</block>
   <block id="a35bca3f24f4dccbc351b2e388077c00" category="paragraph">如果要在AWS中启动Cloud Volumes ONTAP 、则需要在BlueXP中创建新的工作环境</block>
   <block id="da6a1a281804977deca79ae615d580d8" category="paragraph">创建工作环境后、BlueXP会立即在指定的VPC中启动一个测试实例以验证连接。如果成功、BlueXP将立即终止实例、然后开始部署Cloud Volumes ONTAP 系统。如果BlueXP无法验证连接、则创建工作环境将失败。该测试实例可以是 t2.nano （对于默认 vPC 占用）或 m3.medium （对于专用 vPC 占用）。</block>
   <block id="4430756ff29ab7fea3e175d3ff48be76" category="cell">BlueXP使用工作环境名称来命名Cloud Volumes ONTAP 系统和Amazon EC2实例。如果您选择了预定义安全组的前缀，则它还会使用该名称作为前缀。</block>
@@ -3935,8 +3813,6 @@
   <block id="d4cf496f112c8443c55c77f819b95b4b" category="paragraph">您可能希望在特定时间间隔内关闭 Cloud Volumes ONTAP 以降低计算成本。您可以将BlueXP配置为在特定时间自动关闭并重新启动系统、而不是手动执行此操作。</block>
   <block id="719804aecba45f2a91fc03419f9f60ac" category="list-text">计划自动关闭Cloud Volumes ONTAP 系统时、如果正在进行活动数据传输、则BlueXP会推迟关闭。</block>
   <block id="bef3442a081401294987a04d5fd013d7" category="paragraph">传输完成后、BlueXP将关闭系统。</block>
-  <block id="f884ea208e6bcd01380f10fb59dea173" category="paragraph">下图显示了一个计划、指示BlueXP在每个星期六的中午12：00关闭系统48 小时。BlueXP会在每周一中午12：00重新启动系统</block>
-  <block id="e47eeb0d6a9544ebd7c2192d93a896cc" category="paragraph">BlueXP将保存此计划。时钟图标将发生变化以指示已设置计划： <block ref="74bec5e5dc52030c6eeec717b2b26a75" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d96640cb9857bedea622da8e210171a8" category="admonition">为了降低成本、BlueXP会定期删除根磁盘和启动磁盘的旧快照。对于根磁盘和启动磁盘，只会保留两个最新的快照。</block>
   <block id="50840e2145fe17e7b2d3355bf1858f3b" category="paragraph">停止HA对时、BlueXP会关闭两个节点。</block>
   <block id="ffa45f5dd5756168cb752f08f5b3cefd" category="inline-link">将NetApp 支持站点 帐户添加到BlueXP</block>
@@ -3948,28 +3824,22 @@
   <block id="71ad7ee54b2c54364e470e91313bd1c8" category="paragraph">在创建系统时、BlueXP会为冷数据创建一个对象存储、 <block ref="dbb78a2cc39acf14e084217f8235322a" category="inline-xref-macro-rx"></block>。之后，您只需在卷上启用数据分层（在某些情况下， <block ref="7f499208f2ff911432bf2cd70bde52dd" category="inline-xref-macro-rx"></block>）。</block>
   <block id="110bf8d701c3104f8527af78ccf4f6f3" category="paragraph">只要BlueXP具有所需权限、您就无需在性能层和容量层之间设置连接。如果Connector的自定义角色具有以下权限、则BlueXP将为您启用vNet服务端点：</block>
   <block id="544cf6a9b3209b8642549a9f636f850d" category="paragraph">只要不存在连接或权限问题、BlueXP就会在创建系统时为冷数据创建一个对象存储。如果在创建系统之前未实施上述要求，则需要手动启用分层，从而创建对象存储。</block>
-  <block id="7ba788606ad56bde2415340a76fe7dc0" category="inline-image-macro">如果在BlueXP尝试启用数据分层时遇到问题描述 、则可从工作环境菜单中查看启用容量分层选项的屏幕截图。</block>
-  <block id="c40ae3d4404caf2d331095e8007c76d0" category="paragraph"><block ref="c40ae3d4404caf2d331095e8007c76d0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="34a53c9826b73666c9ff291fdbb73cc4" category="paragraph">只有在BlueXP创建系统时无法启用数据分层时、您才会看到此选项。</block>
   <block id="0ed8d1c9d40b89d8bb30156f2ff80b44" category="list-text">单击*启用*、以便BlueXP可以创建此Cloud Volumes ONTAP 系统将用于分层数据的对象存储。</block>
   <block id="f504f88c3ef9fff4d0a0f3ea83ce4b0a" category="paragraph">如果要在新卷上启用数据分层，则无需担心在聚合上启用数据分层。BlueXP会在已启用分层的现有聚合上创建卷、或者如果尚未存在已启用数据分层的聚合、则它会为卷创建一个新聚合。</block>
   <block id="6f7dbe99eb1dafd47fcc1667c1661873" category="list-text">在BlueXP中打开工作环境。</block>
   <block id="c42d7d1729e77b6aa2d88e357efbb241" category="inline-image-macro">一个屏幕截图、用于显示有关BlueXP中包含分层状态的聚合的信息。</block>
-  <block id="ec23400a3a57e1931ad6d6c4bcadc5f4" category="paragraph"><block ref="ec23400a3a57e1931ad6d6c4bcadc5f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f662e89926d99c2d0078857e1e0594" category="paragraph">如果启用了数据分层的聚合尚不存在、则BlueXP将为卷创建一个新聚合。</block>
   <block id="15772334d40a5e0ec433c7a427e96777" category="paragraph">例如，您可以选择小于 10% 的可用空间，以确保您正在利用所购买的容量。然后、当需要额外容量时、BlueXP可以为您购买额外的磁盘(直到达到聚合的磁盘限制为止)。</block>
   <block id="2b891711a30d74a376864ff361ead016" category="list-text">在BlueXP控制台的右上角、单击*设置*图标、然后选择*连接器设置*。</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">一个屏幕截图、显示了BlueXP控制台右上角的设置图标。</block>
-  <block id="cb9e3791dcb67c8a699c104be6a1c49c" category="paragraph"><block ref="cb9e3791dcb67c8a699c104be6a1c49c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b51126e31989dbd35d983caab04ff08" category="paragraph">删除Cloud Volumes ONTAP 工作环境会将其从BlueXP中删除。它不会删除 Cloud Volumes ONTAP 系统。您可以在以后重新发现工作环境。</block>
   <block id="c3d8bc113694ac5e1b1bc6903d5f4777" category="paragraph">通过从BlueXP中删除工作环境、您可以执行以下操作：</block>
   <block id="017482efc6f3c5791be39e26da43f9c3" category="list-text">从另一个BlueXP系统重新发现它</block>
-  <block id="b55eb28344378e34c1c9c9f4b1a693ae" category="list-text">在BlueXP控制台的右上角、单击设置图标、然后选择*工具*。</block>
   <block id="fefa70b1c4e33b9a37d96658b2133389" category="paragraph">BlueXP会删除工作环境。用户可以随时从 " 画布 " 页面重新发现此工作环境。</block>
   <block id="0e90b6bbef3911eccc0d09b6e4087aff" category="summary">从BlueXP升级Cloud Volumes ONTAP 以访问最新的新功能和增强功能。在升级软件之前，您应准备好 Cloud Volumes ONTAP 系统。</block>
   <block id="61560599f4747b091e1abc457824f639" category="section-title">仅从BlueXP升级</block>
   <block id="c6925d752394e325c0b435137fbe997c" category="paragraph">必须从BlueXP完成Cloud Volumes ONTAP 升级。您不应使用 System Manager 或命令行界面升级 Cloud Volumes ONTAP 。这样做可能会影响系统稳定性。</block>
-  <block id="bed8a3185a4b2ddb1020be5c9da45358" category="paragraph">BlueXP提供了两种升级Cloud Volumes ONTAP 的方法：</block>
   <block id="9291a80d43d5b5496ef3da30291aed0c" category="list-text">将升级映像放置在HTTPS位置、然后为BlueXP提供URL</block>
   <block id="a0c4aa457c64e636209cb497491957e3" category="list-text">如果按照工作环境中显示的升级通知进行升级、则BlueXP将提示您升级到遵循这些受支持升级路径的版本。</block>
   <block id="331278b9811c6edc293cd27e4bb970a2" category="admonition">未注册支持的系统仍会收到新版本可用时在BlueXP中显示的软件更新通知。但是，您需要先注册系统，然后才能升级软件。</block>
@@ -3980,7 +3850,6 @@
   <block id="32d300cab53087f3ab3e15c01593d633" category="section-title">从BlueXP通知升级</block>
   <block id="5f75615300b4a5dfb537f7f68f86cad0" category="paragraph">当有新版本的Cloud Volumes ONTAP 可用时、BlueXP会在Cloud Volumes ONTAP 工作环境中显示通知：</block>
   <block id="31aacf5ad0f1f7f769f403486ca64107" category="paragraph">Cloud Volumes ONTAP 系统上不得执行诸如卷或聚合创建等BlueXP操作。</block>
-  <block id="9be46f2eecdd8ba27897fc5c3d9e21f3" category="paragraph">BlueXP开始软件升级。软件更新完成后，您可以在工作环境中执行操作。</block>
   <block id="daf09a56a5eef482eb39aae95ad9c10d" category="paragraph">您可以将Cloud Volumes ONTAP 软件映像放置在连接器或HTTP服务器上、然后从BlueXP启动软件升级。如果BlueXP无法访问S3存储分段来升级软件、您可以使用此选项。</block>
   <block id="ec96841ef9fc6828c45908c34b7efd84" category="list-text">如果使用HTTPS托管ONTAP 映像、则升级可能会因缺少证书而导致SSL身份验证问题失败。临时解决策 将生成并安装一个CA签名证书、用于在ONTAP 和BlueXP之间进行身份验证。</block>
   <block id="8187f77b708bd73b1d1ea983eefc6853" category="inline-link">NetApp知识库：如何将BlueXP配置为HTTPS服务器以托管升级映像</block>
@@ -4048,7 +3917,6 @@
   <block id="2c5d07ca61673fa8fb94be1c97bf91fe" category="paragraph">请注意、BlueXP会在Google Cloud中分配所需的IP地址、并创建具有用于SMB/NFS访问的数据LIF和用于出站SMB通信的iSCSI LIF的Storage VM。</block>
   <block id="4a5ed1e1f5c4ada56ab2471bc9700165" category="paragraph">此外、BlueXP API还支持重命名和删除HA对上的Storage VM。</block>
   <block id="f82d1b6b82e3a4e80812051b0f0d956c" category="list-text">如果您尚未将NetApp 支持站点 帐户添加到BlueXP、请转到*帐户设置*并立即添加。</block>
-  <block id="b9ea5f54d5e7487561836a098ec50c0c" category="list-text">从左侧导航菜单中、选择*存储&gt;画布*</block>
   <block id="3c133f4bc8bc3ebf4d10cf6cfdf4d97f" category="paragraph">BlueXP将系统注册到NetApp。</block>
   <block id="8c97ed5bc0c7a571b8993af8c6396051" category="paragraph">BlueXP将许可证添加到数字市场。在将许可证与新的 Cloud Volumes ONTAP 系统关联之前，此许可证将被标识为未分配。发生这种情况后，许可证将移至数字电子邮件中的 * BYOL* 选项卡。</block>
   <block id="e366d9a0e89a88ec47c46ef7e75a1620" category="paragraph">BlueXP会将未分配的许可证转换为您选择的服务。您可以在 * 数据服务许可证 * 选项卡中查看新许可证。</block>
@@ -4317,7 +4185,6 @@
   <block id="c69ac98b36cf0e598f3cae6b175a8eec" category="list-text">存储帐户用于基于受管磁盘的部署、以处理诊断日志并分层到Blob存储。</block>
   <block id="dba89da91170934734e847dcfe4ad5d0" category="section-title">Cloud Volumes ONTAP 9.12.1</block>
   <block id="2dd09f45720a8f94b29c4d048b61ff4e" category="section-title">2022年11月15日</block>
-  <block id="cca494b1b1d22bc8b5c8a8ecd5367bf8" category="section-title">GCP中的ONTAP S3许可证</block>
   <block id="44f72ae2127b89a470e082ae9f772acf" category="paragraph">现在、在Google云平台中运行9.12.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统上均包含ONTAP S3许可证。</block>
   <block id="50ffa0cb1ebb11ac1969ed98e7c94bf5" category="admonition">NIC3仅适用于使用页面Blob存储的HA部署。</block>
   <block id="baa56a5cbeb0b5811b307c481a824728" category="paragraph">默认情况下、BlueXP会为Cloud Volumes ONTAP 和Azure页面Blob存储帐户之间的连接启用Azure专用链接。</block>
@@ -4652,7 +4519,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">包含三个点的图标、显示在表的最后一列中</block>
   <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">单击以管理现有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 并选择一个可用选项：</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*查看案例*：查看有关特定案例的完整详细信息。</block>
-  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*更新案例注释*：提供有关您的问题的更多详细信息。</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*关闭案例*：提供关闭案例的详细信息、然后单击*关闭案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">屏幕截图、显示在表的最后一列中选择菜单后可以执行的操作。</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
@@ -4801,4 +4667,200 @@
   <block id="7f09653ec569404a6d78270f050d7c18" category="list-text">*高可用性对* BlueXP会将12-13个IP地址分配给一个高可用性对：</block>
   <block id="99388f0fdeac933c80f2d52c95fe6eac" category="list-text">1个集群管理LIF (e0a)</block>
   <block id="07ddec46aac81bd14d6fc7f0d22ee78d" category="list-text">1个或2个NAS LIF (e0a)</block>
+  <block id="e8c25ea78d67a6ef891f303353422dbd" category="paragraph">+<block ref="45bd8c026c5ef22179001445b3bd636a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2c75d71bcadfabfa7cf8757cbfdd3d85" category="inline-image-macro">设置图标下的连接器设置选项的屏幕截图。</block>
+  <block id="473c33023a339a6b370b4ddd3b34813e" category="paragraph"><block ref="473c33023a339a6b370b4ddd3b34813e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2e11b0ec6ed47b1e8f7051aaab70da38" category="list-text">聚合容量阈值—可用空间比率</block>
+  <block id="c707daf76e9202bb2278e4872c7db485" category="list-text">聚合容量阈值—数据分层的可用空间比率</block>
+  <block id="93538ad94a332061adf2239e8ac21a4d" category="list-text">在"画布"页面上、选择工作环境。</block>
+  <block id="ca2685261e68781c7e281c106027c9d6" category="list-text">在概述选项卡上、单击功能面板、然后单击*路由表*旁边的铅笔图标。</block>
+  <block id="4b6844f3c505a6f4a3db39ea33fd3cf0" category="inline-image-macro">查看工作环境时、可通过概述页面右上角的功能面板查看路由表设置的屏幕截图。</block>
+  <block id="2057f11c69807ba4cbd27e1e921f7823" category="paragraph"><block ref="2057f11c69807ba4cbd27e1e921f7823" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8bcb080f300b6dfd8ee09d89bb85d060" category="paragraph"><block ref="8bcb080f300b6dfd8ee09d89bb85d060" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="021ed7718b4d1f8ff42ac2d9a653d143" category="list-text">在工作环境中、单击*聚合*选项卡。</block>
+  <block id="a83fde1416b692585ab72d55276e43ee" category="list-text">在聚合选项卡上、导航到所需标题、然后单击*。 (椭圆图标)*。</block>
+  <block id="4940ff7a33940e4ec33b7d78f146648a" category="inline-image-macro">聚合菜单选项的屏幕截图。</block>
+  <block id="65c989c474db774160c441e94f03ddfc" category="paragraph"><block ref="65c989c474db774160c441e94f03ddfc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="116812c107d40280e65a3a0f4f5c3440" category="cell">在...下 (椭圆图标)菜单中、单击*查看聚合详细信息*。</block>
+  <block id="2e59a4ccfe2d0087aa6ece23a0922ea4" category="cell">在...下 (椭圆图标)菜单中、单击*添加卷*。</block>
+  <block id="64209bde9f2d422a086f99622664bb4b" category="list-text">在...下 (椭圆图标)菜单中、单击*添加磁盘*。</block>
+  <block id="54afa16678d9fa49dd4f37f5d8d62d51" category="list-text">在...下 (椭圆图标)菜单中、单击*增加容量*。</block>
+  <block id="cacd62863a1aec474ea14c7ba39b9f28" category="list-text">输入要添加的额外容量、然后单击*增加*。</block>
+  <block id="f20c2435bfa2bf017b0a33455e4d252c" category="list-text">选择不包含任何卷的聚合图块单击*。 (椭圆图标)&gt;删除*。</block>
+  <block id="44f505566cfb44ab274d6dd37da6a48b" category="list-text">在"画布"页面上、双击要配置为写入速度的系统的名称。</block>
+  <block id="b9c48f0b7a355bd9b39b3ae2c666ec43" category="list-text">在概述选项卡上、单击功能面板、然后单击*写入速度*旁边的铅笔图标。</block>
+  <block id="bc3c9695426ff48d40dce0286c7e05f4" category="inline-image-macro">查看工作环境时、可通过概述页面右上角的功能面板查看写入速度设置的屏幕截图。</block>
+  <block id="98dbfe06324c35bb25c949f4b21d581a" category="paragraph"><block ref="98dbfe06324c35bb25c949f4b21d581a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e1d6d29fa6bbc00ab6896ec1e677037" category="list-text">单击*保存*、查看确认消息、然后单击*批准*。</block>
+  <block id="38124763ec69515302fcd6a655b0cb92" category="list-text">在"画布"页面上、双击Cloud Volumes ONTAP 工作环境的名称。</block>
+  <block id="67f0f7bdc0b6b3c961c645e5a644b531" category="list-text">在BlueXP控制台右上角、单击椭圆图标、然后选择*设置密码*。</block>
+  <block id="a18ec44ef07922a650e590de9dd0a36e" category="inline-image-macro">屏幕截图显示了工作环境中包含设置密码操作的菜单。</block>
+  <block id="6daca7a21673390f9b4946d99b575dbc" category="paragraph"><block ref="6daca7a21673390f9b4946d99b575dbc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="906b0fc78378feea1883fe721c72e648" category="list-text">在概述选项卡上、单击功能面板、然后单击*计算机类型*旁边的铅笔图标。</block>
+  <block id="6466b41798117de76beee910171ffc8f" category="inline-image-macro">查看工作环境时、可通过概述页面右上角的功能面板查看计算机类型设置的屏幕截图。</block>
+  <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">如果您使用的是基于节点的PAYGO许可证、则可以选择通过单击*许可证类型*旁边的铅笔图标来选择其他许可证和计算机类型。</block>
+  <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">选择计算机类型、选中复选框以确认您了解更改的含义、然后单击*更改*。</block>
+  <block id="1bb49759ca91107ea85449bc0249ce13" category="list-text">选择*基于容量的许可证*后、查看软件包摘要、其中显示了您已用容量、预提交的总容量和总PAYGO容量。</block>
+  <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Total precommitted capacity_是您从NetApp购买的总许可容量(BYOL或Marketplace合同)。</block>
+  <block id="6805f1cb53971ab8cf6263bd093c5d20" category="paragraph">下面是数字电子钱包中的Cloud Volumes ONTAP 软件包摘要示例：</block>
+  <block id="e9132fa20985cf4b3d5004a6a371ecab" category="inline-image-macro">显示Cloud Volumes ONTAP 软件包摘要的屏幕截图、其中包括"数字电子钱包"中的总已用容量、总预先提交容量(BYOL和Marketplace合同)以及总PAYGO或已配置容量。</block>
+  <block id="68519fd40c76d6220d905ceda4e0956b" category="paragraph"><block ref="68519fd40c76d6220d905ceda4e0956b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="af61e314a8c2484dfcfef0afc2e5b8b9" category="list-text">_consumed capacity_显示该软件包的卷容量。有关特定软件包的详细信息、请将鼠标悬停在工具提示上。</block>
+  <block id="cfc852810f89c13febd473e12117d828" category="list-text">_Precommitted Capacity_是您从NetApp购买的许可容量(BYOL或Marketplace合同)。</block>
+  <block id="b35741916171a2b4d1210c1ccf6e3920" category="list-text">_BYOL_显示您从NetApp为此软件包类型购买的许可容量。</block>
+  <block id="59bdc4172870791ff34a990174b34a66" category="list-text">_Marketplace Contracts_显示您随此软件包类型的Marketplace合同购买的许可容量。</block>
+  <block id="e733f8e4574a8639831d6df796e6a0eb" category="list-text">_PAYGO_按许可证使用模式显示已用容量。</block>
+  <block id="b0980f4f35d961e95a685e0af8bda7e4" category="inline-image-macro">屏幕截图显示了基础知识和专业软件包的已用容量、预先提交的容量以及PAYGO或已配置的容量。</block>
+  <block id="71b669d4d19df676d975ef4911ded7af" category="paragraph"><block ref="71b669d4d19df676d975ef4911ded7af" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a98606dee1787dfd2471d2ef8adeb680" category="list-text">在"画布"页面上、双击要注册的系统的名称。</block>
+  <block id="24901c53838efd4b9981ed8ffd510413" category="list-text">在概述选项卡上、单击功能面板、然后单击*支持注册*旁边的铅笔图标。</block>
+  <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">屏幕截图：在Cloud Volumes ONTAP 系统的功能面板下显示支持注册选项。</block>
+  <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fc2c97abb2fb8e3c019de4850d91d264" category="list-text">在"画布"页面上、选择一个Cloud Volumes ONTAP 工作环境、</block>
+  <block id="6ba9fc3c166e3d53b824216485ae89ee" category="list-text">单击菜单图标、然后单击*查看成本报告*。</block>
+  <block id="e657448bf5ab3960e8e1fc068d83deee" category="inline-image-macro">屏幕截图：显示查看成本报告菜单选项。</block>
+  <block id="4881300462ed76e4f5ebaf3070d5e7d9" category="paragraph"><block ref="4881300462ed76e4f5ebaf3070d5e7d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6200e275553fcb2d81141061804129aa" category="list-text">在"画布"页面上、双击您配置为勒索软件保护的系统的名称。</block>
+  <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">在概述选项卡上、单击功能面板、然后单击*勒索软件保护*旁边的铅笔图标。</block>
+  <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">在查看工作环境时、屏幕截图显示了"概述"页面右上角的"功能"面板下的勒索软件保护设置。</block>
+  <block id="2a39771bd60186d9d0eea3e49bb0d221" category="paragraph"><block ref="2a39771bd60186d9d0eea3e49bb0d221" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d0b1fe5e5e43d6e24cc20f730b8d1742" category="paragraph">您可以通过BlueXP中管理卷面板下的_Mount Command_选项轻松识别正确的IP地址。</block>
+  <block id="b717cb7368a7773e8663a0b7444325ad" category="paragraph"><block ref="b717cb7368a7773e8663a0b7444325ad" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36466e75ef3251345a1fc3b957275568" category="list-text">在聚合选项卡上、单击*添加聚合*、然后指定聚合的详细信息。</block>
+  <block id="3c27c0be3b51a96fbeaf21988a5d0da7" category="paragraph">转到"高级分配"页面时、您可以确定是否已在聚合上启用弹性卷功能。在以下示例中、aggr1已启用弹性卷。</block>
+  <block id="da881591358a049c4652b06b1054ccb1" category="inline-image-macro">屏幕截图显示了两个聚合、其中一个聚合的字段显示文本Elastic Volumes Enabled。</block>
+  <block id="6d62cbba5d5d4db651e497c57ee98339" category="paragraph"><block ref="6d62cbba5d5d4db651e497c57ee98339" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f5b7e3773583b9ca6b634b5264139c7" category="list-text">在"画布"页面上、双击要删除的工作环境。</block>
+  <block id="a9d8201fa61b52d04aa8d5efa98407ef" category="list-text">在BlueXP控制台右上角、单击椭圆图标、然后选择*从工作空间中删除*。</block>
+  <block id="41aeb32afbd7adcd7344a525b524aa2e" category="inline-image-macro">一个屏幕截图、显示了BlueXP控制台右上角的"从工作空间中删除"选项。</block>
+  <block id="68dff8388aadd10577c0c664fc4fa756" category="paragraph"><block ref="68dff8388aadd10577c0c664fc4fa756" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccc69ca3b9f50bd572baa407834f41ed" category="list-text">在"Review from Workspace"窗口中、单击*删除*。</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
+  <block id="2dfd965acb2426b281b13a70df99c06b" category="paragraph">连接器3.9.28版引入了以下更改。</block>
+  <block id="7ce52c94db42646098e71a61d9836b73" category="section-title">现在、在Google Cloud中支持都灵地区</block>
+  <block id="84030861d628cd7238a62da972a260f4" category="paragraph">现在、适用于Cloud Volumes ONTAP 的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector均支持都灵地区。</block>
+  <block id="671e2a59b2bfa852def9660bf14badde" category="section-title">数字电子钱包增强功能</block>
+  <block id="d3ab2a9ddd985032aa120324e6da3710" category="paragraph">现在、"数字电子钱包"将显示您随Marketplace Private优惠购买的许可容量。</block>
+  <block id="6ee7d527518e93562cc9e691d20fb1d5" category="section-title">支持在创建卷期间添加注释</block>
+  <block id="ac14eb6382fa5b619966ba72622ecd3f" category="paragraph">在此版本中、您可以在使用API创建Cloud Volumes ONTAP FlexGroup 卷或FlexVol 卷时进行注释。</block>
+  <block id="231ea98554191e640c216736796158d5" category="section-title">为Cloud Volumes ONTAP 概述、卷和聚合页面重新设计了BlueXP用户界面</block>
+  <block id="1cc55fcb982bea0e8f241a1271bda985" category="paragraph">现在、BlueXP对Cloud Volumes ONTAP 概述、卷和聚合页面的用户界面进行了重新设计。基于区块的设计可在每个区块中提供更全面的信息、从而提供更好的用户体验。</block>
+  <block id="9000895c1e7c46e6e8fc9eb750dfb403" category="inline-image-macro">此屏幕截图显示了Cloud Volumes ONTAP 概述页面上经过重新设计的BlueXP用户界面。各种图块显示了存储效率、版本、容量分布、有关Cloud Volumes ONTAP 部署的信息、卷、聚合、复制和备份。</block>
+  <block id="23fbfdbb598644432ab089fa6e533405" category="paragraph"><block ref="23fbfdbb598644432ab089fa6e533405" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6fff4762fc0aeb74dd0a918683c157ae" category="section-title">可通过Cloud Volumes ONTAP 查看FlexGroup 卷</block>
+  <block id="8d40e6e8379382ee39fba2c4a1cb5629" category="paragraph">现在、可以通过BlueXP中重新设计的卷磁贴查看直接通过CLI或System Manager创建的FlexGroup 卷。与为FlexVol 卷提供的信息相同、BlueXP可通过专用的"卷"图块提供有关已创建FlexGroup 卷的详细信息。</block>
+  <block id="905d8520d584560b3995118b2a01f6c2" category="admonition">目前、您只能在BlueXP下查看现有FlexGroup 卷。在BlueXP中创建FlexGroup 卷的功能不可用、但计划在未来版本中使用。</block>
+  <block id="91f0dcc3b5f3e7c2ced12a923ca3b92e" category="inline-image-macro">显示FlexGroup 卷图标将文本悬停在卷磁贴下的屏幕截图。</block>
+  <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f223d40f9c90f08d9cd6ef8cba648c3" category="inline-link-macro">了解有关查看已创建的FlexGroup 卷的更多信息。</block>
+  <block id="acef74218ad5e199582b5c76062e5559" category="paragraph"><block ref="acef74218ad5e199582b5c76062e5559" category="inline-link-macro-rx"></block></block>
+  <block id="d92a428713f7303c87adb54fb04cf41b" category="section-title">Google Cloud中的ONTAP S3许可证</block>
+  <block id="df8131ce273465a002c95cb0c5cf8a39" category="list-text">在概述选项卡上、单击功能面板、然后单击*虚拟机类型*旁边的铅笔图标。</block>
+  <block id="838630480d269a60c2c6bb929717f964" category="inline-image-macro">查看工作环境时、可通过概述页面右上角的功能面板查看虚拟机类型设置的屏幕截图。</block>
+  <block id="4782218bc1564550fa76897e159be9bf" category="paragraph"><block ref="4782218bc1564550fa76897e159be9bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e257ba6100e7f02e04c1d8b474024a3c" category="list-text">如果您使用的是基于节点的PAYGO许可证、则可以选择通过单击*许可证类型*旁边的铅笔图标来选择其他许可证和VM类型。</block>
+  <block id="0b52c0f8f311ea5465845d81cc4401f1" category="list-text">选择VM类型、选中复选框以确认您了解更改的含义、然后单击*更改*。</block>
+  <block id="c529c6170bed402afd9deff05a6b3d0d" category="paragraph">您可以通过BlueXP中"管理卷"面板下的*挂载命令*选项在BlueXP中找到正确的IP地址。</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*附件(可选)*：一次最多上传五个附件。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每个文件的附件数限制为25 MB。支持以下文件扩展名：txt、log、pdf、jp6/jpeu、rtf、 doc/docx、xls/xlsx和csv。</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*更新案例注释*：提供有关您的问题的更多详细信息、或者选择*上传文件*最多附加五个文件。</block>
+  <block id="a3e3a06edf2b13412206a49650d28c73" category="list-text">在"画布"页面上、选择Cloud Volumes ONTAP 实例的名称。</block>
+  <block id="c8ae9612aebf2aa8477908ecc9dc4ad2" category="list-text">单击聚合选项卡。</block>
+  <block id="93bad64eb0d84f1d45ce1ff481e26c51" category="list-text">导航到所需的区块、并验证是否已在聚合上启用或禁用分层。</block>
+  <block id="cc26bc8be32a1d905f6d22627e65a0b9" category="paragraph"><block ref="cc26bc8be32a1d905f6d22627e65a0b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b433e385414da518f50fc6f6b243cce6" category="list-text">在工作环境下的卷选项卡中、创建新卷或更改现有卷的层：</block>
+  <block id="4fea09deb083b39f9519227c4dc045e5" category="cell">选择所需的卷磁贴、单击*管理卷*以访问管理卷右侧面板、然后单击右侧面板下的*高级操作*和*更改分层策略*。</block>
+  <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">屏幕截图、显示可用于更改卷分层策略的选项。</block>
+  <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fd6a9430e3d3dc98292b8abddc9d77ff" category="paragraph">如果您使用 _auto_tiering 策略在 Cloud Volumes ONTAP 卷上启用了数据分层，则可以根据业务需求调整默认冷却期。仅使用API和CLI支持此操作。</block>
+  <block id="0f6046d8813989f95f3ce9353dba26a5" category="list-text">在BlueXP控制台右上角、单击椭圆图标、然后选择*删除*。</block>
+  <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">在删除工作环境窗口下、键入工作环境的名称、然后单击*删除*。</block>
+  <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">在工作环境中、单击*卷*选项卡。</block>
+  <block id="31fe088c17d984a78f5027d2b8428e18" category="list-text">在卷选项卡上、导航到所需的卷标题、然后单击*管理卷*以访问管理卷右侧面板。</block>
+  <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">单击*目标IQN*。</block>
+  <block id="a56a5ae6f53f5f4ccfd018cd42004ea1" category="list-text">在"画布"页面上、双击所需的工作环境。</block>
+  <block id="1db430d5f476ccb7c5abbdfc3d4402d2" category="list-text">在概述选项卡上、单击功能面板、然后单击*计划内停机*旁边的铅笔图标。</block>
+  <block id="16fe8db807301272754ce201908a4d01" category="paragraph"><block ref="16fe8db807301272754ce201908a4d01" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0e1d67ee86981cf82fb4f5195e170da1" category="paragraph">下图显示了一个计划、指示BlueXP在每个星期六的晚上20：00关闭系统(晚上8：00)、持续12小时。BlueXP会在每周一中午12：00重新启动系统</block>
+  <block id="3d33a0e91197625fe5c19262b8588a5e" category="inline-image-macro">屏幕截图：显示计划停机屏幕。</block>
+  <block id="b7964eed3054006e2dc32e71addc9330" category="paragraph"><block ref="b7964eed3054006e2dc32e71addc9330" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="833d40bbf64439ee457b9a9720b3cc4c" category="paragraph">BlueXP将保存此计划。"功能"面板下的相应计划停机行项显示为"开"。</block>
+  <block id="ee55aa8843d0fe4882d1ebc2115835c8" category="paragraph"><block ref="ee55aa8843d0fe4882d1ebc2115835c8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e6441a36027812e99b99675afebb1ad3" category="inline-image-macro">概述选项卡下的添加卷按钮的屏幕截图。</block>
+  <block id="d3c83108d2d70bd2eb22fbd1bb485f2f" category="paragraph">在概述选项卡上、导航到卷磁贴、然后单击*添加卷*。<block ref="d66b0ca71189f0ddd53cd4b3e65bbf57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d67d87305db3f29260c81473dd44e3f1" category="inline-image-macro">聚合选项卡下的添加卷按钮的屏幕截图。</block>
+  <block id="13f1658d880a29010b36402880b7742d" category="paragraph">在聚合选项卡上、导航到所需的聚合图块。单击菜单图标、然后单击*添加卷*。<block ref="90511a2a61b219fe659f6c6204d0e9f4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5359c0cc8b61614ec08d953783fef7e9" category="list-text">*卷、详细信息、保护和标记*：输入有关卷的基本详细信息并选择Snapshot策略。</block>
+  <block id="5a33fdd3ad048388d676b3cfe62a76b4" category="cell">卷名称</block>
+  <block id="da791c0c870c83e87ff0b50e41446b5f" category="cell">可以为新卷输入的可标识名称。</block>
+  <block id="8bc5e99f50f67c6de120548d75821d83" category="cell">Storage VM (SVM)</block>
+  <block id="360a6a454911fe3432462fbd11f3588c" category="cell">Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其视为 SVM 或 SVM 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但某些配置支持额外的 Storage VM 。您可以为新卷指定Storage VM。</block>
+  <block id="83153603fdc3097c323cd6a9c354a74c" category="list-text">导航到卷选项卡、然后单击*添加卷*&gt;*从模板新建卷*。</block>
+  <block id="d5b72c940ba2727afcbba5dd037893f5" category="paragraph"><block ref="d5b72c940ba2727afcbba5dd037893f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac2c13cd2f76af0753933c8630446e5f" category="paragraph">此时将显示_Editor_页面。</block>
+  <block id="18a9b2315ac5b98381d542571ba28299" category="list-text">在_Action_面板上方、输入模板的名称。</block>
+  <block id="74f7c9266baa87f8e4aceef158811143" category="list-text">在_context_下、工作环境将填入您启动的工作环境的名称。选择要创建卷的* Storage VM*。</block>
+  <block id="02550edcd072d55bf0b10ab3bdd4bc07" category="list-text">为模板中未硬编码的所有参数添加值。请参见 <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> 有关完成Cloud Volumes ONTAP 卷部署所需的所有参数的详细信息。</block>
+  <block id="746037c3b6a0eec6bb1e41959d51e07e" category="list-text">单击*应用*将配置的参数保存到选定操作。</block>
+  <block id="ceaf2fbd590803b94d4b9355d3432936" category="list-text">如果不需要定义其他操作(例如配置Cloud Backup)、请单击*保存模板*。</block>
+  <block id="be2645489c0ae0149fc30f6dc8d80bbb" category="paragraph">例如、如果"启用卷上的云备份"操作要求您选择备份策略、您现在可以执行此操作。</block>
+  <block id="f0131c80c45b00e70cb9a1d8c9e3448a" category="list-text">完成模板操作的配置后、单击*保存模板*。</block>
+  <block id="bc321d6d3a5b549e1c0961440ef815f4" category="list-text">在聚合选项卡上、单击*添加聚合*。</block>
+  <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">在_Add aggregate_屏幕中、创建聚合。</block>
+  <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">显示添加聚合进度的屏幕截图。</block>
+  <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f0652f3e88178c774443201328e4d2a" category="paragraph">BlueXP提供了三种Cloud Volumes ONTAP 升级方式：</block>
+  <block id="61c67604de243e1d1f09464a53018e48" category="list-text">在聚合标题下、单击椭圆按钮、然后选择*查看聚合详细信息*。</block>
+  <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c0db33b74d957aee90885031cc634b6" category="paragraph">如果有新版本可用、"概述"选项卡将显示一条通知：</block>
+  <block id="9646f8f8111c91fa6c731c727c894c5f" category="inline-image-macro">屏幕截图显示了"Upgrade Now！" 链接。</block>
+  <block id="96189d65a45e7fa44a02098d1c2994b3" category="paragraph"><block ref="96189d65a45e7fa44a02098d1c2994b3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c8a40603d5d9f8240beba1de505700ab" category="list-text">如果有新版本、请单击*立即升级！*</block>
+  <block id="e4e172ed018cf6c10be6941fd7282e6f" category="list-text">在Upgrade Cloud Volumes ONTAP 页面中、阅读EULA、然后选择*我阅读并批准EULA *。</block>
+  <block id="f6e8db7e26c18ff77395c70107114b81" category="list-text">单击 * 升级 * 。</block>
+  <block id="aac15e5127b7a8b7e9fa2c9cd925e9b5" category="paragraph">BlueXP开始软件升级。软件更新完成后、您可以对工作环境执行操作。</block>
+  <block id="2d06184bb48576ef2fb92fc134897025" category="admonition">目前、您只能通过BlueXP用户界面升级到最新可用的ONTAP 版本。未来版本将提供通过BlueXP用户界面升级到特定ONTAP 版本的功能。</block>
+  <block id="fa7b604cc90feece6d71e8400213710f" category="list-text">通过添加以下参数和值来编辑app.conf：</block>
+  <block id="4356eb78a767f5eff5a7176feb088ce4" category="inline-image-macro">卷选项卡下的管理卷按钮的屏幕截图。</block>
+  <block id="3113f5bbc88ead26c7d366fdec38f27b" category="paragraph"><block ref="3113f5bbc88ead26c7d366fdec38f27b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8f56224592abe10774e5575500874b11" category="cell">在管理卷面板的卷操作下、单击*查看卷详细信息*。</block>
+  <block id="d4c98b540182b809e992d8b4a580423e" category="list-text">在管理卷面板的卷操作下、单击*挂载命令*。</block>
+  <block id="98c56e9d0291f443f1ed942549039cc3" category="list-text">在管理卷面板的卷操作下、单击*克隆卷*。</block>
+  <block id="c36ae8709c4f5551dcd33c1fa09b1144" category="cell">编辑卷标记(仅限读写卷)</block>
+  <block id="0c76e6ded4e12f0dc0b2564def628aae" category="list-text">在管理卷面板的卷操作下、单击*编辑卷标记*以修改分配给选定卷的卷标记。</block>
+  <block id="186ac335ead3bdabcd70b18a0e6f40ed" category="list-text">在提供的字段下输入卷标记密钥和值。</block>
+  <block id="cf92c264f59ad57e63ae663106047d25" category="list-text">要包括其他标记、请单击*添加新标记*。</block>
+  <block id="29f680a1731a2250d73a33aede73a2eb" category="list-text">在管理卷面板的卷操作下、单击*编辑卷设置*</block>
+  <block id="ac11ccea860c1468f49807407e073557" category="list-text">修改卷的Snapshot策略、NFS协议版本、NFS访问控制列表(导出策略)或共享权限、然后单击*应用*。</block>
+  <block id="6271604d64ad8f6bcdad901be64df292" category="list-text">在管理卷面板的卷操作下、单击*删除卷*。</block>
+  <block id="a1546ebb48752d4bd4d09e75842decd8" category="list-text">在删除卷窗口下、输入要删除的卷的名称。</block>
+  <block id="0776ce27c5318514c6a838e721b809ce" category="list-text">在管理卷面板的保护操作下、单击*创建Snapshot副本*。</block>
+  <block id="23d745e528991c6cbab9c76044a9058b" category="list-text">在管理卷面板的保护操作下、单击*从Snapshot副本还原*。</block>
+  <block id="44ef2d8eff57541b631f3815660b4ecf" category="list-text">在管理卷面板的高级操作下、单击*更改磁盘类型*。</block>
+  <block id="7dfcaaac35e1f30c1f24428c9e96edbf" category="list-text">在管理卷面板的高级操作下、单击*更改分层策略*。</block>
+  <block id="29d65535c1a7fceff3430e7f581ccab6" category="list-text">在对话框中键入卷的名称。</block>
+  <block id="df558d420bf0d201f04fde33701f2df7" category="list-text">从工作环境的概述选项卡中、单击右侧面板下的功能选项卡。</block>
+  <block id="7a35a25a92271952afb7c4819b18295f" category="list-text">在CIFS设置字段下、单击*铅笔图标*以显示CIFS设置窗口。</block>
+  <block id="1931ad448159a5e88348fe5bcc0f9382" category="cell">选择Storage VM (SVM)</block>
+  <block id="350c5507976ce0078fb3fab36bf47f9b" category="cell">选择Cloud Volume ONTAP Storage Virtual Machine (SVM)可显示其已配置的CIFS信息。</block>
+  <block id="1aad0c623c80b59d018f9ae6c07ca0bf" category="list-text">单击*设置*。</block>
+  <block id="4145a13d965a05b20f37aec1922ef7dd" category="list-text">在工作环境中、单击*聚合选项卡*。</block>
+  <block id="7d3d9db5a4178e569561d635871c26ed" category="list-text">导航到所需的聚合图块、然后单击*。 (椭圆图标)&gt;查看聚合详细信息*。</block>
+  <block id="920937d0401827a767850d6598f69cf9" category="list-text">在聚合详细信息屏幕的概述选项卡下、查看每个卷的大小、然后选择一个或多个卷以从聚合中移出。</block>
+  <block id="e992ef205a43832966f09572f1eb3492" category="paragraph"><block ref="e992ef205a43832966f09572f1eb3492" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">在聚合区块下、查看可用容量(已配置大小减去已用聚合容量)。</block>
+  <block id="448b7e585e92285ee5349bcda1a7acd0" category="paragraph"><block ref="448b7e585e92285ee5349bcda1a7acd0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8fcffd0e2a621979482d32af8df3fa54" category="list-text">选择聚合、然后单击*。 (椭圆图标)&gt;添加磁盘*。</block>
+  <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">查看FlexGroup 卷</block>
+  <block id="bfc66c582a5f0744b4549abc59217c8b" category="paragraph">您可以直接通过BlueXP中的卷选项卡查看通过命令行界面或System Manager创建的FlexGroup 卷。与为FlexVol 卷提供的信息相同、BlueXP通过专用的卷图块提供有关已创建的跳蚤组卷的详细信息。在卷磁贴下、您可以通过图标的悬停文本来标识每个FlexGroup 卷组。此外、您还可以通过卷模式列在卷列表视图下标识FlexGroup 卷并对其进行排序。</block>
+  <block id="b732fd66a88d23ecd20ddd54d252bde0" category="paragraph"><block ref="b732fd66a88d23ecd20ddd54d252bde0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">在概述选项卡上、单击功能面板、然后单击*实例类型*旁边的铅笔图标。</block>
+  <block id="246617af3cc2b3a4751f4377e63c90d9" category="inline-image-macro">查看工作环境时、可通过概述页面右上角的功能面板查看实例类型设置的屏幕截图。</block>
+  <block id="22d199cf6285224598c87a4bf598fec7" category="paragraph"><block ref="22d199cf6285224598c87a4bf598fec7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e977a40ba12e4cbe82ec5ad1eeca10d3" category="list-text">如果您使用的是基于节点的PAYGO许可证、则可以选择通过单击*许可证类型*旁边的铅笔图标来选择其他许可证和实例类型。</block>
+  <block id="dcee8dbc1dce5317d8cfa6588f8f050e" category="list-text">选择一个实例类型、选中此复选框以确认您了解此更改的含义、然后单击*更改*。</block>
 </blocks>

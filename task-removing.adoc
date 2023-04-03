@@ -27,13 +27,12 @@ summary: 帐户管理员可以删除 Cloud Volumes ONTAP 工作环境以将其�
 
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*工具*。
+. 在"画布"页面上、双击要删除的工作环境。
+. 在BlueXP控制台右上角、单击椭圆图标、然后选择*从工作空间中删除*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+image:screenshot_settings_remove.png["一个屏幕截图、显示了BlueXP控制台右上角的\"从工作空间中删除\"选项。"]
 
-. 在工具页面中，单击 * 启动 * 。
-. 选择要删除的 Cloud Volumes ONTAP 工作环境。
-. 在 Review and Approve 页面上，单击 * 执行 * 。
+. 在"Review from Workspace"窗口中、单击*删除*。
 
 
 .结果

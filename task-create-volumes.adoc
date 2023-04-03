@@ -60,21 +60,18 @@ endif::aws[]
 ====
 .任何聚合
 --
-在卷选项卡中，单击 * 添加卷 * > * 新建卷 * 。
+在概述选项卡上、导航到卷磁贴、然后单击*添加卷*。image:screenshot_add_volume_button.png["概述选项卡下的添加卷按钮的屏幕截图。"]
 
 --
 .特定聚合
 --
-.. 单击菜单图标，然后单击 * 高级 > 高级分配 * 。
-.. 单击聚合的菜单。
-.. 单击 * 创建卷 * 。
-
+在聚合选项卡上、导航到所需的聚合图块。单击菜单图标、然后单击*添加卷*。image:screenshot_add_volume_button_agg.png["聚合选项卡下的添加卷按钮的屏幕截图。"]
 
 --
 ====
 . 按照向导中的步骤创建卷。
 +
-.. * 详细信息，保护和标记 * ：输入有关卷的基本详细信息并选择 Snapshot 策略。
+.. *卷、详细信息、保护和标记*：输入有关卷的基本详细信息并选择Snapshot策略。
 +
 此页面上的某些字段不言自明。以下列表介绍了可能需要指导的字段：
 
@@ -84,10 +81,16 @@ endif::aws[]
 | 字段 | Description 
 
 
+| 卷名称 | 可以为新卷输入的可标识名称。 
+
+
 | 卷大小 | 您可以输入的最大大小在很大程度上取决于您是否启用精简配置、这样您就可以创建一个大于当前可用物理存储的卷。 
 
 
 | Tags | 添加到卷的标记将与关联 https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["应用程序模板服务"^]可帮助您组织和简化资源管理。 
+
+
+| Storage VM (SVM) | Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其视为 SVM 或 SVM 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但某些配置支持额外的 Storage VM 。您可以为新卷指定Storage VM。 
 
 
 | 快照策略 | Snapshot 副本策略指定自动创建的 NetApp Snapshot 副本的频率和数量。NetApp Snapshot 副本是一个时间点文件系统映像、对性能没有影响、并且只需要极少的存储。您可以选择默认策略或无。您可以为瞬态数据选择无：例如， Microsoft SQL Server 的 tempdb 。 
@@ -231,27 +234,25 @@ NOTE: 使用模板时，您只能创建 NFS 或 CIFS 卷。
 .步骤
 . 从左侧导航菜单中、选择*存储>画布*。
 . 在 " 画布 " 页面上，单击要配置卷的 Cloud Volumes ONTAP 系统的名称。
-. 单击 image:screenshot_gallery_options.gif["由三个并排点组成的图标。"] > * 从模板添加卷 * 。
+. 导航到卷选项卡、然后单击*添加卷*>*从模板新建卷*。
 +
-image:screenshot_template_add_vol_cvo.png["显示如何从模板添加新卷的屏幕截图。"]
+image:screenshot_add_volume_template.png["显示如何从模板添加新卷的屏幕截图。"]
 
 . 在 _Select Template_ 页面中，选择要用于创建卷的模板，然后单击 * 下一步 * 。
 +
 image:screenshot_select_template_cvo.png["可用应用程序模板的屏幕截图。"]
 
 +
-此时将显示 _Define Parameters_页面 。
+此时将显示_Editor_页面。
 
 +
 image:screenshot_define_cvo_vol_from_template.png["显示创建卷所需填写的空白模板的屏幕截图。"]
 
-+
-
-NOTE: 如果要查看这些参数的值，可以单击 * 显示只读参数 * 复选框以显示模板锁定的所有字段。默认情况下，这些预定义字段将被隐藏，并且仅显示需要填写的字段。
-
-. 在 _context_ 区域中，工作环境将使用您启动的工作环境的名称进行填充。您需要选择要在其中创建卷的 * Storage VM* 。
-. 为模板中未硬编码的所有参数添加值。请参见 <<create a volume,创建卷>> 有关部署 Cloud Volumes ONTAP 卷所需完成的所有参数的详细信息。
-. 如果不需要定义任何其他操作（例如配置 Cloud Backup ），请单击 * 运行模板 * 。
+. 在_Action_面板上方、输入模板的名称。
+. 在_context_下、工作环境将填入您启动的工作环境的名称。选择要创建卷的* Storage VM*。
+. 为模板中未硬编码的所有参数添加值。请参见 <<create a volume,创建卷>> 有关完成Cloud Volumes ONTAP 卷部署所需的所有参数的详细信息。
+. 单击*应用*将配置的参数保存到选定操作。
+. 如果不需要定义其他操作(例如配置Cloud Backup)、请单击*保存模板*。
 +
 如果还有其他操作，请单击左窗格中的操作以显示需要完成的参数。
 
@@ -259,9 +260,9 @@ NOTE: 如果要查看这些参数的值，可以单击 * 显示只读参数 * �
 image:screenshot_template_select_next_action.png["显示如何选择需要完成的其他操作的屏幕截图。"]
 
 +
-例如，如果 " 启用云备份 " 操作要求您选择备份策略，则可以立即执行此操作。
+例如、如果"启用卷上的云备份"操作要求您选择备份策略、您现在可以执行此操作。
 
-. 单击 * 运行模板 * 。
+. 完成模板操作的配置后、单击*保存模板*。
 
 
 .结果
@@ -280,8 +281,11 @@ image:screenshot_template_creating_resource_cvo.png["显示通过模板创建新
 .步骤
 . 从左侧导航菜单中、选择*存储>画布*。
 . 在 " 画布 " 页面上，双击要管理聚合的 Cloud Volumes ONTAP 工作环境的名称。
-. 单击菜单图标，然后单击 * 高级 > 高级分配 * 。
-. 单击 * 添加聚合 * ，然后创建聚合。
+. 在聚合选项卡上、单击*添加聚合*。
+. 在_Add aggregate_屏幕中、创建聚合。
++
+image:screenshot_add_aggregate_cvo.png["显示添加聚合进度的屏幕截图。"]
+
 . 对于主节点，请在 HA 对中选择第二个节点。
 . 在BlueXP创建聚合后、选择该聚合、然后单击*创建卷*。
 . 输入新卷的详细信息，然后单击 * 创建 * 。

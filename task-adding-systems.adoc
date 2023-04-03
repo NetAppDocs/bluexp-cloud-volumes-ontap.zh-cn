@@ -29,7 +29,7 @@ summary: 您可以发现现有Cloud Volumes ONTAP 系统并将其添加到BlueXP
 
 ifdef::aws[]
 
-+image:screenshot_discover.gif["屏幕截图显示了用于发现现有 Cloud Volumes ONTAP 系统的链接。"]
++image:screenshot_discover_redesign.png["屏幕截图显示了用于发现现有 Cloud Volumes ONTAP 系统的链接。"]
 
 endif::aws[]
 

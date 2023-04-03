@@ -141,9 +141,9 @@ Cloud Volumes ONTAP HA 配置可同步复制节点之间的数据、从而消耗
 
 TIP: 如果在 HA 对中的节点之间移动卷、则应使用其他节点的 IP 地址重新装入卷。否则，您可能会遇到性能降低的问题。如果客户机支持 NFSv4 引用或 CIFS 文件夹重定向、则可以在 Cloud Volumes ONTAP 系统上启用这些功能以避免重新装入卷。有关详细信息，请参见 ONTAP 文档。
 
-您可以从BlueXP轻松识别正确的IP地址：
+您可以通过BlueXP中管理卷面板下的_Mount Command_选项轻松识别正确的IP地址。
 
-image:screenshot_mount.gif["屏幕抓图：显示选择卷时可用的挂载命令。"]
+image:screenshot_mount_option.png["屏幕抓图：显示选择卷时可用的挂载命令。"]
 
 
 

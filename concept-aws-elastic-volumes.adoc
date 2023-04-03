@@ -169,10 +169,10 @@ link:task-create-aggregates.html["了解如何创建聚合"]。
 
 * 确定已启用弹性卷的聚合
 +
-转到"高级分配"页面时、您可以确定是否已在聚合上启用弹性卷功能。在以下示例中、aggr2启用了弹性卷、而aggr1未启用。
+转到"高级分配"页面时、您可以确定是否已在聚合上启用弹性卷功能。在以下示例中、aggr1已启用弹性卷。
 
 +
-image:screenshot-elastic-volumes-enabled.png["显示两个聚合的屏幕截图、其中一个聚合的字段显示文本Elastic Volumes Enabled。"]
+image:screenshot_elastic_volume_enabled.png["屏幕截图显示了两个聚合、其中一个聚合的字段显示文本Elastic Volumes Enabled。"]
 
 * 向聚合添加容量
 +

@@ -36,6 +36,9 @@ Cloud Volumes ONTAP 使用Azure专用链路连接到其关联的存储帐户。�
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
++
+image:screenshot_settings_icon.png["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+
 . 在 * Azure * 下，单击 * 使用 Azure 专用链接 * 。
 . 取消选择 * Cloud Volumes ONTAP 与存储帐户之间的专用链路连接 * 。
 . 单击 * 保存 * 。
@@ -137,10 +140,13 @@ NOTE: 如果连接器和Cloud Volumes ONTAP 系统部署在不同的VN中、则�
 *通过更新app.conf启用回滚
 
 .步骤
-. 使用 `put /occm/config` API 调用与以下请求正文：
+. 通过 SSH 连接到 Connector 主机并登录。
+. 导航到以下目录： /opt/application/netapp/cloudmanager/docker_occm/data
+. 通过添加以下参数和值来编辑app.conf：
 +
-[source, json]
-----
-{ "rollbackOnAzurePrivateLinkFailure": false }
-----
+ "rollback-on-private-link-failure": true
+. 保存文件并注销 Connector 。
++
+不需要重新启动。
+
 

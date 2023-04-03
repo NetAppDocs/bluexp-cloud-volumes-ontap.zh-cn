@@ -75,10 +75,10 @@ image:screenshot_transit_gateway3.png["AWS 控制台的屏幕截图，其中显�
 
 . 使用浮动 IP 地址将卷挂载到客户端。
 +
-通过选择卷并单击*挂载命令*、您可以在BlueXP中找到正确的IP地址。
+您可以通过BlueXP中"管理卷"面板下的*挂载命令*选项在BlueXP中找到正确的IP地址。
 
 +
-image:screenshot_mount.gif["屏幕抓图：显示选择卷时可用的挂载命令。"]
+image:screenshot_mount_option.png["屏幕抓图：显示选择卷时可用的挂载命令。"]
 
 . 如果要挂载 NFS 卷，请将导出策略配置为与客户端 VPC 的子网匹配。
 +

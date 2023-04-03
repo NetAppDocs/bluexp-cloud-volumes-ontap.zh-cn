@@ -87,14 +87,11 @@ Cloud Volumes ONTAP 不支持从*集群>设置*页面自动更新固件。
 . 在"画布"页面上、双击Cloud Volumes ONTAP 系统的名称。
 . 在右上角、单击*切换到高级视图*。
 +
-image:screenshot-cvo-advanced-view.png["Cloud Volumes ONTAP 工作环境的屏幕截图、其中显示了切换到高级视图选项。"]
+image:screenshot_advanced_view.png["Cloud Volumes ONTAP 工作环境的屏幕截图、其中显示了切换到高级视图选项。"]
 
 . 如果显示确认消息、请通读该消息并单击*关闭*。
 . 使用System Manager管理Cloud Volumes ONTAP。
 . 如果需要、请单击*切换到标准视图*以通过BlueXP返回到标准管理。
-+
-image:screenshot-cvo-standard-view.png["Cloud Volumes ONTAP 工作环境的屏幕截图、其中显示了切换到标准视图选项。"]
-
 
 
 

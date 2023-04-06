@@ -20,6 +20,18 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 
 
 
+== 2023年4月4日
+
+从Cloud Volumes ONTAP 9.12.1 GA开始、AWS现在支持中国地区、如下所示。
+
+* 支持单节点系统。
+* 支持直接从 NetApp 购买的许可证。
+
+
+有关区域可用性、请参见 link:https://bluexp.netapp.com/cloud-volumes-global-regions["适用于Cloud Volumes ONTAP 的全局区域映射"^]。
+
+
+
 == 2023年4月3日
 
 连接器3.9.28版引入了以下更改。

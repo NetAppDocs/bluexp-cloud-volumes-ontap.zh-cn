@@ -20,9 +20,12 @@ summary: 已知限制确定了本产品版本不支持的平台、设备或功�
 
 
 
-== BlueXP不支持FlexGroup 卷
+== BlueXP不支持创建FlexGroup 卷
 
-虽然Cloud Volumes ONTAP 支持FlexGroup 卷、但BlueXP不支持。如果您从System Manager或CLI创建FlexGroup 卷、则应将BlueXP的容量管理模式设置为手动。对于 FlexGroup 卷，自动模式可能无法正常工作。
+虽然Cloud Volumes ONTAP 支持FlexGroup 卷、但BlueXP目前不支持FlexGroup 卷创建。如果您从System Manager或CLI创建FlexGroup 卷、则应将BlueXP的容量管理模式设置为手动。对于 FlexGroup 卷，自动模式可能无法正常工作。
+
+
+NOTE: 计划在未来版本中创建FlexGroup 卷。
 
 
 

@@ -1016,7 +1016,6 @@
   <block id="144db5f18aa0a48a9fe63c8b55bd0275" category="paragraph">Keystone Flex 订阅是 NetApp 提供的按需购买存储服务。</block>
   <block id="d9bf30eba2f9818a8ee777ae42a8f9f5" category="paragraph">通过数字电子钱包 _ ，您可以从一个位置管理 Cloud Volumes ONTAP 的许可证。您可以添加新许可证并更新现有许可证。</block>
   <block id="8caaaa4afae93c31b741be21eed669cc" category="inline-link-macro">了解有关 Cloud Volumes ONTAP 许可证的更多信息</block>
-  <block id="6cfeec56d62104397ed8dc01e81de3ba" category="paragraph"><block ref="2ccb396125a12f708cc5bb17905b5f90" category="inline-link-macro-rx"></block>。</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">授权您的帐户</block>
   <block id="34050b9fba3323c4ec7fb2d89aa95a36" category="list-text">单击 * Keystone Flex 订阅 * 。</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">如果您看到 * 欢迎使用 NetApp Keystone * 页面，请向此页面上列出的地址发送电子邮件。</block>
@@ -3210,7 +3209,6 @@
   <block id="0f1f7d0cff1734f943c2503c9febec73" category="paragraph"><block ref="0f1f7d0cff1734f943c2503c9febec73" category="inline-link-rx"></block></block>
   <block id="2dd15870a87ceaf45f31f08d066afaeb" category="list-text">通过删除原始工作环境来终止不再需要的 Cloud Volumes ONTAP 系统。</block>
   <block id="2464ba8f7f97ce117f749b75a1c60906" category="inline-link-macro">了解如何删除Cloud Volumes ONTAP 工作环境</block>
-  <block id="4397e74dad93d251efd7f65b1756f22b" category="paragraph"><block ref="8170ae40f603808099e16014cfba3f00" category="inline-link-macro-rx"></block>。</block>
   <block id="998afd8cfe6da6d00c47dc7bb4b8a5b1" category="doc">使用Azure专用链路或服务端点</block>
   <block id="c9a73222b35c741b31b116efb4cefa73" category="paragraph">如果需要、您可以将Cloud Volumes ONTAP 配置为使用服务端点、而不是Azure专用链路。</block>
   <block id="e44ebdbfa162690dea44b66cf5d816f9" category="section-title">请禁用Azure专用链路并改用服务端点</block>
@@ -3325,7 +3323,6 @@
   <block id="4cca90046112da5c5d3a703dafebbb7e" category="list-text">_Total PAYGO_是使用云市场订阅的总配置容量。只有当消耗的容量高于许可容量或数字电子钱包中没有BYOL许可证时、才会通过PAYGO进行收费。</block>
   <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">在摘要下、查看每个许可包的已用容量。</block>
   <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link-macro">了解Essentials软件包的收费信息</block>
-  <block id="33b4838dec7acdb2df64d13961f0a255" category="paragraph">要更好地了解Essentials软件包显示的容量、您应熟悉充电的工作原理。 <block ref="eee0a6ebb632d7e4c34635f35e9b54cf" category="inline-link-macro-rx"></block>。</block>
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">以下是具有多个许可包的帐户的示例：</block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
@@ -4866,4 +4863,7 @@
   <block id="88e0131339701d1e970c1ab7a5495d25" category="section-title">BlueXP不支持创建FlexGroup 卷</block>
   <block id="fff40ddae0362c17ba575430d4cdd727" category="paragraph">虽然Cloud Volumes ONTAP 支持FlexGroup 卷、但BlueXP目前不支持FlexGroup 卷创建。如果您从System Manager或CLI创建FlexGroup 卷、则应将BlueXP的容量管理模式设置为手动。对于 FlexGroup 卷，自动模式可能无法正常工作。</block>
   <block id="be5e56e337ebbc7d99062048ba94693e" category="admonition">计划在未来版本中创建FlexGroup 卷。</block>
+  <block id="6e987a799bff743a20629c6963efee7e" category="paragraph"><block ref="88e663ceca138a2ba6bdf07d4cbe79f1" category="inline-link-rx"></block>。</block>
+  <block id="9bb754282eec4e66c9472848d18fa68b" category="paragraph">要更好地了解Essentials软件包显示的容量、您应熟悉充电的工作原理。<block ref="e0127f60c714803ed2bb7172384e02ad" category="inline-link-rx"></block>。</block>
+  <block id="180b09672bfae24bd56a0aee5f3b1b2b" category="paragraph"><block ref="a9e2b0598eacf571f92143c75c6c24a3" category="inline-link-rx"></block>。</block>
 </blocks>

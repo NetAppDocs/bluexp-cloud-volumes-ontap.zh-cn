@@ -20,7 +20,7 @@ Keystone Flex 订阅是 NetApp 提供的按需购买存储服务。
 
 通过数字电子钱包 _ ，您可以从一个位置管理 Cloud Volumes ONTAP 的许可证。您可以添加新许可证并更新现有许可证。
 
-link:concept-licensing.html["了解有关 Cloud Volumes ONTAP 许可证的更多信息"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["了解有关 Cloud Volumes ONTAP 许可证的更多信息"]。
 
 
 

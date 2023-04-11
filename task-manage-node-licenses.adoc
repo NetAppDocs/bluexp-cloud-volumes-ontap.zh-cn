@@ -24,7 +24,7 @@ summary: 在数字电子钱包中管理基于节点的许可证，以确保每�
 
 通过数字电子钱包 _ ，您可以从一个位置管理 Cloud Volumes ONTAP 的许可证。您可以添加新许可证并更新现有许可证。
 
-link:concept-licensing.html["了解有关 Cloud Volumes ONTAP 许可证的更多信息"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["了解有关 Cloud Volumes ONTAP 许可证的更多信息"]。
 
 
 
@@ -228,6 +228,6 @@ https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.ht
 
 . 通过删除原始工作环境来终止不再需要的 Cloud Volumes ONTAP 系统。
 +
-link:task-deleting-working-env.html["了解如何删除Cloud Volumes ONTAP 工作环境"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deleting-working-env.html["了解如何删除Cloud Volumes ONTAP 工作环境"]。
 
 

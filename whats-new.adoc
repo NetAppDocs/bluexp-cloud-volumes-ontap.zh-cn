@@ -36,15 +36,11 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 
 连接器3.9.28版引入了以下更改。
 
-ifdef::gcp[]
-
 
 
 === 现在、在Google Cloud中支持都灵地区
 
 现在、适用于Cloud Volumes ONTAP 的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector均支持都灵地区。
-
-endif::gcp[]
 
 
 
@@ -66,7 +62,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 现在、BlueXP对Cloud Volumes ONTAP 概述、卷和聚合页面的用户界面进行了重新设计。基于区块的设计可在每个区块中提供更全面的信息、从而提供更好的用户体验。
 
-image:screenshot-resource-page-rn.png["此屏幕截图显示了Cloud Volumes ONTAP 概述页面上经过重新设计的BlueXP用户界面。各种图块显示了存储效率、版本、容量分布、有关Cloud Volumes ONTAP 部署的信息、卷、聚合、复制和备份。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["此屏幕截图显示了Cloud Volumes ONTAP 概述页面上经过重新设计的BlueXP用户界面。各种图块显示了存储效率、版本、容量分布、有关Cloud Volumes ONTAP 部署的信息、卷、聚合、复制和备份。"]
 
 
 
@@ -77,7 +73,7 @@ image:screenshot-resource-page-rn.png["此屏幕截图显示了Cloud Volumes ONT
 
 NOTE: 目前、您只能在BlueXP下查看现有FlexGroup 卷。在BlueXP中创建FlexGroup 卷的功能不可用、但计划在未来版本中使用。
 
-image:screenshot-show-flexgroup-volume.png["显示FlexGroup 卷图标将文本悬停在卷磁贴下的屏幕截图。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["显示FlexGroup 卷图标将文本悬停在卷磁贴下的屏幕截图。"]
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["了解有关查看已创建的FlexGroup 卷的更多信息。"^]
 
@@ -112,8 +108,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
-ifdef::azure[]
-
 
 
 === Azure支持16 TiB和32 Tib
@@ -121,8 +115,6 @@ ifdef::azure[]
 Cloud Volumes ONTAP 现在支持16 TiB和32 TiB磁盘大小、用于在Azure中的受管磁盘上运行的高可用性部署。
 
 了解更多信息 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#supported-disk-sizes["Azure中支持的磁盘大小"^]。
-
-endif::azure[]
 
 
 
@@ -145,8 +137,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["添加未分配的许可证"^]
 
 
-ifdef::gcp[]
-
 
 
 === Google Cloud中的Flash Cache和高写入速度
@@ -155,15 +145,11 @@ ifdef::gcp[]
 
 了解更多信息 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["支持Google Cloud按许可证配置"^]。
 
-endif::gcp[]
-
 
 
 == 2023年2月5日
 
 连接器3.9.26版引入了以下更改。
-
-ifdef::aws[]
 
 
 
@@ -172,10 +158,6 @@ ifdef::aws[]
 现在、可以通过AWS HA单可用性区域(AZ)部署创建放置组、并使用新的配置设置。现在、您可以选择绕过失败的放置组创建、并允许AWS HA单AZ部署成功完成。
 
 有关如何配置放置组创建设置的详细信息、请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["为AWS HA Single AZ配置放置组创建"^]。
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -199,8 +181,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-wor
 
 连接器3.9.25版引入了以下更改。
 
-ifdef::gcp[]
-
 
 
 === Google Cloud提供许可包
@@ -208,8 +188,6 @@ ifdef::gcp[]
 在Google云市场中、Cloud Volumes ONTAP 可以通过按需购买或按年订立的合同获得经过优化且基于边缘缓存容量的许可包。
 
 请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP 许可"^]。
-
-endif::gcp[]
 
 
 
@@ -267,8 +245,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Clou
 
 连接器3.9.23版引入了以下更改。
 
-ifdef::gcp[]
-
 
 
 === Google Cloud中的ONTAP S3许可证
@@ -277,15 +253,11 @@ ifdef::gcp[]
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
 
-endif::gcp[]
-
 
 
 == 2022年11月6日
 
 连接器3.9.23版引入了以下更改。
-
-ifdef::azure[]
 
 
 
@@ -295,8 +267,6 @@ ifdef::azure[]
 
 有关详细信息，请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-moving-resource-groups-azure.html["移动资源组"]。
 
-endif::azure[]
-
 
 
 === NDMP副本认证
@@ -305,8 +275,6 @@ NDMP-copy现已通过认证、可与云卷ONTAP 配合使用。
 
 有关如何配置和使用NDMP的信息、请参见 https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP 配置概述"]。
 
-ifdef::azure[]
-
 
 
 === 支持Azure的受管磁盘加密
@@ -314,8 +282,6 @@ ifdef::azure[]
 添加了一个新的Azure权限、现在允许您在创建时对所有受管磁盘进行加密。
 
 有关此新功能的详细信息、请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-azure-encryption.html["设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥"]。
-
-endif::azure[]
 
 
 
@@ -402,8 +368,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 == 2022年7月18日
 
-ifdef::azure[]
-
 
 
 === Azure中的新许可包
@@ -415,8 +379,6 @@ ifdef::azure[]
 
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["了解有关这些许可包的更多信息"]。
-
-endif::azure[]
 
 
 
@@ -440,8 +402,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["了解有关在AWS中支持弹性卷的更多信息"]。
 
-ifdef::aws[]
-
 
 
 === AWS中的ONTAP S3许可证
@@ -449,10 +409,6 @@ ifdef::aws[]
 现在、在AWS中运行版本9.11.0或更高版本的新Cloud Volumes ONTAP 系统和现有系统中提供了ONTAP S3许可证。
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -469,8 +425,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["查看Cloud Volumes ONTAP
 现在、在Azure中运行版本9.9.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统中提供了ONTAP S3许可证。
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
-
-endif::azure[]
 
 
 
@@ -495,8 +449,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9111-relnotes["了解此版本
 此高级视图可作为Cloud Volumes ONTAP 9.10.0及更高版本的预览版提供。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["了解有关高级视图的更多信息"]。
-
-ifdef::aws[]
 
 
 
@@ -525,10 +477,6 @@ Cloud Volumes ONTAP 9.11.1支持AWS VPC共享。通过此版本的Connector、�
 
 link:task-deploy-aws-shared-vpc.html["了解如何在共享子网中部署HA对"]。
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 使用服务端点时网络访问受限
@@ -536,10 +484,6 @@ ifdef::azure[]
 现在、当使用vNet服务端点在Cloud Volumes ONTAP 和存储帐户之间建立连接时、BlueXP会限制网络访问。如果禁用Azure专用链路连接、则BlueXP将使用服务端点。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["了解有关使用Cloud Volumes ONTAP 连接Azure专用链路的更多信息"]。
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -559,8 +503,6 @@ ifdef::gcp[]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["详细了解Google Cloud中的Storage VM限制"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["了解如何在Google Cloud中为Cloud Volumes ONTAP 创建提供数据的Storage VM"]
 
-
-endif::gcp[]
 
 
 
@@ -590,8 +532,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9110-relnotes["了解此版本
 
 https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["了解BlueXP中的Kubernetes数据管理"^]
 
-ifdef::azure[]
-
 
 
 === Azure中的年度合同
@@ -602,8 +542,6 @@ Essentials和Professional软件包现在可通过一份年度合同在Azure中�
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["了解有关许可的更多信息"]。
 
-endif::azure[]
-
 
 
 === S3 Glacier即时检索
@@ -611,8 +549,6 @@ endif::azure[]
 现在、您可以将分层数据存储在Amazon S3 Glacier即时检索存储类中。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["了解如何更改分层数据的存储类"]。
-
-ifdef::aws[]
 
 
 
@@ -628,10 +564,6 @@ ifdef::aws[]
 现在、要优化BlueXP创建布局组的方式、需要这些权限。
 
 请务必为您添加到BlueXP中的每组AWS凭据提供这些权限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看AWS的最新Connector策略"^]。
-
-endif::aws[]
-
-ifdef::gcp[]
 
 
 
@@ -673,8 +605,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 当您选择要在Cloud Volumes ONTAP 中使用的Google云服务帐户时、BlueXP现在会显示与每个服务帐户关联的电子邮件地址。通过查看电子邮件地址、可以更轻松地区分同名服务帐户。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["服务帐户字段的屏幕截图"]
-
-endif::gcp[]
 
 
 
@@ -774,8 +704,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node
 
 连接器3.9.14版引入了以下变更。
 
-ifdef::azure[]
-
 
 
 === 支持其他Azure VM类型
@@ -789,8 +717,6 @@ ifdef::azure[]
 
 
 转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["《 Cloud Volumes ONTAP 发行说明》"^] 有关支持的配置的更多详细信息。
-
-endif::azure[]
 
 
 
@@ -855,17 +781,11 @@ Keystone Flex 订阅是一种按需购买，基于订阅的服务，可为优先
 * link:task-manage-keystone.html["了解如何在BlueXP中开始使用Keystone Flex订阅"]。
 
 
-ifdef::aws[]
-
 
 
 === 新增 AWS 区域支持
 
 现在， AWS 亚太地区（日本）（亚太地区（日本）（亚太地区，日本）（亚太地区）（亚太地区）（亚太地区） 3 支持 Cloud Volumes ONTAP 。
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -874,8 +794,6 @@ ifdef::azure[]
 对于单节点系统和 HA 对， Azure 中的 Cloud Volumes ONTAP 系统不再打开端口 8023 和 49000 。
 
 此操作会从连接器 3.9.13 版开始更改适用场景 _new_ Cloud Volumes ONTAP 系统。
-
-endif::azure[]
 
 
 
@@ -891,7 +809,11 @@ BlueXP现在可以部署和管理Cloud Volumes ONTAP 9.10.0。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-9100-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
-ifdef::azure[]
+
+
+=== 缩短部署时间
+
+启用正常写入速度后，我们缩短了在 Microsoft Azure 或 Google Cloud 中部署 Cloud Volumes ONTAP 工作环境所需的时间。现在，部署时间平均缩短 3-4 分钟。
 
 
 
@@ -910,8 +832,6 @@ ifdef::azure[]
 
 
 link:task-set-up-azure-encryption.html["详细了解这些步骤"]。
-
-endif::azure[]
 
 
 
@@ -944,8 +864,6 @@ image:screenshot_cvo_charging_methods.png["Cloud Volumes ONTAP 工作环境向�
 
 一次写入，多次读取（ Write Once ， Read Many ， WORM ）存储不再处于预览状态，现在可用于 Cloud Volumes ONTAP 。 link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
 
-ifdef::aws[]
-
 
 
 === 在 AWS 中支持 m5dn.24xlarge
@@ -953,10 +871,6 @@ ifdef::aws[]
 从 9.9.1 版开始， Cloud Volumes ONTAP 现在支持采用以下充电方法的 m5dn.24xlarge 实例类型： PAYGO Premium ，自带许可证（ BYOL ）和 Freemium 。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["查看 AWS 中支持的 Cloud Volumes ONTAP 配置"^]。
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -991,10 +905,6 @@ image:screenshot_azure_resource_group.png["创建工作环境向导的屏幕截�
 
 link:task-enabling-private-link.html["了解有关将 Azure 专用链路与 Cloud Volumes ONTAP 结合使用的更多信息"]。
 
-endif::azure[]
-
-ifdef::gcp[]
-
 
 
 === Google Cloud 中的平衡持久性磁盘
@@ -1013,15 +923,11 @@ ifdef::gcp[]
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["在 GCP 中查看支持的 Cloud Volumes ONTAP 配置"^]。
 
-endif::gcp[]
-
 
 
 == 2021年5月30日
 
 连接器3.9.7版引入了以下变更。
-
-ifdef::aws[]
 
 
 
@@ -1040,8 +946,6 @@ ifdef::aws[]
 现在、当BlueXP创建新的Cloud Volumes ONTAP 工作环境时、它会向EBS卷添加标记。这些标记先前是在部署 Cloud Volumes ONTAP 后创建的。
 
 如果您的组织使用服务控制策略（ Service Control Policies ， SCP ）来管理权限，此更改将很有帮助。
-
-endif::aws[]
 
 
 
@@ -1065,16 +969,12 @@ link:task-tiering.html#changing-the-cooling-period-for-the-auto-tiering-policy["
 
 此增强功能可通过删除不再需要的快照来帮助降低云提供商成本。
 
-ifdef::azure[]
-
 请注意， Connector 需要新的权限才能删除 Azure 快照。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["查看Azure的最新Connector策略"^]。
 
 [source, json]
 ----
 "Microsoft.Compute/snapshots/delete"
 ----
-endif::azure[]
-
 
 
 == 2021 年 5 月 24 日
@@ -1101,8 +1001,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-991-relnotes["了解此版本 
 
 如果以逻辑方式报告空间，则 ONTAP 会报告卷空间，以便存储效率功能节省的所有物理空间也会报告为已用空间。
 
-ifdef::aws[]
-
 
 
 === 支持 AWS 中的 GP3 磁盘
@@ -1117,17 +1015,11 @@ link:task-planning-your-config.html#sizing-your-system-in-aws["了解有关将 G
 
 Cloud Volumes ONTAP 不再支持冷 HDD （ SC1 ）磁盘。
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 适用于 Azure 存储帐户的 TLS 1.2
 
 当BlueXP在Azure for Cloud Volumes ONTAP 中创建存储帐户时、存储帐户的TLS版本现在为1.2版。
-
-endif::azure[]
 
 
 
@@ -1142,8 +1034,6 @@ endif::azure[]
 BlueXP现在可以部署和管理Cloud Volumes ONTAP 9.0.0。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-990-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
-
-ifdef::aws[]
 
 
 
@@ -1163,19 +1053,11 @@ BlueXP始终支持您使用AWS密钥管理服务(KMS)对Cloud Volumes ONTAP 数�
 
 link:task-setting-up-kms.html["了解有关使用 Cloud Volumes ONTAP 设置 AWS KMS 的更多信息"]。
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 支持 Azure DoD
 
 现在，您可以在 Azure 国防部（ DoD ）影响级别 6 （ IL6 ）中部署 Cloud Volumes ONTAP 9.8 。
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -1193,15 +1075,11 @@ link:reference-networking-gcp.html#requirements-for-cloud-volumes-ontap["在 Goo
 
 link:reference-networking-gcp.html["了解有关 Google Cloud 网络连接要求的更多信息"]。
 
-endif::gcp[]
-
 
 
 == 2021年1月4日
 
 连接器3.9.2版引入了以下更改。
-
-ifdef::aws[]
 
 
 
@@ -1218,10 +1096,6 @@ ifdef::aws[]
 * 目前仅支持通用 SSD （ GP2 ）
 
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 支持的 Azure 区域中的超高 SSD VNVRAM
@@ -1237,10 +1111,6 @@ VNVRAM 可提高写入性能。
 现在，您可以选择要在其中部署单节点 Cloud Volumes ONTAP 系统的可用性区域。如果不选择AZ、BlueXP将为您选择一个。
 
 image:screenshot_azure_az.gif["选择区域后提供的可用性区域下拉列表的屏幕截图。"]
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -1262,10 +1132,6 @@ Cloud Volumes ONTAP 现在支持以下计算机类型：
 * n2-standard-32 ，具有高级许可证和 BYOL
 
 
-endif::gcp[]
-
-ifdef::azure[]
-
 
 
 == 2020年11月3日
@@ -1281,5 +1147,3 @@ ifdef::azure[]
 * https://docs.microsoft.com/en-us/azure/private-link/private-link-overview["了解有关 Azure 专用链接的更多信息"^]
 * link:task-enabling-private-link.html["了解有关将 Azure 专用链路与 Cloud Volumes ONTAP 结合使用的更多信息"]
 
-
-endif::azure[]

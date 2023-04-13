@@ -1017,7 +1017,6 @@
   <block id="d9bf30eba2f9818a8ee777ae42a8f9f5" category="paragraph">通过数字电子钱包 _ ，您可以从一个位置管理 Cloud Volumes ONTAP 的许可证。您可以添加新许可证并更新现有许可证。</block>
   <block id="8caaaa4afae93c31b741be21eed669cc" category="inline-link-macro">了解有关 Cloud Volumes ONTAP 许可证的更多信息</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">授权您的帐户</block>
-  <block id="34050b9fba3323c4ec7fb2d89aa95a36" category="list-text">单击 * Keystone Flex 订阅 * 。</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">如果您看到 * 欢迎使用 NetApp Keystone * 页面，请向此页面上列出的地址发送电子邮件。</block>
   <block id="16692c26ca4528e651bbb36d93c465c7" category="paragraph">NetApp 代表将通过授权您的用户帐户访问订阅来处理您的请求。</block>
   <block id="ed53b278164ebd0a6b2a2a8f63581c09" category="list-text">返回 * Keystone Flex 订阅 * 以查看您的订阅。</block>
@@ -3326,7 +3325,6 @@
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">以下是具有多个许可包的帐户的示例：</block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
-  <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">从左侧导航菜单中、选择*数字电子夹*。</block>
   <block id="5844b24c31c1897efda5443d984702f8" category="list-text">在* Cloud Volumes ONTAP 基于节点的许可证*选项卡上、从下拉列表中选择*基于节点的许可证*。</block>
   <block id="666ac747a8d5a1aa317496f8add413a6" category="list-text">在* Cloud Volumes ONTAP 基于容量的许可证*选项卡上、保持选中状态、然后单击*添加许可证*。</block>
   <block id="ecdf6ba3b837de5910abdabc360df552" category="list-text">在* Cloud Volumes ONTAP *选项卡上、单击许可证旁边的操作菜单、然后选择*更新许可证*。</block>
@@ -4695,7 +4693,6 @@
   <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">如果您使用的是基于节点的PAYGO许可证、则可以选择通过单击*许可证类型*旁边的铅笔图标来选择其他许可证和计算机类型。</block>
   <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">选择计算机类型、选中复选框以确认您了解更改的含义、然后单击*更改*。</block>
-  <block id="1bb49759ca91107ea85449bc0249ce13" category="list-text">选择*基于容量的许可证*后、查看软件包摘要、其中显示了您已用容量、预提交的总容量和总PAYGO容量。</block>
   <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Total precommitted capacity_是您从NetApp购买的总许可容量(BYOL或Marketplace合同)。</block>
   <block id="6805f1cb53971ab8cf6263bd093c5d20" category="paragraph">下面是数字电子钱包中的Cloud Volumes ONTAP 软件包摘要示例：</block>
   <block id="e9132fa20985cf4b3d5004a6a371ecab" category="inline-image-macro">显示Cloud Volumes ONTAP 软件包摘要的屏幕截图、其中包括"数字电子钱包"中的总已用容量、总预先提交容量(BYOL和Marketplace合同)以及总PAYGO或已配置容量。</block>
@@ -4868,4 +4865,8 @@
   <block id="78f9ca50556d02ff8700efd01af0d528" category="paragraph"><block ref="78f9ca50556d02ff8700efd01af0d528" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9cc2b6cdaf0b50459353a2d67c0baa80" category="section-title">缩短部署时间</block>
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">启用正常写入速度后，我们缩短了在 Microsoft Azure 或 Google Cloud 中部署 Cloud Volumes ONTAP 工作环境所需的时间。现在，部署时间平均缩短 3-4 分钟。</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">从BlueXP导航菜单中、选择*监管&gt;数字电子钱包*。</block>
+  <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">在* Cloud Volumes ONTAP 基于容量的许可证*选项卡上、保持选中状态。</block>
+  <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">查看软件包摘要、其中显示了已用容量、预提交的总容量和总PAYGO容量。</block>
+  <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">选择* Keystone*。</block>
 </blocks>

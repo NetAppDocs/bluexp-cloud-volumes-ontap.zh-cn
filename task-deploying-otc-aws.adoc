@@ -25,7 +25,7 @@ summary: 您可以在单系统配置中启动 Cloud Volumes ONTAP 实例，也�
 [[licensing]]
 * 已启动且正在运行的连接器。
 +
-** 您应具有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["与工作空间关联的连接器"^]。
+** 您应具有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["与工作空间关联的连接器"^]。
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["您应做好准备，使 Connector 始终保持运行"^]。
 
 
@@ -56,7 +56,7 @@ link:task-set-up-licensing-aws.html["了解如何设置许可"]。
 . 从左侧导航菜单中、选择*存储>画布*。
 . 【订阅】在 " 画布 " 页面上，单击 * 添加工作环境 * 并按照提示进行操作。
 . * 选择一个位置 * ：选择 * Amazon Web Services* 和 * Cloud Volumes ONTAP Single Node* 。
-. 如果出现提示， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["创建连接器"^]。
+. 如果出现提示， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["创建连接器"^]。
 . * 详细信息和凭据 * ：可选择更改 AWS 凭据和订阅，输入工作环境名称，根据需要添加标记，然后输入密码。
 +
 本页中的某些字段是不言自明的。下表介绍了可能需要指导的字段：

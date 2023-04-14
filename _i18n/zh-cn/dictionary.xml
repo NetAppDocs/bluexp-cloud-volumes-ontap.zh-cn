@@ -64,7 +64,6 @@
   <block id="17871dd6725112548c5735d13d60d639" category="paragraph">要创建工作环境，您需要满足以下要求。</block>
   <block id="ad1cc9fdb978e0b0a5e397b3152a1867" category="list-text">已启动且正在运行的连接器。</block>
   <block id="86836b73bcaa40dc1dd7e8f91fc43a4d" category="inline-link">与工作空间关联的连接器</block>
-  <block id="a400a126d25356fde0a70c51f2acefce" category="list-text">您应具有<block ref="5e0fb3fa3227d63874a92da746e0293a" category="inline-link-rx"></block>。</block>
   <block id="c501058ef93efe907f1517f309ec8be3" category="inline-link">您应做好准备，使 Connector 始终保持运行</block>
   <block id="de098ba23ceff4a71fb2ce17a3743e6a" category="list-text"><block ref="5241bf058927c40b0779be84498fcc52" category="inline-link-rx"></block>。</block>
   <block id="72fa1e29e831adb71ca0ce01f7356dc9" category="list-text">了解要使用的配置。</block>
@@ -80,7 +79,6 @@
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
   <block id="f153679ad4c5ae5aeae3a0ca4f337a37" category="list-text">【订阅】在 " 画布 " 页面上，单击 * 添加工作环境 * 并按照提示进行操作。</block>
   <block id="3c19bc1d7cfc3da0dab6310259e4b2c1" category="inline-link">创建连接器</block>
-  <block id="1870c86878dd46336ac6bfc08665eab6" category="list-text">如果出现提示，<block ref="7d165ca08e4106b12a1b93b3149d1a83" category="inline-link-rx"></block>。</block>
   <block id="ceca015ffa0918205a91a8cc0268611c" category="list-text">* 详细信息和凭据 * ：可选择更改 Azure 凭据和订阅，指定集群名称，根据需要添加标记，然后指定凭据。</block>
   <block id="321caeadb2c3d8d2d4962fdb49b92543" category="paragraph">下表介绍了可能需要指导的字段：</block>
   <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">字段</block>
@@ -301,7 +299,6 @@
   <block id="8d9f62f251a8a411876740e6611a61cf" category="paragraph"><block ref="f1b4d319a2908121f0a6e639ae6c7cdc" category="inline-link-macro-rx"></block>。</block>
   <block id="eef256fe1f25b0dfdcc3971d7f0a9974" category="summary">您可以在单系统配置中启动 Cloud Volumes ONTAP ，也可以在 Google 云平台中作为 HA 对启动。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">开始之前</block>
-  <block id="3a2e3bd3692b5b10d4e8d1876ea764e4" category="list-text">您应具有<block ref="31efb472d9740ae4bd5b3185af479587" category="inline-link-rx"></block>。</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">已在项目中启用</block>
   <block id="3f7dd317abe229076594c229e96f375d" category="list-text">Google Cloud API 应为<block ref="2bf1d71c4d11fe94040400dbdd9bbe2e" category="inline-link-rx"></block>：</block>
   <block id="d82c8fcef9b6dd8fb6808c96dcbc5bb5" category="list-text">Cloud Deployment Manager V2 API</block>
@@ -310,7 +307,6 @@
   <block id="1101b09020ade12e90a562489e315c8d" category="list-text">计算引擎 API</block>
   <block id="71660685d00034957db3f9a31c160978" category="list-text">身份和访问管理（ IAM ） API</block>
   <block id="02468344d7eb024c93087ede43938890" category="list-text">* 选择一个位置 * ：选择 * Google Cloud* 和 * Cloud Volumes ONTAP * 。</block>
-  <block id="a52ac8a7b02f1fcb4758ef8608df8657" category="list-text">如果出现提示，<block ref="3902ae0ac0b84277d412c62a8daa1bac" category="inline-link-rx"></block>。</block>
   <block id="47e8755e148fbe2f9d687cce086d2e82" category="list-text">* 详细信息和凭据 * ：选择项目，指定集群名称，选择服务帐户，添加标签并指定凭据。</block>
   <block id="1689b34158a0f16fa3aa69baa2307300" category="cell">服务帐户名称</block>
   <block id="2157938460edbda23f083148927e15a0" category="inline-link-macro">数据分层</block>
@@ -1446,9 +1442,7 @@
   <block id="de55eaa977cb9b3376bd6729e1a97107" category="paragraph">单击 * 添加工作环境 * ，选择要部署的系统类型，然后完成向导中的步骤。 <block ref="168f7f4d4c37c8fac9b64fb187eb00a2" category="inline-link-macro-rx"></block>。</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">相关链接</block>
   <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">从 AWS Marketplace 启动 Connector</block>
-  <block id="f184c656bf02dee61743212967601db4" category="list-text"><block ref="f184c656bf02dee61743212967601db4" category="inline-link-rx"></block></block>
   <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">在 Linux 主机上安装 Connector 软件</block>
-  <block id="86a342f075ca5d85dc5033d1092f71cd" category="list-text"><block ref="86a342f075ca5d85dc5033d1092f71cd" category="inline-link-rx"></block></block>
   <block id="fb60cc8b1c07b3747a72dcf7ce2f2f58" category="list-text">一个或三个分区（建议）。</block>
   <block id="0f3118cdf0606432dbda8dd0e39d7d10" category="paragraph">如果选择三个分区，则这两个节点和调解器位于不同的 Google Cloud 分区中。</block>
   <block id="57634383537fa922f1a5f4ab683aa664" category="list-text">四个虚拟私有云（ Virtual Private Cloud ， vPC ）。</block>
@@ -2160,7 +2154,6 @@
   <block id="0d21ff817105e810cdab25bd9f2d902a" category="paragraph"><block ref="6e8067af2836c2e6e39420cbcee5abb4" category="inline-link-macro-rx"></block>。</block>
   <block id="7f4227f5e289d9b09c1c0e06243584ef" category="paragraph">单击 * 添加工作环境 * ，选择要部署的系统类型，然后完成向导中的步骤。 <block ref="6f7d7b3de08ec5c6f3771511caa5244a" category="inline-link-macro-rx"></block>。</block>
   <block id="4fa0ddd312f5d44c35c17e8e39a2e30a" category="inline-link">从 Azure Marketplace 创建 Connector</block>
-  <block id="b081addc2f83e112d92546a8f172e9bb" category="list-text"><block ref="b081addc2f83e112d92546a8f172e9bb" category="inline-link-rx"></block></block>
   <block id="b6f2459d07813a329f10d1f5ef7babc2" category="summary">通过将热数据的 SSD 或 HDD 性能层与非活动数据的对象存储容量层相结合，您可以降低 Cloud Volumes ONTAP 的存储成本。数据分层由 FabricPool 技术提供支持。</block>
   <block id="5448b18116123f634a8085197accad95" category="paragraph">通过将热数据的 SSD 或 HDD 性能层与非活动数据的对象存储容量层相结合，您可以降低 Cloud Volumes ONTAP 的存储成本。数据分层由 FabricPool 技术提供支持。有关简要概述，请参见 <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
   <block id="10647b0244486006c8ce3cf5b113d377" category="paragraph">要设置数据分层，您需要执行以下操作：</block>
@@ -2343,13 +2336,11 @@
   <block id="7d7ca8f39ddaf09ca365d0d1f9421649" category="cell">浮动 IP 地址的路由表</block>
   <block id="b5fc4208e494804d1484996e111220af" category="summary">您可以在单系统配置中启动 Cloud Volumes ONTAP 实例，也可以在 AWS 中作为 HA 对启动。</block>
   <block id="45fa74d97bba23976f6236bb8a583eb3" category="paragraph">您可以在单系统配置中或在 AWS 中作为 HA 对启动 Cloud Volumes ONTAP 。</block>
-  <block id="2d40a6ffeefcd23a2428a319159c776e" category="list-text">您应具有<block ref="e8cab23cf8c8a33fc74f81f04b4bafbd" category="inline-link-rx"></block>。</block>
   <block id="62dbb34ae2dbba36fcd72e9009367d7f" category="paragraph">您应该已准备好选择配置并从管理员处获取 AWS 网络信息。有关详细信息，请参见 <block ref="221e8f6e98d75a4db804bf88879345c0" category="inline-link-macro-rx"></block>。</block>
   <block id="70bc0792aaac2d1fe5c19e375b615c8f" category="list-text">用于 CIFS 配置的 DNS 和 Active Directory 。</block>
   <block id="6ff827eb8724bf30147eb7172866032d" category="paragraph">有关详细信息，请参见 <block ref="5e41481253f1e5476c9db04d39b740c0" category="inline-link-macro-rx"></block>。</block>
   <block id="9ae9e2a95a93a162ede8aa13ce31e809" category="section-title">在 AWS 中启动单节点 Cloud Volumes ONTAP 系统</block>
   <block id="5f9fae15ed0e9699a97ede914a14bdc5" category="list-text">* 选择一个位置 * ：选择 * Amazon Web Services* 和 * Cloud Volumes ONTAP Single Node* 。</block>
-  <block id="a7388cd0078069663fa238e90c2c6c4b" category="list-text">如果出现提示，<block ref="b2c90f31fa9d0d1638b11d924a469775" category="inline-link-rx"></block>。</block>
   <block id="2548b207aecb436cf10911e9afefdeb4" category="list-text">* 详细信息和凭据 * ：可选择更改 AWS 凭据和订阅，输入工作环境名称，根据需要添加标记，然后输入密码。</block>
   <block id="130d74c3ba60e43c646b8d2ae2e189f7" category="cell">添加标记</block>
   <block id="ab2bc7358191e02d5aacdd2ddaa4233d" category="inline-link">AWS 文档：标记 Amazon EC2 资源</block>
@@ -3435,7 +3426,6 @@
   <block id="de908965dc022756e01253bb2ab070dc" category="list-text">*连接*：选择一个新资源组或现有资源组、然后选择是使用预定义的安全组还是使用您自己的资源组。</block>
   <block id="c62cb6ffba40dfccd9137c53e13ffa06" category="list-text">如果选择*仅选定vNet *、则入站流量的源是选定vNet的子网范围以及Connector所在的vNet的子网范围。这是建议的选项。</block>
   <block id="af5480ae1c406371c200cbecf7ae3ae3" category="list-text">如果选择*所有VNets*、则入站流量的源IP范围为0.0.0.0/0。</block>
-  <block id="8f2c4dcc319947ae616fd10e4743c3f2" category="paragraph"><block ref="8f2c4dcc319947ae616fd10e4743c3f2" category="inline-link-rx"></block></block>
   <block id="99ac8cc27f368522d020a76c65551219" category="list-text">Cloud Volumes ONTAP 需要对NetApp AutoSupport 进行出站Internet访问、NetApp会主动监控系统的运行状况并向NetApp技术支持发送消息。</block>
   <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 防火墙允许通过端口3128进行_outout_连接。</block>
   <block id="72d5371b4a8014dbf2df076044553ab6" category="paragraph">在创建工作环境时、您可以在部署期间为预定义的防火墙策略选择源筛选器：</block>
@@ -3589,7 +3579,6 @@
   <block id="5137e20086fbd2e10511433ace3ac154" category="paragraph">为了跟踪AWS成本、BlueXP会为Cloud Volumes ONTAP 实例分配成本分配标记。创建首个工作环境后，激活 * 工作环境 Id* 标记。用户定义的标记不会显示在 AWS 计费报告中，除非您在计费和成本管理控制台中激活它们。</block>
   <block id="0c29cb137ebcfb10c1b30edf702322ea" category="paragraph">BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。 <block ref="786d547ede2f0e723e26aaa12a2cb737" category="inline-link-macro-rx"></block>。</block>
   <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">从BlueXP创建连接器</block>
-  <block id="0d5f53ba40b365132e5ed55aeb13bafc" category="list-text"><block ref="0d5f53ba40b365132e5ed55aeb13bafc" category="inline-link-rx"></block></block>
   <block id="68de98d1358d2928dcaffc946aeaa266" category="inline-link">BlueXP对AWS权限的作用</block>
   <block id="153bb0c5c52aba578d76867c6401e038" category="list-text"><block ref="153bb0c5c52aba578d76867c6401e038" category="inline-link-rx"></block></block>
   <block id="ad4ac1c47a9ebdd6164879be3ae930d1" category="paragraph">BlueXP发送AWS请求以修改路由表。</block>
@@ -3885,7 +3874,6 @@
   <block id="428a055923de2c8ce19ebc96a080afee" category="list-text">在BlueXP中指定浮动IP地址后、系统将提示您选择应包含浮动IP地址路由的路由表。这将启用客户端对 HA 对的访问。</block>
   <block id="92eecc3a42de035f448beaea1c75a1ad" category="paragraph">如果VPC中的子网只有一个路由表(主路由表)、则BlueXP会自动将浮动IP地址添加到该路由表中。如果您有多个路由表，则在启动 HA 对时选择正确的路由表非常重要。否则，某些客户端可能无法访问 Cloud Volumes ONTAP 。</block>
   <block id="0ed492eac5f86d35987ba9152345c07c" category="paragraph">BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。 <block ref="9ca4f67c2d4212e79227daec95e33cdd" category="inline-link-macro-rx"></block>。</block>
-  <block id="103cbb6d6f7a112f9eb15cc3d5a4c7b2" category="list-text"><block ref="103cbb6d6f7a112f9eb15cc3d5a4c7b2" category="inline-link-rx"></block></block>
   <block id="e377cef11f252d8c520d41695086c34d" category="inline-link">BlueXP对权限执行的操作</block>
   <block id="875d70659503a06c5444ddec9ca959c7" category="list-text"><block ref="875d70659503a06c5444ddec9ca959c7" category="inline-link-rx"></block></block>
   <block id="ff6bb7f0e5c448daaba5bf73047a6a3c" category="summary">如果在启动初始Cloud Volumes ONTAP 系统后需要更多存储、则可以从BlueXP为NFS、CIFS或iSCSI创建新的FlexVol 卷。</block>
@@ -3931,7 +3919,6 @@
   <block id="a5e653a54b839ff1cd287d93b221928e" category="paragraph">如果您是帐户管理员且已启用此选项、则BlueXP会在通过电子邮件发送给您的Cloud Volumes ONTAP 报告中显示许可证到期警告：</block>
   <block id="d2563fcd4b4b3ec541ca3e59420d1fc7" category="paragraph">在联系NetApp代表续订基于节点的BYOL订阅时、BlueXP会自动从NetApp获取新许可证并将其安装在Cloud Volumes ONTAP 系统上。</block>
   <block id="c8ce4a03cda52de4d81a6d52e83dcfc7" category="paragraph">BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。</block>
-  <block id="f9ba5de6e1e6e10258b5319a01017c4f" category="list-text"><block ref="f9ba5de6e1e6e10258b5319a01017c4f" category="inline-link-rx"></block></block>
   <block id="7dfb6c2c87a3491ee04b30bc313e53c5" category="summary">通过BlueXP、您可以管理卷和CIFS服务器。它还会提示您移动卷以避免容量问题。</block>
   <block id="56b02e9e8848ef5443c7bdbcb313ec2c" category="admonition">BlueXP会将卷移动到使用选定磁盘类型的现有聚合、或者为卷创建新聚合。</block>
   <block id="f162010d329e7b7904453b50a89c50d5" category="admonition">BlueXP会将卷移动到使用选定磁盘类型进行分层的现有聚合、或者为卷创建新聚合。</block>
@@ -4242,7 +4229,6 @@
   <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">现在、BlueXP可以在AWS和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.0。</block>
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.12.1、其中包括对新功能的支持以及其他云提供商区域的支持。</block>
   <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">对于根磁盘、启动磁盘、NVRAM磁盘、核心磁盘和数据磁盘、BlueXP使用磁盘加密集、通过该加密集可以管理具有受管磁盘的加密密钥。</block>
-  <block id="da9740256f1fda9e06aa732d86702abc" category="admonition">这是您为BlueXP设置的服务帐户、 <block ref="0f8a0ed359c33dd5dbb02a467fa98093" category="inline-link-macro-rx"></block>。</block>
   <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">连接器3.9.25版引入了以下更改。</block>
   <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Google Cloud提供许可包</block>
   <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">在Google云市场中、Cloud Volumes ONTAP 可以通过按需购买或按年订立的合同获得经过优化且基于边缘缓存容量的许可包。</block>
@@ -4320,10 +4306,7 @@
   <block id="5fb73c1af98e831dcfe0ce66f4582d3b" category="paragraph">在Google Cloud中、HA配置部署在四个VPC上。VPC-0 中的 HA 配置所需的防火墙规则为 <block ref="8216cabe940880477030118a8a765034" category="inline-xref-macro-rx"></block>。</block>
   <block id="4fad8964dcacb8a6d329f6e2e57a2af9" category="paragraph">如果尚未创建Connector、则还应查看Connector的网络要求。</block>
   <block id="f63c987d15807845ae712461b133bad5" category="inline-link">查看连接器的网络要求</block>
-  <block id="fec3732f829761687c4a94dc2dcf4ef5" category="paragraph"><block ref="fec3732f829761687c4a94dc2dcf4ef5" category="inline-link-rx"></block></block>
   <block id="0f5cc196efac5a9fadb7272e55c7d686" category="summary">设置 Azure 网络，以便 Cloud Volumes ONTAP 系统可以正常运行。</block>
-  <block id="323c8a1d29b771e63edf9d7a9968be4e" category="paragraph"><block ref="323c8a1d29b771e63edf9d7a9968be4e" category="inline-link-rx"></block></block>
-  <block id="f483cdf3bbc75344ed7ba476a346b3ae" category="paragraph"><block ref="f483cdf3bbc75344ed7ba476a346b3ae" category="inline-link-rx"></block></block>
   <block id="7dca2de7042f01604c6fa18e67e28e36" category="section-title">WORM和数据分层</block>
   <block id="83f865c2acfa2b30d8adc34128a9b741" category="paragraph">创建新的Cloud Volumes ONTAP 9.8或更高版本系统时、您可以同时启用数据分层和WORM存储。通过使用WORM存储启用数据分层、您可以将数据分层到云中的对象存储。</block>
   <block id="125acd88196259df48335a29149824c8" category="paragraph">您应了解以下有关启用数据分层和WORM存储的信息：</block>
@@ -4546,7 +4529,6 @@
   <block id="93616689ecb546d3ff1261cf76e33109" category="section-title">支持无Internet环境 </block>
   <block id="28f5f7b773a8085f5db45145fb774c27" category="paragraph">现在、与Internet完全隔离的任何云环境均支持Cloud Volumes ONTAP。这些环境仅支持基于节点的许可(BYOL)。不支持基于容量的许可。要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将您的BYOL许可证添加到数字电子钱包中、然后部署Cloud Volumes ONTAP。 </block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">将连接器安装在无法访问Internet的位置</block>
-  <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
   <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">访问Connector上的BlueXP控制台</block>
   <block id="b620510a7b9198825896459898b7bc08" category="list-text"><block ref="b620510a7b9198825896459898b7bc08" category="inline-link-rx"></block></block>
   <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">添加未分配的许可证</block>
@@ -4575,15 +4557,11 @@
   <block id="11bb059fb2906ae78eda04a864443447" category="sidebar">使用OpenSSL验证内容</block>
   <block id="8fa0059a7c3b7b511ddc3ef2fd394b8e" category="summary">只需几步即可开始使用适用于Google Cloud的Cloud Volumes ONTAP。</block>
   <block id="aa5c1c092b41ba183b34ea75815e55a2" category="inline-link">了解如何在 Google Cloud 中创建 Connector</block>
-  <block id="410319d8e485760a446e1bdee0ff326b" category="paragraph">如果您没有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="ae1244ceb54b5b14bb70d7bfb0adabbd" category="inline-link-rx"></block></block>
   <block id="20323efc4d51de74865285e21220bc14" category="inline-link">了解如何在无法访问Internet的位置手动安装Connector</block>
-  <block id="af6bcead3114e39003d2acc90fa53454" category="paragraph">请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。<block ref="1fc505e892ad76b5ccb867f11989c2d8" category="inline-link-rx"></block></block>
   <block id="b73b2829274aee64ee8dcd0fc7290f49" category="list-text">从NetApp AutoSupport 的目标VPC启用出站Internet访问。</block>
   <block id="f26437251ef23953176712de75dc4d69" category="paragraph">如果您要在无法访问Internet的位置部署Cloud Volumes ONTAP 、则无需执行此步骤。</block>
   <block id="824be8b95270c8a8618f49cb7fb21ae8" category="inline-link">BlueXP对Google Cloud权限的作用</block>
   <block id="1857f44521f712859d70ea04bc03b602" category="list-text"><block ref="1857f44521f712859d70ea04bc03b602" category="inline-link-rx"></block></block>
-  <block id="686559ad5b35ebcac7c3039ba4d273ec" category="paragraph">如果您没有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="5057dc0bf3c81969de0b1b1e5a9bc718" category="inline-link-rx"></block></block>
-  <block id="a646f605cbf6ed0d1902ed148dff6a02" category="paragraph">如果您没有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="e02c55c05c6081d62516fdec2316cf6c" category="inline-link-rx"></block></block>
   <block id="60a5bfe73545b12bdf2f8c33e65bedb4" category="paragraph">连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需权限包括在中<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>。</block>
   <block id="256b759fe821d1e6df4108737b419291" category="list-text">包括使用Cloud Backup的无限卷备份、但仅适用于使用专业版软件包的Cloud Volumes ONTAP 系统</block>
   <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">从Cloud Volumes ONTAP 9.10.1开始、您可以选择在卷级别启用或禁用WORM。</block>
@@ -4869,4 +4847,26 @@
   <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">在* Cloud Volumes ONTAP 基于容量的许可证*选项卡上、保持选中状态。</block>
   <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">查看软件包摘要、其中显示了已用容量、预提交的总容量和总PAYGO容量。</block>
   <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">选择* Keystone*。</block>
+  <block id="01b3d35a5a3d4b29869efcf0dee1ef4a" category="paragraph">如果您没有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="c58dbfb222f1156cd2d0460f83cbf4c7" category="inline-link-rx"></block></block>
+  <block id="455f8606c0fb4ca04f1b5f0a288da23a" category="paragraph">请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。<block ref="02b458581c0c414770660f2e444a2fb8" category="inline-link-rx"></block></block>
+  <block id="5ae6c11eada04754344ee539db8b3ce1" category="list-text"><block ref="5ae6c11eada04754344ee539db8b3ce1" category="inline-link-rx"></block></block>
+  <block id="3cdbf2a459d98a40470e49e40669f6b7" category="list-text"><block ref="3cdbf2a459d98a40470e49e40669f6b7" category="inline-link-rx"></block></block>
+  <block id="fd344415274d665a0998be694f6a7962" category="list-text">您应具有<block ref="f00f534723871cb90d5bf00c434fd34a" category="inline-link-rx"></block>。</block>
+  <block id="b2e9cc42fc2dbadbced0791f0753467c" category="list-text">如果出现提示，<block ref="1b3782954e8dc5b27adc57e0ca96e781" category="inline-link-rx"></block>。</block>
+  <block id="54913060f98d45f0dcbcf891200d3371" category="admonition">这是您为BlueXP设置的服务帐户、 <block ref="75555d429bb33c248aadd8914e0604e7" category="inline-link-macro-rx"></block>。</block>
+  <block id="827fa6031d14277d7c0b951b8451bf41" category="paragraph"><block ref="827fa6031d14277d7c0b951b8451bf41" category="inline-link-rx"></block></block>
+  <block id="fcec8203c79f1b4529bfd9306146d82f" category="list-text"><block ref="fcec8203c79f1b4529bfd9306146d82f" category="inline-link-rx"></block></block>
+  <block id="69d38eba8e13d2a86d065b701643d8ce" category="list-text">您应具有<block ref="3bcef99efd116218f27c4e74ed4e9a29" category="inline-link-rx"></block>。</block>
+  <block id="7731e5a74063afef822597a8281749b9" category="list-text">如果出现提示，<block ref="1cf77b7aa55c9b061d47111489c3663d" category="inline-link-rx"></block>。</block>
+  <block id="3d4078cf30fb0b730a588fa26541ca17" category="paragraph">如果您没有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="7b70ad066970c5d7440189a7b0c6f2d4" category="inline-link-rx"></block></block>
+  <block id="ad8530e01bddf5e8d7522dd27e743116" category="list-text"><block ref="ad8530e01bddf5e8d7522dd27e743116" category="inline-link-rx"></block></block>
+  <block id="1de4151d9a8d5524592ed8937502fc10" category="list-text"><block ref="1de4151d9a8d5524592ed8937502fc10" category="inline-link-rx"></block></block>
+  <block id="375722a8c494be03ab26376d516886ce" category="list-text"><block ref="375722a8c494be03ab26376d516886ce" category="inline-link-rx"></block></block>
+  <block id="0671e957e985255493ea11c2ed171f0c" category="list-text"><block ref="0671e957e985255493ea11c2ed171f0c" category="inline-link-rx"></block></block>
+  <block id="94608a863eb00cecfa11af2b174a9912" category="list-text"><block ref="94608a863eb00cecfa11af2b174a9912" category="inline-link-rx"></block></block>
+  <block id="0b2ed2a82217ebd8a243caa1e7abf280" category="paragraph">如果您没有<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="756cb4188e7e3e88d58a6642b4e598fe" category="inline-link-rx"></block></block>
+  <block id="1bd793a562b94148544a0b1c2ca2a70f" category="list-text"><block ref="1bd793a562b94148544a0b1c2ca2a70f" category="inline-link-rx"></block></block>
+  <block id="e88bc1c2d4be3eab5eab4a9e93c1e63a" category="list-text"><block ref="e88bc1c2d4be3eab5eab4a9e93c1e63a" category="inline-link-rx"></block></block>
+  <block id="1748e846f144876b1d04e44a47b6bfc1" category="list-text">您应具有<block ref="64c17a4100b5d25f4987dd100dc9d010" category="inline-link-rx"></block>。</block>
+  <block id="a8bbd59ca2a81e7bb031ca075a23d475" category="list-text">如果出现提示，<block ref="ab60b4fc7da5cbb71bc719deeeffb706" category="inline-link-rx"></block>。</block>
 </blocks>

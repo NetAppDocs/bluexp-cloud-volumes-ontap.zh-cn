@@ -25,7 +25,7 @@ summary: 您可以在单系统配置中启动 Cloud Volumes ONTAP ，也可以�
 [[licensing]]
 * 已启动且正在运行的连接器。
 +
-** 您应具有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["与工作空间关联的连接器"^]。
+** 您应具有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["与工作空间关联的连接器"^]。
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["您应做好准备，使 Connector 始终保持运行"^]。
 ** 与 Connector 关联的服务帐户 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["应具有所需权限"^]
 
@@ -59,7 +59,7 @@ link:task-set-up-licensing-gcp.html["了解如何设置许可"]。
 . 从左侧导航菜单中、选择*存储>画布*。
 . 【订阅】在 " 画布 " 页面上，单击 * 添加工作环境 * 并按照提示进行操作。
 . * 选择一个位置 * ：选择 * Google Cloud* 和 * Cloud Volumes ONTAP * 。
-. 如果出现提示， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["创建连接器"^]。
+. 如果出现提示， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["创建连接器"^]。
 . *详细信息和凭据*：选择项目、指定集群名称、选择服务帐户、添加标签并指定凭据。
 +
 下表介绍了可能需要指导的字段：
@@ -88,7 +88,7 @@ link:task-set-up-licensing-gcp.html["了解如何设置许可"]。
 如果您在下拉列表中未看到任何其他项目、则表示您尚未将BlueXP服务帐户与其他项目关联。转到 Google Cloud 控制台，打开 IAM 服务，然后选择项目。将具有BlueXP角色的服务帐户添加到该项目中。您需要对每个项目重复此步骤。
 
 
-NOTE: 这是您为BlueXP设置的服务帐户、 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["如本页所述"^]。
+NOTE: 这是您为BlueXP设置的服务帐户、 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["如本页所述"^]。
 
 单击 * 添加订阅 * 将选定凭据与订阅关联。
 
@@ -314,7 +314,7 @@ BlueXP部署Cloud Volumes ONTAP 系统。您可以跟踪时间链中的进度。
 如果您在下拉列表中未看到任何其他项目、则表示您尚未将BlueXP服务帐户与其他项目关联。转到 Google Cloud 控制台，打开 IAM 服务，然后选择项目。将具有BlueXP角色的服务帐户添加到该项目中。您需要对每个项目重复此步骤。
 
 
-NOTE: 这是您为BlueXP设置的服务帐户、 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["如本页所述"^]。
+NOTE: 这是您为BlueXP设置的服务帐户、 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["如本页所述"^]。
 
 单击 * 添加订阅 * 将选定凭据与订阅关联。
 

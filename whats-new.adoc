@@ -132,7 +132,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 现在、与Internet完全隔离的任何云环境均支持Cloud Volumes ONTAP。这些环境仅支持基于节点的许可(BYOL)。不支持基于容量的许可。要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将您的BYOL许可证添加到数字电子钱包中、然后部署Cloud Volumes ONTAP。 
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["将连接器安装在无法访问Internet的位置"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["将连接器安装在无法访问Internet的位置"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["访问Connector上的BlueXP控制台"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["添加未分配的许可证"^]
 

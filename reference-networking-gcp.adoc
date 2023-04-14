@@ -184,7 +184,7 @@ Cloud Volumes ONTAP 和 Connector 在 Google Cloud 共享 VPC 以及独立 VPC �
 
 通过共享 VPC ，您可以跨多个项目配置和集中管理虚拟网络。您可以在 _host project_ 中设置共享 VPC 网络，并在 _service project_ 中部署 Connector 和 Cloud Volumes ONTAP 虚拟机实例。 https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud 文档：共享 VPC 概述"^]。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#shared-vpc-permissions["查看 Connector 部署中涉及的所需共享 VPC 权限"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["查看 Connector 部署中涉及的所需共享 VPC 权限"^]
 
 
 

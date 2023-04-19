@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-license-management.html 
-keywords: byol, bring your own license, expiration, warning, node-based byol, node license 
+keywords: byol, bring your own license, expiration, warning, node-based byol, node license, capacity 
 summary: 具有基于节点的 BYOL 的每个 Cloud Volumes ONTAP 系统都必须安装一个系统许可证，并具有有效的订阅。BlueXP通过管理许可证并在许可证到期前显示警告来简化此过程。 
 ---
 = 基于节点的 BYOL 许可证管理
@@ -20,6 +20,8 @@ summary: 具有基于节点的 BYOL 的每个 Cloud Volumes ONTAP 系统都必�
 TIP: 基于节点的许可证是上一代 BYOL for Cloud Volumes ONTAP 。基于节点的许可证仅可用于许可证续订。
 
 link:concept-licensing.html["了解有关 Cloud Volumes ONTAP 许可选项的更多信息"]。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["详细了解如何管理基于节点的许可证"^]。
 
 
 

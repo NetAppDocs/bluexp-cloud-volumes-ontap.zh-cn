@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-manage-node-licenses.html 
-keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator 
+keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator, extra, by-node 
 summary: 在数字电子钱包中管理基于节点的许可证，以确保每个 Cloud Volumes ONTAP 系统都有一个具有所需容量的有效许可证。 
 ---
 = 管理基于节点的许可证
@@ -14,7 +14,7 @@ summary: 在数字电子钱包中管理基于节点的许可证，以确保每�
 
 
 [role="lead"]
-在数字电子钱包中管理基于节点的许可证，以确保每个 Cloud Volumes ONTAP 系统都有一个具有所需容量的有效许可证。
+在电子钱包中管理基于节点的许可证、以确保每个Cloud Volumes ONTAP 系统都具有具有所需容量的有效许可证。
 
 基于节点的许可证 _ 是上一代许可模式（不适用于新客户）：
 

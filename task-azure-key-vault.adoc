@@ -13,7 +13,7 @@ summary: 将Azure密钥存储用于第三方密钥管理服务。
 
 您可以使用 link:https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts["Azure 密钥存储（ AKV ）"^] 保护Azure部署应用程序中的ONTAP 加密密钥。
 
-可使用AKV进行保护 link:https://docs.netapp.com/us-en/ontap/configure-netapp-volume-encryption-concept.html["NetApp 卷加密（ NVE ）密钥"^] 仅适用于数据SVM。
+可使用AKV进行保护 link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-netapp-volume-encryption-concept.html["NetApp 卷加密（ NVE ）密钥"^] 仅适用于数据SVM。
 
 可以使用命令行界面或ONTAP REST API启用使用AKV的密钥管理。
 

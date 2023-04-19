@@ -36,7 +36,7 @@ summary: 您可以在单系统配置中启动 Cloud Volumes ONTAP ，也可以�
 
 * 了解为Cloud Volumes ONTAP 设置许可所需的条件。
 +
-link:task-set-up-licensing-gcp.html["了解如何设置许可"]。
+link:task-set-up-licensing-google.html["了解如何设置许可"]。
 
 * Google Cloud API 应为 https://cloud.google.com/apis/docs/getting-started#enabling_apis["已在项目中启用"^]：
 +
@@ -132,7 +132,7 @@ TIP: 如果您要使用WORM和数据分层、则必须禁用云备份并部署9.
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +
 ** link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"]。
-** link:task-set-up-licensing-gcp.html["了解如何设置许可"]。
+** link:task-set-up-licensing-google.html["了解如何设置许可"]。
 
 
 . * 预配置软件包 * ：选择一个软件包以快速部署 Cloud Volumes ONTAP 系统，或者单击 * 创建自己的配置 * 。
@@ -362,7 +362,7 @@ link:reference-networking-gcp.html["详细了解网络要求"]。
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +
 ** link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"]。
-** link:task-set-up-licensing-gcp.html["了解如何设置许可"]。
+** link:task-set-up-licensing-google.html["了解如何设置许可"]。
 
 
 . * 预配置软件包 * ：选择一个软件包以快速部署 Cloud Volumes ONTAP 系统，或者单击 * 创建自己的配置 * 。

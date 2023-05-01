@@ -81,9 +81,9 @@ HA 配置可保持数据的高可用性，如下所示：
 +
 您的数据在传输过程中不会丢失数据。
 
-* 恢复时间目标（ RTO ）为 60 秒。
+* 恢复时间目标(Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery
 +
-如果发生中断、数据应在 60 秒或更短的时间内可用。
+如果发生中断、数据应在120秒或更短时间内可用。
 
 
 

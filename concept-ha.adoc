@@ -63,7 +63,7 @@ NOTE: 对于 Cloud Volumes ONTAP 9.10.0 及更早版本，在调解器上安装�
 HA 配置可保持数据的高可用性，如下所示：
 
 * 恢复点目标（ RPO ）为 0 秒。您的数据在传输过程中不会丢失数据。
-* 恢复时间目标（ RTO ）为 60 秒。如果发生中断、数据应在 60 秒或更短的时间内可用。
+* 恢复时间目标(Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery如果发生中断、数据应在120秒或更短时间内可用。
 
 
 

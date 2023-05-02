@@ -4869,4 +4869,5 @@
   <block id="ed40352f9ed490b733344d4ac872054a" category="list-text">恢复时间目标(Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery如果发生中断、数据应在120秒或更短时间内可用。</block>
   <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">恢复时间目标(Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery</block>
   <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">如果发生中断、数据应在120秒或更短时间内可用。</block>
+  <block id="51f3f3385ba782f2b8752155e908cf60" category="admonition">系统会在重新启动时自动创建快照。</block>
 </blocks>

@@ -83,4 +83,8 @@ image:screenshot_turn_off_redesign.png["屏幕截图：显示关闭 Cloud Volume
 +
 可能需要几分钟才能停止系统。您可以在以后从 " 工作环境 " 页重新启动系统。
 
++
+
+NOTE: 系统会在重新启动时自动创建快照。
+
 

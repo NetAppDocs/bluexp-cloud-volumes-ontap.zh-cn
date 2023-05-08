@@ -4870,4 +4870,55 @@
   <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">恢复时间目标(Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery</block>
   <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">如果发生中断、数据应在120秒或更短时间内可用。</block>
   <block id="51f3f3385ba782f2b8752155e908cf60" category="admonition">系统会在重新启动时自动创建快照。</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
+  <block id="3b9e0ca0be1cb4ee263fc0a386a705bc" category="paragraph">以下更改是在连接器3.9.29版中推出的。</block>
+  <block id="ef33a11b5d2090c4cf0e98ca1b79cc2d" category="section-title">现在、Google Cloud支持卡塔尔地区</block>
+  <block id="357b47742b71d8fe5b5936de05c522ec" category="paragraph">现在、适用于Cloud Volumes ONTAP 的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持卡塔尔地区。</block>
+  <block id="c8dc4f54d280ddaf5974f6c903e2152f" category="section-title">现在、Azure支持瑞典中部地区</block>
+  <block id="787bf3f02b45f65c827e46d88d4e7b24" category="paragraph">现在、适用于Cloud Volumes ONTAP 的Azure和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持瑞典中部地区。</block>
+  <block id="d38001cc976e394cf57ce77223bee1a1" category="section-title">支持在Azure澳大利亚东部部署HA多可用性区域</block>
+  <block id="bef0df4f898713881ef2098a621a3745" category="paragraph">Azure中的澳大利亚东部地区现在支持在Cloud Volumes ONTAP 9.12.1 GA及更高版本中部署HA多可用性区域。</block>
+  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">充电使用情况细分</block>
+  <block id="300bba824d9f2e68a0c89aef6da5fb8a" category="paragraph">现在、您可以了解订阅基于容量的许可证时要支付的费用。以下类型的使用情况报告可从BlueXP中的电子钱包下载。使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可以轻松地与他人共享。</block>
+  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Cloud Volumes ONTAP 软件包使用情况</block>
+  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">使用情况概要</block>
+  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">Storage VM使用情况</block>
+  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">卷使用量</block>
+  <block id="6ddb4c081e1822f2c34768a65c03eb8b" category="paragraph">有关详细信息，请参见 <block ref="ebcf101f07f46d44ff28084ad0f8bce3" category="inline-link-macro-rx"></block>。</block>
+  <block id="eaf72ee058835b38b417b55e2fb1c0af" category="section-title">现在、在访问BlueXP而未订阅商城时会显示通知</block>
+  <block id="5cc1493ad28334fdb28f7ed57f0e1d41" category="paragraph">现在、只要您在BlueXP中访问Cloud Volumes ONTAP 而没有市场订阅、就会显示一条通知。通知中指出："需要在此工作环境下进行商城订阅、以符合Cloud Volumes ONTAP 条款和条件。"</block>
+  <block id="d845f71cd5cacb5fdb671f6530007953" category="paragraph"><block ref="b614243ef1614b3040beb4428349cfdf" category="inline-link-rx"></block>。</block>
+  <block id="37532cd27e3c53471b1caed0ba1f90ed" category="section-title">下载使用情况报告</block>
+  <block id="819d4e1e06bcd4bb3249b60d928ccacc" category="paragraph">帐户管理员可以从BlueXP中的电子钱包下载四份使用情况报告。这些使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可捕获某个时间点的数据、并可轻松与他人共享。</block>
+  <block id="c2b73e18a5b530a547ba48a8177d13c3" category="inline-image-macro">屏幕截图显示了Digital Wallet Cloud Volumes ONTAP 基于容量的许可证页面、并突出显示了使用情况报告按钮。</block>
+  <block id="a1a4a48254cf8eb8962fbd995f5e7ea8" category="paragraph"><block ref="a1a4a48254cf8eb8962fbd995f5e7ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d11dcbec58d47bd13de1dcccfbd640ff" category="paragraph">以下报告可供下载。显示的容量值以TiB为单位。</block>
+  <block id="ad73e4897304c80496a4f15e033cefa7" category="list-text">*高级使用情况*：此报告显示了数字钱包中“Cloud Volumes ONTAP 软件包摘要”卡的确切内容。其中包括以下信息：</block>
+  <block id="c596c9291f76a11af1aefc235c262de6" category="list-text">总已用容量</block>
+  <block id="8dd7541d6c4e83402d88448119068a02" category="list-text">预先提交的总容量</block>
+  <block id="b01a146aed01aa8af61e034befc116ce" category="list-text">总BYOL容量</block>
+  <block id="109323142d354af9ccc7eb636b1dcbce" category="list-text">Marketplace合同总容量</block>
+  <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">PAYGO总容量</block>
+  <block id="76101a2de96d735db21249323914bc6c" category="list-text">* Cloud Volumes ONTAP 封装使用情况*：此报告显示了电子钱包中封装卡的确切内容。其中包括除优化I/O包之外的每个软件包的以下信息：</block>
+  <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">* Storage VM使用情况*：此报告显示如何在Cloud Volumes ONTAP 系统和Storage Virtual Machine (SVM)之间细分已充电容量。电子钱包中的任何屏幕均不提供此信息。其中包括以下信息：</block>
+  <block id="b16bfcaa9b0651f05b8e8894a2aebb31" category="list-text">工作环境ID (显示为UUID)</block>
+  <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">云</block>
+  <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">NetApp帐户ID</block>
+  <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">工作环境配置</block>
+  <block id="203c4205822c007d08ecafe163b02ea2" category="list-text">SVM name</block>
+  <block id="b567847dd629376ac84ed4958fd61687" category="list-text">已配置容量</block>
+  <block id="a09b8df9fd0007770b0a8c10f9a17d81" category="list-text">已充电容量汇总</block>
+  <block id="671095c17b0e9e0deda06cff2fa103e6" category="list-text">商城账单条款</block>
+  <block id="d38764d5edf26bd9b744840cd2ea3c17" category="list-text">Cloud Volumes ONTAP 软件包或功能</block>
+  <block id="a016fcdfd1d7159ffd537d78d4b68f74" category="list-text">收取SaaS Marketplace订阅名称费用</block>
+  <block id="fe6ac599d13d94a0ee0800482bec7e41" category="list-text">向SaaS Marketplace订阅ID收费</block>
+  <block id="33e97335db88f16611400cab965f95af" category="list-text">*卷使用量*：此报告显示如何在工作环境中按卷细分已充电容量。电子钱包中的任何屏幕均不提供此信息。其中包括以下信息：</block>
+  <block id="3edb9123c69629ec86469d96d3feb0aa" category="list-text">SVN名称</block>
+  <block id="cccc95b62282240886ee975a3f122adb" category="list-text">卷 ID</block>
+  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">Volume type</block>
+  <block id="3756f66a273f440893f16ee968ce3450" category="list-text">卷配置容量</block>
+  <block id="8b3da2ed858ee5c956acde26c9ef7dd0" category="admonition">此报告不包括FlexClone卷、因为这些类型的卷不会产生费用。</block>
+  <block id="a4bad4f350632a2078a6d795984ee60f" category="list-text">在*Usage* Cloud Volumes ONTAP 选项卡上，保持选中*基于容量的许可证*，然后单击*使用情况报告*。</block>
+  <block id="23e918e9f1c9f1bb5769dcc236489de2" category="paragraph">将下载使用情况报告。</block>
+  <block id="05655bb3cbd3604d6c71a1db823ad94f" category="list-text">打开下载的文件以访问报告。</block>
 </blocks>

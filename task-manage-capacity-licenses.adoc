@@ -79,6 +79,73 @@ image:screenshot-digital-wallet-packages.png["屏幕截图显示了基础知识�
 
 
 
+== 下载使用情况报告
+
+帐户管理员可以从BlueXP中的电子钱包下载四份使用情况报告。这些使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可捕获某个时间点的数据、并可轻松与他人共享。
+
+image:screenshot-digital-wallet-usage-report.png["屏幕截图显示了Digital Wallet Cloud Volumes ONTAP 基于容量的许可证页面、并突出显示了使用情况报告按钮。"]
+
+以下报告可供下载。显示的容量值以TiB为单位。
+
+* *高级使用情况*：此报告显示了数字钱包中“Cloud Volumes ONTAP 软件包摘要”卡的确切内容。其中包括以下信息：
++
+** 总已用容量
+** 预先提交的总容量
+** 总BYOL容量
+** Marketplace合同总容量
+** PAYGO总容量
+
+
+* * Cloud Volumes ONTAP 封装使用情况*：此报告显示了电子钱包中封装卡的确切内容。其中包括除优化I/O包之外的每个软件包的以下信息：
++
+** 总已用容量
+** 预先提交的总容量
+** 总BYOL容量
+** Marketplace合同总容量
+** PAYGO总容量
+
+
+* * Storage VM使用情况*：此报告显示如何在Cloud Volumes ONTAP 系统和Storage Virtual Machine (SVM)之间细分已充电容量。电子钱包中的任何屏幕均不提供此信息。其中包括以下信息：
++
+** 工作环境ID (显示为UUID)
+** 云
+** NetApp帐户ID
+** 工作环境配置
+** SVM name
+** 已配置容量
+** 已充电容量汇总
+** 商城账单条款
+** Cloud Volumes ONTAP 软件包或功能
+** 收取SaaS Marketplace订阅名称费用
+** 向SaaS Marketplace订阅ID收费
+
+
+* *卷使用量*：此报告显示如何在工作环境中按卷细分已充电容量。电子钱包中的任何屏幕均不提供此信息。其中包括以下信息：
++
+** 工作环境ID (显示为UUID)
+** SVN名称
+** 卷 ID
+** Volume type
+** 卷配置容量
++
+
+NOTE: 此报告不包括FlexClone卷、因为这些类型的卷不会产生费用。
+
+
+
+
+
+.步骤
+. 从BlueXP导航菜单中、选择*监管>数字电子钱包*。
+. 在*Usage* Cloud Volumes ONTAP 选项卡上，保持选中*基于容量的许可证*，然后单击*使用情况报告*。
++
+将下载使用情况报告。
+
+. 打开下载的文件以访问报告。
+
+
+
+
 == 将已购买的许可证添加到您的帐户
 
 如果您在数字电子钱包中看不到已购买的许可证、则需要将这些许可证添加到BlueXP中、以便为Cloud Volumes ONTAP 提供容量。

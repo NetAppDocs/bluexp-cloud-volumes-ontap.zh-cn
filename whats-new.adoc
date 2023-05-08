@@ -20,6 +20,50 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 
 
 
+== 2023年5月7日
+
+以下更改是在连接器3.9.29版中推出的。
+
+
+
+=== 现在、Google Cloud支持卡塔尔地区
+
+现在、适用于Cloud Volumes ONTAP 的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持卡塔尔地区。
+
+
+
+=== 现在、Azure支持瑞典中部地区
+
+现在、适用于Cloud Volumes ONTAP 的Azure和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持瑞典中部地区。
+
+
+
+=== 支持在Azure澳大利亚东部部署HA多可用性区域
+
+Azure中的澳大利亚东部地区现在支持在Cloud Volumes ONTAP 9.12.1 GA及更高版本中部署HA多可用性区域。
+
+
+
+=== 充电使用情况细分
+
+现在、您可以了解订阅基于容量的许可证时要支付的费用。以下类型的使用情况报告可从BlueXP中的电子钱包下载。使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可以轻松地与他人共享。
+
+* Cloud Volumes ONTAP 软件包使用情况
+* 使用情况概要
+* Storage VM使用情况
+* 卷使用量
+
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["管理基于容量的许可证"^]。
+
+
+
+=== 现在、在访问BlueXP而未订阅商城时会显示通知
+
+现在、只要您在BlueXP中访问Cloud Volumes ONTAP 而没有市场订阅、就会显示一条通知。通知中指出："需要在此工作环境下进行商城订阅、以符合Cloud Volumes ONTAP 条款和条件。"
+
+
+
 == 2023年4月4日
 
 从Cloud Volumes ONTAP 9.12.1 GA开始、AWS现在支持中国地区、如下所示。
@@ -48,7 +92,7 @@ summary: '了解BlueXP中Cloud Volumes ONTAP 管理的新增功能(以前称为C
 
 现在、"数字电子钱包"将显示您随Marketplace Private优惠购买的许可容量。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["了解如何查看帐户中的已用容量"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["了解如何查看帐户中的已用容量"^]。
 
 
 

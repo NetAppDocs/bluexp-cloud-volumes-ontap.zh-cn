@@ -236,6 +236,7 @@ NOTE: 在AWS商用云服务环境中、需要提供您自己的IAM角色。 link
 ====
 ** HA 调解器
 +
+--
 [source, json]
 ----
 {
@@ -251,12 +252,15 @@ NOTE: 在AWS商用云服务环境中、需要提供您自己的IAM角色。 link
 				"ec2:DescribeVpcs",
 				"ec2:ReplaceRoute",
 				"ec2:UnassignPrivateIpAddresses"
+                "sts:AssumeRole"
+                "ec2:DescribeSubnets"
 			],
 			"Resource": "*"
 		}
 	]
 }
 ----
+--
 
 
 . 创建IAM角色并将您创建的策略附加到该角色。

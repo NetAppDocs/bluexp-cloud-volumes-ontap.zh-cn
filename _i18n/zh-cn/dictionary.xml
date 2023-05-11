@@ -4833,11 +4833,8 @@
   <block id="23a6fec51e7e7d398bc37636e86e1522" category="list-text">当系统提示您选择充电方式时、选择Keystone订阅充电方式。</block>
   <block id="9ef6a991e8b332819da490002a529dfe" category="inline-image-macro">创建Cloud Volumes ONTAP 工作环境时"Keystone订阅"选项的屏幕截图。</block>
   <block id="002247e118f1fafbd5464e9559e97958" category="paragraph"><block ref="002247e118f1fafbd5464e9559e97958" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f299a90ea343277f03db9212a075b743" category="inline-link">备份和恢复</block>
-  <block id="3f61ed1be9573dd263bad0fb454ff936" category="cell">如果您计划使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="f6a24dd7c8333d6197d5c13fe0b2da54" category="inline-link-rx"></block> 使用 Cloud Volumes ONTAP 时，您需要启用 * 服务帐户 * 并选择具有预定义的存储管理员角色的服务帐户。 <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>。</block>
   <block id="b96b0568ece0515dc25527bb206dc624" category="list-text">* 服务 * ：选择要在此系统上使用的服务。要选择BlueXP备份和恢复或使用BlueXP分层、您必须已在步骤3中指定服务帐户。</block>
   <block id="00b55c6e8a613c3d6275f305157bc85f" category="admonition">如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复、并部署9.8或更高版本的Cloud Volumes ONTAP 工作环境。</block>
-  <block id="122fbba22f02b63cfbb1c31be8b85e8e" category="cell">如果您计划使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="f6a24dd7c8333d6197d5c13fe0b2da54" category="inline-link-rx"></block> 服务，您需要启用 * 服务帐户 * 开关，然后选择具有预定义存储管理员角色的服务帐户。</block>
   <block id="b52e55022a3899fe34e70373f16c4e69" category="list-text">* 服务 * ：选择要在此系统上使用的服务。要选择BlueXP备份和恢复或使用BlueXP分层、您必须已在步骤3中指定服务帐户。</block>
   <block id="4112533811706ae9c45d956e68299f46" category="summary">通过BlueXP数字钱包管理基于容量的许可证、确保您的NetApp帐户具有足够的容量来支持您的Cloud Volumes ONTAP 系统。</block>
   <block id="b37ea3f4c93245969c515634c741e9bf" category="paragraph">通过_BlueXP数字钱包_、您可以从一个位置管理Cloud Volumes ONTAP 的许可证。您可以添加新许可证并更新现有许可证。</block>
@@ -4854,14 +4851,13 @@
   <block id="325ef46eb3d6b63c4d60ef08cdd6176f" category="inline-image-macro">BlueXP数字钱包中Cloud Volumes ONTAP 页面的屏幕截图、其中更改充电方法按钮位于表的正上方。</block>
   <block id="bdc5814154b1b181ca8722ef08ed8a28" category="paragraph"><block ref="bdc5814154b1b181ca8722ef08ed8a28" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d592a4e1d68c1047f1f5e39639bee6bf" category="paragraph">您可能还会注意到、BlueXP数字钱包会刷新每种包类型的已用容量、以反映您刚刚所做的更改。</block>
-  <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="list-text">BlueXP层</block>
+  <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="inline-link-macro">BlueXP层</block>
   <block id="fdc0e66a431a39bf7d68fad74c362d1a" category="paragraph">Cloud Volumes ONTAP 不支持BlueXP层服务。创建卷时、必须直接从BlueXP的标准视图设置将数据分层到对象存储。</block>
   <block id="fd736cdd9cd06a871bed533b6e339d5c" category="summary">与标准AWS区域类似、您可以在AWS商用云服务(C2S)环境中使用BlueXP来部署Cloud Volumes ONTAP 、它可为您的云存储提供企业级功能。AWS C2S 是一个特定于美国的封闭区域智能社区；此页面上的说明仅适用于 AWS C2S 区域用户。</block>
   <block id="52c73bbae26b1c8362e849d7b7e0539f" category="paragraph">如果您计划对Cloud Volumes ONTAP 系统使用BlueXP备份和恢复、则节点的IAM角色必须包括以下第二个策略。</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link">BlueXP备份和恢复</block>
   <block id="d71976832e1023b23c1ad48c04841a20" category="paragraph">Cloud Volumes ONTAP 需要一个 Google Cloud 服务帐户，用于两种目的。第一种情况是启用时 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 在 Google Cloud 中将冷数据分层到低成本对象存储。第二个是启用时<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 将卷备份到低成本对象存储。</block>
   <block id="334457e955e851dd9304247244593287" category="summary">在BlueXP电子钱包中管理基于节点的许可证、以确保每个Cloud Volumes ONTAP 系统都具有具有所需容量的有效许可证。</block>
-  <block id="990d530a36683451e6ac666b1b224270" category="paragraph">在BlueXP数字钱包中管理基于节点的许可证、以确保每个Cloud Volumes ONTAP 系统都具有具有所需容量的有效许可证。</block>
   <block id="755544cd7e451192e8f70ab60b76986b" category="paragraph">通过BlueXP数字钱包页面、您可以查看有关每个PAYGO Cloud Volumes ONTAP 系统的详细信息、包括序列号和PAYGO许可证类型。</block>
   <block id="0ad53d9b2c46069812124453e75f768d" category="inline-image-macro">一个屏幕截图、显示BlueXP数字钱包页面中包含三个paygo许可证的表。每行都显示名称，系统类型，序列号，软件包以及用于管理许可证的链接。</block>
   <block id="53f70eaa2639e1c4c624cb3bcc1042c2" category="paragraph"><block ref="53f70eaa2639e1c4c624cb3bcc1042c2" category="inline-image-macro-rx" type="image"></block></block>
@@ -4884,7 +4880,7 @@
   <block id="26ee3f5587dc47d76226ef9b570828ff" category="paragraph">在BlueXP数字钱包中、该50 TiB将显示为已通过_Essentials Single Node_许可证付费。</block>
   <block id="3ea1315566755c191cc8996f86a9af02" category="paragraph">收费基于Keystone订阅中一个或多个Cloud Volumes ONTAP HA对的已提交容量大小。</block>
   <block id="46b39bb522bc6ece1b6bf75e81db3cbf" category="paragraph">系统会定期汇总每个卷的已配置容量并将其与Keystone订阅上的已提交容量进行比较、任何超时容量都会在Keystone订阅上按突发容量收费。</block>
-  <block id="100bae5c7e0821077de0fde9621000c1" category="paragraph"><block ref="bc493c0c6367fdf80f51179db159d9ed" category="inline-link-rx"></block>。</block>
+  <block id="100bae5c7e0821077de0fde9621000c1" category="list-text"><block ref="bc493c0c6367fdf80f51179db159d9ed" category="inline-link-rx"></block>。</block>
   <block id="73511701791994e2ed3cc40c68089746" category="paragraph">HA对支持Keystone订阅。目前，单节点系统不支持此许可选项。</block>
   <block id="9a762a1c55d92068610f4f2bc3e42d91" category="paragraph">了解如何开始使用Keystone订阅：</block>
   <block id="fc757430059ba1c5429f69be6c92e93b" category="paragraph">不支持将现有 Cloud Volumes ONTAP 系统转换为其他许可方法。当前的三种许可方法是基于容量的许可、Keystone订阅和基于节点的许可。例如，您不能将系统从基于节点的许可转换为基于容量的许可（反之亦然）。</block>
@@ -4898,7 +4894,6 @@
   <block id="de33988c687dff633cec70e80a05f959" category="paragraph">Keystone订阅是一种基于订阅的按需购买服务、可为那些更喜欢运营支出消费模式而不是前期资本支出或租赁的客户提供无缝的混合云体验。</block>
   <block id="8765b8141289c553bb6583d305152f50" category="paragraph">您可以从BlueXP部署的所有新版本的Cloud Volumes ONTAP 均支持Keystone订阅。</block>
   <block id="47e98d8abdf6a91192cff6466b616ce4" category="inline-link-macro">了解如何在BlueXP中开始使用Keystone订阅</block>
-  <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>。</block>
   <block id="e0277b8d41546d47637400507bf0f9f5" category="paragraph">删除工作环境时、不会删除由其他服务管理的资源、例如用于BlueXP备份和恢复的备份以及用于BlueXP分类的实例。您需要手动自行删除它们。否则，您将继续收到这些资源的费用。</block>
   <block id="54247681d588d23204e6fae74998cc72" category="list-text">如果您在工作环境中启用了BlueXP备份和恢复、请确定是否仍需要备份的数据、然后再执行此操作<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>。</block>
   <block id="6994b2fbca796c979abed69e3bd6275c" category="paragraph">BlueXP备份和恢复在设计上独立于Cloud Volumes ONTAP。在删除Cloud Volumes ONTAP 系统时、BlueXP备份和恢复不会自动删除备份、并且UI中当前不支持在删除系统后删除备份。</block>
@@ -4918,6 +4913,10 @@
   <block id="c5889acf4592b2ce675b7e0be182268e" category="paragraph">这些限制特定于BlueXP中的Cloud Volumes ONTAP 管理。要查看 Cloud Volumes ONTAP 软件本身的限制，<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
   <block id="829bbd3178c74725b58e1817c2135502" category="paragraph">Cloud Volumes ONTAP 还可与BlueXP备份和恢复相集成、提供备份和恢复功能、用于保护和长期归档云数据。</block>
   <block id="d37c9703eabd9a68dc0d1fb0b42d7881" category="paragraph">与BlueXP分类的集成有助于您了解数据上下文并识别敏感数据。</block>
-  <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone订阅是一种基于订阅的按需购买服务。 <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>。</block>
   <block id="5d52a8b51c505c42c6cec9d89c67795a" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> 集成到BlueXP UI中、因此您可以通过单一管理平台优化Cloud Volumes ONTAP 系统的操作、安全性和性能。</block>
+  <block id="e16f30d121bfd2f9150c3b384f4bafd7" category="cell">如果您计划使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 使用 Cloud Volumes ONTAP 时，您需要启用 * 服务帐户 * 并选择具有预定义的存储管理员角色的服务帐户。 <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>。</block>
+  <block id="59d8dcefa0c00dc439534f201c3b8cad" category="cell">如果您计划使用 <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> 或<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 服务，您需要启用 * 服务帐户 * 开关，然后选择具有预定义存储管理员角色的服务帐户。</block>
+  <block id="fe8304b9cc044b147f56b2d91e04417e" category="list-text"><block ref="fe8304b9cc044b147f56b2d91e04417e" category="inline-link-rx"></block></block>
+  <block id="1ff8c921e91129864e26470e27f163e4" category="paragraph"><block ref="f3dcfa97ec0e043d2a6bb618df9e88d1" category="inline-link-rx"></block>[了解有关NetApp Keystone 订阅的更多信息^]。</block>
+  <block id="082d2f26c5c0981f06c4a8fa0b1114d6" category="list-text"><block ref="f4e5a313767343aeb22db09ed17536ac" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -152,7 +152,7 @@ link:task-deploying-otc-aws.html["查看在AWS中启动Cloud Volumes ONTAP 的�
 
 == Keystone订阅
 
-Keystone订阅是一种基于订阅的按需购买服务。 link:concept-licensing.html#keystone-subscription["了解有关NetApp Keystone 订阅的更多信息"^]。
+Keystone订阅是一种基于订阅的按需购买服务。 link:concept-licensing.html#keystone-subscription["了解有关NetApp Keystone 订阅的更多信息"]。
 
 .步骤
 . 如果您还没有订阅， https://["请联系 NetApp"^]

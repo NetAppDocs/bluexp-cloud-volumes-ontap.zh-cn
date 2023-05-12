@@ -37,7 +37,7 @@ summary: 通过Cloud Volumes ONTAP 聚合支持Amazon EBS弹性卷功能、可�
 
 
 
-https://aws.amazon.com/ebs/features/["详细了解AWS中的弹性卷"^]
+https://["详细了解AWS中的弹性卷"^]
 
 
 
@@ -69,7 +69,7 @@ https://aws.amazon.com/ebs/features/["详细了解AWS中的弹性卷"^]
 * EC2：ModifyVolume
 
 
-中包括这些权限 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["NetApp 提供的策略"^]
+中包括这些权限 https://["NetApp 提供的策略"^]
 
 
 
@@ -186,6 +186,6 @@ link:task-manage-aggregates.html["了解如何增加聚合容量"]。
 如果目标Cloud Volumes ONTAP 系统支持弹性卷、则目标卷将放置在启用了弹性卷的聚合上(只要选择GP3或IO1磁盘)。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["了解如何设置数据复制"^]
+https://["了解如何设置数据复制"^]
 
 

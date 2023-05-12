@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-licensing-aws.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, digital wallet 
 summary: 在确定要对Cloud Volumes ONTAP 使用的许可选项后、需要执行一些步骤、然后才能在部署新系统时选择该许可选项。 
 ---
 = 在AWS中为Cloud Volumes ONTAP 设置许可
@@ -67,13 +67,13 @@ link:concept-licensing.html["了解有关基于容量的许可的更多信息"]�
 通过从NetApp购买许可证(BYOL)预付费用、以便在任何云提供商中部署Cloud Volumes ONTAP 系统。
 
 .步骤
-. https://cloud.netapp.com/contact-cds["要获取许可证，请联系 NetApp 销售人员"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["将您的NetApp 支持站点 帐户添加到BlueXP"^]
+. https://["要获取许可证，请联系 NetApp 销售人员"^]
+. https://["将您的NetApp 支持站点 帐户添加到BlueXP"^]
 +
-BlueXP会自动查询NetApp的许可服务、以获取与您的NetApp 支持站点 帐户关联的许可证的详细信息。如果没有错误、BlueXP会自动将许可证添加到数字电子钱包中。
+BlueXP会自动查询NetApp的许可服务、以获取与您的NetApp 支持站点 帐户关联的许可证的详细信息。如果没有错误、BlueXP会自动将许可证添加到电子钱包中。
 
 +
-要将许可证与Cloud Volumes ONTAP 结合使用、必须先从数字电子钱包中获取。如果需要，您可以 link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["手动将许可证添加到Digital Wallet中"]。
+您必须先从BlueXP电子钱包中获取许可证、然后才能在Cloud Volumes ONTAP 中使用它。如果需要，您可以 link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["手动将许可证添加到BlueXP电子钱包"]。
 
 . 在"画布"页面上、单击*添加工作环境*、然后按照BlueXP中的步骤进行操作。
 +
@@ -121,7 +121,7 @@ image:screenshot-professional.png["创建Cloud Volumes ONTAP 工作环境时的\
 link:task-deploying-otc-aws.html["查看在AWS中启动Cloud Volumes ONTAP 的分步说明"]。
 
 
-TIP: 您可以从"设置">"凭据"页面管理与AWS帐户关联的AWS Marketplace订阅。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["了解如何管理AWS帐户和订阅"^]
+TIP: 您可以从"设置">"凭据"页面管理与AWS帐户关联的AWS Marketplace订阅。 https://["了解如何管理AWS帐户和订阅"^]
 
 
 
@@ -150,19 +150,19 @@ link:task-deploying-otc-aws.html["查看在AWS中启动Cloud Volumes ONTAP 的�
 
 
 
-== Keystone Flex 订阅
+== Keystone订阅
 
-Keystone Flex订阅是一种基于按需购买的订阅服务。 link:concept-licensing.html#keystone-flex-subscription["了解有关 Keystone Flex 订阅的更多信息"]。
+Keystone订阅是一种基于订阅的按需购买服务。 link:concept-licensing.html#keystone-subscription["了解有关NetApp Keystone 订阅的更多信息"^]。
 
 .步骤
-. 如果您还没有订阅， https://www.netapp.com/forms/keystone-sales-contact/["请联系 NetApp"^]
-. mailto：ng-keystone-success@netapp.com (联系NetApp)授权您的BlueXP用户帐户进行一个或多个Keystone Flex订阅。
+. 如果您还没有订阅， https://["请联系 NetApp"^]
+. mailto：ng-keystone-success@netapp.com [联系NetApp]以授权您的BlueXP用户帐户进行一项或多项Keystone订阅。
 . 在 NetApp 授权您的帐户后， link:task-manage-keystone.html#link-a-subscription["链接您的订阅以用于 Cloud Volumes ONTAP"]。
 . 在"画布"页面上、单击*添加工作环境*、然后按照BlueXP中的步骤进行操作。
 +
-.. 当系统提示您选择一种充电方法时、请选择Keystone Flex订阅充电方法。
+.. 当系统提示您选择充电方式时、选择Keystone订阅充电方式。
 +
-image:screenshot-keystone.png["创建Cloud Volumes ONTAP 工作环境时Keystone Flex订阅选项的屏幕截图。"]
+image:screenshot-keystone.png["创建Cloud Volumes ONTAP 工作环境时\"Keystone订阅\"选项的屏幕截图。"]
 
 
 

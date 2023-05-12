@@ -23,7 +23,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 == 支持的 Storage VM 数量
 
-某些配置支持多个Storage VM。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。
+某些配置支持多个Storage VM。转至 https://["《 Cloud Volumes ONTAP 发行说明》"^] 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。
 
 
 
@@ -62,6 +62,6 @@ image:screenshot_svm.gif["屏幕抓图：显示 SVM 名称字段和必须单击�
 
 BlueXP不为Storage VM灾难恢复提供任何设置或编排支持。您必须使用 System Manager 或 CLI 。
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["《 SVM 灾难恢复准备快速指南》"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["《 SVM 灾难恢复快速指南》"^]
+* https://["《 SVM 灾难恢复准备快速指南》"^]
+* https://["《 SVM 灾难恢复快速指南》"^]
 

@@ -14,13 +14,13 @@ summary: 在 Azure 中的 Cloud Volumes ONTAP 上使用 Azure 存储服务加密
 
 
 [role="lead"]
-数据会使用在 Azure 中的 Cloud Volumes ONTAP 上自动加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 存储服务加密"] 使用 Microsoft 管理的密钥。但是，您可以按照此页面上的步骤使用自己的加密密钥。
+数据会使用在 Azure 中的 Cloud Volumes ONTAP 上自动加密 https://["Azure 存储服务加密"] 使用 Microsoft 管理的密钥。但是，您可以按照此页面上的步骤使用自己的加密密钥。
 
 
 
 == 数据加密概述
 
-Cloud Volumes ONTAP 数据在 Azure 中使用自动加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 存储服务加密"^]。默认实施使用 Microsoft 管理的密钥。无需设置。
+Cloud Volumes ONTAP 数据在 Azure 中使用自动加密 https://["Azure 存储服务加密"^]。默认实施使用 Microsoft 管理的密钥。无需设置。
 
 如果要在 Cloud Volumes ONTAP 中使用客户管理的密钥，则需要完成以下步骤：
 
@@ -54,7 +54,7 @@ Azure HA单一可用性区域::
 --
 * Cloud Volumes ONTAP 的所有Azure存储帐户均使用客户管理的密钥进行加密。^1^
 * 任何新存储帐户(例如、添加磁盘或聚合时)也会使用相同的密钥。^1^
-* 从ONTAP 9.10.1P3开始、对于NVRAM和核心磁盘、BlueXP使用 https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["磁盘加密集"^]，用于管理具有受管磁盘的加密密钥。较低版本将使用Microsoft管理的密钥、而不是客户管理的密钥。
+* 从ONTAP 9.10.1P3开始、对于NVRAM和核心磁盘、BlueXP使用 https://["磁盘加密集"^]，用于管理具有受管磁盘的加密密钥。较低版本将使用Microsoft管理的密钥、而不是客户管理的密钥。
 
 
 --
@@ -62,7 +62,7 @@ Azure HA单一可用性区域::
 +
 --
 * 适用于 Cloud Volumes ONTAP 的所有 Azure 存储帐户均使用客户管理的密钥进行加密。^1^
-* 对于根磁盘、启动磁盘和数据磁盘、BlueXP使用 https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["磁盘加密集"^]，用于管理具有受管磁盘的加密密钥。
+* 对于根磁盘、启动磁盘和数据磁盘、BlueXP使用 https://["磁盘加密集"^]，用于管理具有受管磁盘的加密密钥。
 * 任何新数据磁盘也会使用相同的磁盘加密集。
 * 从ONTAP 9.9.91P7开始、对于NVRAM和核心磁盘、BlueXP使用磁盘加密集、通过该加密集可以管理具有受管磁盘的加密密钥。较低版本将使用Microsoft管理的密钥、而不是客户管理的密钥。
 
@@ -81,7 +81,7 @@ Azure HA单一可用性区域::
 密钥存储必须位于您计划创建 Cloud Volumes ONTAP 系统的同一 Azure 订阅和区域中。
 
 .步骤
-. https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["在 Azure 订阅中创建密钥存储"^]。
+. https://["在 Azure 订阅中创建密钥存储"^]。
 +
 请注意密钥存储的以下要求：
 
@@ -96,7 +96,7 @@ Azure HA单一可用性区域::
 
 
 
-. https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["在密钥存储中生成密钥"^]。
+. https://["在密钥存储中生成密钥"^]。
 +
 请注意此密钥的以下要求：
 
@@ -126,7 +126,7 @@ Azure HA单一可用性区域::
 "Microsoft.KeyVault/vaults/accessPolicies/write"
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["查看最新的权限列表"^]
+https://["查看最新的权限列表"^]
 
 
 NOTE: 在一个分区中、HA对不需要这些权限。
@@ -143,7 +143,7 @@ NOTE: 在一个分区中、HA对不需要这些权限。
 记下 * 名称 * 和 * 资源组 * 。您需要在下一步中指定这些值。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["了解有关此 API 调用的更多信息"^]。
+https://["了解有关此 API 调用的更多信息"^]。
 
 . 使用以下BlueXP API调用获取存储中的密钥列表。
 +
@@ -156,7 +156,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 记下 * 密钥名称 * 。您需要在下一步中指定该值（以及存储名称）。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["了解有关此 API 调用的更多信息"^]。
+https://["了解有关此 API 调用的更多信息"^]。
 
 . 使用以下BlueXP API调用创建Cloud Volumes ONTAP 系统。
 +
@@ -177,7 +177,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-haworking-environments["了解有关此 API 调用的更多信息"^]。
+https://["了解有关此 API 调用的更多信息"^]。
 
 .. 对于单节点系统：
 +
@@ -196,7 +196,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-vsaworking-environments["了解有关此 API 调用的更多信息"^]。
+https://["了解有关此 API 调用的更多信息"^]。
 
 
 

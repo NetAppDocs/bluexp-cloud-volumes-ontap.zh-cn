@@ -25,7 +25,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 == 支持的 Storage VM 数量
 
-从 9.7 版开始，特定 Cloud Volumes ONTAP 配置支持多个 Storage VM 。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。
+从 9.7 版开始，特定 Cloud Volumes ONTAP 配置支持多个 Storage VM 。转至 https://["《 Cloud Volumes ONTAP 发行说明》"^] 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。
 
 所有其他 Cloud Volumes ONTAP 配置均支持一个提供数据的 Storage VM 和一个用于灾难恢复的目标 Storage VM 。如果源 Storage VM 发生中断，您可以激活目标 Storage VM 以进行数据访问。
 
@@ -36,7 +36,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 每个 EC2 实例支持每个网络接口的最大专用 IPv4 地址数。在 AWS 中为新 Storage VM 分配 IP 地址之前，您需要验证此限制。
 
 .步骤
-. 转到 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["《 Cloud Volumes ONTAP 发行说明》中的 " 存储限制 " 部分"^]。
+. 转到 https://["《 Cloud Volumes ONTAP 发行说明》中的 " 存储限制 " 部分"^]。
 . 确定实例类型中每个接口的最大 IP 地址数。
 . 请记下此数字，因为在 AWS 中分配 IP 地址时，您将在下一节中需要此数字。
 

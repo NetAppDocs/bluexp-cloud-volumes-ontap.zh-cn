@@ -34,7 +34,7 @@ Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、
 
 如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。
 
-确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 文档：设置 AutoSupport"^]。
+确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见 https://["ONTAP 文档：设置 AutoSupport"^]。
 
 
 
@@ -109,7 +109,7 @@ link:task-connecting-to-otc.html["了解如何通过SSH连接到Cloud Volumes ON
 . 如果状态仍为FAILED、请验证Cloud Volumes ONTAP 与连接器之间是否通过端口3128建立连接。
 . 如果在验证是否存在连接后状态ID仍然失败、请通过SSH连接到连接器。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["了解有关连接到Linux VM for the Connector的更多信息"^]
+https://["了解有关连接到Linux VM for the Connector的更多信息"^]
 
 . 转至`/opt/application/netapp/cloudmanager/docker_occm/data/`
 . 打开代理配置文件`squid.conf`

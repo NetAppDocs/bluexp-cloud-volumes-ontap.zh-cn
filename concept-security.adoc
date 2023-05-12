@@ -52,7 +52,7 @@ endif::gcp[]
 
 === NetApp 加密解决方案（ NVE 和 NAE ）
 
-Cloud Volumes ONTAP 支持 https://www.netapp.com/us/media/ds-3899.pdf["NetApp 卷加密（ NVE ）和 NetApp 聚合加密（ NAE ）"^]。NVE 和 NAE 是基于软件的解决方案，支持（ FIPS ） 140-2 合规的卷空闲数据加密。NVE 和 NAE 都使用 AES 256 位加密。
+Cloud Volumes ONTAP 支持 https://["NetApp 卷加密（ NVE ）和 NetApp 聚合加密（ NAE ）"^]。NVE 和 NAE 是基于软件的解决方案，支持（ FIPS ） 140-2 合规的卷空闲数据加密。NVE 和 NAE 都使用 AES 256 位加密。
 
 * NVE 一次对一个卷的空闲数据进行加密。每个数据卷都有自己唯一的加密密钥。
 * NAE 是 NVE 的扩展—它对每个卷的数据进行加密，并且这些卷在聚合中共享一个密钥。NAE 还允许对聚合中所有卷之间的公用块进行重复数据删除。
@@ -78,7 +78,7 @@ ifdef::aws[]
 
 === AWS 密钥管理服务
 
-在 AWS 中启动 Cloud Volumes ONTAP 系统时，您可以使用启用数据加密 http://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS 密钥管理服务（ KMS ）"^]。BlueXP使用客户主密钥(CMK)请求数据密钥。
+在 AWS 中启动 Cloud Volumes ONTAP 系统时，您可以使用启用数据加密 http://["AWS 密钥管理服务（ KMS ）"^]。BlueXP使用客户主密钥(CMK)请求数据密钥。
 
 
 TIP: 创建 Cloud Volumes ONTAP 系统后，您无法更改 AWS 数据加密方法。
@@ -93,7 +93,7 @@ ifdef::azure[]
 
 === Azure 存储服务加密
 
-数据会使用在 Azure 中的 Cloud Volumes ONTAP 上自动加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 存储服务加密"^] 使用 Microsoft 管理的密钥。
+数据会使用在 Azure 中的 Cloud Volumes ONTAP 上自动加密 https://["Azure 存储服务加密"^] 使用 Microsoft 管理的密钥。
 
 如果愿意，您可以使用自己的加密密钥。 link:task-set-up-azure-encryption.html["了解如何设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥"]。
 
@@ -105,7 +105,7 @@ ifdef::gcp[]
 
 === Google Cloud Platform 默认加密
 
-https://cloud.google.com/security/encryption-at-rest/["Google Cloud Platform 空闲数据加密"^] 默认情况下， Cloud Volumes ONTAP 处于启用状态。无需设置。
+https://["Google Cloud Platform 空闲数据加密"^] 默认情况下， Cloud Volumes ONTAP 处于启用状态。无需设置。
 
 虽然Google Cloud Storage始终会在数据写入磁盘之前对数据进行加密、但您可以使用BlueXP API创建一个使用_customer-managed encryption keys_的Cloud Volumes ONTAP 系统。这些密钥可通过云密钥管理服务在 GCP 中生成和管理。 link:task-setting-up-gcp-encryption.html["了解更多信息。"]。
 
@@ -119,9 +119,9 @@ endif::gcp[]
 
 称为 _Vscan_ 的 ONTAP 病毒扫描将同类最佳的第三方防病毒软件与 ONTAP 功能相结合，让您可以灵活地控制扫描哪些文件以及何时扫描。
 
-有关 Vscan 支持的供应商，软件和版本的信息，请参见 http://mysupport.netapp.com/matrix["NetApp 互操作性表"^]。
+有关 Vscan 支持的供应商，软件和版本的信息，请参见 http://["NetApp 互操作性表"^]。
 
-有关如何在 ONTAP 系统上配置和管理防病毒功能的信息，请参见 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["《 ONTAP 9 防病毒配置指南》"^]。
+有关如何在 ONTAP 系统上配置和管理防病毒功能的信息，请参见 http://["《 ONTAP 9 防病毒配置指南》"^]。
 
 
 

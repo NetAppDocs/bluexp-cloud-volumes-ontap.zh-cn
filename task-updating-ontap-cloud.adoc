@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-updating-ontap-cloud.html 
-keywords: update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading 
+keywords: update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading, cloud backup 
 summary: 从BlueXP升级Cloud Volumes ONTAP 以访问最新的新功能和增强功能。在升级软件之前，您应准备好 Cloud Volumes ONTAP 系统。 
 ---
 = 升级 Cloud Volumes ONTAP 软件
@@ -172,7 +172,7 @@ TIP: 未注册支持的系统仍会收到新版本可用时在BlueXP中显示的
 
 必须在 Cloud Volumes ONTAP HA 对上启用自动交还（这是默认设置）。否则，操作将失败。
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["ONTAP 9 文档：用于配置自动交还的命令"^]
+http://["ONTAP 9 文档：用于配置自动交还的命令"^]
 
 
 
@@ -181,7 +181,7 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D
 如果 Cloud Volumes ONTAP 系统具有活动的 SnapMirror 关系、最好在更新 Cloud Volumes ONTAP 软件之前暂停传输。暂停传输可防止 SnapMirror 故障。您必须暂停从目标系统进行的传输。
 
 
-NOTE: 尽管 Cloud Backup 使用 SnapMirror 的实施来创建备份文件（称为 SnapMirror Cloud ），但在升级系统时，备份不需要暂停。
+NOTE: 即使BlueXP备份和恢复使用SnapMirror的实施来创建备份文件(称为SnapMirror Cloud)、在升级系统时也不需要暂停备份。
 
 .关于此任务
 这些步骤介绍了如何将 System Manager 用于版本 9.3 和更高版本。
@@ -279,7 +279,7 @@ NOTE: 目前、您只能通过BlueXP用户界面升级到最新可用的ONTAP �
 请访问NetApp知识库以查看分步说明：
 
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["NetApp知识库：如何将BlueXP配置为HTTPS服务器以托管升级映像"^]
+https://["NetApp知识库：如何将BlueXP配置为HTTPS服务器以托管升级映像"^]
 
 
 
@@ -293,7 +293,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Ho
 
 NOTE: 默认情况下，预定义的 Cloud Volumes ONTAP 安全组允许出站 HTTP 连接。
 
-. 从获取软件映像 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NetApp 支持站点"^]。
+. 从获取软件映像 https://["NetApp 支持站点"^]。
 . 将软件映像复制到 Connector 或 HTTP 服务器上要从中提供文件的目录中。
 +
 有两个可用路径。正确的路径取决于您的Connector版本。
@@ -342,6 +342,6 @@ maxDownloadSessions_ 的值可以是 1 或大于 1 的任意整数。如果值�
 
 请注意， 32 是一个示例值。应使用的值取决于 NAT 配置以及可以同时拥有的会话数。
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["了解有关 /ocem/config API 调用的更多信息"^]。
+https://["了解有关 /ocem/config API 调用的更多信息"^]。
 
 endif::gcp[]

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-iam-roles.html 
-keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions 
+keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions, cloud backup 
 summary: 必须将具有所需权限的IAM角色附加到每个Cloud Volumes ONTAP 节点。HA调解器也是如此。让BlueXP为您创建IAM角色最简单、但您可以使用自己的角色。 
 ---
 = 为Cloud Volumes ONTAP 设置IAM角色
@@ -120,7 +120,7 @@ NOTE: 在AWS商用云服务环境中、需要提供您自己的IAM角色。 link
 ====
 ** Cloud Volumes ONTAP 节点的备份策略
 +
-如果您计划在Cloud Volumes ONTAP 系统中使用云备份、则节点的IAM角色必须包括下面所示的第二个策略。
+如果您计划对Cloud Volumes ONTAP 系统使用BlueXP备份和恢复、则节点的IAM角色必须包括以下第二个策略。
 
 +
 [role="tabbed-block"]
@@ -270,6 +270,6 @@ NOTE: 在AWS商用云服务环境中、需要提供您自己的IAM角色。 link
 现在、您可以在创建新的Cloud Volumes ONTAP 工作环境时选择IAM角色。
 
 .更多信息
-* https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS文档：创建IAM策略"^]
-* https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS文档：创建IAM角色"^]
+* https://["AWS文档：创建IAM策略"^]
+* https://["AWS文档：创建IAM角色"^]
 

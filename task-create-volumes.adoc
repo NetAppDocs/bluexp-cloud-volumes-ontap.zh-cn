@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-create-volumes.html 
-keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
+keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates, cloud backup 
 summary: 如果在启动初始Cloud Volumes ONTAP 系统后需要更多存储、则可以从BlueXP为NFS、CIFS或iSCSI创建新的FlexVol 卷。 
 ---
 = 创建 FlexVol 卷
@@ -87,7 +87,7 @@ endif::aws[]
 | 卷大小 | 您可以输入的最大大小在很大程度上取决于您是否启用精简配置、这样您就可以创建一个大于当前可用物理存储的卷。 
 
 
-| Tags | 添加到卷的标记将与关联 https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["应用程序模板服务"^]可帮助您组织和简化资源管理。 
+| Tags | 添加到卷的标记将与关联 https://["应用程序模板服务"^]可帮助您组织和简化资源管理。 
 
 
 | Storage VM (SVM) | Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其视为 SVM 或 SVM 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但某些配置支持额外的 Storage VM 。您可以为新卷指定Storage VM。 
@@ -145,20 +145,20 @@ endif::aws[]
 
 ifdef::azure[]
 
-*** 要将 Azure AD 域服务配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=AADDC Computers * 或 * OU=AADDC Users* 。https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure 文档：在 Azure AD 域服务托管域中创建组织单位（ OU ）"^]
+*** 要将 Azure AD 域服务配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=AADDC Computers * 或 * OU=AADDC Users* 。https://["Azure 文档：在 Azure AD 域服务托管域中创建组织单位（ OU ）"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-*** 要将 Google Managed Microsoft AD 配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=Computers ， OU=Cloud* 。https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud 文档： Google Managed Microsoft AD 中的组织单位"^]
+*** 要将 Google Managed Microsoft AD 配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=Computers ， OU=Cloud* 。https://["Google Cloud 文档： Google Managed Microsoft AD 中的组织单位"^]
 
 
 endif::gcp[]
 
 DNS 域:: Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。
-NTP 服务器:: 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自动化文档"^] 了解详细信息。
+NTP 服务器:: 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://["BlueXP自动化文档"^] 了解详细信息。
 +
 --
 请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。
@@ -252,7 +252,7 @@ image:screenshot_define_cvo_vol_from_template.png["显示创建卷所需填写�
 . 在_context_下、工作环境将填入您启动的工作环境的名称。选择要创建卷的* Storage VM*。
 . 为模板中未硬编码的所有参数添加值。请参见 <<create a volume,创建卷>> 有关完成Cloud Volumes ONTAP 卷部署所需的所有参数的详细信息。
 . 单击*应用*将配置的参数保存到选定操作。
-. 如果不需要定义其他操作(例如配置Cloud Backup)、请单击*保存模板*。
+. 如果没有需要定义的其他操作(例如，配置BlueXP备份和恢复)，请单击*保存模板*。
 +
 如果还有其他操作，请单击左窗格中的操作以显示需要完成的参数。
 
@@ -270,7 +270,7 @@ Cloud Volumes ONTAP 会配置卷并显示一个页面，以便您可以查看进
 
 image:screenshot_template_creating_resource_cvo.png["显示通过模板创建新卷的进度的屏幕截图。"]
 
-此外，如果在模板中实施了任何二级操作，例如在卷上启用 Cloud Backup ，则也会执行此操作。
+此外、如果在模板中实施了任何二级操作、例如在卷上启用BlueXP备份和恢复、则也会执行该操作。
 
 
 

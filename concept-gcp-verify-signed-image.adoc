@@ -22,7 +22,7 @@ summary: 通过Cloud Volumes ONTAP 映像摘要文件工具验证导出的Google
 
 下面简要介绍了Google Cloud签名映像验证工作流过程。
 
-* 从 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^]下、下载包含以下文件的Google Cloud归档：
+* 从 https://["NSS"^]下、下载包含以下文件的Google Cloud归档：
 +
 ** 签名摘要(.sig)
 ** 包含公共密钥的证书(.pem)

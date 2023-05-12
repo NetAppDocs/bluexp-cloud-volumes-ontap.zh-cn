@@ -33,7 +33,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage
 
 您可以为单节点系统或 HA 对购买的许可证数量不受限制。
 
-请注意，磁盘限制可能会阻止您单独使用磁盘来达到容量限制。您可以通过超出磁盘限制 link:concept-data-tiering.html["将非活动数据分层到对象存储"]。有关磁盘限制的信息，请参见 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["《 Cloud Volumes ONTAP 发行说明》中的存储限制"^]。
+请注意，磁盘限制可能会阻止您单独使用磁盘来达到容量限制。您可以通过超出磁盘限制 link:concept-data-tiering.html["将非活动数据分层到对象存储"]。有关磁盘限制的信息，请参见 https://["《 Cloud Volumes ONTAP 发行说明》中的存储限制"^]。
 
 
 
@@ -41,7 +41,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage
 
 创建基于节点的BYOL系统时、BlueXP会提示您输入许可证的序列号和NetApp 支持站点 帐户。BlueXP使用帐户从NetApp下载许可证文件并将其安装在Cloud Volumes ONTAP 系统上。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["了解如何将NetApp 支持站点 帐户添加到BlueXP"^]。
+https://["了解如何将NetApp 支持站点 帐户添加到BlueXP"^]。
 
 如果BlueXP无法通过安全Internet连接访问许可证文件、您可以 link:task-manage-node-licenses.html["自行获取文件、然后手动将文件上传到BlueXP"]。
 

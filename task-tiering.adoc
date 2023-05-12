@@ -141,11 +141,11 @@ ifdef::aws[]
 
 === 将冷数据分层到 AWS S3 的要求
 
-确保 Cloud Volumes ONTAP 已连接到 S3 。提供该连接的最佳方法是创建到 S3 服务的 VPC 端点。有关说明，请参见 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文档：创建网关端点"^]。
+确保 Cloud Volumes ONTAP 已连接到 S3 。提供该连接的最佳方法是创建到 S3 服务的 VPC 端点。有关说明，请参见 https://["AWS 文档：创建网关端点"^]。
 
 创建 VPC 端点时，请确保选择与 Cloud Volumes ONTAP 实例对应的区域、 VPC 和路由表。您还必须修改安全组才能添加出站 HTTPS 规则、该规则允许通信到 S3 端点。否则， Cloud Volumes ONTAP 无法连接到 S3 服务。
 
-如果遇到任何问题，请参见 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS 支持知识中心：为什么我无法使用网关 VPC 端点连接到 S3 存储分段？"^]。
+如果遇到任何问题，请参见 https://["AWS 支持知识中心：为什么我无法使用网关 VPC 端点连接到 S3 存储分段？"^]。
 
 endif::aws[]
 
@@ -162,7 +162,7 @@ ifdef::azure[]
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-默认情况下、权限包括在自定义角色中。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"^]
+默认情况下、权限包括在自定义角色中。 https://["查看Connector的Azure权限"^]
 
 endif::azure[]
 
@@ -172,7 +172,7 @@ ifdef::gcp[]
 
 === 将冷数据分层到 Google Cloud 存储分段的要求
 
-* 必须为 Cloud Volumes ONTAP 所在的子网配置专用 Google 访问。有关说明，请参见 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 文档：配置私有 Google Access"^]。
+* 必须为 Cloud Volumes ONTAP 所在的子网配置专用 Google 访问。有关说明，请参见 https://["Google Cloud 文档：配置私有 Google Access"^]。
 * 服务帐户必须附加到Cloud Volumes ONTAP。
 +
 link:task-creating-gcp-service-account.html["了解如何设置此服务帐户"]。
@@ -297,7 +297,7 @@ Cloud Volumes ONTAP 可以将数据从数据保护卷分层到容量层。如果
 image:screenshot_replication_tiering.gif["复制卷时显示 S3 分层选项的屏幕快照。"]
 
 +
-有关复制数据的帮助，请参见 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["将数据复制到云中或从云中复制数据"^]。
+有关复制数据的帮助，请参见 https://["将数据复制到云中或从云中复制数据"^]。
 
 
 

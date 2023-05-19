@@ -52,9 +52,6 @@ BlueXP提供了三种Cloud Volumes ONTAP 升级方式：
 | 9.12.1 | 9.13.0 
 
 
-| 9.12.1 | 9.13.0 
-
-
 | 9.12.0 | 9.12.1 
 
 
@@ -303,15 +300,14 @@ NOTE: 默认情况下，预定义的 Cloud Volumes ONTAP 安全组允许出站 H
 ** `/opt/application/netapp/cloudmanager/ontap/images/`
 
 
-. 在BlueXP的工作环境中、单击菜单图标、然后单击*高级>更新Cloud Volumes ONTAP *。
-. 在更新软件页面上，输入 URL ，然后单击 * 更改映像 * 。
+. 在BlueXP的工作环境中、单击*。 (椭面图标)*，然后单击*更新Cloud Volumes ONTAP *。
+. 在“更新Cloud Volumes ONTAP 版本”页上，输入URL，然后单击*Change Image*。
 +
 如果您已将软件映像复制到上述路径中的 Connector ，则应输入以下 URL ：
 
 +
 http://<Connector-private-IP-address>/ontap/images/<image-file-name>
 
-. 单击 * 继续 * 进行确认。
 
 
 .结果

@@ -32,7 +32,7 @@ summary: 从BlueXP升级Cloud Volumes ONTAP 以访问最新的新功能和增强
 
 === 如何升级
 
-BlueXP提供了三种Cloud Volumes ONTAP 升级方式：
+BlueXP提供了两种升级Cloud Volumes ONTAP 的方法：
 
 * 在工作环境中显示以下升级通知
 * 将升级映像放置在HTTPS位置、然后为BlueXP提供URL

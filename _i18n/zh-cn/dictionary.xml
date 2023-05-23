@@ -4663,7 +4663,6 @@
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">在_Add aggregate_屏幕中、创建聚合。</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">显示添加聚合进度的屏幕截图。</block>
   <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1f0652f3e88178c774443201328e4d2a" category="paragraph">BlueXP提供了三种Cloud Volumes ONTAP 升级方式：</block>
   <block id="61c67604de243e1d1f09464a53018e48" category="list-text">在聚合标题下、单击椭圆按钮、然后选择*查看聚合详细信息*。</block>
   <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
@@ -4913,4 +4912,5 @@
   <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>。</block>
   <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone订阅是一种基于订阅的按需购买服务。 <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>。</block>
   <block id="57a6d3c65b0af592c913eb5564c15458" category="admonition">在URL中，*image-file-name*必须遵循“cot.image.9.13.1P2.tgz”格式。</block>
+  <block id="bed8a3185a4b2ddb1020be5c9da45358" category="paragraph">BlueXP提供了两种升级Cloud Volumes ONTAP 的方法：</block>
 </blocks>

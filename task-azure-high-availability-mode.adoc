@@ -30,7 +30,7 @@ summary: 应启用Microsoft Azure的高可用性模式、以缩短计划外故�
 拥有"所有者"权限的Azure用户可以从Azure命令行界面启用此功能。
 
 .步骤
-. https://["从Azure门户访问Azure Cloud Shell"^]
+. https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart["从Azure门户访问Azure Cloud Shell"^]
 . 注册高可用性模式功能：
 +
 [source, azurecli]

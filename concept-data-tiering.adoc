@@ -58,7 +58,7 @@ BlueXP会为每个工作环境创建一个S3存储分段、并将其命名为fab
 --
 如果您不打算访问非活动数据、可以通过将存储类更改为以下类型之一来降低存储成本：_Intelligent Tiering"、_one-Zone Inrequent Access_、_Standard-Inrequent Access_或_S3 Glacier即时检索_。更改存储类时，如果 30 天后未访问非活动数据，则非活动数据将从标准存储类开始，并过渡到选定的存储类。
 
-如果您确实访问数据，访问成本会更高，因此在更改存储类之前，请考虑这一点。 https://["了解有关 Amazon S3 存储类的更多信息"^]。
+如果您确实访问数据，访问成本会更高，因此在更改存储类之前，请考虑这一点。 https://aws.amazon.com/s3/storage-classes["了解有关 Amazon S3 存储类的更多信息"^]。
 
 您可以在创建工作环境时选择一个存储类，之后可以随时对其进行更改。有关更改存储类的详细信息，请参见 link:task-tiering.html["将非活动数据分层到低成本对象存储"]。
 
@@ -101,7 +101,7 @@ BlueXP将使用以下设置创建存储帐户：
 --
 如果您不打算访问容量层中的非活动数据、则可以通过更改为_cool_存储层来降低存储成本。将存储层更改为冷存储层后、非活动容量层数据将直接移至冷存储层。
 
-如果您确实访问数据，访问成本会更高，因此在更改存储层之前，请考虑这一点。 https://["详细了解 Azure Blob 存储访问层"^]。
+如果您确实访问数据，访问成本会更高，因此在更改存储层之前，请考虑这一点。 https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["详细了解 Azure Blob 存储访问层"^]。
 
 您可以在创建工作环境时选择一个存储层，之后可以随时对其进行更改。有关更改存储层的详细信息，请参见 link:task-tiering.html["将非活动数据分层到低成本对象存储"]。
 
@@ -140,7 +140,7 @@ BlueXP会为每个工作环境创建一个分段、并将其命名为fabric-pool
 存储类:: 分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时、非活动数据会直接移至选定的类。
 +
 --
-如果您确实访问数据，访问成本会更高，因此在更改存储类之前，请考虑这一点。 https://["了解有关 Google Cloud Storage 存储类的更多信息"^]。
+如果您确实访问数据，访问成本会更高，因此在更改存储类之前，请考虑这一点。 https://cloud.google.com/storage/docs/storage-classes["了解有关 Google Cloud Storage 存储类的更多信息"^]。
 
 您可以在创建工作环境时选择一个存储层，之后可以随时对其进行更改。有关更改存储类的详细信息，请参见 link:task-tiering.html["将非活动数据分层到低成本对象存储"]。
 
@@ -166,7 +166,7 @@ endif::gcp[]
 某些分层策略具有相关的最小冷却周期、这将设置卷中的用户数据必须保持非活动状态的时间、以便将数据视为“冷”并移动到容量层。将数据写入聚合时，冷却期开始。
 
 
-TIP: 您可以将最小冷却期和默认聚合阈值更改为 50% （下文将提供更多信息）。 http://["了解如何更改冷却期"^] 和 http://["了解如何更改阈值"^]。
+TIP: 您可以将最小冷却期和默认聚合阈值更改为 50% （下文将提供更多信息）。 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-AD522711-01F9-4413-A254-929EAE871EBF.html["了解如何更改冷却期"^] 和 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-8FC4BFD5-F258-4AA6-9FCB-663D42D92CAA.html["了解如何更改阈值"^]。
 
 通过BlueXP、您可以在创建或修改卷时从以下卷分层策略中进行选择：
 

@@ -98,9 +98,9 @@ image:screenshot_advanced_view.png["Cloud Volumes ONTAP 工作环境的屏幕截
 
 == 有关使用System Manager的帮助
 
-如果在Cloud Volumes ONTAP 中使用System Manager需要帮助、请参见 https://["ONTAP 文档"^] 了解分步说明。以下链接可能会有所帮助：
+如果在Cloud Volumes ONTAP 中使用System Manager需要帮助、请参见 https://docs.netapp.com/us-en/ontap/index.html["ONTAP 文档"^] 了解分步说明。以下链接可能会有所帮助：
 
-* https://["卷和LUN管理"^]
-* https://["网络管理"^]
-* https://["数据保护"^]
+* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["卷和LUN管理"^]
+* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["网络管理"^]
+* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["数据保护"^]
 

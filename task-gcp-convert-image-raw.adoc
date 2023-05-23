@@ -14,7 +14,7 @@ summary: 通过Google Cloud命令行将导出的映像转换为disk.raw格式。
 
 
 [role="lead"]
-用于部署新实例、升级或正在现有映像中使用的映像将通过与客户端共享 https://["NetApp 支持站点 (NSS)"^]。签名摘要和证书可通过NSS门户下载。确保您下载的是与NetApp支持共享的映像对应的正确版本的摘要和证书。例如、9.13.0映像将具有9.13.0签名的摘要和证书、可在NSS上使用。
+用于部署新实例、升级或正在现有映像中使用的映像将通过与客户端共享 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NetApp 支持站点 (NSS)"^]。签名摘要和证书可通过NSS门户下载。确保您下载的是与NetApp支持共享的映像对应的正确版本的摘要和证书。例如、9.13.0映像将具有9.13.0签名的摘要和证书、可在NSS上使用。
 
 
 
@@ -37,7 +37,7 @@ summary: 通过Google Cloud命令行将导出的映像转换为disk.raw格式。
 
 == 使用Google Cloud命令行导出Google Cloud映像
 
-将映像导出到云存储的首选方法是使用 https://["gcloud compute images export命令"^]。此命令将获取提供的映像、并将其转换为disk.raw文件、该文件会进行tarred和gzipped。生成的文件将保存在目标URL处、然后可下载以进行验证。
+将映像导出到云存储的首选方法是使用 https://cloud.google.com/sdk/gcloud/reference/compute/images/export["gcloud compute images export命令"^]。此命令将获取提供的映像、并将其转换为disk.raw文件、该文件会进行tarred和gzipped。生成的文件将保存在目标URL处、然后可下载以进行验证。
 
 要执行此操作、用户/帐户必须具有访问和写入所需存储分段、导出映像以及云构建(供Google用于导出映像)的权限。
 
@@ -146,4 +146,4 @@ total 1565036
 $ tar -xf CVO_GCP_Signed_Digest.tar.gz
 ----
 
-NOTE: 请参见 https://["有关导出映像的Google Cloud文档"^] 有关如何通过Google Cloud导出映像的详细信息。
+NOTE: 请参见 https://cloud.google.com/compute/docs/images/export-image#console["有关导出映像的Google Cloud文档"^] 有关如何通过Google Cloud导出映像的详细信息。

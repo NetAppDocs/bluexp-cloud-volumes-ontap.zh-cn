@@ -270,6 +270,6 @@ NOTE: 在AWS商用云服务环境中、需要提供您自己的IAM角色。 link
 现在、您可以在创建新的Cloud Volumes ONTAP 工作环境时选择IAM角色。
 
 .更多信息
-* https://["AWS文档：创建IAM策略"^]
-* https://["AWS文档：创建IAM角色"^]
+* https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS文档：创建IAM策略"^]
+* https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS文档：创建IAM角色"^]
 

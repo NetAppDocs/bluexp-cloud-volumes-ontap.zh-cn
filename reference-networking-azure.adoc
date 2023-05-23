@@ -38,7 +38,7 @@ Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、
 
 如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。
 
-确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见 https://["ONTAP 文档：设置 AutoSupport"^]。
+确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 文档：设置 AutoSupport"^]。
 
 如果BlueXP通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
 
@@ -136,7 +136,7 @@ link:task-enabling-private-link.html["了解有关将Azure专用链路或服务�
 
 要在Azure中的Cloud Volumes ONTAP 系统与其他网络中的ONTAP 系统之间复制数据、您必须在Azure vNet与其他网络(例如您的企业网络)之间建立VPN连接。
 
-有关说明，请参见 https://["Microsoft Azure 文档：在 Azure 门户中创建站点到站点连接"^]。
+有关说明，请参见 https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal["Microsoft Azure 文档：在 Azure 门户中创建站点到站点连接"^]。
 
 
 
@@ -163,7 +163,7 @@ BlueXP会创建包含Cloud Volumes ONTAP 成功运行所需入站和出站规则
 Cloud Volumes ONTAP 的安全组需要入站和出站规则。
 
 
-TIP: 正在查找有关连接器的信息？ https://["查看Connector的安全组规则"^]
+TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["查看Connector的安全组规则"^]
 
 
 
@@ -435,6 +435,6 @@ NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
 
 如果尚未创建Connector、则还应查看Connector的网络要求。
 
-* https://["查看连接器的网络要求"^]
-* https://["Azure中的安全组规则"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["查看连接器的网络要求"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure中的安全组规则"^]
 

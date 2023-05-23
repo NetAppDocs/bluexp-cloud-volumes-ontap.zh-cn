@@ -24,9 +24,9 @@ BlueXP会在您刷新页面时更新成本。有关最终成本详细信息，�
 +
 .. 确保为BlueXP提供权限的IAM策略包括所需的权限。
 +
-https://["查看所需权限"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看所需权限"^]
 
-.. https://["激活 * 工作环境 Id* 标记"^]。
+.. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["激活 * 工作环境 Id* 标记"^]。
 +
 为了跟踪AWS成本、BlueXP会为Cloud Volumes ONTAP 实例分配成本分配标记。创建首个工作环境后，激活 * 工作环境 Id* 标记。用户定义的标记不会显示在 AWS 计费报告中，除非您在计费和成本管理控制台中激活它们。
 

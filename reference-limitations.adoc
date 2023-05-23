@@ -16,7 +16,7 @@ summary: 已知限制确定了本产品版本不支持的平台、设备或功�
 [role="lead"]
 已知限制确定了本产品版本不支持的平台、设备或功能、或者这些平台、设备或功能无法与产品正确交互操作。仔细审查这些限制。
 
-这些限制特定于BlueXP中的Cloud Volumes ONTAP 管理。要查看 Cloud Volumes ONTAP 软件本身的限制， https://["转至《 Cloud Volumes ONTAP 发行说明》"^]
+这些限制特定于BlueXP中的Cloud Volumes ONTAP 管理。要查看 Cloud Volumes ONTAP 软件本身的限制， https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limitations.html["转至《 Cloud Volumes ONTAP 发行说明》"^]
 
 
 
@@ -31,7 +31,7 @@ NOTE: 计划在未来版本中创建FlexGroup 卷。
 
 == 在Cloud Volumes ONTAP 中、BlueXP不支持S3
 
-虽然Cloud Volumes ONTAP 支持在某些云提供商中使用S3作为横向扩展存储的选项、但BlueXP不为此功能提供任何管理功能。最好使用命令行界面从 Cloud Volumes ONTAP 配置 S3 客户端访问。有关详细信息，请参见 http://["《 S3 配置高级指南》"^]。
+虽然Cloud Volumes ONTAP 支持在某些云提供商中使用S3作为横向扩展存储的选项、但BlueXP不为此功能提供任何管理功能。最好使用命令行界面从 Cloud Volumes ONTAP 配置 S3 客户端访问。有关详细信息，请参见 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["《 S3 配置高级指南》"^]。
 
 link:concept-client-protocols.html["详细了解Cloud Volumes ONTAP 对S3和其他客户端协议的支持"]。
 
@@ -41,6 +41,6 @@ link:concept-client-protocols.html["详细了解Cloud Volumes ONTAP 对S3和其�
 
 BlueXP不为Storage VM灾难恢复提供任何设置或编排支持。您必须使用 System Manager 或 CLI 。
 
-* https://["《 SVM 灾难恢复准备快速指南》"^]
-* https://["《 SVM 灾难恢复快速指南》"^]
+* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["《 SVM 灾难恢复准备快速指南》"^]
+* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["《 SVM 灾难恢复快速指南》"^]
 

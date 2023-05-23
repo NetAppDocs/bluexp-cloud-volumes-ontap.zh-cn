@@ -20,8 +20,8 @@ FlexCache 卷是一种存储卷，用于缓存原始（或源）卷中的 NFS �
 
 目前、BlueXP不提供对FlexCache 卷的管理、但您可以使用ONTAP 命令行界面或ONTAP 系统管理器创建和管理FlexCache 卷：
 
-* http://["《 FlexCache 卷加快数据访问高级指南》"^]
-* http://["在 System Manager 中创建 FlexCache 卷"^]
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-fc-mgmt/home.html["《 FlexCache 卷加快数据访问高级指南》"^]
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["在 System Manager 中创建 FlexCache 卷"^]
 
 
 从3.7.2版开始、BlueXP将为所有新的Cloud Volumes ONTAP 系统生成FlexCache 许可证。此许可证包含 500 GiB 的使用量限制。

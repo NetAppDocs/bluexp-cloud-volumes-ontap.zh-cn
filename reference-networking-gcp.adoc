@@ -182,15 +182,15 @@ Cloud Volumes ONTAP 和 Connector 在 Google Cloud 共享 VPC 以及独立 VPC �
 
 对于 HA 对，需要四个 vPC 。其中每个 VPC 都可以是共享的，也可以是独立的。例如， vPC-0 可以是共享 VPC ，而 vPC-1 ， vPC-2 和 vPC-3 可以是独立 VPC 。
 
-通过共享 VPC ，您可以跨多个项目配置和集中管理虚拟网络。您可以在 _host project_ 中设置共享 VPC 网络，并在 _service project_ 中部署 Connector 和 Cloud Volumes ONTAP 虚拟机实例。 https://["Google Cloud 文档：共享 VPC 概述"^]。
+通过共享 VPC ，您可以跨多个项目配置和集中管理虚拟网络。您可以在 _host project_ 中设置共享 VPC 网络，并在 _service project_ 中部署 Connector 和 Cloud Volumes ONTAP 虚拟机实例。 https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud 文档：共享 VPC 概述"^]。
 
-https://["查看 Connector 部署中涉及的所需共享 VPC 权限"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["查看 Connector 部署中涉及的所需共享 VPC 权限"^]
 
 
 
 === vPC 中的数据包镜像
 
-https://["数据包镜像"^] 必须在部署 Cloud Volumes ONTAP 的 Google Cloud VPC 中禁用。如果启用了数据包镜像，则 Cloud Volumes ONTAP 无法正常运行。
+https://cloud.google.com/vpc/docs/packet-mirroring["数据包镜像"^] 必须在部署 Cloud Volumes ONTAP 的 Google Cloud VPC 中禁用。如果启用了数据包镜像，则 Cloud Volumes ONTAP 无法正常运行。
 
 
 
@@ -208,7 +208,7 @@ Cloud Volumes ONTAP 需要对NetApp AutoSupport 进行出站Internet访问、Net
 
 如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 防火墙允许通过端口3128进行_outout_连接。
 
-确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见 https://["ONTAP 文档：设置 AutoSupport"^]。
+确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 文档：设置 AutoSupport"^]。
 
 
 TIP: 如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访问。
@@ -227,7 +227,7 @@ TIP: 如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访
 --
 
 
-如果您要将冷数据分层到 Google 云存储分段，则必须为 Cloud Volumes ONTAP 所在的子网配置专用 Google 访问（如果您使用的是 HA 对，则此子网位于 VPC-0 中）。有关说明，请参见 https://["Google Cloud 文档：配置私有 Google Access"^]。
+如果您要将冷数据分层到 Google 云存储分段，则必须为 Cloud Volumes ONTAP 所在的子网配置专用 Google 访问（如果您使用的是 HA 对，则此子网位于 VPC-0 中）。有关说明，请参见 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 文档：配置私有 Google Access"^]。
 
 有关在BlueXP中设置数据分层所需的其他步骤、请参见 link:task-tiering.html["将冷数据分层到低成本对象存储"]。
 
@@ -237,7 +237,7 @@ TIP: 如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访
 
 要在Google Cloud中的Cloud Volumes ONTAP 系统与其他网络中的ONTAP 系统之间复制数据、您必须在VPC与其他网络(例如公司网络)之间建立VPN连接。
 
-有关说明，请参见 https://["Google Cloud 文档： Cloud VPN 概述"^]。
+有关说明，请参见 https://cloud.google.com/vpn/docs/concepts/overview["Google Cloud 文档： Cloud VPN 概述"^]。
 
 
 
@@ -254,7 +254,7 @@ Cloud Volumes ONTAP 的防火墙规则需要入站和出站规则。如果要部
 
 
 
-TIP: 正在查找有关连接器的信息？ https://["查看Connector的防火墙规则"^]
+TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["查看Connector的防火墙规则"^]
 
 
 
@@ -266,7 +266,7 @@ TIP: 正在查找有关连接器的信息？ https://["查看Connector的防火�
 * 所有VPC*：入站流量的源筛选器为0.0.0.0/0 IP范围。
 
 
-如果您使用自己的防火墙策略、请确保添加需要与Cloud Volumes ONTAP 通信的所有网络、但同时确保同时添加两个地址范围、以使内部Google负载平衡器正常运行。这些地址为 130.11.0.0/22 和 35.191.0.0/16 。有关详细信息，请参见 https://["Google Cloud 文档：负载平衡器防火墙规则"^]。
+如果您使用自己的防火墙策略、请确保添加需要与Cloud Volumes ONTAP 通信的所有网络、但同时确保同时添加两个地址范围、以使内部Google负载平衡器正常运行。这些地址为 130.11.0.0/22 和 35.191.0.0/16 。有关详细信息，请参见 https://cloud.google.com/load-balancing/docs/tcp#firewall_rules["Google Cloud 文档：负载平衡器防火墙规则"^]。
 
 [cols="10,10,80"]
 |===
@@ -509,6 +509,6 @@ NOTE: 要为新的Google Cloud HA对部署启用高写入速度、VPC-1、VPC-2�
 
 如果尚未创建Connector、则还应查看Connector的网络要求。
 
-* https://["查看连接器的网络要求"^]
-* https://["Google Cloud中的防火墙规则"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["查看连接器的网络要求"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloud中的防火墙规则"^]
 

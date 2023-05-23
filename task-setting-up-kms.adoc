@@ -22,14 +22,14 @@ summary: 如果要在 Cloud Volumes ONTAP 中使用 Amazon 加密，则需要设
 CMK 可以是 AWS 管理的 CMK 或客户管理的 CMK 。它可以与BlueXP和Cloud Volumes ONTAP 位于同一个AWS帐户中、也可以位于不同的AWS帐户中。
 
 +
-https://["AWS 文档：客户主密钥（ CMK ）"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys["AWS 文档：客户主密钥（ CMK ）"^]
 
 . 通过添加IAM角色来修改每个CMK的密钥策略、该角色以_key user__的身份为BlueXP提供权限。
 +
 如果将IAM角色添加为密钥用户、则BlueXP将获得在Cloud Volumes ONTAP 中使用CMK的权限。
 
 +
-https://["AWS 文档：编辑密钥"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 文档：编辑密钥"^]
 
 . 如果 CMK 位于其他 AWS 帐户中，请完成以下步骤：
 +
@@ -96,7 +96,7 @@ image:screenshot_cmk_add_accounts_dialog.gif["此屏幕截图显示了 AWS KMS �
 }
 ----
 +
-有关此过程的其他详细信息，请参见 https://["AWS 文档：允许其他帐户中的用户使用 KMS 密钥"^]。
+有关此过程的其他详细信息，请参见 https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["AWS 文档：允许其他帐户中的用户使用 KMS 密钥"^]。
 
 
 
@@ -108,6 +108,6 @@ image:screenshot_cmk_add_accounts_dialog.gif["此屏幕截图显示了 AWS KMS �
 部署 Cloud Volumes ONTAP 后，您需要执行此步骤，因为 IAM 角色是在创建工作环境时创建的。（当然，您可以选择使用现有的 Cloud Volumes ONTAP IAM 角色，因此可以先执行此步骤。）
 
 +
-https://["AWS 文档：编辑密钥"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 文档：编辑密钥"^]
 
 

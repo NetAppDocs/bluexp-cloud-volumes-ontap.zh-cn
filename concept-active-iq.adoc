@@ -39,7 +39,7 @@ Active IQ 将显示完整的清单以及软件和硬件配置信息。查看服�
 
 
 .相关信息
-* https://["NetApp 文档： Active IQ 数字顾问"^]
-* https://["启动 Active IQ"^]
-* https://["SupportEdge 服务"^]
+* https://docs.netapp.com/us-en/active-iq/["NetApp 文档： Active IQ 数字顾问"^]
+* https://aiq.netapp.com/custom-dashboard/search["启动 Active IQ"^]
+* https://www.netapp.com/us/services/support-edge.aspx["SupportEdge 服务"^]
 

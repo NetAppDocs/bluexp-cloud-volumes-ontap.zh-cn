@@ -14,7 +14,7 @@ summary: Active IQ 数字顾问集成在BlueXP用户界面中、因此您可以�
 
 
 [role="lead"]
-https://["Active IQ 数字顾问"] 集成到BlueXP UI中、因此您可以通过单一管理平台优化Cloud Volumes ONTAP 系统的操作、安全性和性能。
+https://www.netapp.com/services/support/active-iq/["Active IQ 数字顾问"] 集成到BlueXP UI中、因此您可以通过单一管理平台优化Cloud Volumes ONTAP 系统的操作、安全性和性能。
 
 
 
@@ -48,18 +48,18 @@ Active IQ 数字顾问用户界面完全集成在BlueXP中。
 
 在BlueXP中、单击* Active IQ *服务。
 
-* 如果您已在BlueXP中注册了现有的NSS帐户、则Active IQ 数字顾问用户界面就像您在中的独立实施中看到的一样 https://[]。
+* 如果您已在BlueXP中注册了现有的NSS帐户、则Active IQ 数字顾问用户界面就像您在中的独立实施中看到的一样 https://activeiq.netapp.com/[]。
 +
 image:screenshot_aiq_digital_advisor.png["BlueXP中Active IQ 数字顾问用户界面的屏幕截图。"]
 
-* 如果您尚未在BlueXP中注册NSS帐户、 https://["立即注册 NSS 帐户"^] 然后，将显示 Active IQ Digital Advisor 用户界面。
+* 如果您尚未在BlueXP中注册NSS帐户、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["立即注册 NSS 帐户"^] 然后，将显示 Active IQ Digital Advisor 用户界面。
 
 
 
-NOTE: 截至 2021 年 12 月 3 日， NetApp 已采用一种新方法为 NSS 帐户注册凭据。 https://["有关详细信息，请参见此常见问题解答"]。如果您的 NSS 帐户使用旧的凭据集，则需要将此帐户更新为新凭据。
+NOTE: 截至 2021 年 12 月 3 日， NetApp 已采用一种新方法为 NSS 帐户注册凭据。 https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["有关详细信息，请参见此常见问题解答"]。如果您的 NSS 帐户使用旧的凭据集，则需要将此帐户更新为新凭据。
 
 
 
 == 下一步行动
 
-请参见 https://["Active IQ 数字顾问文档"] 了解详细信息。
+请参见 https://docs.netapp.com/us-en/active-iq/index.html["Active IQ 数字顾问文档"] 了解详细信息。

@@ -36,7 +36,7 @@ Cloud Volumes ONTAP 不支持板载密钥管理。
 .您需要的内容
 您的 Cloud Volumes ONTAP 系统应向 NetApp 支持部门注册。向 NetApp 支持部门注册的每个 Cloud Volumes ONTAP 系统都会自动安装 NetApp 卷加密许可证。
 
-* https://["将NetApp 支持站点 帐户添加到BlueXP"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["将NetApp 支持站点 帐户添加到BlueXP"^]
 * link:task-registering.html["注册按需购买的系统"]
 
 
@@ -44,7 +44,7 @@ Cloud Volumes ONTAP 不支持板载密钥管理。
 NOTE: BlueXP不会在位于中国地区的系统上安装NVE许可证。
 
 .步骤
-. 查看中支持的密钥管理器列表 http://["NetApp 互操作性表工具"^]。
+. 查看中支持的密钥管理器列表 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]。
 +
 
 TIP: 搜索 * 密钥管理器 * 解决方案。
@@ -55,7 +55,7 @@ TIP: 搜索 * 密钥管理器 * 解决方案。
 ifdef::aws[]
 
 +
-** AWS https://["有关说明，请参见 ONTAP 文档"^]
+** AWS https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-overview-concept.html["有关说明，请参见 ONTAP 文档"^]
 
 
 

@@ -72,7 +72,7 @@ ifdef::aws[]
 
 从 9.8 版开始，如果使用几乎所有受支持的 EC2 实例类型（ m5.xlarge 和 R5.xlarge 除外），则 Cloud Volumes ONTAP 支持 HA 对的高写入速度。
 
-https://["详细了解 Cloud Volumes ONTAP 支持的 Amazon EC2 实例"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["详细了解 Cloud Volumes ONTAP 支持的 Amazon EC2 实例"^]。
 
 endif::aws[]
 
@@ -84,7 +84,7 @@ ifdef::azure[]
 
 如果使用单节点系统，则 Cloud Volumes ONTAP 支持对所有 VM 类型使用高写入速度。
 
-如果使用 HA 对，则从 9.8 版开始， Cloud Volumes ONTAP 支持对多种 VM 类型使用高写入速度。转至 https://["《 Cloud Volumes ONTAP 发行说明》"^] 可查看支持高写入速度的 VM 类型。
+如果使用 HA 对，则从 9.8 版开始， Cloud Volumes ONTAP 支持对多种 VM 类型使用高写入速度。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["《 Cloud Volumes ONTAP 发行说明》"^] 可查看支持高写入速度的 VM 类型。
 
 endif::azure[]
 
@@ -96,9 +96,9 @@ ifdef::gcp[]
 
 如果使用单节点系统，则 Cloud Volumes ONTAP 支持对所有计算机类型使用高写入速度。
 
-如果使用HA对、则从9.13.0版开始、Cloud Volumes ONTAP 支持对多种VM类型使用高写入速度。转至 https://["《 Cloud Volumes ONTAP 发行说明》"^] 可查看支持高写入速度的 VM 类型。
+如果使用HA对、则从9.13.0版开始、Cloud Volumes ONTAP 支持对多种VM类型使用高写入速度。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["《 Cloud Volumes ONTAP 发行说明》"^] 可查看支持高写入速度的 VM 类型。
 
-https://["详细了解 Cloud Volumes ONTAP 支持的 Google Cloud 计算机类型"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["详细了解 Cloud Volumes ONTAP 支持的 Google Cloud 计算机类型"^]。
 
 endif::gcp[]
 
@@ -142,7 +142,7 @@ endif::gcp[]
 禁用 NVFAIL 选项:: `vol modify -volume <vol-name> -nvfail off`
 
 
-发生数据丢失时，启用了 NVFAIL 的 NFS 或 iSCSI 卷应停止提供数据（不会影响无状态协议的 CIFS ）。有关详细信息，请参见 https://["NVFAIL 如何影响对 NFS 卷或 LUN 的访问"^]。
+发生数据丢失时，启用了 NVFAIL 的 NFS 或 iSCSI 卷应停止提供数据（不会影响无状态协议的 CIFS ）。有关详细信息，请参见 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/GUID-40D04B8A-01F7-4E87-8161-E30BD80F5B7F.html["NVFAIL 如何影响对 NFS 卷或 LUN 的访问"^]。
 
 以检查 NVFAIL 状态:: `vol show -fields in-nvfailed-state`
 

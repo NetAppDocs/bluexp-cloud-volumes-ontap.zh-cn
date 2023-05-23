@@ -16,7 +16,7 @@ summary: 选择使用VPC服务控制锁定Google环境时、您应了解BlueXP�
 [role="lead"]
 选择使用VPC服务控制锁定Google云环境时、您应了解BlueXP和Cloud Volumes ONTAP 如何与Google云API交互、以及如何配置服务边界以部署BlueXP和Cloud Volumes ONTAP。
 
-通过 VPC 服务控制，您可以控制对受信任边界以外 Google 管理的服务的访问，阻止来自不受信任位置的数据访问以及降低未经授权的数据传输风险。 https://["了解有关 Google Cloud VPC 服务控制的更多信息"^]。
+通过 VPC 服务控制，您可以控制对受信任边界以外 Google 管理的服务的访问，阻止来自不受信任位置的数据访问以及降低未经授权的数据传输风险。 https://cloud.google.com/vpc-service-controls/docs["了解有关 Google Cloud VPC 服务控制的更多信息"^]。
 
 
 
@@ -54,7 +54,7 @@ Cloud Volumes ONTAP 和BlueXP都使用由NetApp管理的GCP中某个项目的映
 
 == VPC 服务控制外围策略
 
-策略允许对 VPC 服务控制规则集进行例外处理。有关策略的详细信息，请访问 https://["GCP VPC 服务控制策略文档"^]。
+策略允许对 VPC 服务控制规则集进行例外处理。有关策略的详细信息，请访问 https://cloud.google.com/vpc-service-controls/docs/ingress-egress-rules#policy-model["GCP VPC 服务控制策略文档"^]。
 
 要设置BlueXP所需的策略、请导航到组织内的VPC服务控制外围并添加以下策略。这些字段应与 VPC 服务控制策略页面中提供的选项匹配。另请注意，需要使用 * 所有 * 规则，并且规则集中应使用 * 或 * 参数。
 

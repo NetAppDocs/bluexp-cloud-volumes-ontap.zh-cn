@@ -30,7 +30,7 @@ Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择
 
 == 选择支持的区域
 
-大多数 Google Cloud 地区均支持 Cloud Volumes ONTAP 。 https://["查看支持的区域的完整列表"^]。
+大多数 Google Cloud 地区均支持 Cloud Volumes ONTAP 。 https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]。
 
 
 
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择
 
 Cloud Volumes ONTAP 支持多种计算机类型，具体取决于您选择的许可证类型。
 
-https://["GCP 中支持的 Cloud Volumes ONTAP 配置"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["GCP 中支持的 Cloud Volumes ONTAP 配置"^]
 
 
 
@@ -46,7 +46,7 @@ https://["GCP 中支持的 Cloud Volumes ONTAP 配置"^]
 
 Cloud Volumes ONTAP 系统的原始容量限制与许可证相关。附加限制会影响聚合和卷的大小。在规划配置时，您应该了解这些限制。
 
-https://["GCP 中 Cloud Volumes ONTAP 的存储限制"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["GCP 中 Cloud Volumes ONTAP 的存储限制"^]
 
 
 
@@ -54,13 +54,13 @@ https://["GCP 中 Cloud Volumes ONTAP 的存储限制"^]
 
 对 Cloud Volumes ONTAP 系统进行规模估算有助于满足性能和容量要求。在选择计算机类型，磁盘类型和磁盘大小时，您应注意几个要点：
 
-计算机类型:: 在中查看支持的计算机类型 http://["《 Cloud Volumes ONTAP 发行说明》"^] 然后查看 Google 提供的有关每个受支持计算机类型的详细信息。将工作负载要求与此计算机类型的 vCPU 和内存数量相匹配。请注意，每个 CPU 核心都会提高网络连接性能。
+计算机类型:: 在中查看支持的计算机类型 http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 然后查看 Google 提供的有关每个受支持计算机类型的详细信息。将工作负载要求与此计算机类型的 vCPU 和内存数量相匹配。请注意，每个 CPU 核心都会提高网络连接性能。
 +
 --
 有关更多详细信息，请参见以下内容：
 
-* https://["Google Cloud 文档： N1 标准计算机类型"^]
-* https://["Google Cloud 文档：性能"^]
+* https://cloud.google.com/compute/docs/machine-types#n1_machine_types["Google Cloud 文档： N1 标准计算机类型"^]
+* https://cloud.google.com/docs/compare/data-centers/networking#performance["Google Cloud 文档：性能"^]
 
 
 --
@@ -71,7 +71,7 @@ GCP 磁盘类型:: 在为 Cloud Volumes ONTAP 创建卷时，您需要选择 Clo
 * _Zonal Balanced_Persistent disks_： 这些 SSD 通过提供更低的每 GB IOPS 来平衡性能和成本。
 * _Zonal Standard Persistent disks_： 标准持久性磁盘经济实惠，可以处理顺序读 / 写操作。
 +
-有关详细信息，请参见 https://["Google Cloud 文档：区域持久性磁盘（标准和 SSD ）"^]。
+有关详细信息，请参见 https://cloud.google.com/compute/docs/disks/#pdspecs["Google Cloud 文档：区域持久性磁盘（标准和 SSD ）"^]。
 
 
 
@@ -86,8 +86,8 @@ GCP 磁盘大小:: 部署 Cloud Volumes ONTAP 系统时，您需要选择初始�
 有关更多详细信息，请参见以下内容：
 
 +
-** https://["Google Cloud 文档：区域持久性磁盘（标准和 SSD ）"^]
-** https://["Google Cloud 文档：优化持久磁盘和本地 SSD 性能"^]
+** https://cloud.google.com/compute/docs/disks/#pdspecs["Google Cloud 文档：区域持久性磁盘（标准和 SSD ）"^]
+** https://cloud.google.com/compute/docs/disks/performance["Google Cloud 文档：优化持久磁盘和本地 SSD 性能"^]
 
 
 
@@ -102,14 +102,14 @@ GCP 磁盘大小:: 部署 Cloud Volumes ONTAP 系统时，您需要选择初始�
 除了用户数据存储之外、BlueXP还为Cloud Volumes ONTAP 系统数据(启动数据、根数据、核心数据和NVRAM)购买云存储。出于规划目的，在部署 Cloud Volumes ONTAP 之前查看这些详细信息可能会有所帮助。
 
 * link:reference-default-configs.html#google-cloud-single-node["在 Google Cloud 中查看 Cloud Volumes ONTAP 系统数据的默认磁盘"]。
-* https://["Google Cloud 文档：资源配额"^]
+* https://cloud.google.com/compute/quotas["Google Cloud 文档：资源配额"^]
 +
 Google 云计算引擎对资源使用量实施配额，因此在部署 Cloud Volumes ONTAP 之前，您应确保未达到限制。
 
 
 
 
-TIP: 此连接器还需要一个系统磁盘。 https://["查看有关连接器默认配置的详细信息"^]。
+TIP: 此连接器还需要一个系统磁盘。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["查看有关连接器默认配置的详细信息"^]。
 
 
 

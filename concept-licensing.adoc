@@ -166,7 +166,7 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-https://["详细了解Cloud Volumes Edge Cache如何帮助您的业务"^]
+https://cloud.netapp.com/cloud-volumes-edge-cache["详细了解Cloud Volumes Edge Cache如何帮助您的业务"^]
 
 
 
@@ -214,7 +214,7 @@ link:task-manage-capacity-licenses.html["了解如何更改充电方法"]。
 
 === 定价
 
-有关定价的详细信息，请访问 https://["NetApp BlueXP网站"^]。
+有关定价的详细信息，请访问 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP网站"^]。
 
 
 
@@ -269,7 +269,7 @@ Cloud Volumes ONTAP 9.7 及更高版本提供了基于容量的许可包。
 
 如果您的大型部署需要20个以上的系统、请联系您的客户代表或销售团队。
 
-https://["了解有关 NetApp 客户的更多信息"^]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["了解有关 NetApp 客户的更多信息"^]。
 
 
 
@@ -370,7 +370,7 @@ endif::gcp[]
 
 系统会定期汇总每个卷的已配置容量并将其与Keystone订阅上的已提交容量进行比较、任何超时容量都会在Keystone订阅上按突发容量收费。
 
-https://["了解有关NetApp Keystone 订阅的更多信息"^]。
+https://www.netapp.com/services/keystone/["了解有关NetApp Keystone 订阅的更多信息"^]。
 
 
 

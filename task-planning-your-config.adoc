@@ -30,9 +30,9 @@ Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择
 
 == 选择支持的区域
 
-大多数 AWS 地区均支持 Cloud Volumes ONTAP 。 https://["查看支持的区域的完整列表"^]。
+大多数 AWS 地区均支持 Cloud Volumes ONTAP 。 https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]。
 
-必须先启用较新的 AWS 区域，然后才能在这些区域中创建和管理资源。 https://["了解如何启用区域"^]。
+必须先启用较新的 AWS 区域，然后才能在这些区域中创建和管理资源。 https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["了解如何启用区域"^]。
 
 
 
@@ -40,7 +40,7 @@ Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择
 
 Cloud Volumes ONTAP 支持多种实例类型，具体取决于您选择的许可证类型。
 
-https://["AWS 中支持的 Cloud Volumes ONTAP 配置"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["AWS 中支持的 Cloud Volumes ONTAP 配置"^]
 
 
 
@@ -48,7 +48,7 @@ https://["AWS 中支持的 Cloud Volumes ONTAP 配置"^]
 
 Cloud Volumes ONTAP 系统的原始容量限制与许可证相关。附加限制会影响聚合和卷的大小。在规划配置时，您应该了解这些限制。
 
-https://["AWS 中 Cloud Volumes ONTAP 的存储限制"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["AWS 中 Cloud Volumes ONTAP 的存储限制"^]
 
 
 
@@ -63,19 +63,19 @@ Instance type::
 * 如果多个用户同时向系统写入数据，请选择一种具有足够 CPU 来管理请求的实例类型。
 * 如果您的应用程序大部分是读取的，请选择具有足够 RAM 的系统。
 +
-** https://["AWS 文档： Amazon EC2 实例类型"^]
-** https://["AWS 文档： Amazon EBS 优化实例"^]
+** https://aws.amazon.com/ec2/instance-types/["AWS 文档： Amazon EC2 实例类型"^]
+** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS 文档： Amazon EBS 优化实例"^]
 
 
 
 
 --
-EBS 磁盘类型:: 在较高级别上、 EBS 磁盘类型之间的区别如下所示：要了解有关 EBS 磁盘使用情形的更多信息，请参见 http://["AWS 文档： EBS 卷类型"^]。
+EBS 磁盘类型:: 在较高级别上、 EBS 磁盘类型之间的区别如下所示：要了解有关 EBS 磁盘使用情形的更多信息，请参见 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 文档： EBS 卷类型"^]。
 +
 --
 * 通用 SSD （ GP3 ） _ 磁盘是成本最低的 SSD ，用于平衡各种工作负载的成本和性能。性能是按 IOPS 和吞吐量定义的。Cloud Volumes ONTAP 9.7 及更高版本支持 GP3 磁盘。
 +
-选择GP3磁盘时、BlueXP会填充默认IOPS和吞吐量值、这些值可根据选定磁盘大小提供与GP2磁盘等效的性能。您可以通过增加这些值来以更高的成本获得更高的性能，但我们不支持使用较低的值，因为它可能会导致性能下降。简而言之，请坚持使用默认值或增加默认值。请勿降低。 https://["详细了解 GP3 磁盘及其性能"^]。
+选择GP3磁盘时、BlueXP会填充默认IOPS和吞吐量值、这些值可根据选定磁盘大小提供与GP2磁盘等效的性能。您可以通过增加这些值来以更高的成本获得更高的性能，但我们不支持使用较低的值，因为它可能会导致性能下降。简而言之，请坚持使用默认值或增加默认值。请勿降低。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["详细了解 GP3 磁盘及其性能"^]。
 
 +
 请注意、Cloud Volumes ONTAP 支持使用GP3磁盘的Amazon EBS弹性卷功能。 link:concept-aws-elastic-volumes.html["了解有关Elastic Volumes支持的更多信息"]。
@@ -101,7 +101,7 @@ EBS 磁盘大小:: 如果您选择的配置不支持 link:concept-aws-elastic-vo
 * 最后，您应选择磁盘大小，以获得所需的 _stimed_perform性 能。
 * 即使您选择了更大的磁盘（例如六个 4 TiB 磁盘）、但由于 EC2 实例可以达到其带宽限制，因此您可能无法获得全部 IOPS 。
 +
-有关 EBS 磁盘性能的详细信息，请参见 http://["AWS 文档： EBS 卷类型"^]。
+有关 EBS 磁盘性能的详细信息，请参见 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 文档： EBS 卷类型"^]。
 
 +
 如上所述、支持Amazon EBS弹性卷功能的Cloud Volumes ONTAP 配置不支持选择磁盘大小。 link:concept-aws-elastic-volumes.html["了解有关Elastic Volumes支持的更多信息"]。
@@ -120,7 +120,7 @@ EBS 磁盘大小:: 如果您选择的配置不支持 link:concept-aws-elastic-vo
 link:reference-default-configs.html#aws["查看 AWS 中 Cloud Volumes ONTAP 系统数据的默认磁盘"]。
 
 
-TIP: 此连接器还需要一个系统磁盘。 https://["查看有关连接器默认配置的详细信息"^]。
+TIP: 此连接器还需要一个系统磁盘。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["查看有关连接器默认配置的详细信息"^]。
 
 
 

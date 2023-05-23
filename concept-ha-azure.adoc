@@ -31,7 +31,7 @@ image:diagram_ha_azure.png["一个概念映像、其中显示了一个负载平�
 请注意以下有关BlueXP为您部署的Azure组件的信息：
 
 Azure 标准负载平衡器:: 负载平衡器管理传入 Cloud Volumes ONTAP HA 对的流量。
-可用性集:: Azure 可用性集是 Cloud Volumes ONTAP 节点的逻辑分组。可用性集可确保节点位于不同的故障和更新域中，以提供冗余和可用性。 https://["在 Azure 文档中了解有关可用性集的更多信息"^]。
+可用性集:: Azure 可用性集是 Cloud Volumes ONTAP 节点的逻辑分组。可用性集可确保节点位于不同的故障和更新域中，以提供冗余和可用性。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["在 Azure 文档中了解有关可用性集的更多信息"^]。
 Disks:: 客户数据位于高级存储页面 Blobs 上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["启动，根和核心数据"]。
 存储帐户::
 +
@@ -39,7 +39,7 @@ Disks:: 客户数据位于高级存储页面 Blobs 上。每个节点都可以�
 * 受管磁盘需要一个存储帐户。
 * 高级存储页面 Blobs 需要一个或多个存储帐户，因为已达到每个存储帐户的磁盘容量限制。
 +
-https://["Azure 文档：存储帐户的 Azure 存储可扩展性和性能目标"^]。
+https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Azure 文档：存储帐户的 Azure 存储可扩展性和性能目标"^]。
 
 * 要将数据分层到 Azure Blob 存储，需要一个存储帐户。
 * 从Cloud Volumes ONTAP 9.7开始、BlueXP为HA对创建的存储帐户为通用v2存储帐户。
@@ -60,7 +60,7 @@ image:diagram_ha_azure_saz_lrs.png["一个概念映像、其中显示了一个�
 请注意以下有关BlueXP为您部署的Azure组件的信息：
 
 Azure 标准负载平衡器:: 负载平衡器管理传入 Cloud Volumes ONTAP HA 对的流量。
-可用性集:: Azure 可用性集是 Cloud Volumes ONTAP 节点的逻辑分组。可用性集可确保节点位于不同的故障和更新域中，以提供冗余和可用性。 https://["在 Azure 文档中了解有关可用性集的更多信息"^]。
+可用性集:: Azure 可用性集是 Cloud Volumes ONTAP 节点的逻辑分组。可用性集可确保节点位于不同的故障和更新域中，以提供冗余和可用性。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["在 Azure 文档中了解有关可用性集的更多信息"^]。
 Disks:: 客户数据驻留在本地冗余存储(LRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["启动、根、配对根、核心和NVRAM数据"]。
 存储帐户:: 存储帐户用于基于受管磁盘的部署、以处理诊断日志并分层到Blob存储。
 
@@ -76,7 +76,7 @@ image:diagram_ha_azure_maz.png["一个概念映像、其中显示了一个负载
 请注意以下有关BlueXP为您部署的Azure组件的信息：
 
 Azure 标准负载平衡器:: 负载平衡器管理传入 Cloud Volumes ONTAP HA 对的流量。
-可用性区域:: 两个Cloud Volumes ONTAP 节点部署在不同的可用性区域中。可用性区域可确保节点位于不同的故障域中。 https://["在Azure文档中了解有关适用于受管磁盘的Azure分区冗余存储的更多信息"^]。
+可用性区域:: 两个Cloud Volumes ONTAP 节点部署在不同的可用性区域中。可用性区域可确保节点位于不同的故障域中。 https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["在Azure文档中了解有关适用于受管磁盘的Azure分区冗余存储的更多信息"^]。
 Disks:: 客户数据驻留在分区冗余存储(ZRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["启动、根、配对节点根和核心数据"]。
 存储帐户:: 存储帐户用于基于受管磁盘的部署、以处理诊断日志并分层到Blob存储。
 
@@ -102,7 +102,7 @@ HA 配置可保持数据的高可用性，如下所示：
 对于 iSCSI 、 Cloud Volumes ONTAP 使用多路径 I/O （ MPIO ）和非对称逻辑单元访问（ ALUA ）来管理活动优化路径和非优化路径之间的路径故障转移。
 
 
-NOTE: 有关哪些特定主机配置支持 ALUA 的信息，请参见 http://["NetApp 互操作性表工具"^] 以及适用于您的主机操作系统的《 Host Utilities 安装和设置指南》。
+NOTE: 有关哪些特定主机配置支持 ALUA 的信息，请参见 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 以及适用于您的主机操作系统的《 Host Utilities 安装和设置指南》。
 
 默认情况下，存储接管，重新同步和交还都是自动的。无需用户操作。
 

@@ -22,7 +22,7 @@ settings:
     - name: Microsoft Azure
       alias: Azure 酒店
       id: azure
-  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr
+  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: Cloud Volumes ONTAP 文档

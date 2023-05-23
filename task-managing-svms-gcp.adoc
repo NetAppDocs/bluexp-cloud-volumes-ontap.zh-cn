@@ -23,7 +23,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 == 支持的 Storage VM 数量
 
-从9.11.1版开始、Google Cloud中的特定Cloud Volumes ONTAP 配置支持多个Storage VM。转至 https://["《 Cloud Volumes ONTAP 发行说明》"^] 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。
+从9.11.1版开始、Google Cloud中的特定Cloud Volumes ONTAP 配置支持多个Storage VM。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。
 
 所有其他 Cloud Volumes ONTAP 配置均支持一个提供数据的 Storage VM 和一个用于灾难恢复的目标 Storage VM 。如果源 Storage VM 发生中断，您可以激活目标 Storage VM 以进行数据访问。
 
@@ -48,7 +48,7 @@ image:screenshot-gcp-add-ip-range.png["Google云控制台的屏幕截图、您�
 如果要在Storage VM上创建管理LIF、则需要一个数据LIF的IP地址和另一个可选IP地址。
 
 +
-https://["Google Cloud文档：向现有实例添加别名IP范围"^]
+https://cloud.google.com/vpc/docs/configure-alias-ip-ranges#adding_alias_ip_ranges_to_an_existing_instance["Google Cloud文档：向现有实例添加别名IP范围"^]
 
 . 创建 Storage VM 和指向 Storage VM 的路由。
 +
@@ -106,7 +106,7 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 请注意、BlueXP会在Google Cloud中分配所需的IP地址、并创建具有用于SMB/NFS访问的数据LIF和用于出站SMB通信的iSCSI LIF的Storage VM。
 
 .所需的Google Cloud权限
-连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需权限包括在中 https://["NetApp 提供的策略"]。
+连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需权限包括在中 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["NetApp 提供的策略"]。
 
 .步骤
 . 使用以下API调用创建Storage VM：

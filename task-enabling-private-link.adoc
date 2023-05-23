@@ -32,7 +32,7 @@ Cloud Volumes ONTAP 使用Azure专用链路连接到其关联的存储帐户。�
 
 如果您的企业需要、您可以更改BlueXP中的设置、以便将Cloud Volumes ONTAP 配置为使用服务端点、而不是Azure专用链路。更改此设置将适用场景 添加您创建的新Cloud Volumes ONTAP 系统。仅支持服务端点 link:https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure区域对"^] 在连接器和Cloud Volumes ONTAP VNets之间。
 
-此连接器应部署在与其管理的 Cloud Volumes ONTAP 系统所在的同一 Azure 区域或中 https://["Azure 区域对"^] 对于 Cloud Volumes ONTAP 系统。
+此连接器应部署在与其管理的 Cloud Volumes ONTAP 系统所在的同一 Azure 区域或中 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 区域对"^] 对于 Cloud Volumes ONTAP 系统。
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
@@ -47,7 +47,7 @@ image:screenshot_settings_icon.png["一个屏幕截图、显示了BlueXP控制�
 .完成后
 如果禁用了Azure专用链路、并且Connector使用代理服务器、则必须启用直接API流量。
 
-https://["了解如何在Connector上启用直接API流量"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["了解如何在Connector上启用直接API流量"^]
 
 
 
@@ -80,9 +80,9 @@ NOTE: 如果连接器和Cloud Volumes ONTAP 系统部署在不同的VN中、则�
 
 === 向BlueXP提供有关Azure私有DNS的详细信息
 
-如果您使用 https://["Azure 专用 DNS"^]，然后您需要修改每个 Connector 上的配置文件。否则、BlueXP无法在Cloud Volumes ONTAP 与其关联存储帐户之间启用Azure专用链路连接。
+如果您使用 https://docs.microsoft.com/en-us/azure/dns/private-dns-overview["Azure 专用 DNS"^]，然后您需要修改每个 Connector 上的配置文件。否则、BlueXP无法在Cloud Volumes ONTAP 与其关联存储帐户之间启用Azure专用链路连接。
 
-请注意， DNS 名称必须与 Azure DNS 命名要求匹配 https://["如 Azure 文档中所示"^]。
+请注意， DNS 名称必须与 Azure DNS 命名要求匹配 https://docs.microsoft.com/en-us/azure/storage/common/storage-private-endpoints#dns-changes-for-private-endpoints["如 Azure 文档中所示"^]。
 
 .步骤
 . 通过 SSH 连接到 Connector 主机并登录。

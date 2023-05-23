@@ -308,6 +308,10 @@ NOTE: 默认情况下，预定义的 Cloud Volumes ONTAP 安全组允许出站 H
 +
 http://<Connector-private-IP-address>/ontap/images/<image-file-name>
 
++
+
+NOTE: 在URL中，*image-file-name*必须遵循“cot.image.9.13.1P2.tgz”格式。
+
 
 
 .结果

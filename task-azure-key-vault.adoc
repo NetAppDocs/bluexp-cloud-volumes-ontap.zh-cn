@@ -19,7 +19,7 @@ summary: 将Azure密钥存储用于第三方密钥管理服务。
 
 使用AKV时、请注意、默认情况下、数据SVM LIF用于与云密钥管理端点进行通信。节点管理网络用于与云提供商的身份验证服务(login.microsoftonline.com)进行通信。如果集群网络配置不正确，集群将无法正确利用密钥管理服务。
 
-.前提条件
+.开始之前
 * Cloud Volumes ONTAP 必须运行9.10.1或更高版本
 * 已安装卷加密(VE)许可证(已向NetApp支持部门注册的每个Cloud Volumes ONTAP 系统会自动安装NetApp卷加密许可证)
 * 您必须具有多租户加密密钥管理(MT_EK_Mgmt)许可证

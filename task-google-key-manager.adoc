@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-google-key-manager.html 
 keywords: google cloud, encryption, NVE, NetApp volume encryption, KMIP, GCP, GCP KMS, key manager service, encryption 
-summary: 将Azure密钥存储用于第三方密钥管理服务。 
+summary: 利用Google的密钥管理服务提供第三方密钥管理服务。 
 ---
 = 使用Google的云密钥管理服务管理密钥
 :hardbreaks:
@@ -15,9 +15,9 @@ summary: 将Azure密钥存储用于第三方密钥管理服务。
 
 可以使用命令行界面或ONTAP REST API启用Cloud KMS的密钥管理。
 
-使用Cloud KMS时、请注意、默认情况下、数据SVM LIF用于与云密钥管理端点进行通信。节点管理网络用于与云提供商的身份验证服务(oauth2.googleapis.com)进行通信。如果集群网络配置不正确，集群将无法正确利用密钥管理服务。
+使用Cloud KMS时、请注意、默认情况下、数据SVM的LIF用于与云密钥管理端点进行通信。节点管理网络用于与云提供商的身份验证服务(oauth2.googleapis.com)进行通信。如果集群网络配置不正确，集群将无法正确利用密钥管理服务。
 
-.前提条件
+.开始之前
 * Cloud Volumes ONTAP 必须运行9.10.1或更高版本
 * 已安装卷加密（ VE ）许可证
 * 安装了多租户加密密钥管理(MTEKM)许可证、从Cloud Volumes ONTAP 9.12.1 GA开始。

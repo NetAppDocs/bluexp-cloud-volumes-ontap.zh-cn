@@ -162,7 +162,7 @@ ifdef::azure[]
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-默认情况下、权限包括在自定义角色中。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"^]
+默认情况下、权限包括在自定义角色中。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"^]
 
 endif::azure[]
 
@@ -297,7 +297,7 @@ Cloud Volumes ONTAP 可以将数据从数据保护卷分层到容量层。如果
 image:screenshot_replication_tiering.gif["复制卷时显示 S3 分层选项的屏幕快照。"]
 
 +
-有关复制数据的帮助，请参见 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["将数据复制到云中或从云中复制数据"^]。
+有关复制数据的帮助，请参见 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["将数据复制到云中或从云中复制数据"^]。
 
 
 

@@ -52,7 +52,7 @@ Active IQ 数字顾问用户界面完全集成在BlueXP中。
 +
 image:screenshot_aiq_digital_advisor.png["BlueXP中Active IQ 数字顾问用户界面的屏幕截图。"]
 
-* 如果您尚未在BlueXP中注册NSS帐户、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["立即注册 NSS 帐户"^] 然后，将显示 Active IQ Digital Advisor 用户界面。
+* 如果您尚未在BlueXP中注册NSS帐户、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["立即注册 NSS 帐户"^] 然后，将显示 Active IQ Digital Advisor 用户界面。
 
 
 

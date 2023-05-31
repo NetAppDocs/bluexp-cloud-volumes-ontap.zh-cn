@@ -184,7 +184,7 @@ Cloud Volumes ONTAP 和 Connector 在 Google Cloud 共享 VPC 以及独立 VPC �
 
 通过共享 VPC ，您可以跨多个项目配置和集中管理虚拟网络。您可以在 _host project_ 中设置共享 VPC 网络，并在 _service project_ 中部署 Connector 和 Cloud Volumes ONTAP 虚拟机实例。 https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud 文档：共享 VPC 概述"^]。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["查看 Connector 部署中涉及的所需共享 VPC 权限"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["查看 Connector 部署中涉及的所需共享 VPC 权限"^]
 
 
 
@@ -254,7 +254,7 @@ Cloud Volumes ONTAP 的防火墙规则需要入站和出站规则。如果要部
 
 
 
-TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["查看Connector的防火墙规则"^]
+TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["查看Connector的防火墙规则"^]
 
 
 
@@ -509,6 +509,6 @@ NOTE: 要为新的Google Cloud HA对部署启用高写入速度、VPC-1、VPC-2�
 
 如果尚未创建Connector、则还应查看Connector的网络要求。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["查看连接器的网络要求"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloud中的防火墙规则"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["查看连接器的网络要求"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud中的防火墙规则"^]
 

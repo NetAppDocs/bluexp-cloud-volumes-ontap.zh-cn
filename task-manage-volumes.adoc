@@ -298,11 +298,11 @@ image:screenshot_aggr_volume_overview.png["屏幕抓图：显示聚合中聚合�
 . 确定具有可用容量的 Cloud Volumes ONTAP 系统或部署新系统。
 . 将源工作环境拖放到目标工作环境中以执行卷的一次性数据复制。
 +
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在系统之间复制数据"^]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["在系统之间复制数据"^]。
 
 . 转到复制状态页，然后中断 SnapMirror 关系、将复制的卷从数据保护卷转换为读 / 写卷。
 +
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理数据复制计划和关系"^]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理数据复制计划和关系"^]。
 
 . 配置卷以进行数据访问。
 +

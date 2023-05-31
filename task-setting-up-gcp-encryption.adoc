@@ -19,7 +19,7 @@ summary: 虽然Google Cloud Storage始终会在数据写入磁盘之前对数据
 .步骤
 . 确保在存储密钥的项目中、BlueXP Connector服务帐户在项目级别具有正确的权限。
 +
-权限在中提供 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["默认情况下、Connector服务帐户权限"^]、但如果您使用云密钥管理服务的备用项目、则可能不会应用此功能。
+权限在中提供 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["默认情况下、Connector服务帐户权限"^]、但如果您使用云密钥管理服务的备用项目、则可能不会应用此功能。
 
 +
 权限如下：
@@ -62,4 +62,4 @@ https://cloud.google.com/kms/docs/iam#granting_roles_on_a_resource["Google Cloud
 ----
 
 
-请参见 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自动化文档"^] 有关使用 GcpEncryption 参数的详细信息，请参见。
+请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 有关使用 GcpEncryption 参数的详细信息，请参见。

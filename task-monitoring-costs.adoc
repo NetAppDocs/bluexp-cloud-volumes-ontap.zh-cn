@@ -24,7 +24,7 @@ BlueXP会在您刷新页面时更新成本。有关最终成本详细信息，�
 +
 .. 确保为BlueXP提供权限的IAM策略包括所需的权限。
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看所需权限"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["查看所需权限"^]
 
 .. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["激活 * 工作环境 Id* 标记"^]。
 +

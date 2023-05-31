@@ -126,7 +126,7 @@ Azure HA单一可用性区域::
 "Microsoft.KeyVault/vaults/accessPolicies/write"
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["查看最新的权限列表"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看最新的权限列表"^]
 
 
 NOTE: 在一个分区中、HA对不需要这些权限。
@@ -143,7 +143,7 @@ NOTE: 在一个分区中、HA对不需要这些权限。
 记下 * 名称 * 和 * 资源组 * 。您需要在下一步中指定这些值。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["了解有关此 API 调用的更多信息"^]。
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-hametadata["了解有关此 API 调用的更多信息"^]。
 
 . 使用以下BlueXP API调用获取存储中的密钥列表。
 +
@@ -156,7 +156,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 记下 * 密钥名称 * 。您需要在下一步中指定该值（以及存储名称）。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["了解有关此 API 调用的更多信息"^]。
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-hametadata["了解有关此 API 调用的更多信息"^]。
 
 . 使用以下BlueXP API调用创建Cloud Volumes ONTAP 系统。
 +
@@ -177,7 +177,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-haworking-environments["了解有关此 API 调用的更多信息"^]。
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-haworking-environments["了解有关此 API 调用的更多信息"^]。
 
 .. 对于单节点系统：
 +
@@ -196,7 +196,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-vsaworking-environments["了解有关此 API 调用的更多信息"^]。
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-vsaworking-environments["了解有关此 API 调用的更多信息"^]。
 
 
 

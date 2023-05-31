@@ -87,7 +87,7 @@ endif::aws[]
 | 卷大小 | 您可以输入的最大大小在很大程度上取决于您是否启用精简配置、这样您就可以创建一个大于当前可用物理存储的卷。 
 
 
-| Tags | 添加到卷的标记将与关联 https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["应用程序模板服务"^]可帮助您组织和简化资源管理。 
+| Tags | 添加到卷的标记将与关联 https://docs.netapp.com/us-en/bluexp-remediation/task-using-tags.html["应用程序模板服务"^]可帮助您组织和简化资源管理。 
 
 
 | Storage VM (SVM) | Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其视为 SVM 或 SVM 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但某些配置支持额外的 Storage VM 。您可以为新卷指定Storage VM。 
@@ -158,7 +158,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS 域:: Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。
-NTP 服务器:: 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP自动化文档"^] 了解详细信息。
+NTP 服务器:: 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 了解详细信息。
 +
 --
 请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。

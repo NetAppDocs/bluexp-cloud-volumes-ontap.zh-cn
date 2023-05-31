@@ -21,7 +21,7 @@ Cloud Volumes ONTAP 支持Azure资源组移动、但工作流仅在Azure控制�
 .步骤
 . 从*画布*中删除工作环境。
 +
-要了解如何删除工作环境、请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-removing.html["删除 Cloud Volumes ONTAP 工作环境"]。
+要了解如何删除工作环境、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-removing.html["删除 Cloud Volumes ONTAP 工作环境"]。
 
 . 在Azure控制台中执行资源组移动。
 +

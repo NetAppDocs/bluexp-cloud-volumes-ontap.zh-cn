@@ -163,7 +163,7 @@ BlueXP会创建包含Cloud Volumes ONTAP 成功运行所需入站和出站规则
 Cloud Volumes ONTAP 的安全组需要入站和出站规则。
 
 
-TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["查看Connector的安全组规则"^]
+TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["查看Connector的安全组规则"^]
 
 
 
@@ -435,6 +435,6 @@ NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
 
 如果尚未创建Connector、则还应查看Connector的网络要求。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["查看连接器的网络要求"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure中的安全组规则"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["查看连接器的网络要求"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure中的安全组规则"^]
 

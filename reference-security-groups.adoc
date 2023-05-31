@@ -361,4 +361,4 @@ BlueXP始终会创建此安全组。您没有使用自己的选项。
 
 == Connector 的规则
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["查看Connector的安全组规则"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["查看Connector的安全组规则"^]

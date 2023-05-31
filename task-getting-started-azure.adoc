@@ -18,10 +18,10 @@ summary: 只需几步即可开始使用适用于 Azure 的 Cloud Volumes ONTAP �
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 创建连接器
 [role="quick-margin-para"]
-如果您没有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["了解如何在 Azure 中创建 Connector"^]
+如果您没有 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["了解如何在 Azure 中创建 Connector"^]
 
 [role="quick-margin-para"]
-请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["了解如何在无法访问Internet的位置手动安装Connector"^]
+请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在无法访问Internet的位置手动安装Connector"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 规划您的配置
 [role="quick-margin-para"]
@@ -44,8 +44,8 @@ link:reference-networking-azure.html["详细了解网络要求"]。
 单击 * 添加工作环境 * ，选择要部署的系统类型，然后完成向导中的步骤。 link:task-deploying-otc-azure.html["阅读分步说明"]。
 
 .相关链接
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["从BlueXP创建连接器"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-azure.html["从 Azure Marketplace 创建 Connector"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["在 Linux 主机上安装 Connector 软件"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["BlueXP对权限执行的操作"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["从BlueXP创建连接器"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure.html["从 Azure Marketplace 创建 Connector"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在 Linux 主机上安装 Connector 软件"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["BlueXP对权限执行的操作"^]
 

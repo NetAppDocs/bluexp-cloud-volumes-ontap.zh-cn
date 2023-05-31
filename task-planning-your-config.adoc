@@ -120,7 +120,7 @@ EBS 磁盘大小:: 如果您选择的配置不支持 link:concept-aws-elastic-vo
 link:reference-default-configs.html#aws["查看 AWS 中 Cloud Volumes ONTAP 系统数据的默认磁盘"]。
 
 
-TIP: 此连接器还需要一个系统磁盘。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["查看有关连接器默认配置的详细信息"^]。
+TIP: 此连接器还需要一个系统磁盘。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["查看有关连接器默认配置的详细信息"^]。
 
 
 

@@ -18,10 +18,10 @@ summary: 只需几步即可开始使用适用于Google Cloud的Cloud Volumes ONT
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 创建连接器
 [role="quick-margin-para"]
-如果您没有 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["了解如何在 Google Cloud 中创建 Connector"^]
+如果您没有 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["了解如何在 Google Cloud 中创建 Connector"^]
 
 [role="quick-margin-para"]
-请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["了解如何在无法访问Internet的位置手动安装Connector"^]
+请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在无法访问Internet的位置手动安装Connector"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 规划您的配置
 [role="quick-margin-para"]
@@ -47,7 +47,7 @@ link:reference-networking-gcp.html["详细了解网络要求"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 设置服务帐户
 [role="quick-margin-para"]
-Cloud Volumes ONTAP 需要一个 Google Cloud 服务帐户，用于两种目的。第一种情况是启用时 link:concept-data-tiering.html["数据分层"] 在 Google Cloud 中将冷数据分层到低成本对象存储。第二个是启用时 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["BlueXP备份和恢复"^] 将卷备份到低成本对象存储。
+Cloud Volumes ONTAP 需要一个 Google Cloud 服务帐户，用于两种目的。第一种情况是启用时 link:concept-data-tiering.html["数据分层"] 在 Google Cloud 中将冷数据分层到低成本对象存储。第二种情况是在启用时 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP备份和恢复"^] 将卷备份到低成本对象存储。
 
 [role="quick-margin-para"]
 您可以设置一个服务帐户并将其用于这两种目的。服务帐户必须具有 * 存储管理员 * 角色。
@@ -72,7 +72,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["在项目中�
 单击 * 添加工作环境 * ，选择要部署的系统类型，然后完成向导中的步骤。 link:task-deploying-gcp.html["阅读分步说明"]。
 
 .相关链接
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["从BlueXP创建连接器"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["在 Linux 主机上安装 Connector 软件"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["BlueXP对Google Cloud权限的作用"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["从BlueXP创建连接器"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在 Linux 主机上安装 Connector 软件"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["BlueXP对Google Cloud权限的作用"^]
 

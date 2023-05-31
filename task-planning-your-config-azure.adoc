@@ -106,7 +106,7 @@ Azure 高级存储的性能取决于磁盘大小。更大的磁盘可提供更�
 link:reference-default-configs.html#azure-single-node["查看 Azure 中 Cloud Volumes ONTAP 系统数据的默认磁盘"]。
 
 
-TIP: 此连接器还需要一个系统磁盘。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["查看有关连接器默认配置的详细信息"^]。
+TIP: 此连接器还需要一个系统磁盘。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["查看有关连接器默认配置的详细信息"^]。
 
 
 

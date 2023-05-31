@@ -21,7 +21,7 @@ TIP: 基于节点的许可证是上一代 BYOL for Cloud Volumes ONTAP 。基于
 
 link:concept-licensing.html["了解有关 Cloud Volumes ONTAP 许可选项的更多信息"]。
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["详细了解如何管理基于节点的许可证"^]。
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["详细了解如何管理基于节点的许可证"^]。
 
 
 
@@ -41,7 +41,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage
 
 创建基于节点的BYOL系统时、BlueXP会提示您输入许可证的序列号和NetApp 支持站点 帐户。BlueXP使用帐户从NetApp下载许可证文件并将其安装在Cloud Volumes ONTAP 系统上。
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["了解如何将NetApp 支持站点 帐户添加到BlueXP"^]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["了解如何将NetApp 支持站点 帐户添加到BlueXP"^]。
 
 如果BlueXP无法通过安全Internet连接访问许可证文件、您可以 link:task-manage-node-licenses.html["自行获取文件、然后手动将文件上传到BlueXP"]。
 

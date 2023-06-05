@@ -250,15 +250,24 @@ Cloud Volumes ONTAP 系统上不得执行诸如卷或聚合创建等BlueXP操作
 image:screenshot_overview_upgrade.png["屏幕截图显示了\"Upgrade Now！\" 链接。"]
 
 . 如果有新版本、请单击*立即升级！*
++
+
+NOTE: 在通过BlueXP通知升级Cloud Volumes ONTAP之前、您必须具有NetApp 支持站点 帐户。
+
 . 在Upgrade Cloud Volumes ONTAP 页面中、阅读EULA、然后选择*我阅读并批准EULA *。
 . 单击 * 升级 * 。
++
+
+NOTE: 默认情况下、Upgrade Cloud Volumes ONTAP页面会选择要升级的最新可用Cloud Volumes ONTAP版本。如果可用，可以通过单击*选择旧版本*来选择旧版本的Cloud Volumes ONTAP进行升级。
+请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#supported-upgrade-paths["支持的升级路径列表"^] 根据您当前的Cloud Volumes ONTAP版本选择相应的升级路径。
+
++
+image:screenshot_upgrade_select_versions.png["升级Cloud Volumes ONTAP版本页面的屏幕截图。"]
+
 
 
 .结果
 BlueXP开始软件升级。软件更新完成后、您可以对工作环境执行操作。
-
-
-NOTE: 目前、您只能通过BlueXP用户界面升级到最新可用的ONTAP 版本。未来版本将提供通过BlueXP用户界面升级到特定ONTAP 版本的功能。
 
 .完成后
 如果暂停了 SnapMirror 传输、请使用 System Manager 恢复传输。

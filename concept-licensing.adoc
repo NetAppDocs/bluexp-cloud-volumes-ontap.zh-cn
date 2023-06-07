@@ -370,7 +370,7 @@ endif::gcp[]
 
 系统会定期汇总每个卷的已配置容量并将其与Keystone订阅上的已提交容量进行比较、任何超时容量都会在Keystone订阅上按突发容量收费。
 
-https://www.netapp.com/services/keystone/["了解有关NetApp Keystone 订阅的更多信息"^]。
+link:https://docs.netapp.com/us-en/keystone-staas/index.html["详细了解NetApp Keystone"^]。
 
 
 

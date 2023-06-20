@@ -3845,7 +3845,6 @@
   <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">重要注意事项</block>
   <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">从ONTAP 9.9.91P7开始、对于NVRAM和核心磁盘、BlueXP使用磁盘加密集、通过该加密集可以管理具有受管磁盘的加密密钥。较低版本将使用Microsoft管理的密钥、而不是客户管理的密钥。</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">*用于卷加密的Azure磁盘加密*(适用于多个分区中的单节点系统或HA对)</block>
-  <block id="6337ff9e523cd4d0c21d00ce582cb8ca" category="admonition">在一个分区中、HA对不需要这些权限。</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">所需的Google Cloud权限</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">什么是Flash Cache？</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 创建连接器</block>
@@ -4942,4 +4941,32 @@
   <block id="9eecbfaf12c4b441b4b80b15e69b1763" category="paragraph"><block ref="861512b606f6337e516b8d3562c115c3" category="inline-link-macro-rx"></block>。</block>
   <block id="ce8df63e83de2ff4c9315aacad840c85" category="inline-link-macro">支持的EC2实例</block>
   <block id="eb8249aa4fe7f904487ee8ca24dce280" category="paragraph">有关AWS中支持的实例类型列表、请参见 <block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>。</block>
+  <block id="21d684c5497d7c44f38249fb9317e2ff" category="section-title">创建用户分配的受管身份</block>
+  <block id="c1d9d82ae4f42fc1db168e7b745f9697" category="paragraph">您可以选择创建一个称为用户分配的托管标识的资源。这样、您可以在创建Cloud Volumes ONTAP工作环境时对存储帐户进行加密。建议在创建密钥存储和生成密钥之前先创建此资源。</block>
+  <block id="2da2bdad0a1c89d70cb7a7586bf14758" category="paragraph">此资源的ID如下：<block ref="0169e4e7c078e2230c21c551eaf35e56" prefix=" " category="inline-code"></block>。</block>
+  <block id="2f37b99340ba454bd7f13c34ebaf9799" category="list-text">在Azure中、转到Azure服务并选择*托管身份*。</block>
+  <block id="f2a42a68e067e481d094b018459ef895" category="list-text">单击 * 创建 * 。</block>
+  <block id="0de11488ec479f7728a12eaa20900087" category="list-text">请提供以下详细信息：</block>
+  <block id="eb6b5e1059f0c14240e0b29450c64244" category="list-text">*订阅*：选择订阅。我们建议选择与Connector订阅相同的订阅。</block>
+  <block id="10a805425ce15433762da2005f065657" category="list-text">*资源组*：使用现有资源组或创建新资源组。</block>
+  <block id="da2433e2c4da1ae4d4ccf813bec559d8" category="list-text">*区域*：(可选)选择与连接器相同的区域。</block>
+  <block id="5b75c82ea3a972e4af28cf4cebb17b30" category="list-text">*名称*：输入资源的名称。</block>
+  <block id="a5224fbb5f2e884564b316411dcf1c8b" category="list-text">(可选)添加标记。</block>
+  <block id="8a719e3e1b73b371d427de036115d5ca" category="inline-xref">已创建用户分配的受管身份</block>
+  <block id="6290500d5abf30b274cc1c7ddf30e546" category="paragraph">如果您 <block ref="33573eb5764d0fad6438d3a347eee31f" category="inline-xref-macro-rx"></block>，创建密钥存储时，还应为密钥存储创建访问策略。</block>
+  <block id="4fe37dc4f545dffb56459397b5344d4c" category="list-text">如果创建了用户分配的受管身份、则应启用以下选项：</block>
+  <block id="7761893631ec0e57ca5b1847392a89d1" category="list-text">*存储访问策略*</block>
+  <block id="6b549cac54fb4417d571d2ff5fe2226a" category="list-text">如果选择了存储访问策略、请单击创建为密钥存储创建访问策略。如果没有、请跳至步骤3。</block>
+  <block id="05d7a493e761863b43bc21c5b24707a8" category="list-text">选择以下权限：</block>
+  <block id="b5eda0a74558a342cf659187f06f746f" category="list-text">获取</block>
+  <block id="10ae9fc7d453b0dd525d0edf2ede7961" category="list-text">列表</block>
+  <block id="9a2d8ce3ffdcdf2123bddd94d79ef200" category="list-text">解密</block>
+  <block id="53c82eba31f6d416f331de9162ebe997" category="list-text">加密</block>
+  <block id="64d6d5cd6bec2e7026a301304363a0f2" category="list-text">取消换行键</block>
+  <block id="2733a028e38aa84f7ea84735ac7988a6" category="list-text">换行键</block>
+  <block id="e8418d1d706cd73548f9f16f1d55ad6e" category="list-text">验证</block>
+  <block id="04b29480233f4def5c875875b6bdc3b1" category="list-text">签名</block>
+  <block id="dfbbb3ca890c5e816afc33a0f5d49ec2" category="list-text">选择用户分配的受管标识(资源)作为主体。</block>
+  <block id="0882685275009e45f6167bce4081e668" category="list-text">查看并创建访问策略。</block>
+  <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">包括<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> 字段。</block>
 </blocks>

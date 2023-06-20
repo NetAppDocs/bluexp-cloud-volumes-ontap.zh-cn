@@ -76,9 +76,34 @@ Azure HA单一可用性区域::
 
 
 
+== 创建用户分配的受管身份
+
+您可以选择创建一个称为用户分配的托管标识的资源。这样、您可以在创建Cloud Volumes ONTAP工作环境时对存储帐户进行加密。建议在创建密钥存储和生成密钥之前先创建此资源。
+
+此资源的ID如下： `userassignedidentity`。
+
+.步骤
+. 在Azure中、转到Azure服务并选择*托管身份*。
+. 单击 * 创建 * 。
+. 请提供以下详细信息：
++
+** *订阅*：选择订阅。我们建议选择与Connector订阅相同的订阅。
+** *资源组*：使用现有资源组或创建新资源组。
+** *区域*：(可选)选择与连接器相同的区域。
+** *名称*：输入资源的名称。
+
+
+. (可选)添加标记。
+. 单击 * 创建 * 。
+
+
+
+
 == 创建密钥存储并生成密钥
 
 密钥存储必须位于您计划创建 Cloud Volumes ONTAP 系统的同一 Azure 订阅和区域中。
+
+如果您 <<创建用户分配的受管身份,已创建用户分配的受管身份>>，创建密钥存储时，还应为密钥存储创建访问策略。
 
 .步骤
 . https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["在 Azure 订阅中创建密钥存储"^]。
@@ -94,6 +119,29 @@ Azure HA单一可用性区域::
 *** *用于卷加密的Azure磁盘加密*(适用于多个分区中的单节点系统或HA对)
 
 
+** 如果创建了用户分配的受管身份、则应启用以下选项：
++
+*** *存储访问策略*
+
+
+
+
+. 如果选择了存储访问策略、请单击创建为密钥存储创建访问策略。如果没有、请跳至步骤3。
++
+.. 选择以下权限：
++
+*** 获取
+*** 列表
+*** 解密
+*** 加密
+*** 取消换行键
+*** 换行键
+*** 验证
+*** 签名
+
+
+.. 选择用户分配的受管标识(资源)作为主体。
+.. 查看并创建访问策略。
 
 
 . https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["在密钥存储中生成密钥"^]。
@@ -118,18 +166,15 @@ Azure HA单一可用性区域::
 
 [source, json]
 ----
-"Microsoft.Compute/diskEncryptionSets/read"
+"Microsoft.Compute/diskEncryptionSets/read",
 "Microsoft.Compute/diskEncryptionSets/write",
 "Microsoft.Compute/diskEncryptionSets/delete"
 "Microsoft.KeyVault/vaults/deploy/action",
 "Microsoft.KeyVault/vaults/read",
-"Microsoft.KeyVault/vaults/accessPolicies/write"
+"Microsoft.KeyVault/vaults/accessPolicies/write",
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看最新的权限列表"^]
-
-
-NOTE: 在一个分区中、HA对不需要这些权限。
 
 .步骤
 . 使用以下BlueXP API调用获取Azure订阅中的密钥存储列表。
@@ -172,10 +217,13 @@ https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: 包括 `"userAssignedIdentity": " userAssignedIdentityId"` 字段。
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-haworking-environments["了解有关此 API 调用的更多信息"^]。
 
@@ -191,10 +239,13 @@ https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: 包括 `"userAssignedIdentity": " userAssignedIdentityId"` 字段。
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-vsaworking-environments["了解有关此 API 调用的更多信息"^]。
 

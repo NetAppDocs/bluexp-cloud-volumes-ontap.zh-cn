@@ -20,6 +20,20 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2023年6月26日
+
+以下更改是在3.9.30版的连接器中推出的。
+
+
+
+=== Cloud Volumes ONTAP 9.13.1 RC1
+
+BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.1。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+
+
+
 == 2023年6月4日
 
 以下更改是在3.9.30版的连接器中推出的。

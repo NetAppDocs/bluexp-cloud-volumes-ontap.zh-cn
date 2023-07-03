@@ -20,6 +20,28 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2023年7月2日
+
+在3.9.31版本的连接器中引入了以下更改。
+
+
+
+=== 支持在Azure中部署HA多可用性区域
+
+对于Cloud Volumes ONTAP 9.12.1 GA及更高版本、Azure中的日本东部和韩国中部现在支持HA多可用性区域部署。
+
+有关支持多个可用性区域的所有区域的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
+
+
+
+=== 自主防兰森保护支持
+
+Cloud Volumes ONTAP现在支持自动防兰软件保护(ARP)。Cloud Volumes ONTAP 9.12.1及更高版本支持ARP。
+
+要了解有关ARP与Cloud Volumes ONTAP的更多信息、请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["自主勒索软件保护"]。
+
+
+
 == 2023年6月26日
 
 以下更改是在3.9.30版的连接器中推出的。

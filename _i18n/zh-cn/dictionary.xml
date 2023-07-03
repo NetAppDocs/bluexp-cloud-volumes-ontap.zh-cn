@@ -3168,7 +3168,6 @@
   <block id="e26935ad375965079b7681b616fa96eb" category="paragraph">以下详细信息可帮助您了解收费如何与基于容量的许可配合使用。</block>
   <block id="10297bdbea13a5f039ea0c228d352388" category="section-title">最低费用</block>
   <block id="2f3cbf00c1fc3c4ac211dcbe5883292c" category="paragraph">如果尚未配置任何卷、则最低费用不适用。</block>
-  <block id="f167d4d0d82d9d30283cad870543871a" category="paragraph">4 TiB最小容量费用仅适用于包含二级(数据保护)卷的Storage VM。例如、如果您的Storage VM包含1 TiB的二级数据、则只需为1 TiB的数据付费。</block>
   <block id="bec8a1d5f2dd848ffc437304b7f6557d" category="section-title">过剩</block>
   <block id="1d47f9c9e82cf7214539548fd5c31bc6" category="paragraph">通过Essentials软件包、您将按部署类型(HA或单个节点)和卷类型(主卷或二级卷)付费。例如、_Essentials HA_的定价与_Essentials Secondary HA_不同。</block>
   <block id="ecc429e82f6e54d1b5ef6c8bb4a49308" category="paragraph">下面是一个示例。假设您已为Essentials软件包获得以下许可证：</block>
@@ -4979,4 +4978,19 @@
   <block id="9bc26bf4259fc1662eaaa13a7534abb1" category="paragraph">BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.1。</block>
   <block id="52801e0e59533cb4c6f4428ad9e239be" category="list-text">9.13.1 RC1.</block>
   <block id="3dc988ad93a3ac0c3a1487fc3b6754cf" category="paragraph">虽然Cloud Volumes ONTAP支持将S3作为横向扩展存储的一个选项、但BlueXP不会为此功能提供任何管理功能。最好使用命令行界面从 Cloud Volumes ONTAP 配置 S3 客户端访问。有关详细信息，请参见<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>。</block>
+  <block id="2db3dc5428f2e0831511cd891db676b1" category="paragraph">对于Essentials软件包、最低4 TiB容量费用不适用于仅包含二级(数据保护)卷的Storage VM。例如、如果您的Storage VM包含1 TiB的二级数据、则只需为1 TiB的数据付费。对于所有其他非Essentials封装类型(优化型、专业型和边缘缓存)、无论卷类型如何、最低容量充电均为4 TiB。</block>
+  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023年7月2日</block>
+  <block id="a6d6a466484f2718bba09926e0dfb2c7" category="paragraph">在3.9.31版本的连接器中引入了以下更改。</block>
+  <block id="0888a7f5d81ff73f5ec9fa719b091bdc" category="section-title">支持在Azure中部署HA多可用性区域</block>
+  <block id="4df3cde02df4d7a411534f5e0a1565bc" category="paragraph">对于Cloud Volumes ONTAP 9.12.1 GA及更高版本、Azure中的日本东部和韩国中部现在支持HA多可用性区域部署。</block>
+  <block id="1453deb356953584c888fcae0040c1c6" category="inline-link">Azure下的全局区域映射</block>
+  <block id="9e8ed8cdd45e3d9bd3f546720545d06a" category="paragraph">有关支持多个可用性区域的所有区域的列表、请参见<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
+  <block id="bdecbec2a6c25b03595e885ec64c0ea0" category="section-title">自主防兰森保护支持</block>
+  <block id="ede53fbba4985444af96fca9c3cc6371" category="paragraph">Cloud Volumes ONTAP现在支持自动防兰软件保护(ARP)。Cloud Volumes ONTAP 9.12.1及更高版本支持ARP。</block>
+  <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索软件保护</block>
+  <block id="ca401b5672c0ad2688c93bc7bc20d2f4" category="paragraph">要了解有关ARP与Cloud Volumes ONTAP的更多信息、请参见<block ref="9a5c0a514fb4b4b0c5abdde049600542" category="inline-link-rx"></block>。</block>
+  <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAP支持自动勒索软件保护(ARP)功能、此功能可对工作负载执行分析、以主动检测可能指示勒索软件攻击的异常活动并发出警告。</block>
+  <block id="75ece8e655ff469f6f78ae805a30c6ad" category="paragraph">无论是基于节点的许可模式还是基于容量的许可模式、ARP功能都只能与BYOL许可证一起使用(一年、两年和三年期)。您必须联系NetApp销售代表以购买新许可证、以便与Cloud Volumes ONTAP中的ARP功能结合使用。</block>
+  <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">启用自主勒索软件保护</block>
+  <block id="f4f1116cfaa769b8eb002623deca5f2e" category="paragraph">购买许可证并将其添加到电子钱包后、您可以使用Cloud Volumes ONTAP按卷启用ARP。可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。有关如何使用ONTAP系统管理器和命令行界面启用ARP的详细信息、请参见<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
 </blocks>

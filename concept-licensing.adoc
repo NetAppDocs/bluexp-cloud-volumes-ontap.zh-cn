@@ -285,7 +285,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["�
 
 如果尚未配置任何卷、则最低费用不适用。
 
-4 TiB最小容量费用仅适用于包含二级(数据保护)卷的Storage VM。例如、如果您的Storage VM包含1 TiB的二级数据、则只需为1 TiB的数据付费。
+对于Essentials软件包、最低4 TiB容量费用不适用于仅包含二级(数据保护)卷的Storage VM。例如、如果您的Storage VM包含1 TiB的二级数据、则只需为1 TiB的数据付费。对于所有其他非Essentials封装类型(优化型、专业型和边缘缓存)、无论卷类型如何、最低容量充电均为4 TiB。
 
 
 

@@ -4995,4 +4995,7 @@
   <block id="f4f1116cfaa769b8eb002623deca5f2e" category="paragraph">购买许可证并将其添加到电子钱包后、您可以使用Cloud Volumes ONTAP按卷启用ARP。可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。有关如何使用ONTAP系统管理器和命令行界面启用ARP的详细信息、请参见<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="46d7a6dd7db3af97caa5603b84f76cc1" category="paragraph">WORM许可仅适用于PAYGO或年度承诺条款、可通过云提供商的市场购买。WORm既支持基于节点的许可模式、也支持基于容量的许可模式。</block>
   <block id="66ab7e49c11a830935ab2c9b0bf49e5e" category="admonition">BYOL许可不适用于Cloud Volumes ONTAP上的WORM存储。</block>
+  <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">正在删除WORM文件</block>
+  <block id="728c208823318f76bc30851f92119221" category="paragraph">您可以使用特权删除功能在保留期间删除WORM文件。</block>
+  <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">有关说明，请参见<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
 </blocks>

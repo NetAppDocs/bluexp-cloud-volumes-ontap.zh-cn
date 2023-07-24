@@ -176,7 +176,9 @@ TIP: 未注册支持的系统仍会收到新版本可用时在BlueXP中显示的
 
 升级单节点系统时，升级过程会使系统脱机长达 25 分钟，在此期间 I/O 会中断。
 
-升级 HA 对无中断， I/O 不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。
+在许多情况下、升级HA对不会造成中断、并且I/O不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。
+
+在升级期间、面向会话的协议可能会对某些方面的客户端和应用程序产生发生原因不利影响。有关详细信息、 https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["请参阅ONTAP文档"^]
 
 
 

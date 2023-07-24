@@ -1486,7 +1486,6 @@
   <block id="68c43e2b96fbdbfa40796f17526ce49b" category="list-text"><block ref="6cb773c19d321df01c24599ee993e239" category="inline-xref-macro-rx"></block></block>
   <block id="f509056e5113d375c99bca630ad36b66" category="section-title">规划停机时间</block>
   <block id="13ab03e6ad3ee2215bec95a4c0f024e2" category="paragraph">升级单节点系统时，升级过程会使系统脱机长达 25 分钟，在此期间 I/O 会中断。</block>
-  <block id="00795e3f043d0bab791590ffc0257204" category="paragraph">升级 HA 对无中断， I/O 不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。</block>
   <block id="534c7f5fb857a948ecc7186949e8487b" category="section-title">验证是否仍启用自动交还</block>
   <block id="9119de3f1b6e3cbe55216fa59da529bf" category="section-title">暂停 SnapMirror 传输</block>
   <block id="a502184baec20af3276eaf812b0bc5e9" category="paragraph">如果 Cloud Volumes ONTAP 系统具有活动的 SnapMirror 关系、最好在更新 Cloud Volumes ONTAP 软件之前暂停传输。暂停传输可防止 SnapMirror 故障。您必须暂停从目标系统进行的传输。</block>
@@ -5000,4 +4999,7 @@
   <block id="fa0127eadcc515624ef23babde9aead2" category="paragraph">购买附加许可证并将其添加到电子钱包后、您可以在Cloud Volumes ONTAP中按卷启用ARP。可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。有关如何使用ONTAP系统管理器和命令行界面启用ARP的详细信息、请参见<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="inline-image-macro">屏幕截图显示了自主防兰软件保护的附加许可证。</block>
   <block id="97a79a643f303c97f7df9ccd26c34e5e" category="paragraph"><block ref="97a79a643f303c97f7df9ccd26c34e5e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">在许多情况下、升级HA对不会造成中断、并且I/O不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。</block>
+  <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">请参阅ONTAP文档</block>
+  <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">在升级期间、面向会话的协议可能会对某些方面的客户端和应用程序产生发生原因不利影响。有关详细信息、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
 </blocks>

@@ -54,6 +54,8 @@ image:screenshot_ransomware_protection.gif["屏幕截图显示了在工作环境
 
 Cloud Volumes ONTAP支持自动勒索软件保护(ARP)功能、此功能可对工作负载执行分析、以主动检测可能指示勒索软件攻击的异常活动并发出警告。
 
-无论是基于节点的许可模式还是基于容量的许可模式、ARP功能都只能与BYOL许可证一起使用(一年、两年和三年期)。您必须联系NetApp销售代表以购买新许可证、以便与Cloud Volumes ONTAP中的ARP功能结合使用。
+无论是基于节点的许可模式还是基于容量的许可模式、ARP功能都只能与BYOL许可证一起使用(一年期、两年期和三年期)。要购买新的单独附加许可证、以便与Cloud Volumes ONTAP中的ARP功能结合使用、您必须与NetApp销售代表联系。
 
-购买许可证并将其添加到电子钱包后、您可以使用Cloud Volumes ONTAP按卷启用ARP。可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。有关如何使用ONTAP系统管理器和命令行界面启用ARP的详细信息、请参见 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["启用自主勒索软件保护"^]。
+购买附加许可证并将其添加到电子钱包后、您可以在Cloud Volumes ONTAP中按卷启用ARP。可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。有关如何使用ONTAP系统管理器和命令行界面启用ARP的详细信息、请参见 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["启用自主勒索软件保护"^]。
+
+image:screenshot_arp.png["屏幕截图显示了自主防兰软件保护的附加许可证。"]

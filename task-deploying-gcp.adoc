@@ -154,11 +154,20 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 +
 有关选择磁盘类型和大小的帮助，请参见 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["在Google Cloud中调整系统规模"]。
 
-. *写入速度和WORM*：
+. *Flash Cache、写入速度和WORM*：
 +
+.. 如果需要，启用*Flash Cache *。
++
+
+NOTE: 从Cloud Volumes ONTAP 9.13.1开始、n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64实例类型均支持_Flash Cache。部署后、您无法禁用Flash Cache。
+
 .. 如果需要、选择*正常*或*高*写入速度。
 +
 link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
+
++
+
+NOTE: 通过*高速*写入速度选项、可以获得较高的写入速度和较高的最大传输单元(MTU)、即8、896字节。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。有关VPC-1、VPC-2和VPC-3的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的规则"]。
 
 .. 根据需要激活一次写入、多次读取(WORM)存储。
 +
@@ -386,15 +395,20 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 +
 有关选择磁盘类型和大小的帮助，请参见 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["在Google Cloud中调整系统规模"]。
 
-. *写入速度和WORM*：
+. *Flash Cache、写入速度和WORM*：
 +
+.. 如果需要，启用*Flash Cache *。
++
+
+NOTE: 从Cloud Volumes ONTAP 9.13.1开始、n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64实例类型均支持_Flash Cache。部署后、您无法禁用Flash Cache。
+
 .. 如果需要、选择*正常*或*高*写入速度。
 +
 link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
 
 +
 
-NOTE: 通过使用n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64实例类型的*高*写入速度选项、可以使用_Flash Cache_、高写入速度和更高的最大传输单元(MTU) 8、896字节。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。_Flash Cache_、高写入速度和8、896的MTU与功能相关、不能在已配置的实例中单独禁用。有关VPC-1、VPC-2和VPC-3的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的规则"]。
+NOTE: 通过*高*写入速度选项可获得高写入速度和8、896字节的最大传输单元(MTU)、实例类型为n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。高写入速度和8、896的MTU与功能相关、不能在已配置的实例中单独禁用。有关VPC-1、VPC-2和VPC-3的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的规则"]。
 
 .. 根据需要激活一次写入、多次读取(WORM)存储。
 +

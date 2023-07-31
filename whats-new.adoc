@@ -20,6 +20,44 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2023年7月30日
+
+以下更改是在连接器3.9.32版本中推出的。
+
+
+
+=== Google Cloud支持Flash Cache和高写入速度
+
+在适用于Cloud Volumes ONTAP 9.13.1及更高版本的Google Cloud中、可以单独启用Flash Cache和高写入速度。所有受支持的实例类型均支持高写入速度。以下实例类型支持Flash Cache：
+
+* N2-standard-16
+* N2-standard-32
+* N2-standard-48
+* N2-standard-64
+
+
+您可以在单节点部署和高可用性对部署中单独使用或同时使用这些功能。
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["在Google Cloud中启动Cloud Volumes ONTAP"]
+
+
+
+=== 使用情况报告增强功能
+
+现在、对使用情况报告中显示的信息进行了各种改进。以下是使用情况报告的增强功能：
+
+* 此时、TiB单元将包含在列名称中。
+* 现在、系统会为序列号添加一个新的"节点"字段。
+* 现在、Storage VM使用情况报告下会包含一个新的"Workload Type"列。
+* 工作环境名称现在包含在Storage VM和卷使用情况报告中。
+* 卷类型"file"现在标记为"Primary (Read/Write)"。
+* 卷类型"Secondary (DP)"现在标记为"Secondary (Secondary (DP))"。
+
+
+有关使用情况报告的详细信息、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["下载使用情况报告"^]。
+
+
+
 == 2023年7月26日
 
 在3.9.31版本的连接器中引入了以下更改。
@@ -30,7 +68,7 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.1正式发布版。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 
@@ -1253,5 +1291,5 @@ Cloud Volumes ONTAP 现在支持以下计算机类型：
 默认情况下、BlueXP现在可在Cloud Volumes ONTAP 及其关联存储帐户之间启用Azure专用链路连接。专用链路可确保 Azure 中端点之间的连接安全。
 
 * https://docs.microsoft.com/en-us/azure/private-link/private-link-overview["了解有关 Azure 专用链接的更多信息"^]
-* link:task-enabling-private-link.html["了解有关将 Azure 专用链路与 Cloud Volumes ONTAP 结合使用的更多信息"]
+* link:task-enabling-private-link.html["了解有关将 Azure 专用链路与 Cloud Volumes ONTAP 结合使用的更多信息"^]
 

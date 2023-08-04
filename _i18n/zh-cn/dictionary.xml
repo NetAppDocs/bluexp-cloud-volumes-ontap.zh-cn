@@ -963,13 +963,6 @@
   <block id="2336f58a2a46308c188101459c63fb8b" category="admonition">关闭 Cloud Volumes ONTAP 后，每个块的温度将保持不变，直到您重新启动系统为止。例如，如果在关闭系统时某个块的温度为 5 ，则在重新打开系统时，该临时值仍为 5 。</block>
   <block id="3f0a47d5e00d1740ceca3815cf7bf9b4" category="section-title">设置数据分层</block>
   <block id="ac50ed5a6f154224bf044f6797accc8c" category="paragraph">有关说明以及支持的配置列表，请参见 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
-  <block id="0131f05be010a429416bcb6f853b54f6" category="doc">监控 AWS 资源成本</block>
-  <block id="de4e4bb6bc85c14c6a8601fd20afdca3" category="inline-link">激活 * 工作环境 Id* 标记</block>
-  <block id="ee0050b628db7de40e04e661d528d91f" category="list-text"><block ref="541edff71c56eae6d36d5f7a463cfcca" category="inline-link-rx"></block>。</block>
-  <block id="9dfa1bfa6d369f6aee8b4ba09ac15642" category="paragraph">如果您在卷上启用了 NetApp 的成本节省功能，则成本页面将显示当前月份和前几个月的成本，并显示 NetApp 每年节省的成本。</block>
-  <block id="c58c67877e90861ec92c90c10b7ad7f4" category="paragraph">下图显示了成本页面示例：</block>
-  <block id="37423695a33e814084966c17d451584a" category="inline-image-macro">屏幕截图：显示 Cloud Volumes ONTAP 实例的每月成本。</block>
-  <block id="c3d678c4df92877db53bd1f6e44ec524" category="paragraph"><block ref="c3d678c4df92877db53bd1f6e44ec524" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8caaaa4afae93c31b741be21eed669cc" category="inline-link-macro">了解有关 Cloud Volumes ONTAP 许可证的更多信息</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">授权您的帐户</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">如果您看到 * 欢迎使用 NetApp Keystone * 页面，请向此页面上列出的地址发送电子邮件。</block>
@@ -2470,15 +2463,11 @@
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">这些选项每周 7 天，每天 24 小时免费提供：</block>
@@ -3199,7 +3188,6 @@
   <block id="3bc8827b2b8b4b47a25fb21994526d52" category="paragraph">如果由于写入速度较快而导致数据丢失、事件管理系统(EMS)将报告以下两个事件：</block>
   <block id="7cd42532925d5e610a9d3694b57652da" category="list-text">Cloud Volumes ONTAP 9.8到9.10.1</block>
   <block id="deae9d093dee266b166a3693474231a9" category="paragraph">发生这种情况时、Cloud Volumes ONTAP 应能够启动并继续提供数据、而无需用户干预。</block>
-  <block id="d0cc9b5d406e02bdbb6a1a9848e6af5f" category="inline-link">查看所需权限</block>
   <block id="63e4eec15ba75260d01771611989182b" category="inline-link">查看AWS的最新Connector策略</block>
   <block id="ea03ff7045a27cd5d2c4f32dcc1e5c1a" category="inline-link">查看Azure的最新Connector策略</block>
   <block id="0f0088348e85cdf82b3a00d88879bc4d" category="inline-link">查看Connector的Azure权限</block>
@@ -3399,12 +3387,6 @@
   <block id="8bb4bde51e0ea674bc0393c5923c7145" category="summary">您可以自行创建聚合、也可以让BlueXP在创建卷时为您执行此操作。自行创建聚合的优势在于，您可以选择底层磁盘大小，从而根据需要的容量或性能对聚合进行大小调整。</block>
   <block id="0dca6333e3e343d1b25adfe474ce6b88" category="admonition">必须直接从BlueXP创建和删除所有磁盘和聚合。不应从其他管理工具执行这些操作。这样做可能会影响系统稳定性、妨碍将来添加磁盘的能力、并可能产生冗余云提供商费用。</block>
   <block id="5d8d2c55116ea837270739e0c1ee4fb7" category="list-text">从左侧导航菜单中、选择*存储&gt;画布*。</block>
-  <block id="421ebcf45d96fab9a6689c09c19a1270" category="summary">通过BlueXP、您可以查看与在AWS中运行Cloud Volumes ONTAP 相关的成本。您还可以了解使用 NetApp 功能可以降低存储成本节省了多少资金。</block>
-  <block id="5ff00bdddc3139a1154c3432ef4a3e73" category="paragraph">通过BlueXP、您可以查看与在AWS中运行Cloud Volumes ONTAP 相关的资源成本。您还可以了解使用 NetApp 功能可以降低存储成本节省了多少资金。</block>
-  <block id="947d50be7096c3e69f02ed24b2251b02" category="paragraph">BlueXP会在您刷新页面时更新成本。有关最终成本详细信息，请参阅 AWS 。</block>
-  <block id="cd5e8c25d1aad520d5f38aad580ccac4" category="list-text">验证BlueXP是否可以从AWS获取成本信息：</block>
-  <block id="fa1a1d63af1876462d8a89bb1c81da2a" category="list-text">确保为BlueXP提供权限的IAM策略包括所需的权限。</block>
-  <block id="5137e20086fbd2e10511433ace3ac154" category="paragraph">为了跟踪AWS成本、BlueXP会为Cloud Volumes ONTAP 实例分配成本分配标记。创建首个工作环境后，激活 * 工作环境 Id* 标记。用户定义的标记不会显示在 AWS 计费报告中，除非您在计费和成本管理控制台中激活它们。</block>
   <block id="0c29cb137ebcfb10c1b30edf702322ea" category="paragraph">BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。 <block ref="786d547ede2f0e723e26aaa12a2cb737" category="inline-link-macro-rx"></block>。</block>
   <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">从BlueXP创建连接器</block>
   <block id="68de98d1358d2928dcaffc946aeaa266" category="inline-link">BlueXP对AWS权限的作用</block>
@@ -4402,10 +4384,6 @@
   <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">屏幕截图：在Cloud Volumes ONTAP 系统的功能面板下显示支持注册选项。</block>
   <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fc2c97abb2fb8e3c019de4850d91d264" category="list-text">在"画布"页面上、选择一个Cloud Volumes ONTAP 工作环境、</block>
-  <block id="6ba9fc3c166e3d53b824216485ae89ee" category="list-text">单击菜单图标、然后单击*查看成本报告*。</block>
-  <block id="e657448bf5ab3960e8e1fc068d83deee" category="inline-image-macro">屏幕截图：显示查看成本报告菜单选项。</block>
-  <block id="4881300462ed76e4f5ebaf3070d5e7d9" category="paragraph"><block ref="4881300462ed76e4f5ebaf3070d5e7d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6200e275553fcb2d81141061804129aa" category="list-text">在"画布"页面上、双击您配置为勒索软件保护的系统的名称。</block>
   <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">在概述选项卡上、单击功能面板、然后单击*勒索软件保护*旁边的铅笔图标。</block>
   <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">在查看工作环境时、屏幕截图显示了"概述"页面右上角的"功能"面板下的勒索软件保护设置。</block>
@@ -4772,7 +4750,6 @@
   <block id="a83ee83b3849362150d7c85a1be1dc34" category="paragraph"><block ref="4cff09ac69609cc9da2148aed42c5230" category="inline-link-rx"></block>。</block>
   <block id="2ffa17dd74caa90edaf33636b3e374b1" category="paragraph"><block ref="792ba555e1629fb9b0b5e00711256a74" category="inline-link-rx"></block>。</block>
   <block id="7881621c3d4c91216ebe58ee1cdc87e0" category="paragraph"><block ref="52c47b6a301b0fb242044f1b14c5f663" category="inline-link-rx"></block>。</block>
-  <block id="feb88be5e52ce4e986f7ef4bfbaf1288" category="paragraph"><block ref="feb88be5e52ce4e986f7ef4bfbaf1288" category="inline-link-rx"></block></block>
   <block id="3965802fcf5e10ce9592a0a18652be93" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。<block ref="844cb231ba4a790d05c855a31c806f9e" category="inline-link-rx"></block>。</block>
   <block id="0da43a7e3c6cfdde29516fa9349ef93a" category="paragraph">如果您没有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="f726618e636b13d16a9541b596528791" category="inline-link-rx"></block></block>
   <block id="170e894372aa99f8bb588bbbfc2f83a2" category="paragraph">Cloud Volumes ONTAP 需要一个 Google Cloud 服务帐户，用于两种目的。第一种情况是启用时 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 在 Google Cloud 中将冷数据分层到低成本对象存储。第二种情况是在启用时<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> 将卷备份到低成本对象存储。</block>
@@ -5030,4 +5007,12 @@
   <block id="5e167ef814cd8fe02fd01be002ffa235" category="list-text"><block ref="5e167ef814cd8fe02fd01be002ffa235" category="inline-link-macro-rx"></block></block>
   <block id="4a9ebfe4f0e3302083955176f47a9519" category="list-text">工作环境ID和名称(显示为UUID)</block>
   <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">工作负载类型</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>

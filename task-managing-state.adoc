@@ -38,7 +38,7 @@ summary: 您可以从BlueXP停止并启动Cloud Volumes ONTAP 来管理您的云
 . 在"画布"页面上、双击所需的工作环境。
 . 在概述选项卡上、单击功能面板、然后单击*计划内停机*旁边的铅笔图标。
 +
-image:screenshot_schedule_downtime.png["屏幕抓图：显示加载自动关机页面的图标。"]
+image::screenshot_schedule_downtime.png[400]
 
 . 指定关机计划：
 +

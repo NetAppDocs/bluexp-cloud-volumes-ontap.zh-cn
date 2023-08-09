@@ -143,7 +143,7 @@ TIP: 如果在 HA 对中的节点之间移动卷、则应使用其他节点的 I
 
 您可以通过BlueXP中管理卷面板下的_Mount Command_选项轻松识别正确的IP地址。
 
-image:screenshot_mount_option.png["屏幕抓图：显示选择卷时可用的挂载命令。"]
+image::screenshot_mount_option.png[400]
 
 
 

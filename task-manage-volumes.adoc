@@ -257,7 +257,7 @@ TIP: 当聚合已达到90%的已用容量时、BlueXP会显示这些"需要执�
 您应该选择足够大的卷来释放聚合中的空间、以便将来避免出现额外的容量问题。
 
 +
-image:screenshot_aggr_volume_overview.png["屏幕抓图：显示聚合中聚合中卷的列表（在 \" 聚合信息 \" 对话框中）。"]
+image::screenshot_aggr_volume_overview.png[屏幕截图：总体卷概述]
 
 
 
@@ -335,7 +335,7 @@ image:screenshot_aggr_volume_overview.png["屏幕抓图：显示聚合中聚合�
 .. 导航到所需的聚合图块、然后单击*。 (椭圆图标)>查看聚合详细信息*。
 .. 在聚合区块下、查看可用容量(已配置大小减去已用聚合容量)。
 +
-image:screenshot_aggr_capacity.png["屏幕抓图：显示聚合信息对话框中可用的总聚合容量和已用聚合容量。"]
+image::screenshot_aggr_capacity.png[屏幕截图：总容量]
 
 
 
@@ -380,7 +380,7 @@ image:screenshot_aggr_capacity.png["屏幕抓图：显示聚合信息对话框�
 
 您可以直接通过BlueXP中的卷选项卡查看通过命令行界面或System Manager创建的FlexGroup 卷。与为FlexVol 卷提供的信息相同、BlueXP通过专用的卷图块提供有关已创建的跳蚤组卷的详细信息。在卷磁贴下、您可以通过图标的悬停文本来标识每个FlexGroup 卷组。此外、您还可以通过卷模式列在卷列表视图下标识FlexGroup 卷并对其进行排序。
 
-image:screenshot_show_flexgroup_vol.png["显示FlexGroup 卷图标将文本悬停在卷磁贴下的屏幕截图。"]
+image::screenshot_show_flexgroup_vol.png[屏幕截图显示了FlexGroup vol]
 
 
 NOTE: 目前、您只能在BlueXP下查看现有FlexGroup 卷。在BlueXP中创建FlexGroup 卷的功能不可用、但计划在未来版本中使用。

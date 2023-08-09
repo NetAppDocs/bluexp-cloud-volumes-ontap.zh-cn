@@ -29,7 +29,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["
 . 在"画布"页面上、双击要注册的系统的名称。
 . 在概述选项卡上、单击功能面板、然后单击*支持注册*旁边的铅笔图标。
 +
-image:screenshot_features_support_registration_2.png["屏幕截图：在Cloud Volumes ONTAP 系统的功能面板下显示支持注册选项。"]
+image::screenshot_features_support_registration_2.png[400]
 
 . 选择一个 NetApp 支持站点帐户，然后单击 * 注册 * 。
 

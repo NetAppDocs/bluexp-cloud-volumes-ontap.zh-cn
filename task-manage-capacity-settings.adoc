@@ -24,7 +24,7 @@ summary: 您可以通过添加磁盘，查看聚合相关信息以及删除聚�
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
 +
-image:screenshot_settings_connector_button.png["设置图标下的连接器设置选项的屏幕截图。"]
+image::screenshot_settings_connector_button.png[屏幕截图设置连接器按钮]
 
 . 在*容量*下、修改以下任何设置：
 +

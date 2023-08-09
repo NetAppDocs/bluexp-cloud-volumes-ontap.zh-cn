@@ -29,7 +29,7 @@ summary: '随着存储需求的变化，您可能需要更改 Cloud Volumes ONTA
 . 在"画布"页面上、双击要配置为写入速度的系统的名称。
 . 在概述选项卡上、单击功能面板、然后单击*写入速度*旁边的铅笔图标。
 +
-image:screenshot_features_write_speed.png["查看工作环境时、可通过概述页面右上角的功能面板查看写入速度设置的屏幕截图。"]
+image::screenshot_features_write_speed.png[400]
 
 . 选择 * 正常 * 或 * 高 * 。
 +

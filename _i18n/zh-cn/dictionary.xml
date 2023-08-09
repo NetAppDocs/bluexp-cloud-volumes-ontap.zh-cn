@@ -152,7 +152,6 @@
   <block id="4df66712f957d539001edc73bbb48742" category="list-text">此任务会安排 HA 对中两个节点的自动关闭。</block>
   <block id="a38060fa2aae177f0fbef99ef2923324" category="list-text">通过计划的关闭关闭关闭 Cloud Volumes ONTAP 时，不会创建启动磁盘和根磁盘的快照。</block>
   <block id="1f9d590b21cddc0cc992effc141a9be2" category="paragraph">只有在执行手动关闭时，才会自动创建快照，如下一节所述。</block>
-  <block id="34e70391062bd14a2cecba6e39595285" category="inline-image-macro">屏幕抓图：显示加载自动关机页面的图标。</block>
   <block id="5f95206b8c2df1268bd8a4454e57f5df" category="list-text">指定关机计划：</block>
   <block id="3a3fb4513da1ae453de12bb3293a3aa1" category="list-text">选择是每天、每工作日、每周末还是三个选项的任意组合来关闭系统。</block>
   <block id="063dc598b5df43ce8c2ce8aebd705d40" category="list-text">指定关闭系统的时间以及关闭系统的时间。</block>
@@ -461,7 +460,6 @@
   <block id="5a31c45fe6b6d37f4ceeb5b86c4346da" category="list-text">查看“ Action Required ”（需要操作）消息中的高级信息以确定已达到其容量限制的聚合。</block>
   <block id="34b14acb1a2ab9863c3c5dad4fd43a16" category="paragraph">例如，高级信息应显示类似于以下内容的内容：聚合 aggr1 已达到其容量限制。</block>
   <block id="d741de259d45adde48602bde8af2fa1e" category="list-text">确定要从聚合中移出的一个或多个卷：</block>
-  <block id="44996e2a556779f9e9d262677dc18a32" category="inline-image-macro">屏幕抓图：显示聚合中聚合中卷的列表（在 " 聚合信息 " 对话框中）。</block>
   <block id="1ac63b40afca7dec0b6be58237e990c5" category="paragraph">您应该选择足够大的卷来释放聚合中的空间、以便将来避免出现额外的容量问题。</block>
   <block id="a64d88ebebbadd18db492923a6de8f40" category="list-text">如果系统未达到磁盘限制、则应将卷移动到同一系统上的现有聚合或新聚合。</block>
   <block id="b665b3a7d068d10da4bb1ff6a9eebc76" category="inline-link-macro">将卷移动到另一个聚合以避免容量问题</block>
@@ -487,7 +485,6 @@
   <block id="9b75835d1597be290e865df9d9c03011" category="section-title">将卷移动到另一个聚合以避免容量问题</block>
   <block id="46532ea93f05a647dcfb9dbb7724acf3" category="paragraph">您可以将一个或多个卷移动到另一个聚合中以避免容量问题。</block>
   <block id="b9caee734c459ea1d440e0f169eb1723" category="list-text">验证现有聚合是否具有需要移动的卷的可用容量：</block>
-  <block id="82cf261b628d223daf02ae88b056b424" category="inline-image-macro">屏幕抓图：显示聚合信息对话框中可用的总聚合容量和已用聚合容量。</block>
   <block id="b8bd018e0e8deb966bda4a09610591ac" category="list-text">如果需要，请将磁盘添加到现有聚合：</block>
   <block id="3425dbe0168b60aed62d54b2290baad1" category="list-text">选择要添加的磁盘数，然后单击 * 添加 * 。</block>
   <block id="e272fdd11a7aa99158a093a41c65fdd9" category="list-text">如果没有聚合可用容量，请创建新聚合。</block>
@@ -1062,7 +1059,6 @@
   <block id="d8072809ae78c7f725f816f0bd8b9543" category="section-title">客户端访问存储</block>
   <block id="21d971c1fd1bf90d09fc9c3acbf89eef" category="paragraph">客户端应使用卷所在节点的数据 IP 地址访问 NFS 和 CIFS 卷。如果 NAS 客户端使用伙伴节点的 IP 地址访问卷、则两个节点之间的通信量都会降低性能。</block>
   <block id="7dc27ef59812147ac25a6539ca8487d1" category="admonition">如果在 HA 对中的节点之间移动卷、则应使用其他节点的 IP 地址重新装入卷。否则，您可能会遇到性能降低的问题。如果客户机支持 NFSv4 引用或 CIFS 文件夹重定向、则可以在 Cloud Volumes ONTAP 系统上启用这些功能以避免重新装入卷。有关详细信息，请参见 ONTAP 文档。</block>
-  <block id="d0eb9723d8f743b568ca7af03af706b0" category="inline-image-macro">屏幕抓图：显示选择卷时可用的挂载命令。</block>
   <block id="987e6a12f4054c7d2b4fb12b670fd3e2" category="summary">了解默认情况下如何配置 Cloud Volumes ONTAP 可以帮助您设置和管理系统、尤其是在您熟悉 ONTAP 的情况下、因为 Cloud Volumes ONTAP 的默认设置不同于 ONTAP 。</block>
   <block id="f280b5a5c0eeaf41d31a8a2661b341cb" category="doc">Cloud Volumes ONTAP 的默认配置</block>
   <block id="bd87106622bcf823ab94ad8e03ed23db" category="inline-link-macro">了解有关管理 Storage VM 的更多信息</block>
@@ -4338,8 +4334,6 @@
   <block id="99388f0fdeac933c80f2d52c95fe6eac" category="list-text">1个集群管理LIF (e0a)</block>
   <block id="07ddec46aac81bd14d6fc7f0d22ee78d" category="list-text">1个或2个NAS LIF (e0a)</block>
   <block id="e8c25ea78d67a6ef891f303353422dbd" category="paragraph">+<block ref="45bd8c026c5ef22179001445b3bd636a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2c75d71bcadfabfa7cf8757cbfdd3d85" category="inline-image-macro">设置图标下的连接器设置选项的屏幕截图。</block>
-  <block id="473c33023a339a6b370b4ddd3b34813e" category="paragraph"><block ref="473c33023a339a6b370b4ddd3b34813e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e11b0ec6ed47b1e8f7051aaab70da38" category="list-text">聚合容量阈值—可用空间比率</block>
   <block id="c707daf76e9202bb2278e4872c7db485" category="list-text">聚合容量阈值—数据分层的可用空间比率</block>
   <block id="93538ad94a332061adf2239e8ac21a4d" category="list-text">在"画布"页面上、选择工作环境。</block>
@@ -4359,8 +4353,6 @@
   <block id="f20c2435bfa2bf017b0a33455e4d252c" category="list-text">选择不包含任何卷的聚合图块单击*。 (椭圆图标)&gt;删除*。</block>
   <block id="44f505566cfb44ab274d6dd37da6a48b" category="list-text">在"画布"页面上、双击要配置为写入速度的系统的名称。</block>
   <block id="b9c48f0b7a355bd9b39b3ae2c666ec43" category="list-text">在概述选项卡上、单击功能面板、然后单击*写入速度*旁边的铅笔图标。</block>
-  <block id="bc3c9695426ff48d40dce0286c7e05f4" category="inline-image-macro">查看工作环境时、可通过概述页面右上角的功能面板查看写入速度设置的屏幕截图。</block>
-  <block id="98dbfe06324c35bb25c949f4b21d581a" category="paragraph"><block ref="98dbfe06324c35bb25c949f4b21d581a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e1d6d29fa6bbc00ab6896ec1e677037" category="list-text">单击*保存*、查看确认消息、然后单击*批准*。</block>
   <block id="38124763ec69515302fcd6a655b0cb92" category="list-text">在"画布"页面上、双击Cloud Volumes ONTAP 工作环境的名称。</block>
   <block id="67f0f7bdc0b6b3c961c645e5a644b531" category="list-text">在BlueXP控制台右上角、单击椭圆图标、然后选择*设置密码*。</block>
@@ -4381,15 +4373,10 @@
   <block id="71b669d4d19df676d975ef4911ded7af" category="paragraph"><block ref="71b669d4d19df676d975ef4911ded7af" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a98606dee1787dfd2471d2ef8adeb680" category="list-text">在"画布"页面上、双击要注册的系统的名称。</block>
   <block id="24901c53838efd4b9981ed8ffd510413" category="list-text">在概述选项卡上、单击功能面板、然后单击*支持注册*旁边的铅笔图标。</block>
-  <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">屏幕截图：在Cloud Volumes ONTAP 系统的功能面板下显示支持注册选项。</block>
-  <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6200e275553fcb2d81141061804129aa" category="list-text">在"画布"页面上、双击您配置为勒索软件保护的系统的名称。</block>
   <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">在概述选项卡上、单击功能面板、然后单击*勒索软件保护*旁边的铅笔图标。</block>
-  <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">在查看工作环境时、屏幕截图显示了"概述"页面右上角的"功能"面板下的勒索软件保护设置。</block>
-  <block id="2a39771bd60186d9d0eea3e49bb0d221" category="paragraph"><block ref="2a39771bd60186d9d0eea3e49bb0d221" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d0b1fe5e5e43d6e24cc20f730b8d1742" category="paragraph">您可以通过BlueXP中管理卷面板下的_Mount Command_选项轻松识别正确的IP地址。</block>
-  <block id="b717cb7368a7773e8663a0b7444325ad" category="paragraph"><block ref="b717cb7368a7773e8663a0b7444325ad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="36466e75ef3251345a1fc3b957275568" category="list-text">在聚合选项卡上、单击*添加聚合*、然后指定聚合的详细信息。</block>
   <block id="3c27c0be3b51a96fbeaf21988a5d0da7" category="paragraph">转到"高级分配"页面时、您可以确定是否已在聚合上启用弹性卷功能。在以下示例中、aggr1已启用弹性卷。</block>
   <block id="da881591358a049c4652b06b1054ccb1" category="inline-image-macro">屏幕截图显示了两个聚合、其中一个聚合的字段显示文本Elastic Volumes Enabled。</block>
@@ -4439,7 +4426,6 @@
   <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">单击*目标IQN*。</block>
   <block id="a56a5ae6f53f5f4ccfd018cd42004ea1" category="list-text">在"画布"页面上、双击所需的工作环境。</block>
   <block id="1db430d5f476ccb7c5abbdfc3d4402d2" category="list-text">在概述选项卡上、单击功能面板、然后单击*计划内停机*旁边的铅笔图标。</block>
-  <block id="16fe8db807301272754ce201908a4d01" category="paragraph"><block ref="16fe8db807301272754ce201908a4d01" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e1d67ee86981cf82fb4f5195e170da1" category="paragraph">下图显示了一个计划、指示BlueXP在每个星期六的晚上20：00关闭系统(晚上8：00)、持续12小时。BlueXP会在每周一中午12：00重新启动系统</block>
   <block id="3d33a0e91197625fe5c19262b8588a5e" category="inline-image-macro">屏幕截图：显示计划停机屏幕。</block>
   <block id="b7964eed3054006e2dc32e71addc9330" category="paragraph"><block ref="b7964eed3054006e2dc32e71addc9330" category="inline-image-macro-rx" type="image"></block></block>
@@ -4504,16 +4490,11 @@
   <block id="4145a13d965a05b20f37aec1922ef7dd" category="list-text">在工作环境中、单击*聚合选项卡*。</block>
   <block id="7d3d9db5a4178e569561d635871c26ed" category="list-text">导航到所需的聚合图块、然后单击*。 (椭圆图标)&gt;查看聚合详细信息*。</block>
   <block id="920937d0401827a767850d6598f69cf9" category="list-text">在聚合详细信息屏幕的概述选项卡下、查看每个卷的大小、然后选择一个或多个卷以从聚合中移出。</block>
-  <block id="e992ef205a43832966f09572f1eb3492" category="paragraph"><block ref="e992ef205a43832966f09572f1eb3492" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">在聚合区块下、查看可用容量(已配置大小减去已用聚合容量)。</block>
-  <block id="448b7e585e92285ee5349bcda1a7acd0" category="paragraph"><block ref="448b7e585e92285ee5349bcda1a7acd0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8fcffd0e2a621979482d32af8df3fa54" category="list-text">选择聚合、然后单击*。 (椭圆图标)&gt;添加磁盘*。</block>
   <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">查看FlexGroup 卷</block>
   <block id="bfc66c582a5f0744b4549abc59217c8b" category="paragraph">您可以直接通过BlueXP中的卷选项卡查看通过命令行界面或System Manager创建的FlexGroup 卷。与为FlexVol 卷提供的信息相同、BlueXP通过专用的卷图块提供有关已创建的跳蚤组卷的详细信息。在卷磁贴下、您可以通过图标的悬停文本来标识每个FlexGroup 卷组。此外、您还可以通过卷模式列在卷列表视图下标识FlexGroup 卷并对其进行排序。</block>
-  <block id="b732fd66a88d23ecd20ddd54d252bde0" category="paragraph"><block ref="b732fd66a88d23ecd20ddd54d252bde0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">在概述选项卡上、单击功能面板、然后单击*实例类型*旁边的铅笔图标。</block>
-  <block id="246617af3cc2b3a4751f4377e63c90d9" category="inline-image-macro">查看工作环境时、可通过概述页面右上角的功能面板查看实例类型设置的屏幕截图。</block>
-  <block id="22d199cf6285224598c87a4bf598fec7" category="paragraph"><block ref="22d199cf6285224598c87a4bf598fec7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e977a40ba12e4cbe82ec5ad1eeca10d3" category="list-text">如果您使用的是基于节点的PAYGO许可证、则可以选择通过单击*许可证类型*旁边的铅笔图标来选择其他许可证和实例类型。</block>
   <block id="dcee8dbc1dce5317d8cfa6588f8f050e" category="list-text">选择一个实例类型、选中此复选框以确认您了解此更改的含义、然后单击*更改*。</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
@@ -4943,7 +4924,6 @@
   <block id="bdecbec2a6c25b03595e885ec64c0ea0" category="section-title">自主防兰森保护支持</block>
   <block id="ede53fbba4985444af96fca9c3cc6371" category="paragraph">Cloud Volumes ONTAP现在支持自动防兰软件保护(ARP)。Cloud Volumes ONTAP 9.12.1及更高版本支持ARP。</block>
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索软件保护</block>
-  <block id="ca401b5672c0ad2688c93bc7bc20d2f4" category="paragraph">要了解有关ARP与Cloud Volumes ONTAP的更多信息、请参见<block ref="9a5c0a514fb4b4b0c5abdde049600542" category="inline-link-rx"></block>。</block>
   <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAP支持自动勒索软件保护(ARP)功能、此功能可对工作负载执行分析、以主动检测可能指示勒索软件攻击的异常活动并发出警告。</block>
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">启用自主勒索软件保护</block>
   <block id="46d7a6dd7db3af97caa5603b84f76cc1" category="paragraph">WORM许可仅适用于PAYGO或年度承诺条款、可通过云提供商的市场购买。WORm既支持基于节点的许可模式、也支持基于容量的许可模式。</block>
@@ -4952,9 +4932,6 @@
   <block id="728c208823318f76bc30851f92119221" category="paragraph">您可以使用特权删除功能在保留期间删除WORM文件。</block>
   <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">有关说明，请参见<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
   <block id="e220f1ef839bc3256ee110a9a5be5c61" category="paragraph">无论是基于节点的许可模式还是基于容量的许可模式、ARP功能都只能与BYOL许可证一起使用(一年期、两年期和三年期)。要购买新的单独附加许可证、以便与Cloud Volumes ONTAP中的ARP功能结合使用、您必须与NetApp销售代表联系。</block>
-  <block id="fa0127eadcc515624ef23babde9aead2" category="paragraph">购买附加许可证并将其添加到电子钱包后、您可以在Cloud Volumes ONTAP中按卷启用ARP。可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。有关如何使用ONTAP系统管理器和命令行界面启用ARP的详细信息、请参见<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
-  <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="inline-image-macro">屏幕截图显示了自主防兰软件保护的附加许可证。</block>
-  <block id="97a79a643f303c97f7df9ccd26c34e5e" category="paragraph"><block ref="97a79a643f303c97f7df9ccd26c34e5e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">在许多情况下、升级HA对不会造成中断、并且I/O不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。</block>
   <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">请参阅ONTAP文档</block>
   <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">在升级期间、面向会话的协议可能会对某些方面的客户端和应用程序产生发生原因不利影响。有关详细信息、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
@@ -5015,4 +4992,19 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="a996d75e91b5144977f6dd124cd75572" category="image-alt">屏幕截图：总体卷概述</block>
+  <block id="e40eb63a3506950ad93ba909dcf25c90" category="image-alt">屏幕截图：总容量</block>
+  <block id="ca7b4e21c879a84e19f4057cd971879d" category="image-alt">屏幕截图显示了FlexGroup vol</block>
+  <block id="18d8042386b79e2c279fd162df0205c8" category="image-alt">400</block>
+  <block id="b26d26fe2543d5473bc9e47f43ccf1a0" category="image-alt">屏幕截图设置连接器按钮</block>
+  <block id="84ad21dcd6ff9e0e4d117b5b3950020e" category="admonition">如果没有许可证、则不支持使用已获得许可的功能。</block>
+  <block id="3799dfe1ae4f409b181ad79e377574c6" category="paragraph">勒索软件攻击可能会耗费业务时间，资源和声誉。借助BlueXP、您可以实施两种NetApp勒索软件解决方案：防范常见勒索软件文件扩展名和自动勒索软件保护(ARP)。这些解决方案为可见性、检测和补救提供了有效的工具。</block>
+  <block id="78cc5cdbd5abab66548d6b3a595b1c6c" category="section-title">防止常见勒索软件文件扩展名</block>
+  <block id="3e5f671180bf2c0f088f815be54e2cdf" category="paragraph">通过BlueXP、勒索软件保护设置允许您利用ONTAP FPolicy功能防范常见的勒索软件文件扩展名类型。</block>
+  <block id="d83738f5ec82db660abbb443f4d3eb21" category="inline-link">勒索软件保护设置</block>
+  <block id="6c32dae7ba2780f8dc42d1813f66ea24" category="paragraph">与通过提供的文件扩展名保护分开<block ref="1f479b2258cad80f990e85fbf571e95d" category="inline-link-rx"></block>，ARP功能使用工作负载分析根据检测到的“异常活动”向用户发出潜在攻击警报。勒索软件保护设置和ARP功能均可结合使用来实现全面的勒索软件保护。</block>
+  <block id="8ba032b0bcbcde63a6545318072ff32b" category="paragraph">购买附加许可证并将其添加到电子钱包后、您可以在Cloud Volumes ONTAP中按卷启用ARP。可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。</block>
+  <block id="dfa314101a62671bea85bd2701b00194" category="paragraph">有关如何使用ONTAP系统管理器和命令行界面启用ARP的详细信息、请参见<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
+  <block id="65b6e49abdf1ec103e12f3c1d363d3d8" category="image-alt">屏幕截图arp</block>
+  <block id="4f87e49be20cab28b98c082c672f9032" category="paragraph">要了解有关ARP与Cloud Volumes ONTAP的更多信息、请参见<block ref="3ad484b0b391dd26474b87b6bc7f70b6" category="inline-link-rx"></block>。</block>
 </blocks>

@@ -42,7 +42,7 @@ TIP: BlueXP通过启动接管并等待交还来一次妥善更改一个节点。
 . 在"画布"页面上、选择工作环境。
 . 在概述选项卡上、单击功能面板、然后单击*实例类型*旁边的铅笔图标。
 +
-image:screenshot_features_instance_type.png["查看工作环境时、可通过概述页面右上角的功能面板查看实例类型设置的屏幕截图。"]
+image::screenshot_features_instance_type.png[400]
 
 +
 .. 如果您使用的是基于节点的PAYGO许可证、则可以选择通过单击*许可证类型*旁边的铅笔图标来选择其他许可证和实例类型。

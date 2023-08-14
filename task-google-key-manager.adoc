@@ -11,6 +11,7 @@ summary: 利用Google的密钥管理服务提供第三方密钥管理服务。
 :imagesdir: ../media/
 
 
+[role="lead"]
 您可以使用 link:https://cloud.google.com/kms/docs["Google Cloud Platform 的密钥管理服务（ Cloud KMS ）"^] 在部署了Google Cloud Platform的应用程序中保护ONTAP 加密密钥。
 
 可以使用命令行界面或ONTAP REST API启用Cloud KMS的密钥管理。

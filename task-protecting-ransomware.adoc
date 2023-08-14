@@ -20,14 +20,13 @@ summary: 勒索软件攻击可能会耗费业务时间，资源和声誉。借�
 
 == 防止常见勒索软件文件扩展名
 
-[role="lead"]
 通过BlueXP、勒索软件保护设置允许您利用ONTAP FPolicy功能防范常见的勒索软件文件扩展名类型。
 
 .步骤
 . 在"画布"页面上、双击您配置为勒索软件保护的系统的名称。
 . 在概述选项卡上、单击功能面板、然后单击*勒索软件保护*旁边的铅笔图标。
 +
-image::screenshot_features_ransomware.png[400]
+image::screenshot_features_ransomware.png[在查看工作环境时、屏幕截图显示了"概述"页面右上角的"功能"面板下的勒索软件保护设置。]
 
 . 实施 NetApp 解决方案 for 勒索软件：
 +
@@ -60,7 +59,6 @@ image:screenshot_ransomware_protection.gif["屏幕截图显示了在工作环境
 
 == 自主勒索软件保护
 
-[role="lead"]
 Cloud Volumes ONTAP支持自动勒索软件保护(ARP)功能、此功能可对工作负载执行分析、以主动检测可能指示勒索软件攻击的异常活动并发出警告。
 
 与通过提供的文件扩展名保护分开 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["勒索软件保护设置"]，ARP功能使用工作负载分析根据检测到的“异常活动”向用户发出潜在攻击警报。勒索软件保护设置和ARP功能均可结合使用来实现全面的勒索软件保护。
@@ -74,4 +72,4 @@ Cloud Volumes ONTAP支持自动勒索软件保护(ARP)功能、此功能可对�
 
 NOTE: 如果没有许可证、则不支持使用已获得许可的功能。
 
-image::screenshot_arp.png[屏幕截图arp]
+image::screenshot_arp.png[屏幕截图显示了自主防兰软件保护的附加许可证。]

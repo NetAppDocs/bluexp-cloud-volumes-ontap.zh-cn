@@ -14,7 +14,7 @@ summary: '与标准AWS区域类似、您可以在AWS商用云服务(C2S)环境�
 
 
 [role="lead"]
-与标准 AWS 区域类似，您可以在中使用 Cloud Manager https://aws.amazon.com/federal/us-intelligence-community/["AWS 商用云服务（ C2S ）"] 部署 Cloud Volumes ONTAP 的环境，为您的云存储提供企业级功能。AWS C2S 是一个特定于美国的封闭区域智能社区；此页面上的说明仅适用于 AWS C2S 区域用户。
+与标准 AWS 区域类似，您可以在中使用 Cloud Manager link:https://aws.amazon.com/federal/us-intelligence-community/["AWS 商用云服务（ C2S ）"^] 部署 Cloud Volumes ONTAP 的环境，为您的云存储提供企业级功能。AWS C2S 是一个特定于美国的封闭区域智能社区；此页面上的说明仅适用于 AWS C2S 区域用户。
 
 
 
@@ -366,7 +366,7 @@ CMK 可以是 AWS 管理的 CMK 或客户管理的 CMK 。
 
 . 从连接到 Connector 实例的主机设置 Cloud Manager ：
 +
-.. 打开 Web 浏览器并输入以下 URL ： http://ipaddress[]
+.. 打开 Web 浏览器并输入 https://_ipaddress_[] 其中_ipaddress_是安装了连接器的Linux主机的IP地址。
 .. 指定用于连接到 AWS 服务的代理服务器。
 .. 上传您在步骤 1 中获得的证书。
 .. 完成设置向导中的步骤以设置 Cloud Manager 。

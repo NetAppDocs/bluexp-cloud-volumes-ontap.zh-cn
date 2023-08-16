@@ -88,7 +88,7 @@ HA 配置可保持数据的高可用性，如下所示：
 
 在跨多个可用性区域部署 HA 配置之前，应先检查浮动 IP 地址和路由表的要求。部署配置时，必须指定浮动 IP 地址。专用IP地址由BlueXP自动创建。
 
-有关详细信息，请参见 link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["适用于多个 AWS 中的 Cloud Volumes ONTAP HA 的 AWS 网络要求"]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["适用于多个 AWS 中的 Cloud Volumes ONTAP HA 的 AWS 网络要求"^]。
 
 
 

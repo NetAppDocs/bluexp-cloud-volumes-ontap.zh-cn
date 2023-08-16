@@ -220,8 +220,8 @@ TIP: 如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访
 --
 请注意， HA 配置需要两组防火墙规则：
 
-* VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。 <<Firewall rules for Cloud Volumes ONTAP,了解更多信息。>>。
-* VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。 <<Firewall rules for Cloud Volumes ONTAP,了解更多信息。>>。
+* VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。 <<防火墙规则,了解更多信息。>>。
+* VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。 <<防火墙规则,了解更多信息。>>。
 
 
 --
@@ -250,7 +250,7 @@ Cloud Volumes ONTAP 的防火墙规则需要入站和出站规则。如果要部
 请注意， HA 配置需要两组防火墙规则：
 
 * VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。
-* VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。 <<Rules for VPC-1,vPC-2和vPC-3、了解更多信息>>。
+* VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。 <<rules-for-vpc,了解更多信息。>>。
 
 
 

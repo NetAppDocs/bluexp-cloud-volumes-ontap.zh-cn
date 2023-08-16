@@ -125,7 +125,7 @@ TIP: 如果您正在使用的 Azure 帐户具有 https://docs.netapp.com/us-en/b
 
 
 
-| 使用现有 | 如果选择现有安全组，则该组必须满足 Cloud Volumes ONTAP 要求。 link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["查看默认安全组"]。 
+| 使用现有 | 如果选择现有安全组，则该组必须满足 Cloud Volumes ONTAP 要求。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["查看默认安全组"^]。 
 |===
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +
@@ -151,7 +151,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 ** 磁盘类型用于初始卷。您可以为后续卷选择不同的磁盘类型。
 ** 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 +
-有关选择磁盘类型和大小的帮助，请参见 link:task-planning-your-config-azure.html#sizing-your-system-in-azure["在 Azure 中估算系统规模"]。
+有关选择磁盘类型和大小的帮助，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在 Azure 中估算系统规模"^]。
 
 ** 您可以在创建或编辑卷时选择特定的卷分层策略。
 ** 如果禁用数据分层，则可以在后续聚合上启用它。
@@ -246,7 +246,7 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能，并根据需要更改卷分层策略。
 +
-有关详细信息，请参见 link:task-planning-your-config-azure.html#choosing-a-volume-usage-profile["了解卷使用情况配置文件"] 和 link:concept-data-tiering.html["数据分层概述"]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["了解卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +
@@ -360,7 +360,7 @@ TIP: 如果您正在使用的 Azure 帐户具有 https://docs.netapp.com/us-en/b
 
 
 
-| 使用现有 | 如果选择现有安全组，则该组必须满足 Cloud Volumes ONTAP 要求。 link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["查看默认安全组"]。 
+| 使用现有 | 如果选择现有安全组，则该组必须满足 Cloud Volumes ONTAP 要求。 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["查看默认安全组"^]。 
 |===
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +
@@ -385,7 +385,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 +
 ** 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 +
-有关选择磁盘大小的帮助、请参见 link:task-planning-your-config-azure.html#sizing-your-system-in-azure["在 Azure 中估算系统规模"]。
+有关选择磁盘大小的帮助、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在 Azure 中估算系统规模"^]。
 
 ** 您可以在创建或编辑卷时选择特定的卷分层策略。
 ** 如果禁用数据分层，则可以在后续聚合上启用它。
@@ -493,7 +493,7 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能，并根据需要更改卷分层策略。
 +
-有关详细信息，请参见 link:task-planning-your-config-azure.html#choosing-a-volume-usage-profile["了解卷使用情况配置文件"] 和 link:concept-data-tiering.html["数据分层概述"]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["了解卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +

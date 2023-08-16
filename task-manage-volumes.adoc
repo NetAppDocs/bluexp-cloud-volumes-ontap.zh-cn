@@ -263,18 +263,18 @@ image::screenshot_aggr_volume_overview.png[屏幕截图：总体卷概述]
 
 . 如果系统未达到磁盘限制、则应将卷移动到同一系统上的现有聚合或新聚合。
 +
-有关详细信息，请参见 link:task-manage-volumes.html#moving-volumes-to-another-aggregate-to-avoid-capacity-issues["将卷移动到另一个聚合以避免容量问题"]。
+有关详细信息，请参见 <<move-volumes-aggregate-capacity,将卷移动到另一个聚合以避免容量问题>>。
 
 . 如果系统已达到磁盘限制，请执行以下任一操作：
 +
 .. 删除所有未使用的卷。
 .. 重新排列卷以释放聚合上的空间。
 +
-有关详细信息，请参见 link:task-manage-volumes.html#moving-volumes-to-another-aggregate-to-avoid-capacity-issues["将卷移动到另一个聚合以避免容量问题"]。
+有关详细信息，请参见 <<move-volumes-aggregate-capacity,将卷移动到另一个聚合以避免容量问题>>。
 
 .. 将两个或多个卷移动到另一个具有空间的系统。
 +
-有关详细信息，请参见 link:task-manage-volumes.html#moving-volumes-to-another-system-to-avoid-capacity-issues["将卷移动到另一个系统以避免容量问题"]。
+有关详细信息，请参见 <<move-volumes-aggregate-capacity,将卷移动到另一个聚合以避免容量问题>>。
 
 
 

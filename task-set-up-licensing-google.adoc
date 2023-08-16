@@ -20,7 +20,7 @@ summary: 在确定要对Cloud Volumes ONTAP 使用的许可选项后、需要执
 
 == 免费
 
-选择免费提供的Cloud Volumes ONTAP 、可在配置容量高达500 GiB的情况下免费使用。 link:concept-licensing.html#freemium-offering["了解有关免费提供的更多信息"]。
+选择免费提供的Cloud Volumes ONTAP 、可在配置容量高达500 GiB的情况下免费使用。 link:concept-licensing.html#packages["了解有关免费提供的更多信息"]。
 
 .步骤
 . 从左侧导航菜单中、选择*存储>画布*。
@@ -28,7 +28,7 @@ summary: 在确定要对Cloud Volumes ONTAP 使用的许可选项后、需要执
 +
 .. 在*详细信息和凭据*页面上、单击*编辑凭据>添加订阅*、然后按照提示订阅Google Cloud Marketplace中的按需购买服务。
 +
-除非您超过500 GiB的已配置容量、否则不会通过Marketplace订阅向您收取费用、此时系统将自动转换为 link:concept-licensing.html#capacity-based-licensing-packages["Essentials 软件包"]。
+除非您超过500 GiB的已配置容量、否则不会通过Marketplace订阅向您收取费用、此时系统将自动转换为 link:concept-licensing.html#packages["Essentials 软件包"]。
 
 .. 返回到BlueXP后、访问充电方法页面时选择*免费*。
 +
@@ -53,7 +53,7 @@ Essentials 和 Professional 软件包可用于以下消费模式：
 * 年度合同
 
 
-link:concept-licensing.html#freemium-offering["了解有关基于容量的许可的更多信息"]。
+link:concept-licensing.html#capacity-based-licensing["了解有关基于容量的许可的更多信息"]。
 
 以下各节介绍了如何开始使用上述每种消费模式。
 

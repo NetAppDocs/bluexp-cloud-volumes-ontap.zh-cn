@@ -127,7 +127,7 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 
 
 
-| 使用现有防火墙策略 | 如果您使用现有防火墙策略、请确保该策略包含所需的规则。 link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["了解Cloud Volumes ONTAP 的防火墙规则"]。 
+| 使用现有防火墙策略 | 如果您使用现有防火墙策略、请确保该策略包含所需的规则。链接：https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#firewall-rules[Learn关于Cloud Volumes ONTAP的防火墙规则^。 
 |===
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +
@@ -152,7 +152,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 
 +
-有关选择磁盘类型和大小的帮助，请参见 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["在Google Cloud中调整系统规模"]。
+有关选择磁盘类型和大小的帮助，请参见 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在Google Cloud中估算系统规模"]。
 
 . *Flash Cache、写入速度和WORM*：
 +
@@ -260,7 +260,7 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能，并根据需要更改卷分层策略。
 +
-有关详细信息，请参见 link:task-planning-your-config-gcp.html#choosing-a-volume-usage-profile["了解卷使用情况配置文件"] 和 link:concept-data-tiering.html["数据分层概述"]。
+有关详细信息，请参见 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"] 和 link:concept-data-tiering.html["数据分层概述"]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +
@@ -368,7 +368,7 @@ link:reference-networking-gcp.html["详细了解网络要求"]。
 
 
 
-| 使用现有 | 如果您使用现有防火墙策略、请确保该策略包含所需的规则。 link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["了解Cloud Volumes ONTAP 的防火墙规则"]。 
+| 使用现有 | 如果您使用现有防火墙策略、请确保该策略包含所需的规则。 link:reference-networking-gcp.html#firewall-rules["了解Cloud Volumes ONTAP 的防火墙规则"]。 
 |===
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +
@@ -393,7 +393,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 
 +
-有关选择磁盘类型和大小的帮助，请参见 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["在Google Cloud中调整系统规模"]。
+有关选择磁盘类型和大小的帮助，请参见 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在Google Cloud中估算系统规模"]。
 
 . *Flash Cache、写入速度和WORM*：
 +
@@ -500,7 +500,7 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能，并根据需要更改卷分层策略。
 +
-有关详细信息，请参见 link:task-planning-your-config-gcp.html#choosing-a-volume-usage-profile["了解卷使用情况配置文件"] 和 link:concept-data-tiering.html["数据分层概述"]。
+有关详细信息，请参见 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"] 和 link:concept-data-tiering.html["数据分层概述"]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +

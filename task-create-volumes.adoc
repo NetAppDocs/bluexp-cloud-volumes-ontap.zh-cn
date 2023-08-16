@@ -18,10 +18,10 @@ summary: 如果在启动初始Cloud Volumes ONTAP 系统后需要更多存储、
 
 BlueXP提供了多种创建新卷的方法：
 
-* 指定新卷的详细信息、并让BlueXP为您处理底层数据聚合。 <<创建卷,了解更多信息。>>。
-* 在您选择的数据聚合上创建卷。 <<创建卷,了解更多信息。>>。
-* 使用模板创建卷，以根据特定应用程序（例如数据库或流式服务）的工作负载要求优化卷。 <<使用模板创建卷,了解更多信息。>>。
-* 在 HA 配置中的第二个节点上创建卷。 <<在 HA 配置中的第二个节点上创建卷,了解更多信息。>>。
+* 指定新卷的详细信息、并让BlueXP为您处理底层数据聚合。 <<create-a-volume,了解更多信息。>>
+* 在您选择的数据聚合上创建卷。 <<create-a-volume,了解更多信息。>>
+* 使用模板创建卷，以根据特定应用程序（例如数据库或流式服务）的工作负载要求优化卷。 <<create-a-volume-from-a-template,了解更多信息。>>
+* 在 HA 配置中的第二个节点上创建卷。 <<create-volume-second-node,了解更多信息。>>
 
 
 
@@ -30,7 +30,7 @@ BlueXP提供了多种创建新卷的方法：
 
 有关卷配置的一些注意事项：
 
-* 创建iSCSI卷时、BlueXP会自动为您创建LUN。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后， <<将 LUN 连接到主机,使用 IQN 从主机连接到 LUN>>。
+* 创建iSCSI卷时、BlueXP会自动为您创建LUN。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后， link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["使用 IQN 从主机连接到 LUN"^]。
 * 您可以从 System Manager 或 CLI 创建其他 LUN 。
 
 
@@ -181,7 +181,7 @@ LUN:: iSCSI 存储目标称为 LUN （逻辑单元），并作为标准块设备
 ifdef::aws[]
 
 +
-*** link:task-planning-your-config.html#sizing-your-system-in-aws["在 AWS 中估算系统规模"]
+*** link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#size-your-system-in-aws["在 AWS 中估算系统规模"^]
 
 
 
@@ -192,14 +192,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-* link:task-planning-your-config-azure.html#sizing-your-system-in-azure["在 Azure 中估算系统规模"]
+* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在 Azure 中估算系统规模"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["在Google Cloud中调整系统规模"]
+* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-gcp.html#size-your-system-in-gcp["在Google Cloud中调整系统规模"^]
 
 
 endif::gcp[]
@@ -250,7 +250,7 @@ image:screenshot_define_cvo_vol_from_template.png["显示创建卷所需填写�
 
 . 在_Action_面板上方、输入模板的名称。
 . 在_context_下、工作环境将填入您启动的工作环境的名称。选择要创建卷的* Storage VM*。
-. 为模板中未硬编码的所有参数添加值。请参见 <<create a volume,创建卷>> 有关完成Cloud Volumes ONTAP 卷部署所需的所有参数的详细信息。
+. 为模板中未硬编码的所有参数添加值。请参见 <<create-a-volume,创建卷>> 有关完成Cloud Volumes ONTAP 卷部署所需的所有参数的详细信息。
 . 单击*应用*将配置的参数保存到选定操作。
 . 如果没有需要定义的其他操作(例如，配置BlueXP备份和恢复)，请单击*保存模板*。
 +

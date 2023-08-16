@@ -101,7 +101,7 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 
 
 
-. * 位置和连接 * ：输入您在中记录的网络信息 link:task-planning-your-config.html#aws-network-information-worksheet["AWS 工作表"]。
+. * 位置和连接 * ：输入您在中记录的网络信息 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information["AWS 工作表"^]。
 +
 下表介绍了可能需要指导的字段：
 
@@ -260,7 +260,7 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能并根据需要编辑卷分层策略。
 +
-有关详细信息，请参见 link:task-planning-your-config.html#choosing-a-volume-usage-profile["了解卷使用情况配置文件"] 和 link:concept-data-tiering.html["数据分层概述"]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["了解卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +
@@ -377,7 +377,7 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 . * 连接和 SSH 身份验证 * ：选择 HA 对和调解器的连接方法。
 . * 浮动 IP* ：如果选择多个 AZs ，请指定浮动 IP 地址。
 +
-该区域中所有 VPC 的 IP 地址必须位于 CIDR 块之外。有关其他详细信息，请参见 link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["适用于多个 AWS 中的 Cloud Volumes ONTAP HA 的 AWS 网络要求"]。
+该区域中所有 VPC 的 IP 地址必须位于 CIDR 块之外。有关其他详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["适用于多个 AWS 中的 Cloud Volumes ONTAP HA 的 AWS 网络要求"^]。
 
 . * 路由表 * ：如果选择多个 AZs ，请选择应包含指向浮动 IP 地址的路由的路由表。
 +
@@ -518,7 +518,7 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能并根据需要编辑卷分层策略。
 +
-有关详细信息，请参见 link:task-planning-your-config.html#choosing-a-volume-usage-profile["了解卷使用情况配置文件"] 和 link:concept-data-tiering.html["数据分层概述"]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["了解卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +

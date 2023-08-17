@@ -31,15 +31,15 @@ summary: 您可以在单系统配置中启动 Cloud Volumes ONTAP 实例，也�
 
 * 了解要使用的配置。
 +
-您应该已准备好选择配置并从管理员处获取 AWS 网络信息。有关详细信息，请参见 link:task-planning-your-config.html["规划 Cloud Volumes ONTAP 配置"]。
+您应该已准备好选择配置并从管理员处获取 AWS 网络信息。有关详细信息，请参见 link:task-planning-your-config.html["规划 Cloud Volumes ONTAP 配置"^]。
 
 * 了解为Cloud Volumes ONTAP 设置许可所需的条件。
 +
-link:task-set-up-licensing-aws.html["了解如何设置许可"]。
+link:task-set-up-licensing-aws.html["了解如何设置许可"^]。
 
 * 用于 CIFS 配置的 DNS 和 Active Directory 。
 +
-有关详细信息，请参见 link:reference-networking-aws.html["AWS 中的 Cloud Volumes ONTAP 的网络要求"]。
+有关详细信息，请参见 link:reference-networking-aws.html["AWS 中的 Cloud Volumes ONTAP 的网络要求"^]。
 
 
 
@@ -123,7 +123,7 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 
 
 
-| 使用现有安全组 | 如果您使用现有防火墙策略、请确保该策略包含所需的规则。 link:reference-security-groups.html["了解Cloud Volumes ONTAP 的防火墙规则"]。 
+| 使用现有安全组 | 如果您使用现有防火墙策略、请确保该策略包含所需的规则。 link:reference-security-groups.html["了解Cloud Volumes ONTAP 的防火墙规则"^]。 
 |===
 . * 数据加密 * ：不选择数据加密或 AWS 管理的加密。
 +
@@ -134,15 +134,15 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 TIP: 创建 Cloud Volumes ONTAP 系统后，您无法更改 AWS 数据加密方法。
 
 +
-link:task-setting-up-kms.html["了解如何为 Cloud Volumes ONTAP 设置 AWS KMS"]。
+link:task-setting-up-kms.html["了解如何为 Cloud Volumes ONTAP 设置 AWS KMS"^]。
 
 +
-link:concept-security.html#encryption-of-data-at-rest["了解有关支持的加密技术的更多信息"]。
+link:concept-security.html#encryption-of-data-at-rest["了解有关支持的加密技术的更多信息"^]。
 
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +
-** link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"]。
-** link:task-set-up-licensing-aws.html["了解如何设置许可"]。
+** link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"^]。
+** link:task-set-up-licensing-aws.html["了解如何设置许可"^]。
 
 
 . * Cloud Volumes ONTAP 配置 * （仅限年度 Marketplace 合同）：查看默认配置，然后单击 * 继续 * 或单击 * 更改配置 * 以选择您自己的配置。
@@ -155,7 +155,7 @@ link:concept-security.html#encryption-of-data-at-rest["了解有关支持的加�
 
 . * IAM角色*：最好保留默认选项、让BlueXP为您创建角色。
 +
-如果您希望使用自己的策略，则必须满足 link:task-set-up-iam-roles.html["Cloud Volumes ONTAP 节点的策略要求"]。
+如果您希望使用自己的策略，则必须满足 link:task-set-up-iam-roles.html["Cloud Volumes ONTAP 节点的策略要求"^]。
 
 . *许可*：根据需要更改Cloud Volumes ONTAP 版本、并选择实例类型和实例租户。
 +
@@ -168,12 +168,12 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 
 +
 ** 磁盘类型适用于初始卷(和聚合)。您可以为后续卷(和聚合)选择不同的磁盘类型。
-** 如果您选择GP3或IO1磁盘、则BlueXP会根据需要使用AWS中的弹性卷功能自动增加底层存储磁盘容量。您可以根据存储需求选择初始容量、并在部署Cloud Volumes ONTAP 后进行修改。 link:concept-aws-elastic-volumes.html["了解有关在AWS中支持弹性卷的更多信息"]。
+** 如果您选择GP3或IO1磁盘、则BlueXP会根据需要使用AWS中的弹性卷功能自动增加底层存储磁盘容量。您可以根据存储需求选择初始容量、并在部署Cloud Volumes ONTAP 后进行修改。 link:concept-aws-elastic-volumes.html["了解有关在AWS中支持弹性卷的更多信息"^]。
 ** 如果您选择GP2或st1磁盘、则可以为初始聚合中的所有磁盘以及BlueXP在使用简单配置选项时创建的任何其他聚合选择一个磁盘大小。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 ** 您可以在创建或编辑卷时选择特定的卷分层策略。
 ** 如果禁用数据分层，则可以在后续聚合上启用它。
 +
-link:concept-data-tiering.html["了解数据分层的工作原理"]。
+link:concept-data-tiering.html["了解数据分层的工作原理"^]。
 
 
 
@@ -181,21 +181,21 @@ link:concept-data-tiering.html["了解数据分层的工作原理"]。
 +
 .. 如果需要、选择*正常*或*高*写入速度。
 +
-link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
+link:concept-write-speed.html["了解有关写入速度的更多信息。"^]。
 
 .. 根据需要激活一次写入、多次读取(WORM)存储。
 +
 如果为Cloud Volumes ONTAP 9.7及更低版本启用了数据分层、则无法启用WORM。启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。
 
 +
-link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
+link:concept-worm.html["了解有关 WORM 存储的更多信息。"^]。
 
 .. 如果激活了WORM存储、请选择保留期限。
 
 
 . * 创建卷 * ：输入新卷的详细信息或单击 * 跳过 * 。
 +
-link:concept-client-protocols.html["了解支持的客户端协议和版本"]。
+link:concept-client-protocols.html["了解支持的客户端协议和版本"^]。
 
 +
 本页中的某些字段是不言自明的。下表介绍了可能需要指导的字段：
@@ -351,7 +351,7 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 
 . * 高可用性部署模式 * ：选择一个高可用性配置。
 +
-有关部署模式的概述，请参见 link:concept-ha.html["适用于 AWS 的 Cloud Volumes ONTAP HA"]。
+有关部署模式的概述，请参见 link:concept-ha.html["适用于 AWS 的 Cloud Volumes ONTAP HA"^]。
 
 . *位置和连接*(单个AZ)或*区域和VPC*(多个AZs)：输入您在AWS工作表中记录的网络信息。
 +
@@ -372,7 +372,7 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 
 
 
-| 使用现有安全组 | 如果您使用现有防火墙策略、请确保该策略包含所需的规则。 link:reference-security-groups.html["了解Cloud Volumes ONTAP 的防火墙规则"]。 
+| 使用现有安全组 | 如果您使用现有防火墙策略、请确保该策略包含所需的规则。 link:reference-security-groups.html["了解Cloud Volumes ONTAP 的防火墙规则"^]。 
 |===
 . * 连接和 SSH 身份验证 * ：选择 HA 对和调解器的连接方法。
 . * 浮动 IP* ：如果选择多个 AZs ，请指定浮动 IP 地址。
@@ -392,15 +392,15 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 TIP: 创建 Cloud Volumes ONTAP 系统后，您无法更改 AWS 数据加密方法。
 
 +
-link:task-setting-up-kms.html["了解如何为 Cloud Volumes ONTAP 设置 AWS KMS"]。
+link:task-setting-up-kms.html["了解如何为 Cloud Volumes ONTAP 设置 AWS KMS"^]。
 
 +
-link:concept-security.html#encryption-of-data-at-rest["了解有关支持的加密技术的更多信息"]。
+link:concept-security.html#encryption-of-data-at-rest["了解有关支持的加密技术的更多信息"^]。
 
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +
-** link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"]。
-** link:task-set-up-licensing-aws.html["了解如何设置许可"]。
+** link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"^]。
+** link:task-set-up-licensing-aws.html["了解如何设置许可"^]。
 
 
 . * Cloud Volumes ONTAP 配置 * （仅限年度 Marketplace 合同）：查看默认配置，然后单击 * 继续 * 或单击 * 更改配置 * 以选择您自己的配置。
@@ -413,7 +413,7 @@ link:concept-security.html#encryption-of-data-at-rest["了解有关支持的加�
 
 . * IAM角色*：最好保留默认选项、让BlueXP为您创建角色。
 +
-如果您希望使用自己的策略，则必须满足 link:task-set-up-iam-roles.html["Cloud Volumes ONTAP 节点和 HA 调解器的策略要求"]。
+如果您希望使用自己的策略，则必须满足 link:task-set-up-iam-roles.html["Cloud Volumes ONTAP 节点和 HA 调解器的策略要求"^]。
 
 . *许可*：根据需要更改Cloud Volumes ONTAP 版本、并选择实例类型和实例租户。
 +
@@ -426,12 +426,12 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 
 +
 ** 磁盘类型适用于初始卷(和聚合)。您可以为后续卷(和聚合)选择不同的磁盘类型。
-** 如果您选择GP3或IO1磁盘、则BlueXP会根据需要使用AWS中的弹性卷功能自动增加底层存储磁盘容量。您可以根据存储需求选择初始容量、并在部署Cloud Volumes ONTAP 后进行修改。 link:concept-aws-elastic-volumes.html["了解有关在AWS中支持弹性卷的更多信息"]。
+** 如果您选择GP3或IO1磁盘、则BlueXP会根据需要使用AWS中的弹性卷功能自动增加底层存储磁盘容量。您可以根据存储需求选择初始容量、并在部署Cloud Volumes ONTAP 后进行修改。 link:concept-aws-elastic-volumes.html["了解有关在AWS中支持弹性卷的更多信息"^]。
 ** 如果您选择GP2或st1磁盘、则可以为初始聚合中的所有磁盘以及BlueXP在使用简单配置选项时创建的任何其他聚合选择一个磁盘大小。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 ** 您可以在创建或编辑卷时选择特定的卷分层策略。
 ** 如果禁用数据分层，则可以在后续聚合上启用它。
 +
-link:concept-data-tiering.html["了解数据分层的工作原理"]。
+link:concept-data-tiering.html["了解数据分层的工作原理"^]。
 
 
 
@@ -439,21 +439,21 @@ link:concept-data-tiering.html["了解数据分层的工作原理"]。
 +
 .. 如果需要、选择*正常*或*高*写入速度。
 +
-link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
+link:concept-write-speed.html["了解有关写入速度的更多信息。"^]。
 
 .. 根据需要激活一次写入、多次读取(WORM)存储。
 +
 如果为Cloud Volumes ONTAP 9.7及更低版本启用了数据分层、则无法启用WORM。启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。
 
 +
-link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
+link:concept-worm.html["了解有关 WORM 存储的更多信息。"^]。
 
 .. 如果激活了WORM存储、请选择保留期限。
 
 
 . * 创建卷 * ：输入新卷的详细信息或单击 * 跳过 * 。
 +
-link:concept-client-protocols.html["了解支持的客户端协议和版本"]。
+link:concept-client-protocols.html["了解支持的客户端协议和版本"^]。
 
 +
 本页中的某些字段是不言自明的。下表介绍了可能需要指导的字段：
@@ -518,7 +518,7 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能并根据需要编辑卷分层策略。
 +
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["了解卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +

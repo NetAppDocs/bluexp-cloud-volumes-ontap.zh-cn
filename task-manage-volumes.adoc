@@ -347,7 +347,7 @@ image::screenshot_aggr_capacity.png[屏幕截图：总容量]
 
 . 如果没有聚合可用容量，请创建新聚合。
 +
-有关详细信息，请参见 link:task-create-aggregates.html["创建聚合"]。
+有关详细信息，请参见 link:task-create-aggregates.html["创建聚合"^]。
 
 . 使用 System Manager 或 CLI 将卷移动到聚合。
 . 在大多数情况下，您可以使用 System Manager 移动卷。

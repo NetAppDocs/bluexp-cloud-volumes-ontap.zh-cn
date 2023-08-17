@@ -67,7 +67,6 @@
   <block id="c501058ef93efe907f1517f309ec8be3" category="inline-link">您应做好准备，使 Connector 始终保持运行</block>
   <block id="72fa1e29e831adb71ca0ce01f7356dc9" category="list-text">了解要使用的配置。</block>
   <block id="754f5b76b77778c181ca6deb0a7427f4" category="inline-link-macro">规划 Cloud Volumes ONTAP 配置</block>
-  <block id="ca0eff3a522dccb4b8f4c30bbad3365e" category="paragraph">您应已选择配置并从管理员处获取 Azure 网络信息。有关详细信息，请参见 <block ref="fab04a1941385806648057c8597be7c4" category="inline-link-macro-rx"></block>。</block>
   <block id="d8fe59d93325a956d9b5fd3e85bb96d8" category="cell">免费</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
   <block id="72aa254218c757aad3e3703bdaf90694" category="inline-link-macro">链接您的订阅以用于 Cloud Volumes ONTAP</block>
@@ -104,11 +103,9 @@
   <block id="10f24cbf4f99f2a58468f5eddcb58a10" category="list-text">您可以在创建或编辑卷时选择特定的卷分层策略。</block>
   <block id="e5a51dfb561fcfc9b976680f966d8796" category="list-text">如果禁用数据分层，则可以在后续聚合上启用它。</block>
   <block id="40be323df7265fed128da31c2235f802" category="inline-link-macro">了解有关数据分层的更多信息。</block>
-  <block id="963dc2ced33c135470b8d59948bed4db" category="paragraph"><block ref="9d2a2a02285bff8cac27941dbd566d2c" category="inline-link-macro-rx"></block>。</block>
   <block id="7e747f6f397a13c9ddfd3cf35ed0a063" category="inline-link-macro">了解有关写入速度的更多信息。</block>
   <block id="154182f595466ead49f0896392c37343" category="paragraph"><block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>。</block>
   <block id="750f81869269b4f604a849fb2104a6b3" category="inline-link-macro">了解有关 WORM 存储的更多信息。</block>
-  <block id="9fbcc7d5f14bd49b571c1a321923fd19" category="paragraph"><block ref="b8e9389aa16366d8b675fc0ac72edf2e" category="inline-link-macro-rx"></block>。</block>
   <block id="7fd530af1ffbe88c56d08b069efeba9e" category="list-text">* 创建卷 * ：输入新卷的详细信息或单击 * 跳过 * 。</block>
   <block id="09eb13e81cc007418ee8fa04feb8088f" category="paragraph">本页中的某些字段是不言自明的。下表介绍了可能需要指导的字段：</block>
   <block id="2047d66d7f84aebbeede37060dd241ac" category="paragraph">下图显示了已填写 CIFS 协议的卷页面：</block>
@@ -311,7 +308,6 @@
   <block id="b5a7d19f6788ad4a9fa68128eabe2be1" category="list-text">* 选择位置 * ：选择 * Google Cloud* 和 * Cloud Volumes ONTAP HA* 。</block>
   <block id="166a4b640ff9a34dd7447ebf0e16518b" category="list-text">* 高可用性部署模式 * ：为高可用性配置选择多个分区（建议）或一个分区。然后选择一个区域和分区。</block>
   <block id="96c883d1fa1e7ebdc724bb5cec521bbd" category="inline-link-macro">了解有关 HA 部署模式的更多信息</block>
-  <block id="c03cb5d06936cb14d5f6dff824cc7c90" category="paragraph"><block ref="978980a9148c052b6f4164e267b317c3" category="inline-link-macro-rx"></block>。</block>
   <block id="74c223c0ac10d19fc933bf44bdfae707" category="list-text">* 连接 * ：为 HA 配置选择四个不同的 VPC ，每个 VPC 中选择一个子网，然后选择防火墙策略。</block>
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">详细了解网络要求</block>
   <block id="7e1b099e8ddd48733a860e9dc84718f9" category="paragraph"><block ref="81d7ec58de725abfb78667b4f46a89ab" category="inline-link-macro-rx"></block>。</block>
@@ -481,7 +477,6 @@
   <block id="3425dbe0168b60aed62d54b2290baad1" category="list-text">选择要添加的磁盘数，然后单击 * 添加 * 。</block>
   <block id="e272fdd11a7aa99158a093a41c65fdd9" category="list-text">如果没有聚合可用容量，请创建新聚合。</block>
   <block id="0e725e4f9ac82ce0408528d6e38105f1" category="inline-link-macro">创建聚合</block>
-  <block id="26b9ba37161cb24f3ca0ee9ef77e7866" category="paragraph">有关详细信息，请参见 <block ref="cd2296da2096d50b97f16b5b2b951d91" category="inline-link-macro-rx"></block>。</block>
   <block id="1aef664bc05683f80fab3cd95bf587aa" category="section-title">卷移动速度可能较慢的原因</block>
   <block id="1c6959fdd9141c1190229f12ecece23d" category="paragraph">如果 Cloud Volumes ONTAP 满足以下任一条件，则移动卷所需时间可能会比预期长：</block>
   <block id="6bae86404dcdff12b92e86fb565c56ad" category="list-text">此卷为克隆卷。</block>
@@ -2223,9 +2218,7 @@
   <block id="7d7ca8f39ddaf09ca365d0d1f9421649" category="cell">浮动 IP 地址的路由表</block>
   <block id="b5fc4208e494804d1484996e111220af" category="summary">您可以在单系统配置中启动 Cloud Volumes ONTAP 实例，也可以在 AWS 中作为 HA 对启动。</block>
   <block id="45fa74d97bba23976f6236bb8a583eb3" category="paragraph">您可以在单系统配置中或在 AWS 中作为 HA 对启动 Cloud Volumes ONTAP 。</block>
-  <block id="62dbb34ae2dbba36fcd72e9009367d7f" category="paragraph">您应该已准备好选择配置并从管理员处获取 AWS 网络信息。有关详细信息，请参见 <block ref="221e8f6e98d75a4db804bf88879345c0" category="inline-link-macro-rx"></block>。</block>
   <block id="70bc0792aaac2d1fe5c19e375b615c8f" category="list-text">用于 CIFS 配置的 DNS 和 Active Directory 。</block>
-  <block id="6ff827eb8724bf30147eb7172866032d" category="paragraph">有关详细信息，请参见 <block ref="5e41481253f1e5476c9db04d39b740c0" category="inline-link-macro-rx"></block>。</block>
   <block id="9ae9e2a95a93a162ede8aa13ce31e809" category="section-title">在 AWS 中启动单节点 Cloud Volumes ONTAP 系统</block>
   <block id="5f9fae15ed0e9699a97ede914a14bdc5" category="list-text">* 选择一个位置 * ：选择 * Amazon Web Services* 和 * Cloud Volumes ONTAP Single Node* 。</block>
   <block id="2548b207aecb436cf10911e9afefdeb4" category="list-text">* 详细信息和凭据 * ：可选择更改 AWS 凭据和订阅，输入工作环境名称，根据需要添加标记，然后输入密码。</block>
@@ -2238,16 +2231,13 @@
   <block id="94b720129da1fad395a78adb9dd8004f" category="list-text">* 数据加密 * ：不选择数据加密或 AWS 管理的加密。</block>
   <block id="8d4e0ae3c5be71d9c725659a6203fb6f" category="paragraph">对于 AWS 管理的加密，您可以从您的帐户或其他 AWS 帐户中选择其他客户主密钥（ CMK ）。</block>
   <block id="7238e3ed6732433c6a3fc43c882f2749" category="inline-link-macro">了解如何为 Cloud Volumes ONTAP 设置 AWS KMS</block>
-  <block id="ca52f42dd3382f713546c1e0a47fdc5b" category="paragraph"><block ref="1897e5cb9197f6d16611dcdd2e455fbf" category="inline-link-macro-rx"></block>。</block>
   <block id="7b3f3945f44edcd71357c2f1c55fb2bd" category="inline-link-macro">了解有关支持的加密技术的更多信息</block>
-  <block id="3580b85193db6b3c43ddd4b85983e198" category="paragraph"><block ref="abdb9df31479964cd3894d8bc519e3a4" category="inline-link-macro-rx"></block>。</block>
   <block id="b41b64534be19d5279eb056f9bad84a5" category="list-text">* Cloud Volumes ONTAP 配置 * （仅限年度 Marketplace 合同）：查看默认配置，然后单击 * 继续 * 或单击 * 更改配置 * 以选择您自己的配置。</block>
   <block id="09234f1d126e4d3c4245bc84e7ada7b0" category="paragraph">如果保留默认配置，则只需指定一个卷，然后查看并批准该配置。</block>
   <block id="f6f2e0892cb62bcd1822af8539848e03" category="list-text">* 预配置软件包 * （仅限每小时或自带卷）：选择一个软件包以快速启动 Cloud Volumes ONTAP ，或者单击 * 更改配置 * 以选择您自己的配置。</block>
   <block id="aa1a1dda4b1ade9ea7484b8f180091ba" category="paragraph">如果选择其中一个软件包，则只需指定一个卷，然后查看并批准该配置。</block>
   <block id="bef2f3bc1b5f6b5fc3eaabff818b8b07" category="inline-link">Cloud Volumes ONTAP 节点的策略要求</block>
   <block id="a6fcc094aa2aa8328784bade825b168a" category="inline-link-macro">了解数据分层的工作原理</block>
-  <block id="e3d16ce79bcead59781233b93cb58009" category="paragraph"><block ref="204d09224c7e7513a2d3fc955e6c2d5a" category="inline-link-macro-rx"></block>。</block>
   <block id="92a1203fc5511fdb287e0ca1b80062ce" category="list-text">* 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能并根据需要编辑卷分层策略。</block>
   <block id="84ead214aa73d1d099d69385289923df" category="paragraph">如果在启动 Cloud Volumes ONTAP 实例时遇到任何问题，请查看故障消息。您还可以选择工作环境并单击重新创建环境。</block>
   <block id="a32a5939a1bb08953d44c08ef33a7ad2" category="section-title">在 AWS 中启动 Cloud Volumes ONTAP HA 对</block>
@@ -2255,7 +2245,6 @@
   <block id="f99d3ff891644fe10f4d30e423d81b2e" category="list-text">* 服务 * ：保持服务处于启用状态或禁用不想在此 Cloud Volumes ONTAP 系统中使用的单个服务。</block>
   <block id="3dc0546ee23c197fd25bc3ef988c8a30" category="list-text">* 高可用性部署模式 * ：选择一个高可用性配置。</block>
   <block id="9e31e4f9e8f37fa86acefdb611c2e044" category="inline-link-macro">适用于 AWS 的 Cloud Volumes ONTAP HA</block>
-  <block id="fdf00fa5f9f4609b595b4c51f6ee33e9" category="paragraph">有关部署模式的概述，请参见 <block ref="ed2ce72ffe8bc52d52047e3f4134a246" category="inline-link-macro-rx"></block>。</block>
   <block id="f98a5304a879db170932a941d6782d7c" category="list-text">* 连接和 SSH 身份验证 * ：选择 HA 对和调解器的连接方法。</block>
   <block id="7f09e4815f5de7673aaab2126613b950" category="list-text">* 浮动 IP* ：如果选择多个 AZs ，请指定浮动 IP 地址。</block>
   <block id="0d27f0f1131dc607258f48d5dc5dcf14" category="list-text">* 路由表 * ：如果选择多个 AZs ，请选择应包含指向浮动 IP 地址的路由的路由表。</block>
@@ -2659,7 +2648,6 @@
   <block id="77d680745644d1c19a022cc0a306f88b" category="list-text">数据加密：Google管理的密钥</block>
   <block id="b33b7497784a31fa197bca9debbfddea" category="list-text">了解为Cloud Volumes ONTAP 设置许可所需的条件。</block>
   <block id="b2084f1d9eba331a28867d15c742284e" category="inline-link-macro">了解如何设置许可</block>
-  <block id="5719f300587dfbbd55551379f9ab4915" category="list-text"><block ref="69100fd89c8fc892aa253073563db45d" category="inline-link-macro-rx"></block>。</block>
   <block id="17b559ceaadd6decdd6c9a579de016a2" category="summary">在确定要对Cloud Volumes ONTAP 使用的许可选项后、需要执行一些步骤、然后才能在部署新系统时选择该许可选项。</block>
   <block id="0cce9e09385c0d8e677ff5d9518dc514" category="doc">在Azure中为Cloud Volumes ONTAP 设置许可</block>
   <block id="c700f608c8bdc9eb590953ff57224bad" category="paragraph">在确定要在Cloud Volumes ONTAP 中使用的许可选项后、需要执行一些步骤、然后才能在创建新的工作环境时选择该许可选项。</block>
@@ -2724,12 +2712,10 @@
   <block id="d0e9f6e752e409a4224686569c7ed7f7" category="list-text"><block ref="d0e9f6e752e409a4224686569c7ed7f7" category="inline-link-macro-rx"></block></block>
   <block id="8f0a98314b48214c48339998c2fc4f5a" category="inline-link-macro">在Google Cloud中为Cloud Volumes ONTAP 设置许可</block>
   <block id="451e7fc5df78c19113abdb3f6a0dc54e" category="paragraph">了解如何开始使用基于容量的许可：</block>
-  <block id="a07503aa361f252fd9f1953e4472f28d" category="paragraph"><block ref="e7010d3e26fcd0c3b7c9d7059b1649f0" category="inline-link-macro-rx"></block>。</block>
   <block id="01c73f9779c79dd6bcc508ca2e08db80" category="doc">在Azure中规划Cloud Volumes ONTAP 配置</block>
   <block id="e7010d3e26fcd0c3b7c9d7059b1649f0" category="list-text"><block ref="e7010d3e26fcd0c3b7c9d7059b1649f0" category="inline-link-macro-rx"></block></block>
   <block id="e3a47201ab0cc67c20d5aeacce3b8ced" category="section-title">选择支持的VM类型</block>
   <block id="8e3273e621dd5a9485259171b1b535e9" category="section-title">在Azure中调整系统大小</block>
-  <block id="e17d83fdb14af6aea9c5838dcc9ece55" category="paragraph"><block ref="b2908e7df27905e20924b93b3ff0b803" category="inline-link-macro-rx"></block>。</block>
   <block id="96440bf30cd20c7ed50d0d7a8279917e" category="doc">在Google Cloud中规划Cloud Volumes ONTAP 配置</block>
   <block id="18ff4ec9e6259918d45028a5d6040d91" category="section-title">选择支持的计算机类型</block>
   <block id="0d705fad98d8ea6c4ffe75e2508e2f92" category="section-title">在GCP中调整系统大小</block>
@@ -3177,8 +3163,6 @@
   <block id="67e53d36a1474a1493554aa780f091dd" category="inline-link">默认情况下、Connector服务帐户权限</block>
   <block id="791fab48bebea2a79a35d70b5cc07227" category="inline-link">查看最新的权限列表</block>
   <block id="9e1dbaa97d16ff9bc20f90cb1663f522" category="inline-link">应具有所需权限</block>
-  <block id="ca28d9f44067f5a160cea063e474fc37" category="paragraph">如果您希望使用自己的策略，则必须满足 <block ref="a89eb99c31d3fd4d78e3bc9ddfb0dc20" category="inline-link-macro-rx"></block>。</block>
-  <block id="6459a9ada2e38351f8beba8f79c30a5f" category="paragraph">如果您希望使用自己的策略，则必须满足 <block ref="f5cab54abdefb42b27e2bac59f2262c2" category="inline-link-macro-rx"></block>。</block>
   <block id="e26c5d07fc30848902a99c95897441b4" category="sidebar">设置IAM角色</block>
   <block id="15cbb1f16ecbbcee7df3dcd252b9d2ef" category="paragraph">如果启用了数据分层，则无法启用 WORM 。</block>
   <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="doc">MTEKM许可证</block>
@@ -3205,7 +3189,6 @@
   <block id="736117f693040571db69267153b2d26c" category="list-text">如果选择*仅选定VPC *、则入站流量的源是选定VPC的子网范围以及Connector所在VPC的子网范围。这是建议的选项。</block>
   <block id="deb6808c65d1809351087abd4e05656f" category="list-text">如果选择*所有VPC*、则入站流量的源IP范围为0.0.0.0/0。</block>
   <block id="078c55f3ef3238d9472d9b211da498b5" category="cell">使用现有安全组</block>
-  <block id="d71f3f48867a1eec8f01c7982cfcf5b9" category="cell">如果您使用现有防火墙策略、请确保该策略包含所需的规则。 <block ref="52a4fffcb589b84d48cb7d2cc71fba3f" category="inline-link-macro-rx"></block>。</block>
   <block id="ceade9f8bf2ef85c7b37aed2340a9d2b" category="list-text">*位置和连接*(单个AZ)或*区域和VPC*(多个AZs)：输入您在AWS工作表中记录的网络信息。</block>
   <block id="d9b6015407c2f35cf98a557256370e83" category="list-text">E2-micro (以前使用过一个f1-micro实例)</block>
   <block id="0982661f22694d2c8b62e37a8cbea7d6" category="list-text">两个标准永久性磁盘、每个磁盘10 GiB</block>
@@ -3513,7 +3496,6 @@
   <block id="355c7a22767b9f2dd149515d08cc5490" category="inline-image-macro">一个屏幕截图、显示当AWS帐户已订阅但特定IAM用户可能未订阅时适用于Cloud Volumes ONTAP 的BlueXP订阅页面。</block>
   <block id="074d1b398f4753f3d064cfd562af4ed8" category="admonition">如果多个 IAM 用户在同一个 AWS 帐户中工作，则每个用户都需要订阅。第一个用户订阅后， AWS Marketplace 会通知后续用户他们已订阅，如下图所示。虽然已为 AWS _account_ 订阅，但每个 IAM 用户都需要将自己与该订阅关联起来。如果您看到以下消息、请单击*单击此处*链接以转到BlueXP网站并完成此过程。<block ref="42077b282858282a6d1d166f9467abaf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87ef523f982611ded33c8785ffdd2634" category="list-text">* IAM角色*：最好保留默认选项、让BlueXP为您创建角色。</block>
-  <block id="0c8b3b320694fe539fbea5d0d82e564c" category="list-text">如果您选择GP3或IO1磁盘、则BlueXP会根据需要使用AWS中的弹性卷功能自动增加底层存储磁盘容量。您可以根据存储需求选择初始容量、并在部署Cloud Volumes ONTAP 后进行修改。 <block ref="a2865c7bad4b206df6582ad55cba915e" category="inline-link-macro-rx"></block>。</block>
   <block id="9f2afa6e18a40ed2f547b1e2d13fee8e" category="list-text">如果您选择GP2或st1磁盘、则可以为初始聚合中的所有磁盘以及BlueXP在使用简单配置选项时创建的任何其他聚合选择一个磁盘大小。您可以使用高级分配选项创建使用不同磁盘大小的聚合。</block>
   <block id="de39a020e8e0c1962c8c0dfa6467fd71" category="list-text">单击*更多信息*可查看有关支持和BlueXP将购买的AWS资源的详细信息。</block>
   <block id="e1bc841e2651c6522307e17c20df7a4d" category="paragraph">如果要在AWS中启动Cloud Volumes ONTAP HA对、则需要在BlueXP中创建HA工作环境。</block>
@@ -3883,7 +3865,6 @@
   <block id="c30ce062be1c5d4265f67a2654690b8f" category="list-title">多个可用性区域中的HA对</block>
   <block id="ab3aec14eab62514bc5eb01d67673c8b" category="list-text">两个用于根卷的512 GiB高级存储页面Blobs (每个节点一个)</block>
   <block id="5a07b5de49d43760a69fb7c4fea757e9" category="inline-link-macro">HA对支持按许可证配置</block>
-  <block id="cd583e1e771e181f6946426017c24214" category="paragraph">此选项仅适用于某些VM类型。要了解支持的VM类型、请参见 <block ref="8fcfcceaae61c16d8227b3fc42274af0" category="inline-link-macro-rx"></block>。</block>
   <block id="de8cf25f68f35d1a6c91688973a7593e" category="list-text">*安全通信到存储和WORM*：选择是否启用与Azure存储帐户的HTTPS连接、并根据需要激活一次写入、多次读取(WORM)存储。</block>
   <block id="c5cd01a62bc8f55375ac755c2a6a5f47" category="paragraph">HTTPS连接从Cloud Volumes ONTAP 9.7 HA对连接到Azure页面Blob存储帐户。请注意，启用此选项可能会影响写入性能。创建工作环境后，您无法更改此设置。</block>
   <block id="ec2431c87ced0e5a9a4272c3f8829e8e" category="list-text">Cloud Volumes ONTAP 9.12.1或更高版本</block>
@@ -4649,7 +4630,6 @@
   <block id="1845477dcbb7ef435ebb5a4583a0ca21" category="list-text"><block ref="4828fd92a1c9aba9084b9fdcf398bed8" category="inline-link-rx"></block>。</block>
   <block id="4d0d11f252798b1130fe9f60f2d2e318" category="list-text">与 Connector 关联的服务帐户<block ref="5646254c2ac34b48f56ed296d6fb66e7" category="inline-link-rx"></block></block>
   <block id="d84cee0d6767da802f9effadbbc51142" category="list-text">如果出现提示，<block ref="1ca84fde12203c4cfd29d288d7a6cf61" category="inline-link-rx"></block>。</block>
-  <block id="89bbd054da1cedf98b74e364ba981080" category="cell">如果您计划使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> 使用 Cloud Volumes ONTAP 时，您需要启用 * 服务帐户 * 并选择具有预定义的存储管理员角色的服务帐户。 <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>。</block>
   <block id="422d2c91120cb9ddd1c3fd41a284e77a" category="admonition">这是您为BlueXP设置的服务帐户、 <block ref="d8e8dd577fee44652d34a1d1f4c2ce4b" category="inline-link-macro-rx"></block>。</block>
   <block id="703803ff5402f92147fbc2904ced4f23" category="paragraph">以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。或者，也可以按照中的步骤进行订阅<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> 部分。</block>
   <block id="6661b37e3fd4d080a795cb76c4cea34d" category="list-text">有关添加Google Cloud帐户的帮助、请参见<block ref="434f9c6247e5841006dab0119a511de9" category="inline-link-rx"></block>。</block>
@@ -4919,8 +4899,6 @@
   <block id="80f98bfa8cbe0d66021e6448047c1b5c" category="list-text">*Flash Cache、写入速度和WORM*：</block>
   <block id="b67eda3e3db596eb1c104f55326e3754" category="list-text">如果需要，启用*Flash Cache *。</block>
   <block id="5f33cf47c262adc4871d3556fcd8c00f" category="admonition">从Cloud Volumes ONTAP 9.13.1开始、n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64实例类型均支持_Flash Cache。部署后、您无法禁用Flash Cache。</block>
-  <block id="504ca6d1f97a8949483d99d521a7a500" category="admonition">通过*高速*写入速度选项、可以获得较高的写入速度和较高的最大传输单元(MTU)、即8、896字节。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。有关VPC-1、VPC-2和VPC-3的详细信息、请参见<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>。</block>
-  <block id="e4cfc04d9c35d908faed204900862e80" category="admonition">通过*高*写入速度选项可获得高写入速度和8、896字节的最大传输单元(MTU)、实例类型为n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。高写入速度和8、896的MTU与功能相关、不能在已配置的实例中单独禁用。有关VPC-1、VPC-2和VPC-3的详细信息、请参见<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>。</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
   <block id="4325a8ea9cec7ffa18f3ee74d15997fe" category="paragraph">以下更改是在连接器3.9.32版本中推出的。</block>
   <block id="7741410e87d6144c42e8ca73837c3707" category="section-title">Google Cloud支持Flash Cache和高写入速度</block>
@@ -4998,7 +4976,6 @@
   <block id="d2d30bf70c79bbb95b5e7ce630b66c21" category="cell">如果选择现有安全组，则该组必须满足 Cloud Volumes ONTAP 要求。 <block ref="c840f14212255ea9808d6d3aa32adaf9" category="inline-link-macro-rx"></block>。</block>
   <block id="4956de48e08bd2176b53bb70ae88a9ea" category="paragraph">有关选择磁盘类型和大小的帮助，请参见 <block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block>。</block>
   <block id="2961924447b862b8c08430804068c015" category="paragraph">有关详细信息，请参见 <block ref="f7e49e28b2875e2913382dd3096ff790" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
-  <block id="f5a5a06a4d8eaa817e47a272a932b9a0" category="paragraph">有关选择磁盘大小的帮助、请参见 <block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block>。</block>
   <block id="1b0a5fc9df36c3cc3f61cb97e9631bbb" category="paragraph">有关详细信息，请参见 <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>。</block>
   <block id="97f1424ad7142b7e2d30d9f789a2be74" category="list-text">客户数据位于高级存储页面 Blobs 上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 <block ref="6674daf770d6e900d67b1c4ef55eae3d" category="inline-link-macro-rx"></block>。</block>
   <block id="669a47d0ae98ea0a97a7435870bc7159" category="list-text">客户数据驻留在本地冗余存储(LRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 <block ref="e045f042b95c3970b6fbc1453cc4de4f" category="inline-link-macro-rx"></block>。</block>
@@ -5007,7 +4984,36 @@
   <block id="c9687dde572193ba74d9e74a3c45d034" category="paragraph">除非您超过500 GiB的已配置容量、否则不会通过Marketplace订阅向您收取费用、此时系统将自动转换为 <block ref="2152ece811fe715f61775babe26548aa" category="inline-link-macro-rx"></block>。</block>
   <block id="6b3e3d3fe4e7f265b8cbf3430816ede6" category="cell">如果您使用现有防火墙策略、请确保该策略包含所需的规则。链接：https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#firewall-rules[Learn关于Cloud Volumes ONTAP的防火墙规则^。</block>
   <block id="29868f2b604fe0144f8b5619cde525cf" category="inline-link-macro">在Google Cloud中估算系统规模</block>
-  <block id="f3e5244708437be7ab2becec4aafd25d" category="paragraph">有关选择磁盘类型和大小的帮助，请参见 <block ref="674c7afffa941aa0d627117a6589402e" category="inline-link-macro-rx"></block>。</block>
-  <block id="f3602532fa23ad89eed856305605200f" category="paragraph">有关详细信息，请参见 <block ref="4d14a404483b4ba1e9755b2ba8cd9a51" category="inline-link-macro-rx"></block> 和 <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>。</block>
-  <block id="a2ff91e180d9feb69d295f51f7431cd5" category="cell">如果您使用现有防火墙策略、请确保该策略包含所需的规则。 <block ref="e0f5249f2d7145acb8502413a8b18c3d" category="inline-link-macro-rx"></block>。</block>
+  <block id="f6f026f8889048ec1affe9bec06d3753" category="paragraph">有关详细信息，请参见 <block ref="7f365a8b545ccbb9e9433fd7ab85acf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="23e2fb53ba60de84e8a63684bf05e1a9" category="paragraph">您应该已准备好选择配置并从管理员处获取 AWS 网络信息。有关详细信息，请参见 <block ref="b2852d75c9a2b653b1ca3941854c33b3" category="inline-link-macro-rx"></block>。</block>
+  <block id="ccf2fba47b43599daaeca487c0ec63ee" category="paragraph"><block ref="5e8af43dea21db509ead1eda5136002c" category="inline-link-macro-rx"></block>。</block>
+  <block id="36e9fbaef7c701ecb0556f914069be72" category="paragraph">有关详细信息，请参见 <block ref="517e0808f26a9b41dd03b24bae4c07de" category="inline-link-macro-rx"></block>。</block>
+  <block id="b461f4c80b1a114f6b157c533f020762" category="cell">如果您使用现有防火墙策略、请确保该策略包含所需的规则。 <block ref="62c62b91801215ab4d8627716bae9285" category="inline-link-macro-rx"></block>。</block>
+  <block id="00607d1f8879a9f55de71904a9c47735" category="paragraph"><block ref="815b2d76480655adfb792155e8d523df" category="inline-link-macro-rx"></block>。</block>
+  <block id="efd46d47c4e385b47988ccb455c40135" category="paragraph"><block ref="66a6ef3a31e2bdf9e6d8ba0701bc8801" category="inline-link-macro-rx"></block>。</block>
+  <block id="7316a5586f179a6a0979e83c796ea95b" category="list-text"><block ref="08d0665da3be44c6da8a872cdca1b012" category="inline-link-macro-rx"></block>。</block>
+  <block id="2b51f8c4c6c2bfe9eada57853fb89e4f" category="paragraph">如果您希望使用自己的策略，则必须满足 <block ref="0812b5badd20e986cc5c6923de4f824b" category="inline-link-macro-rx"></block>。</block>
+  <block id="7ab053d87e25d047a6f28577dc465bc4" category="list-text">如果您选择GP3或IO1磁盘、则BlueXP会根据需要使用AWS中的弹性卷功能自动增加底层存储磁盘容量。您可以根据存储需求选择初始容量、并在部署Cloud Volumes ONTAP 后进行修改。 <block ref="7cd39d1a62682ee0957e0dbfc235b1a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="df501414d9ccbd746605ce1e1aab3535" category="paragraph"><block ref="5852a06e585de78c29e271efaedec096" category="inline-link-macro-rx"></block>。</block>
+  <block id="4dcacab246fb7ed0a29c4691ecbbe12a" category="paragraph"><block ref="07cdccebbe7827f5fd94940c2866ed02" category="inline-link-macro-rx"></block>。</block>
+  <block id="f11d1a8fb908a4fd32f602c0b49e068c" category="paragraph"><block ref="12f56c904521eee91c69e7f3d92e0875" category="inline-link-macro-rx"></block>。</block>
+  <block id="b98de1e963b884a521ce7bd319e60a8e" category="paragraph"><block ref="8df9ed5593c9a185e9c633e9b36d6066" category="inline-link-macro-rx"></block>。</block>
+  <block id="c883e0de58dcdb1d468ddcfc66d90224" category="paragraph">有关部署模式的概述，请参见 <block ref="ac890ff87988e1f4fe9ed78d7a128a29" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed4924641651e53f53bb9c6cb8cb5169" category="paragraph">如果您希望使用自己的策略，则必须满足 <block ref="88a324b503542d79964006b86b0f561f" category="inline-link-macro-rx"></block>。</block>
+  <block id="65e44ea022eeca9b643463f605d679ba" category="paragraph">有关详细信息，请参见 <block ref="3b2df8d2a10b210f4fd5274a94427dc3" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
+  <block id="b97b37b67da4a6b8d536b0e66da0ac4e" category="paragraph">您应已选择配置并从管理员处获取 Azure 网络信息。有关详细信息，请参见 <block ref="342e106d00de7bc2efc5fca274754fe1" category="inline-link-macro-rx"></block>。</block>
+  <block id="4a990655560c303b19831e9bf63722cf" category="paragraph"><block ref="a19594f8ac35f50a09725bf53aa8cda6" category="inline-link-macro-rx"></block>。</block>
+  <block id="42e33ca80e00148658496cf0df242c83" category="paragraph"><block ref="c991217783edcd004ecaae62c8f53317" category="inline-link-macro-rx"></block>。</block>
+  <block id="483aa2bfe812b674406ece6931703b3b" category="paragraph">此选项仅适用于某些VM类型。要了解支持的VM类型、请参见 <block ref="ef2833bf144903c614d4609663ff6050" category="inline-link-macro-rx"></block>。</block>
+  <block id="4ad60320f9be79eecb2daef7ddce54b5" category="paragraph">有关选择磁盘大小的帮助、请参见 <block ref="693042947faf99c4ded2e1854ea1714d" category="inline-link-macro-rx"></block>。</block>
+  <block id="68370d359fa26fe05c4cb07d74255adc" category="paragraph">有关详细信息，请参见 <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
+  <block id="ec816bfc1b97e0dc9c63df584a92bde6" category="cell">如果您计划使用 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 或<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> 使用 Cloud Volumes ONTAP 时，您需要启用 * 服务帐户 * 并选择具有预定义的存储管理员角色的服务帐户。 <block ref="2f1d7559264d14baafd4be6d853a5896" category="inline-link-macro-rx"></block>。</block>
+  <block id="3ae26537d730e608cc5df532135d9203" category="list-text"><block ref="6c4258ea3e08340f22f764913db23ef9" category="inline-link-macro-rx"></block>。</block>
+  <block id="db52741bdd8e7e8c26a7a3bfb23be14c" category="paragraph">有关选择磁盘类型和大小的帮助，请参见 <block ref="0698168794a3d08b82649f1da0ecee6b" category="inline-link-macro-rx"></block>。</block>
+  <block id="0b79c7f48f32a49e4f2d8a0012ffaea9" category="admonition">通过*高速*写入速度选项、可以获得较高的写入速度和较高的最大传输单元(MTU)、即8、896字节。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。有关VPC-1、VPC-2和VPC-3的详细信息、请参见<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>。</block>
+  <block id="586ef46ba4fb5364e4b7115bcfd7b621" category="paragraph">有关详细信息，请参见 <block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
+  <block id="65a1b420f9d8cf92d6a805f641764e75" category="paragraph"><block ref="810b7c24efd4e50a858cf2ac93f8cde8" category="inline-link-macro-rx"></block>。</block>
+  <block id="157452a4d26511160047acedc5ae5b81" category="paragraph"><block ref="2824c251ff24540ca0c877b5ced755b8" category="inline-link-macro-rx"></block>。</block>
+  <block id="cf523fc47469c34a8d903bacda7e81e5" category="cell">如果您使用现有防火墙策略、请确保该策略包含所需的规则。 <block ref="bee5d22e907894802468a917716c85b0" category="inline-link-macro-rx"></block>。</block>
+  <block id="07a5d71b593f96284694315beb6fe13d" category="admonition">通过*高*写入速度选项可获得高写入速度和8、896字节的最大传输单元(MTU)、实例类型为n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。高写入速度和8、896的MTU与功能相关、不能在已配置的实例中单独禁用。有关VPC-1、VPC-2和VPC-3的详细信息、请参见<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>。</block>
 </blocks>

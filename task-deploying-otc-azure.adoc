@@ -28,11 +28,11 @@ summary: 您可以通过在BlueXP中创建Cloud Volumes ONTAP 工作环境在Azu
 
 * 了解要使用的配置。
 +
-您应已选择配置并从管理员处获取 Azure 网络信息。有关详细信息，请参见 link:task-planning-your-config-azure.html["规划 Cloud Volumes ONTAP 配置"]。
+您应已选择配置并从管理员处获取 Azure 网络信息。有关详细信息，请参见 link:task-planning-your-config-azure.html["规划 Cloud Volumes ONTAP 配置"^]。
 
 * 了解为Cloud Volumes ONTAP 设置许可所需的条件。
 +
-link:task-set-up-licensing-azure.html["了解如何设置许可"]。
+link:task-set-up-licensing-azure.html["了解如何设置许可"^]。
 
 
 
@@ -129,8 +129,8 @@ TIP: 如果您正在使用的 Azure 帐户具有 https://docs.netapp.com/us-en/b
 |===
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +
-** link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"]。
-** link:task-set-up-licensing-azure.html["了解如何设置许可"]。
+** link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"^]。
+** link:task-set-up-licensing-azure.html["了解如何设置许可"^]。
 
 
 . * 预配置软件包 * ：选择一个软件包以快速部署 Cloud Volumes ONTAP 系统，或者单击 * 创建自己的配置 * 。
@@ -156,7 +156,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 ** 您可以在创建或编辑卷时选择特定的卷分层策略。
 ** 如果禁用数据分层，则可以在后续聚合上启用它。
 +
-link:concept-data-tiering.html["了解有关数据分层的更多信息。"]。
+link:concept-data-tiering.html["了解有关数据分层的更多信息。"^]。
 
 
 
@@ -164,24 +164,24 @@ link:concept-data-tiering.html["了解有关数据分层的更多信息。"]。
 +
 .. 如果需要、选择*正常*或*高*写入速度。
 +
-link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
+link:concept-write-speed.html["了解有关写入速度的更多信息。"^]。
 
 .. 根据需要激活一次写入、多次读取(WORM)存储。
 +
-此选项仅适用于某些VM类型。要了解支持的VM类型、请参见 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA对支持按许可证配置"]。
+此选项仅适用于某些VM类型。要了解支持的VM类型、请参见 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA对支持按许可证配置"^]。
 
 +
 如果为Cloud Volumes ONTAP 9.7及更低版本启用了数据分层、则无法启用WORM。启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。
 
 +
-link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
+link:concept-worm.html["了解有关 WORM 存储的更多信息。"^]。
 
 .. 如果激活了WORM存储、请选择保留期限。
 
 
 . * 创建卷 * ：输入新卷的详细信息或单击 * 跳过 * 。
 +
-link:concept-client-protocols.html["了解支持的客户端协议和版本"]。
+link:concept-client-protocols.html["了解支持的客户端协议和版本"^]。
 
 +
 本页中的某些字段是不言自明的。下表介绍了可能需要指导的字段：
@@ -364,8 +364,8 @@ TIP: 如果您正在使用的 Azure 帐户具有 https://docs.netapp.com/us-en/b
 |===
 . * 充电方法和 NSS 帐户 * ：指定要在此系统中使用的充电选项，然后指定 NetApp 支持站点帐户。
 +
-** link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"]。
-** link:task-set-up-licensing-azure.html["了解如何设置许可"]。
+** link:concept-licensing.html["了解 Cloud Volumes ONTAP 的许可选项"^]。
+** link:task-set-up-licensing-azure.html["了解如何设置许可"^]。
 
 
 . *预配置软件包*：选择一个软件包以快速部署Cloud Volumes ONTAP 系统、或者单击*更改配置*。
@@ -385,12 +385,12 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 +
 ** 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 +
-有关选择磁盘大小的帮助、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在 Azure 中估算系统规模"^]。
+有关选择磁盘大小的帮助、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在Azure中调整系统大小"^]。
 
 ** 您可以在创建或编辑卷时选择特定的卷分层策略。
 ** 如果禁用数据分层，则可以在后续聚合上启用它。
 +
-link:concept-data-tiering.html["了解有关数据分层的更多信息。"]。
+link:concept-data-tiering.html["了解有关数据分层的更多信息。"^]。
 
 
 
@@ -398,17 +398,17 @@ link:concept-data-tiering.html["了解有关数据分层的更多信息。"]。
 +
 .. 如果需要、选择*正常*或*高*写入速度。
 +
-link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
+link:concept-write-speed.html["了解有关写入速度的更多信息。"^]。
 
 .. 根据需要激活一次写入、多次读取(WORM)存储。
 +
-此选项仅适用于某些VM类型。要了解支持的VM类型、请参见 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA对支持按许可证配置"]。
+此选项仅适用于某些VM类型。要了解支持的VM类型、请参见 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA对支持按许可证配置"^]。
 
 +
 如果为Cloud Volumes ONTAP 9.7及更低版本启用了数据分层、则无法启用WORM。启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。
 
 +
-link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
+link:concept-worm.html["了解有关 WORM 存储的更多信息。"^]。
 
 .. 如果激活了WORM存储、请选择保留期限。
 
@@ -418,17 +418,17 @@ link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
 HTTPS连接从Cloud Volumes ONTAP 9.7 HA对连接到Azure页面Blob存储帐户。请注意，启用此选项可能会影响写入性能。创建工作环境后，您无法更改此设置。
 
 +
-link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
+link:concept-worm.html["了解有关 WORM 存储的更多信息。"^]。
 
 +
 如果启用了数据分层，则无法启用 WORM 。
 
 +
-link:concept-worm.html["了解有关 WORM 存储的更多信息。"]。
+link:concept-worm.html["了解有关 WORM 存储的更多信息。"^]。
 
 . * 创建卷 * ：输入新卷的详细信息或单击 * 跳过 * 。
 +
-link:concept-client-protocols.html["了解支持的客户端协议和版本"]。
+link:concept-client-protocols.html["了解支持的客户端协议和版本"^]。
 
 +
 本页中的某些字段是不言自明的。下表介绍了可能需要指导的字段：
@@ -493,7 +493,7 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能，并根据需要更改卷分层策略。
 +
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["了解卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +

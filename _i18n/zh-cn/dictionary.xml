@@ -5016,4 +5016,10 @@
   <block id="157452a4d26511160047acedc5ae5b81" category="paragraph"><block ref="2824c251ff24540ca0c877b5ced755b8" category="inline-link-macro-rx"></block>。</block>
   <block id="cf523fc47469c34a8d903bacda7e81e5" category="cell">如果您使用现有防火墙策略、请确保该策略包含所需的规则。 <block ref="bee5d22e907894802468a917716c85b0" category="inline-link-macro-rx"></block>。</block>
   <block id="07a5d71b593f96284694315beb6fe13d" category="admonition">通过*高*写入速度选项可获得高写入速度和8、896字节的最大传输单元(MTU)、实例类型为n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。高写入速度和8、896的MTU与功能相关、不能在已配置的实例中单独禁用。有关VPC-1、VPC-2和VPC-3的详细信息、请参见<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>。</block>
+  <block id="9f5be27589cc6b51b9720d024782dcb8" category="paragraph">BlueXP不为Storage VM (SVM)灾难恢复提供任何设置或流程编排支持。您必须使用 System Manager 或 CLI 。</block>
+  <block id="9c6c0a63729c2c1bc8388b9ccd4e4155" category="inline-link-macro">详细了解SVM灾难恢复</block>
+  <block id="5dc0415d3b98038c9ac4667c27633958" category="paragraph"><block ref="9ef9838740c8c73e2e54c1615ffa6adb" category="inline-link-macro-rx"></block>。</block>
+  <block id="74ee0a2fe74e69a19051f0e09c04fc43" category="doc">设置SVM灾难恢复</block>
+  <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">如果在两个Cloud Volumes ONTAP系统之间设置SnapMirror SVM复制、则复制必须在两个HA对系统或两个单节点系统之间进行。您不能在HA对和单节点系统之间设置SnapMirror SVM复制。</block>
+  <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">有关CLI说明、请参阅以下文档。</block>
 </blocks>

@@ -1489,7 +1489,6 @@
   <block id="4ae719205766e20198cc595136cbf10c" category="inline-link">了解有关 /ocem/config API 调用的更多信息</block>
   <block id="5ac123f6eee32c0fe88eeab92338a1a4" category="summary">FlexCache 卷是一种存储卷，用于缓存原始卷或源卷中的 NFS 读取数据。后续读取缓存的数据会加快对该数据的访问速度。</block>
   <block id="d5ce201ca4cc42ba6b38e9166bcef415" category="doc">利用 FlexCache 卷加快数据访问速度</block>
-  <block id="2ddb8d07e9f5af9d9a76333b9ef2a7cb" category="paragraph">FlexCache 卷是一种存储卷，用于缓存原始（或源）卷中的 NFS 读取数据。后续读取缓存的数据会加快对该数据的访问速度。</block>
   <block id="90c624683582774042156c98858d14dc" category="paragraph">您可以使用 FlexCache 卷加快数据访问速度，或者从访问量较多的卷卸载流量。FlexCache 卷有助于提高性能，尤其是在客户端需要重复访问相同数据时，因为可以直接提供数据，而无需访问原始卷。FlexCache 卷非常适合读取密集型系统工作负载。</block>
   <block id="29e15f4a6477b08e72892d33f28001ce" category="inline-link">《 FlexCache 卷加快数据访问高级指南》</block>
   <block id="f2a7a46cc845b377d163ce816c723b41" category="list-text"><block ref="f2a7a46cc845b377d163ce816c723b41" category="inline-link-rx"></block></block>
@@ -3470,8 +3469,6 @@
   <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">在BlueXP中管理Storage VM</block>
   <block id="50660b7473b276b2ca6ffca877133e87" category="paragraph">BlueXP支持您通过System Manager或CLI创建的任何其他Storage VM。</block>
   <block id="891665afb192ec7434051075c05e3e2f" category="list-text">在BlueXP中、确定集群管理接口的IP地址：</block>
-  <block id="08882f53f80237686337effbc79af710" category="paragraph">目前、BlueXP不提供对FlexCache 卷的管理、但您可以使用ONTAP 命令行界面或ONTAP 系统管理器创建和管理FlexCache 卷：</block>
-  <block id="84c7d68ceec07ae1479f5ffd5345fe69" category="paragraph">从3.7.2版开始、BlueXP将为所有新的Cloud Volumes ONTAP 系统生成FlexCache 许可证。此许可证包含 500 GiB 的使用量限制。</block>
   <block id="68e3d383b46bd2d1a96c2a6b2ddbc3f5" category="admonition">如果HA对中的节点不可用、则BlueXP中工作环境的状态为_Degraded_.</block>
   <block id="71279608104bfad0fd0c8e38e3fe117b" category="paragraph">无法从BlueXP存储接管执行以下操作：</block>
   <block id="83abd5ee8b7f73b0a1f8620e32618f71" category="paragraph">如果需要在Azure订阅上启用此功能、BlueXP将在"需要操作"消息中提示您提供这些详细信息。</block>
@@ -5023,4 +5020,9 @@
   <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">如果在两个Cloud Volumes ONTAP系统之间设置SnapMirror SVM复制、则复制必须在两个HA对系统或两个单节点系统之间进行。您不能在HA对和单节点系统之间设置SnapMirror SVM复制。</block>
   <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">有关CLI说明、请参阅以下文档。</block>
   <block id="ead6e5569d8d8a0e0ef737aef13e13d9" category="list-text">要检查升级状态，请单击设置图标并选择*Timeline*。</block>
+  <block id="4255b526fdaa2217071759cd5d05e981" category="paragraph">FlexCache卷是一种存储卷、用于缓存来自初始(或源)卷的SMB和NFS读取数据。后续读取缓存的数据会加快对该数据的访问速度。</block>
+  <block id="5f63db6bf0512dc0612ee852c1faf373" category="inline-link-macro">BlueXP卷缓存</block>
+  <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXP可通过管理FlexCache卷 <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> 服务</block>
+  <block id="06156010b52bde259c58b15866491a02" category="paragraph">您还可以使用ONTAP命令行界面或ONTAP系统管理器创建和管理FlexCache卷：</block>
+  <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP为所有新的Cloud Volumes ONTAP系统生成FlexCache许可证。此许可证包含 500 GiB 的使用量限制。</block>
 </blocks>

@@ -281,6 +281,7 @@ NOTE: 默认情况下、Upgrade Cloud Volumes ONTAP页面会选择要升级的�
 +
 image:screenshot_upgrade_select_versions.png["升级Cloud Volumes ONTAP版本页面的屏幕截图。"]
 
+. 要检查升级状态，请单击设置图标并选择*Timeline*。
 
 
 .结果

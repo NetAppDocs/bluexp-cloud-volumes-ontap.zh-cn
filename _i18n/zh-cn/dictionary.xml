@@ -5022,4 +5022,5 @@
   <block id="74ee0a2fe74e69a19051f0e09c04fc43" category="doc">设置SVM灾难恢复</block>
   <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">如果在两个Cloud Volumes ONTAP系统之间设置SnapMirror SVM复制、则复制必须在两个HA对系统或两个单节点系统之间进行。您不能在HA对和单节点系统之间设置SnapMirror SVM复制。</block>
   <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">有关CLI说明、请参阅以下文档。</block>
+  <block id="ead6e5569d8d8a0e0ef737aef13e13d9" category="list-text">要检查升级状态，请单击设置图标并选择*Timeline*。</block>
 </blocks>

@@ -5025,4 +5025,12 @@
   <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXP可通过管理FlexCache卷 <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> 服务</block>
   <block id="06156010b52bde259c58b15866491a02" category="paragraph">您还可以使用ONTAP命令行界面或ONTAP系统管理器创建和管理FlexCache卷：</block>
   <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP为所有新的Cloud Volumes ONTAP系统生成FlexCache许可证。此许可证包含 500 GiB 的使用量限制。</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
+  <block id="3e34162a2379c48e3eaf3f3857b029c0" category="paragraph">在3.1.33版的连接器中引入了以下更改。</block>
+  <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">支持Azure中的Lsv3系列VM</block>
+  <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">从9.13.1版本开始、Azure中的Cloud Volumes ONTAP现在支持L48s_v3和L64s_v3实例类型、用于在单个和多个可用性区域中使用共享托管磁盘进行单节点和高可用性对部署。这些实例类型支持Flash Cache。</block>
+  <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">查看Azure中支持的Cloud Volumes ONTAP配置</block>
+  <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">查看Azure中Cloud Volumes ONTAP的存储限制</block>
+  <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
+<block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
 </blocks>

@@ -4600,7 +4600,6 @@
   <block id="fb4c65b52def4e8355252bcb74eab6be" category="summary">利用AWS的密钥管理服务提供第三方密钥管理服务。</block>
   <block id="da8f544047a48addb30292b7f355c64e" category="doc">使用AWS密钥管理服务管理密钥</block>
   <block id="44d61056f175f112376610c7782283a1" category="inline-link-macro">AWS的密钥管理服务(KMS)</block>
-  <block id="6ad0c0113b3b55b452407927aa4aa75b" category="paragraph">您可以使用 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> 在部署了Google Cloud Platform的应用程序中保护ONTAP 加密密钥。</block>
   <block id="c7fa7b72f6d04762c019500275a89386" category="paragraph">可以使用命令行界面或ONTAP REST API启用AWS KMS的密钥管理。</block>
   <block id="ce62b1827da5aee89a8c9443b4ca4301" category="paragraph">使用KMS时、请注意、默认情况下、数据SVM的LIF用于与云密钥管理端点进行通信。节点管理网络用于与AWS的身份验证服务进行通信。如果集群网络配置不正确，集群将无法正确利用密钥管理服务。</block>
   <block id="1a96e698f264a0a04e8665750d57e611" category="list-text">Cloud Volumes ONTAP必须运行9.12.0或更高版本</block>
@@ -5033,4 +5032,5 @@
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">查看Azure中Cloud Volumes ONTAP的存储限制</block>
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
+  <block id="9d0048a7e2f292f2c49dc43d2698028b" category="paragraph">您可以使用 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> 在AWS部署的应用程序中保护ONTAP加密密钥。</block>
 </blocks>

@@ -12,7 +12,7 @@ summary: 利用AWS的密钥管理服务提供第三方密钥管理服务。
 
 
 [role="lead"]
-您可以使用 link:https://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS的密钥管理服务(KMS)"^] 在部署了Google Cloud Platform的应用程序中保护ONTAP 加密密钥。
+您可以使用 link:https://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS的密钥管理服务(KMS)"^] 在AWS部署的应用程序中保护ONTAP加密密钥。
 
 可以使用命令行界面或ONTAP REST API启用AWS KMS的密钥管理。
 

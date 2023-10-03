@@ -1,0 +1,280 @@
+---
+sidebar: sidebar 
+permalink: task-segregate-snapmirror-azure.html 
+keywords: segregate, SnapMirror, SnapMirror traffic, SnapMirror replication, add, additional NIC, new NIC, intercluster LIF, non-routable subnet, subnet 
+summary: 借助Azure中的Cloud Volumes ONTAP、您可以使用不同的网络隔离SnapMirror复制流量、以增强数据的安全性和性能。 
+---
+= 在Azure中隔离SnapMirror流量
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+借助Azure中的Cloud Volumes ONTAP、您可以将SnapMirror复制流量与数据和管理流量隔离。要将SnapMirror复制流量与数据流量隔离、您需要添加一个新的网络接口卡(Network Interface Card、NIC)、一个关联的集群间LIF和一个不可路由的子网。
+
+
+
+== 关于Azure中的SnapMirror流量隔离
+
+默认情况下、BlueXP会在同一子网上配置Cloud Volumes ONTAP部署中的所有NIC和LUN。在此类配置中、SnapMirror复制流量以及数据和管理流量使用同一子网。隔离SnapMirror流量会利用一个不可路由到用于数据和管理流量的现有子网的额外子网。
+
+.图1.
+下图显示了在单节点部署中使用附加NIC、关联的集群间LIF和不可路由子网隔离SnapMirror复制流量的情况。HA对部署略有不同。
+
+image:diagram-segregate-snapmirror-traffic.png["图中显示了在单节点配置中SnapMirror复制流量的隔离"]
+
+.开始之前
+请查看以下注意事项：
+
+* 您只能将一个NIC添加到Cloud Volumes ONTAP单节点或HA对部署(VM实例)中、以实现SnapMirror流量隔离。
+* 要添加新的NIC、您部署的VM实例类型必须具有未使用的NIC。
+* 源集群和目标集群必须位于同一个虚拟网络(vNet)中、但不能位于同一子网中。
+
+
+
+
+== 第1步：创建一个额外的NIC并连接到目标虚拟机
+
+本节介绍如何创建其他NIC并将其连接到目标VM。目标VM是Azure中Cloud Volumes ONTAP中要设置其他NIC的单节点或HA对系统。
+
+.步骤
+. 在ONTAP命令行界面中、停止节点。
++
+[source, cli]
+----
+dest::> halt -node <dest_node-vm>
+----
+. 在Azure门户中、检查虚拟机(节点)状态是否为已停止。
++
+[source, cli]
+----
+az vm get-instance-view --resource-group <dest-rg> --name <dest-vm> --query instanceView.statuses[1].displayStatus
+----
+. 使用Azure Cloud Shell中的Bash环境停止节点。
++
+.. 停止节点。
++
+[source, cli]
+----
+az vm stop --resource-group <dest_node-rg> --name <dest_node-vm>
+----
+.. 取消分配此节点。
++
+[source, cli]
+----
+az vm deallocate --resource-group <dest_node-rg> --name <dest_node-vm>
+----
+
+
+. 配置网络安全组规则、使两个子网(源集群子网和目标集群子网)不可相互路由。
++
+.. 在目标虚拟机上创建新的NIC。
+.. 查找源集群子网的子网ID。
++
+[source, cli]
+----
+az network vnet subnet show -g <src_vnet-rg> -n <src_subnet> --vnet-name <vnet> --query id
+----
+.. 在目标VM上使用源集群子网的子网ID创建新NIC。在此输入新NIC的名称。
++
+[source, cli]
+----
+az network nic create -g <dest_node-rg> -n <dest_node-vm-nic-new> --subnet <id_from_prev_command> --accelerated-networking true
+----
+.. 保存privateIPAddress。此IP地址<new_added_nic_primary_addr>用于在中创建集群间LIF <<Step 2: Create a new IPspace,广播域、新NIC的集群间LIF>>。
+
+
+. 将新的NIC连接到虚拟机。
++
+[source, cli]
+----
+az vm nic add -g <dest_node-rg> --vm-name <dest_node-vm> --nics <dest_node-vm-nic-new>
+----
+. 启动虚拟机(节点)。
++
+[source, cli]
+----
+az vm start --resource-group <dest_node-rg>  --name <dest_node-vm>
+----
+. 在Azure门户中，转至*Networking*并确认新的NIC (例如NIC-NEW)已存在，并且已启用加速网络。
++
+[source, cli]
+----
+az network nic list --resource-group azure-59806175-60147103-azure-rg --query "[].{NIC: name, VM: virtualMachine.id}"
+----
+
+
+对于HA对部署、请对配对节点重复上述步骤。
+
+
+
+== 第2步：为新NIC创建新的IP空间、广播域和集群间LIF
+
+集群间的独立IP空间可在各个网络功能之间实现逻辑隔离、以便在集群之间进行复制。
+
+使用ONTAP命令行界面执行以下步骤。
+
+.步骤
+. 创建新的IP空间(new_ipspace)。
++
+[source, cli]
+----
+dest::> network ipspace create -ipspace <new_ipspace>
+----
+. 在新IP空间(new_ipspace)上创建广播域并添加NIC新端口。
++
+[source, cli]
+----
+dest::> network port show
+----
+. 对于单节点系统、新添加的端口为_e0b_。对于使用受管磁盘的HA对部署、新添加的端口为_e0d_。对于使用页面Blobs的HA对部署、新添加的端口为_e0e_。请使用节点名称、而不是VM名称。通过运行查找节点名称 `node show`。
++
+[source, cli]
+----
+dest::> broadcast-domain create -broadcast-domain <new_bd> -mtu 1500 -ipspace <new_ipspace> -ports <dest_node-cot-vm:e0b>
+----
+. 在新广播域(new_bd)和新NIC (nic-new)上创建集群间LIF。
++
+[source, cli]
+----
+dest::> net int create -vserver <new_ipspace> -lif <new_dest_node-ic-lif> -service-policy default-intercluster -address <new_added_nic_primary_addr> -home-port <e0b> -home-node <node> -netmask <new_netmask_ip> -broadcast-domain <new_bd>
+----
+. 验证是否已创建新的集群间LIF。
++
+[source, cli]
+----
+dest::> net int show
+----
+
+
+对于HA对部署、请对配对节点重复上述步骤。
+
+
+
+== 第3步：验证源系统和目标系统之间的集群对等关系
+
+本节介绍如何验证源系统与目标系统之间的对等关系。
+
+使用ONTAP命令行界面执行以下步骤。
+
+.步骤
+. 验证目标集群的集群间LIF是否可以对源集群的集群间LIF执行ping操作。由于目标集群会执行此命令、因此目标IP地址是源上的集群间LIF IP地址。
++
+[source, cli]
+----
+dest::> ping -lif <new_dest_node-ic-lif> -vserver <new_ipspace> -destination <10.161.189.6>
+----
+. 验证源集群的集群间LIF是否可以对目标集群的集群间LIF执行ping操作。目标是在目标上创建的新NIC的IP地址。
++
+[source, cli]
+----
+src::> ping -lif <src_node-ic-lif> -vserver <src_svm> -destination <10.161.189.18>
+----
+
+
+对于HA对部署、请对配对节点重复上述步骤。
+
+
+
+== 第4步：在源系统和目标系统之间创建SVM对等关系
+
+本节介绍如何在源系统和目标系统之间创建SVM对等关系。
+
+使用ONTAP命令行界面执行以下步骤。
+
+.步骤
+. 使用源集群间LIF IP地址作为在目标上创建集群对等关系 `-peer-addrs`。对于HA对、将两个节点的源集群间LIF IP地址列为 `-peer-addrs`。
++
+[source, cli]
+----
+dest::> cluster peer create -peer-addrs <10.161.189.6> -ipspace <new_ipspace>
+----
+. 输入并确认密码短语。
+. 使用目标集群LIF IP地址作为在源上创建集群对等关系 `peer-addrs`。对于HA对、将两个节点的目标集群间LIF IP地址列为 `-peer-addrs`。
++
+[source, cli]
+----
+src::> cluster peer create -peer-addrs <10.161.189.18>
+----
+. 输入并确认密码短语。
+. 检查集群是否已建立对等状态。
++
+[source, cli]
+----
+src::> cluster peer show
+----
++
+成功建立对等关系后、可用性字段中会显示*可用*。
+
+. 在目标上创建SVM对等关系。源和目标SVM均应为数据SVM。
++
+[source, cli]
+----
+dest::> vserver peer create -vserver <dest_svm> -peer-vserver <src_svm> -peer-cluster <src_cluster> -applications snapmirror``
+----
+. 接受SVM对等。
++
+[source, cli]
+----
+src::> vserver peer accept -vserver <src_svm> -peer-vserver <dest_svm>
+----
+. 检查SVM是否已对等。
++
+[source, cli]
+----
+dest::> vserver peer show
+----
++
+对等状态显示 *`peered`*和对等应用程序显示 *`snapmirror`*
+
+
+
+
+
+== 第5步：在源系统和目标系统之间创建SnapMirror复制关系
+
+本节介绍如何在源系统和目标系统之间创建SnapMirror复制关系。
+
+使用ONTAP命令行界面执行以下步骤。
+
+.步骤
+. 在目标SVM上创建受数据保护的卷。
++
+[source, cli]
+----
+dest::> vol create -volume <new_dest_vol> -vserver <dest_svm> -type DP -size <10GB> -aggregate <aggr1>
+----
+. 在目标上创建SnapMirror复制关系、其中包括用于复制的SnapMirror策略和计划。
++
+[source, cli]
+----
+dest::> snapmirror create -source-path src_svm:src_vol  -destination-path  dest_svm:new_dest_vol -vserver dest_svm -policy MirrorAllSnapshots -schedule 5min
+----
+. 初始化目标上的SnapMirror复制关系。
++
+[source, cli]
+----
+dest::> snapmirror initialize -destination-path  <dest_svm:new_dest_vol>
+----
+. 在ONTAP命令行界面中、运行以下命令以验证SnapMirror关系状态：
++
+[source, cli]
+----
+dest::> snapmirror show
+----
++
+关系状态为 `Snapmirrored` 关系的运行状况为 `true`。
+
+. 可选：在ONTAP命令行界面中、运行以下命令以查看SnapMirror关系的操作历史记录。
++
+[source, cli]
+----
+dest::> snapmirror show-history
+----
+
+
+您也可以挂载源卷和目标卷、向源写入文件、并验证卷是否正在复制到目标。

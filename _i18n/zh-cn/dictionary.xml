@@ -3953,7 +3953,6 @@
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">无论选择哪种方案、您都应选择此选项 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0及更早版本</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">每购买3 Tib容量一个边缘节点</block>
-  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支持云提供商解决方案</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">适用于 ONTAP 的 Amazon FSX</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">适用于 Google Cloud 的 Cloud Volumes Service</block>
@@ -4780,9 +4779,7 @@
   <block id="46f41748d329a2f863d5f787b783bcc5" category="section-title">Cloud Volumes ONTAP升级版本选择器更新</block>
   <block id="25c3dcdd6e2c69b30eba973a10e656d8" category="paragraph">现在、您可以通过Upgrade Cloud Volumes ONTAP页面选择升级到最新可用的Cloud Volumes ONTAP版本或更早版本。</block>
   <block id="91cf56905c9848b7dbc6e3d59504dcd3" category="paragraph">要了解有关通过BlueXP升级Cloud Volumes ONTAP的更多信息、请参见<block ref="9777e426a24de9582e7ed3fdb1795e0a" category="inline-link-rx"></block>。</block>
-  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">您的BlueXP帐户和各个Cloud Volumes ONTAP系统都需要注册支持。</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">注册这两种类型的序列号可实现打开支持服务单和自动生成案例等功能。要完成注册、请按如下所述将NetApp 支持站点(NSS)帐户添加到BlueXP中。</block>
-  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">有关以下云提供商解决方案的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">注册BlueXP帐户以获得NetApp支持</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">要注册支持并激活支持授权、BlueXP帐户中的一个用户必须将NetApp 支持站点 帐户与其BlueXP登录名关联。如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">选择*添加NSS凭证*，然后按照NetApp 支持站点(NSS)鉴定提示进行操作。</block>
@@ -5033,4 +5030,73 @@
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
   <block id="9d0048a7e2f292f2c49dc43d2698028b" category="paragraph">您可以使用 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> 在AWS部署的应用程序中保护ONTAP加密密钥。</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">要获得BlueXP及其存储解决方案和服务的特定技术支持、需要注册支持。要为Cloud Volumes ONTAP系统启用关键工作流、还需要注册支持服务。</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">注册获取支持不会为云提供商文件服务启用NetApp支持。有关与云提供商文件服务、其基础架构或使用该服务的任何解决方案相关的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
+  <block id="f316f0dfd566f9d842d2d368b7e3ecbb" category="cell">9.14.0</block>
+  <block id="303aacd2fb75405c16e06a32d73c9c79" category="summary">借助Azure中的Cloud Volumes ONTAP、您可以使用不同的网络隔离SnapMirror复制流量、以增强数据的安全性和性能。</block>
+  <block id="21621fa11949957e26b3e8faa6ac858e" category="doc">在Azure中隔离SnapMirror流量</block>
+  <block id="0f8fc7abeaf93224876aeb20cc640a67" category="paragraph">借助Azure中的Cloud Volumes ONTAP、您可以将SnapMirror复制流量与数据和管理流量隔离。要将SnapMirror复制流量与数据流量隔离、您需要添加一个新的网络接口卡(Network Interface Card、NIC)、一个关联的集群间LIF和一个不可路由的子网。</block>
+  <block id="9ca833fb1a50865ff88e9da267c0f41f" category="section-title">关于Azure中的SnapMirror流量隔离</block>
+  <block id="4750291421c319d60eddb36242a2a88e" category="paragraph">默认情况下、BlueXP会在同一子网上配置Cloud Volumes ONTAP部署中的所有NIC和LUN。在此类配置中、SnapMirror复制流量以及数据和管理流量使用同一子网。隔离SnapMirror流量会利用一个不可路由到用于数据和管理流量的现有子网的额外子网。</block>
+  <block id="60806a484aa67dd4b1f9835cf1de9551" category="paragraph-title">图1.</block>
+  <block id="d631a4c5f16e24d65bf4b95667c74ab1" category="paragraph">下图显示了在单节点部署中使用附加NIC、关联的集群间LIF和不可路由子网隔离SnapMirror复制流量的情况。HA对部署略有不同。</block>
+  <block id="f7142f8300db32ac533cebbf28b1a65c" category="inline-image-macro">图中显示了在单节点配置中SnapMirror复制流量的隔离</block>
+  <block id="40126e16e9279ba224718054c8599d19" category="paragraph"><block ref="40126e16e9279ba224718054c8599d19" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">请查看以下注意事项：</block>
+  <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">您只能将一个NIC添加到Cloud Volumes ONTAP单节点或HA对部署(VM实例)中、以实现SnapMirror流量隔离。</block>
+  <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">要添加新的NIC、您部署的VM实例类型必须具有未使用的NIC。</block>
+  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">源集群和目标集群必须位于同一个虚拟网络(vNet)中、但不能位于同一子网中。</block>
+  <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">第1步：创建一个额外的NIC并连接到目标虚拟机</block>
+  <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">本节介绍如何创建其他NIC并将其连接到目标VM。目标VM是Azure中Cloud Volumes ONTAP中要设置其他NIC的单节点或HA对系统。</block>
+  <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">在ONTAP命令行界面中、停止节点。</block>
+  <block id="0a35d6e7621851d0057f60bd59de0033" category="list-text">在Azure门户中、检查虚拟机(节点)状态是否为已停止。</block>
+  <block id="4e4710d224030f7e39ce8b2750fbb740" category="list-text">使用Azure Cloud Shell中的Bash环境停止节点。</block>
+  <block id="c5d8f32ad4d62afd3c9e40fef3d1cbd0" category="list-text">停止节点。</block>
+  <block id="8f19990e7da7dad0679229805c3df746" category="list-text">取消分配此节点。</block>
+  <block id="9fc7f10dbf9f36fb02a3ff55eb91940d" category="list-text">配置网络安全组规则、使两个子网(源集群子网和目标集群子网)不可相互路由。</block>
+  <block id="bd7492db1a0b8c1b34be6a58c6374a50" category="list-text">在目标虚拟机上创建新的NIC。</block>
+  <block id="a6b97c800c08f0f47cf048c9cd043899" category="list-text">查找源集群子网的子网ID。</block>
+  <block id="5a90251e4d045fbd97e56cd055766b1e" category="list-text">在目标VM上使用源集群子网的子网ID创建新NIC。在此输入新NIC的名称。</block>
+  <block id="5fd584f186e30730537d22a78bb11616" category="inline-xref">广播域、新NIC的集群间LIF</block>
+  <block id="d863813a11392f8ccc266be047976b56" category="list-text">保存privateIPAddress。此IP地址&lt;new_added_nic_primary_addr&gt;用于在中创建集群间LIF <block ref="13642ed959fde49bda6806fad0d107cf" category="inline-xref-macro-rx"></block>。</block>
+  <block id="c720b471b5c9a398d1674113fb61ccb3" category="list-text">将新的NIC连接到虚拟机。</block>
+  <block id="04144942b75846f169eab289baa03332" category="list-text">启动虚拟机(节点)。</block>
+  <block id="891b715fb21f166e1ddefb85f1ada848" category="list-text">在Azure门户中，转至*Networking*并确认新的NIC (例如NIC-NEW)已存在，并且已启用加速网络。</block>
+  <block id="0b2645871b4d5e300b856a5676815053" category="paragraph">对于HA对部署、请对配对节点重复上述步骤。</block>
+  <block id="75ca82ebaa2ab2a348dab6de8af96db1" category="section-title">第2步：为新NIC创建新的IP空间、广播域和集群间LIF</block>
+  <block id="f81ad401f01ac6ccee4552cee262ea96" category="paragraph">集群间的独立IP空间可在各个网络功能之间实现逻辑隔离、以便在集群之间进行复制。</block>
+  <block id="bf5db4b0d890ae0f47f0666b4786c11e" category="paragraph">使用ONTAP命令行界面执行以下步骤。</block>
+  <block id="5caa556e7511fbc031e556f35273b4b5" category="list-text">创建新的IP空间(new_ipspace)。</block>
+  <block id="c3e846d4c68310f0bbaebfe81b1b016c" category="list-text">在新IP空间(new_ipspace)上创建广播域并添加NIC新端口。</block>
+  <block id="ec7cd635bbff7496ce854419fbac424d" category="list-text">对于单节点系统、新添加的端口为_e0b_。对于使用受管磁盘的HA对部署、新添加的端口为_e0d_。对于使用页面Blobs的HA对部署、新添加的端口为_e0e_。请使用节点名称、而不是VM名称。通过运行查找节点名称<block ref="9cd5e832790132a87592f2958fc2b1a6" prefix=" " category="inline-code"></block>。</block>
+  <block id="9defaa4e7d0a35e22135ad0e2f58e852" category="list-text">在新广播域(new_bd)和新NIC (nic-new)上创建集群间LIF。</block>
+  <block id="be0a702fb4057bb2e91bdd1cc96da2e4" category="list-text">验证是否已创建新的集群间LIF。</block>
+  <block id="2aea6959bcbac1fa4b42120415127f49" category="section-title">第3步：验证源系统和目标系统之间的集群对等关系</block>
+  <block id="daaed44d8f29e01bf2b9136c812dba11" category="paragraph">本节介绍如何验证源系统与目标系统之间的对等关系。</block>
+  <block id="7bd80217b21e266e5b946de878bcd116" category="list-text">验证目标集群的集群间LIF是否可以对源集群的集群间LIF执行ping操作。由于目标集群会执行此命令、因此目标IP地址是源上的集群间LIF IP地址。</block>
+  <block id="b10932f9d1b350d60dc8e6ca4ee93b51" category="list-text">验证源集群的集群间LIF是否可以对目标集群的集群间LIF执行ping操作。目标是在目标上创建的新NIC的IP地址。</block>
+  <block id="93abe604e120de65d22caed1aaada374" category="section-title">第4步：在源系统和目标系统之间创建SVM对等关系</block>
+  <block id="75dd127515b5a2b5c961b90596de57ac" category="paragraph">本节介绍如何在源系统和目标系统之间创建SVM对等关系。</block>
+  <block id="8f3afc07cdf026cecf587706e3f50a9e" category="list-text">使用源集群间LIF IP地址作为在目标上创建集群对等关系<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>。对于HA对、将两个节点的源集群间LIF IP地址列为<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>。</block>
+  <block id="bddd18b8263487594b76ea4fec379386" category="list-text">输入并确认密码短语。</block>
+  <block id="124c978c2ba222186c71a76388ee00be" category="list-text">使用目标集群LIF IP地址作为在源上创建集群对等关系<block ref="2c00dca3dca5747b8a2b8745956d98a1" prefix=" " category="inline-code"></block>。对于HA对、将两个节点的目标集群间LIF IP地址列为<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>。</block>
+  <block id="a3e35c96ecf9655b55a3dcde79058fa0" category="list-text">检查集群是否已建立对等状态。</block>
+  <block id="5db4c569041073c27e73bd49c013f30a" category="paragraph">成功建立对等关系后、可用性字段中会显示*可用*。</block>
+  <block id="6321e930bee04054fa8c00750098f3ea" category="list-text">在目标上创建SVM对等关系。源和目标SVM均应为数据SVM。</block>
+  <block id="91a3470d875fd7cbe36145c7f10cd29a" category="list-text">接受SVM对等。</block>
+  <block id="3116cb0ef49131786df2af89745dc321" category="list-text">检查SVM是否已对等。</block>
+  <block id="766b57929d5f2d18ec41dd1965fea420" category="paragraph">对等状态显示 <block ref="20df74dd9059112f4ef8506d8ece8b43" prefix="*" category="inline-code"></block>*和对等应用程序显示 <block ref="775e6dfb98cc0aadf603bb1ada48a066" prefix="*" category="inline-code"></block>*</block>
+  <block id="ddf01b8bab877738e14ace0c08658ed2" category="section-title">第5步：在源系统和目标系统之间创建SnapMirror复制关系</block>
+  <block id="93afe55f4bcb481fc116c93fb5cbd23e" category="paragraph">本节介绍如何在源系统和目标系统之间创建SnapMirror复制关系。</block>
+  <block id="1b596d323c1c9ba86accf6e5bd9c3acf" category="list-text">在目标SVM上创建受数据保护的卷。</block>
+  <block id="136a01ceb51816607d063508b0344e22" category="list-text">在目标上创建SnapMirror复制关系、其中包括用于复制的SnapMirror策略和计划。</block>
+  <block id="5ca85e0710f1c97ab63385105a12e084" category="list-text">初始化目标上的SnapMirror复制关系。</block>
+  <block id="0bcfd2e8ebb39d8c8a0cba2af13462c1" category="list-text">在ONTAP命令行界面中、运行以下命令以验证SnapMirror关系状态：</block>
+  <block id="3c6eca06b6c8daa748eff1365143a924" category="paragraph">关系状态为<block ref="d34e79870b17da17e894ddc837954dcc" prefix=" " category="inline-code"></block> 关系的运行状况为<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>。</block>
+  <block id="6016f20f177613d8d26c5d9473f64718" category="list-text">可选：在ONTAP命令行界面中、运行以下命令以查看SnapMirror关系的操作历史记录。</block>
+  <block id="9bc0846f66e4a0d0a36a210fa3342991" category="paragraph">您也可以挂载源卷和目标卷、向源写入文件、并验证卷是否正在复制到目标。</block>
+  <block id="c9abaf2f2285d7432a5d5112e315cb83" category="list-text">9.14.0GA</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">获得云提供商文件服务支持</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">有关与云提供商文件服务、其基础架构或使用该服务的任何解决方案相关的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">要获得针对BlueXP及其存储解决方案和服务的技术支持、请使用下面所述的支持选项。</block>
 </blocks>

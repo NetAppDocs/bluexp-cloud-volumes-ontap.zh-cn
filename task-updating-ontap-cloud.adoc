@@ -163,6 +163,31 @@ TIP: 未注册支持的系统仍会收到新版本可用时在BlueXP中显示的
 
 
 
+=== 在AWS中使用C4、M4和R4 EC2实例类型进行升级
+
+Cloud Volumes ONTAP不再支持C4、M4和R4 EC2实例类型。您可以使用这些实例类型将现有部署升级到Cloud Volumes ONTAP 9.8-9.12.1版。在升级之前、我们建议您 <<更改实例类型,更改实例类型>>。如果无法更改实例类型、则需要更改 <<启用增强型网络连接,启用增强型网络连接>> 升级之前。阅读以下各节、了解有关更改实例类型和启用增强型网络连接的更多信息。
+
+在运行9.13.0及更高版本的Cloud Volumes ONTAP中、不能使用C4、M4和R4 EC2实例类型进行升级。在这种情况下、您需要减少磁盘数量、然后 <<更改实例类型,更改实例类型>> 或者、使用c5、m5和R5 EC2实例类型部署新的HA对配置并迁移数据。
+
+
+
+==== 更改实例类型
+
+C4、M4和R4 EC2实例类型允许每个节点具有比C4、M5和R5 EC2实例类型更多的磁盘。如果您正在运行的C4、M4或R4 EC2实例的每个节点的磁盘数低于每个节点对c5、m5和R5实例的最大磁盘允许值、则可以将EC2实例类型更改为c5、m5或R5。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html#disk-and-tiering-limits-by-ec2-instance["按EC2实例检查磁盘和层限制"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["更改 Cloud Volumes ONTAP 的 EC2 实例类型"^]
+
+如果无法更改实例类型、请按照中的步骤进行操作 <<启用增强型网络连接>>。
+
+
+
+==== 启用增强型网络连接
+
+要升级到Cloud Volumes ONTAP 9.8及更高版本、您必须在运行C4、M4或R4实例类型的集群上启用_enhanced networking _。要启用ENA、请参阅知识库文章 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/How_to_enable_Enhanced_networking_like_SR-IOV_or_ENA_on_AWS_CVO_instances["如何在AWS Cloud Volumes ONTAP实例上启用SR-IOV或ENA等增强型网络"^]。
+
+
+
 == 准备升级
 
 在执行升级之前，您必须验证系统是否已准备就绪，并进行任何必要的配置更改。

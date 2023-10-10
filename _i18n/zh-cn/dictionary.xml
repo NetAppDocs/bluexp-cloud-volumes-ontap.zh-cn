@@ -5103,4 +5103,20 @@
   <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">以下更改是在连接器3.9.34版本中推出的。</block>
   <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0</block>
   <block id="c5fa627d231c9a8813c9a2421d86136f" category="paragraph">BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.0正式发布版。</block>
+  <block id="b74a118169165fd9778df58b68c1bf8b" category="section-title">在AWS中使用C4、M4和R4 EC2实例类型进行升级</block>
+  <block id="86af7a9b6ac6fe8d90191ba2d044c610" category="inline-xref">更改实例类型</block>
+  <block id="8354ae441e2d78b9bcafa37a25a3a726" category="inline-xref">启用增强型网络连接</block>
+  <block id="a583f72f871863a8b0fb3372e07f6823" category="paragraph">Cloud Volumes ONTAP不再支持C4、M4和R4 EC2实例类型。您可以使用这些实例类型将现有部署升级到Cloud Volumes ONTAP 9.8-9.12.1版。在升级之前、我们建议您 <block ref="e2df0d7629aebc3922335b76bd309d5d" category="inline-xref-macro-rx"></block>。如果无法更改实例类型、则需要更改 <block ref="b3a6854c27dac7de64ddd47279c1a22c" category="inline-xref-macro-rx"></block> 升级之前。阅读以下各节、了解有关更改实例类型和启用增强型网络连接的更多信息。</block>
+  <block id="f4f3843ed2e020a5db4d25da269e1bdd" category="paragraph">在运行9.13.0及更高版本的Cloud Volumes ONTAP中、不能使用C4、M4和R4 EC2实例类型进行升级。在这种情况下、您需要减少磁盘数量、然后 <block ref="e2df0d7629aebc3922335b76bd309d5d" category="inline-xref-macro-rx"></block> 或者、使用c5、m5和R5 EC2实例类型部署新的HA对配置并迁移数据。</block>
+  <block id="029e8552563877cfe5ee29ba1aa99958" category="section-title">更改实例类型</block>
+  <block id="42d43bc10a1d2d255ff3af7c71dbad45" category="paragraph">C4、M4和R4 EC2实例类型允许每个节点具有比C4、M5和R5 EC2实例类型更多的磁盘。如果您正在运行的C4、M4或R4 EC2实例的每个节点的磁盘数低于每个节点对c5、m5和R5实例的最大磁盘允许值、则可以将EC2实例类型更改为c5、m5或R5。</block>
+  <block id="e6fc2d799d147f12ca8a764583050b02" category="inline-link-macro">按EC2实例检查磁盘和层限制</block>
+  <block id="da810aedcd7ba8393656517bd8c66c60" category="paragraph"><block ref="4096803f0445bf20b4fc38a33ad6c648" category="inline-link-macro-rx"></block>
+<block ref="89a3d2162cf86c1f721a981e87e54403" category="inline-link-macro-rx"></block></block>
+  <block id="8412a3701e1356e6b7e2211199f14e73" category="paragraph">如果无法更改实例类型、请按照中的步骤进行操作 <block ref="1848b3d2e88d96b981f9b2b83a780938" category="inline-xref-macro-rx"></block>。</block>
+  <block id="44c305a704023f5d643a06ce08c03402" category="section-title">启用增强型网络连接</block>
+  <block id="2aed0ca02213325feada0ee707489e81" category="inline-link-macro">如何在AWS Cloud Volumes ONTAP实例上启用SR-IOV或ENA等增强型网络</block>
+  <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">要升级到Cloud Volumes ONTAP 9.8及更高版本、您必须在运行C4、M4或R4实例类型的集群上启用_enhanced networking _。要启用ENA、请参阅知识库文章 <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>。</block>
+  <block id="4b9b39edb3e09fa20d9a66c33e754c00" category="inline-link-macro">无法将实例类型从R4更改为R5、并出现磁盘数错误</block>
+  <block id="58cbae1f4fc410ea043517dc0196bed4" category="paragraph">如果无法从C4、M4或R4实例更改实例类型、请参见知识库文章 <block ref="ddbe8a0e687a77b95fcbe5dc93c2e464" category="inline-link-macro-rx"></block>。</block>
 </blocks>

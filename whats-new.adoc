@@ -20,6 +20,30 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2023年10月23日
+
+以下更改是在连接器3.9.34版本中推出的。
+
+
+
+=== Azure中的HA多可用性区域部署支持新区域
+
+Azure中的以下地区现在支持在Cloud Volumes ONTAP 9.14.0及更高版本中部署高可用性多可用性区域：
+
+* 澳大利亚东部
+* 东亚
+* 法国中部
+* 北欧
+* 卡塔尔中部
+* 瑞典中部
+* 西欧
+* 美国西部 2.
+
+
+有关支持多个可用性区域的所有区域的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
+
+
+
 == 2023年10月6日
 
 以下更改是在连接器3.9.34版本中推出的。
@@ -44,8 +68,8 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版�
 
 从9.13.1版本开始、Azure中的Cloud Volumes ONTAP现在支持L48s_v3和L64s_v3实例类型、用于在单个和多个可用性区域中使用共享托管磁盘进行单节点和高可用性对部署。这些实例类型支持Flash Cache。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["查看Azure中支持的Cloud Volumes ONTAP配置"]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["查看Azure中Cloud Volumes ONTAP的存储限制"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["查看Azure中支持的Cloud Volumes ONTAP配置"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["查看Azure中Cloud Volumes ONTAP的存储限制"^]
 
 
 
@@ -67,7 +91,7 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits
 
 您可以在单节点部署和高可用性对部署中单独使用或同时使用这些功能。
 
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["在Google Cloud中启动Cloud Volumes ONTAP"]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["在Google Cloud中启动Cloud Volumes ONTAP"^]
 
 
 

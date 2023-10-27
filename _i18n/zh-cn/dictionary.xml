@@ -5041,7 +5041,6 @@
   <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">请查看以下注意事项：</block>
   <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">您只能将一个NIC添加到Cloud Volumes ONTAP单节点或HA对部署(VM实例)中、以实现SnapMirror流量隔离。</block>
   <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">要添加新的NIC、您部署的VM实例类型必须具有未使用的NIC。</block>
-  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">源集群和目标集群必须位于同一个虚拟网络(vNet)中、但不能位于同一子网中。</block>
   <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">第1步：创建一个额外的NIC并连接到目标虚拟机</block>
   <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">本节介绍如何创建其他NIC并将其连接到目标VM。目标VM是Azure中Cloud Volumes ONTAP中要设置其他NIC的单节点或HA对系统。</block>
   <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">在ONTAP命令行界面中、停止节点。</block>
@@ -5142,4 +5141,6 @@
   <block id="0444b867f0aca3029a2b9ea7cd093316" category="list-text">单击*添加规则*。</block>
   <block id="39eb101f969fe671b016bf47de2d6d12" category="list-text">在类型下、选择*所有流量*、然后选择VPC IP地址。</block>
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">单击*保存规则*以应用更改。</block>
+  <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">源集群和目标集群应能够访问同一个虚拟网络(vNet)。目标集群是Azure中的Cloud Volumes ONTAP系统。源集群可以是Azure中的Cloud Volumes ONTAP系统、也可以是ONTAP系统。</block>
+  <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">要移动现有SnapMirror复制关系、必须先中断现有SnapMirror复制关系、然后再创建新的SnapMirror复制关系。</block>
 </blocks>

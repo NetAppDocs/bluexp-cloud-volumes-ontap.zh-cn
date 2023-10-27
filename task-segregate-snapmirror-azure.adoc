@@ -32,7 +32,7 @@ image:diagram-segregate-snapmirror-traffic.png["图中显示了在单节点配�
 
 * 您只能将一个NIC添加到Cloud Volumes ONTAP单节点或HA对部署(VM实例)中、以实现SnapMirror流量隔离。
 * 要添加新的NIC、您部署的VM实例类型必须具有未使用的NIC。
-* 源集群和目标集群必须位于同一个虚拟网络(vNet)中、但不能位于同一子网中。
+* 源集群和目标集群应能够访问同一个虚拟网络(vNet)。目标集群是Azure中的Cloud Volumes ONTAP系统。源集群可以是Azure中的Cloud Volumes ONTAP系统、也可以是ONTAP系统。
 
 
 
@@ -238,6 +238,8 @@ dest::> vserver peer show
 == 第5步：在源系统和目标系统之间创建SnapMirror复制关系
 
 本节介绍如何在源系统和目标系统之间创建SnapMirror复制关系。
+
+要移动现有SnapMirror复制关系、必须先中断现有SnapMirror复制关系、然后再创建新的SnapMirror复制关系。
 
 使用ONTAP命令行界面执行以下步骤。
 

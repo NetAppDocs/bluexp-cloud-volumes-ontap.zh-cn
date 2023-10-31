@@ -86,7 +86,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["
 以下视频介绍如何将按需购买的 Marketplace 订阅与您的 AWS 凭据相关联：
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.从AWS Marketplace订阅BlueXP
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
 TIP: 如果多个 IAM 用户在同一个 AWS 帐户中工作，则每个用户都需要订阅。第一个用户订阅后， AWS Marketplace 会通知后续用户他们已订阅，如下图所示。虽然已为 AWS _account_ 订阅，但每个 IAM 用户都需要将自己与该订阅关联起来。如果您看到以下消息、请单击*单击此处*链接以转到BlueXP网站并完成此过程。image:screenshot_aws_marketplace.gif["一个屏幕截图、显示当AWS帐户已订阅但特定IAM用户可能未订阅时适用于Cloud Volumes ONTAP 的BlueXP订阅页面。"]
@@ -334,7 +335,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["
 以下视频介绍如何将按需购买的 Marketplace 订阅与您的 AWS 凭据相关联：
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.从AWS Marketplace订阅BlueXP
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
 TIP: 如果多个 IAM 用户在同一个 AWS 帐户中工作，则每个用户都需要订阅。第一个用户订阅后， AWS Marketplace 会通知后续用户他们已订阅，如下图所示。虽然已为 AWS _account_ 订阅，但每个 IAM 用户都需要将自己与该订阅关联起来。如果您看到以下消息、请单击*单击此处*链接以转到BlueXP网站并完成此过程。image:screenshot_aws_marketplace.gif["一个屏幕截图、显示当AWS帐户已订阅但特定IAM用户可能未订阅时适用于Cloud Volumes ONTAP 的BlueXP订阅页面。"]

@@ -83,7 +83,8 @@ link:task-set-up-licensing-azure.html["了解如何设置许可"^]。
 以下视频显示了如何将 Marketplace 订阅与 Azure 订阅关联：
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.从Azure Marketplace订阅BlueXP
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . * 服务 * ：保持服务处于启用状态或禁用不想在 Cloud Volumes ONTAP 中使用的单个服务。
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解有关BlueXP分类的更多信息"^]
@@ -308,7 +309,8 @@ BlueXP部署Cloud Volumes ONTAP 系统。您可以跟踪时间链中的进度。
 以下视频显示了如何将 Marketplace 订阅与 Azure 订阅关联：
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.从Azure Marketplace订阅BlueXP
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . * 服务 * ：保持服务处于启用状态或禁用不想在 Cloud Volumes ONTAP 中使用的单个服务。
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解有关BlueXP分类的更多信息"^]

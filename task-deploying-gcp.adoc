@@ -99,7 +99,8 @@ NOTE: 这是您为BlueXP设置的服务帐户、 link:https://docs.netapp.com/us
 以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。或者，也可以按照中的步骤进行订阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["将Marketplace订阅与Google Cloud凭据关联"^] 部分。
 
 +
-video::video_subscribing_gcp.mp4[width=848,height=480]
+.从Google Cloud Marketplace订阅BlueXP
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * 服务 * ：选择要在此系统上使用的服务。要选择BlueXP备份和恢复或使用BlueXP分层、您必须已在步骤3中指定服务帐户。
 +
 
@@ -336,7 +337,8 @@ NOTE: 这是您为BlueXP设置的服务帐户、 link:https://docs.netapp.com/us
 以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。  或者，也可以按照中的步骤进行订阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["将Marketplace订阅与Google Cloud凭据关联"^] 部分。
 
 +
-video::video_subscribing_gcp.mp4[width=848,height=480]
+.从Google Cloud Marketplace订阅BlueXP
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * 服务 * ：选择要在此系统上使用的服务。要选择BlueXP备份和恢复或使用BlueXP分层、您必须已在步骤3中指定服务帐户。
 +
 

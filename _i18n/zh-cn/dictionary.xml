@@ -5113,7 +5113,6 @@
   <block id="e8b3ed24563d59f059354b6c1674f982" category="admonition">BlueXP备份和恢复需要订阅PAYGO、但使用此服务不会产生任何费用。有关为BlueXP备份和恢复设置许可的详细信息、请参见<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>。</block>
   <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">2023年10月23日</block>
   <block id="2bc953fcced4addf338156cc4681b683" category="section-title">Azure中的HA多可用性区域部署支持新区域</block>
-  <block id="13ff77e69df5acabc2f0da9e5ebc94b8" category="paragraph">Azure中的以下地区现在支持在Cloud Volumes ONTAP 9.14.0及更高版本中部署高可用性多可用性区域：</block>
   <block id="cee3f0213dd8b7eb15d7b31824e01754" category="list-text">澳大利亚东部</block>
   <block id="f74e1c0c8ee8410fa5bfe03676347257" category="list-text">东亚</block>
   <block id="bea1bd3d23555c539dab5f3f5426184c" category="list-text">法国中部</block>
@@ -5151,4 +5150,10 @@
   <block id="20ea4c62f4c9e4254314fe7fbbef0319" category="inline-link">详细了解监控订阅使用情况</block>
   <block id="d7105dd212dc96a8b292b6b48f84916f" category="paragraph"><block ref="d7105dd212dc96a8b292b6b48f84916f" category="inline-link-rx"></block></block>
   <block id="28ca5cda5cdef790c457097830d81ca5" category="paragraph">如果您不想再将Keystone订阅与BlueXP结合使用、则可以取消订阅链接。请注意，您只能取消链接未附加到现有 Cloud Volumes ONTAP 订阅的订阅。</block>
+  <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">2023年11月1日</block>
+  <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">现在、Google Cloud支持沙特阿拉伯地区</block>
+  <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">现在、适用于Cloud Volumes ONTAP的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持沙特阿拉伯地区。</block>
+  <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloud下的全球区域地图</block>
+  <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">有关所有地区的列表、请参见<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>。</block>
+  <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azure中的以下地区现在支持在Cloud Volumes ONTAP 9.12.1 GA及更高版本中部署高可用性多可用性区域：</block>
 </blocks>

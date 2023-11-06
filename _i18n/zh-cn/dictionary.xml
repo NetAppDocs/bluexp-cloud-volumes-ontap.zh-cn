@@ -3855,7 +3855,6 @@
   <block id="93859a51c20050a8828b46a6420dc7c9" category="paragraph">请参见 <block ref="c8a7e79f678b1faddb103e58db2edb75" category="inline-link-macro-rx"></block> 有关这些属性的信息。</block>
   <block id="1bc2e57bef99a91ef2d8ab0cdb177768" category="list-text">默认情况下、Azure中的每个磁盘都会进行空闲加密。</block>
   <block id="b80fdfea42d505d96700af73261164a3" category="list-title">带有页面blob的HA对</block>
-  <block id="c30ce062be1c5d4265f67a2654690b8f" category="list-title">多个可用性区域中的HA对</block>
   <block id="ab3aec14eab62514bc5eb01d67673c8b" category="list-text">两个用于根卷的512 GiB高级存储页面Blobs (每个节点一个)</block>
   <block id="5a07b5de49d43760a69fb7c4fea757e9" category="inline-link-macro">HA对支持按许可证配置</block>
   <block id="de8cf25f68f35d1a6c91688973a7593e" category="list-text">*安全通信到存储和WORM*：选择是否启用与Azure存储帐户的HTTPS连接、并根据需要激活一次写入、多次读取(WORM)存储。</block>
@@ -5156,4 +5155,5 @@
   <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azure中的以下地区现在支持在Cloud Volumes ONTAP 9.12.1 GA及更高版本中部署高可用性多可用性区域：</block>
   <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">收费基于两个成本组成部分：存储和使用(I/O)。</block>
   <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">您无需为与数据复制(SnapMirror)、备份(SnapVault)或NDMP相关的I/O付费。</block>
+  <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">在多个可用性区域中具有共享受管磁盘的HA对</block>
 </blocks>

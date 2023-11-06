@@ -75,9 +75,9 @@ NOTE: 如果没有许可证、则不支持使用已获得许可的功能。
 单独为配置的容量和I/O操作付费。
 
 * Cloud Volumes ONTAP 单节点或HA
-* 费用按两个成本组成部分计算：存储和使用情况(I/O)
+* 收费基于两个成本组成部分：存储和使用(I/O)。
 +
-您不会因与数据复制(SnapMirror)或NDMP相关的I/O费用。
+您无需为与数据复制(SnapMirror)、备份(SnapVault)或NDMP相关的I/O付费。
 
 
 

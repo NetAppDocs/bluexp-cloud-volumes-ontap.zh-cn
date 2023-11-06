@@ -3195,7 +3195,6 @@
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">已优化</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">单独为配置的容量和I/O操作付费。</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP 单节点或HA</block>
-  <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">费用按两个成本组成部分计算：存储和使用情况(I/O)</block>
   <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">边缘缓存</block>
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">为Cloud Volumes Edge Cache提供许可。</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">具有与专业软件包相同的功能、为分布式企业提供业务连续性和数据保护</block>
@@ -3234,7 +3233,6 @@
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">所有VNets*：入站流量的源为0.0.0.0/0 IP范围。</block>
   <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">不支持更改Edge Cache许可证或从Edge Cache许可证更改。</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您在云提供商的市场上有私人优惠或合同、则更改为合同中未包含的收费方式将导致对BYOL (如果您从NetApp购买了许可证)或PAYGO进行收费。</block>
-  <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">您不会因与数据复制(SnapMirror)或NDMP相关的I/O费用。</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">使用集群管理LIF的IP地址连接Connector并通过HTTPS访问System Manager Web控制台</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HA对及其组件的概念映像。</block>
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
@@ -5156,4 +5154,6 @@
   <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloud下的全球区域地图</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">有关所有地区的列表、请参见<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>。</block>
   <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azure中的以下地区现在支持在Cloud Volumes ONTAP 9.12.1 GA及更高版本中部署高可用性多可用性区域：</block>
+  <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">收费基于两个成本组成部分：存储和使用(I/O)。</block>
+  <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">您无需为与数据复制(SnapMirror)、备份(SnapVault)或NDMP相关的I/O付费。</block>
 </blocks>

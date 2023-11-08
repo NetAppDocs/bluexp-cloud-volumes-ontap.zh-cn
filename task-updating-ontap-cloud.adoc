@@ -196,6 +196,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-in
 * <<验证是否仍启用自动交还>>
 * <<暂停 SnapMirror 传输>>
 * <<验证聚合是否联机>>
+* <<验证所有的SIFs是否都位于主端口上>>
 
 
 
@@ -263,6 +264,12 @@ image:screenshots_aggregate_details_state.png["屏幕抓图：显示查看聚合
 
 
 
+
+
+
+=== 验证所有的SIFs是否都位于主端口上
+
+在升级之前、所有的生命周期都必须位于主端口上。请参见ONTAP文档 link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["验证所有的SIFs是否都位于主端口上"]。
 
 
 

@@ -5156,4 +5156,8 @@
   <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">收费基于两个成本组成部分：存储和使用(I/O)。</block>
   <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">您无需为与数据复制(SnapMirror)、备份(SnapVault)或NDMP相关的I/O付费。</block>
   <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">在多个可用性区域中具有共享受管磁盘的HA对</block>
+  <block id="a710c8d7ee654ea3241f1b07f9f7de05" category="list-text"><block ref="de989a17a1629831650b134e00461edd" category="inline-xref-macro-rx"></block></block>
+  <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">验证所有的SIFs是否都位于主端口上</block>
+  <block id="4a0d5f4ccd3c4d2acc213b54daf63f9e" category="inline-link-macro">验证所有的SIFs是否都位于主端口上</block>
+  <block id="0754aed90b1b7e3ecf810f88321b76f5" category="paragraph">在升级之前、所有的生命周期都必须位于主端口上。请参见ONTAP文档 <block ref="e645c13326fab640068fe44ceb8154ff" category="inline-link-macro-rx"></block>。</block>
 </blocks>

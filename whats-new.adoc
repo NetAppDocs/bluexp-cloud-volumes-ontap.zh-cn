@@ -20,6 +20,20 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2023年11月8日
+
+以下更改是在连接器3.9.35版本中推出的。
+
+
+
+=== 现在、AWS支持特拉维夫地区
+
+现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持特拉维夫地区。
+
+有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS下的全球区域图"^]。
+
+
+
 == 2023年11月1日
 
 以下更改是在连接器3.9.34版本中推出的。
@@ -74,7 +88,7 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版�
 
 == 2023年9月10日
 
-在3.1.33版的连接器中引入了以下更改。
+以下更改是在3.0.33版本的连接器中引入的。
 
 
 

@@ -889,7 +889,6 @@
   <block id="c1b0fccfdff9ac3307a1dde73fefce36" category="paragraph">通过将非活动数据自动分层到低成本的对象存储，降低存储成本。活动数据保留在高性能 SSD 或 HDD 中，而非活动数据则分层到低成本对象存储中。这使您可以回收主存储上的空间并缩减二级存储。</block>
   <block id="4a399275f88e7ce2505e96b9b7f521b9" category="inline-image-macro">这是一个概念图像，显示了流向 EBS 存储的热数据以及流向 S3 存储的非活动数据。</block>
   <block id="3d3b4afad1ee8976c0e2861a36e95c05" category="paragraph"><block ref="3d3b4afad1ee8976c0e2861a36e95c05" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="79a1ac94d3a1278dbc40ff2a430fa52a" category="admonition">您无需安装功能许可证即可启用数据分层（ FabricPool ）。</block>
   <block id="e452e8c25e7bc8d94f88ce5a25cbbf4a" category="section-title">AWS 中的数据分层</block>
   <block id="d6a11de1ddf26c52daac1219f9ab237d" category="paragraph">在 AWS 中启用数据分层时， Cloud Volumes ONTAP 会将 EBS 用作热数据的性能层，而将 AWS S3 用作非活动数据的容量层。</block>
   <block id="9a817efc11f456e69cd659f0afd9447b" category="list-text">性能层</block>
@@ -2604,7 +2603,6 @@
   <block id="d17c4281542937487475a76b3afea508" category="doc">Google Cloud 中的高可用性对</block>
   <block id="36b2e0baf475c546a7d804d50bd41be4" category="paragraph">Cloud Volumes ONTAP High Availability （ HA ）配置提供无中断操作和容错功能。在Google Cloud中、数据会在两个节点之间同步镜像。</block>
   <block id="f406c9d6eeead7db4c0d7c4436e4365f" category="paragraph">Google Cloud中的Cloud Volumes ONTAP HA配置包括以下组件：</block>
-  <block id="89f3aa2399b6fb2684acf4e64a1b95ad" category="paragraph">数据分层由 FabricPool 技术提供支持。</block>
   <block id="3844834e9306a66948e49d6149c5a299" category="section-title">Google Cloud中的数据分层</block>
   <block id="f6535844f45781691afa19e3fe67a627" category="paragraph">在Google Cloud中启用数据分层时、Cloud Volumes ONTAP 会将永久性磁盘用作热数据的性能层、并将Google Cloud存储分段用作非活动数据的容量层。</block>
   <block id="2bae3f4058e112cc703c4dc74dc72501" category="paragraph">所有类型的单节点系统和某些HA对配置均支持高写入速度。在中查看支持的配置<block ref="d080347ff89205e9b3e508b1fee0c025" category="inline-link-rx"></block></block>
@@ -5166,4 +5164,5 @@
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">有关所有地区的列表、请参见<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">以下更改是在连接器3.9.34版本中推出的。</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">以下更改是在3.0.33版本的连接器中引入的。</block>
+  <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">数据分层由 FabricPool 技术提供支持。Cloud Volumes ONTAP可为所有Cloud Volumes ONTAP集群提供数据层。启用数据分层后、分层到对象存储的数据将产生费用。有关对象存储成本的详细信息、请参见云提供商的文档。</block>
 </blocks>

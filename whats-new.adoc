@@ -26,9 +26,9 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
-=== 现在、Google Cloud支持德国地区
+=== 现在、Google Cloud支持柏林地区
 
-现在、适用于Cloud Volumes ONTAP的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持德国地区。
+现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud支持柏林地区。
 
 有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
 

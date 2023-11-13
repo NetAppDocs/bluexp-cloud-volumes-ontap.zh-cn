@@ -5166,6 +5166,6 @@
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">以下更改是在3.0.33版本的连接器中引入的。</block>
   <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">数据分层由 FabricPool 技术提供支持。Cloud Volumes ONTAP可为所有Cloud Volumes ONTAP集群提供数据层。启用数据分层后、分层到对象存储的数据将产生费用。有关对象存储成本的详细信息、请参见云提供商的文档。</block>
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">2023年11月10日</block>
-  <block id="1e8bf13d2a6124785fff6ed75b8efe5d" category="section-title">现在、Google Cloud支持德国地区</block>
-  <block id="1eb6caf052a1ca736597d3e01c5333f9" category="paragraph">现在、适用于Cloud Volumes ONTAP的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持德国地区。</block>
+  <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">现在、Google Cloud支持柏林地区</block>
+  <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud支持柏林地区。</block>
 </blocks>

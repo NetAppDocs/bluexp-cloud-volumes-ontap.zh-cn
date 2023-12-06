@@ -5184,4 +5184,9 @@
   <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">阿拉伯联合酋长国北部</block>
   <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">中国北部3.</block>
   <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">有关所有地区的列表、请参见<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
+  <block id="cfa3976fbec6c6f7dfd434e6d66eb83a" category="list-text">9.14.1 RC1.</block>
+  <block id="a037be7aafc2f071c4517e8f2c6e58e9" category="section-title">2023年12月6日</block>
+  <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1.</block>
+  <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1。</block>
+  <block id="d544ab02530940d46c43ea00a73d59d3" category="cell">9.14.1.</block>
 </blocks>

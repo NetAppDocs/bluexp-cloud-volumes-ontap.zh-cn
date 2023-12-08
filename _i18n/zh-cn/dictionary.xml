@@ -5188,4 +5188,6 @@
   <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">使用共享托管磁盘的Azure HA单个可用性区域</block>
   <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA具有多个可用性区域、其中包含共享托管磁盘</block>
   <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">适用于 Cloud Volumes ONTAP 的所有 Azure 存储帐户均使用客户管理的密钥进行加密。如果要在创建存储帐户期间对其进行加密、则必须在CVO创建请求中创建并提供资源的ID。这适用于所有类型的部署。如果您不提供此密钥、则存储帐户仍将加密、但BlueXP将首先使用Microsoft管理的密钥加密创建存储帐户、然后更新存储帐户以使用客户管理的密钥。</block>
+  <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">知识库文章Cloud Volumes ONTAP升级失败</block>
+  <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">如果发生升级失败错误、请参见 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>。</block>
 </blocks>

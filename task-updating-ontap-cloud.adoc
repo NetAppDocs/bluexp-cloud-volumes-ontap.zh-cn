@@ -277,6 +277,8 @@ image:screenshots_aggregate_details_state.png["屏幕抓图：显示查看聚合
 
 在升级之前、所有的生命周期都必须位于主端口上。请参见ONTAP文档 link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["验证所有的SIFs是否都位于主端口上"]。
 
+如果发生升级失败错误、请参见 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["知识库文章Cloud Volumes ONTAP升级失败"]。
+
 
 
 == 升级 Cloud Volumes ONTAP

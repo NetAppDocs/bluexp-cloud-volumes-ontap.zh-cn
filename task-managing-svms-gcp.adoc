@@ -5,15 +5,12 @@ keywords: storage virtual machine, vserver, svm, storage vm, supported number, n
 summary: Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其视为 SVM 或 SVM 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但某些配置支持额外的 Storage VM 。 
 ---
 = 在Google Cloud中为Cloud Volumes ONTAP 创建数据服务Storage VM
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

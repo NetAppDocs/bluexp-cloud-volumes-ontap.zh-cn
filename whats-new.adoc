@@ -20,6 +20,24 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2024年1月8日
+
+
+
+=== 为Azure多个可用性区域配置新VM
+
+从Cloud Volumes ONTAP 9.13.1开始、以下虚拟机类型支持在新的和现有的高可用性对部署中使用Azure多个可用性区域：
+
+* L16s_v3
+* L32s_v3
+* L48s_v3
+* L64s_v3
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^]
+
+
+
 == 2023年12月6日
 
 

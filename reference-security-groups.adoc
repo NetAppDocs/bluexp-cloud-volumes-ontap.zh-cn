@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-security-groups.html 
 keywords: security group, security groups, rules, ports, aws, inbound, outbound, rules 
-summary: BlueXP会创建AWS安全组、其中包含Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能希望参考这些端口进行测试或使用自己的安全组。 
+summary: BlueXP会创建AWS安全组、其中包含Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。 
 ---
 = AWS 的安全组规则
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXP会创建AWS安全组、其中包含Cloud Volumes ONTAP 成功运
 
 
 [role="lead"]
-BlueXP会创建AWS安全组、其中包含Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能希望参考这些端口进行测试或使用自己的安全组。
+BlueXP会创建AWS安全组、其中包含Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。
 
 
 

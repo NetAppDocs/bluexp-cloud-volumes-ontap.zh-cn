@@ -243,7 +243,7 @@ TIP: 如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访
 
 === 防火墙规则
 
-BlueXP会创建Google Cloud防火墙规则、其中包括Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者如果您希望使用自己的防火墙规则。
+BlueXP会创建Google Cloud防火墙规则、其中包括Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要引用这些端口来进行测试、或者希望使用自己的防火墙规则。
 
 Cloud Volumes ONTAP 的防火墙规则需要入站和出站规则。如果要部署 HA 配置，这些是 VPC-0 中 Cloud Volumes ONTAP 的防火墙规则。
 

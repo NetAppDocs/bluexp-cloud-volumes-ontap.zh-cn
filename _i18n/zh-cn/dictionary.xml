@@ -3375,7 +3375,6 @@
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">请注意、BlueXP会在HA对上创建SVM管理LIF、但不会在Azure中的单节点系统上创建。</block>
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">如果业务需要、您还可以禁用专用链路连接。如果禁用此链接、则BlueXP会将Cloud Volumes ONTAP 配置为使用服务端点。</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">如果您尝试在Azure资源组中部署第二个Cloud Volumes ONTAP HA对、则BlueXP会遇到连接问题。</block>
-  <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXP会创建包含Cloud Volumes ONTAP 成功运行所需入站和出站规则的Azure安全组。您可能希望参考这些端口进行测试或使用自己的安全组。</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">在部署Cloud Volumes ONTAP 时、BlueXP会创建一个提供数据的Storage VM。某些配置支持额外的 Storage VM 。 <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>。</block>
   <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">从BlueXP 3.9.5版开始、将在初始Storage VM上启用逻辑空间报告。如果以逻辑方式报告空间，则 ONTAP 会报告卷空间，以便存储效率功能节省的所有物理空间也会报告为已用空间。</block>
   <block id="0dbf08a19cabe7472c89a9c1e7157737" category="list-text">BlueXP会自动在Cloud Volumes ONTAP 上安装以下ONTAP 功能许可证：</block>
@@ -3954,7 +3953,6 @@
   <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">一个 HA 配置需要四个虚拟私有云（ Virtual Private Cloud ， vPC ）。需要四个VPC、因为Google Cloud要求每个网络接口都驻留在一个单独的VPC网络中。</block>
   <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">Subnets</block>
   <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">要在Google Cloud中的Cloud Volumes ONTAP 系统与其他网络中的ONTAP 系统之间复制数据、您必须在VPC与其他网络(例如公司网络)之间建立VPN连接。</block>
-  <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXP会创建Google Cloud防火墙规则、其中包括Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者如果您希望使用自己的防火墙规则。</block>
   <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Cloud Volumes ONTAP 的防火墙规则需要入站和出站规则。如果要部署 HA 配置，这些是 VPC-0 中 Cloud Volumes ONTAP 的防火墙规则。</block>
   <block id="cb97a2b297b246ea14d6c17e8e5ee28a" category="list-text">VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。</block>
   <block id="ae2d87942e6697528344ccace68364e3" category="section-title">VPC-1、VPC-2和VPC-3的规则</block>
@@ -4009,7 +4007,6 @@
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud中的数据分层*：选择是否在初始聚合上启用数据分层、为分层数据选择存储类、然后选择具有预定义的存储管理员角色的服务帐户。</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">配置放置组创建</block>
   <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
-  <block id="2626748206273dbf0d13d2fffdb79c5b" category="summary">BlueXP会创建AWS安全组、其中包含Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能希望参考这些端口进行测试或使用自己的安全组。</block>
   <block id="eb19784d052e3e9a0aa941090082ebbe" category="inline-link">查看Connector的安全组规则</block>
   <block id="a6c935eff93c3c2a81864fdabc1d1951" category="inline-link">查看Connector的防火墙规则</block>
   <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloud中的防火墙规则</block>
@@ -5198,4 +5195,7 @@
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Azure 中支持的配置</block>
   <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
+  <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP会创建包含Cloud Volumes ONTAP 成功运行所需入站和出站规则的Azure安全组。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。</block>
+  <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP会创建AWS安全组、其中包含Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。</block>
+  <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP会创建Google Cloud防火墙规则、其中包括Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要引用这些端口来进行测试、或者希望使用自己的防火墙规则。</block>
 </blocks>

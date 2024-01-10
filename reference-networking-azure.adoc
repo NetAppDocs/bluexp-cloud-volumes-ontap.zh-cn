@@ -158,7 +158,7 @@ Cloud Volumes ONTAP HA 对包括一个 HA 互连，通过该互连，每个节�
 
 === 安全组规则
 
-BlueXP会创建包含Cloud Volumes ONTAP 成功运行所需入站和出站规则的Azure安全组。您可能希望参考这些端口进行测试或使用自己的安全组。
+BlueXP会创建包含Cloud Volumes ONTAP 成功运行所需入站和出站规则的Azure安全组。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。
 
 Cloud Volumes ONTAP 的安全组需要入站和出站规则。
 

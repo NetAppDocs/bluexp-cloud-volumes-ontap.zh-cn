@@ -4804,7 +4804,6 @@
   <block id="0882685275009e45f6167bce4081e668" category="list-text">查看并创建访问策略。</block>
   <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">包括<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> 字段。</block>
   <block id="57a3061930625af99195891e9e561fb2" category="cell">9.13.1.</block>
-  <block id="24eacd330f66ba30cc845660c1efa967" category="list-text">对于修补程序(P)版本、您可以从一个版本升级到下一个版本的任何P版本。</block>
   <block id="99430eacf0d5244d50939eea94bd5962" category="paragraph">下面是几个示例：</block>
   <block id="1893a0478b381d08866888a1c7f8607a" category="list-text">9.13.0 &gt; 9.13.1P15</block>
   <block id="4ae2d614cc725ba442c80c740c08f75f" category="list-text">9.12.1 &gt; 9.13.1P2</block>
@@ -5195,10 +5194,18 @@
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP会创建AWS安全组、其中包含Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP会创建Google Cloud防火墙规则、其中包括Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要引用这些端口来进行测试、或者希望使用自己的防火墙规则。</block>
   <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">无论是基于节点的许可模式还是基于容量的许可模式、ARP功能都只能与BYOL许可证一起使用(期限为1到36个月)。要购买新的单独附加许可证、以便与Cloud Volumes ONTAP中的ARP功能结合使用、您必须与NetApp销售代表联系。</block>
-  <block id="69f67d4caf75d0a80b925b65a04419a0" category="paragraph">ARP许可证被视为"浮动"许可证、这意味着它不绑定到单个Cloud Volumes ONTAP实例、可应用于多个Cloud Volumes ONTAP环境。</block>
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">对基于节点的Cloud Volumes ONTAP许可证使用ARP功能的情况目前不会反映在数字钱包中。在未来的版本中、可以在"电子钱包"下查看基于节点的ARP使用情况。</block>
   <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">购买附加许可证并将其添加到电子钱包后、您可以在Cloud Volumes ONTAP中按卷启用ARP。根据启用了ARP功能的卷的已配置总容量、在卷级别计量ARP收费。最低许可证容量为1 TB。但是、ARP功能没有最低容量充电要求。</block>
-  <block id="2a51dc407e4b9108dfb0e2caff776939" category="paragraph">启用了ARP的卷的指定状态为"学习模式"或"活动"。ARP状态为"Disabled (已禁用)"的任何卷均不会充电。例如、已配置容量为30 TiB的Cloud Volumes ONTAP环境可以选择仅包含部分启用了ARP的15 TiB卷。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。</block>
   <block id="41040f9c93f65d2edb4f6b2d1dc680a4" category="admonition">存储和网络使用量以二进制千兆字节(GB)计算、其中1 GB为2^30字节。此度量单位也称为吉字节(GiB)。同样、1 TB为2^40字节、即1024 GB。</block>
+  <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024年1月16日</block>
+  <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXP中的修补程序版本</block>
+  <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXP中仅提供最新三个Cloud Volumes ONTAP版本的修补程序版本。</block>
+  <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
+  <block id="fa8624c42ea6d2ce73d1dbb434c41dc8" category="paragraph">ARP许可证被视为"浮动"许可证、这意味着它不绑定到单个Cloud Volumes ONTAP实例、可应用于多个Cloud Volumes ONTAP环境。</block>
+  <block id="a7453af7846f7db9aba5aa90fa8093e5" category="paragraph">启用了ARP的卷的指定状态为"学习模式"或"活动"。ARP状态为"Disabled (已禁用)"的任何卷均不会充电。例如、已配置容量为30 TiB的Cloud Volumes ONTAP环境可以选择仅配置一小部分15 TiB卷且启用了ARP。</block>
+  <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">修补程序版本</block>
+  <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">下载ONTAP映像</block>
+  <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">从2024年1月开始、只有作为Cloud Volumes ONTAP三个最新版本的修补程序版本的修补程序升级才可在BlueXP中使用。我们使用最新的GA版本来确定要在BlueXP中显示的三个最新版本。例如、如果当前GA版本为9.13.1、则BlueXP中会显示9.11.1-9.13.1的修补程序。如果要升级到9.11.1或更低版本的修补程序版本、则需要使用手动升级操作步骤 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b0b450f5a78908e6b78f5c13bf6b0da4" category="paragraph">作为修补程序(P)版本的一般规则、您可以从一个版本升级到当前版本或下一个版本的任何P版本。</block>
 </blocks>

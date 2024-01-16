@@ -20,6 +20,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2024年1月16日
+
+
+
+=== BlueXP中的修补程序版本
+
+BlueXP中仅提供最新三个Cloud Volumes ONTAP版本的修补程序版本。
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#patch-releases["升级 Cloud Volumes ONTAP"^]
+
+
+
 == 2024年1月8日
 
 

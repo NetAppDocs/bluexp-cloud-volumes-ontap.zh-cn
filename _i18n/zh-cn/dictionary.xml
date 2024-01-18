@@ -4039,7 +4039,6 @@
   <block id="a329f820fccae25ebe98d73c85c8006c" category="inline-image-macro">显示三个选定服务的服务端点的屏幕截图</block>
   <block id="892728a8cb7d01d3a80f6c63ad7a3b1a" category="paragraph"><block ref="892728a8cb7d01d3a80f6c63ad7a3b1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b430d19ce10cad3c93da5d1a58ae5da" category="list-text">在ONTAP 中进入高级权限模式：<block ref="b18455e94f1f10f091d6cc4ad2e0507e" prefix=" " category="inline-code"></block></block>
-  <block id="65533a408ee230b29deae5fd1634c46a" category="list-text">使用应用程序注册后保存的客户端ID和租户ID启用Azure密钥存储：<block ref="fc019c518ce1e237021d337077bd96cc" prefix=" " category="inline-code"></block></block>
   <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">如果<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 状态不是<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>、SVM无法使用所需的所有连接和权限访问Azure密钥存储服务。确保您的Azure网络策略和路由不会阻止您的专用vNet访问Azure KeyVault公共端点。如果有、请考虑使用Azure私有端点从vNet中访问密钥存储。您可能还需要在SVM上添加静态主机条目、以解析端点的专用IP地址。</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">。<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 将报告<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 初始配置时。其状态将更改为<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 对第一个卷进行加密后。</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">必须在所有卷上禁用数据压缩、才能利用Cloud Volumes ONTAP 9.12.0之前的Flash Cache性能改进功能。在部署或升级到Cloud Volumes ONTAP 9.12.1时、无需禁用数据压缩。</block>
@@ -5208,4 +5207,8 @@
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">下载ONTAP映像</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">从2024年1月开始、只有作为Cloud Volumes ONTAP三个最新版本的修补程序版本的修补程序升级才可在BlueXP中使用。我们使用最新的GA版本来确定要在BlueXP中显示的三个最新版本。例如、如果当前GA版本为9.13.1、则BlueXP中会显示9.11.1-9.13.1的修补程序。如果要升级到9.11.1或更低版本的修补程序版本、则需要使用手动升级操作步骤 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0b450f5a78908e6b78f5c13bf6b0da4" category="paragraph">作为修补程序(P)版本的一般规则、您可以从一个版本升级到当前版本或下一个版本的任何P版本。</block>
+  <block id="6641aeac9c3a566deb4f56b743076e2a" category="list-text">NAE不能使用AKV。NAE需要外部支持的KMIP服务器。</block>
+  <block id="8f3a7aeceb3049764382da1a82a27238" category="list-text">使用应用程序注册后保存的客户端ID和租户ID启用Azure密钥存储：<block ref="5e256216aa762875258d90fbe836b7b2" prefix=" " category="inline-code"></block></block>
+  <block id="27546657617543a3f0cd8927c3f369c8" category="admonition">。<block ref="ee5ecb949ba751e6c3f7b03d02fc2819" prefix=" " category="inline-code"></block> 值必须使用<block ref="b5fd887d199c5a44249b4fce7085da7f" prefix=" " category="inline-code"></block> 格式。</block>
+  <block id="b386d04ca3a89226a06701e85f70e33d" category="list-text">成功启用Azure密钥存储后、输入<block ref="00c44d3486742ffa7af4a8bfbab4d3d3" prefix=" " category="inline-code"></block> 出现提示时。</block>
 </blocks>

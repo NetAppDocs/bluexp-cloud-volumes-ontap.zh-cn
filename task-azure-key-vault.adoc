@@ -30,6 +30,7 @@ summary: 将Azure密钥存储用于第三方密钥管理服务。
 
 .限制
 * 只能在数据SVM上配置AKV
+* NAE不能使用AKV。NAE需要外部支持的KMIP服务器。
 
 
 
@@ -149,7 +150,12 @@ image:screenshot-azure-service-endpoints-services.png["显示三个选定服务�
 
 
 . 使用应用程序注册后保存的客户端ID和租户ID启用Azure密钥存储：
-`security key-manager external azure enable -vserver _SVM_name_ -client-id _Azure_client_ID_ -tenant-id _Azure_tenant_ID_ -name _Azure_key_vault_name_ -key-id _Azure_key_ID_`
+`security key-manager external azure enable -vserver _SVM_name_ -client-id _Azure_client_ID_ -tenant-id _Azure_tenant_ID_ -name _key_vault_URI_ -key-id _full_key_URI_`
++
+
+NOTE: 。 `_full_key_URI` 值必须使用 `<https:// <key vault host name>/keys/<key label>` 格式。
+
+. 成功启用Azure密钥存储后、输入 `client secret value` 出现提示时。
 . 检查密钥管理器的状态：`security key-manager external azure check` The output will look like：
 +
 [source]

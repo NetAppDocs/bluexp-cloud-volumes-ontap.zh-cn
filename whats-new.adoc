@@ -60,6 +60,17 @@ BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes O
 
 
 
+=== 300 TiB FlexVol卷最大限制
+
+现在、您可以使用System Manager和ONTAP命令行界面(从Cloud Volumes ONTAP 9.12.1 P2和9.13.0 P2开始)以及在BlueXP中(从Cloud Volumes ONTAP 9.131开始)创建最大大小为300 TiB的FlexVol卷。
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html#file-and-volume-limits["AWS 中的存储限制"]
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html#file-and-volume-limits["Azure 中的存储限制"]
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#logical-storage-limits["Google Cloud 中的存储限制"]
+
+
+
+
 == 2023年12月5日
 
 引入了以下更改。

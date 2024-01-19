@@ -5211,4 +5211,12 @@
   <block id="8f3a7aeceb3049764382da1a82a27238" category="list-text">使用应用程序注册后保存的客户端ID和租户ID启用Azure密钥存储：<block ref="5e256216aa762875258d90fbe836b7b2" prefix=" " category="inline-code"></block></block>
   <block id="27546657617543a3f0cd8927c3f369c8" category="admonition">。<block ref="ee5ecb949ba751e6c3f7b03d02fc2819" prefix=" " category="inline-code"></block> 值必须使用<block ref="b5fd887d199c5a44249b4fce7085da7f" prefix=" " category="inline-code"></block> 格式。</block>
   <block id="b386d04ca3a89226a06701e85f70e33d" category="list-text">成功启用Azure密钥存储后、输入<block ref="00c44d3486742ffa7af4a8bfbab4d3d3" prefix=" " category="inline-code"></block> 出现提示时。</block>
+  <block id="055c53a891e1dcea17b9e4c18351c1e5" category="section-title">300 TiB FlexVol卷最大限制</block>
+  <block id="685bad4432f8d3176689b49c31fcdd5f" category="paragraph">现在、您可以使用System Manager和ONTAP命令行界面(从Cloud Volumes ONTAP 9.12.1 P2和9.13.0 P2开始)以及在BlueXP中(从Cloud Volumes ONTAP 9.131开始)创建最大大小为300 TiB的FlexVol卷。</block>
+  <block id="6870aed8e6dfc4f093d5b5c6f8a4d81c" category="inline-link-macro">AWS 中的存储限制</block>
+  <block id="a842d2e15b1126ce2e0e58e48ea17212" category="list-text"><block ref="a842d2e15b1126ce2e0e58e48ea17212" category="inline-link-macro-rx"></block></block>
+  <block id="e622ddac1a96836929babb5b993749ba" category="inline-link-macro">Azure 中的存储限制</block>
+  <block id="37da66fa8b940c6b66bd42740840f9cd" category="list-text"><block ref="37da66fa8b940c6b66bd42740840f9cd" category="inline-link-macro-rx"></block></block>
+  <block id="c73908091fadeb9dec16abab42821644" category="inline-link-macro">Google Cloud 中的存储限制</block>
+  <block id="cf7df70a21568dc1f0d90f876bcb89a1" category="list-text"><block ref="cf7df70a21568dc1f0d90f876bcb89a1" category="inline-link-macro-rx"></block></block>
 </blocks>

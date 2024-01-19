@@ -3103,7 +3103,6 @@
   <block id="10297bdbea13a5f039ea0c228d352388" category="section-title">最低费用</block>
   <block id="2f3cbf00c1fc3c4ac211dcbe5883292c" category="paragraph">如果尚未配置任何卷、则最低费用不适用。</block>
   <block id="bec8a1d5f2dd848ffc437304b7f6557d" category="section-title">过剩</block>
-  <block id="1d47f9c9e82cf7214539548fd5c31bc6" category="paragraph">通过Essentials软件包、您将按部署类型(HA或单个节点)和卷类型(主卷或二级卷)付费。例如、_Essentials HA_的定价与_Essentials Secondary HA_不同。</block>
   <block id="ecc429e82f6e54d1b5ef6c8bb4a49308" category="paragraph">下面是一个示例。假设您已为Essentials软件包获得以下许可证：</block>
   <block id="afac41d47fd5a7a0fff54c7d4dcc9ac8" category="list-text">一个500 TiB _Essentials二级HA_许可证、其已提交容量为500 TiB</block>
   <block id="1ce6ab2d6dbcea26717506a031dde30c" category="list-text">500 TiB _Essentials单节点_许可证、仅具有100 TiB的已提交容量</block>
@@ -4521,8 +4520,6 @@
   <block id="3051092d4bbc438c196cba870b70c79f" category="paragraph">此步骤仅适用于数据分层。BlueXP备份和恢复不需要它。</block>
   <block id="aaaac746aa3fb70f64bdaf1919aefe27" category="admonition">即使BlueXP备份和恢复使用SnapMirror的实施来创建备份文件(称为SnapMirror Cloud)、在升级系统时也不需要暂停备份。</block>
   <block id="35ae8932a2c6f1191cf21157a991b4dd" category="paragraph">您可以从云提供商市场的按需购买订阅中获得 30 天免费试用。免费试用版包括Cloud Volumes ONTAP 和BlueXP备份和恢复。在您订阅市场上的产品时、试用即开始。</block>
-  <block id="8b3631f5373c77f26bc2e8fe7f000bd3" category="paragraph">如果您从NetApp (BYOL)购买了Essentials许可证、但超出了该部署和卷类型的许可容量、则BlueXP数字钱包会对价格较高的Essentials许可证(如果有)收取超额费用。这是因为我们首先使用您已购买的可用容量作为预付费容量、然后再向市场收费。向市场收取费用会增加您的月度账单费用。</block>
-  <block id="ae0bff30a3baa225238bb8caae6abf20" category="paragraph">另有50 TiB配置在具有二级卷的HA对上。BlueXP数字钱包不会向PAYGO收取50 TiB的费用、而是根据_Essentials Single Node_许可证收取50 TiB的超额费用。该许可证的定价高于_Essentials Secondary HA_、但比PAYGO价格更便宜。</block>
   <block id="26ee3f5587dc47d76226ef9b570828ff" category="paragraph">在BlueXP数字钱包中、该50 TiB将显示为已通过_Essentials Single Node_许可证付费。</block>
   <block id="3ea1315566755c191cc8996f86a9af02" category="paragraph">收费基于Keystone订阅中一个或多个Cloud Volumes ONTAP HA对的已提交容量大小。</block>
   <block id="46b39bb522bc6ece1b6bf75e81db3cbf" category="paragraph">系统会定期汇总每个卷的已配置容量并将其与Keystone订阅上的已提交容量进行比较、任何超时容量都会在Keystone订阅上按突发容量收费。</block>
@@ -5219,4 +5216,13 @@
   <block id="37da66fa8b940c6b66bd42740840f9cd" category="list-text"><block ref="37da66fa8b940c6b66bd42740840f9cd" category="inline-link-macro-rx"></block></block>
   <block id="c73908091fadeb9dec16abab42821644" category="inline-link-macro">Google Cloud 中的存储限制</block>
   <block id="cf7df70a21568dc1f0d90f876bcb89a1" category="list-text"><block ref="cf7df70a21568dc1f0d90f876bcb89a1" category="inline-link-macro-rx"></block></block>
+  <block id="0453ee72b46bdca9dc63a814dd0c856a" category="paragraph">通过Essentials软件包、您将按部署类型(HA或单个节点)和卷类型(主卷或二级卷)付费。从高到低的定价按以下顺序进行：_Essentials Primary HA_、_Essentials Primary Single Node_、_Essentials Secondary HA_和_Essentials Secondary Single Node_。或者、当您购买商城合同或接受私人报价时、任何部署或卷类型的容量费用都是相同的。</block>
+  <block id="ddc4342c7910879feb801db956e02a34" category="paragraph">如果您从NetApp (BYOL)购买了Essentials许可证、但超出了该部署和卷类型的许可容量、则BlueXP数字钱包会对价格较高的Essentials许可证(如果您拥有一个许可证且有可用容量)收取超额费用。这是因为我们首先使用您已购买的可用容量作为预付费容量、然后再向市场收费。如果您的BYOL许可证没有可用容量、则超出的容量将按市场按需每小时费率(PAYGO)收取、并会在您的月度账单中增加成本。</block>
+  <block id="dd29699bc2761d1ef57790f730780d55" category="paragraph">另有50 TiB配置在具有二级卷的HA对上。BlueXP数字钱包不会向PAYGO收取50 TiB的费用、而是根据_Essentials Single Node_许可证收取50 TiB的超额费用。该许可证的价格高于_Essentials Secondary HA_、但它会使用您已购买的许可证、并且不会增加您的月度账单成本。</block>
+  <block id="63ed6cabd3493279be97114b0d2d21f5" category="paragraph">下面是另一个示例。假设您已为Essentials软件包获得以下许可证：</block>
+  <block id="79e457d19dd228dcb61825c92ce8eb7f" category="paragraph">在包含主卷的HA对上配置另一个100 TiB。您购买的许可证没有已提交的_Essentials主HA_容量。Essentials Primary HA_许可证的价格高于_Essentials Primary Single Node_和_Essentials Secondary HA_许可证的价格。</block>
+  <block id="73c4f353b58571df329412c03faf62ed" category="paragraph">在此示例中、BlueXP数字钱包按市场费率额外收取100 TiB的超额费用。超额费用将显示在您的月度账单上。</block>
+  <block id="cb012953ce0037bbd6089c0cf714fef9" category="paragraph-title">市场合同或私人报价</block>
+  <block id="63e7dad437ffdf90e141f5642e1654d2" category="paragraph">如果您在市场合同或私人优惠中购买了Essentials许可证、则BYOL逻辑不适用、您必须具有与此用途完全相同的许可证类型。许可证类型包括卷类型(主或二级)和部署类型(HA或单节点)。</block>
+  <block id="b5131f07b7cc2d9ac372dcfc0789c727" category="paragraph">例如、假设您使用Essentials许可证部署Cloud Volumes ONTAP实例。然后、您可以配置读写卷(主单节点)和只读卷(二级单节点)。您的商城合同或私人报价必须包含_Essentials Single Node_和_Essentials Secondary Single Node_的容量、以涵盖配置的容量。不属于您的商城合同或私人优惠的任何已配置容量将按按需每小时费率(PAYGO)收费、并将成本增加到您的月度账单中。</block>
 </blocks>

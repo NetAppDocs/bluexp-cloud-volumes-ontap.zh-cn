@@ -26,7 +26,7 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 === 支持Azure中的Edv5系列VM
 
-从9.14.1版开始、Cloud Volumes ONTAP现在支持在单个和多个可用性区域中使用共享受管磁盘的以下Edv5系列VM。
+从9.14.1版开始、Cloud Volumes ONTAP现在支持以下Edv5系列VM。
 
 * E4ds_v5
 * E8ds_v5

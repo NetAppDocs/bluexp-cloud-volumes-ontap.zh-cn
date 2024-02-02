@@ -2016,7 +2016,6 @@
   <block id="9bbb7f4f51c49edeb24f8a9b17a2d5f4" category="inline-link-macro">查看 Connector 部署中涉及的所需共享 VPC 权限</block>
   <block id="0d8050524ef140aadb3a681481890b39" category="list-text">vPC 中的数据包镜像</block>
   <block id="4d6aebef0af2c2c1118b467bdf0dadf0" category="inline-link">数据包镜像</block>
-  <block id="7c0126eb5fa57fb86ccb4cf44811856d" category="list-text"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> 必须在部署 Cloud Volumes ONTAP 的 Google Cloud VPC 中禁用。如果启用了数据包镜像，则 Cloud Volumes ONTAP 无法正常运行。</block>
   <block id="4c896c50345c5252f4b0e8fc4bf10723" category="admonition">如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访问。</block>
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">如果您使用 API 部署 Cloud Volumes ONTAP 并指定以下标志，则可以跳过创建 Storage VM （ SVM ）管理 LIF ：</block>
   <block id="9389c2cd70872a229cd788537557d183" category="paragraph">`skipSvmManagementLif ： true`</block>
@@ -2421,7 +2420,6 @@
   <block id="cad02caeb4ee636c87f28b0bb1263080" category="inline-link-macro">了解支持的客户端协议和版本</block>
   <block id="f0ddee23dd0d83f105bbdaa15ff5d87a" category="paragraph"><block ref="43c09f3d08ec80b50648a2a905bca06c" category="inline-link-macro-rx"></block>。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">帮助菜单的屏幕截图，其中列出的第一个选项为支持</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
@@ -5225,4 +5223,6 @@
   <block id="cb012953ce0037bbd6089c0cf714fef9" category="paragraph-title">市场合同或私人报价</block>
   <block id="63e7dad437ffdf90e141f5642e1654d2" category="paragraph">如果您在市场合同或私人优惠中购买了Essentials许可证、则BYOL逻辑不适用、您必须具有与此用途完全相同的许可证类型。许可证类型包括卷类型(主或二级)和部署类型(HA或单节点)。</block>
   <block id="b5131f07b7cc2d9ac372dcfc0789c727" category="paragraph">例如、假设您使用Essentials许可证部署Cloud Volumes ONTAP实例。然后、您可以配置读写卷(主单节点)和只读卷(二级单节点)。您的商城合同或私人报价必须包含_Essentials Single Node_和_Essentials Secondary Single Node_的容量、以涵盖配置的容量。不属于您的商城合同或私人优惠的任何已配置容量将按按需每小时费率(PAYGO)收费、并将成本增加到您的月度账单中。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp使用Microsoft Entra ID作为特定于支持和许可的身份验证服务的身份提供程序。</block>
+  <block id="976b4993be588a7b52da07c4e96553c3" category="paragraph"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> 必须在部署Cloud Volumes ONTAP的Google Cloud子网中禁用。如果启用了数据包镜像，则 Cloud Volumes ONTAP 无法正常运行。</block>
 </blocks>

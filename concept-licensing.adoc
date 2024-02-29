@@ -52,6 +52,22 @@ NOTE: 存储和网络使用量以二进制千兆字节(GB)计算、其中1 GB为
 
 以下基于容量的软件包可用于Cloud Volumes ONTAP。
 
+有关以下基于容量的软件包支持的VM类型列表、请参见：
+
+ifdef::azure[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^]
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud 支持的配置"^]
+
+
+endif::gcp[]
+
 
 
 ==== 免费
@@ -94,23 +110,6 @@ endif::azure[]
 ifdef::gcp[]
 
 * 在Google Cloud Marketplace中以按需购买或按年订约的形式提供
-
-
-endif::gcp[]
-
-* 选定虚拟机类型支持：
-
-
-ifdef::azure[]
-
-* 对于Azure：e4s_v3、e4ds_v4、DS4_v2、DS13_v2、E8s_v3、 E8ds_v4、E4ds_v5和E8ds_v5
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* 对于Google Cloud：n2-standard-4、n2-standard-8
 
 
 endif::gcp[]

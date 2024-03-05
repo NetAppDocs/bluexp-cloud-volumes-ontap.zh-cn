@@ -5234,4 +5234,8 @@
   <block id="7ea0c0fa41faeaaeec6f14b1d795d6fc" category="paragraph">有关以下基于容量的软件包支持的VM类型列表、请参见：</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="inline-link-macro">Google Cloud 支持的配置</block>
   <block id="d8643ec11a6eaa26d934c76df70f05f3" category="list-text"><block ref="d8643ec11a6eaa26d934c76df70f05f3" category="inline-link-macro-rx"></block></block>
+  <block id="592997dde366d5775e7e052816854f74" category="section-title">2024年3月5日</block>
+  <block id="cf8f238c2116738b5ed3bacdbd527d14" category="section-title">Cloud Volumes ONTAP 9.14.1 GA</block>
+  <block id="fc0f9e3eef3a6eff3efe2fe7cf358466" category="paragraph">BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1正式发布版。</block>
+  <block id="f8a262ce588acd29f7f91c585af357ea" category="list-text">9.14.1大会</block>
 </blocks>

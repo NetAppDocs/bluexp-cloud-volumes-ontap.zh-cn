@@ -5238,4 +5238,9 @@
   <block id="cf8f238c2116738b5ed3bacdbd527d14" category="section-title">Cloud Volumes ONTAP 9.14.1 GA</block>
   <block id="fc0f9e3eef3a6eff3efe2fe7cf358466" category="paragraph">BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1正式发布版。</block>
   <block id="f8a262ce588acd29f7f91c585af357ea" category="list-text">9.14.1大会</block>
+  <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">2024年3月8日</block>
+  <block id="1582ce9c3a0b0079717e0b0c6edf2347" category="section-title">Amazon Instant Metadata"服务v2支持</block>
+  <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">在AWS中、Cloud Volumes ONTAP调解器和连接器现在支持对所有功能使用Amazon即时元数据服务v2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。</block>
+  <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">用于管理现有连接器的BlueXP设置和管理文档</block>
+  <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见 <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>。</block>
 </blocks>

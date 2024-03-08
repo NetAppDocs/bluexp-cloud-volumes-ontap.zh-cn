@@ -20,6 +20,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2024年3月8日
+
+
+
+=== Amazon Instant Metadata"服务v2支持
+
+在AWS中、Cloud Volumes ONTAP调解器和连接器现在支持对所有功能使用Amazon即时元数据服务v2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。
+
+如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["用于管理现有连接器的BlueXP设置和管理文档"^]。
+
+
+
 == 2024年3月5日
 
 

@@ -3023,7 +3023,6 @@
   <block id="ae271afdca3c7d6785a9aefa74e6c80e" category="doc">管理Connector上的容量设置</block>
   <block id="b62aaf3fb48f9f8f103dc68c41211be5" category="paragraph">每个连接器都有设置、用于确定其如何管理Cloud Volumes ONTAP 的聚合容量。</block>
   <block id="4edc935aeaaf3923beb2e4249e6c56f3" category="paragraph">这些设置会影响由连接器管理的所有Cloud Volumes ONTAP 系统。如果您有另一个连接器、则可以对其进行不同的配置。</block>
-  <block id="4f85ddd6337c9d7a3f7f9955945eece1" category="paragraph">要修改Connector设置、需要帐户管理员权限。</block>
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">在*容量*下、修改以下任何设置：</block>
   <block id="af1f64d74440547a71a0dfdd077d8a15" category="inline-link-macro">了解容量管理模式的工作原理</block>
   <block id="46e6171a2e84c75269ac8bcb3c5004d8" category="paragraph"><block ref="f8a3c55f9fa8638c083e126aaf830b07" category="inline-link-macro-rx"></block>。</block>
@@ -3318,7 +3317,6 @@
   <block id="752a2c1ba3bb227b061216ee70132a08" category="paragraph">有两个可用路径。正确的路径取决于您的Connector版本。</block>
   <block id="93f9a2aa0331918bf3f1a44fb42f791e" category="list-text">`/opt/application/netapp/cloudmanager/ontap/images/`</block>
   <block id="9a34c8001fb2a94f36b91cd1711ee39f" category="paragraph">在 HA 对上创建 Storage VM 后，最好等待 12 小时，然后再在该 SVM 上配置存储。从Cloud Volumes ONTAP 9.10.1版开始、BlueXP会每12小时扫描一次HA对的负载平衡器设置。如果存在新的SVM、则BlueXP将启用一个设置、以缩短计划外故障转移时间。</block>
-  <block id="190d3f654701a58653384f20c47c8ecf" category="list-text">在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。</block>
   <block id="270bb1237f850224c48374b974319501" category="list-text">选择BlueXP是否通知您存储容量决策、或者BlueXP是否自动管理您的容量需求。</block>
   <block id="852626f9cf83320fbc75df58841d66dc" category="paragraph">如果无法通过出站Internet连接发送AutoSupport 消息、则BlueXP会自动将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。</block>
   <block id="91cd8e22887ec705f7a0b7a46d810004" category="paragraph">如果出站连接不可用、并且BlueXP无法将您的Cloud Volumes ONTAP 系统配置为使用此连接器作为代理服务器、您将从BlueXP收到一条通知、标题为"&lt;工作环境名称&gt;无法发送AutoSupport 消息"。</block>
@@ -3513,7 +3511,6 @@
   <block id="c42d7d1729e77b6aa2d88e357efbb241" category="inline-image-macro">一个屏幕截图、用于显示有关BlueXP中包含分层状态的聚合的信息。</block>
   <block id="18f662e89926d99c2d0078857e1e0594" category="paragraph">如果启用了数据分层的聚合尚不存在、则BlueXP将为卷创建一个新聚合。</block>
   <block id="15772334d40a5e0ec433c7a427e96777" category="paragraph">例如，您可以选择小于 10% 的可用空间，以确保您正在利用所购买的容量。然后、当需要额外容量时、BlueXP可以为您购买额外的磁盘(直到达到聚合的磁盘限制为止)。</block>
-  <block id="2b891711a30d74a376864ff361ead016" category="list-text">在BlueXP控制台的右上角、单击*设置*图标、然后选择*连接器设置*。</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">一个屏幕截图、显示了BlueXP控制台右上角的设置图标。</block>
   <block id="6b51126e31989dbd35d983caab04ff08" category="paragraph">删除Cloud Volumes ONTAP 工作环境会将其从BlueXP中删除。它不会删除 Cloud Volumes ONTAP 系统。您可以在以后重新发现工作环境。</block>
   <block id="c3d8bc113694ac5e1b1bc6903d5f4777" category="paragraph">通过从BlueXP中删除工作环境、您可以执行以下操作：</block>
@@ -4881,7 +4878,6 @@
   <block id="e40eb63a3506950ad93ba909dcf25c90" category="image-alt">屏幕截图：总容量</block>
   <block id="ca7b4e21c879a84e19f4057cd971879d" category="image-alt">屏幕截图显示了FlexGroup vol</block>
   <block id="18d8042386b79e2c279fd162df0205c8" category="image-alt">400</block>
-  <block id="b26d26fe2543d5473bc9e47f43ccf1a0" category="image-alt">屏幕截图设置连接器按钮</block>
   <block id="84ad21dcd6ff9e0e4d117b5b3950020e" category="admonition">如果没有许可证、则不支持使用已获得许可的功能。</block>
   <block id="3799dfe1ae4f409b181ad79e377574c6" category="paragraph">勒索软件攻击可能会耗费业务时间，资源和声誉。借助BlueXP、您可以实施两种NetApp勒索软件解决方案：防范常见勒索软件文件扩展名和自动勒索软件保护(ARP)。这些解决方案为可见性、检测和补救提供了有效的工具。</block>
   <block id="78cc5cdbd5abab66548d6b3a595b1c6c" category="section-title">防止常见勒索软件文件扩展名</block>
@@ -5243,4 +5239,8 @@
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">在AWS中、Cloud Volumes ONTAP调解器和连接器现在支持对所有功能使用Amazon即时元数据服务v2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">用于管理现有连接器的BlueXP设置和管理文档</block>
   <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见 <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>。</block>
+  <block id="4954156ba208adf3ff1ee232d2f1d15f" category="list-text">在BlueXP控制台的右上角，单击设置图标，然后选择*BlueXP Cloud Volumes ONTAP设置*。</block>
+  <block id="6f0bb9f0803011314813e6aad3d926bf" category="list-text">在BlueXP控制台的右上角，单击*设置*图标，然后选择* Cloud Volumes ONTAP设置*。</block>
+  <block id="d4b0cdcc1cd5c09a803de195e4f82296" category="paragraph">要修改Cloud Volumes ONTAP设置、需要帐户管理员权限。</block>
+  <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">"Settings"(设置)图标下的Cloud Volumes ONTAP设置选项的屏幕截图。</block>
 </blocks>

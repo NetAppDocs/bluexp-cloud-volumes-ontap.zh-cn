@@ -318,7 +318,7 @@ CAUTION: 如果空间不足，则 Cloud Volumes ONTAP 无法移动数据，并�
 此比率对于灾难恢复场景非常重要，因为从对象存储读取数据时， Cloud Volumes ONTAP 会将数据移至 SSD/HDD 以提高性能。如果空间不足，则 Cloud Volumes ONTAP 无法移动数据。在更改比率时，请考虑这一点，以便满足您的业务需求。
 
 .步骤
-. 在BlueXP控制台的右上角、单击*设置*图标、然后选择*连接器设置*。
+. 在BlueXP控制台的右上角，单击*设置*图标，然后选择* Cloud Volumes ONTAP设置*。
 +
 image:screenshot_settings_icon.png["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 

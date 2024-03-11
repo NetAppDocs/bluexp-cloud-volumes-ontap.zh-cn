@@ -35,7 +35,7 @@ Cloud Volumes ONTAP 使用Azure专用链路连接到其关联的存储帐户。�
 此连接器应部署在与其管理的 Cloud Volumes ONTAP 系统所在的同一 Azure 区域或中 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 区域对"^] 对于 Cloud Volumes ONTAP 系统。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
+. 在BlueXP控制台的右上角，单击设置图标，然后选择*BlueXP Cloud Volumes ONTAP设置*。
 +
 image:screenshot_settings_icon.png["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 

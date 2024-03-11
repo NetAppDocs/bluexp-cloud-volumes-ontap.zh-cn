@@ -19,12 +19,12 @@ summary: 您可以通过添加磁盘，查看聚合相关信息以及删除聚�
 这些设置会影响由连接器管理的所有Cloud Volumes ONTAP 系统。如果您有另一个连接器、则可以对其进行不同的配置。
 
 .所需权限
-要修改Connector设置、需要帐户管理员权限。
+要修改Cloud Volumes ONTAP设置、需要帐户管理员权限。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
+. 在BlueXP控制台的右上角，单击设置图标，然后选择*BlueXP Cloud Volumes ONTAP设置*。
 +
-image::screenshot_settings_connector_button.png[屏幕截图设置连接器按钮]
+image::screenshot-settings-cloud-volumes-ontap.png["Settings"(设置)图标下的Cloud Volumes ONTAP设置选项的屏幕截图。]
 
 . 在*容量*下、修改以下任何设置：
 +

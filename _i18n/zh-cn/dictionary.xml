@@ -4172,7 +4172,6 @@
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">了解如何在Connector上启用直接API流量</block>
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure 中分层数据的默认存储访问层为 _hot_ 层。热层非常适合容量层中经常访问的数据。</block>
   <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">如果您不打算访问容量层中的非活动数据、则可以通过更改为_cool_存储层来降低存储成本。将存储层更改为冷存储层后、非活动容量层数据将直接移至冷存储层。</block>
-  <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时、非活动数据会直接移至选定的类。</block>
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">现在、BlueXP可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.0。</block>
   <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
@@ -5181,7 +5180,6 @@
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">对基于节点的Cloud Volumes ONTAP许可证使用ARP功能的情况目前不会反映在数字钱包中。在未来的版本中、可以在"电子钱包"下查看基于节点的ARP使用情况。</block>
   <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">购买附加许可证并将其添加到电子钱包后、您可以在Cloud Volumes ONTAP中按卷启用ARP。根据启用了ARP功能的卷的已配置总容量、在卷级别计量ARP收费。最低许可证容量为1 TB。但是、ARP功能没有最低容量充电要求。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。</block>
-  <block id="41040f9c93f65d2edb4f6b2d1dc680a4" category="admonition">存储和网络使用量以二进制千兆字节(GB)计算、其中1 GB为2^30字节。此度量单位也称为吉字节(GiB)。同样、1 TB为2^40字节、即1024 GB。</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024年1月16日</block>
   <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXP中的修补程序版本</block>
   <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXP中仅提供最新三个Cloud Volumes ONTAP版本的修补程序版本。</block>
@@ -5245,4 +5243,8 @@
   <block id="8e8751cb9b796773a6b79b4d5c3dc7b2" category="paragraph"><block ref="0205926668933cbb2cb5f56900594078" category="inline-link-rx"></block>。</block>
   <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">更改收费方法不会影响是通过从NetApp (BYOL)购买的许可证还是从云提供商的市场(按需购买)购买许可证来收费。</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXP始终首先尝试使用许可证付费。如果许可证不可用、则会按商城订阅收费。BYOL到商城订阅不需要"转换"、反之亦然。</block>
+  <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">虽然BlueXP中管理的产品和服务的实际使用情况和计量始终以GiB和TiB计算、但术语GB/GiB和TB/TiB可互换使用。这反映在云商城商品信息、报价、商品说明以及其他支持文档中</block>
+  <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">虽然BlueXP中管理的产品和服务的实际使用情况和计量始终以GiB和TiB计算、但术语GB/GiB和TB/TiB可互换使用。这反映在云商城商品信息、报价、商品说明以及其他支持文档中。</block>
+  <block id="1a09137ca087e36b72504f4276c7cd08" category="list-text">分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时、后续的非活动数据将直接移动到选定的类。</block>
+  <block id="0d79695d01dd236a00fcb17dec14227f" category="admonition">更改存储类时、任何现有的非活动数据都将保留默认存储类。要更改现有非活动数据的存储类、必须手动执行指定。</block>
 </blocks>

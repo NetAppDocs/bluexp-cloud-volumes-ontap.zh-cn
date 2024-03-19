@@ -134,9 +134,12 @@ BlueXP会为每个工作环境创建一个分段、并将其命名为fabric-pool
 
 
 --
-存储类:: 分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时、非活动数据会直接移至选定的类。
+存储类:: 分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时、后续的非活动数据将直接移动到选定的类。
 +
 --
+
+NOTE: 更改存储类时、任何现有的非活动数据都将保留默认存储类。要更改现有非活动数据的存储类、必须手动执行指定。
+
 如果您确实访问数据，访问成本会更高，因此在更改存储类之前，请考虑这一点。 https://cloud.google.com/storage/docs/storage-classes["了解有关 Google Cloud Storage 存储类的更多信息"^]。
 
 您可以在创建工作环境时选择一个存储层，之后可以随时对其进行更改。有关更改存储类的详细信息，请参见 link:task-tiering.html["将非活动数据分层到低成本对象存储"]。

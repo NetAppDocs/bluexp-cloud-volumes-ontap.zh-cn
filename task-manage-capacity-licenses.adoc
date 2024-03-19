@@ -20,6 +20,9 @@ _capacity-based licenses_ 使您能够按每 TiB 容量为 Cloud Volumes ONTAP �
 
 通过_BlueXP数字钱包_、您可以从一个位置管理Cloud Volumes ONTAP 的许可证。您可以添加新许可证并更新现有许可证。
 
+
+NOTE: 虽然BlueXP中管理的产品和服务的实际使用情况和计量始终以GiB和TiB计算、但术语GB/GiB和TB/TiB可互换使用。这反映在云商城商品信息、报价、商品说明以及其他支持文档中
+
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["了解有关 Cloud Volumes ONTAP 许可证的更多信息"]。
 
 

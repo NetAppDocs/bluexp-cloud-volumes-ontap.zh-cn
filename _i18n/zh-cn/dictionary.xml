@@ -407,7 +407,6 @@
   <block id="1dc9045fa2256d31acd9a9e96f728946" category="paragraph">如果您选择 " 高 " ，则需要阅读 " 我了解 ..." 陈述并通过选中此复选框进行确认。</block>
   <block id="9038e7cfcfe9bb9df9afd31371070be8" category="doc">管理现有卷</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="section-title">管理卷</block>
-  <block id="78b58016122bb23db763832d3df72599" category="paragraph">您可以在存储需求发生变化时管理卷。您可以查看、编辑、克隆、恢复和删除卷。</block>
   <block id="ad125360a406d7d2d9b4c68551674284" category="list-text">在 " 画布 " 页面上，双击要管理卷的 Cloud Volumes ONTAP 工作环境。</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">任务</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">Action</block>
@@ -433,8 +432,6 @@
   <block id="150cd3111dfd7ae68aaeb429e7e50847" category="list-text">选择一个卷，然后单击 * 删除 * 。</block>
   <block id="a87e9e2d6f69725c3669d99fad70371d" category="list-text">再次单击 * 删除 * 进行确认。</block>
   <block id="f003f3d16df55f060f81ad4dddd2fbf9" category="section-title">调整卷大小</block>
-  <block id="983731c4568a7ed436142da8a63f9442" category="paragraph">默认情况下，卷在空间不足时会自动增长到最大大小。默认值为 1 ， 000 ，这意味着卷可以增长到其大小的 11 倍。此值可在 Connector 的设置中进行配置。</block>
-  <block id="6ad5e0a20f49ad6a370454bb3afc9a9e" category="inline-link">ONTAP 系统管理器</block>
   <block id="6b851ed63a549d28a80d2c974afcec80" category="section-title">修改 CIFS 服务器</block>
   <block id="fd549a6bcd2d53b8accb49a7225fcfa0" category="paragraph">如果您更改了 DNS 服务器或 Active Directory 域、则需要在 Cloud Volumes ONTAP 中修改 CIFS 服务器、以便它可以继续为客户端提供存储。</block>
   <block id="47839a059e385e1317a08bc188364e78" category="list-text">指定 CIFS 服务器的设置：</block>
@@ -2841,7 +2838,6 @@
   <block id="652f5bb57cb09b4930d22c8b8241e77c" category="summary">Cloud Volumes ONTAP 命令行界面可用于运行所有管理命令，也是执行高级任务或使用命令行界面更自如的理想选择。您可以使用SSH连接到命令行界面。</block>
   <block id="f92c0062f5f51f34505c72b0a5c9b3be" category="doc">从命令行界面管理Cloud Volumes ONTAP</block>
   <block id="eb548256fe08b2a0e5f541bc56282edf" category="doc">使用高级视图管理Cloud Volumes ONTAP</block>
-  <block id="74593b49f99b6e21d38ca3d969b213f3" category="paragraph">此高级视图可作为预览版使用。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。</block>
   <block id="f3c3ee89c80d32726f5f937c07631d1c" category="list-text">高级存储管理</block>
   <block id="81988711ef6c9af40c8e8973f25c0bed" category="paragraph">管理一致性组、共享、qtree、配额和Storage VM。</block>
   <block id="62735a856683757bf28f1f02f97c151c" category="list-text">网络管理</block>
@@ -4046,7 +4042,6 @@
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在*资源*页面上、在技术支持下选择一个可用选项：</block>
   <block id="5db69347f06a9f63ed1f4c90e8b874e5" category="inline-link-macro">了解S3多协议的工作原理</block>
   <block id="e48cc3153e7d667d87986f8e162ea872" category="paragraph"><block ref="8674fe872330e1769235c43fb746c3f7" category="inline-link-macro-rx"></block>。<block ref="5b24747aa1a4fd51dbcea213f97833c7" category="inline-link-macro-rx"></block>。</block>
-  <block id="80f73203717d2460e95dcb08c0b8c6a2" category="paragraph">如果需要调整卷大小，可以通过执行此操作 <block ref="03bbffa71060830678a71c986c6c0e67" category="inline-link-macro-rx"></block>。调整卷大小时，请务必考虑系统的容量限制。转至<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 有关详细信息：</block>
   <block id="2ff4be1dced06cb9c588fc9e6efd1009" category="cell">为 CIFS 服务器提供名称解析的 DNS 服务器的 IP 地址。列出的 DNS 服务器必须包含为 CIFS 服务器将加入的域定位 Active Directory LDAP 服务器和域控制器所需的服务位置记录（服务位置记录）。ifdef：：gcp]]如果您正在配置Google Managed Active Directory、则默认情况下可以使用169.254.169.254 IP地址访问AD。字节名称：：：gcp[]</block>
   <block id="0031307525b9c7232536c8489912acba" category="list-text">要将 Azure AD 域服务配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=AADDC Computers * 或 * OU=AADDC Users* 。<block ref="6cfd09a964ae125f104125f00208f340" category="inline-link-macro-rx"></block></block>
   <block id="8c69b575c72fa1fcd5f27c44ebda605c" category="list-text">要将 Google Managed Microsoft AD 配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=Computers ， OU=Cloud* 。<block ref="1b7ab571d5a2f9c86fda846ee11b6c13" category="inline-link-macro-rx"></block></block>
@@ -5248,4 +5243,18 @@
   <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3e509b6c896c67a8b8ec2afa8f3aa8eb" category="admonition">有关如何获取许可证文件的详细信息、请参见<block ref="c65aa3342130b0295e06cd938a12ad5e" category="inline-link-rx"></block>。</block>
   <block id="6b5c2460f150173d3723de8a857a4d33" category="paragraph"><block ref="179c8a3ed717f2c4de3149f0e9edf685" category="inline-link-rx"></block>。</block>
+  <block id="61f0796ced324a7d0b1f387e74f545a7" category="paragraph">您可以在BlueXP标准视图或高级视图中管理卷。"标准"视图提供了一组有限的选项来修改卷。高级视图提供高级管理功能、例如克隆、调整大小、更改反勒索软件设置、分析、保护和活动跟踪以及跨层移动卷。请参见 <block ref="76b22e8ed647224335daed95530df604" category="inline-link-macro-rx"></block>。</block>
+  <block id="632ac3f99447a16bd75e4d1a0b8b691e" category="paragraph">通过使用BlueXP的标准视图、您可以根据存储需求管理卷。您可以查看、编辑、克隆、恢复和删除卷。</block>
+  <block id="5f9f6fee108a1a2e24bfa11e0350dbed" category="paragraph">默认情况下，卷在空间不足时会自动增长到最大大小。默认值为1、000、这意味着卷可以增长到其大小的11倍。此值可在连接器的设置中进行配置。</block>
+  <block id="d83032202b952a29eb304290049be8f3" category="paragraph">如果需要调整卷大小、可以从BlueXP中的高级视图执行此操作。</block>
+  <block id="b5101115b0cf1c430920e0b83ef354c6" category="list-text">打开高级视图、通过System Manager调整卷大小。请参见 <block ref="1bf7174b0a06a67edc83de5c18b2bf58" category="inline-link-macro-rx"></block>。</block>
+  <block id="a6bfbc7160bd5efb8fda7e791efd9e47" category="list-text">从左侧导航菜单中、选择*存储&gt;卷*。</block>
+  <block id="d875eee3d594951433259f6da1cc1729" category="list-text">从卷列表中、确定应调整大小的卷。</block>
+  <block id="52c148109936ec0cc34f1b38fb262428" category="inline-image-macro">kabob 图标</block>
+  <block id="10261f98990e70ba53ecbcb1e0119090" category="list-text">单击选项图标 <block ref="ac91b27a7720c4844510cacb9be7afe5" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="782635f18c9a4c6e77f10be3b478b27a" category="list-text">选择*调整大小*。</block>
+  <block id="4812655c0b87865bcb417f79c8eccc6c" category="list-text">在*调整卷大小*屏幕上，根据需要编辑容量和Snapshot预留百分比。您可以将现有可用空间与修改后的容量进行比较。</block>
+  <block id="239d4539cd51c06a2b10a7f62d000f71" category="inline-image-macro">屏幕显示调整卷大小后修改的容量</block>
+  <block id="b819ad9e0e6bb0675a6052fe63ec61dc" category="paragraph"><block ref="b819ad9e0e6bb0675a6052fe63ec61dc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bcbb72cb4f456c876a454b11cbf5cdaf" category="paragraph">调整卷大小时，请务必考虑系统的容量限制。转至<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 有关详细信息：</block>
 </blocks>

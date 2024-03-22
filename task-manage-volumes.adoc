@@ -16,11 +16,13 @@ summary: 通过BlueXP、您可以管理卷和CIFS服务器。它还会提示您�
 [role="lead"]
 通过BlueXP、您可以管理卷和CIFS服务器。它还会提示您移动卷以避免容量问题。
 
+您可以在BlueXP标准视图或高级视图中管理卷。"标准"视图提供了一组有限的选项来修改卷。高级视图提供高级管理功能、例如克隆、调整大小、更改反勒索软件设置、分析、保护和活动跟踪以及跨层移动卷。请参见 link:task-administer-advanced-view.html["使用高级视图管理Cloud Volumes ONTAP"]。
+
 
 
 == 管理卷
 
-您可以在存储需求发生变化时管理卷。您可以查看、编辑、克隆、恢复和删除卷。
+通过使用BlueXP的标准视图、您可以根据存储需求管理卷。您可以查看、编辑、克隆、恢复和删除卷。
 
 .步骤
 . 从左侧导航菜单中、选择*存储>画布*。
@@ -131,9 +133,23 @@ NOTE: BlueXP会将卷移动到使用选定磁盘类型进行分层的现有聚�
 
 == 调整卷大小
 
-默认情况下，卷在空间不足时会自动增长到最大大小。默认值为 1 ， 000 ，这意味着卷可以增长到其大小的 11 倍。此值可在 Connector 的设置中进行配置。
+默认情况下，卷在空间不足时会自动增长到最大大小。默认值为1、000、这意味着卷可以增长到其大小的11倍。此值可在连接器的设置中进行配置。
 
-如果需要调整卷大小，可以通过执行此操作 link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP 系统管理器"^]。调整卷大小时，请务必考虑系统的容量限制。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 有关详细信息：
+如果需要调整卷大小、可以从BlueXP中的高级视图执行此操作。
+
+.步骤
+. 打开高级视图、通过System Manager调整卷大小。请参见 link:task-administer-advanced-view.html#how-to-get-started["如何开始使用"]。
+. 从左侧导航菜单中、选择*存储>卷*。
+. 从卷列表中、确定应调整大小的卷。
+. 单击选项图标 image:screenshot_gallery_options.gif["kabob 图标"]。
+. 选择*调整大小*。
+. 在*调整卷大小*屏幕上，根据需要编辑容量和Snapshot预留百分比。您可以将现有可用空间与修改后的容量进行比较。
+. 单击 * 保存 * 。
+
+
+image:screenshot-resize-volume.png["屏幕显示调整卷大小后修改的容量"]
+
+调整卷大小时，请务必考虑系统的容量限制。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 有关详细信息：
 
 
 

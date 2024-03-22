@@ -16,8 +16,6 @@ summary: 如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用
 [role="lead"]
 如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用ONTAP 系统管理器来执行此操作、该管理器是随ONTAP 系统提供的一个管理界面。我们直接在BlueXP中提供了System Manager界面、因此您无需离开BlueXP即可进行高级管理。
 
-此高级视图可作为预览版使用。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
-
 
 
 == 功能

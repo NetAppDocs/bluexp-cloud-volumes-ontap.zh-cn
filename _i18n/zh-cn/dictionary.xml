@@ -2581,7 +2581,6 @@
   <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">不存在实例或容量限制。您可以根据需要部署任意数量的Cloud Volumes ONTAP 系统、并根据需要免费分配30天的容量。30天后、免费试用将自动转换为按小时付费的订阅。</block>
   <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">Cloud Volumes ONTAP 无需每小时支付软件许可证费用、但云提供商提供的基础架构费用仍然适用。</block>
   <block id="6c30ec25f9c157f6acd5cb63a6abee29" category="list-text">其中一个聚合对对象使用的命名方案较旧。两个聚合必须使用相同的名称格式。</block>
-  <block id="ea17490349895c296964a806a4f6a8d1" category="paragraph">请注意，可用空间现在在原始聚合上可用。现有卷或新卷可以使用该空间。在这种情况下、此空间无法返回到云提供商。</block>
   <block id="181e3299a212253d089ee23c58a37a10" category="list-text">现在、所有云提供商市场均可提供Essentials软件包和专业软件包。</block>
   <block id="e399fe858ae4c467e1c830b512b1718c" category="list-text">所有云提供商市场的逐节点许可均已弃用、不再适用于新订阅者。其中包括年度合同和每小时订阅（ Explore ， Standard 和 Premium ）。</block>
   <block id="73af9e90d6d077cf277e49f829259963" category="section-title">支持其他Azure VM类型</block>
@@ -3022,9 +3021,6 @@
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">在*容量*下、修改以下任何设置：</block>
   <block id="af1f64d74440547a71a0dfdd077d8a15" category="inline-link-macro">了解容量管理模式的工作原理</block>
   <block id="46e6171a2e84c75269ac8bcb3c5004d8" category="paragraph"><block ref="f8a3c55f9fa8638c083e126aaf830b07" category="inline-link-macro-rx"></block>。</block>
-  <block id="314b05c3387324c9621b3b3cd58816d4" category="list-text">当聚合上的可用空间比率降至指定阈值以下时触发通知。</block>
-  <block id="a27b16792f86cfcc4c0f28d5d58e43f4" category="paragraph">可用空间比率的计算方法如下：</block>
-  <block id="b9fbc310908f08e909d0f601f964b6d5" category="paragraph">(聚合容量-聚合上的总已用容量)/聚合容量</block>
   <block id="0bc3c683bdb3389ca9d8d2211fce0878" category="list-text">定义将数据分层到容量层(对象存储)时、性能层(磁盘)需要多少可用空间。</block>
   <block id="3e230a58ba269a917d314abcc623818e" category="paragraph">此比率对于灾难恢复情形非常重要。从容量层读取数据时、Cloud Volumes ONTAP 会将数据移至性能层以提高性能。如果空间不足，则 Cloud Volumes ONTAP 无法移动数据。</block>
   <block id="99a583bf10de030bdac538c8b15f5b45" category="paragraph">此行为由连接器上的_Capacity Management Modes_确定。容量管理模式会影响由该连接器管理的所有Cloud Volumes ONTAP 系统。如果您有另一个连接器、则可以对其进行不同的配置。</block>
@@ -3423,11 +3419,7 @@
   <block id="0324104f71311abe508e504d778bc57c" category="paragraph">例如、BlueXP可能会选择以下磁盘大小：</block>
   <block id="d4a9c8ba8bf84d6db4571dbd344dcbaf" category="paragraph">您可以自行管理聚合、而不是让BlueXP为您管理聚合。 <block ref="2414ef63108c7ecff38292e17ac61802" category="inline-link-macro-rx"></block>，您可以创建包含特定数量磁盘的新聚合，向现有聚合添加磁盘以及在特定聚合中创建卷。</block>
   <block id="6c79cf02eee66f58213ada5570b62345" category="paragraph">客户管理员可以选择BlueXP是否通知您存储容量决策、或者BlueXP是否自动管理您的容量需求。</block>
-  <block id="31748071ef0ac7523fb5016c8403ccb1" category="paragraph">默认情况下，容量管理模式设置为自动。在此模式下、当需要更多容量时、BlueXP会自动为Cloud Volumes ONTAP 实例购买新磁盘、删除未使用的磁盘集合(聚合)、根据需要在聚合之间移动卷以及尝试解除磁盘故障。</block>
   <block id="285c2353d7e4311eda264e18d4088019" category="list-text">如果某个聚合达到容量阈值且有空间容纳更多磁盘、则BlueXP会自动为该聚合购买新磁盘、以便卷可以继续增长。</block>
-  <block id="299ae1a44a6e0d4621ce06dd61d33997" category="paragraph">BlueXP每15分钟检查一次可用空间比率、以确定是否需要购买更多磁盘。</block>
-  <block id="8dae36b62c1431be15fd76d673a4c132" category="list-text">如果聚合达到容量阈值、并且不支持任何额外磁盘、则BlueXP会自动将卷从该聚合移动到具有可用容量的聚合或新聚合。</block>
-  <block id="2fe7b16790072005d08a88ee39c34588" category="paragraph">如果BlueXP为卷创建新聚合、则它会选择一个可容纳该卷大小的磁盘大小。</block>
   <block id="64705a9631169f2d9e4b9999578694d2" category="list-text">如果聚合中的卷数超过12小时、则BlueXP会将其删除。</block>
   <block id="972fa623b0e87f35c9ebd90cd251cc2c" category="paragraph">如果帐户管理员将容量管理模式设置为手动、则在必须决定容量时、BlueXP会显示"需要操作"消息。自动模式中描述的相同示例适用于手动模式，但您可以接受这些操作。</block>
   <block id="19d775edcaac93a63ae82c037f339d34" category="paragraph">创建Cloud Volumes ONTAP 工作环境时、BlueXP会提示您订阅Azure Marketplace中提供的协议。然后、该订阅将与工作环境关联以进行收费。您可以对其他工作环境使用相同的订阅。</block>
@@ -5257,4 +5249,17 @@
   <block id="239d4539cd51c06a2b10a7f62d000f71" category="inline-image-macro">屏幕显示调整卷大小后修改的容量</block>
   <block id="b819ad9e0e6bb0675a6052fe63ec61dc" category="paragraph"><block ref="b819ad9e0e6bb0675a6052fe63ec61dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bcbb72cb4f456c876a454b11cbf5cdaf" category="paragraph">调整卷大小时，请务必考虑系统的容量限制。转至<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 有关详细信息：</block>
+  <block id="399201ba872f71746b096bfe0d58a764" category="list-text">此比率是容量管理决策的一个关键参数、无论您处于自动还是手动模式的容量管理模式、了解其影响都至关重要。建议在设置此阈值时考虑您的特定存储需求和预期增长、以便在资源利用率和成本之间保持平衡。</block>
+  <block id="93f4bd32a6e537cd1ab17baa3d621ac4" category="paragraph">在手动模式下、如果聚合上的可用空间比率降至指定阈值以下、则会触发通知、提醒您应采取措施解决可用空间比率过低的问题。必须监控这些通知并手动管理聚合容量、以避免服务中断并确保最佳性能。</block>
+  <block id="ac058d48498674f54471806ec9e42567" category="paragraph">可用空间比率的计算方法如下：
+(聚合容量-聚合上的总已用容量)/聚合容量</block>
+  <block id="65d315c33e8fd2f0f7a6e3356d5f2d73" category="paragraph">请参见 <block ref="23da02e053be6485f9a66477404bdb14" category="inline-link-macro-rx"></block> 要立即了解、容量在Cloud Volumes ONTAP中自动管理。</block>
+  <block id="7bb6ec1cdb28bfc72a7c85c04e804190" category="paragraph">默认情况下，容量管理模式设置为自动。在此模式下、BlueXP每15分钟检查一次可用空间比率、以确定可用空间比率是否降至指定阈值以下。如果需要更多容量、BlueXP会自动开始购买新磁盘、删除未使用的磁盘集合(聚合)、根据需要在聚合之间移动卷、并尝试防止磁盘故障。</block>
+  <block id="8e2f854c2327eeb07b90d796ba7a111e" category="paragraph">如果AWS中的聚合支持Elelic Volumes、则BlueXP还会增加RAID组中磁盘的大小。 <block ref="e64e49a1cded5f4109adae46b4faa045" category="inline-link-macro-rx"></block>。</block>
+  <block id="bbf4148ff0d0c2577fa92ce466c7bf7b" category="paragraph">+
+*如果某个聚合达到容量阈值且无法支持任何其他磁盘、BlueXP会自动将卷从该聚合移动到具有可用容量的聚合或新聚合。</block>
+  <block id="aa30dc6b7b6afa43fc2df335e8f683b3" category="paragraph">+
+如果BlueXP为卷创建新聚合、则它会选择一个可容纳该卷大小的磁盘大小。</block>
+  <block id="7f1e9230df284aec888c734befc03867" category="paragraph">+
+请注意，可用空间现在在原始聚合上可用。现有卷或新卷可以使用该空间。在这种情况下、无法将此空间归还给云提供商。</block>
 </blocks>

@@ -5262,4 +5262,15 @@
 如果BlueXP为卷创建新聚合、则它会选择一个可容纳该卷大小的磁盘大小。</block>
   <block id="7f1e9230df284aec888c734befc03867" category="paragraph">+
 请注意，可用空间现在在原始聚合上可用。现有卷或新卷可以使用该空间。在这种情况下、无法将此空间归还给云提供商。</block>
+  <block id="31e2ca9cb7755d06bc40e30fd8e408d3" category="section-title">2024年4月23日</block>
+  <block id="a2fefc65df2136938b995f8abbe643c2" category="section-title">Azure中的多可用性区域部署支持新区域</block>
+  <block id="0cc914ed23f0f7d6bc902ae731843213" category="paragraph">以下地区现在支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署HA多可用性区域：</block>
+  <block id="1dab3491cdeeb2a6d567b21ee3063ae4" category="list-text">德国中西部</block>
+  <block id="26b4bdc11dfead08029a688129c42cf9" category="list-text">波兰中部</block>
+  <block id="64fb50bb758fe12b94faa568a567e13c" category="list-text">美国西部3.</block>
+  <block id="eb1aea8107eeeb90c841d5710262dd52" category="list-text">以色列中部</block>
+  <block id="6c2cb03afda0af373b8df47f9dc47ed7" category="list-text">意大利北部</block>
+  <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">加拿大中部</block>
+  <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">现在、Google Cloud支持约翰内斯堡地区</block>
+  <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">约翰内斯堡地区 <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> 适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud现在支持此功能。</block>
 </blocks>

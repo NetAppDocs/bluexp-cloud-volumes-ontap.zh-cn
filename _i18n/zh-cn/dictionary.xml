@@ -595,7 +595,6 @@
   <block id="f13e5738aeb376300b20ef726f2fe2e3" category="section-title">卷创建增强功能</block>
   <block id="9f6be88742d739e1a17345387ce1fbb2" category="paragraph">我们对卷创建进行了一些改进：</block>
   <block id="c393c88c641a6c18da56fffa85b9c78c" category="list-text">我们重新设计了创建卷向导，以便于使用。</block>
-  <block id="6b7e7cce69c13d91130e2e673b1da322" category="list-text">现在，添加到卷的标记将与应用程序模板服务相关联，此服务有助于您组织和简化资源管理。</block>
   <block id="69582189d37c402edf59b0f133df7c09" category="list-text">现在，您可以为 NFS 选择自定义导出策略。</block>
   <block id="7ab20d098d6605f542bfe595351b4d64" category="inline-image-macro">创建新卷时显示 " 协议 " 页面的屏幕截图。</block>
   <block id="7aece74ebc88a7e88e14656ceaecf9cf" category="paragraph"><block ref="7aece74ebc88a7e88e14656ceaecf9cf" category="inline-image-macro-rx" type="image"></block></block>
@@ -740,8 +739,6 @@
   <block id="3b0e375a08fe94a129cba31916c9d2dc" category="paragraph">此页面上的某些字段不言自明。以下列表介绍了可能需要指导的字段：</block>
   <block id="191fac23c2b2ea4e948178972521292f" category="cell">卷大小</block>
   <block id="7b975bd58356ec64d88f70d7f167a299" category="cell">您可以输入的最大大小在很大程度上取决于您是否启用精简配置、这样您就可以创建一个大于当前可用物理存储的卷。</block>
-  <block id="189f63f277cd73395561651753563065" category="cell">Tags</block>
-  <block id="d7ab5fe4cd7b86ba1ce9a35dbe34ee4b" category="inline-link">应用程序模板服务</block>
   <block id="426fb47479d0477ed5dbc9388b9add76" category="cell">快照策略</block>
   <block id="052c4d27b63fed6776d46336a295d801" category="cell">Snapshot 副本策略指定自动创建的 NetApp Snapshot 副本的频率和数量。NetApp Snapshot 副本是一个时间点文件系统映像、对性能没有影响、并且只需要极少的存储。您可以选择默认策略或无。您可以为瞬态数据选择无：例如， Microsoft SQL Server 的 tempdb 。</block>
   <block id="8df799ab4a27609ef1087c249676bbc5" category="list-text">* 协议 * ：选择卷的协议（ NFS ， CIFS 或 iSCSI ），然后提供所需信息。</block>
@@ -766,23 +763,6 @@
   <block id="13aa0c9cafb05f7d1436239215621d90" category="list-text">* 使用情况配置文件和分层策略 * ：选择是在卷上启用还是禁用存储效率功能，然后选择 <block ref="45393a767ab360c2ba9e7110c6cbc830" category="inline-link-macro-rx"></block>。</block>
   <block id="1fd2dba2020c106a2c49da0e6ad7e868" category="paragraph">ONTAP 包含多种存储效率功能、可以减少您所需的存储总量。NetApp 存储效率功能具有以下优势：</block>
   <block id="eb5c6869b3fc04254530622723507f79" category="list-text">* 审阅 * ：查看有关卷的详细信息，然后单击 * 添加 * 。</block>
-  <block id="2fd8ed01b53ab930ba045f6316aa8fbf" category="section-title">使用模板创建卷</block>
-  <block id="027921a6306ed2c54f25607de975d377" category="paragraph">如果您的组织已创建 Cloud Volumes ONTAP 卷模板，以便您可以部署针对特定应用程序的工作负载要求进行优化的卷，请按照本节中的步骤进行操作。</block>
-  <block id="bc41c927b050313fabe4e7bfa9c82224" category="paragraph">此模板应使您的工作更轻松，因为模板中已定义某些卷参数，例如磁盘类型，大小，协议，快照策略，云提供程序， 等等。如果已预定义某个参数，则只需跳到下一个 volume 参数即可。</block>
-  <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">使用模板时，您只能创建 NFS 或 CIFS 卷。</block>
-  <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">在 " 画布 " 页面上，单击要配置卷的 Cloud Volumes ONTAP 系统的名称。</block>
-  <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">显示如何从模板添加新卷的屏幕截图。</block>
-  <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">在 _Select Template_ 页面中，选择要用于创建卷的模板，然后单击 * 下一步 * 。</block>
-  <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">可用应用程序模板的屏幕截图。</block>
-  <block id="f2a6f7bb83d518b8832e241b44419c17" category="paragraph"><block ref="f2a6f7bb83d518b8832e241b44419c17" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">显示创建卷所需填写的空白模板的屏幕截图。</block>
-  <block id="f9fb39421cb5c84a9897e58b19c84510" category="paragraph"><block ref="f9fb39421cb5c84a9897e58b19c84510" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="db382d688e4cb3e09b6e7a743ce00edb" category="paragraph">如果还有其他操作，请单击左窗格中的操作以显示需要完成的参数。</block>
-  <block id="a31e4f2aa7f454321015e4c5b02bae97" category="inline-image-macro">显示如何选择需要完成的其他操作的屏幕截图。</block>
-  <block id="0fdf861b8e72c9acd6caea0924545667" category="paragraph"><block ref="0fdf861b8e72c9acd6caea0924545667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f97c61e27cbf22f850ec5f0412358f0b" category="paragraph">Cloud Volumes ONTAP 会配置卷并显示一个页面，以便您可以查看进度。</block>
-  <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">显示通过模板创建新卷的进度的屏幕截图。</block>
-  <block id="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="paragraph"><block ref="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="841221afb195f2b9f58a8b1dc6a57132" category="section-title">在 HA 配置中的第二个节点上创建卷</block>
   <block id="60a2834a97bdfe49641e5ed1d42e4116" category="list-text">在 " 画布 " 页面上，双击要管理聚合的 Cloud Volumes ONTAP 工作环境的名称。</block>
   <block id="c8f3514620e31924fc247388a82834fa" category="list-text">对于主节点，请在 HA 对中选择第二个节点。</block>
@@ -4321,19 +4301,10 @@
   <block id="d3c83108d2d70bd2eb22fbd1bb485f2f" category="paragraph">在概述选项卡上、导航到卷磁贴、然后单击*添加卷*。<block ref="d66b0ca71189f0ddd53cd4b3e65bbf57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d67d87305db3f29260c81473dd44e3f1" category="inline-image-macro">聚合选项卡下的添加卷按钮的屏幕截图。</block>
   <block id="13f1658d880a29010b36402880b7742d" category="paragraph">在聚合选项卡上、导航到所需的聚合图块。单击菜单图标、然后单击*添加卷*。<block ref="90511a2a61b219fe659f6c6204d0e9f4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5359c0cc8b61614ec08d953783fef7e9" category="list-text">*卷、详细信息、保护和标记*：输入有关卷的基本详细信息并选择Snapshot策略。</block>
   <block id="5a33fdd3ad048388d676b3cfe62a76b4" category="cell">卷名称</block>
   <block id="da791c0c870c83e87ff0b50e41446b5f" category="cell">可以为新卷输入的可标识名称。</block>
   <block id="8bc5e99f50f67c6de120548d75821d83" category="cell">Storage VM (SVM)</block>
   <block id="360a6a454911fe3432462fbd11f3588c" category="cell">Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其视为 SVM 或 SVM 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但某些配置支持额外的 Storage VM 。您可以为新卷指定Storage VM。</block>
-  <block id="83153603fdc3097c323cd6a9c354a74c" category="list-text">导航到卷选项卡、然后单击*添加卷*&gt;*从模板新建卷*。</block>
-  <block id="d5b72c940ba2727afcbba5dd037893f5" category="paragraph"><block ref="d5b72c940ba2727afcbba5dd037893f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac2c13cd2f76af0753933c8630446e5f" category="paragraph">此时将显示_Editor_页面。</block>
-  <block id="18a9b2315ac5b98381d542571ba28299" category="list-text">在_Action_面板上方、输入模板的名称。</block>
-  <block id="74f7c9266baa87f8e4aceef158811143" category="list-text">在_context_下、工作环境将填入您启动的工作环境的名称。选择要创建卷的* Storage VM*。</block>
-  <block id="746037c3b6a0eec6bb1e41959d51e07e" category="list-text">单击*应用*将配置的参数保存到选定操作。</block>
-  <block id="be2645489c0ae0149fc30f6dc8d80bbb" category="paragraph">例如、如果"启用卷上的云备份"操作要求您选择备份策略、您现在可以执行此操作。</block>
-  <block id="f0131c80c45b00e70cb9a1d8c9e3448a" category="list-text">完成模板操作的配置后、单击*保存模板*。</block>
   <block id="bc321d6d3a5b549e1c0961440ef815f4" category="list-text">在聚合选项卡上、单击*添加聚合*。</block>
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">在_Add aggregate_屏幕中、创建聚合。</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">显示添加聚合进度的屏幕截图。</block>
@@ -4354,10 +4325,6 @@
   <block id="8f56224592abe10774e5575500874b11" category="cell">在管理卷面板的卷操作下、单击*查看卷详细信息*。</block>
   <block id="d4c98b540182b809e992d8b4a580423e" category="list-text">在管理卷面板的卷操作下、单击*挂载命令*。</block>
   <block id="98c56e9d0291f443f1ed942549039cc3" category="list-text">在管理卷面板的卷操作下、单击*克隆卷*。</block>
-  <block id="c36ae8709c4f5551dcd33c1fa09b1144" category="cell">编辑卷标记(仅限读写卷)</block>
-  <block id="0c76e6ded4e12f0dc0b2564def628aae" category="list-text">在管理卷面板的卷操作下、单击*编辑卷标记*以修改分配给选定卷的卷标记。</block>
-  <block id="186ac335ead3bdabcd70b18a0e6f40ed" category="list-text">在提供的字段下输入卷标记密钥和值。</block>
-  <block id="cf92c264f59ad57e63ae663106047d25" category="list-text">要包括其他标记、请单击*添加新标记*。</block>
   <block id="29f680a1731a2250d73a33aede73a2eb" category="list-text">在管理卷面板的卷操作下、单击*编辑卷设置*</block>
   <block id="ac11ccea860c1468f49807407e073557" category="list-text">修改卷的Snapshot策略、NFS协议版本、NFS访问控制列表(导出策略)或共享权限、然后单击*应用*。</block>
   <block id="6271604d64ad8f6bcdad901be64df292" category="list-text">在管理卷面板的卷操作下、单击*删除卷*。</block>
@@ -4487,8 +4454,6 @@
   <block id="b7553c7fbdeaddba3cf075caca1654ea" category="paragraph">将基于节点的许可证添加到BlueXP数字工具包中、以便在创建新的Cloud Volumes ONTAP 系统时选择此许可证。电子钱包将这些许可证标识为_UNASSERUDE_。</block>
   <block id="5fd0d116f88accf7d18b80d146d87953" category="paragraph">BlueXP将许可证添加到电子钱包中。在将许可证与新的 Cloud Volumes ONTAP 系统关联之前，此许可证将被标识为未分配。之后，许可证将移至数字钱包中的*BYOL*选项卡。</block>
   <block id="637413a6c4ca962adade95ae4bcc1109" category="paragraph">如果您尚未使用Cloud Volumes ONTAP 的基于节点的未分配许可证、则可以通过将其转换为BlueXP备份和恢复许可证、BlueXP分类许可证或BlueXP分层许可证来交换此许可证。</block>
-  <block id="84494b1e674f56df077cb2b7eca2b569" category="list-text">如果没有需要定义的其他操作(例如，配置BlueXP备份和恢复)，请单击*保存模板*。</block>
-  <block id="3cb732600caeb6ed3e89ade08544187b" category="paragraph">此外、如果在模板中实施了任何二级操作、例如在卷上启用BlueXP备份和恢复、则也会执行该操作。</block>
   <block id="726d1cad4d0527532460d1a853919ebc" category="inline-link">了解有关BlueXP分类的更多信息</block>
   <block id="723a81a7ee0b42134a46c1aaa0d99371" category="inline-link">了解有关BlueXP备份和恢复的更多信息</block>
   <block id="fc0a70bcada485a87b25779f9232cd77" category="summary">Cloud Volumes ONTAP 需要一个 Google Cloud 服务帐户，用于两种目的。首先，您可以通过数据分层将冷数据分层到 Google Cloud 中的低成本对象存储。第二种情况是、启用BlueXP备份和恢复将卷备份到低成本对象存储。</block>
@@ -4614,7 +4579,6 @@
   <block id="f9f4082179938e25ee1e3141d4b4b61d" category="paragraph"><block ref="f9f4082179938e25ee1e3141d4b4b61d" category="inline-link-rx"></block></block>
   <block id="882d5f98206dd8157654127073c920f2" category="paragraph"><block ref="882d5f98206dd8157654127073c920f2" category="inline-link-rx"></block></block>
   <block id="f870932f389b07a18c35e61ebc668c91" category="paragraph"><block ref="161ab28684c427e4961f0c360c1dbce7" category="inline-link-rx"></block>。</block>
-  <block id="63c9832895bcd0b024988b034d19fa69" category="cell">添加到卷的标记将与关联<block ref="b6951a270b848f0d80ace1368ae797fd" category="inline-link-rx"></block>可帮助您组织和简化资源管理。</block>
   <block id="ccd8fe0f54baad6a01a1827625b8a699" category="list-text">选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="781a31b225d61ebbabe5dd84830d307a" category="list-text">您应具有<block ref="531433bd83668140eff1dc8bd40e140e" category="inline-link-rx"></block>。</block>
   <block id="0a878535ad1a6e2ef955aba255e762cd" category="list-text">如果出现提示，<block ref="b03d5bfc016d24f5269c25486d5c5105" category="inline-link-rx"></block>。</block>
@@ -4887,13 +4851,11 @@
   <block id="c865f6da9bcfc07ba082737620200b41" category="paragraph">除非您超过500 GiB的已配置容量、否则不会通过Marketplace订阅向您收取费用、此时系统将自动转换为 <block ref="ec72849d6ddd1aa67c619efd7a434388" category="inline-link-macro-rx"></block>。</block>
   <block id="a8f0efbc9639c258065d01ea6552a320" category="list-text">指定新卷的详细信息、并让BlueXP为您处理底层数据聚合。 <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
   <block id="f2354151259450918b28c0dd2ce20606" category="list-text">在您选择的数据聚合上创建卷。 <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
-  <block id="b9269bf669334245761162ed1b5f67fc" category="list-text">使用模板创建卷，以根据特定应用程序（例如数据库或流式服务）的工作负载要求优化卷。 <block ref="2e0c3dc13b95af01c6b2fc43579657db" category="inline-xref-macro-rx"></block></block>
   <block id="6acfe5d47cf8e7d4ce1ddef9604984d8" category="list-text">在 HA 配置中的第二个节点上创建卷。 <block ref="8d20c8ec5d13d4f8ec83a1bb8e2e1e5d" category="inline-xref-macro-rx"></block></block>
   <block id="765aadd821cf82bcd286359e2eb25476" category="list-text">创建iSCSI卷时、BlueXP会自动为您创建LUN。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后， <block ref="9b65fd4fba31c27fb58a4653a54defad" category="inline-link-macro-rx"></block>。</block>
   <block id="34b51cb01d3605c2b908600c2b516152" category="list-text"><block ref="34b51cb01d3605c2b908600c2b516152" category="inline-link-macro-rx"></block></block>
   <block id="2a79e18dae8df0be0a0d70d12cf4bfec" category="list-text"><block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block></block>
   <block id="14c10e4dfdbfa7bb1944c39086904d79" category="list-text"><block ref="14c10e4dfdbfa7bb1944c39086904d79" category="inline-link-macro-rx"></block></block>
-  <block id="ff89f21886369313040dff71f31e89db" category="list-text">为模板中未硬编码的所有参数添加值。请参见 <block ref="8a193d900c598af224bec0dcf7cbba7e" category="inline-xref-macro-rx"></block> 有关完成Cloud Volumes ONTAP 卷部署所需的所有参数的详细信息。</block>
   <block id="f784e2eca8423af6d4b6e02cd9dc17b6" category="list-text">VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="29642aeaa8aff442388842cc2c36f19d" category="list-text">VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。 <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0082432bdd8f260c6c2bf11437fb1b7" category="list-text">VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。 <block ref="07ead3ac53ea1b122b25bf61bd233110" category="inline-xref-macro-rx"></block>。</block>
@@ -5273,4 +5235,7 @@
   <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">加拿大中部</block>
   <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">现在、Google Cloud支持约翰内斯堡地区</block>
   <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">约翰内斯堡地区 <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> 适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud现在支持此功能。</block>
+  <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">不再支持卷模板和标记</block>
+  <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">您不能再使用模板创建卷、也不能编辑卷的标记。这些操作与BlueXP修复服务相关联、该服务不再可用。</block>
+  <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">* 详细信息，保护和标记 * ：输入有关卷的基本详细信息并选择 Snapshot 策略。</block>
 </blocks>

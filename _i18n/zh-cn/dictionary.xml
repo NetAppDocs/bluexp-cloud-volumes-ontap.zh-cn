@@ -1081,47 +1081,21 @@
   <block id="7f025a91fb00bb0c9525dbad509366bd" category="list-text">存储虚拟机（ SVM ）根卷驻留在 aggr1 中。</block>
   <block id="f1ff33b1bdbf816203ee716386af3578" category="list-text">数据卷也驻留在 aggr1 中。</block>
   <block id="8d4073fa4a8e186f65d9241d17413d18" category="paragraph">如果您在 AWS 中使用密钥管理服务（ KMS ）启用数据加密，则 Cloud Volumes ONTAP 的启动磁盘和根磁盘也会进行加密。这包括 HA 对中调解器实例的启动磁盘。磁盘将使用您在创建工作环境时选择的 CMK 进行加密。</block>
-  <block id="ac46f2b5d78e0710ebb1765d7e4ba12a" category="doc">开始在 AWS C2S 环境中使用 Cloud Volumes ONTAP</block>
-  <block id="5e2af697d363d750a2757a32a4987829" category="inline-link">AWS 商用云服务（ C2S ）</block>
-  <block id="55ac98eae564c353eeef8edc0d7097c1" category="section-title">C2S 中支持的功能</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
-  <block id="0a9e63106b5735d38d5bf5377346f3ed" category="list-text">数据复制</block>
-  <block id="d4af1c3d6fd6c6f713f1c42aeefe16e0" category="list-text">审核时间表</block>
-  <block id="a3ba8957c5b6da3f0cea5f6a0560a884" category="paragraph">对于 Cloud Volumes ONTAP ，您可以创建单节点系统或 HA 对。这两种许可选项均可用：按需购买和自带许可证（ BYOL ）。</block>
-  <block id="4533efdd4943c354325fa4b9afd6b946" category="paragraph">C2S 中的 Cloud Volumes ONTAP 也支持将数据分层到 S3 。</block>
-  <block id="bbac84abd1a970b9c0e8d31ed4aa0906" category="paragraph">由于 C2S 环境中无法访问 Internet ，因此以下功能也不可用：</block>
-  <block id="a4d4a2ce01f92b20030c0f4e601e1469" category="list-text">NetApp AutoSupport</block>
-  <block id="c0954cac84549fc6e8eaef628e57836c" category="list-text">Cloud Volumes ONTAP 资源的 AWS 成本信息</block>
-  <block id="42f8643eb52a942747937327c72c8361" category="section-title">部署概述</block>
-  <block id="7dbc114b490b3587afece94d9d3cfb10" category="paragraph">在 C2S 中开始使用 Cloud Volumes ONTAP 包括几个步骤。</block>
-  <block id="48779c5be1cd521ff10b7f3bcc805a25" category="paragraph">其中包括设置网络，订阅 Cloud Volumes ONTAP ，设置权限以及选择设置 AWS KMS 。</block>
-  <block id="f14f364d88ae94a22fecdfb6080b3c8b" category="paragraph">下面介绍了其中的每个步骤。</block>
-  <block id="ab674d97a0dbbc87ca939d68d82e8a08" category="paragraph">您的 AWS 环境必须满足一些要求。</block>
   <block id="4e85b7aafac6d2da235acd904c8d01ca" category="section-title">设置网络</block>
   <block id="7c5d8bf27092bf15632098a9cc75b95e" category="paragraph">设置 AWS 网络，以便 Cloud Volumes ONTAP 可以正常运行。</block>
   <block id="6cc1b87018ec63a72f339fd55542d90f" category="list-text">选择要启动连接器实例和 Cloud Volumes ONTAP 实例的 VPC 和子网。</block>
   <block id="c5a74d045a159ee12555da1d786bd27c" category="list-text">确保您的 VPC 和子网支持连接器和 Cloud Volumes ONTAP 之间的连接。</block>
   <block id="c1540e16429791c7515c0322aad07fcf" category="list-text">将 VPC 端点设置为 S3 服务。</block>
   <block id="4274b83eccea8c2453ce00d6c7cde54e" category="paragraph">如果要将冷数据从 Cloud Volumes ONTAP 分层到低成本对象存储，则需要 VPC 端点。</block>
-  <block id="cfd6f0ddd1c37132e466969cd29cfd0b" category="section-title">订阅 Cloud Volumes ONTAP</block>
-  <block id="d1e73b0111e78833cd168c2cc012483b" category="list-text">转到 AWS 智能社区市场并搜索 Cloud Volumes ONTAP 。</block>
-  <block id="93dc1b846256ba5a81d496cecf09af84" category="list-text">选择您计划部署的产品。</block>
-  <block id="50b78843131cd5e7a6b90126141037f5" category="list-text">查看条款并单击 * 接受 * 。</block>
-  <block id="bd81a861a9a90abd1e965fde29330091" category="list-text">如果您计划部署其他产品，请对其重复上述步骤。</block>
-  <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="section-title">设置权限</block>
   <block id="0dc3bc40ef64f54364ea349a4715e7ef" category="paragraph">您需要为以下每项设置一个 IAM 策略和 IAM 角色：</block>
   <block id="c2f8321ff3a236ed24f9e8e5cabfae55" category="list-text">Connector 实例</block>
   <block id="66dbefe706035688123645657da5ccc3" category="list-text">Cloud Volumes ONTAP 实例</block>
-  <block id="617e7edf7b8c2ab7627f64ba5996d390" category="list-text">Cloud Volumes ONTAP HA 调解器实例（如果要部署 HA 对）</block>
   <block id="054ddf0c6f6bd813102681cc9ef9ee60" category="list-text">转到 AWS IAM 控制台，然后单击 * 策略 * 。</block>
   <block id="224d061fb82ffb1726da2a61298c6c62" category="list-text">为 Connector 实例创建策略。</block>
   <block id="084afa7630d7502963537edb4a0a6864" category="list-text">为 Cloud Volumes ONTAP 创建策略。</block>
-  <block id="203dbf6d02c5576894caa3a1366d2ca9" category="list-text">如果您计划部署 Cloud Volumes ONTAP HA 对，请为 HA 调解器创建一个策略。</block>
   <block id="6a708c2efcfd3fa9aadb11a053154305" category="list-text">创建角色类型为 Amazon EC2 的 IAM 角色，并附加您在上述步骤中创建的策略。</block>
-  <block id="ef1be41357c30caefe80a1e372159e5d" category="paragraph">与策略类似，您应该为 Connector 设置一个 IAM 角色，为 Cloud Volumes ONTAP 节点设置一个 IAM 角色，并为 HA 调解器设置一个 IAM 角色（如果要部署 HA 对）。</block>
-  <block id="d8274187bd955095cc8d8a796bc54f28" category="paragraph">启动 Connector 实例时，必须选择 Connector IAM 角色。</block>
   <block id="0178b985155f8038a3bb894fe24ece79" category="section-title">设置 AWS KMS</block>
-  <block id="d7eb931b5b1d4cfe133e4c07eb2379be" category="paragraph">如果要将 Amazon 加密与 Cloud Volumes ONTAP 结合使用，请确保满足 AWS 密钥管理服务的要求。</block>
   <block id="b625f1267fdc411389bea37c6c262eae" category="list-text">确保您的帐户或其他 AWS 帐户中存在有效的客户主密钥（ CMK ）。</block>
   <block id="3e4f6d7674e40fd3611c1cebec37b725" category="paragraph">CMK 可以是 AWS 管理的 CMK 或客户管理的 CMK 。</block>
   <block id="3817567f1a0a9d7b3cf35607b29c79dc" category="list-text">如果 CMK 位于与您计划部署 Cloud Volumes ONTAP 的帐户不同的 AWS 帐户中，则需要获取该密钥的 ARN 。</block>
@@ -1136,16 +1110,11 @@
   <block id="b901bc33967dc36bebafa77250edd08b" category="list-text">连接器所需的连接方法如下： SSH ， HTTP 和 HTTPS 。</block>
   <block id="4d0564ff4d1bbd71234a0838722dfc93" category="list-text">指定用于连接到 AWS 服务的代理服务器。</block>
   <block id="c3e84141ad53b58cc86262388ac9e4a6" category="list-text">上传您在步骤 1 中获得的证书。</block>
-  <block id="38bfdffb2647d7fe06154cb0192f2725" category="list-text">* 审核 * ：查看详细信息并批准最终用户许可协议。</block>
   <block id="ce844b01a8ab7308a739495c52892c79" category="list-text">要完成 CA 签名证书的安装，请从 EC2 控制台重新启动 Connector 实例。</block>
   <block id="665230f4bd95f60852b6fc1b7f05c103" category="list-text">Connector 重新启动后，使用您在设置向导中创建的管理员用户帐户登录。</block>
-  <block id="6f177e279944db659b80f0020df93964" category="list-text">如果您购买了许可证，则必须具有从 NetApp 收到的许可证文件。此许可证文件是一个 .NLF 文件，采用 JSON 格式。</block>
-  <block id="4b91157a6d4a5e01b05a5a74492fcdeb" category="list-text">要为 HA 调解器启用基于密钥的 SSH 身份验证，需要使用密钥对。</block>
   <block id="41c4defb4c9e45cc91ee861e1c4ca018" category="list-text">在工作环境页面上，单击 * 添加工作环境 * 。</block>
-  <block id="17e6091fb7a1e44978f0e6368bc2a694" category="list-text">在创建下，选择 Cloud Volumes ONTAP 或 Cloud Volumes ONTAP HA 。</block>
   <block id="ece12a0b27d8259b8c5ddd7028b193a3" category="list-text">完成向导中的步骤以启动 Cloud Volumes ONTAP 系统。</block>
   <block id="2279687b270447a870c961fcb9110b1b" category="paragraph">完成向导后，请注意以下事项：</block>
-  <block id="3283444cf4a21009d424e037c9609be5" category="list-text">如果要在多个可用性区域中部署 Cloud Volumes ONTAP HA ，请按如下所示部署此配置，因为发布时 AWS 商用云服务环境中只有两个可用的 AZS ：</block>
   <block id="bc3b42490f9e102df5b467500a3a96c9" category="list-text">节点 1 ：可用性区域 A</block>
   <block id="63d83e29bfaf6c403c2a3a24c54875de" category="list-text">节点 2 ：可用性区域 B</block>
   <block id="26e7cdb828ffddbb9d243b989175d6dd" category="list-text">调解器：可用性区域 A 或 B</block>
@@ -1157,34 +1126,24 @@
   <block id="23706808bf27f7d9f29d49a2871a9168" category="paragraph">您应选择可提供所需持续性能的磁盘大小。有关 EBS 性能的更多详细信息，请参见 AWS 文档。</block>
   <block id="1510e6c2673239cb91de9ef82cd7e9e4" category="list-text">磁盘大小是系统上所有磁盘的默认大小。</block>
   <block id="0c1d9d3db8eeeb7a62c2e39cb2683df5" category="admonition">如果您稍后需要其他大小的磁盘，则可以使用高级分配选项创建使用特定大小磁盘的聚合。</block>
-  <block id="2ae63b53bd08da82000580623bac6398" category="list-text">存储效率功能可以提高存储利用率并减少所需的总存储量。</block>
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="section-title">安全组规则</block>
-  <block id="ca984063dccc5d90214a5ae0e7e5d3aa" category="section-title">Connector 的安全组</block>
-  <block id="0fbb894005047753551829b93d408eac" category="paragraph">Connector 的安全组需要入站和出站规则。</block>
   <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">入站规则</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">协议</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">Port</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
   <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22.</block>
-  <block id="7dca630291dc35d5447daa0c9abf8da4" category="cell">提供对 Connector 主机的 SSH 访问</block>
   <block id="293c9ea246ff9985dc6f62a650f78986" category="cell">HTTP</block>
   <block id="f033ab37c30201f73f142449d037028d" category="cell">80</block>
-  <block id="63b34d7f22329c0eb7915fca7a346007" category="cell">提供从客户端 Web 浏览器到本地用户界面的 HTTP 访问</block>
   <block id="0e8433f9a404f1f3ba601c14b026d321" category="cell">HTTPS</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443.</block>
-  <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">出站规则</block>
-  <block id="422c84262f431352e9da45084016a52c" category="paragraph">Connector 的预定义安全组包括以下出站规则。</block>
   <block id="170100eb6e4338b75a2fc06f87f9e5a4" category="cell">所有 TCP</block>
   <block id="a3c775b853cb7264d143451380d3e164" category="cell">所有出站流量</block>
   <block id="d78c51305ff97e9da7f4c5cb3d1d3453" category="cell">所有 UDP</block>
-  <block id="3dc508776ae41d76d647e62358d55180" category="section-title">Cloud Volumes ONTAP 的安全组</block>
-  <block id="d991e60dbce1c74dc50b148edfc8bbba" category="paragraph">Cloud Volumes ONTAP 节点的安全组需要入站和出站规则。</block>
   <block id="d4b4ed7579a4f9267cc7dff8a948018e" category="cell">所有 ICMP</block>
   <block id="fbabb5b35538d91f91e0e1d4f56ff5a4" category="cell">Ping 实例</block>
   <block id="ababfee3bb5ff05f9b0368cea51ee877" category="cell">使用集群管理 LIF 的 IP 地址对系统管理器 Web 控制台进行 HTTP 访问</block>
-  <block id="292d4f8112774cc3427c6a7da0cce58b" category="cell">使用集群管理 LIF 的 IP 地址对 System Manager Web 控制台进行 HTTPS 访问</block>
   <block id="68e68bb8029eb3e7ed079fea7b679d99" category="cell">SSH 访问集群管理 LIF 或节点管理 LIF 的 IP 地址</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="698d51a19d8a121ce581499d7b701668" category="cell">111.</block>
@@ -1217,14 +1176,10 @@
   <block id="89a4779d3836ea432f7ea074e522a17e" category="cell">4049.</block>
   <block id="ec29b09319bcf28d103f2dda2dae3590" category="cell">NFS Rquotad 协议</block>
   <block id="74a441e1246bd6cf3265972bf1c89bef" category="paragraph">为 Cloud Volumes ONTAP 预定义的安全组包括以下出站规则。</block>
-  <block id="0dd51d029ffb5979ffac83190ff3f63e" category="section-title">HA 调解器的外部安全组</block>
   <block id="6f32c9b6315913918b0d282bfb2b4c66" category="paragraph">Cloud Volumes ONTAP HA 调解器的预定义外部安全组包括以下入站和出站规则。</block>
-  <block id="fb9be2e25293465c401ae5b6e13f9a51" category="paragraph">入站规则的源是来自连接器所在 VPC 的流量。</block>
-  <block id="f81635b4fadca27cff21e25f7426f99c" category="cell">SSH 与 HA 调解器的连接</block>
   <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000</block>
   <block id="030bd70df22ed3354f19b1ed2afdeb00" category="cell">从 Connector 进行 RESTful API 访问</block>
   <block id="35c1e7571a7c31f32b4caa5a6aee08bb" category="paragraph">HA 调解器的预定义安全组包括以下出站规则。</block>
-  <block id="5cfc8e4f1942d56277d59f7dc3d51166" category="section-title">HA 调解器的内部安全组</block>
   <block id="d5e80ceb9cd16e162abee97d3789d829" category="paragraph">预定义的安全组包括以下入站规则。</block>
   <block id="c24475390eff056757a0e12aa5fe5e9f" category="cell">所有流量</block>
   <block id="e6929ac62766d022cca32bd1a5705a2a" category="cell">HA 调解器和 HA 节点之间的通信</block>
@@ -1339,7 +1294,6 @@
   <block id="7e78cd436b6c8706972ddd93ac6ab72e" category="inline-link-macro">阅读分步说明</block>
   <block id="de55eaa977cb9b3376bd6729e1a97107" category="paragraph">单击 * 添加工作环境 * ，选择要部署的系统类型，然后完成向导中的步骤。 <block ref="168f7f4d4c37c8fac9b64fb187eb00a2" category="inline-link-macro-rx"></block>。</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">相关链接</block>
-  <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">从 AWS Marketplace 启动 Connector</block>
   <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">在 Linux 主机上安装 Connector 软件</block>
   <block id="fb60cc8b1c07b3747a72dcf7ce2f2f58" category="list-text">一个或三个分区（建议）。</block>
   <block id="0f3118cdf0606432dbda8dd0e39d7d10" category="paragraph">如果选择三个分区，则这两个节点和调解器位于不同的 Google Cloud 分区中。</block>
@@ -2279,7 +2233,6 @@
   <block id="bbf1a68fc5e370127fe0c3f1622dced3" category="sidebar">规划您的配置</block>
   <block id="9251700e586dc1a410f2e755a8643751" category="sidebar">网络要求</block>
   <block id="f9d148736ba8ad65073e2ae083e6442a" category="sidebar">设置 AWS 传输网关</block>
-  <block id="c513e9976f1caabf9a057b8deda54b0e" category="sidebar">AWS C2S 入门</block>
   <block id="1649f10406b5e0e0054f2cb76197f63a" category="sidebar">开始使用 Microsoft Azure</block>
   <block id="97eaaff53e693fb413bacbae932f73ac" category="sidebar">使用密钥设置加密</block>
   <block id="34d4ba89a5a404f7068a211071e4b81a" category="sidebar">开始使用 Google Cloud</block>
@@ -2766,7 +2719,6 @@
   <block id="23b8cf63899cafd6a9d0b32fbdc5c6e8" category="list-text">选择"*保存"*以捕获设置。</block>
   <block id="5bfda0e2440a8346cbb089805c29d898" category="list-title">Cloud Volumes ONTAP 配置</block>
   <block id="89fe433ed203b193e97ffc51ade125be" category="paragraph">如果配置正确、Cloud Volumes ONTAP 将自动创建卷并启用卷加密。</block>
-  <block id="2f88a80d163d0a89ca5ecdf817af1f14" category="list-text">C2S环境不支持免费许可证。</block>
   <block id="5e31f4e44c9ec2b42878b12dff64c9fb" category="paragraph">可以使用命令行界面或ONTAP REST API启用Cloud KMS的密钥管理。</block>
   <block id="254f642527b45bc260048e30704edb39" category="section-title">Configuration</block>
   <block id="d8cc118193ca8f7de894de3aa3760c8b" category="inline-link-macro">创建对称GCP密钥环和密钥</block>
@@ -3110,11 +3062,9 @@
   <block id="0f0088348e85cdf82b3a00d88879bc4d" category="inline-link">查看Connector的Azure权限</block>
   <block id="75c41138bbd7704a1e0b806bef4b58ac" category="doc">为Cloud Volumes ONTAP 设置IAM角色</block>
   <block id="07561162983a030769cc8563b6143a06" category="inline-link-macro">了解如何在C2S中部署Cloud Volumes ONTAP</block>
-  <block id="f6fe0c003ae0bc360a2c1d722f423983" category="admonition">在AWS商用云服务环境中、需要提供您自己的IAM角色。 <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>。</block>
   <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">转到AWS IAM控制台。</block>
   <block id="222ddb2f355a49f64fb3858123f2b97b" category="open-title">标准区域</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="open-title">GovCloud (美国)地区</block>
-  <block id="a8416eae2db8c97eb943559351fab358" category="open-title">C2S环境</block>
   <block id="a640e21419d545eaa2be7040f35bcbde" category="paragraph">现在、您可以在创建新的Cloud Volumes ONTAP 工作环境时选择IAM角色。</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="list-title">更多信息</block>
   <block id="0eab25f343df3cb0d26a483c0c7e529f" category="inline-link">AWS文档：创建IAM策略</block>
@@ -3297,7 +3247,6 @@
   <block id="5d8d2c55116ea837270739e0c1ee4fb7" category="list-text">从左侧导航菜单中、选择*存储&gt;画布*。</block>
   <block id="0c29cb137ebcfb10c1b30edf702322ea" category="paragraph">BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。 <block ref="786d547ede2f0e723e26aaa12a2cb737" category="inline-link-macro-rx"></block>。</block>
   <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">从BlueXP创建连接器</block>
-  <block id="68de98d1358d2928dcaffc946aeaa266" category="inline-link">BlueXP对AWS权限的作用</block>
   <block id="ad4ac1c47a9ebdd6164879be3ae930d1" category="paragraph">BlueXP发送AWS请求以修改路由表。</block>
   <block id="6e2f613815698bbf49809d31c29a0006" category="summary">创建iSCSI卷时、BlueXP会自动为您创建LUN。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后，请使用 IQN 从主机连接到 LUN 。</block>
   <block id="4ea3aab4d949982c440f4df5e309a486" category="list-text">BlueXP的自动容量管理不适用于LUN。当BlueXP创建LUN时、它会禁用自动增长功能。</block>
@@ -3809,40 +3758,7 @@
   <block id="cc5f50b3903dc30a3a3545bb58fcdd14" category="paragraph">Cloud Volumes ONTAP 支持将S3作为横向扩展存储的选项。通过S3协议支持、您可以配置S3客户端对Storage VM (SVM)中存储分段中所含对象的访问权限。</block>
   <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="cell">9.12.1</block>
   <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">2022年12月8日</block>
-  <block id="2d0867b6a9603b07d840b96ca1528053" category="section-title">C2S中支持的版本</block>
-  <block id="d8c9328d84b7250ac992afdd5368aaa2" category="list-text">支持Cloud Volumes ONTAP 9.8</block>
-  <block id="44ea8a993710d0101dfe9031f76256f1" category="list-text">支持连接器3.9.4版</block>
-  <block id="8f5457d70cb41e409f56734c39e0d5d6" category="paragraph">Connector是在AWS中部署和管理Cloud Volumes ONTAP 所需的软件。您将从安装在 Connector 实例上的软件登录到 Cloud Manager 。C2S环境不支持适用于Cloud Manager的SaaS网站。</block>
-  <block id="dae07c7817c5b878613418fce2bc47a4" category="admonition">Cloud Manager最近已重命名为BlueXP、但我们仍在C2S中将其称为Cloud Manager、因为Connector 3.9.4版附带的用户界面仍称为Cloud Manager。</block>
-  <block id="953b8019e01e302cfda1407c42757ca9" category="paragraph">在 C2S 环境中， Cloud Manager 提供了以下功能：</block>
-  <block id="92c64f1847bb1326cce66cc7f4bc8454" category="list-text">Cloud Manager 不提供任何 NetApp 云服务。</block>
-  <block id="a11bc353b91c78f50a85b950845a4b38" category="list-text">从 Cloud Manager 自动升级软件</block>
-  <block id="7668ed26cf424d7f7440ce0f230438e3" category="list-text"><block ref="70354dfe51c75681a6ee1c0148ca26ba" category="inline-xref-macro-rx"></block></block>
-  <block id="3b53f9d6057054fc25b0889239745085" category="list-text"><block ref="438b9fbe00ba2f3369249568b2e0205d" category="inline-xref-macro-rx"></block></block>
-  <block id="2e0e99403b74be7a5455c5f8ff21a2ec" category="paragraph">在开始使用 Cloud Manager 部署 Cloud Volumes ONTAP 之前，您需要先创建 _Connector_ 。借助此连接器， Cloud Manager 可以管理公有云环境（包括 Cloud Volumes ONTAP ）中的资源和流程。</block>
-  <block id="26742afe0446e71796a9332243fb3983" category="paragraph">您将从安装在 Connector 实例上的软件登录到 Cloud Manager 。</block>
-  <block id="25975a6f2b2fb500b1c5ce430865daf2" category="list-text"><block ref="d6d32fe8e125af163f491889e868bcb1" category="inline-xref-macro-rx"></block></block>
-  <block id="40727b40295de6679a15e7ab918b6c93" category="section-title">准备AWS环境</block>
-  <block id="f45971f8804dbe27a85371847149f156" category="paragraph">要从 Cloud Manager 部署 Cloud Volumes ONTAP ，需要订阅 Marketplace 。</block>
-  <block id="b7a04099516f8430d91ecc6b9df3f486" category="paragraph">您必须使用 Cloud Manager 启动 Cloud Volumes ONTAP 实例。不得从 EC2 控制台启动 Cloud Volumes ONTAP 实例。</block>
-  <block id="74800ff1ec3d5552aaa473310f1b4c2c" category="paragraph">设置IAM策略和角色、为Connector和Cloud Volumes ONTAP 提供在AWS商用云服务环境中执行操作所需的权限。</block>
-  <block id="82d76c39afb12299fd89e2b035a2fc70" category="paragraph">在从 Cloud Manager 创建 Cloud Volumes ONTAP 工作环境时，您可以为 Cloud Volumes ONTAP 和 HA 调解器选择 IAM 角色。</block>
-  <block id="83de5a123d83fde5dcaaf6811cf06320" category="paragraph">创建 Cloud Volumes ONTAP 系统时，您需要为 Cloud Manager 提供 ARN 。</block>
   <block id="abe7689876592f7424a214b07792ca15" category="list-text">将Connector实例的IAM角色添加到CMK的关键用户列表中。</block>
-  <block id="ea80d9267d93b8f0dcd057ae999b94ab" category="paragraph">这为 Cloud Manager 提供了将 CMK 与 Cloud Volumes ONTAP 配合使用的权限。</block>
-  <block id="95b4a625010cf2cf69514209c19dbc3e" category="section-title">安装Connector并设置Cloud Manager</block>
-  <block id="4c06b45d24ad980552c52a9cbf857f23" category="paragraph">在 AWS 中启动 Cloud Volumes ONTAP 系统之前，您必须先从 AWS Marketplace 启动 Connector 实例，然后登录并设置 Cloud Manager 。</block>
-  <block id="0c7a137062facbdd9af5451dcc9caf1c" category="paragraph">您需要在设置过程中上传证书。Cloud Manager 在通过 HTTPS 向 AWS 发送请求时使用可信证书。</block>
-  <block id="c419f8d91e9428c13e4b489550591f42" category="list-text">转到 Cloud Manager 的 AWS 智能社区市场页面。</block>
-  <block id="2a74a4ca6ca91fb8d3c6b38fc9233a4f" category="list-text">从连接到 Connector 实例的主机设置 Cloud Manager ：</block>
-  <block id="2d354fadd521725ccc56833965bb4440" category="list-text">完成设置向导中的步骤以设置 Cloud Manager 。</block>
-  <block id="dd6fb2ba019c1dfb48ea66d8189f5b19" category="list-text">* 系统详细信息 * ：输入此 Cloud Manager 实例的名称并提供您的公司名称。</block>
-  <block id="f996b51d4b8d0dffa87f16768fa11b0d" category="list-text">* 创建用户 * ：创建用于管理 Cloud Manager 的管理员用户。</block>
-  <block id="9e9b668de9a168aa4348af261abcf3d8" category="section-title">从Cloud Manager启动Cloud Volumes ONTAP</block>
-  <block id="da7224d72b7c308843ae6ce07ceaa3d0" category="paragraph">您可以通过在 Cloud Manager 中创建新的工作环境在 AWS 商用云服务环境中启动 Cloud Volumes ONTAP 实例。</block>
-  <block id="8a7f23615316304155b79b66eb77b5b8" category="paragraph">Cloud Manager 将启动 Cloud Volumes ONTAP 实例。您可以跟踪时间链中的进度。</block>
-  <block id="579a953172073c3fe33dc907abd6b3f8" category="paragraph">Cloud Manager 创建的安全组包含 Cloud Manager 和 Cloud Volumes ONTAP 在云中成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。</block>
-  <block id="f4b34b24cc464b0154bd81cd6d906233" category="paragraph">为 Cloud Volumes ONTAP HA 调解器预定义的内部安全组包括以下规则。Cloud Manager 始终会创建此安全组。您无法选择使用自己的。</block>
   <block id="3f2a41d3e64efd3d137a5132f84eb8b6" category="paragraph">BlueXP为Cloud Volumes ONTAP 分配的LIF数量取决于您部署的是单节点系统还是HA对。LIF 是与物理端口关联的 IP 地址。SnapCenter 等管理工具需要 SVM 管理 LIF 。</block>
   <block id="236afd214a59ab065a50ccb9cbbbe4c2" category="cell">9.12.0</block>
   <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">2022年12月15日</block>
@@ -4444,7 +4360,6 @@
   <block id="d592a4e1d68c1047f1f5e39639bee6bf" category="paragraph">您可能还会注意到、BlueXP数字钱包会刷新每种包类型的已用容量、以反映您刚刚所做的更改。</block>
   <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="inline-link-macro">BlueXP层</block>
   <block id="fdc0e66a431a39bf7d68fad74c362d1a" category="paragraph">Cloud Volumes ONTAP 不支持BlueXP层服务。创建卷时、必须直接从BlueXP的标准视图设置将数据分层到对象存储。</block>
-  <block id="fd736cdd9cd06a871bed533b6e339d5c" category="summary">与标准AWS区域类似、您可以在AWS商用云服务(C2S)环境中使用BlueXP来部署Cloud Volumes ONTAP 、它可为您的云存储提供企业级功能。AWS C2S 是一个特定于美国的封闭区域智能社区；此页面上的说明仅适用于 AWS C2S 区域用户。</block>
   <block id="52c73bbae26b1c8362e849d7b7e0539f" category="paragraph">如果您计划对Cloud Volumes ONTAP 系统使用BlueXP备份和恢复、则节点的IAM角色必须包括以下第二个策略。</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link">BlueXP备份和恢复</block>
   <block id="334457e955e851dd9304247244593287" category="summary">在BlueXP电子钱包中管理基于节点的许可证、以确保每个Cloud Volumes ONTAP 系统都具有具有所需容量的有效许可证。</block>
@@ -4539,10 +4454,7 @@
   <block id="200bfa431a059f9cb12bdce777845a7e" category="admonition">此连接器还需要一个系统磁盘。<block ref="d20acabc118cd0226229fe484509d871" category="inline-link-rx"></block>。</block>
   <block id="f4e04685569a1b4c66fdec145eb96e7a" category="paragraph">如果您没有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="5b9d2e73755e0f28771296de88f8a39a" category="inline-link-rx"></block></block>
   <block id="3e15a93b8abafd714d90153ac66e4e82" category="paragraph">请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。<block ref="dfc982bbe2dfabd644ac809e4b468ae7" category="inline-link-rx"></block></block>
-  <block id="d842db7919b0a7e75351ef9dec4465b5" category="list-text"><block ref="d842db7919b0a7e75351ef9dec4465b5" category="inline-link-rx"></block></block>
-  <block id="8172903aaa4aa5ff677be28ec5ebf79e" category="list-text"><block ref="8172903aaa4aa5ff677be28ec5ebf79e" category="inline-link-rx"></block></block>
   <block id="687a1e66717978102d4e4948c08968d3" category="list-text"><block ref="687a1e66717978102d4e4948c08968d3" category="inline-link-rx"></block></block>
-  <block id="4735c8c27fe69930b85af76948dea535" category="list-text"><block ref="4735c8c27fe69930b85af76948dea535" category="inline-link-rx"></block></block>
   <block id="25e7b507c919c21847b291c84a88ba36" category="paragraph"><block ref="73e1a6a2075a5d292111b694a644abf3" category="inline-link-rx"></block>。</block>
   <block id="b2678f2b003e23f7f5f3a7cd8451a26b" category="paragraph">要更好地了解Essentials软件包显示的容量、您应熟悉充电的工作原理。<block ref="8d04d0643798fbb69d5260f477ea213c" category="inline-link-rx"></block>。</block>
   <block id="fa4ae0264bd8c2dfafbe1d03e4bc2b9a" category="list-text">如果要输入序列号，首先需要输入<block ref="c7616a3371ef10b7d4b9bba9548cea1f" category="inline-link-rx"></block>。这是有权访问序列号的 NetApp 支持站点帐户。</block>
@@ -4832,7 +4744,6 @@
   <block id="6c32dae7ba2780f8dc42d1813f66ea24" category="paragraph">与通过提供的文件扩展名保护分开<block ref="1f479b2258cad80f990e85fbf571e95d" category="inline-link-rx"></block>，ARP功能使用工作负载分析根据检测到的“异常活动”向用户发出潜在攻击警报。勒索软件保护设置和ARP功能均可结合使用来实现全面的勒索软件保护。</block>
   <block id="dfa314101a62671bea85bd2701b00194" category="paragraph">有关如何使用ONTAP系统管理器和命令行界面启用ARP的详细信息、请参见<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="4f87e49be20cab28b98c082c672f9032" category="paragraph">要了解有关ARP与Cloud Volumes ONTAP的更多信息、请参见<block ref="3ad484b0b391dd26474b87b6bc7f70b6" category="inline-link-rx"></block>。</block>
-  <block id="d1c5c359fc2e3c8fe0af6fd09605d616" category="paragraph">与标准 AWS 区域类似，您可以在中使用 Cloud Manager <block ref="25b8ce564d4ee42e840c162aa63df82a" category="inline-link-macro-rx"></block> 部署 Cloud Volumes ONTAP 的环境，为您的云存储提供企业级功能。AWS C2S 是一个特定于美国的封闭区域智能社区；此页面上的说明仅适用于 AWS C2S 区域用户。</block>
   <block id="0f35cbc7e00034a2864005fe2859c834" category="list-text">打开 Web 浏览器并输入<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block> 其中_ipaddress_是安装了连接器的Linux主机的IP地址。</block>
   <block id="265500dbd640f554b9f30de2ec515220" category="paragraph"><block ref="265500dbd640f554b9f30de2ec515220" category="inline-link-macro-rx"></block></block>
   <block id="beb8833b4eaacb3c1a782191786a543b" category="paragraph"><block ref="beb8833b4eaacb3c1a782191786a543b" category="inline-link-macro-rx"></block></block>
@@ -5238,4 +5149,103 @@
   <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">不再支持卷模板和标记</block>
   <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">您不能再使用模板创建卷、也不能编辑卷的标记。这些操作与BlueXP修复服务相关联、该服务不再可用。</block>
   <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">* 详细信息，保护和标记 * ：输入有关卷的基本详细信息并选择 Snapshot 策略。</block>
+  <block id="4acf56e531f894043e53d2da10087d5a" category="summary">与标准AWS区域类似、您可以在AWS机密云和Top机密云环境中使用BlueXP部署Cloud Volumes ONTAP、为云存储提供企业级功能。AWS机密云和顶级机密云区域是特定于美国的封闭区域智能社区；此页面上的说明仅适用于AWS机密云和Top机密云区域用户。</block>
+  <block id="ac2f9ab20179404cb2925b0bc93ed4f9" category="doc">在AWS机密云和顶级机密云区域部署Cloud Volumes ONTAP</block>
+  <block id="ff2c9914d275ee17c3f22e89e7ca1ef7" category="inline-link-macro">AWS机密云</block>
+  <block id="a864a931bf30f7ad758b78e4a2cb264c" category="inline-link-macro">AWS云的绝密</block>
+  <block id="89975f41f547e90460689ab0da3b0ba1" category="paragraph">与标准AWS区域类似、您可以在中使用BlueXP <block ref="2be032dbfb43d4ebf124ecec1e312c2a" category="inline-link-macro-rx"></block> 和中的 <block ref="9d779d36eb480c9dfb9170b409a86842" category="inline-link-macro-rx"></block> 部署Cloud Volumes ONTAP、它可为云存储提供企业级功能。AWS机密云和Top机密云是美国特定的封闭区域智能社区；此页面上的说明仅适用于AWS机密云和Top机密云区域用户。</block>
+  <block id="e115b84e252d542660fc126fe58ed0ec" category="paragraph">开始之前、请查看AWS机密云和Top机密云中支持的版本、并了解BlueXP中的私有模式。</block>
+  <block id="5b3446c0009be0998e01a76d231fcff5" category="list-text">在AWS机密云和Top机密云中查看以下受支持的版本：</block>
+  <block id="74db90edede50180728fc9345eaadd99" category="list-text">Cloud Volumes ONTAP 9.12.1 P2</block>
+  <block id="31cafad5b8aa05bf5a895f71d790bc31" category="list-text">连接器3.9.32版</block>
+  <block id="a64d8d20f8fb16ba08356b0b4d3b9d44" category="paragraph">Connector是在AWS中部署和管理Cloud Volumes ONTAP 所需的软件。您将从安装在Connector实例上的软件登录到BlueXP。AWS机密云和Top SecretCloud不支持适用于BlueXP的SaaS网站。</block>
+  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="list-text">了解私有模式</block>
+  <block id="33a6dc309f8669893b36d5c8be8b1a93" category="paragraph">在AWS机密云和Top机密云中、BlueXP在_private模式_下运行。在私有模式下、无法连接到BlueXP SaaS层。用户可从连接器(而不是SaaS层)提供的基于Web的控制台本地访问BlueXP。</block>
+  <block id="66f4b134b940ec20b17c336f1a486d4f" category="inline-link-macro">BlueXP私有部署模式</block>
+  <block id="97453fa6c7ef88b254426ae2b7265cda" category="paragraph">要详细了解私有模式的工作原理、请参阅 <block ref="e770f8e26a570903d4715f679ebc5203" category="inline-link-macro-rx"></block>。</block>
+  <block id="c03330e1363f9c589022ede209df8821" category="section-title">第1步：设置网络</block>
+  <block id="e7f011d8b0cdfad4e5a7cfc96be6f8a8" category="section-title">第2步：设置权限</block>
+  <block id="9e981cc504a541ebde2d49aa3db0a2e3" category="paragraph">设置IAM策略和角色、以便为连接器和Cloud Volumes ONTAP提供在AWS机密云或Top机密云中执行操作所需的权限。</block>
+  <block id="9739bd344f9c18df073749c3c1df6aba" category="list-text">对于HA对、是指Cloud Volumes ONTAP HA调解器实例(如果要部署HA对)</block>
+  <block id="f82577153680c1fa6270b7fc6215d770" category="admonition">您可以创建这些策略来支持AWS环境中的S3存储分段。在稍后创建分段时、请确保分段名称前加上<block ref="d3c58d24f0a570ff33a63f5f566d0628" prefix=" " category="inline-code"></block>。此要求适用场景适用于AWS机密云和顶级机密云区域。</block>
+  <block id="026951b63281b53e88087e2423613cad" category="open-title">秘密区域</block>
+  <block id="76187385115cd00f6a1ec1ff426ad7b5" category="open-title">顶级机密区域</block>
+  <block id="86d17edc0843864da1a1bf31c72eac37" category="paragraph">对于HA对、如果您计划部署Cloud Volumes ONTAP HA对、请为HA调解器创建一个策略。</block>
+  <block id="c9580a77eb59c5015b0ef8946bcb5d12" category="paragraph-title">创建角色：</block>
+  <block id="013f6a365dd7251733800b51147d7d3f" category="paragraph">与策略类似、您应为连接器设置一个IAM角色、并为Cloud Volumes ONTAP节点设置一个IAM角色。
+对于HA对：与策略类似、您应为连接器设置一个IAM角色、为Cloud Volumes ONTAP节点设置一个IAM角色、并为HA调解器设置一个IAM角色(如果要部署HA对)。</block>
+  <block id="88df62b4ee44c5332a3574ccacc70c5a" category="paragraph-title">选择角色：</block>
+  <block id="015fff9900f6912ac6d0f409e9c2a814" category="paragraph">启动 Connector 实例时，必须选择 Connector IAM 角色。从BlueXP创建Cloud Volumes ONTAP工作环境时、您可以为Cloud Volumes ONTAP选择IAM角色。
+对于HA对、您可以在通过BlueXP创建Cloud Volumes ONTAP工作环境时为Cloud Volumes ONTAP和HA调解器选择IAM角色。</block>
+  <block id="9c183620d1c9eacbfef610a7ef94d757" category="section-title">第3步：设置AWS KMS</block>
+  <block id="f8e47cd143bacefcea9f1e5d1ebf1c56" category="paragraph">如果要将Amazon加密与Cloud Volumes ONTAP结合使用、请确保满足AWS密钥管理服务(KMS)的要求。</block>
+  <block id="83057eeba50af289c3119322d79424e5" category="paragraph">这样、BlueXP就可以在Cloud Volumes ONTAP 中使用CMK。</block>
+  <block id="a5fe7e3483f053e12b2231ae2b54412f" category="section-title">第4步：安装Connector并设置BlueXP</block>
+  <block id="415249a36e91ea5cfa8d50f601591feb" category="paragraph">在开始使用BlueXP在AWS中部署Cloud Volumes ONTAP之前、您必须先安装和设置BlueXP连接器。借助此连接器、BlueXP可以管理公有 云环境(包括Cloud Volumes ONTAP)中的资源和流程。</block>
+  <block id="02e897722a0b384d3b56b5e53deadba3" category="admonition">对于AWS机密云区域、您应上传<block ref="5511b40ac2a175fa641063529fb1b992" prefix=" " category="inline-code"></block> 证书、对于Top SecretCloud、则为<block ref="52f8faa2c28592fc2d2739311ae97a65" prefix=" " category="inline-code"></block> 证书。请确保仅上传这些证书、而不上传整个证书链。证书链文件较大、上传可能会失败。如果您有其他证书、则可以稍后上传这些证书、如下一步所述。</block>
+  <block id="4f00f71b9f16d5b5de7af5cb24e11347" category="paragraph">您需要在设置过程中上传证书。在通过HTTPS向AWS发送请求时、BlueXP会使用可信证书。</block>
+  <block id="00e18132402ce28d7379ed3276cd9288" category="list-text">转到BlueXP的AWS智能社区市场页面。</block>
+  <block id="718e82374a85155addb83dd10b6381d5" category="list-text">您必须选择在设置权限时创建的IAM角色。</block>
+  <block id="e0352c069670409718cfa65aea1b8233" category="list-text">从连接到Connector实例的主机设置BlueXP：</block>
+  <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">选择*设置新BlueXP*并按照提示设置系统。</block>
+  <block id="9f390f684f634b575bf8d3a2e73f760c" category="list-text">*系统详细信息*：输入Connector的名称和公司名称。</block>
+  <block id="43601154a054554dd57207148a15b7b1" category="list-text">* 创建管理员用户 * ：为系统创建管理员用户。</block>
+  <block id="0e5308fba9cc92e9ff80d599c7e865ca" category="paragraph">此用户帐户在系统本地运行。无法通过BlueXP连接到可用的auth0服务。</block>
+  <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*Review *：查看详细信息，接受许可协议，然后选择*Set Up。</block>
+  <block id="f4fe2053fb7ab00a75447368a3ab6dad" category="section-title">第5步：(可选)安装专用模式证书</block>
+  <block id="66716c789ddc8e10990e69f6b800dc58" category="paragraph">对于AWS机密云和Top SecretCloud区域、此步骤是可选的、只有当您在上一步中安装的根证书之外还有其他证书时、才需要此步骤。</block>
+  <block id="7e436414246ece785080276f3043dfea" category="list-text">列出已安装的现有证书。</block>
+  <block id="4718b70b1dbaf6b078c92099e379cc0a" category="list-text">要收集occm容器Docker ID (标识名称为ds-occm-1)、请运行以下命令：</block>
+  <block id="badae88fedd20814943ab16c879328e6" category="list-text">要进入ocm容器、请运行以下命令：</block>
+  <block id="5447dc6b7cb1e7525a87084e81820f9a" category="list-text">要从"trust _store_password"环境变量收集密码、请运行以下命令：</block>
+  <block id="8b50472226eb7a734969811ab405596c" category="list-text">要列出信任存储库中安装的所有证书、请运行以下命令并使用上一步收集的密码：</block>
+  <block id="97698b8aa6c772e94d9ec494eb6f72b4" category="list-text">添加证书。</block>
+  <block id="36a5ad94e6017f2b50b764493ffdc59e" category="list-text">要收集ocm容器Docker ID (标识名称为ds-occm-1)、请运行以下命令：</block>
+  <block id="487cdce9d5f6c930100fc6446d6470c8" category="paragraph">将新证书文件保存在中。</block>
+  <block id="83c9a1d48a04fa894c5c7b89df84a9d2" category="list-text">要将证书添加到信任存储库、请运行以下命令并使用上一步中的密码：</block>
+  <block id="ab4456aff1bf31b66fb21e90e256a0bf" category="list-text">要检查是否已安装证书、请运行以下命令：</block>
+  <block id="4e86cd46bd73aa827e2da7b16e21fe5d" category="list-text">要退出ocm容器、请运行以下命令：</block>
+  <block id="9fa69c9ac94c5fab1d2c0a21de8d9da8" category="list-text">要重置ocm容器、请运行以下命令：</block>
+  <block id="93d9e7de76a42f0a43e0b5eeaf640aaf" category="section-title">第6步：向BlueXP电子钱包添加许可证</block>
+  <block id="c26b4fa2f47cbce737454bb196f89a62" category="paragraph">如果您从NetApp购买了许可证、则需要将其添加到BlueXP电子钱包中、以便在创建新的Cloud Volumes ONTAP系统时选择许可证。电子钱包会将这些许可证标识为未分配。</block>
+  <block id="26e4094b4003796af233df5b14d686cb" category="list-text">如果您还没有许可证文件、则需要手动从netapp.com上传许可证文件。</block>
+  <block id="b16c96ace145f01e62917fdfc00599aa" category="list-text">转至 <block ref="0114eb86702e0481795ffa5d3f0e1a9a" category="inline-link-macro-rx"></block> 并使用您的 NetApp 支持站点凭据登录。</block>
+  <block id="07bd692d65047332808d785de9489824" category="paragraph">BlueXP将许可证添加到电子钱包中。在将许可证与新的 Cloud Volumes ONTAP 系统关联之前，此许可证将被标识为未分配。之后、许可证将移至数字钱包中的BYOL选项卡。</block>
+  <block id="1bf62b39176a49951c08d094b8e7160b" category="section-title">第7步：从BlueXP启动Cloud Volumes ONTAP</block>
+  <block id="24c3a94f18d6502ce3729f5b298f8147" category="paragraph">您可以通过在BlueXP中创建新的工作环境、在AWS机密云和Top机密云中启动Cloud Volumes ONTAP实例。</block>
+  <block id="c20e7c4054e0ef9e6d2b4616525b419f" category="paragraph">对于HA对、需要使用密钥对才能向HA调解器启用基于密钥的SSH身份验证。</block>
+  <block id="54414aab34ed651199e33df9a54cd358" category="list-text">在*创建*下，选择Cloud Volumes ONTAP。</block>
+  <block id="de952c2de50e9ccc38d840faa3a01a2d" category="paragraph">对于HA：在*创建*下，选择Cloud Volumes ONTAP或Cloud Volumes ONTAP HA。</block>
+  <block id="3a9d310d3c7d575717795d5201c6eb82" category="admonition">在向导中进行选择时，请勿在*Services*下选择*Data Sense &amp; Compliance和*Backup to Cloud*。在*Preconfigured Packages*下，选择*Change Configuration* only，并确保未选择任何其他选项。AWS机密云和顶级机密云区域不支持预配置的软件包、如果选择此选项、您的部署将失败。</block>
+  <block id="e5a35e28b12a6a035ea6dae7ea81e74b" category="paragraph-title">有关在多个可用性区域中部署Cloud Volumes ONTAP HA的注意事项</block>
+  <block id="f03dcf451f901bf20125c132b9de9c4e" category="paragraph">完成HA对向导时、请注意以下事项。</block>
+  <block id="dc3b612dc8d3cd562dc1895e9abe009e" category="list-text">在多可用性区域(AZ)中部署Cloud Volumes ONTAP HA时、应配置传输网关。请参见 <block ref="8ed1c74f676e6267bda3930e176fcde5" category="inline-link-macro-rx"></block>。</block>
+  <block id="157b26b8f9e431133768c4410746dab0" category="list-text">请按如下所示部署此配置、因为在发布时、AWS Top机密云中仅提供了两个可用的配置：</block>
+  <block id="257255bfb66ac16ef18a6d55cdcb7b7a" category="paragraph-title">有关在单个节点和HA节点中部署Cloud Volumes ONTAP的注意事项</block>
+  <block id="ddc02d9ba0010a869da8ae08dfb2129d" category="section-title">第8步：安装用于数据分层的安全证书</block>
+  <block id="8e027cf59b4559eb1838d0f8d1942021" category="paragraph">要在AWS机密云和顶级机密云区域中启用数据分层、您需要手动安装安全证书。</block>
+  <block id="aa75c5800fcaf537c31bc596bbe5c5df" category="list-text">创建 S3 存储分段。</block>
+  <block id="262a65bcc023dc57405d7cefeef7ffa6" category="admonition">确保分段名称前加上<block ref="3d4d92057419ff716cce5acb01785244" prefix=" " category="inline-code"></block> 例如<block ref="802d67bdbe81a898f2b2d3258a0e2918" prefix=" " category="inline-code"></block>。</block>
+  <block id="ab1c6060f522fe4e9268956b2ece4fea" category="list-text">保留您在中安装的根证书<block ref="10f5dacfa6ac3fb3d44d134b3d8aa6b7" prefix=" " category="inline-code"></block> 方便。</block>
+  <block id="81df1240a5a0d61d4f271a7a16cb5665" category="list-text">复制中安装的根证书中的文本<block ref="10f5dacfa6ac3fb3d44d134b3d8aa6b7" prefix=" " category="inline-code"></block>。</block>
+  <block id="50ed41933c6de91a5e66cf3846284741" category="list-text">使用命令行界面安全地连接到Cloud Volumes ONTAP系统。</block>
+  <block id="ac1c1103df890000364175789deedc50" category="list-text">安装根证书。您可能需要按<block ref="331b3100a485d8cacff1d3df8e9b0c13" prefix=" " category="inline-code"></block> 多次按键：</block>
+  <block id="288c7317e7d4cdc9a1bbbfc8d5c0fdf9" category="list-text">出现提示时、输入完整的复制文本、包括和发件人<block ref="2e6e444f0b3a9bf6ecf548f7f96b07d8" prefix=" " category="inline-code"></block> to<block ref="5108b4f48c8cce016010ee651a887f04" prefix=" " category="inline-code"></block>。</block>
+  <block id="e892aacd69b0205a1e199c532dd982d5" category="list-text">保留一份CA签名数字证书的副本、以供将来参考。</block>
+  <block id="6d2c80c94e9000583af57f67d83a074a" category="list-text">保留CA名称和证书序列号。</block>
+  <block id="545c341f48cce4f4da97b8796161a847" category="list-text">为AWS机密云和顶级机密云区域配置对象存储：<block ref="254354a94e4e8df01fb67d707c14196b" prefix=" " category="inline-code"></block></block>
+  <block id="f65fbc511c567783b0b1e613356f35a7" category="list-text">运行此命令以配置对象存储。</block>
+  <block id="ecf379308cec5ab29db394ce4598de0a" category="admonition">所有亚马逊资源名称(ARN)均应后缀为<block ref="958e00f0df59941b894836780ff1b87b" prefix=" " category="inline-code"></block>、例如<block ref="2882f2417db32b0acd63a0279026e4d2" prefix=" " category="inline-code"></block>。例如、如果某个资源需要具有区域的ARN、则对于Top Secreting Cloud、请使用命名约定作为<block ref="0a00d2b4d6a45bd8dcfba73c394a6c2f" prefix=" " category="inline-code"></block> 。<block ref="a7ad445f04459bf490643e88ff3dc62c" prefix=" " category="inline-code"></block> 标志。对于AWS机密云、请使用<block ref="b0088da20a434ad4a82af219c6060e17" prefix=" " category="inline-code"></block>。</block>
+  <block id="0fa1ceff2d3029509f37c0908c04952b" category="list-text">验证是否已成功创建对象存储：<block ref="53ae63f862b62252df3847d17f227e2c" prefix=" " category="inline-code"></block></block>
+  <block id="af1f90a041d2ca889370b245fb6604cf" category="list-text">将对象存储附加到聚合。应对每个新聚合重复此操作：<block ref="cb01e4c0b63cc7176a787f4e75937016" prefix=" " category="inline-code"></block></block>
+  <block id="a9b34414733cf4871ed4d1f23b7438dd" category="inline-link">从BlueXP在AWS中创建连接器</block>
+  <block id="caf19a70c93137d87df4ede2dd06d267" category="list-text"><block ref="caf19a70c93137d87df4ede2dd06d267" category="inline-link-rx"></block></block>
+  <block id="e96bc5b1e40abf07ff070b96c65057db" category="inline-link">从 AWS Marketplace 创建 Connector</block>
+  <block id="4ce0d5011850342d0c6171e919048115" category="list-text"><block ref="4ce0d5011850342d0c6171e919048115" category="inline-link-rx"></block></block>
+  <block id="1fb392a56edc456b1bc3eddb57b0906b" category="inline-link">在内部安装和设置连接器</block>
+  <block id="510a18acc0e91814caa7b29fd0c6cf03" category="list-text"><block ref="510a18acc0e91814caa7b29fd0c6cf03" category="inline-link-rx"></block></block>
+  <block id="a1dc2e55a815bd7f430fab36f4c28784" category="inline-link">Connector 的 AWS 权限</block>
+  <block id="059ef6b8ce45a93c6445c0f41c224068" category="list-text"><block ref="059ef6b8ce45a93c6445c0f41c224068" category="inline-link-rx"></block></block>
+  <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">AWS机密云中需要提供您自己的IAM角色。 <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>。</block>
+  <block id="275e611a605380e34988066f6fa53eae" category="sidebar">在AWS机密区域部署Cloud Volumes ONTAP</block>
 </blocks>

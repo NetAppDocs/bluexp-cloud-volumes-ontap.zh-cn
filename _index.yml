@@ -8,6 +8,8 @@ indexpage:
       url: concept-overview-cvo.html
     - title: AWS 快速入门
       url: task-getting-started-aws.html
+    - title: AWS顶级机密/机密云区域快速入门
+      url: task-getting-started-aws-c2s.html
       flavor: aws
     - title: Azure 快速入门
       url: task-getting-started-azure.html

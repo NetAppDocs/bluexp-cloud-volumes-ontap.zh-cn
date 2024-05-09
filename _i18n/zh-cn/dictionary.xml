@@ -1914,13 +1914,6 @@
   <block id="7a216ec4d6977719ed1b40a4322bfd8f" category="section-title">许可证转换</block>
   <block id="7bd090ccc30738cd79592e7431dee17b" category="paragraph">如果要过渡到其他许可方法，您可以购买许可证，使用该许可证部署新的 Cloud Volumes ONTAP 系统，然后将数据复制到该新系统。</block>
   <block id="170d227d215fb560bb4c8ad4e345183a" category="section-title">最大系统数</block>
-  <block id="8e9d6d95264b6231f0a1d0ca22c087f7" category="summary">以下指南可帮助您开始在 Google Cloud 中使用 Cloud Volumes ONTAP ，以满足您的特定使用情形。</block>
-  <block id="f22e86b63856df3737d333499d0d8642" category="inline-link-macro">在 Google Cloud 中开始使用 Cloud Volumes ONTAP ：设置演练</block>
-  <block id="a480525c508abef033c6011b6b8ae5db" category="list-text"><block ref="a480525c508abef033c6011b6b8ae5db" category="inline-link-macro-rx"></block></block>
-  <block id="85536ede959e4a62b6eeb8fa7da21b71" category="inline-link-macro">将 ONTAP 内部数据复制到 NetApp Cloud Volumes ONTAP 以实现灾难恢复</block>
-  <block id="8b26f0918bd84f8f658268af9e2d60ac" category="list-text"><block ref="8b26f0918bd84f8f658268af9e2d60ac" category="inline-link-macro-rx"></block></block>
-  <block id="ebd1806e62b51cb0c1b6db8082e0666d" category="inline-link-macro">如何在 Google Cloud 上使用 Cloud Volumes ONTAP 部署 NetApp FlexCache</block>
-  <block id="dd8a20d5a7875f2be225fbdc1a4c18bf" category="list-text"><block ref="dd8a20d5a7875f2be225fbdc1a4c18bf" category="inline-link-macro-rx"></block></block>
   <block id="0b92442656d83f3067193055685902c8" category="list-text">内部负载平衡器</block>
   <block id="bed26a3b752abff1e6e50d64a46ef060" category="paragraph">一个负载平衡器用于集群管理，一个负载平衡器用于 Storage VM （ SVM ）管理，一个负载平衡器用于向节点 1 发送 NAS 流量，另一个负载平衡器用于向节点 2 发送 NAS 流量。</block>
   <block id="a3f8b70147487a4cbe0d1e707fb50ec9" category="paragraph">每个负载平衡器的设置如下：</block>
@@ -5248,4 +5241,5 @@
   <block id="059ef6b8ce45a93c6445c0f41c224068" category="list-text"><block ref="059ef6b8ce45a93c6445c0f41c224068" category="inline-link-rx"></block></block>
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">AWS机密云中需要提供您自己的IAM角色。 <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>。</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">在AWS机密区域部署Cloud Volumes ONTAP</block>
+  <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">AWS顶级机密/机密云区域快速入门</block>
 </blocks>

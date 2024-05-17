@@ -4909,8 +4909,6 @@
   <block id="44c305a704023f5d643a06ce08c03402" category="section-title">启用增强型网络连接</block>
   <block id="2aed0ca02213325feada0ee707489e81" category="inline-link-macro">如何在AWS Cloud Volumes ONTAP实例上启用SR-IOV或ENA等增强型网络</block>
   <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">要升级到Cloud Volumes ONTAP 9.8及更高版本、您必须在运行C4、M4或R4实例类型的集群上启用_enhanced networking _。要启用ENA、请参阅知识库文章 <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>。</block>
-  <block id="4b9b39edb3e09fa20d9a66c33e754c00" category="inline-link-macro">无法将实例类型从R4更改为R5、并出现磁盘数错误</block>
-  <block id="58cbae1f4fc410ea043517dc0196bed4" category="paragraph">如果无法从C4、M4或R4实例更改实例类型、请参见知识库文章 <block ref="ddbe8a0e687a77b95fcbe5dc93c2e464" category="inline-link-macro-rx"></block>。</block>
   <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Microsoft Azure文档</block>
   <block id="75640f19259f0f28da8136565db5cc22" category="admonition">要执行其他与NIC相关的任务、您可以在Azure中分配具有适当权限的网络贡献者角色或自定义角色。有关这些NIC相关权限的详细信息、请参见<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>。</block>
   <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">包括使用BlueXP备份和恢复的无限卷备份、但仅适用于使用专业版软件包的Cloud Volumes ONTAP系统。</block>
@@ -5242,4 +5240,6 @@
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">AWS机密云中需要提供您自己的IAM角色。 <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>。</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">在AWS机密区域部署Cloud Volumes ONTAP</block>
   <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">AWS顶级机密/机密云区域快速入门</block>
+  <block id="daa9928416a167d9b7399ff9cc7d8ca0" category="inline-link-macro">将AWS Xen CVO实例转换为Nitro (KVM)</block>
+  <block id="77c35fc79180e21cd19319ed21d08508" category="paragraph">如果无法从C4、M4或R4实例更改实例类型、请参见知识库文章 <block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>。</block>
 </blocks>

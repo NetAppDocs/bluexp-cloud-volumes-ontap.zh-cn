@@ -36,6 +36,20 @@ Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择
 
 
 
+=== 选择一个受支持的本地区域
+
+包括新加坡在内的某些AWS本地区域支持Cloud Volumes ONTAP。选择本地区域是可选的。
+
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["查看本地区域的完整列表"^]。
+必须先启用本地区域、然后才能在这些区域中创建和管理资源。
+
+link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["了解如何启用本地区域"^]。
+
+
+NOTE: Phoenix不是受支持的本地区域。
+
+
+
 == 选择受支持的实例
 
 Cloud Volumes ONTAP 支持多种实例类型，具体取决于您选择的许可证类型。

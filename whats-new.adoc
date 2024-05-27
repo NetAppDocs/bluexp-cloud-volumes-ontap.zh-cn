@@ -20,6 +20,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2024年5月17日
+
+
+
+=== Amazon Web Services Local Zones支持
+
+现在、Cloud Volumes ONTAP HA部署可支持AWS本地区域。AWS本地区域是一种基础架构部署、其中存储、计算、数据库和其他精选AWS服务位于靠近大城市和行业区域的位置。
+
+有关采用HA部署的AWS本地区域的详细信息、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWS本地区域"^]。
+
+
+
 == 2024年4月23日
 
 

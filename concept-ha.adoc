@@ -70,13 +70,13 @@ HA 配置可保持数据的高可用性，如下所示：
 
 == HA 部署模式
 
-您可以通过在多个可用性区域（ Azs ）或在单个 AZ 中部署 HA 配置来确保数据的高可用性。您应该查看有关每个配置的更多详细信息、以选择最适合您需求的配置。
+您可以通过跨多个可用性区域(AZ)或在单个可用性区域(AZ)中部署HA配置来确保数据的高可用性。您应该查看有关每个配置的更多详细信息、以选择最适合您需求的配置。
 
 
 
 === 多个可用性区域
 
-在多个可用性区域 (AZS) 中部署 HA 配置可确保在运行 Cloud Volumes ONTAP 节点的 AZ 或实例发生故障时数据的高可用性。您应该了解 NAS IP 地址如何影响数据访问和存储故障转移。
+在多可用性区域(AZ)中部署HA配置可确保在AZ或运行Cloud Volumes ONTAP节点的实例发生故障时数据的高可用性。您应该了解 NAS IP 地址如何影响数据访问和存储故障转移。
 
 
 
@@ -86,7 +86,7 @@ HA 配置可保持数据的高可用性，如下所示：
 
 如果无法设置传输网关，则 VPC 外部的 NAS 客户端可以使用专用 IP 地址。但是，这些 IP 地址是静态的，无法在节点之间进行故障转移。
 
-在跨多个可用性区域部署 HA 配置之前，应先检查浮动 IP 地址和路由表的要求。部署配置时，必须指定浮动 IP 地址。专用IP地址由BlueXP自动创建。
+在跨多个可用性区域部署HA配置之前、您应查看浮动IP地址和路由表的要求。部署配置时，必须指定浮动 IP 地址。专用IP地址由BlueXP自动创建。
 
 有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["适用于多个 AWS 中的 Cloud Volumes ONTAP HA 的 AWS 网络要求"^]。
 
@@ -121,9 +121,9 @@ image:diagram_takeover_giveback.png["在 Cloud Volumes ONTAP HA 对中显示存�
 
 
 
-=== 单个可用性区域
+=== 单一可用性区域
 
-如果运行 Cloud Volumes ONTAP 节点的实例出现故障、在单可用性区域 (AZ) 中部署 HA 配置可以确保数据的高可用性。所有数据均可从 VPC 外部本地访问。
+在单个可用性区域(AZ)中部署HA配置可以确保在运行Cloud Volumes ONTAP节点的实例发生故障时数据的高可用性。所有数据均可从 VPC 外部本地访问。
 
 
 NOTE: BlueXP会创建 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 分布放置组"^] 并启动该放置组中的两个 HA 节点。放置组通过将实例分散在不同的底层硬件上，降低同时发生故障的风险。此功能可从计算角度而不是从磁盘故障角度提高冗余。
@@ -148,6 +148,51 @@ image:diagram_single_az.png["概念映像，显示单个可用性区域中的 ON
 NOTE: 有关哪些特定主机配置支持 ALUA 的信息，请参见 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 以及适用于您的主机操作系统的《 Host Utilities 安装和设置指南》。
 
 对于 NAS 配置、如果发生故障、数据 IP 地址可以在 HA 节点之间迁移。这样可以确保客户端访问存储。
+
+
+
+=== AWS本地区域
+
+AWS本地区域是一种基础架构部署、其中存储、计算、数据库和其他精选AWS服务位于靠近大城市和行业区域的位置。借助AWS Local Zones、您可以将AWS服务拉近与您的距离、从而缩短工作负载的延迟并在本地维护数据库。
+
+您可以在AWS本地区域中部署单个AZ或多个AZ配置。
+
+
+
+==== AWS本地区域配置示例
+
+以下是示例配置：
+
+* 单个可用性区域：集群节点和调解器位于同一个本地区域中。
+* 多个可用性区域
+在多可用性分区配置中、有三个实例：两个节点和一个调解器。三个实例中有一个实例必须位于单独的分区中。您可以选择设置方式。
++
+以下是三个配置示例：
+
++
+** 每个集群节点位于不同的本地区域中、调解器位于公共可用性区域中。
+** 本地区域中的一个集群节点、本地区域中的调解器和可用性区域中的第二个集群节点。
+** 每个集群节点和调解器都位于不同的本地区域中。
+
+
+
+
+
+
+==== 支持的磁盘和实例类型
+
+唯一支持的磁盘类型为gp2。
+
+当前支持以下大小为x大 到4x大 的EC2实例类型系列：
+
+* M5
+* C5.
+* C5d.
+* R5
+* R5d.
+
+
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["有关本地区域中受支持的EC2实例类型的最新完整详细信息、请参见AWS"^]。
 
 
 

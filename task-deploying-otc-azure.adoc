@@ -143,7 +143,7 @@ TIP: 如果您正在使用的 Azure 帐户具有 https://docs.netapp.com/us-en/b
 
 NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补程序版本、则在创建工作环境时、BlueXP会将系统更新到该版本。例如、如果选择Cloud Volumes ONTAP 9.10.1和9.10.1 P4可用、则会发生更新。更新不会从一个版本更新到另一个版本，例如从 9.6 到 9.7 。
 
-. *订阅Azure Marketplace *：如果BlueXP无法启用Cloud Volumes ONTAP 的编程部署、请按照以下步骤操作。
+. *从Azure Marketplace订阅*：如果BlueXP无法实现Cloud Volumes ONTAP的编程部署、您将看到此页面。按照屏幕上列出的步骤进行操作。请参见 https://learn.microsoft.com/en-us/marketplace/programmatic-deploy-of-marketplace-products["以编程方式部署Marketplace产品"^] 有关详细信息 ...
 . * 底层存储资源 * ：选择初始聚合的设置：磁盘类型，每个磁盘的大小以及是否应启用到 Blob 存储的数据分层。
 +
 请注意以下事项：

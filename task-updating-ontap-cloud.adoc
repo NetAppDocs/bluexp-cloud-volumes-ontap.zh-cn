@@ -264,7 +264,7 @@ NOTE: 要访问BlueXP的计算机必须与Cloud Volumes ONTAP 建立网络连接
 
 .步骤
 . 在工作环境中、单击*聚合*选项卡。
-. 在聚合标题下、单击椭圆按钮、然后选择*查看聚合详细信息*。
+. 在聚合标题下、单击省略号按钮、然后选择*查看聚合详细信息*。
 +
 image:screenshots_aggregate_details_state.png["屏幕抓图：显示查看聚合信息时的状态字段。"]
 
@@ -375,7 +375,7 @@ NOTE: 默认情况下，预定义的 Cloud Volumes ONTAP 安全组允许出站 H
 ** `/opt/application/netapp/cloudmanager/ontap/images/`
 
 
-. 在BlueXP的工作环境中、单击*。 (椭面图标)*，然后单击*更新Cloud Volumes ONTAP *。
+. 在BlueXP的工作环境中、单击*。 (省略号图标)*，然后单击*更新Cloud Volumes ONTAP *。
 . 在“更新Cloud Volumes ONTAP 版本”页上，输入URL，然后单击*Change Image*。
 +
 如果您已将软件映像复制到上述路径中的 Connector ，则应输入以下 URL ：

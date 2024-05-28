@@ -954,9 +954,7 @@
   <block id="cf7f72fb2e3e5a9df104130ba81c194e" category="section-title">调解器</block>
   <block id="fa8a1c8a7fb2a9d0529dc6ce8d75f99e" category="paragraph">下面是有关 AWS 中调解器实例的一些关键详细信息：</block>
   <block id="1e4f0991fe8c17eeb30a08a567b6faeb" category="list-text">Instance type</block>
-  <block id="ec078029075995846064f8135ac001c7" category="list-text">T2-micro</block>
   <block id="2d4aef30a49a581a6ed89ce840054235" category="list-text">Disks</block>
-  <block id="2928ec952c28834c42708b6033983463" category="list-text">一个 EBS 磁性磁盘，大约为 8 GiB 。</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="list-text">操作系统</block>
   <block id="e49af72440176f7b22d853a9c2b29440" category="list-text">Debian 11</block>
   <block id="e57bd12603acfd3bc113dc88ee5c10d3" category="admonition">对于 Cloud Volumes ONTAP 9.10.0 及更早版本，在调解器上安装了 Debian 10 。</block>
@@ -1038,11 +1036,9 @@
   <block id="f1c1592588411002af340cbaedd6fc33" category="cell">777.</block>
   <block id="e5288c9c9df3485512af1ad66920a6f4" category="section-title">用于系统数据的内部磁盘</block>
   <block id="6fa32f5b70701d0a688b6541beb74a09" category="list-text">每个节点有三个磁盘用于启动，根和核心数据：</block>
-  <block id="0916ca1fe06d26f579d29ce41bba24aa" category="list-text">45 GiB IO1 磁盘，用于存储启动数据</block>
   <block id="98e2070bab7b3b5d7d8df93c31a0d604" category="list-text">140 GiB GP3 磁盘，用于存储根数据</block>
   <block id="465787191a1ad58255cf080d2465757a" category="list-text">540 GiB GP2 磁盘，用于存储核心数据</block>
   <block id="8cf431bb515ae46f1fb5484e8bb27744" category="list-text">每个引导磁盘和根磁盘一个 EBS 快照</block>
-  <block id="0d9e99df90b8b75f4e0d96d0d4445a8c" category="list-text">对于 HA 对，为调解器实例配置一个 EBS 卷，大约为 8 GiB</block>
   <block id="5170b265fcdfa9d59388a2d953d0277b" category="admonition">在 AWS 中， NVRAM 位于启动磁盘上。</block>
   <block id="5639612d2f12168c8a83a7d9f034340d" category="section-title">Azure （单节点）</block>
   <block id="a54ef3cb3eaed60873e506e03712f9b0" category="list-text">三个高级 SSD 磁盘：</block>
@@ -5282,4 +5278,9 @@
   <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Amazon Web Services Local Zones支持</block>
   <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">现在、Cloud Volumes ONTAP HA部署可支持AWS本地区域。AWS本地区域是一种基础架构部署、其中存储、计算、数据库和其他精选AWS服务位于靠近大城市和行业区域的位置。</block>
   <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">有关采用HA部署的AWS本地区域的详细信息、请参见 <block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>。</block>
+  <block id="d4d3c7dc9c12800024fafcb2bb41c04f" category="list-text">用于启动数据的47 GiB IO1磁盘</block>
+  <block id="f4be35522ac705cbe795ea064998a28b" category="list-text">对于HA对、调解器实例需要使用两个st1 EBS卷(大约为8 GiB和4 GiB)、每个节点还需要一个140 GiB GP3磁盘、用于包含另一节点的根数据副本。</block>
+  <block id="10e3d4119b538d4a3b1943da285229fc" category="admonition">在某些分区中、可用的EBS磁盘类型只能是gp2。</block>
+  <block id="0c14d315376234aa666bf4213aa88aec" category="list-text">T3-micro</block>
+  <block id="5dde3a7c362c6b03a35cf3c0b3374d14" category="list-text">两个st1磁盘、分别为8 GiB和4 GiB</block>
 </blocks>

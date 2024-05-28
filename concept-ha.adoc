@@ -32,8 +32,8 @@ Cloud Volumes ONTAP High Availability （ HA ）配置提供无中断操作和�
 
 下面是有关 AWS 中调解器实例的一些关键详细信息：
 
-Instance type:: T2-micro
-Disks:: 一个 EBS 磁性磁盘，大约为 8 GiB 。
+Instance type:: T3-micro
+Disks:: 两个st1磁盘、分别为8 GiB和4 GiB
 操作系统:: Debian 11
 +
 --

@@ -5273,7 +5273,6 @@
   <block id="6d79fc3df77a055abb0043c41477add1" category="paragraph">某些AWS本地区域可用。</block>
   <block id="b40c89ea76edb69b0a84d7a6a1be7455" category="inline-link-macro">AWS教程"开始使用AWS本地区域部署低延迟应用程序</block>
   <block id="f8945f9c0b29d6212c5c9654ff1b7ed3" category="paragraph">在使用AWS本地区域之前、您必须启用本地区域并在AWS帐户的本地区域中创建子网。按照中的*选择加入AWS本地区域*和*将Amazon VPC扩展到本地区域*步骤进行操作 <block ref="08374900627773b5f0e169d9824fde8a" category="inline-link-macro-rx"></block>。</block>
-  <block id="c0d8b980523f619bb9dff8ef93a968c9" category="paragraph">如果您运行的是Connector 3.9.36或更低版本、则需要将以下权限添加到AWS EC2控制台中的AWS Connector角色：</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024年5月17日</block>
   <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Amazon Web Services Local Zones支持</block>
   <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">现在、Cloud Volumes ONTAP HA部署可支持AWS本地区域。AWS本地区域是一种基础架构部署、其中存储、计算、数据库和其他精选AWS服务位于靠近大城市和行业区域的位置。</block>
@@ -5283,4 +5282,6 @@
   <block id="10e3d4119b538d4a3b1943da285229fc" category="admonition">在某些分区中、可用的EBS磁盘类型只能是gp2。</block>
   <block id="0c14d315376234aa666bf4213aa88aec" category="list-text">T3-micro</block>
   <block id="5dde3a7c362c6b03a35cf3c0b3374d14" category="list-text">两个st1磁盘、分别为8 GiB和4 GiB</block>
+  <block id="d3f932730561572a0dc4f8911dc7b758" category="paragraph">如果您运行的是Connector 3.9.36或更低版本、则需要将以下权限添加到AWS EC2控制台中的AWS Connector角色：</block>
+  <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">在标准模式下使用BlueXP时、支持AWS本地区域。目前、在受限模式或专用模式下使用BlueXP时、不支持AWS本地区域。</block>
 </blocks>

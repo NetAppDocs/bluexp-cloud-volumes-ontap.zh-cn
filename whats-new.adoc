@@ -28,6 +28,9 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 现在、Cloud Volumes ONTAP HA部署可支持AWS本地区域。AWS本地区域是一种基础架构部署、其中存储、计算、数据库和其他精选AWS服务位于靠近大城市和行业区域的位置。
 
+
+NOTE: 在标准模式下使用BlueXP时、支持AWS本地区域。目前、在受限模式或专用模式下使用BlueXP时、不支持AWS本地区域。
+
 有关采用HA部署的AWS本地区域的详细信息、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWS本地区域"^]。
 
 

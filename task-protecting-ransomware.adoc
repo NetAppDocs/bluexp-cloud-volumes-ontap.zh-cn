@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-protecting-ransomware.html 
-keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks, arp, autonomous, monitor, alert, attacks 
+keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks, arp, autonomous, monitor, alert, attacks, Cloud Volumes ONTAP 
 summary: 勒索软件攻击可能会耗费业务时间，资源和声誉。借助BlueXP、您可以实施NetApp解决方案 for勒索软件、它可以提供有效的工具来实现可见性、检测和补救。 
 ---
 = 提高防范勒索软件的能力

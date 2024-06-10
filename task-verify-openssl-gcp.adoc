@@ -22,7 +22,7 @@ NOTE: 用于验证映像的OpenSSL命令与Linux、Mac OS和Windows计算机兼�
 .步骤
 . 使用OpenSSL验证证书。
 +
-.单击以显示脚本
+.单击以显示
 [%collapsible]
 ====
 [listing]
@@ -133,7 +133,7 @@ Certificate-GCP-CVO-20230119-0XXXXX.pem: OK
 . 使用OpenSSL从证书中提取公共密钥。
 . 使用提取的公共密钥对签名进行解密、并验证下载的disk.raw文件的内容。
 +
-.单击以显示脚本
+.单击以显示
 [%collapsible]
 ====
 [listing]

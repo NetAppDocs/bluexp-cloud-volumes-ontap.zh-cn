@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: task-file-verification-mac.html 
+keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, Mac OS 
+summary: 在Mac OS上、通过Cloud Volumes ONTAP映像摘要文件工具验证导出的vHD文件签名 
+---
+= Mac OS上的文件签名验证
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以按照以下步骤验证已导出的Mac OS的vHD文件签名。
+
+.步骤
+. 从下载Azure Image Digest文件 https://mysupport.netapp.com/site/["NetApp 支持站点"^] 并提取摘要文件(.sig)、公共密钥证书文件(.pem)和链证书文件(.pem)。
++
+请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["下载Azure映像摘要文件"^] 有关详细信息 ...
+
+. 验证信任链。
++
+[listing]
+----
+% openssl verify -CAfile Certificate-Chain-9.15.0P1_azure.pem Certificate-9.15.0P1_azure.pem
+Certificate-9.15.0P1_azure.pem: OK
+----
+. 删除前1 MB (1048576字节)和后512字节的vHD文件。
++
+如果使用"tail"、则选项"-c +K"输出以K有权 字节开头的字节
+指定文件的。因此、1048交由"尾部-c"处理。大约需要13米
+以便在Mac OS上完成尾部命令。
+
++
+[listing]
+----
+% tail -c +1048577 ./9150.01000024.05090105.vhd > ./sign.tmp.tail
+% head -c -512 ./sign.tmp.tail > sign.tmp
+% rm ./sign.tmp.tail
+----
+. 使用opensl从证书中提取公共密钥并验证条带化
+带有签名文件和公共密钥的file(sign.tmp)。
++
+如果输入文件通过验证、则该命令将显示"Verification Ok"(验证正常)。
+否则、将显示"Verification Failure"(验证失败)。
+
++
+[listing]
+----
+% openssl x509 -pubkey -noout -in ./Certificate-9.15.0P1_azure.pem > ./Code-Sign-Cert-Public-key.pub
+
+% openssl dgst -verify Code-Sign-Cert-Public-key.pub -keyform PEM -sha256 -signature digest.sig -binary ./sign.tmp
+Verified OK
+
+% openssl dgst -verify Code-Sign-Cert-Public-key.pub -keyform PEM -sha256 -signature digest.sig -binary ./another_file_from_nowhere.tmp
+Verification Failure
+----
+. 清理工作空间。
++
+[listing]
+----
+% rm ./9150.01000024.05090105.vhd ./sign.tmp
+% rm *.sig *.pub *.pem
+----
+

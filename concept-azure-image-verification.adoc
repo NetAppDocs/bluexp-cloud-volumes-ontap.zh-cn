@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: concept-azure-image-verification.html 
+keywords: Azure, image, VHD, image signature file, 
+summary: 验证Azure HD映像文件签名文件。 
+---
+= Azure映像验证概述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure映像验证符合增强的NetApp安全要求。虽然验证映像文件是一个简单的过程、但Azure映像签名验证确实需要对众所周知的Azure HD映像文件进行特殊处理、因为Azure Marketplace会进行更改。
+
+
+NOTE: Cloud Volumes ONTAP软件9.12.09或更高版本支持Azure映像验证。
+
+
+
+== Azure对已发布的VHD文件的更改
+
+Azure会修改前1 MB (1048576字节)和后512字节的vHD文件。NetApp映像签名会跳过前导1 MB和结尾512字节、并对剩余的HD映像部分进行签名。
+
+image:screenshot_azure_vhd_10gb.png["显示Azure对10 GB的VHD文件的交替的图像"]
+
+例如、上图显示了一个大小为10 GB的vHD文件。但是、NetApp签名部分会标记为绿色、大小为10 GB - 1 MB - 512 B。

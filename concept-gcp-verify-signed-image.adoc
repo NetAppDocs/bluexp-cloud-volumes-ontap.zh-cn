@@ -28,7 +28,7 @@ summary: 通过Cloud Volumes ONTAP 映像摘要文件工具验证导出的Google
 ** 包含公共密钥的证书(.pem)
 ** 证书链(.pem)
 +
-image:screenshot_cloud_volumes_ontap_tar.gz.png["显示包含摘要文件tar.gz下载内容的NSS页面的图像"]
+image::screenshot_cloud_volumes_ontap_tar.gz.png[屏幕截图Cloud Volumes ONTAP tar.gz]
 
 
 
@@ -40,7 +40,7 @@ image:screenshot_cloud_volumes_ontap_tar.gz.png["显示包含摘要文件tar.gz�
 ** 创建已下载disk.raw文件的摘要
 ** 比较两个摘要文件以进行验证
 +
-image:graphic_azure_check_signature.png["显示映像签名验证过程的映像"]
+image::graphic_azure_check_signature.png[图形蓝色检查签名]
 
 
 

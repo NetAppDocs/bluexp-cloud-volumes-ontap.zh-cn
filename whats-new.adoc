@@ -20,6 +20,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2024年6月10日
+
+
+
+=== Cloud Volumes ONTAP 9.12.1.
+
+BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.09。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+
+
+
 == 2024年5月17日
 
 
@@ -149,6 +161,8 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-config
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1。
 
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+
 
 
 === 300 TiB FlexVol卷最大限制
@@ -274,7 +288,7 @@ Azure中的以下地区现在支持在Cloud Volumes ONTAP 9.12.1 GA及更高版�
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.0正式发布版。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9140-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 
@@ -341,7 +355,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.1正式发布版。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9131-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 
@@ -377,7 +391,7 @@ Cloud Volumes ONTAP现在支持自动防兰软件保护(ARP)。Cloud Volumes ONT
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.1。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9131-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 
@@ -525,7 +539,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volume
 
 现在、BlueXP可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.0。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9130-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 
@@ -638,7 +652,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9120-relnotes["了解此版本
 
 现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.12.1、其中包括对新功能的支持以及其他云提供商区域的支持。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9121-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]
 
 
 

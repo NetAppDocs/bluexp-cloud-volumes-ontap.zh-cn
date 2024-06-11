@@ -4436,7 +4436,6 @@
   <block id="20bdc8e898822d36cabdfe4a9638e121" category="paragraph">有关详细信息，请参见 <block ref="a8781c6a9ecdb41d7e575ae3ee248743" category="inline-link-macro-rx"></block>。</block>
   <block id="b47d0e32ffe2734848d420601bb90cd1" category="paragraph">有关详细信息，请参见 <block ref="a00289b5f740e60f77871e1b98f3406f" category="inline-link-macro-rx"></block>。</block>
   <block id="be9422df375517187d0426d4361fafa6" category="paragraph">连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需权限包括在中<block ref="24390b04eaeaec89ce5246eaa294abc3" category="inline-link-rx"></block>。</block>
-  <block id="88e2c301da80f343b1583809c63a969b" category="paragraph"><block ref="88e2c301da80f343b1583809c63a969b" category="inline-link-rx"></block></block>
   <block id="af13749595f5960a363d1c58fc759656" category="paragraph"><block ref="4610c02b1fca3398eed82ad29d834f6a" category="inline-link-macro-rx"></block>。</block>
   <block id="fef38ae672e04cfca804a3528b0c02b9" category="paragraph"><block ref="ae94ab44d9cabcaf642548c08d913cf9" category="inline-link-rx"></block>。</block>
   <block id="78b9037265070d084c1d8bcd663811e7" category="paragraph"><block ref="78b9037265070d084c1d8bcd663811e7" category="inline-link-rx"></block></block>
@@ -4486,7 +4485,6 @@
   <block id="078d5a2ce174d1db14eba9ab521ae2a0" category="paragraph"><block ref="078d5a2ce174d1db14eba9ab521ae2a0" category="inline-link-macro-rx"></block></block>
   <block id="cf796cb5656f4bf0200ec02ab1ee4385" category="paragraph"><block ref="cf97c7b4bc867e067ebd7fa85f6363db" category="inline-link-rx"></block>。</block>
   <block id="7ddfab2c1a83893ebd448c6696f616f4" category="list-text"><block ref="7ddfab2c1a83893ebd448c6696f616f4" category="inline-link-rx"></block></block>
-  <block id="c90756fe60d5b7e957a6726a33ac7a77" category="list-text"><block ref="c90756fe60d5b7e957a6726a33ac7a77" category="inline-link-rx"></block></block>
   <block id="94fe554eb0f60c68e4d46024baeef975" category="list-text"><block ref="94fe554eb0f60c68e4d46024baeef975" category="inline-link-rx"></block></block>
   <block id="a96ce09651955c969aae2a95cedce494" category="paragraph">有关如何配置放置组创建设置的详细信息、请参见 <block ref="d5195567ec527b48fac366d859b25db5" category="inline-link-macro-rx"></block>。</block>
   <block id="68d78772b0c7f6d7e44117814f34d8f0" category="paragraph"><block ref="68d78772b0c7f6d7e44117814f34d8f0" category="inline-link-macro-rx"></block></block>
@@ -5051,7 +5049,6 @@
   <block id="1582ce9c3a0b0079717e0b0c6edf2347" category="section-title">Amazon Instant Metadata"服务v2支持</block>
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">在AWS中、Cloud Volumes ONTAP调解器和连接器现在支持对所有功能使用Amazon即时元数据服务v2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">用于管理现有连接器的BlueXP设置和管理文档</block>
-  <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见 <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>。</block>
   <block id="4954156ba208adf3ff1ee232d2f1d15f" category="list-text">在BlueXP控制台的右上角，单击设置图标，然后选择*BlueXP Cloud Volumes ONTAP设置*。</block>
   <block id="6f0bb9f0803011314813e6aad3d926bf" category="list-text">在BlueXP控制台的右上角，单击*设置*图标，然后选择* Cloud Volumes ONTAP设置*。</block>
   <block id="d4b0cdcc1cd5c09a803de195e4f82296" category="paragraph">要修改Cloud Volumes ONTAP设置、需要帐户管理员权限。</block>
@@ -5399,4 +5396,7 @@
   <block id="ea676e4072617197b2e26d0a11c13554" category="sidebar">Linux文件签名验证</block>
   <block id="088e8318708fce80162f63284a86929f" category="sidebar">Mac OS文件签名验证</block>
   <block id="0f68b904e33d9ac04605aecc958bcf52" category="sidebar">追加信息</block>
+  <block id="c803b37d9c2a34c73d0b86de8cae9ac8" category="paragraph"><block ref="c803b37d9c2a34c73d0b86de8cae9ac8" category="inline-link-rx"></block></block>
+  <block id="bbe2b5062d2c900ca465f9eb12592a92" category="paragraph">如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见<block ref="a1765820625d1912b35ab79a3305fdea" category="inline-link-rx"></block>。</block>
+  <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
 </blocks>

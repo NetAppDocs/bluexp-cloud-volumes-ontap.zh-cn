@@ -109,7 +109,7 @@ link:task-connecting-to-otc.html["了解如何通过SSH连接到Cloud Volumes ON
 . 如果状态仍为FAILED、请验证Cloud Volumes ONTAP 与连接器之间是否通过端口3128建立连接。
 . 如果在验证是否存在连接后状态ID仍然失败、请通过SSH连接到连接器。
 +
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["了解有关连接到Linux VM for the Connector的更多信息"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#connect-to-the-linux-vm["了解有关连接到Linux VM for the Connector的更多信息"^]
 
 . 转至`/opt/application/netapp/cloudmanager/docker_occm/data/`
 . 打开代理配置文件`squid.conf`

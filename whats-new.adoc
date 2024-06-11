@@ -89,7 +89,7 @@ NOTE: 在标准模式下使用BlueXP时、支持AWS本地区域。目前、在�
 
 在AWS中、Cloud Volumes ONTAP调解器和连接器现在支持对所有功能使用Amazon即时元数据服务v2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。
 
-如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["用于管理现有连接器的BlueXP设置和管理文档"^]。
+如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["用于管理现有连接器的BlueXP设置和管理文档"^]。
 
 
 
@@ -566,7 +566,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes
 现在、与Internet完全隔离的任何云环境均支持Cloud Volumes ONTAP。这些环境仅支持基于节点的许可(BYOL)。不支持基于容量的许可。要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将BYOL许可证添加到BlueXP数字钱包中、然后部署Cloud Volumes ONTAP。
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["将连接器安装在无法访问Internet的位置"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["访问Connector上的BlueXP控制台"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["访问Connector上的BlueXP控制台"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["添加未分配的许可证"^]
 
 

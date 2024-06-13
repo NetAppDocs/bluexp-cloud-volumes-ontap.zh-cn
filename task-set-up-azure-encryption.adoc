@@ -24,8 +24,8 @@ Cloud Volumes ONTAP 数据在 Azure 中使用自动加密 https://azure.microsof
 
 如果要在 Cloud Volumes ONTAP 中使用客户管理的密钥，则需要完成以下步骤：
 
-. 从 Azure 创建密钥存储，然后在该存储中生成密钥
-. 在BlueXP中、使用API创建使用密钥的Cloud Volumes ONTAP 工作环境
+. 从 Azure 创建密钥存储，然后在该存储中生成密钥。
+. 在BlueXP中、使用API创建使用密钥的Cloud Volumes ONTAP 工作环境。
 
 
 
@@ -144,7 +144,11 @@ Azure HA具有多个可用性区域、其中包含共享托管磁盘
 +
 *** * 软删除 * （默认情况下，此选项处于启用状态，但必须禁用 _not_ ）
 *** * 清除保护 *
-*** *用于卷加密的Azure磁盘加密*(适用于多个分区中的单节点系统或HA对)
+*** *用于卷加密的Azure磁盘加密*(适用于单节点系统、多个区域中的HA对以及HA单AZ部署)
++
+
+NOTE: Azure客户管理的加密密钥的使用取决于是否为密钥存储启用了Azure磁盘加密。
+
 
 
 ** 如果创建了用户分配的受管身份、则应启用以下选项：

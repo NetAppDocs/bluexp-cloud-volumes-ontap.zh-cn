@@ -54,7 +54,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azur
 
 对 Cloud Volumes ONTAP 系统进行规模估算有助于满足性能和容量要求。在选择虚拟机类型，磁盘类型和磁盘大小时，您应注意几个要点：
 
-虚拟机类型:: 在中查看支持的虚拟机类型 http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 然后查看有关每个受支持 VM 类型的详细信息。请注意，每种 VM 类型都支持特定数量的数据磁盘。
+虚拟机类型:: 在中查看支持的虚拟机类型 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 然后查看有关每个受支持 VM 类型的详细信息。请注意，每种 VM 类型都支持特定数量的数据磁盘。
 +
 --
 * https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Azure 文档：通用虚拟机大小"^]

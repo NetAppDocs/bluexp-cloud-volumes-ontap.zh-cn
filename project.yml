@@ -194,6 +194,8 @@ sidebar:
         url: "/task-google-key-manager.html"
       - title: 改进勒索软件保护
         url: "/task-protecting-ransomware.html"
+      - title: 为WORM存储创建防篡改Snapshot副本
+        url: "/reference-worm-snaplock.html"
     - title: 系统管理
       entries:
       - title: 升级 Cloud Volumes ONTAP

@@ -4927,7 +4927,6 @@
   <block id="524a897e665c757be360f9ceaca6b0a5" category="list-text">瑞士北部</block>
   <block id="d5daca31a462e138266141f6d01ca814" category="list-text">南非北部</block>
   <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">阿拉伯联合酋长国北部</block>
-  <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">中国北部3.</block>
   <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">有关所有地区的列表、请参见<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
   <block id="cfa3976fbec6c6f7dfd434e6d66eb83a" category="list-text">9.14.1 RC1.</block>
   <block id="a037be7aafc2f071c4517e8f2c6e58e9" category="section-title">2023年12月6日</block>
@@ -5400,4 +5399,29 @@
   <block id="4ac58369201dcb717d1d1d37ee990c1c" category="list-text"><block ref="4ac58369201dcb717d1d1d37ee990c1c" category="inline-link-rx"></block></block>
   <block id="dc538d1e88cb00b045ab5c768441ff92" category="inline-link">启动Digital Advisor</block>
   <block id="c0b168a4d72d74292c8b4f5299b9541e" category="list-text"><block ref="c0b168a4d72d74292c8b4f5299b9541e" category="inline-link-rx"></block></block>
+  <block id="df7f6d445a08bcc38d3870349fd9102e" category="inline-link-macro">为WORM存储创建防篡改Snapshot副本</block>
+  <block id="94e8787c12810b52b1dafd18f754c4a3" category="list-text"><block ref="94e8787c12810b52b1dafd18f754c4a3" category="inline-link-macro-rx"></block></block>
+  <block id="e77931c1eab4b02e332e8adcfabae636" category="summary">您可以在Cloud Volumes ONTAP系统上为一次写入、多次读取(Write On一次 读取、Read M众多、WORM)文件创建防篡改Snapshot副本、并在特定保留期限内保留未修改的快照。</block>
+  <block id="6e6590dbc5a26f05df18072791d9b8ef" category="paragraph">您可以在Cloud Volumes ONTAP系统上为一次写入、多次读取(Write On一次 读取、Read M众多、WORM)文件创建防篡改Snapshot副本、并在特定保留期限内保留未修改的快照。此功能由SnapLock技术提供支持、可提供额外的数据保护和合规性层。</block>
+  <block id="1cdc86424105b619c0cd794f3e3e1bb7" category="inline-link">配置 SnapLock</block>
+  <block id="d088e424d5a800a3cb54bc96fb0a9c73" category="paragraph">确保用于创建Snapshot副本的卷是SnapLock卷。有关在卷上启用SnapLock保护的信息，请参见<block ref="470bf72b50c89f315aab21d3052967c7" category="inline-link-rx"></block>。</block>
+  <block id="13fcde979e424d1a2afce52cb95b218a" category="inline-link">管理本地 Snapshot 副本概述</block>
+  <block id="ee79fd5aa5578bbab6916cd20d44a9c9" category="list-text">从SnapLock卷创建Snapshot副本。有关使用命令行界面或System Manager创建Snapshot副本的信息，请参阅<block ref="ee5fb8999e3924754f251f2ee21d7022" category="inline-link-rx"></block>。</block>
+  <block id="0a5ed9372feb916f9a88f937e9589fd0" category="paragraph">Snapshot副本会继承卷的WORM属性、从而使其不受篡改。底层SnapLock技术可确保在指定保留期限结束之前、快照不会被编辑和删除。</block>
+  <block id="72400cb7d5b84ae782642ca107c294fc" category="inline-link">设置保留时间</block>
+  <block id="36be19b900f54f5ac76441b806662cbc" category="list-text">如果需要编辑这些快照、您可以修改保留期限。有关信息，请参见<block ref="d77f965b297f4a355ed017017c294a22" category="inline-link-rx"></block>。</block>
+  <block id="1e130656f520fa6c2ea0d619d4efcc6b" category="admonition">即使Snapshot副本在特定保留期限内受到保护、集群管理员也可以删除源卷、因为Cloud Volumes ONTAP中的WORM存储在"可信存储管理员"模式下运行。此外、值得信赖的云管理员可以通过在云存储资源上运行来删除WORM数据。</block>
+  <block id="459e9ae782f83a2cbafe2a1b4b586f00" category="section-title">在源站加密后使用FlexCache</block>
+  <block id="64c813604a577df1cdc73d1151096659" category="paragraph">在初始卷已加密的Cloud Volumes ONTAP系统上配置FlexCache时、需要执行其他步骤、以确保FlexCache卷可以正确访问和缓存加密数据。</block>
+  <block id="d60b485e85b0e4607a82dd03442b21fa" category="list-text">*加密设置*：确保源卷已完全加密且正常运行。对于Cloud Volumes ONTAP系统、这涉及到与云专用密钥管理服务集成。</block>
+  <block id="99640d6025bf455243d3f387232dd986" category="paragraph">对于AWS、这通常意味着使用AWS密钥管理服务(Key Management Service、KMS)。有关信息，请参见 <block ref="6711acfd53e4de01e06335a0cfc766aa" category="inline-link-macro-rx"></block>。</block>
+  <block id="8a50a29d381983583d14487214a67fe7" category="paragraph">对于Azure、您需要为NetApp卷加密(NVE)设置Azure密钥存储。有关信息，请参见 <block ref="b3cdfbdda37551364c377e96fb97e7a0" category="inline-link-macro-rx"></block>。</block>
+  <block id="2f3839adaa606a1f97c79876fe7c1c58" category="inline-link-macro">使用Google的云密钥管理服务管理密钥</block>
+  <block id="ee361a3f988700740b3fadeca2bdd1e0" category="paragraph">对于Google Cloud、它是Google Cloud密钥管理服务。有关信息，请参见 <block ref="9a0de177eaebd309cc4f26a09b5d5013" category="inline-link-macro-rx"></block>。</block>
+  <block id="e29e14dbb5385db3b2de688e4fbe1a6b" category="list-text">*密钥管理服务*：创建FlexCache卷之前，请验证是否已在Cloud Volumes ONTAP系统上正确配置密钥管理服务。此配置对于FlexCache卷对初始卷中的数据进行解密至关重要。</block>
+  <block id="5d6ac79246155b5f33cacd0077c2172a" category="list-text">*许可*：确认Cloud Volumes ONTAP系统上有有效的FlexCache许可证并已激活。BlueXP会为所有新的Cloud Volumes ONTAP系统生成一个FlexCache许可证、其使用量限制为500 GiB。</block>
+  <block id="0f40216c1ad47c12e8ccc087d555570f" category="inline-link">《 ONTAP 发行说明》</block>
+  <block id="543cc078f66d581004934cfaa8988453" category="list-text">* ONTAP版本*：确保Cloud Volumes ONTAP系统的ONTAP版本支持带有加密卷的FlexCache。有关详细信息、请参见最新<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> 或兼容性列表。</block>
+  <block id="38d57b85102d8663bf30488289425e48" category="list-text">*网络配置*：确保网络配置允许初始卷和FlexCache卷之间无缝通信。这包括在云环境中正确路由和DNS解析。</block>
+  <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">在Cloud Volumes ONTAP系统上使用加密的源卷创建FlexCache卷。有关详细步骤和其他注意事项、请参阅以下各节：</block>
 </blocks>

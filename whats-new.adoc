@@ -960,9 +960,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9110-relnotes["了解此版本
 
 === 已删除K8s选项卡
 
-先前已弃用K8s选项卡、现已将其删除。如果要将Kubernetes与Cloud Volumes ONTAP 结合使用、可以将受管Kubernetes集群添加到Canvas中、作为一个用于高级数据管理的工作环境。
-
-https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["了解BlueXP中的Kubernetes数据管理"^]
+K8s选项卡在先前版本中已弃用、现已删除。
 
 
 

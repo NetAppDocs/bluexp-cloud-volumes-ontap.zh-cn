@@ -2381,7 +2381,6 @@
   <block id="44521137c9499dbef6a006058d0d9127" category="section-title">Cloud Volumes ONTAP 9.11.0</block>
   <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">调解器升级增强功能</block>
   <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">已删除K8s选项卡</block>
-  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">先前已弃用K8s选项卡、现已将其删除。如果要将Kubernetes与Cloud Volumes ONTAP 结合使用、可以将受管Kubernetes集群添加到Canvas中、作为一个用于高级数据管理的工作环境。</block>
   <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Azure中的年度合同</block>
   <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">Essentials和Professional软件包现在可通过一份年度合同在Azure中提供。您可以联系NetApp销售代表购买年度合同。此合同在Azure Marketplace中以私人优惠形式提供。</block>
   <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">了解有关许可的更多信息</block>
@@ -3519,7 +3518,6 @@
   <block id="f161f6edfaf6d911de2566d694781369" category="paragraph">从9.11.1版开始、Google Cloud中的Cloud Volumes ONTAP 现在支持多个Storage VM。从此版本的Connector开始、您可以使用BlueXP在Google Cloud中的Cloud Volumes ONTAP HA对上创建Storage VM。</block>
   <block id="dbb2a3618007fc68b403b5db7a27888c" category="paragraph">BlueXP现在可以部署和管理Cloud Volumes ONTAP 9.11.0。</block>
   <block id="17cc55e2cfcef39231025dad282b0760" category="paragraph">当BlueXP升级HA对的调解器时、它现在会先验证新的调解器映像是否可用、然后再删除启动磁盘。此更改可确保调解器在升级过程失败时能够继续成功运行。</block>
-  <block id="998eb27e3e05260958103da3d27eb4ac" category="inline-link">了解BlueXP中的Kubernetes数据管理</block>
   <block id="496550dfa4d3b1c3955fe8ab428eedbf" category="paragraph">现在、要优化BlueXP创建布局组的方式、需要这些权限。</block>
   <block id="1fcd17a990e75722697d64df5dd2ffde" category="list-text">在Google Cloud中创建Cloud Volumes ONTAP HA对时、BlueXP现在将在VPC中显示所有现有防火墙策略。</block>
   <block id="46fc311e1b8dc6670926551c44511f90" category="paragraph">以前、BlueXP不会在VPC-1、VPC-2或VPC-3中显示任何没有目标标记的策略。</block>
@@ -4477,7 +4475,6 @@
   <block id="8ade4dc1ca161da57728a6bf29be1db9" category="paragraph">请务必为您添加到BlueXP中的每组AWS凭据提供这些权限。<block ref="64ae4f789cd26cb4c9b5096ed42d2482" category="inline-link-rx"></block>。</block>
   <block id="ac1bc6f2b2358438076867200e537370" category="paragraph"><block ref="7abbb63a2cd3cab475ace2a577aa3de3" category="inline-link-rx"></block>。</block>
   <block id="07e4a4acdb333fe3d7b8dac1958d6459" category="list-text"><block ref="07e4a4acdb333fe3d7b8dac1958d6459" category="inline-link-rx"></block></block>
-  <block id="755c513b451157c807794bf1213fd1f9" category="paragraph"><block ref="755c513b451157c807794bf1213fd1f9" category="inline-link-rx"></block></block>
   <block id="73f030bd359abb41dc1089c470531542" category="paragraph"><block ref="37698926d26a2683d3b5c90c9b2406a6" category="inline-link-rx"></block>。</block>
   <block id="2e56aeba3c1fc24d42b0f15df12a08f9" category="paragraph"><block ref="5d4901194aa2380bf45bcc72c63f2763" category="inline-link-rx"></block>。</block>
   <block id="7abee0635d8cb81d3ae89fd8d82a442a" category="paragraph"><block ref="7abee0635d8cb81d3ae89fd8d82a442a" category="inline-image-macro-rx" type="image"></block></block>
@@ -5424,4 +5421,5 @@
   <block id="543cc078f66d581004934cfaa8988453" category="list-text">* ONTAP版本*：确保Cloud Volumes ONTAP系统的ONTAP版本支持带有加密卷的FlexCache。有关详细信息、请参见最新<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> 或兼容性列表。</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">*网络配置*：确保网络配置允许初始卷和FlexCache卷之间无缝通信。这包括在云环境中正确路由和DNS解析。</block>
   <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">在Cloud Volumes ONTAP系统上使用加密的源卷创建FlexCache卷。有关详细步骤和其他注意事项、请参阅以下各节：</block>
+  <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">K8s选项卡在先前版本中已弃用、现已删除。</block>
 </blocks>

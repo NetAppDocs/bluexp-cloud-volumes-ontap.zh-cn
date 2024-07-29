@@ -215,22 +215,6 @@ TIP: 如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访
 
 如果BlueXP通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
 
-防火墙规则:: 您无需创建防火墙规则、因为BlueXP可以为您创建防火墙规则。如果您需要使用自己的防火墙规则，请参见下面列出的防火墙规则。
-+
---
-请注意， HA 配置需要两组防火墙规则：
-
-* VPC-0 中 HA 组件的一组规则。这些规则允许对 Cloud Volumes ONTAP 进行数据访问。 <<防火墙规则,了解更多信息。>>。
-* VPC-1 ， VPC-2 和 VPC-3 中 HA 组件的另一组规则。这些规则适用于 HA 组件之间的入站和出站通信。 <<防火墙规则,了解更多信息。>>。
-
-
---
-
-
-如果您要将冷数据分层到 Google 云存储分段，则必须为 Cloud Volumes ONTAP 所在的子网配置专用 Google 访问（如果您使用的是 HA 对，则此子网位于 VPC-0 中）。有关说明，请参见 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 文档：配置私有 Google Access"^]。
-
-有关在BlueXP中设置数据分层所需的其他步骤、请参见 link:task-tiering.html["将冷数据分层到低成本对象存储"]。
-
 
 
 === 连接到其他网络中的 ONTAP 系统

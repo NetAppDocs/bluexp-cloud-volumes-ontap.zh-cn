@@ -253,7 +253,6 @@
   <block id="7630e1f6ebde3d280c53fd350ed9e414" category="list-text">Azure 存储服务加密</block>
   <block id="d988a92cb3f4d22d80f5a79f6d0df13d" category="list-text">Google Cloud Platform 默认加密</block>
   <block id="1948af9c9d5426628760bb0ef4a35cdf" category="inline-link">NetApp 卷加密（ NVE ）和 NetApp 聚合加密（ NAE ）</block>
-  <block id="ea345086090743ba32da6aae6c9b6998" category="paragraph">Cloud Volumes ONTAP 支持<block ref="ae505195628dd60ca701666c408297af" category="inline-link-rx"></block>。NVE 和 NAE 是基于软件的解决方案，支持（ FIPS ） 140-2 合规的卷空闲数据加密。NVE 和 NAE 都使用 AES 256 位加密。</block>
   <block id="0bf3330853877ab4b76b4f1e00d3ace2" category="list-text">NVE 一次对一个卷的空闲数据进行加密。每个数据卷都有自己唯一的加密密钥。</block>
   <block id="988d5e992ea371904581e6f8ad13bac7" category="list-text">NAE 是 NVE 的扩展—它对每个卷的数据进行加密，并且这些卷在聚合中共享一个密钥。NAE 还允许对聚合中所有卷之间的公用块进行重复数据删除。</block>
   <block id="e1bf87c98edd3bee07d170ae8b118aeb" category="paragraph">在设置外部密钥管理器后，新聚合会默认启用 NetApp 聚合加密（ NAE ）。默认情况下，不属于 NAE 聚合的新卷将启用 NetApp 卷加密（ NVE ）（例如，如果您有在设置外部密钥管理器之前创建的现有聚合）。</block>
@@ -5416,4 +5415,5 @@
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">K8s选项卡在先前版本中已弃用、现已删除。</block>
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">NAE不能使用AKV。NAE需要外部支持的KMIP服务器。</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAP节点每15分钟轮询一次ARV、以确认可访问性和密钥可用性。此轮询周期不可配置、在轮询尝试连续四次失败(总共1小时)后、卷将置于脱机状态。</block>
+  <block id="368b5e8e02b8134e8d1009fff74bf2bc" category="paragraph">Cloud Volumes ONTAP支持<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>。NVE 和 NAE 是基于软件的解决方案，支持（ FIPS ） 140-2 合规的卷空闲数据加密。NVE 和 NAE 都使用 AES 256 位加密。</block>
 </blocks>

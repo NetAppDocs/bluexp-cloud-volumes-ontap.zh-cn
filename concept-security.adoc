@@ -52,7 +52,7 @@ endif::gcp[]
 
 === NetApp 加密解决方案（ NVE 和 NAE ）
 
-Cloud Volumes ONTAP 支持 https://www.netapp.com/us/media/ds-3899.pdf["NetApp 卷加密（ NVE ）和 NetApp 聚合加密（ NAE ）"^]。NVE 和 NAE 是基于软件的解决方案，支持（ FIPS ） 140-2 合规的卷空闲数据加密。NVE 和 NAE 都使用 AES 256 位加密。
+Cloud Volumes ONTAP支持 https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp 卷加密（ NVE ）和 NetApp 聚合加密（ NAE ）"^]。NVE 和 NAE 是基于软件的解决方案，支持（ FIPS ） 140-2 合规的卷空闲数据加密。NVE 和 NAE 都使用 AES 256 位加密。
 
 * NVE 一次对一个卷的空闲数据进行加密。每个数据卷都有自己唯一的加密密钥。
 * NAE 是 NVE 的扩展—它对每个卷的数据进行加密，并且这些卷在聚合中共享一个密钥。NAE 还允许对聚合中所有卷之间的公用块进行重复数据删除。

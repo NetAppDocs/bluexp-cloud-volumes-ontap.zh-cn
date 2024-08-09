@@ -20,6 +20,38 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2024 年 8 月 8 日
+
+
+
+=== 已弃用Edge Cache许可软件包
+
+Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许可包。但是、您可以使用此API来使用此功能。
+
+
+
+=== Azure上Flash Cache支持的最低ONTAP版本
+
+在Azure上配置Flash Cache所需的最低ONTAP版本为9.13.1GA。只能使用ONTAP 9.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash Cache。
+
+有关支持的配置，请参见 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure 中支持的配置"^]。
+
+
+
+=== 免费试用商城订阅已弃用
+
+在云提供商的市场中、30天自动免费试用按需购买订阅将不再适用于Cloud Volumes ONTAP。任何类型的商城订阅(PAYGO或年度合同)的收费将从首次使用时起激活、没有任何免费试用期。
+
+
+
+=== 现在、AWS支持加拿大西部地区
+
+现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持加拿大西部地区。
+
+有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS下的全球区域图"^]。
+
+
+
 == 2024年6月10日
 
 
@@ -100,6 +132,8 @@ NOTE: 在标准模式下使用BlueXP时、支持AWS本地区域。目前、在�
 === Cloud Volumes ONTAP 9.14.1 GA
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1正式发布版。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 

@@ -152,33 +152,6 @@ NOTE: BlueXP备份和恢复需要订阅PAYGO、但使用此服务不会产生任
 
 
 
-==== 边缘缓存
-
-为Cloud Volumes Edge Cache提供许可。
-
-* 具有与专业软件包相同的功能、为分布式企业提供业务连续性和数据保护
-* 通过每个位置的占用空间较小的Windows VM实现智能边缘缓存
-* 每购买3 Tib容量一个边缘节点
-
-
-ifdef::azure[]
-
-* 在Azure Marketplace中以按需购买或按年订约的形式提供
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* 在Google Cloud Marketplace中以按需购买或按年订约的形式提供
-
-
-endif::gcp[]
-
-https://cloud.netapp.com/cloud-volumes-edge-cache["详细了解Cloud Volumes Edge Cache如何帮助您的业务"^]
-
-
-
 === 消费模式
 
 基于容量的许可包可用于以下消费模式：
@@ -188,7 +161,7 @@ https://cloud.netapp.com/cloud-volumes-edge-cache["详细了解Cloud Volumes Edg
 
 ifdef::azure[]
 
-+请注意、经过优化的和Edge Cache软件包不适用于BYOL。
++请注意、优化包不支持BYOL。
 
 endif::azure[]
 
@@ -224,19 +197,6 @@ link:task-manage-capacity-licenses.html["了解如何更改充电方法"]。
 === 定价
 
 有关定价的详细信息，请访问 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP网站"^]。
-
-
-
-=== 免费试用
-
-您可以从云提供商市场的按需购买订阅中获得 30 天免费试用。免费试用版包括Cloud Volumes ONTAP 和BlueXP备份和恢复。在您订阅市场上的产品时、试用即开始。
-
-不存在实例或容量限制。您可以根据需要部署任意数量的Cloud Volumes ONTAP 系统、并根据需要免费分配30天的容量。30天后、免费试用将自动转换为按小时付费的订阅。
-
-Cloud Volumes ONTAP 无需每小时支付软件许可证费用、但云提供商提供的基础架构费用仍然适用。
-
-
-TIP: 当免费试用开始、剩余7天以及剩余1天时、您将在BlueXP中收到通知。例如：image:screenshot-free-trial-notification.png["BlueXP界面中通知的屏幕截图、其中指出免费试用只剩7天。"]
 
 
 
@@ -294,7 +254,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["�
 
 如果尚未配置任何卷、则最低费用不适用。
 
-对于Essentials软件包、最低4 TiB容量费用不适用于仅包含二级(数据保护)卷的Storage VM。例如、如果您的Storage VM包含1 TiB的二级数据、则只需为1 TiB的数据付费。对于所有其他非Essentials封装类型(优化型、专业型和边缘缓存)、无论卷类型如何、最低容量充电均为4 TiB。
+对于Essentials软件包、最低4 TiB容量费用不适用于仅包含二级(数据保护)卷的Storage VM。例如、如果您的Storage VM包含1 TiB的二级数据、则只需为1 TiB的数据付费。对于所有其他非Essentials封装类型(优化型和专业型)、无论卷类型如何、最低容量充电均为4 TiB。
 
 
 
@@ -440,7 +400,7 @@ endif::gcp[]
 
 == 基于节点的许可
 
-基于节点的许可是上一代许可模式，可用于按节点许可 Cloud Volumes ONTAP 。新客户不能使用此许可模式，也不能免费试用。按节点充电已被上述按容量充电方法所取代。
+基于节点的许可是上一代许可模式，可用于按节点许可 Cloud Volumes ONTAP 。此许可模式不适用于新客户。按节点充电已被上述按容量充电方法所取代。
 
 现有客户仍可使用基于节点的许可：
 

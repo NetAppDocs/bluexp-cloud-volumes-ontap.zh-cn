@@ -44,14 +44,6 @@ Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许�
 
 
 
-=== 现在、AWS支持加拿大西部地区
-
-现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持加拿大西部地区。
-
-有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS下的全球区域图"^]。
-
-
-
 == 2024年6月10日
 
 

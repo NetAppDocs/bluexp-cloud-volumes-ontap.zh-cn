@@ -260,10 +260,10 @@ TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/bluex
 | 所有 ICMP | 全部 | Ping 实例 
 
 
-| HTTP | 80 | 使用集群管理 LIF 的 IP 地址对系统管理器 Web 控制台进行 HTTP 访问 
+| HTTP | 80 | 使用集群管理LIF的IP地址通过HTTP访问ONTAP系统管理器Web控制台 
 
 
-| HTTPS | 443. | 使用集群管理LIF的IP地址连接Connector并通过HTTPS访问System Manager Web控制台 
+| HTTPS | 443. | 通过连接器进行连接、并使用集群管理LIF的IP地址通过HTTPS访问ONTAP系统管理器Web控制台 
 
 
 | SSH | 22. | SSH 访问集群管理 LIF 或节点管理 LIF 的 IP 地址 

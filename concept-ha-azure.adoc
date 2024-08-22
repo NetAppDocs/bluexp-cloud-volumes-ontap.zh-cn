@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-ha-azure.html 
-keywords: high availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, availability set, storage accounts, page blobs 
+keywords: high availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, storage accounts, page blobs 
 summary: Cloud Volumes ONTAP 高可用性（ High Availability ， HA ）对可在云环境发生故障时提供企业级可靠性和持续运行。在 Azure 中，存储在两个节点之间共享。 
 ---
 = Azure 中的高可用性对
@@ -26,12 +26,12 @@ Cloud Volumes ONTAP 高可用性（ High Availability ， HA ）对可在云环�
 
 Azure中的Cloud Volumes ONTAP HA页面Blob配置包括以下组件：
 
-image:diagram_ha_azure.png["一个概念映像、其中显示了一个负载平衡器、用于管理来自BlueXP和客户端的传入流量、一个可用性集中的两个Cloud Volumes ONTAP 节点、用于启动数据的SSD磁盘以及用于客户数据的页面Blob。"]
+image:diagram_ha_azure.png["一个概念图、其中显示了一个负载平衡器、用于管理来自BlueXP  和客户端的传入流量、一个vmss Flex中的两个Cloud Volumes ONTAP节点、用于启动数据的SSD磁盘以及用于客户数据的页面Blobs。"]
 
 请注意以下有关BlueXP为您部署的Azure组件的信息：
 
 Azure 标准负载平衡器:: 负载平衡器管理传入 Cloud Volumes ONTAP HA 对的流量。
-可用性集:: Azure 可用性集是 Cloud Volumes ONTAP 节点的逻辑分组。可用性集可确保节点位于不同的故障和更新域中，以提供冗余和可用性。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["在 Azure 文档中了解有关可用性集的更多信息"^]。
+单个可用性区域中的VM:: 从Cloud Volumes ONTAP 9.15.1开始、您可以在一个可用性区域(AZ)中创建和管理异构虚拟机(VM)。您可以将高可用性(HA)节点部署在同一AZ中的不同容错域中、以确保最佳可用性。要详细了解支持此功能的灵活流程编排模式，请参见 https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure文档：虚拟机扩展集"^]。
 Disks:: 客户数据位于高级存储页面 Blobs 上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["启动，根和核心数据"^]。
 存储帐户::
 +
@@ -39,7 +39,7 @@ Disks:: 客户数据位于高级存储页面 Blobs 上。每个节点都可以�
 * 受管磁盘需要一个存储帐户。
 * 高级存储页面 Blobs 需要一个或多个存储帐户，因为已达到每个存储帐户的磁盘容量限制。
 +
-https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Azure 文档：存储帐户的 Azure 存储可扩展性和性能目标"^]。
+https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Microsoft Azure文档：适用于存储帐户的Azure存储可扩展性和性能目标"^](英文)
 
 * 要将数据分层到 Azure Blob 存储，需要一个存储帐户。
 * 从Cloud Volumes ONTAP 9.7开始、BlueXP为HA对创建的存储帐户为通用v2存储帐户。
@@ -55,13 +55,13 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 在共享受管磁盘上运行的Cloud Volumes ONTAP HA单可用性区域配置包括以下组件：
 
-image:diagram_ha_azure_saz_lrs.png["一个概念映像、其中显示了一个负载平衡器、用于管理来自BlueXP和客户端的传入流量、一个可用性集中的两个Cloud Volumes ONTAP 节点、用于启动数据的SSD磁盘以及用于客户数据的LRS受管磁盘。"]
+image:diagram_ha_azure_saz_lrs.png["一个概念图、其中显示了一个负载平衡器、用于管理来自BlueXP  和客户端的传入流量、vmss Flex中的两个Cloud Volumes ONTAP节点、用于启动数据的SSD磁盘以及用于客户数据的LRS托管磁盘。"]
 
 请注意以下有关BlueXP为您部署的Azure组件的信息：
 
 Azure 标准负载平衡器:: 负载平衡器管理传入 Cloud Volumes ONTAP HA 对的流量。
-可用性集:: Azure 可用性集是 Cloud Volumes ONTAP 节点的逻辑分组。可用性集可确保节点位于不同的故障和更新域中，以提供冗余和可用性。 https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["在 Azure 文档中了解有关可用性集的更多信息"^]。
-Disks:: 客户数据驻留在本地冗余存储(LRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["启动、根、配对根、核心和NVRAM数据"^]。
+单个可用性区域中的VM:: 从Cloud Volumes ONTAP 9.15.1开始、您可以在一个可用性区域(AZ)中创建和管理异构虚拟机(VM)。您可以将高可用性(HA)节点部署在同一AZ中的不同容错域中、以确保最佳可用性。要详细了解支持此功能的灵活流程编排模式，请参见 https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure文档：虚拟机扩展集"^]。
+Disks:: 客户数据驻留在本地冗余存储(LRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["启动、根、配对根、核心和NVRAM数据"^]，还需要额外的存储。
 存储帐户:: 存储帐户用于基于受管磁盘的部署、以处理诊断日志并分层到Blob存储。
 
 
@@ -76,7 +76,7 @@ image:diagram_ha_azure_maz.png["一个概念映像、其中显示了一个负载
 请注意以下有关BlueXP为您部署的Azure组件的信息：
 
 Azure 标准负载平衡器:: 负载平衡器管理传入 Cloud Volumes ONTAP HA 对的流量。
-可用性区域:: 两个Cloud Volumes ONTAP 节点部署在不同的可用性区域中。可用性区域可确保节点位于不同的故障域中。 https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["在Azure文档中了解有关适用于受管磁盘的Azure分区冗余存储的更多信息"^]。
+可用性区域:: HA多可用性分区配置采用一种部署模式、即将两个Cloud Volumes ONTAP节点部署到不同的可用性分区中、以确保这些节点位于不同的容错域中、从而提供冗余和可用性。要了解灵活流程编排模式下的虚拟机扩展集如何使用Azure中的可用性区域，请参阅 https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-use-availability-zones?tabs=cli-1%2Cportal-2["Microsoft Azure文档：创建使用可用性区域的虚拟机扩展集"^]。
 Disks:: 客户数据驻留在分区冗余存储(ZRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外，还需要为提供更多存储 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["启动、根、配对节点根和核心数据"^]。
 存储帐户:: 存储帐户用于基于受管磁盘的部署、以处理诊断日志并分层到Blob存储。
 
@@ -102,7 +102,7 @@ HA 配置可保持数据的高可用性，如下所示：
 对于 iSCSI 、 Cloud Volumes ONTAP 使用多路径 I/O （ MPIO ）和非对称逻辑单元访问（ ALUA ）来管理活动优化路径和非优化路径之间的路径故障转移。
 
 
-NOTE: 有关哪些特定主机配置支持 ALUA 的信息，请参见 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 以及适用于您的主机操作系统的《 Host Utilities 安装和设置指南》。
+NOTE: 有关哪些特定主机配置支持AUA的信息、请参见 http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] https://docs.netapp.com/us-en/ontap-sanhost/["SAN主机和云客户端指南"]适用于您的主机操作系统的和。
 
 默认情况下，存储接管，重新同步和交还都是自动的。无需用户操作。
 

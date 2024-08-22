@@ -130,7 +130,7 @@ Cloud Volumes ONTAP HA 配置可同步复制节点之间的数据、从而消耗
 * 对于为来自两个节点的数据提供服务的 HA 配置、读取性能高于单节点配置的读取性能、写入性能相同或更高。
 
 
-有关 Cloud Volumes ONTAP 性能的详细信息，请参见 link:concept-performance.html["性能"]。
+有关Cloud Volumes ONTAP性能的详细信息，请参见link:concept-performance.html["性能"]。
 
 
 
@@ -139,7 +139,7 @@ Cloud Volumes ONTAP HA 配置可同步复制节点之间的数据、从而消耗
 客户端应使用卷所在节点的数据 IP 地址访问 NFS 和 CIFS 卷。如果 NAS 客户端使用伙伴节点的 IP 地址访问卷、则两个节点之间的通信量都会降低性能。
 
 
-TIP: 如果在 HA 对中的节点之间移动卷、则应使用其他节点的 IP 地址重新装入卷。否则，您可能会遇到性能降低的问题。如果客户机支持 NFSv4 引用或 CIFS 文件夹重定向、则可以在 Cloud Volumes ONTAP 系统上启用这些功能以避免重新装入卷。有关详细信息，请参见 ONTAP 文档。
+TIP: 如果在 HA 对中的节点之间移动卷、则应使用其他节点的 IP 地址重新装入卷。否则，您可能会遇到性能降低的问题。如果客户机支持 NFSv4 引用或 CIFS 文件夹重定向、则可以在 Cloud Volumes ONTAP 系统上启用这些功能以避免重新装入卷。有关详细信息、请参见ONTAP文档。
 
 您可以通过BlueXP中管理卷面板下的_Mount Command_选项轻松识别正确的IP地址。
 

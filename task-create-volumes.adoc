@@ -30,7 +30,7 @@ BlueXP提供了多种创建新卷的方法：
 有关卷配置的一些注意事项：
 
 * 创建iSCSI卷时、BlueXP会自动为您创建LUN。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后， link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["使用 IQN 从主机连接到 LUN"^]。
-* 您可以从 System Manager 或 CLI 创建其他 LUN 。
+* 您可以从ONTAP系统管理器或ONTAP命令行界面创建其他LUN。
 
 
 ifdef::aws[]
@@ -154,7 +154,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS 域:: Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。
-NTP 服务器:: 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 了解详细信息。
+NTP 服务器:: 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。有关信息，请参阅 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^]。
 +
 --
 请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。
@@ -251,4 +251,4 @@ endif::aws[]
 
 如果配置了 CIFS 共享、请授予用户或组对文件和文件夹的权限、并验证这些用户是否可以访问该共享并创建文件。
 
-如果要对卷应用配额、则必须使用系统管理器或 CLI 。配额允许您限制或跟踪用户、组或 qtree 使用的磁盘空间和文件数量。
+如果要将配额应用于卷、则必须使用ONTAP系统管理器或ONTAP命令行界面。配额允许您限制或跟踪用户、组或 qtree 使用的磁盘空间和文件数量。

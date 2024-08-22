@@ -64,7 +64,7 @@ image:screenshot_aws_e0a.gif["AWS 控制台的屏幕截图，显示网络接口�
 +
 您应已在此页面上一节中确定每个接口支持的最大 IP 地址数。
 
-.. 可选：转到 Cloud Volumes ONTAP 的命令行界面并运行 * 网络接口 show* 以确认这些 IP 地址中的每个地址均已使用。
+.. 可选：转至适用于Cloud Volumes ONTAP的ONTAP命令行界面并运行*network interface show*以确认每个IP地址都在使用中。
 +
 如果某个 IP 地址未使用，则可以将其与新的 Storage VM 结合使用。
 

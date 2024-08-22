@@ -28,7 +28,7 @@ summary: 您可以通过在BlueXP中创建Cloud Volumes ONTAP 工作环境在Azu
 
 * 了解要使用的配置。
 +
-您应已选择配置并从管理员处获取 Azure 网络信息。有关详细信息，请参见 link:task-planning-your-config-azure.html["规划 Cloud Volumes ONTAP 配置"^]。
+您应已选择配置并从管理员处获取 Azure 网络信息。有关信息，请参见 link:task-planning-your-config-azure.html["规划 Cloud Volumes ONTAP 配置"^]。
 
 * 了解为Cloud Volumes ONTAP 设置许可所需的条件。
 +
@@ -71,10 +71,10 @@ link:task-set-up-licensing-azure.html["了解如何设置许可"^]。
 | 工作环境名称 | BlueXP使用工作环境名称来命名Cloud Volumes ONTAP 系统和Azure虚拟机。如果您选择了预定义安全组的前缀，则它还会使用该名称作为前缀。 
 
 
-| 资源组标记 | 标记是 Azure 资源的元数据。在此字段中输入标记后、BlueXP会将其添加到与Cloud Volumes ONTAP 系统关联的资源组中。在创建工作环境时，最多可以从用户界面添加四个标签，然后可以在创建工作环境后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标记。有关标记的信息，请参见 https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure 文档：使用标记组织 Azure 资源"^]。 
+| 资源组标记 | 标记是 Azure 资源的元数据。在此字段中输入标记后、BlueXP会将其添加到与Cloud Volumes ONTAP 系统关联的资源组中。在创建工作环境时，最多可以从用户界面添加四个标签，然后可以在创建工作环境后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标记。有关标记的信息，请参阅 https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure 文档：使用标记组织 Azure 资源"^]。 
 
 
-| 用户名和密码 | 这些是 Cloud Volumes ONTAP 集群管理员帐户的凭据。您可以使用这些凭据通过 System Manager 或其命令行界面连接到 Cloud Volumes ONTAP 。保留默认的 _admin_ 用户名或将其更改为自定义用户名。 
+| 用户名和密码 | 这些是 Cloud Volumes ONTAP 集群管理员帐户的凭据。您可以使用这些凭据通过ONTAP系统管理器或ONTAP命令行界面连接到Cloud Volumes ONTAP。保留默认的 _admin_ 用户名或将其更改为自定义用户名。 
 
 
 | 【视频】编辑凭据 | 您可以选择不同的 Azure 凭据和不同的 Azure 订阅以用于此 Cloud Volumes ONTAP 系统。您需要将 Azure Marketplace 订阅与选定 Azure 订阅关联，才能部署按需购买的 Cloud Volumes ONTAP 系统。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["了解如何添加凭据"^]。 
@@ -85,7 +85,7 @@ link:task-set-up-licensing-azure.html["了解如何设置许可"^]。
 +
 .从Azure Marketplace订阅BlueXP
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
-. * 服务 * ：保持服务处于启用状态或禁用不想在 Cloud Volumes ONTAP 中使用的单个服务。
+. *服务*：启用或禁用要或不想用于Cloud Volumes ONTAP的各个服务。
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解有关BlueXP分类的更多信息"^]
 ** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["了解有关BlueXP备份和恢复的更多信息"^]
@@ -96,9 +96,6 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 
 
 . *位置*：选择一个区域、可用性区域、vNet和子网、然后选中此复选框以确认连接器与目标位置之间的网络连接。
-+
-对于单节点系统，您可以选择要在其中部署 Cloud Volumes ONTAP 的可用性区域。如果不选择AZ、BlueXP将为您选择一个。
-
 . *连接*：选择一个新资源组或现有资源组、然后选择是使用预定义的安全组还是使用您自己的资源组。
 +
 下表介绍了可能需要指导的字段：
@@ -138,12 +135,12 @@ TIP: 如果您正在使用的 Azure 帐户具有 https://docs.netapp.com/us-en/b
 +
 如果选择其中一个包、则只需指定卷、然后检查并批准配置。
 
-. *许可*：根据需要更改Cloud Volumes ONTAP 版本并选择虚拟机类型。
+. *许可*：根据需要更改Cloud Volumes ONTAP版本，然后选择虚拟机类型。
 +
 
-NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补程序版本、则在创建工作环境时、BlueXP会将系统更新到该版本。例如、如果选择Cloud Volumes ONTAP 9.10.1和9.10.1 P4可用、则会发生更新。更新不会从一个版本更新到另一个版本，例如从 9.6 到 9.7 。
+NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补程序版本、则在创建工作环境时、BlueXP会将系统更新到该版本。例如、如果选择Cloud Volumes ONTAP 9.13.1和9.13.1 P4可用、则会发生更新。更新不会从一个版本更新到另一个版本，例如从 9.13 到 9.14 。
 
-. *从Azure Marketplace订阅*：如果BlueXP无法实现Cloud Volumes ONTAP的编程部署、您将看到此页面。按照屏幕上列出的步骤进行操作。请参见 https://learn.microsoft.com/en-us/marketplace/programmatic-deploy-of-marketplace-products["以编程方式部署Marketplace产品"^] 有关详细信息 ...
+. *从Azure Marketplace订阅*：如果BlueXP无法实现Cloud Volumes ONTAP的编程部署、您将看到此页面。按照屏幕上列出的步骤进行操作。 https://learn.microsoft.com/en-us/marketplace/programmatic-deploy-of-marketplace-products["以编程方式部署Marketplace产品"^]有关详细信息、请参阅。
 . * 底层存储资源 * ：选择初始聚合的设置：磁盘类型，每个磁盘的大小以及是否应启用到 Blob 存储的数据分层。
 +
 请注意以下事项：
@@ -152,7 +149,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 ** 磁盘类型用于初始卷。您可以为后续卷选择不同的磁盘类型。
 ** 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 +
-有关选择磁盘类型和大小的帮助，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在 Azure 中估算系统规模"^]。
+有关选择磁盘类型和大小的帮助，请参阅link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在 Azure 中估算系统规模"^]。
 
 ** 您可以在创建或编辑卷时选择特定的卷分层策略。
 ** 如果禁用数据分层，则可以在后续聚合上启用它。
@@ -169,7 +166,7 @@ link:concept-write-speed.html["了解有关写入速度的更多信息。"^]。
 
 .. 根据需要激活一次写入、多次读取(WORM)存储。
 +
-此选项仅适用于某些VM类型。要了解支持的VM类型、请参见 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA对支持按许可证配置"^]。
+此选项仅适用于某些VM类型。要了解支持的VM类型，请参见link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA对支持按许可证配置"^]。
 
 +
 如果为Cloud Volumes ONTAP 9.7及更低版本启用了数据分层、则无法启用WORM。启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。
@@ -241,13 +238,11 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 | DNS 域 | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。 
 
 
-| NTP 服务器 | 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 了解详细信息。
-
-请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。 
+| NTP 服务器 | 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。有关详细信息、请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 。请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。 
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能，并根据需要更改卷分层策略。
 +
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["了解卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
+有关详细信息，请参阅 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["了解卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +
@@ -268,7 +263,7 @@ BlueXP部署Cloud Volumes ONTAP 系统。您可以跟踪时间链中的进度。
 
 .完成后
 * 如果配置了 CIFS 共享、请授予用户或组对文件和文件夹的权限、并验证这些用户是否可以访问该共享并创建文件。
-* 如果要对卷应用配额、请使用 System Manager 或 CLI 。
+* 如果要将配额应用于卷、请使用ONTAP系统管理器或ONTAP命令行界面。
 +
 配额允许您限制或跟踪用户、组或 qtree 使用的磁盘空间和文件数量。
 
@@ -297,10 +292,10 @@ BlueXP部署Cloud Volumes ONTAP 系统。您可以跟踪时间链中的进度。
 | 工作环境名称 | BlueXP使用工作环境名称来命名Cloud Volumes ONTAP 系统和Azure虚拟机。如果您选择了预定义安全组的前缀，则它还会使用该名称作为前缀。 
 
 
-| 资源组标记 | 标记是 Azure 资源的元数据。在此字段中输入标记后、BlueXP会将其添加到与Cloud Volumes ONTAP 系统关联的资源组中。在创建工作环境时，最多可以从用户界面添加四个标签，然后可以在创建工作环境后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标记。有关标记的信息，请参见 https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure 文档：使用标记组织 Azure 资源"^]。 
+| 资源组标记 | 标记是 Azure 资源的元数据。在此字段中输入标记后、BlueXP会将其添加到与Cloud Volumes ONTAP 系统关联的资源组中。在创建工作环境时，最多可以从用户界面添加四个标签，然后可以在创建工作环境后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标记。有关标记的信息，请参阅 https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure 文档：使用标记组织 Azure 资源"^]。 
 
 
-| 用户名和密码 | 这些是 Cloud Volumes ONTAP 集群管理员帐户的凭据。您可以使用这些凭据通过 System Manager 或其命令行界面连接到 Cloud Volumes ONTAP 。保留默认的 _admin_ 用户名或将其更改为自定义用户名。 
+| 用户名和密码 | 这些是 Cloud Volumes ONTAP 集群管理员帐户的凭据。您可以使用这些凭据通过ONTAP系统管理器或ONTAP命令行界面连接到Cloud Volumes ONTAP。保留默认的 _admin_ 用户名或将其更改为自定义用户名。 
 
 
 | 【视频】编辑凭据 | 您可以选择不同的 Azure 凭据和不同的 Azure 订阅以用于此 Cloud Volumes ONTAP 系统。您需要将 Azure Marketplace 订阅与选定 Azure 订阅关联，才能部署按需购买的 Cloud Volumes ONTAP 系统。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["了解如何添加凭据"^]。 
@@ -311,7 +306,10 @@ BlueXP部署Cloud Volumes ONTAP 系统。您可以跟踪时间链中的进度。
 +
 .从Azure Marketplace订阅BlueXP
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
-. * 服务 * ：保持服务处于启用状态或禁用不想在 Cloud Volumes ONTAP 中使用的单个服务。
+. *服务*：根据是否要在Cloud Volumes ONTAP中使用各个服务来启用或禁用这些服务。
++
+从Cloud Volumes ONTAP 9.15.1开始、您可以在本地冗余存储(LRS)单可用性区域中部署VM实例。这也需要 `Microsoft.Compute/VMOrchestratorZonalMultiFD`为您的订阅激活此功能。此功能有助于在同一可用性区域中部署高可用性(HA)对。请参阅link:task-saz-feature.html["为单个可用性区域启用VMOrchestratorzonalMultiFD"]和link:task-azure-high-availability-mode.html["在Azure中启用高可用性模式"]。
+
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解有关BlueXP分类的更多信息"^]
 ** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["了解有关BlueXP备份和恢复的更多信息"^]
@@ -324,10 +322,12 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 . *高可用性部署模式*：
 +
 .. 选择*单个可用性区域*或*多个可用性区域*。
-.. *位置和连接*(单个AZ)和*区域和连接*(多个AZs)
 +
-*** 对于单个AZ、请选择一个区域、vNet和子网。
-*** 对于多个AZs、请为节点1选择一个区域、vNet、子网、分区以及为节点2选择分区。
+*** 对于单个可用性区域、请选择Azure区域、可用性区域、vNet和子网。从Cloud Volumes ONTAP 9.15.1开始、您可以在单个可用性区域中安装VM实例。您需要选择支持此模式的区域。如果您选择的区域不支持分区部署、则会遵循以前的LRS非分区部署模式。
++
+要了解有关此部署模式和支持的Azure区域的详细信息，请参阅 https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure文档：虚拟机扩展集文档"^]和 https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure网站：产品按地区提供"^]。
+
+*** 对于多个可用性分区、请为节点1选择区域、vNet、子网、分区、并为节点2选择分区。
 
 
 .. 选中*我已验证网络连接...*复选框。
@@ -377,7 +377,7 @@ TIP: 如果您正在使用的 Azure 帐户具有 https://docs.netapp.com/us-en/b
 . *许可*：根据需要更改Cloud Volumes ONTAP 版本并选择虚拟机类型。
 +
 
-NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补程序版本、则在创建工作环境时、BlueXP会将系统更新到该版本。例如、如果选择Cloud Volumes ONTAP 9.10.1和9.10.1 P4可用、则会发生更新。更新不会从一个版本更新到另一个版本，例如从 9.6 到 9.7 。
+NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补程序版本、则在创建工作环境时、BlueXP会将系统更新到该版本。例如、如果选择Cloud Volumes ONTAP 9.13.1和9.13.1 P4可用、则会发生更新。更新不会从一个版本更新到另一个版本，例如从 9.13 到 9.14 。
 
 . *订阅Azure Marketplace *：如果BlueXP无法启用Cloud Volumes ONTAP 的编程部署、请按照以下步骤操作。
 . * 底层存储资源 * ：选择初始聚合的设置：磁盘类型，每个磁盘的大小以及是否应启用到 Blob 存储的数据分层。
@@ -387,7 +387,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 +
 ** 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 +
-有关选择磁盘大小的帮助、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在Azure中调整系统大小"^]。
+有关选择磁盘大小的帮助，请参见link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在Azure中调整系统大小"^]。
 
 ** 您可以在创建或编辑卷时选择特定的卷分层策略。
 ** 如果禁用数据分层，则可以在后续聚合上启用它。
@@ -404,7 +404,7 @@ link:concept-write-speed.html["了解有关写入速度的更多信息。"^]。
 
 .. 根据需要激活一次写入、多次读取(WORM)存储。
 +
-此选项仅适用于某些VM类型。要了解支持的VM类型、请参见 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA对支持按许可证配置"^]。
+此选项仅适用于某些VM类型。要了解支持的VM类型，请参见link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA对支持按许可证配置"^]。
 
 +
 如果为Cloud Volumes ONTAP 9.7及更低版本启用了数据分层、则无法启用WORM。启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。
@@ -489,13 +489,11 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 | DNS 域 | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。 
 
 
-| NTP 服务器 | 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 了解详细信息。
-
-请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。 
+| NTP 服务器 | 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。有关详细信息、请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 。请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。 
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能，并根据需要更改卷分层策略。
 +
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
+有关详细信息，请参阅 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +
@@ -516,7 +514,7 @@ BlueXP部署Cloud Volumes ONTAP 系统。您可以跟踪时间链中的进度。
 
 .完成后
 * 如果配置了 CIFS 共享、请授予用户或组对文件和文件夹的权限、并验证这些用户是否可以访问该共享并创建文件。
-* 如果要对卷应用配额、请使用 System Manager 或 CLI 。
+* 如果要将配额应用于卷、请使用ONTAP系统管理器或ONTAP命令行界面。
 +
 配额允许您限制或跟踪用户、组或 qtree 使用的磁盘空间和文件数量。
 

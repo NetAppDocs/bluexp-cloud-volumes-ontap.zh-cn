@@ -37,7 +37,7 @@ summary: 通过Cloud Volumes ONTAP 聚合支持Amazon EBS弹性卷功能、可�
 
 
 
-https://aws.amazon.com/ebs/features/["详细了解AWS中的弹性卷"^]
+https://aws.amazon.com/ebs/features/["AWS文档：详细了解AWS中的Elelic Volumes"^]
 
 
 

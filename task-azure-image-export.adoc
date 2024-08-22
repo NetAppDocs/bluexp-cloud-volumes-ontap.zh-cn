@@ -22,7 +22,7 @@ summary: 您可以从Azure Marketplace导出ONTAP映像、以验证VHD文件的�
 * 已安装Azure命令行界面、或者可随时通过Azure门户使用Azure Cloud Shell。
 +
 
-NOTE: 有关如何安装Azure命令行界面的详细信息、请参见 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azure文档：如何安装Azure命令行界面"^]。
+NOTE: 有关如何安装Azure命令行界面的详细信息，请参阅 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azure文档：如何安装Azure命令行界面"^]。
 
 
 

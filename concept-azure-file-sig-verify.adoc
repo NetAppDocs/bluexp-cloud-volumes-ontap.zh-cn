@@ -26,7 +26,7 @@ image::graphic_azure_check_signature.png[图形蓝色检查签名]
 
 * 从下载Azure Image Digest文件 https://mysupport.netapp.com/site/["NetApp 支持站点"^] 并提取摘要文件(.sig)、公共密钥证书文件(.pem)和链证书文件(.pem)。
 +
-请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["下载Azure映像摘要文件"^] 有关详细信息 ...
+有关详细信息、请参见 link:task-azure-download-digest-file.html["下载Azure映像摘要文件"] 。
 
 * 验证信任链。
 * 从公共密钥证书(.prom)提取公共密钥(.pub)。

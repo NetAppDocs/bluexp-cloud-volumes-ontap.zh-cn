@@ -83,7 +83,7 @@ ifdef::aws[]
 
 TIP: 创建 Cloud Volumes ONTAP 系统后，您无法更改 AWS 数据加密方法。
 
-如果要使用此加密选项，则必须确保正确设置 AWS KMS 。有关详细信息，请参见 link:task-setting-up-kms.html["设置 AWS KMS"]。
+如果要使用此加密选项，则必须确保正确设置 AWS KMS 。有关信息，请参见 link:task-setting-up-kms.html["设置 AWS KMS"]。
 
 endif::aws[]
 
@@ -119,9 +119,9 @@ endif::gcp[]
 
 称为 _Vscan_ 的 ONTAP 病毒扫描将同类最佳的第三方防病毒软件与 ONTAP 功能相结合，让您可以灵活地控制扫描哪些文件以及何时扫描。
 
-有关 Vscan 支持的供应商，软件和版本的信息，请参见 http://mysupport.netapp.com/matrix["NetApp 互操作性表"^]。
+有关Vscan支持的供应商、软件和版本的信息，请参阅 http://mysupport.netapp.com/matrix["NetApp 互操作性表"^]。
 
-有关如何在 ONTAP 系统上配置和管理防病毒功能的信息，请参见 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["《 ONTAP 9 防病毒配置指南》"^]。
+有关如何在ONTAP系统上配置和管理防病毒功能的信息，请参阅 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["《 ONTAP 9 防病毒配置指南》"^]。
 
 
 

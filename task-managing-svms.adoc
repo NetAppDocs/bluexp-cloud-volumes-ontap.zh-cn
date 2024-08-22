@@ -26,7 +26,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 == 使用多个 Storage VM
 
-BlueXP支持您通过System Manager或CLI创建的任何其他Storage VM。
+BlueXP  支持通过ONTAP系统管理器或ONTAP命令行界面创建的任何其他Storage VM。
 
 例如，下图显示了在创建卷时如何选择 Storage VM 。
 
@@ -40,4 +40,4 @@ image:screenshot_replicate_volume_svm.gif["屏幕截图显示了选择要复制�
 
 == 修改默认 Storage VM 的名称
 
-BlueXP会自动为其为Cloud Volumes ONTAP 创建的单个Storage VM命名。如果您有严格的命名标准、则可以在System Manager、命令行界面或API中修改Storage VM的名称。例如，您可能希望此名称与您为 ONTAP 集群命名 Storage VM 的方式一致。
+BlueXP会自动为其为Cloud Volumes ONTAP 创建的单个Storage VM命名。如果您有严格的命名标准、则可以从ONTAP系统管理器、ONTAP命令行界面或API修改Storage VM的名称。例如，您可能希望此名称与您为 ONTAP 集群命名 Storage VM 的方式一致。

@@ -83,6 +83,8 @@ sidebar:
         url: "/task-set-up-licensing-azure.html"
       - title: 启用高可用性模式
         url: "/task-azure-high-availability-mode.html"
+      - title: 为单个可用性区域启用VMOrchestratorzonalMultiFD
+        url: "/task-saz-feature.html"
       - title: 在 Azure 中启动 Cloud Volumes ONTAP
         url: "/task-deploying-otc-azure.html"
       - title: Azure平台映像验证

@@ -58,8 +58,8 @@ https://cloud.netapp.com/pricing["了解 WORM 存储的定价"^]
 
 创建新的Cloud Volumes ONTAP 工作环境时、系统会提示您启用或禁用WORM存储：
 
-* 如果在创建工作环境时启用了WORM存储、则从BlueXP创建的每个卷都会启用WORM。但是、您可以使用System Manager或CLI创建已禁用WORM的卷。
-* 如果在创建工作环境时禁用WORM存储、则从BlueXP、System Manager或CLI创建的每个卷都会禁用WORM。如果要在创建期间未启用的Cloud Volumes ONTAP 工作环境中启用WORM、则必须向NetApp支持部门创建一个支持服务单以获得帮助。
+* 如果在创建工作环境时启用了WORM存储、则从BlueXP创建的每个卷都会启用WORM。但是、您可以使用ONTAP系统管理器或ONTAP命令行界面创建已禁用WORM的卷。
+* 如果在创建工作环境时禁用WORM存储、则通过BlueXP 、ONTAP系统管理器或ONTAP命令行界面创建的每个卷都会禁用WORM。如果要在创建期间未启用的Cloud Volumes ONTAP 工作环境中启用WORM、则必须向NetApp支持部门创建一个支持服务单以获得帮助。
 
 
 无论选择哪种方案、您都应选择此选项 <<正在充电,了解充电的工作原理>>。

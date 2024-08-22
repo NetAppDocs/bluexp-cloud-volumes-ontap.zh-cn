@@ -628,7 +628,7 @@ CAUTION: 在向导中进行选择时，请勿在*Services*下选择*Data Sense &
 .有关在多个可用性区域中部署Cloud Volumes ONTAP HA的注意事项
 完成HA对向导时、请注意以下事项。
 
-* 在多可用性区域(AZ)中部署Cloud Volumes ONTAP HA时、应配置传输网关。请参见 link:task-setting-up-transit-gateway.html["设置 AWS 传输网关"]。
+* 在多可用性区域(AZ)中部署Cloud Volumes ONTAP HA时、应配置传输网关。有关说明，请参阅link:task-setting-up-transit-gateway.html["设置 AWS 传输网关"]。
 * 请按如下所示部署此配置、因为在发布时、AWS Top机密云中仅提供了两个可用的配置：
 +
 ** 节点 1 ：可用性区域 A

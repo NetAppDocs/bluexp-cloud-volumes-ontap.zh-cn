@@ -76,7 +76,7 @@ NOTE: 对基于节点的Cloud Volumes ONTAP许可证使用ARP功能的情况目�
 
 可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。
 
-有关如何使用ONTAP系统管理器和命令行界面启用ARP的详细信息、请参见 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["启用自主勒索软件保护"^]。
+有关如何使用ONTAP系统管理器和ONTAP命令行界面启用ARP的详细信息，请参阅 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["启用自主勒索软件保护"^]。
 
 image::screenshot_arp.png[屏幕截图显示了自主防兰软件保护的附加许可证。]
 

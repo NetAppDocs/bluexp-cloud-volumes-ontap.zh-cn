@@ -19,7 +19,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 要创建其他提供数据的 Storage VM ，您需要在 Azure 中分配 IP 地址，然后运行 ONTAP 命令来创建 Storage VM 和数据 LIF 。
 
 
-NOTE: 要执行其他与NIC相关的任务、您可以在Azure中分配具有适当权限的网络贡献者角色或自定义角色。有关这些NIC相关权限的详细信息、请参见 https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Microsoft Azure文档"^]。
+NOTE: 要执行其他与NIC相关的任务、您可以在Azure中分配具有适当权限的网络贡献者角色或自定义角色。有关这些NIC相关权限的详细信息，请参阅 https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Microsoft Azure文档"^]。
 
 
 
@@ -198,7 +198,7 @@ DNS 和 SMB 通信需要 iSCSI LIF 。为此，我们使用了 iSCSI LIF ，因�
 . 仅为数据和SVM LIF创建所需数量的前端IP配置：
 +
 
-NOTE: 只能在NIC0下为每个相应的SVM创建前端IP。有关如何将IP地址添加到SVM NIC0的详细信息、请参见第7步[hyperlink]
+NOTE: 只能在NIC0下为每个相应的SVM创建前端IP。有关如何将IP地址添加到SVM网件0的详细信息、请参阅"步骤7 [Hyperlink ]"
 
 +
 .. 在 * 设置 * 下，单击 * 前端 IP 配置 * 。

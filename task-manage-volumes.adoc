@@ -16,7 +16,7 @@ summary: 通过BlueXP、您可以管理卷和CIFS服务器。它还会提示您�
 [role="lead"]
 通过BlueXP、您可以管理卷和CIFS服务器。它还会提示您移动卷以避免容量问题。
 
-您可以在BlueXP标准视图或高级视图中管理卷。"标准"视图提供了一组有限的选项来修改卷。高级视图提供高级管理功能、例如克隆、调整大小、更改反勒索软件设置、分析、保护和活动跟踪以及跨层移动卷。请参见 link:task-administer-advanced-view.html["使用高级视图管理Cloud Volumes ONTAP"]。
+您可以在BlueXP标准视图或高级视图中管理卷。"标准"视图提供了一组有限的选项来修改卷。高级视图提供高级管理功能、例如克隆、调整大小、更改反勒索软件设置、分析、保护和活动跟踪以及跨层移动卷。有关信息，请参见 link:task-administer-advanced-view.html["使用高级视图管理Cloud Volumes ONTAP"]。
 
 
 
@@ -55,7 +55,7 @@ image:screenshot_manage_vol_button.png["卷选项卡下的管理卷按钮的屏�
 
 此过程将创建 FlexClone 卷。FlexClone 卷是一个可写的时间点副本、节省空间、因为它对元数据使用少量空间、然后仅在更改或添加数据时占用额外空间。
 
-要了解有关 FlexClone 卷的详细信息，请参见 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["《 ONTAP 9 逻辑存储管理指南》"^]。
+要了解有关FlexClone卷的详细信息，请参阅 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["《 ONTAP 9 逻辑存储管理指南》"^]。
 
 
 
@@ -65,7 +65,7 @@ image:screenshot_manage_vol_button.png["卷选项卡下的管理卷按钮的屏�
 
 
 
-NOTE: 如果需要自定义 Snapshot 策略，可以使用 System Manager 创建这些策略。
+NOTE: 如果您需要自定义Snapshot策略、可以使用ONTAP系统管理器创建这些策略。
 
 
 
@@ -129,7 +129,7 @@ NOTE: BlueXP会将卷移动到使用选定磁盘类型进行分层的现有聚�
 如果需要调整卷大小、可以从BlueXP中的高级视图执行此操作。
 
 .步骤
-. 打开高级视图、通过System Manager调整卷大小。请参见 link:task-administer-advanced-view.html#how-to-get-started["如何开始使用"]。
+. 打开高级视图、通过ONTAP系统管理器调整卷大小。请参阅 link:task-administer-advanced-view.html#how-to-get-started["如何开始使用"]。
 . 从左侧导航菜单中、选择*存储>卷*。
 . 从卷列表中、确定应调整大小的卷。
 . 单击选项图标 image:screenshot_gallery_options.gif["kabob 图标"]。
@@ -140,7 +140,7 @@ NOTE: BlueXP会将卷移动到使用选定磁盘类型进行分层的现有聚�
 
 image:screenshot-resize-volume.png["屏幕显示调整卷大小后修改的容量"]
 
-调整卷大小时，请务必考虑系统的容量限制。转至 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["《 Cloud Volumes ONTAP 发行说明》"^] 有关详细信息：
+调整卷大小时，请务必考虑系统的容量限制。 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["《 Cloud Volumes ONTAP 发行说明》"^]有关详细信息、请访问。
 
 
 
@@ -213,15 +213,15 @@ Cloud Volumes ONTAP 会根据更改更新 CIFS 服务器。
 
 移动卷以提高容量利用率，提高性能并满足服务级别协议的要求。
 
-您可以在 System Manager 中移动卷，方法是选择卷和目标聚合，启动卷移动操作，并可选择监控卷移动作业。使用 System Manager 时，卷移动操作会自动完成。
+您可以在ONTAP系统管理器中移动卷、方法是选择一个卷和目标聚合、启动卷移动操作、并可选择监控卷移动作业。使用 System Manager 时，卷移动操作会自动完成。
 
 .步骤
-. 使用 System Manager 或 CLI 将卷移动到聚合。
+. 使用ONTAP系统管理器或ONTAP命令行界面将卷移动到聚合。
 +
 在大多数情况下，您可以使用 System Manager 移动卷。
 
 +
-有关说明，请参见 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《 ONTAP 9 卷移动快速指南》"^]。
+有关说明，请参阅link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《 ONTAP 9 卷移动快速指南》"^]。
 
 
 
@@ -270,18 +270,18 @@ image::screenshot_aggr_volume_overview.png[屏幕截图：总体卷概述]
 
 . 如果系统未达到磁盘限制、则应将卷移动到同一系统上的现有聚合或新聚合。
 +
-有关详细信息，请参见 <<move-volumes-aggregate-capacity,将卷移动到另一个聚合以避免容量问题>>。
+有关信息，请参见 <<move-volumes-aggregate-capacity,将卷移动到另一个聚合以避免容量问题>>。
 
 . 如果系统已达到磁盘限制，请执行以下任一操作：
 +
 .. 删除所有未使用的卷。
 .. 重新排列卷以释放聚合上的空间。
 +
-有关详细信息，请参见 <<move-volumes-aggregate-capacity,将卷移动到另一个聚合以避免容量问题>>。
+有关信息，请参见 <<move-volumes-aggregate-capacity,将卷移动到另一个聚合以避免容量问题>>。
 
 .. 将两个或多个卷移动到另一个具有空间的系统。
 +
-有关详细信息，请参见 <<move-volumes-aggregate-capacity,将卷移动到另一个聚合以避免容量问题>>。
+有关信息，请参见 <<move-volumes-aggregate-capacity,将卷移动到另一个聚合以避免容量问题>>。
 
 
 
@@ -305,19 +305,19 @@ image::screenshot_aggr_volume_overview.png[屏幕截图：总体卷概述]
 . 确定具有可用容量的 Cloud Volumes ONTAP 系统或部署新系统。
 . 将源工作环境拖放到目标工作环境中以执行卷的一次性数据复制。
 +
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["在系统之间复制数据"^]。
+有关信息，请参见 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["在系统之间复制数据"^]。
 
 . 转到复制状态页，然后中断 SnapMirror 关系、将复制的卷从数据保护卷转换为读 / 写卷。
 +
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理数据复制计划和关系"^]。
+有关信息，请参见 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["管理数据复制计划和关系"^]。
 
 . 配置卷以进行数据访问。
 +
-有关为数据访问配置目标卷的信息，请参见 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["《 ONTAP 9 卷灾难恢复快速指南》"^]。
+有关为数据访问配置目标卷的信息，请参阅link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["《 ONTAP 9 卷灾难恢复快速指南》"^]。
 
 . 删除原始卷。
 +
-有关详细信息，请参见 link:task-manage-volumes.html#manage-volumes["管理卷"]。
+有关信息，请参见 link:task-manage-volumes.html#manage-volumes["管理卷"]。
 
 
 
@@ -354,12 +354,12 @@ image::screenshot_aggr_capacity.png[屏幕截图：总容量]
 
 . 如果没有聚合可用容量，请创建新聚合。
 +
-有关详细信息，请参见 link:task-create-aggregates.html["创建聚合"^]。
+有关信息，请参见 link:task-create-aggregates.html["创建聚合"^]。
 
-. 使用 System Manager 或 CLI 将卷移动到聚合。
+. 使用ONTAP系统管理器或ONTAP命令行界面将卷移动到聚合。
 . 在大多数情况下，您可以使用 System Manager 移动卷。
 +
-有关说明，请参见 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《 ONTAP 9 卷移动快速指南》"^]。
+有关说明，请参阅link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["《 ONTAP 9 卷移动快速指南》"^]。
 
 
 
@@ -385,7 +385,7 @@ image::screenshot_aggr_capacity.png[屏幕截图：总容量]
 
 == 查看FlexGroup 卷
 
-您可以直接通过BlueXP中的卷选项卡查看通过命令行界面或System Manager创建的FlexGroup 卷。与为FlexVol 卷提供的信息相同、BlueXP通过专用的卷图块提供有关已创建的跳蚤组卷的详细信息。在卷磁贴下、您可以通过图标的悬停文本来标识每个FlexGroup 卷组。此外、您还可以通过卷模式列在卷列表视图下标识FlexGroup 卷并对其进行排序。
+您可以直接通过BlueXP  中的"Volumes"(卷)选项卡通过ONTAP系统管理器或ONTAP命令行界面查看创建的FlexGroup卷。与为FlexVol 卷提供的信息相同、BlueXP通过专用的卷图块提供有关已创建的跳蚤组卷的详细信息。在卷磁贴下、您可以通过图标的悬停文本来标识每个FlexGroup 卷组。此外、您还可以通过卷模式列在卷列表视图下标识FlexGroup 卷并对其进行排序。
 
 image::screenshot_show_flexgroup_vol.png[屏幕截图显示了FlexGroup vol]
 

@@ -14,7 +14,7 @@ summary: 通过将热数据的 SSD 或 HDD 性能层与非活动数据的对象�
 
 
 [role="lead"]
-通过将热数据的 SSD 或 HDD 性能层与非活动数据的对象存储容量层相结合，您可以降低 Cloud Volumes ONTAP 的存储成本。数据分层由 FabricPool 技术提供支持。有关简要概述，请参见 link:concept-data-tiering.html["数据分层概述"]。
+通过将热数据的 SSD 或 HDD 性能层与非活动数据的对象存储容量层相结合，您可以降低 Cloud Volumes ONTAP 的存储成本。数据分层由 FabricPool 技术提供支持。有关概要信息，请参见link:concept-data-tiering.html["数据分层概述"]。
 
 要设置数据分层，您需要执行以下操作：
 
@@ -141,7 +141,7 @@ ifdef::aws[]
 
 === 将冷数据分层到 AWS S3 的要求
 
-确保 Cloud Volumes ONTAP 已连接到 S3 。提供该连接的最佳方法是创建到 S3 服务的 VPC 端点。有关说明，请参见 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文档：创建网关端点"^]。
+确保 Cloud Volumes ONTAP 已连接到 S3 。提供该连接的最佳方法是创建到 S3 服务的 VPC 端点。有关说明，请参阅 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文档：创建网关端点"^]。
 
 创建 VPC 端点时，请确保选择与 Cloud Volumes ONTAP 实例对应的区域、 VPC 和路由表。您还必须修改安全组才能添加出站 HTTPS 规则、该规则允许通信到 S3 端点。否则， Cloud Volumes ONTAP 无法连接到 S3 服务。
 
@@ -195,7 +195,7 @@ endif::gcp[]
 
 === 在实施要求后启用数据分层
 
-只要不存在连接或权限问题、BlueXP就会在创建系统时为冷数据创建一个对象存储。如果在创建系统之前未实施上述要求、则需要通过API或System Manager手动启用分层、从而创建对象存储。
+只要不存在连接或权限问题、BlueXP就会在创建系统时为冷数据创建一个对象存储。如果您在创建系统之前未实施上述要求、则需要通过API或ONTAP系统管理器手动启用分层、以创建对象存储。
 
 
 NOTE: 未来的Cloud Volumes ONTAP版本将提供通过BlueXP用户界面启用层的功能。
@@ -212,7 +212,7 @@ NOTE: 未来的Cloud Volumes ONTAP版本将提供通过BlueXP用户界面启用�
 
 * * 现有卷 *
 +
-如果要在现有卷上启用数据分层，则需要确保在底层聚合上启用数据分层。如果现有聚合未启用数据分层，则需要使用 System Manager 将现有聚合附加到对象存储。
+如果要在现有卷上启用数据分层，则需要确保在底层聚合上启用数据分层。如果现有聚合未启用数据分层、则需要使用ONTAP系统管理器将现有聚合附加到对象存储。
 
 
 
@@ -226,7 +226,7 @@ image:screenshot_aggregate_tiering_enabled.png["一个屏幕截图、用于显�
 
 
 .在聚合上启用分层的步骤
-. 在 System Manager 中，单击 * 存储 > 层 * 。
+. 在ONTAP系统管理器中，单击*存储>层*。
 . 单击聚合的操作菜单并选择 * 附加云层 * 。
 . 选择要附加的云层，然后单击 * 保存 * 。
 
@@ -255,7 +255,7 @@ Cloud Volumes ONTAP 可以将读写卷上的非活动数据分层到经济高效
 |===
 . 选择分层策略。
 +
-有关这些策略的问题描述，请参见 link:concept-data-tiering.html["数据分层概述"]。
+有关这些策略的说明，请参阅link:concept-data-tiering.html["数据分层概述"]。
 
 +
 * 示例 *
@@ -297,7 +297,7 @@ image:screenshot_replication_tiering.gif["复制卷时显示 S3 分层选项的�
 
 分层数据的存储类在系统范围内—不是每个卷的 ​it 。
 
-有关支持的存储类的信息，请参见 link:concept-data-tiering.html["数据分层概述"]。
+有关支持的存储类的信息，请参见link:concept-data-tiering.html["数据分层概述"]。
 
 .步骤
 . 在工作环境中，单击菜单图标，然后单击 * 存储类 * 或 * Blob 存储分层 * 。
@@ -330,7 +330,7 @@ image:screenshot_settings_icon.png["一个屏幕截图、显示了BlueXP控制�
 
 == 更改自动分层策略的冷却期
 
-如果您使用 _auto_tiering 策略在 Cloud Volumes ONTAP 卷上启用了数据分层，则可以根据业务需求调整默认冷却期。仅使用API和CLI支持此操作。
+如果您使用 _auto_tiering 策略在 Cloud Volumes ONTAP 卷上启用了数据分层，则可以根据业务需求调整默认冷却期。仅支持使用ONTAP命令行界面和API执行此操作。
 
 冷却期是指卷中的用户数据在被视为 " 冷 " 并移至对象存储之前必须保持非活动状态的天数。
 

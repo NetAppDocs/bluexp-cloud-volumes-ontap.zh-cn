@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-saz-feature.html 
+keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode 
+summary: 启用此Microsoft Azure功能可在SAZ中部署HA。 
+---
+= 为单个可用性区域启用VMOrchestratorzonalMultiFD
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要在本地冗余存储(LRS)单一可用性区域中部署VM实例、您应激活 `Microsoft.Compute/VMOrchestratorZonalMultiFD`订阅的Microsoft功能。在HA模式下、此功能有助于在同一可用性区域的不同容错域中部署节点。
+
+除非激活此功能、否则不会进行分区部署、先前的LRS非分区部署将生效。
+
+有关在单个可用性区域中部署VM的信息，请参见link:concept-ha-azure.html["Azure 中的高可用性对"]。
+
+以Privileges为"所有者"的用户身份执行以下步骤：
+
+.步骤
+. 从Azure门户访问Azure Cloud Shell。有关信息，请参见 https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/["Microsoft Azure文档：Azure Cloud Shell入门"^]。
+.  `Microsoft.Compute/VMOrchestratorZonalMultiFD`通过运行以下命令注册功能：
++
+[]
+====
+az account set -s _VMOrchestrator_ az Feature寄存器--name <Azure_subscription_name_or_ID>区域多fd --nam命名 空间Microsoft.Compute
+
+====
+. 验证注册状态和输出样本：
++
+[]
+====
+az Feature show -n VMOrchestrator区域 多fd --namep命名 空间Microsoft.Compute｛"id"："/뚩 阅<ID>/_VMOrchestrators/Microsoft.Features/PROPERTIERS/Microsoft.Compute/features/VMOrchestratorZonalMultiFD"、"name"：Microsoft.Compute/VMOrchestratorZonalMultiFD"、"properties"：｛"state"："regned"｝、"type"："Microsoft.Feature/PROPERTIERS/FATIONs"｝
+
+====
+

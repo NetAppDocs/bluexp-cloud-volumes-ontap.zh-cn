@@ -48,7 +48,7 @@ summary: 如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用
 
 == 支持的配置
 
-在标准云区域、Cloud Volumes ONTAP 9.10.0及更高版本支持通过System Manager进行高级管理。
+在标准云区域中、Cloud Volumes ONTAP 9.10.0及更高版本支持通过ONTAP System Manager进行高级管理。
 
 在GovCloud地区或无法访问出站Internet的地区不支持System Manager集成。
 

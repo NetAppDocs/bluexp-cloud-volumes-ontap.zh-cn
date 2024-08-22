@@ -145,7 +145,7 @@ endif::gcp[]
 * 包括使用BlueXP备份和恢复的无限卷备份、但仅适用于使用专业版软件包的Cloud Volumes ONTAP系统。
 +
 
-NOTE: BlueXP备份和恢复需要订阅PAYGO、但使用此服务不会产生任何费用。有关为BlueXP备份和恢复设置许可的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["为BlueXP备份和恢复设置许可"^]。
+NOTE: BlueXP备份和恢复需要订阅PAYGO、但使用此服务不会产生任何费用。有关为BlueXP  备份和恢复设置许可的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["为BlueXP备份和恢复设置许可"^]。
 
 * 增加 NetApp 的任何云数据服务，但需额外付费
 

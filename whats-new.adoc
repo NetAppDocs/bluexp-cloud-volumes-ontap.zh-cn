@@ -20,6 +20,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2024年8月22日
+
+
+
+=== Cloud Volumes ONTAP 9.15.1 GA
+
+BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.15.1正式发布版。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+
+
+
 == 2024 年 8 月 8 日
 
 
@@ -32,7 +44,7 @@ Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许�
 
 === Azure上Flash Cache支持的最低ONTAP版本
 
-在Azure上配置Flash Cache所需的最低ONTAP版本为9.13.1GA。只能使用ONTAP 9.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash Cache。
+在Azure上配置Flash Cache所需的最低ONTAP版本为9.13.1GA。您只能使用.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash ONTAP 9。
 
 有关支持的配置，请参见 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure 中支持的配置"^]。
 
@@ -87,7 +99,7 @@ NOTE: 在标准模式下使用BlueXP时、支持AWS本地区域。目前、在�
 * 加拿大中部
 
 
-有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
+有关所有地区的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
 
 
 
@@ -95,7 +107,7 @@ NOTE: 在标准模式下使用BlueXP时、支持AWS本地区域。目前、在�
 
 约翰内斯堡地区 (`africa-south1` 适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud现在支持此功能。
 
-有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
+有关所有地区的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
 
 
 
@@ -233,7 +245,7 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["了解此
 * 阿拉伯联合酋长国北部
 
 
-有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
+有关所有地区的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
 
 
 
@@ -247,7 +259,7 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["了解此
 
 现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud支持柏林地区。
 
-有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
+有关所有地区的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
 
 
 
@@ -261,7 +273,7 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["了解此
 
 现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持特拉维夫地区。
 
-有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS下的全球区域图"^]。
+有关所有地区的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS下的全球区域图"^]。
 
 
 
@@ -275,7 +287,7 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["了解此
 
 现在、适用于Cloud Volumes ONTAP的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持沙特阿拉伯地区。
 
-有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
+有关所有地区的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
 
 
 
@@ -299,7 +311,7 @@ Azure中的以下地区现在支持在Cloud Volumes ONTAP 9.12.1 GA及更高版�
 * 美国西部 2.
 
 
-有关支持多个可用性区域的所有区域的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
+有关支持多个可用性区域的所有区域的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
 
 
 
@@ -366,7 +378,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp
 * 卷类型"Secondary (DP)"现在标记为"Secondary (Secondary (DP))"。
 
 
-有关使用情况报告的详细信息、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["下载使用情况报告"^]。
+有关使用情况报告的详细信息，请参阅link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["下载使用情况报告"^]。
 
 
 
@@ -394,7 +406,7 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9131-relnotes/["了解此
 
 对于Cloud Volumes ONTAP 9.12.1 GA及更高版本、Azure中的日本东部和韩国中部现在支持HA多可用性区域部署。
 
-有关支持多个可用性区域的所有区域的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
+有关支持多个可用性区域的所有区域的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
 
 
 
@@ -402,7 +414,7 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9131-relnotes/["了解此
 
 Cloud Volumes ONTAP现在支持自动防兰软件保护(ARP)。Cloud Volumes ONTAP 9.12.1及更高版本支持ARP。
 
-要了解有关ARP与Cloud Volumes ONTAP的更多信息、请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["自主勒索软件保护"^]。
+要了解有关ARP与Cloud Volumes ONTAP的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["自主勒索软件保护"^]。
 
 
 
@@ -430,7 +442,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9131-relnotes["了解此版本
 
 现在、您可以通过Upgrade Cloud Volumes ONTAP页面选择升级到最新可用的Cloud Volumes ONTAP版本或更早版本。
 
-要了解有关通过BlueXP升级Cloud Volumes ONTAP的更多信息、请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["升级 Cloud Volumes ONTAP"^]。
+要了解有关通过BlueXP  升级Cloud Volumes ONTAP的详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["升级 Cloud Volumes ONTAP"^]。
 
 
 
@@ -468,7 +480,7 @@ Azure中的澳大利亚东部地区现在支持在Cloud Volumes ONTAP 9.12.1 GA�
 * 卷使用量
 
 
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["管理基于容量的许可证"^]。
+有关详细信息，请参阅 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["管理基于容量的许可证"^]。
 
 
 
@@ -486,7 +498,7 @@ Azure中的澳大利亚东部地区现在支持在Cloud Volumes ONTAP 9.12.1 GA�
 * 支持直接从 NetApp 购买的许可证。
 
 
-有关区域可用性、请参见 link:https://bluexp.netapp.com/cloud-volumes-global-regions["适用于Cloud Volumes ONTAP 的全局区域映射"^]。
+有关地区可用性，请参阅link:https://bluexp.netapp.com/cloud-volumes-global-regions["适用于Cloud Volumes ONTAP 的全局区域映射"^]。
 
 
 
@@ -526,7 +538,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/ma
 
 === 可通过Cloud Volumes ONTAP 查看FlexGroup 卷
 
-现在、可以通过BlueXP中重新设计的卷磁贴查看直接通过CLI或System Manager创建的FlexGroup 卷。与为FlexVol 卷提供的信息相同、BlueXP可通过专用的"卷"图块提供有关已创建FlexGroup 卷的详细信息。
+现在、您可以通过BlueXP  中重新设计的"卷"图块直接查看通过ONTAP系统管理器或ONTAP命令行界面创建的FlexGroup卷。与为FlexVol 卷提供的信息相同、BlueXP可通过专用的"卷"图块提供有关已创建FlexGroup 卷的详细信息。
 
 
 NOTE: 目前、您只能在BlueXP下查看现有FlexGroup 卷。在BlueXP中创建FlexGroup 卷的功能不可用、但计划在未来版本中使用。
@@ -550,7 +562,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volume
 * 支持直接从 NetApp 购买的许可证。
 
 
-有关区域可用性、请参见 link:https://bluexp.netapp.com/cloud-volumes-global-regions["适用于Cloud Volumes ONTAP 的全局区域映射"^]。
+有关地区可用性，请参阅link:https://bluexp.netapp.com/cloud-volumes-global-regions["适用于Cloud Volumes ONTAP 的全局区域映射"^]。
 
 
 
@@ -615,7 +627,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes
 
 现在、可以通过AWS HA单可用性区域(AZ)部署创建放置组、并使用新的配置设置。现在、您可以选择绕过失败的放置组创建、并允许AWS HA单AZ部署成功完成。
 
-有关如何配置放置组创建设置的详细信息、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["为AWS HA Single AZ配置放置组创建"^]。
+有关如何配置布局组创建设置的详细信息，请参见link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["为AWS HA Single AZ配置放置组创建"^]。
 
 
 
@@ -645,7 +657,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html[
 
 在Google云市场中、Cloud Volumes ONTAP 可以通过按需购买或按年订立的合同获得经过优化且基于边缘缓存容量的许可包。
 
-请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP 许可"^]。
+请参阅 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP 许可"^]。
 
 
 
@@ -653,7 +665,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html[
 
 新的Cloud Volumes ONTAP 部署不再包括多租户加密密钥管理(MTEKM)许可证。
 
-有关随Cloud Volumes ONTAP 自动安装的ONTAP 功能许可证的详细信息、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP 的默认配置"^]。
+有关随Cloud Volumes ONTAP自动安装的ONTAP功能许可证的详细信息，请参阅link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP 的默认配置"^]。
 
 
 
@@ -723,7 +735,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解
 
 现在、您可以在同一Azure订阅中将工作环境从一个资源组移动到Azure中的其他资源组。
 
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-moving-resource-groups-azure.html["移动资源组"]。
+有关详细信息，请参阅 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-moving-resource-groups-azure.html["移动资源组"]。
 
 
 
@@ -731,7 +743,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解
 
 NDMP-copy现已通过认证、可与云卷ONTAP 配合使用。
 
-有关如何配置和使用NDMP的信息、请参见 https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP 配置概述"]。
+有关如何配置和使用NDMP https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP 配置概述"]的信息，请参见。
 
 
 
@@ -739,7 +751,7 @@ NDMP-copy现已通过认证、可与云卷ONTAP 配合使用。
 
 添加了一个新的Azure权限、现在允许您在创建时对所有受管磁盘进行加密。
 
-有关此新功能的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-azure-encryption.html["设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥"]。
+有关此新功能的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-azure-encryption.html["设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥"]。
 
 
 

@@ -25,7 +25,7 @@ summary: 只需几步即可开始使用适用于 Azure 的 Cloud Volumes ONTAP �
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 规划您的配置
 [role="quick-margin-para"]
-BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。 link:task-planning-your-config-azure.html["了解更多信息。"]。
+BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。有关信息，请参见 link:task-planning-your-config-azure.html["在Azure中规划Cloud Volumes ONTAP 配置"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 设置网络
 [role="quick-margin-list"]

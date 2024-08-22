@@ -183,7 +183,7 @@ TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/bluex
 | 1000 个 inbound_ssh | 22 TCP | 任意到任意 | SSH 访问集群管理 LIF 或节点管理 LIF 的 IP 地址 
 
 
-| 1001inbound_http | 80/TCP | 任意到任意 | 使用集群管理 LIF 的 IP 地址对系统管理器 Web 控制台进行 HTTP 访问 
+| 1001inbound_http | 80/TCP | 任意到任意 | 使用集群管理LIF的IP地址通过HTTP访问ONTAP系统管理器Web控制台 
 
 
 | 1002inbound_111_tcp | 111 TCP | 任意到任意 | 远程过程调用 NFS 
@@ -201,7 +201,7 @@ TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/bluex
 | 1006 inbound_161-162_UDP | 161-162 UDP | 任意到任意 | 简单网络管理协议 
 
 
-| 1007 inbound_443 | 443/TCP | 任意到任意 | 使用集群管理LIF的IP地址连接Connector并通过HTTPS访问System Manager Web控制台 
+| 1007 inbound_443 | 443/TCP | 任意到任意 | 通过连接器进行连接、并使用集群管理LIF的IP地址通过HTTPS访问ONTAP系统管理器Web控制台 
 
 
 | 1008 inbound_445 | 445 TCP | 任意到任意 | Microsoft SMB/CIFS over TCP （通过 TCP ）和 NetBIOS 成帧 
@@ -269,7 +269,7 @@ NOTE: 与单节点系统相比， HA 系统的入站规则更少，因为入站�
 | 优先级和名称 | 端口和协议 | 源和目标 | Description 
 
 
-| 100 inbound_443 | 443 任何协议 | 任意到任意 | 使用集群管理LIF的IP地址连接Connector并通过HTTPS访问System Manager Web控制台 
+| 100 inbound_443 | 443 任何协议 | 任意到任意 | 通过连接器进行连接、并使用集群管理LIF的IP地址通过HTTPS访问ONTAP系统管理器Web控制台 
 
 
 | 101 inbound_111_tcp | 111 任何协议 | 任意到任意 | 远程过程调用 NFS 

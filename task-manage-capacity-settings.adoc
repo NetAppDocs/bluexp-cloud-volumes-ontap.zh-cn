@@ -42,7 +42,7 @@ link:concept-storage-management.html#capacity-management["了解容量管理模�
 可用空间比率的计算方法如下：
 (聚合容量-聚合上的总已用容量)/聚合容量
 
-请参见 link:concept-storage-management.html#automatic-capacity-management["自动容量管理"] 要立即了解、容量在Cloud Volumes ONTAP中自动管理。
+请参见link:concept-storage-management.html#automatic-capacity-management["自动容量管理"]了解Cloud Volumes ONTAP中的容量自动管理功能。
 
 --
 聚合容量阈值—数据分层的可用空间比率:: 定义将数据分层到容量层(对象存储)时、性能层(磁盘)需要多少可用空间。

@@ -79,7 +79,7 @@ link:task-set-up-licensing-google.html["了解如何设置许可"]。
 | 添加标签 | 标签是指Google Cloud资源的元数据。BlueXP会将这些标签添加到与该系统关联的Cloud Volumes ONTAP 系统和Google云资源中。在创建工作环境时，您最多可以从用户界面添加四个标签，然后可以在创建后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标签。有关标签的信息，请参见 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 文档：标记资源"^]。 
 
 
-| 用户名和密码 | 这些是 Cloud Volumes ONTAP 集群管理员帐户的凭据。您可以使用这些凭据通过 System Manager 或其命令行界面连接到 Cloud Volumes ONTAP 。保留默认的 _admin_ 用户名或将其更改为自定义用户名。 
+| 用户名和密码 | 这些是 Cloud Volumes ONTAP 集群管理员帐户的凭据。您可以使用这些凭据通过ONTAP系统管理器或ONTAP命令行界面连接到Cloud Volumes ONTAP。保留默认的 _admin_ 用户名或将其更改为自定义用户名。 
 
 
 | 编辑项目  a| 
@@ -143,7 +143,7 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 . *许可*：根据需要更改Cloud Volumes ONTAP 版本并选择计算机类型。
 +
 
-NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补程序版本、则在创建工作环境时、BlueXP会将系统更新到该版本。例如、如果选择Cloud Volumes ONTAP 9.10.1和9.10.1 P4可用、则会发生更新。更新不会从一个版本更新到另一个版本，例如从 9.6 到 9.7 。
+NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补程序版本、则在创建工作环境时、BlueXP会将系统更新到该版本。例如、如果选择Cloud Volumes ONTAP 9.13.1和9.13.1 P4可用、则会发生更新。更新不会从一个版本更新到另一个版本，例如从 9.13 到 9.14 。
 
 . * 底层存储资源 * ：选择初始聚合的设置：磁盘类型和每个磁盘的大小。
 +
@@ -153,7 +153,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 
 +
-有关选择磁盘类型和大小的帮助，请参见 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在Google Cloud中估算系统规模"^]。
+有关选择磁盘类型和大小的帮助，请参阅link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在Google Cloud中估算系统规模"^]。
 
 . *Flash Cache、写入速度和WORM*：
 +
@@ -168,7 +168,7 @@ link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
 
 +
 
-NOTE: 通过*高速*写入速度选项、可以获得较高的写入速度和较高的最大传输单元(MTU)、即8、896字节。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。有关VPC-1、VPC-2和VPC-3的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的规则"^]。
+NOTE: 通过*高速*写入速度选项、可以获得较高的写入速度和较高的最大传输单元(MTU)、即8、896字节。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。有关VPC-1、VPC-2和VPC-3的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的规则"^]。
 
 .. 根据需要激活一次写入、多次读取(WORM)存储。
 +
@@ -186,7 +186,7 @@ link:concept-worm.html["了解有关 WORM 存储的更多信息。"^]。
 
 +
 ** BlueXP在Cloud Volumes ONTAP 实例上设置服务帐户。此服务帐户提供将数据分层到 Google Cloud Storage 存储分段的权限。请务必以分层服务帐户的用户身份添加Connector服务帐户、否则无法从BlueXP中选择它
-** 有关添加Google Cloud帐户的帮助、请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["使用9.6设置和添加用于数据分层的Google Cloud帐户"^]。
+** 有关添加Google Cloud帐户的帮助，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["使用9.6设置和添加用于数据分层的Google Cloud帐户"^]。
 ** 您可以在创建或编辑卷时选择特定的卷分层策略。
 ** 如果禁用数据分层、则可以在后续聚合上启用该功能、但您需要关闭系统并从Google Cloud控制台添加服务帐户。
 +
@@ -255,13 +255,11 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 | DNS 域 | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。 
 
 
-| NTP 服务器 | 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 了解详细信息。
-
-请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。 
+| NTP 服务器 | 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。有关 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^]详细信息、请参见。请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。 
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能，并根据需要更改卷分层策略。
 +
-有关详细信息，请参见 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
+有关详细信息，请参阅 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +
@@ -282,7 +280,7 @@ BlueXP部署Cloud Volumes ONTAP 系统。您可以跟踪时间链中的进度。
 
 .完成后
 * 如果配置了 CIFS 共享、请授予用户或组对文件和文件夹的权限、并验证这些用户是否可以访问该共享并创建文件。
-* 如果要对卷应用配额、请使用 System Manager 或 CLI 。
+* 如果要将配额应用于卷、请使用ONTAP系统管理器或ONTAP命令行界面。
 +
 配额允许您限制或跟踪用户、组或 qtree 使用的磁盘空间和文件数量。
 
@@ -317,7 +315,7 @@ BlueXP部署Cloud Volumes ONTAP 系统。您可以跟踪时间链中的进度。
 | 添加标签 | 标签是指Google Cloud资源的元数据。BlueXP会将这些标签添加到与该系统关联的Cloud Volumes ONTAP 系统和Google云资源中。在创建工作环境时，您最多可以从用户界面添加四个标签，然后可以在创建后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标签。有关标签的信息，请参见 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 文档：标记资源"^]。 
 
 
-| 用户名和密码 | 这些是 Cloud Volumes ONTAP 集群管理员帐户的凭据。您可以使用这些凭据通过 System Manager 或其命令行界面连接到 Cloud Volumes ONTAP 。保留默认的 _admin_ 用户名或将其更改为自定义用户名。 
+| 用户名和密码 | 这些是 Cloud Volumes ONTAP 集群管理员帐户的凭据。您可以使用这些凭据通过ONTAP系统管理器或ONTAP命令行界面连接到Cloud Volumes ONTAP。保留默认的 _admin_ 用户名或将其更改为自定义用户名。 
 
 
 | 编辑项目  a| 
@@ -385,7 +383,7 @@ link:reference-networking-gcp.html["详细了解网络要求"^]。
 . *许可*：根据需要更改Cloud Volumes ONTAP 版本并选择计算机类型。
 +
 
-NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补程序版本、则在创建工作环境时、BlueXP会将系统更新到该版本。例如、如果选择Cloud Volumes ONTAP 9.10.1和9.10.1 P4可用、则会发生更新。更新不会从一个版本更新到另一个版本，例如从 9.6 到 9.7 。
+NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补程序版本、则在创建工作环境时、BlueXP会将系统更新到该版本。例如、如果选择Cloud Volumes ONTAP 9.13.1和9.13.1 P4可用、则会发生更新。更新不会从一个版本更新到另一个版本，例如从 9.13 到 9.14 。
 
 . * 底层存储资源 * ：选择初始聚合的设置：磁盘类型和每个磁盘的大小。
 +
@@ -395,7 +393,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 
 +
-有关选择磁盘类型和大小的帮助，请参见 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在Google Cloud中估算系统规模"^]。
+有关选择磁盘类型和大小的帮助，请参阅link:task-planning-your-config-gcp.html#size-your-system-in-gcp["在Google Cloud中估算系统规模"^]。
 
 . *Flash Cache、写入速度和WORM*：
 +
@@ -410,7 +408,7 @@ link:concept-write-speed.html["了解有关写入速度的更多信息。"^]。
 
 +
 
-NOTE: 通过*高*写入速度选项可获得高写入速度和8、896字节的最大传输单元(MTU)、实例类型为n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。高写入速度和8、896的MTU与功能相关、不能在已配置的实例中单独禁用。有关VPC-1、VPC-2和VPC-3的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的规则"^]。
+NOTE: 通过*高*写入速度选项可获得高写入速度和8、896字节的最大传输单元(MTU)、实例类型为n2-standard-16、n2-standard-32、n2-standard-48和n2-standard-64。此外、较高的MTU 8、896要求在部署时选择VPC-1、VPC-2和VPC-3。高写入速度和8、896的MTU与功能相关、不能在已配置的实例中单独禁用。有关VPC-1、VPC-2和VPC-3的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1、VPC-2和VPC-3的规则"^]。
 
 .. 根据需要激活一次写入、多次读取(WORM)存储。
 +
@@ -496,13 +494,11 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 | DNS 域 | Cloud Volumes ONTAP Storage Virtual Machine （ SVM ）的 DNS 域。在大多数情况下，域与 AD 域相同。 
 
 
-| NTP 服务器 | 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 了解详细信息。
-
-请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。 
+| NTP 服务器 | 选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。有关详细信息、请参见 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP自动化文档"^] 。请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。 
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能，并根据需要更改卷分层策略。
 +
-有关详细信息，请参见 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
+有关详细信息，请参阅 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
 
 . * 审核并批准 * ：审核并确认您的选择。
 +
@@ -523,7 +519,7 @@ BlueXP部署Cloud Volumes ONTAP 系统。您可以跟踪时间链中的进度。
 
 .完成后
 * 如果配置了 CIFS 共享、请授予用户或组对文件和文件夹的权限、并验证这些用户是否可以访问该共享并创建文件。
-* 如果要对卷应用配额、请使用 System Manager 或 CLI 。
+* 如果要将配额应用于卷、请使用ONTAP系统管理器或ONTAP命令行界面。
 +
 配额允许您限制或跟踪用户、组或 qtree 使用的磁盘空间和文件数量。
 

@@ -14,7 +14,7 @@ summary: 利用Google的密钥管理服务提供第三方密钥管理服务。
 [role="lead"]
 您可以使用 link:https://cloud.google.com/kms/docs["Google Cloud Platform 的密钥管理服务（ Cloud KMS ）"^] 在部署了Google Cloud Platform的应用程序中保护ONTAP 加密密钥。
 
-可以使用命令行界面或ONTAP REST API启用Cloud KMS的密钥管理。
+可以使用ONTAP命令行界面或ONTAP REST API启用云KMS的密钥管理。
 
 使用Cloud KMS时、请注意、默认情况下、数据SVM的LIF用于与云密钥管理端点进行通信。节点管理网络用于与云提供商的身份验证服务(oauth2.googleapis.com)进行通信。如果集群网络配置不正确，集群将无法正确利用密钥管理服务。
 

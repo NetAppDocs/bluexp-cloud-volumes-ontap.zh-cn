@@ -26,7 +26,7 @@ summary: 从BlueXP升级Cloud Volumes ONTAP 以访问最新的新功能和增强
 
 === 仅从BlueXP升级
 
-必须从BlueXP完成Cloud Volumes ONTAP 升级。您不应使用 System Manager 或命令行界面升级 Cloud Volumes ONTAP 。这样做可能会影响系统稳定性。
+必须从BlueXP完成Cloud Volumes ONTAP 升级。您不应使用ONTAP系统管理器或ONTAP命令行界面升级Cloud Volumes ONTAP。这样做可能会影响系统稳定性。
 
 
 
@@ -241,7 +241,7 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D
 NOTE: 即使BlueXP备份和恢复使用SnapMirror的实施来创建备份文件(称为SnapMirror Cloud)、在升级系统时也不需要暂停备份。
 
 .关于此任务
-这些步骤介绍了如何将 System Manager 用于版本 9.3 和更高版本。
+以下步骤介绍如何使用9.3及更高版本的ONTAP系统管理器。
 
 .步骤
 . 从目标系统登录到 System Manager 。
@@ -263,7 +263,7 @@ NOTE: 要访问BlueXP的计算机必须与Cloud Volumes ONTAP 建立网络连接
 在更新软件之前， Cloud Volumes ONTAP 的聚合必须处于联机状态。聚合在大多数配置中都应该联机、但如果不联机、则应将其联机。
 
 .关于此任务
-这些步骤介绍了如何将 System Manager 用于版本 9.3 和更高版本。
+以下步骤介绍如何使用9.3及更高版本的ONTAP系统管理器。
 
 .步骤
 . 在工作环境中、单击*聚合*选项卡。

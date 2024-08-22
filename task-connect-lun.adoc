@@ -19,7 +19,7 @@ summary: 创建iSCSI卷时、BlueXP会自动为您创建LUN。我们通过为每
 请注意以下事项：
 
 * BlueXP的自动容量管理不适用于LUN。当BlueXP创建LUN时、它会禁用自动增长功能。
-* 您可以从 System Manager 或 CLI 创建其他 LUN 。
+* 您可以从ONTAP系统管理器或ONTAP命令行界面创建其他LUN。
 
 
 .步骤

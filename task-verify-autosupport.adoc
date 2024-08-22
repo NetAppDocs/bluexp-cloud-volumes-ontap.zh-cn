@@ -47,7 +47,7 @@ Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、
 请按照以下步骤解决此问题。
 
 .步骤
-. 通过SSH连接到Cloud Volumes ONTAP 系统、以便您可以从命令行界面管理系统。
+. 通过SSH连接到Cloud Volumes ONTAP系统、以便您可以从ONTAP命令行界面管理此系统。
 +
 link:task-connecting-to-otc.html["了解如何通过SSH连接到Cloud Volumes ONTAP"]。
 

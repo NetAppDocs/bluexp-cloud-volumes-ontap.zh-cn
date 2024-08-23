@@ -20,6 +20,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2024 年 8 月 23 日
+
+
+
+=== 现在、AWS支持加拿大西部地区
+
+现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持加拿大西部地区。
+
+有关所有地区的列表，请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS下的全球区域图"^]。
+
+
+
 == 2024年8月22日
 
 

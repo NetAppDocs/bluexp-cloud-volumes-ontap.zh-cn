@@ -100,9 +100,10 @@ HA 对:: HA对使用两种类型的磁盘、以较高的成本为I/O密集型工
 
 * 相关链接 *
 
+* link:task-planning-your-config-azure.html["了解如何在 Azure 中为您的系统选择磁盘类型和磁盘大小"]
+* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["在Azure中启动Cloud Volumes ONTAP HA对"]
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure 文档： Azure 托管磁盘类型"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure 文档： Azure 页面 Blobs 概述"^]
-* link:task-planning-your-config-azure.html["了解如何在 Azure 中为您的系统选择磁盘类型和磁盘大小"]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["查看 Azure 中 Cloud Volumes ONTAP 的存储限制"^]
 
 

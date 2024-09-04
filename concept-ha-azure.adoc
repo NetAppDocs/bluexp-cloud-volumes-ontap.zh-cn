@@ -61,6 +61,16 @@ image:diagram_ha_azure_saz_lrs.png["一个概念图、其中显示了一个负�
 
 Azure 标准负载平衡器:: 负载平衡器管理传入 Cloud Volumes ONTAP HA 对的流量。
 单个可用性区域中的VM:: 从Cloud Volumes ONTAP 9.15.1开始、您可以在一个可用性区域(AZ)中创建和管理异构虚拟机(VM)。您可以将高可用性(HA)节点部署在同一AZ中的不同容错域中、以确保最佳可用性。要详细了解支持此功能的灵活流程编排模式，请参见 https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure文档：虚拟机扩展集"^]。
++
+--
+满足以下条件时、分区部署将使用高级SSD v2托管磁盘：
+
+* Cloud Volumes ONTAP的版本为9.151或更高版本。
+* 选定区域和区域支持高级SSD v2托管磁盘。有关受支持地区的信息，请参阅 https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure网站：产品按地区提供"^]。
+* 此订阅已注册到Microsoft link:task-saz-feature.html["Microsoft.Compute/VMOrchestratorZonalMultiFD功能"].
+
+
+--
 Disks:: 客户数据驻留在本地冗余存储(LRS)管理的磁盘上。每个节点都可以访问另一节点的存储。此外link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["启动、根、配对根、核心和NVRAM数据"^]，还需要额外的存储。
 存储帐户:: 存储帐户用于基于受管磁盘的部署、以处理诊断日志并分层到Blob存储。
 

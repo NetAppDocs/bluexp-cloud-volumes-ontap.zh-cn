@@ -5351,11 +5351,7 @@
   <block id="d91c9bd9d601398d431e2acc5559f7bf" category="paragraph">有关详细信息，请参阅 <block ref="f7e49e28b2875e2913382dd3096ff790" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
   <block id="8c286011c74e75b22d1d90dbeb4504b6" category="list-text">*服务*：根据是否要在Cloud Volumes ONTAP中使用各个服务来启用或禁用这些服务。</block>
   <block id="e9e34ff3ab97c79b3c316c17375f6ff1" category="inline-link-macro">为单个可用性区域启用VMOrchestratorzonalMultiFD</block>
-  <block id="5d53fdb6098c234fa40898b914a4f5db" category="paragraph">从Cloud Volumes ONTAP 9.15.1开始、您可以在本地冗余存储(LRS)单可用性区域中部署VM实例。这也需要<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block>为您的订阅激活此功能。此功能有助于在同一可用性区域中部署高可用性(HA)对。请参阅<block ref="8237f408225e4c565d3ae8daf52a7def" category="inline-link-macro-rx"></block>和<block ref="88705e19880d9fa1af5df70699e53b95" category="inline-link-macro-rx"></block>。</block>
-  <block id="2976779596586c38da75f46052ad2926" category="list-text">对于单个可用性区域、请选择Azure区域、可用性区域、vNet和子网。从Cloud Volumes ONTAP 9.15.1开始、您可以在单个可用性区域中安装VM实例。您需要选择支持此模式的区域。如果您选择的区域不支持分区部署、则会遵循以前的LRS非分区部署模式。</block>
-  <block id="fcb7516396bf1d9722f3e765d3004427" category="inline-link">Microsoft Azure文档：虚拟机扩展集文档</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure网站：产品按地区提供</block>
-  <block id="6d613bce1a88fcb164ac593c1058e246" category="paragraph">要了解有关此部署模式和支持的Azure区域的详细信息，请参阅<block ref="a0eb41cb535bf2a39d70134c95375180" category="inline-link-rx"></block>和<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>。</block>
   <block id="e4eaa3d391d7d55d8c20cbf06dc81915" category="list-text">对于多个可用性分区、请为节点1选择区域、vNet、子网、分区、并为节点2选择分区。</block>
   <block id="407f144abfa1ac000a5a8035a2a3eb77" category="paragraph">有关选择磁盘大小的帮助，请参见<block ref="693042947faf99c4ded2e1854ea1714d" category="inline-link-macro-rx"></block>。</block>
   <block id="561bec0387138d2b07f137df6774960c" category="paragraph">有关详细信息，请参阅 <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
@@ -5445,4 +5441,13 @@
   <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">现在、AWS支持加拿大西部地区</block>
   <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持加拿大西部地区。</block>
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">有关所有地区的列表，请参见<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
+  <block id="208717af2c6557faae5e8d47b38680bd" category="paragraph">满足以下条件时、分区部署将使用高级SSD v2托管磁盘：</block>
+  <block id="6326d313b843fff1d57ed50ec7c000f1" category="list-text">Cloud Volumes ONTAP的版本为9.151或更高版本。</block>
+  <block id="fd4ec163c1cf6efd42bc780358b7fb84" category="list-text">选定区域和区域支持高级SSD v2托管磁盘。有关受支持地区的信息，请参阅<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>。</block>
+  <block id="a9b7d8164fa6256aced367d79aa2abab" category="inline-link-macro">Microsoft.Compute/VMOrchestratorZonalMultiFD功能</block>
+  <block id="218949100f9bb1c7fe8ef525701547a0" category="list-text">此订阅已注册到Microsoft <block ref="b47370f17ae59423c751ec1694c9ca74" category="inline-link-macro-rx"></block>.</block>
+  <block id="d63d6372ae20eb19f707718f270a6b48" category="list-text"><block ref="d63d6372ae20eb19f707718f270a6b48" category="inline-link-macro-rx"></block></block>
+  <block id="fadac06c68e9ffce4bb17bd0d6ec5f2b" category="paragraph">满足以下条件时、您可以在单个可用性区域中部署HA对并使用高级SSD v2托管磁盘：</block>
+  <block id="ed0e2426cd36bf5b4eb9a140ae9a7508" category="list-text">对于单个可用性区域、请选择Azure区域、可用性区域、vNet和子网。</block>
+  <block id="e09953ef98be5a0cd4cc4ad0c288c775" category="paragraph">从Cloud Volumes ONTAP 9.15.1开始、您可以在Azure的单可用性区域(Single Availability Zones、AZs)中以HA模式部署虚拟机(VM)实例。您需要选择支持此部署的区域和区域。如果分区或区域不支持分区部署、则会遵循之前的LRS非分区部署模式。要了解共享受管磁盘支持的配置，请参见<block ref="2148c58538cc3adf327c3ade110b8487" category="inline-link-macro-rx"></block>。</block>
 </blocks>

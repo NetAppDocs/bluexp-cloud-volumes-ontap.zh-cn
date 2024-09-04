@@ -229,9 +229,15 @@ NOTE: 系统会在重新启动时自动创建快照。
 * 根卷使用两个512 GiB高级SSD共享托管磁盘(每个节点一个)
 * 两个 1024 GiB 标准 HDD 磁盘，用于节省核心（每个节点一个）
 * 两个用于NVRAM的512 GiB高级SSD托管磁盘(每个节点一个)
-+
+
+
 如果虚拟机支持将高级SSD v2托管磁盘用作数据磁盘、则会对NVRAM使用32 GiB高级SSD v2托管磁盘、并对根卷使用512 GiB高级SSD v2共享托管磁盘。
 
+满足以下条件时、您可以在单个可用性区域中部署HA对并使用高级SSD v2托管磁盘：
+
+* Cloud Volumes ONTAP的版本为9.151或更高版本。
+* 选定区域和区域支持高级SSD v2托管磁盘。有关受支持地区的信息，请参阅 https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure网站：产品按地区提供"^]。
+* 此订阅已注册到Microsoft link:task-saz-feature.html["Microsoft.Compute/VMOrchestratorZonalMultiFD功能"].
 
 
 endif::azure[]

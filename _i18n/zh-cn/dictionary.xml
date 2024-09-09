@@ -691,7 +691,6 @@
   <block id="1ee261e062b77615a21251aa4b6da907" category="section-title">WORM 存储的工作原理</block>
   <block id="a4a6f068d81ff1afeac110af2570a8ab" category="paragraph">将文件提交到 WORM 存储后，即使在保留期限到期后，也无法对其进行修改。防篡改时钟将确定 WORM 文件的保留期已过。</block>
   <block id="487d92711c834ef6ed6c245a4ade969b" category="paragraph">保留期结束后、您将负责删除不再需要的任何文件。</block>
-  <block id="d7b54fc61b65b19c4694a29b6044aacd" category="section-title">正在充电</block>
   <block id="74f13d97ea448b8140308bf35c78920e" category="section-title">激活 WORM 存储</block>
   <block id="785248b65164fa7ba3b7948c05afc1cc" category="section-title">将文件提交到 WORM</block>
   <block id="3fd6e3cd7f26f44db79e5d9fabdbeda0" category="paragraph">您可以使用应用程序通过 NFS 或 CIFS 将文件提交到 WORM ，或者使用 ONTAP CLI 自动将文件提交到 WORM 。您还可以使用 WORM 附加文件来保留增量写入的数据，例如日志信息。</block>
@@ -2242,7 +2241,6 @@
   <block id="7546f1896fe746593fe39c57ea23bd23" category="paragraph">RAID0 不支持使用热备件实现冗余。</block>
   <block id="ee9bdabf55f98e793b6a92484c2f5bb5" category="paragraph">创建连接到 Cloud Volumes ONTAP 实例的未使用磁盘（热备用磁盘）是不必要的费用，可能会阻止根据需要配置额外空间。因此，不建议这样做。</block>
   <block id="d30ed55a4efaa85c9be23afd54902f99" category="paragraph">每个 Cloud Volumes ONTAP 聚合的 RAID 类型为 RAID0 （条带化）。Cloud Volumes ONTAP 依靠云提供商提供磁盘可用性和持久性。不支持其他 RAID 类型。</block>
-  <block id="e85cd480a7048786255eb3e2a749e48d" category="paragraph">根据 WORM 卷的总配置容量， WORM 存储的费用为每小时一次。</block>
   <block id="d87a373c29bad4362e9f6515cb3a6927" category="paragraph">现在，首发特惠价已过期，您将需要为使用 WORM 存储付费。根据 WORM 卷的总配置容量，每小时进行一次充电。此适用场景 新的和现有的 Cloud Volumes ONTAP 系统。</block>
   <block id="36f3832717137e178e376fc49ba4e550" category="doc">客户端协议</block>
   <block id="5494b349161a941df24b2a8abfcb1bc9" category="paragraph">iSCSI 是一种可在标准以太网网络上运行的块协议。大多数客户端操作系统都提供一个通过标准以太网端口运行的软件启动程序。</block>
@@ -3092,8 +3090,6 @@
   <block id="ea92910b55077f3c4e27aa9df66efbf8" category="list-text">返回到Cloud Volumes ONTAP 命令行界面并验证Cloud Volumes ONTAP 是否可以发送AutoSupport 消息：</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
   <block id="434256b12ce281ef5e4d73836f3321d4" category="paragraph">请访问NetApp知识库以查看分步说明：</block>
-  <block id="6a8bfe07e1e703ed3692dbea8b2a81de" category="inline-link">Cloud Volumes ONTAP 调解器通知</block>
-  <block id="b8a867ef3334c621e08f3cfef506f53b" category="list-text"><block ref="b8a867ef3334c621e08f3cfef506f53b" category="inline-link-rx"></block></block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP 注意事项</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="bc5ec30cd3249636e4dc6b792074194d" category="inline-link">ONTAP SAN 主机配置</block>
@@ -3566,10 +3562,6 @@
   <block id="5a5214fb40dd557d5d3934ffa3d72686" category="list-text">Cloud Volumes ONTAP 节点的基本策略</block>
   <block id="bf82e7bc6353b008da4cfeb0bcb78391" category="list-text">Cloud Volumes ONTAP 节点的备份策略</block>
   <block id="80fca5903d4623d5bd92d44dca6188ff" category="list-text">创建IAM角色并将您创建的策略附加到该角色。</block>
-  <block id="f30b44d93ffa429590bd7907a3d0099c" category="paragraph">您应了解Cloud Volumes ONTAP 9.10.1及更高版本的以下充电行为：</block>
-  <block id="0514cef4c1e1a5949a3acc085ee50110" category="list-text">从ONTAP 9.10.1开始、WORM卷和非WORM卷可以位于同一聚合上。</block>
-  <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">如果在创建Cloud Volumes ONTAP 工作环境时启用了WORM、则从BlueXP创建的每个卷都会启用WORM。但是、您可以使用ONTAP 命令行界面或系统管理器创建已禁用WORM的卷。这些卷不按WORM速率充电。</block>
-  <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">单个节点</block>
   <block id="d83f214fdb8074463fb047c3669d0f00" category="list-text">HA对使用两种类型的磁盘、以较高的成本为I/O密集型工作负载提供高性能：</block>
   <block id="de017bcc9ee62a910294463646126cd7" category="list-text">_Premium页面blobs_、最大磁盘大小为8 TiB</block>
@@ -3640,8 +3632,6 @@
   <block id="770d7d25a250359f096cca82c310f07b" category="paragraph">激活WORM存储的方式取决于所使用的Cloud Volumes ONTAP 版本。</block>
   <block id="f7bdab9f1b3e432deef3bba2021d518d" category="section-title">9.10.1及更高版本</block>
   <block id="2c404b5c40a30cea75e4486ca42855d7" category="paragraph">创建新的Cloud Volumes ONTAP 工作环境时、系统会提示您启用或禁用WORM存储：</block>
-  <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">了解充电的工作原理</block>
-  <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">无论选择哪种方案、您都应选择此选项 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>。</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">9.10.0及更早版本</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">适用于 ONTAP 的 Amazon FSX</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
@@ -3879,7 +3869,6 @@
   <block id="824be8b95270c8a8618f49cb7fb21ae8" category="inline-link">BlueXP对Google Cloud权限的作用</block>
   <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">从Cloud Volumes ONTAP 9.10.1开始、您可以选择在卷级别启用或禁用WORM。</block>
   <block id="f4b6aa85f64f47d1816ec182949156ef" category="paragraph">您可以在创建新的工作环境时在 Cloud Volumes ONTAP 系统上激活 WORM 存储。从BlueXP创建的每个卷都已启用WORM。您不能在单个卷上禁用WORM存储。</block>
-  <block id="60e4218f85755238d0c16943a070de88" category="list-text">如果在创建工作环境时未启用WORM、则从BlueXP创建的每个卷都会禁用WORM。这些卷不按WORM速率计费。</block>
   <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">如果禁用了Azure专用链路、并且Connector使用代理服务器、则必须启用直接API流量。</block>
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">了解如何在Connector上启用直接API流量</block>
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure 中分层数据的默认存储访问层为 _hot_ 层。热层非常适合容量层中经常访问的数据。</block>
@@ -4451,8 +4440,6 @@
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索软件保护</block>
   <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAP支持自动勒索软件保护(ARP)功能、此功能可对工作负载执行分析、以主动检测可能指示勒索软件攻击的异常活动并发出警告。</block>
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">启用自主勒索软件保护</block>
-  <block id="46d7a6dd7db3af97caa5603b84f76cc1" category="paragraph">WORM许可仅适用于PAYGO或年度承诺条款、可通过云提供商的市场购买。WORm既支持基于节点的许可模式、也支持基于容量的许可模式。</block>
-  <block id="66ab7e49c11a830935ab2c9b0bf49e5e" category="admonition">BYOL许可不适用于Cloud Volumes ONTAP上的WORM存储。</block>
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">正在删除WORM文件</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">您可以使用特权删除功能在保留期间删除WORM文件。</block>
   <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">有关说明，请参见<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
@@ -4783,14 +4770,12 @@
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP会创建Google Cloud防火墙规则、其中包括Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要引用这些端口来进行测试、或者希望使用自己的防火墙规则。</block>
   <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">无论是基于节点的许可模式还是基于容量的许可模式、ARP功能都只能与BYOL许可证一起使用(期限为1到36个月)。要购买新的单独附加许可证、以便与Cloud Volumes ONTAP中的ARP功能结合使用、您必须与NetApp销售代表联系。</block>
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">对基于节点的Cloud Volumes ONTAP许可证使用ARP功能的情况目前不会反映在数字钱包中。在未来的版本中、可以在"电子钱包"下查看基于节点的ARP使用情况。</block>
-  <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">购买附加许可证并将其添加到电子钱包后、您可以在Cloud Volumes ONTAP中按卷启用ARP。根据启用了ARP功能的卷的已配置总容量、在卷级别计量ARP收费。最低许可证容量为1 TB。但是、ARP功能没有最低容量充电要求。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024年1月16日</block>
   <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXP中的修补程序版本</block>
   <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXP中仅提供最新三个Cloud Volumes ONTAP版本的修补程序版本。</block>
   <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
   <block id="fa8624c42ea6d2ce73d1dbb434c41dc8" category="paragraph">ARP许可证被视为"浮动"许可证、这意味着它不绑定到单个Cloud Volumes ONTAP实例、可应用于多个Cloud Volumes ONTAP环境。</block>
-  <block id="a7453af7846f7db9aba5aa90fa8093e5" category="paragraph">启用了ARP的卷的指定状态为"学习模式"或"活动"。ARP状态为"Disabled (已禁用)"的任何卷均不会充电。例如、已配置容量为30 TiB的Cloud Volumes ONTAP环境可以选择仅配置一小部分15 TiB卷且启用了ARP。</block>
   <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">修补程序版本</block>
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">下载ONTAP映像</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">从2024年1月开始、只有作为Cloud Volumes ONTAP三个最新版本的修补程序版本的修补程序升级才可在BlueXP中使用。我们使用最新的GA版本来确定要在BlueXP中显示的三个最新版本。例如、如果当前GA版本为9.13.1、则BlueXP中会显示9.11.1-9.13.1的修补程序。如果要升级到9.11.1或更低版本的修补程序版本、则需要使用手动升级操作步骤 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
@@ -5450,4 +5435,16 @@
   <block id="fadac06c68e9ffce4bb17bd0d6ec5f2b" category="paragraph">满足以下条件时、您可以在单个可用性区域中部署HA对并使用高级SSD v2托管磁盘：</block>
   <block id="ed0e2426cd36bf5b4eb9a140ae9a7508" category="list-text">对于单个可用性区域、请选择Azure区域、可用性区域、vNet和子网。</block>
   <block id="e09953ef98be5a0cd4cc4ad0c288c775" category="paragraph">从Cloud Volumes ONTAP 9.15.1开始、您可以在Azure的单可用性区域(Single Availability Zones、AZs)中以HA模式部署虚拟机(VM)实例。您需要选择支持此部署的区域和区域。如果分区或区域不支持分区部署、则会遵循之前的LRS非分区部署模式。要了解共享受管磁盘支持的配置，请参见<block ref="2148c58538cc3adf327c3ade110b8487" category="inline-link-macro-rx"></block>。</block>
+  <block id="e378925ca7c13e386e5c5d854097dc26" category="inline-link">Cloud Volumes ONTAP通知</block>
+  <block id="72b3ada156bb3b51f9862f1754d974d2" category="list-text"><block ref="72b3ada156bb3b51f9862f1754d974d2" category="inline-link-rx"></block></block>
+  <block id="ea7b4173339bef8c2570812171d360a0" category="paragraph">您可以使用备份重新配置Cloud Volumes ONTAP系统。有关配置备份的详细信息，请参见<block ref="49fe905ea86eeb386daebc5876800d6b" category="inline-link-rx"></block>。</block>
+  <block id="26ab4d3fe221f0b273d79d8ce5ebc8bc" category="paragraph">购买附加许可证并将其添加到电子钱包后、您可以在Cloud Volumes ONTAP中按卷启用ARP。</block>
+  <block id="c728dacf8c5d7e9da86b3512e6ea5301" category="paragraph">启用了ARP的卷的指定状态为"学习模式"或"活动"。</block>
+  <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
+  <block id="cdd78645b017b927a25b5449e345f823" category="section-title">WORm和ARP功能不再收费</block>
+  <block id="f1967946737edb98fc1947e0768aa8bf" category="paragraph">所有Cloud Volumes ONTAP许可证均附带WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数据保护和安全功能、无需额外付费。对于基于节点的许可证和基于容量的许可证、这适用于新的和现有的BYOL和PAYGO/市场部署。新的定价模式适用于所有云提供商和部署类型、包括单节点和高可用性(HA)配置。</block>
+  <block id="be80dbfae56af07d4af9dfce1c36cc75" category="paragraph">将提供以下优势：</block>
+  <block id="c2cf1fd5e48d77ab96276adb197066c3" category="list-text">使用WORM和ARP的现有帐户将不再为这些功能付费。我们将根据此次更改之前适用的容量使用情况向您计费。WORm和ARP将在将来的计费中排除。</block>
+  <block id="404e8d1aa5724e9535ccf69bb3ee9c54" category="list-text">如果您的现有帐户未启用这些功能、您现在可以选择WORM和ARP、无需额外费用。</block>
+  <block id="3ed34d6b3fd7cd8c4e08b032a9f2dc07" category="list-text">对于新客户、WORM和ARP费用将从所有Cloud Volumes ONTAP产品中消除。</block>
 </blocks>

@@ -97,6 +97,9 @@ NOTE: 由于云提供商的要求、Cloud Volumes ONTAP 默认禁用LIF故障转
 +
 备份可从\http://ipaddress/occm/offboxconfig/访问、其中_ipaddress_是Connector主机的IP地址。
 
++
+您可以使用备份重新配置Cloud Volumes ONTAP系统。有关配置备份的详细信息，请参见 https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["ONTAP 文档"]。
+
 ** BlueXP  设置的一些卷属性与其他管理工具(例如ONTAP系统管理器或ONTAP命令行界面)不同。
 +
 下表列出了BlueXP与默认设置不同的卷属性：

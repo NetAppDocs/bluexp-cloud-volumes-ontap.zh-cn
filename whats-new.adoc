@@ -26,13 +26,19 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 === WORm和ARP功能不再收费
 
-所有Cloud Volumes ONTAP许可证均附带WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数据保护和安全功能、无需额外付费。对于基于节点的许可证和基于容量的许可证、这适用于新的和现有的BYOL和PAYGO/市场部署。新的定价模式适用于所有云提供商和部署类型、包括单节点和高可用性(HA)配置。
+WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数据保护和安全功能将随Cloud Volumes ONTAP许可证一起提供、无需额外费用。新定价模式适用于新订阅和现有订阅AWS、Azure和Google Cloud的BYOL和PAYGO/市场订阅。基于容量的许可证和基于节点的许可证均包含适用于所有配置的ARP和WORM、包括单节点和高可用性(HA)对、无需额外费用。
 
-将提供以下优势：
+简化的定价为您带来以下优势：
 
-* 使用WORM和ARP的现有帐户将不再为这些功能付费。我们将根据此次更改之前适用的容量使用情况向您计费。WORm和ARP将在将来的计费中排除。
-* 如果您的现有帐户未启用这些功能、您现在可以选择WORM和ARP、无需额外费用。
-* 对于新客户、WORM和ARP费用将从所有Cloud Volumes ONTAP产品中消除。
+* 当前包含WORM和ARP的帐户将不再为这些功能产生费用。接下来、您的计费将仅对容量使用量收费、就像此次更改之前一样。WORm和ARP将不再包含在您的未来账单中。
+* 如果您的当前帐户不包含这些功能、您现在可以选择WORM和ARP、无需额外费用。
+* 所有新客户的Cloud Volumes ONTAP产品均不包括WORM和ARP费用。
+
+
+详细了解这些功能：
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["提高防范勒索软件的能力"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM 存储"^]
 
 
 

@@ -102,6 +102,17 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 
 请注意、BlueXP会在Google Cloud中分配所需的IP地址、并创建具有用于SMB/NFS访问的数据LIF和用于出站SMB通信的iSCSI LIF的Storage VM。
 
+此外、BlueXP  还会 `default-data-files`通过从NAS数据Lifs中删除以下服务并将其添加到iSCSI数据Lifs来修改数据Storage VM上的策略：
+
+* `data-fpolicy-client`
+* `management-ad-client`
+* `management-dns-client`
+* `management-ldap-client`
+* `management-nis-client`
+
+
+需要修改服务、因为它可以确保Cloud Volumes ONTAP 可以使用iSCSI LIF进行出站管理连接。
+
 .所需的Google Cloud权限
 连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需权限包括在中 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp 提供的策略"]。
 

@@ -313,7 +313,7 @@ image:screenshot_replication_tiering.gif["复制卷时显示 S3 分层选项的�
 例如，您可以选择小于 10% 的可用空间，以确保您正在利用所购买的容量。然后、当需要额外容量时、BlueXP可以为您购买额外的磁盘(直到达到聚合的磁盘限制为止)。
 
 
-CAUTION: 如果空间不足，则 Cloud Volumes ONTAP 无法移动数据，并且可能会出现性能下降。任何更改都应谨慎进行。如果您不确定，请联系 NetApp 支持部门以获得指导。
+CAUTION: 如果没有足够的空间、则Cloud Volumes ONTAP无法移动数据、您可能会遇到性能下降的情况。任何更改都应谨慎进行。如果您不确定、请联系NetApp支持部门以获得指导。
 
 此比率对于灾难恢复场景非常重要，因为从对象存储读取数据时， Cloud Volumes ONTAP 会将数据移至 SSD/HDD 以提高性能。如果空间不足，则 Cloud Volumes ONTAP 无法移动数据。在更改比率时，请考虑这一点，以便满足您的业务需求。
 

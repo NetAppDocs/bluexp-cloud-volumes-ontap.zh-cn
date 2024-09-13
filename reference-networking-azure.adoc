@@ -26,6 +26,60 @@ summary: 设置 Azure 网络，以便 Cloud Volumes ONTAP 系统可以正常运�
 
 === 出站 Internet 访问
 
+Cloud Volumes ONTAP节点需要出站Internet访问才能访问外部端点以执行各种功能。如果在安全要求严格的环境中阻止这些端点、则Cloud Volumes ONTAP将无法正常运行。
+
+
+
+==== Cloud Volumes ONTAP端点
+
+Cloud Volumes ONTAP需要出站Internet访问才能联系各种端点进行日常操作。
+
+以下端点特定于Cloud Volumes ONTAP。此外、连接器还会与多个端点联系以执行日常操作、并与基于Web的BlueXP  控制台联系。请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["查看从Connector连接的端点"^] 和 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["准备网络以使用BlueXP控制台"^]。
+
+[cols="5*"]
+|===
+| 端点 | 适用于 | 目的 | BlueXP部署模式 | 如果不可用、则会产生影响 
+
+
+| \https://netapp-cloud-account.auth0.com | 身份验证  a| 
+用于BlueXP  身份验证。
+| 标准模式和受限模式。  a| 
+用户身份验证失败、以下服务仍不可用：
+
+* Cloud Volumes ONTAP服务
+* ONTAP服务
+* 协议和代理服务
+
+
+
+
+| \https://keyvault-production-aks.vault.azure.net | 密钥库 | 用于从Azure密钥存储中检索客户端机密密钥、以便与S3存储分段进行通信以处理元数据。Cloud Volumes ONTAP服务在内部使用此组件。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP服务不可用。 
+
+
+| https://cloudmanager.cloud.netapp.com/tenancy | 租户 | 用于从BlueXP  租户中检索Cloud Volumes ONTAP资源以授权资源和用户。 | 标准模式和受限模式。 | Cloud Volumes ONTAP资源和用户未获得授权。 
+
+
+| https://support．NetApp．com/aods/asupmessage \https://support．Asupprod/post/1.0/postAsup NetApp | AutoSupport | 用于将AutoSupport遥测数据发送到NetApp支持。 | 标准模式和受限模式。 | AutoSupport信息仍然未传送。 
+
+
+| https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 公共区域 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务进行通信以在Azure上执行特定的BlueXP  操作。 
+
+
+| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 中国地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务进行通信以在Azure上执行特定的BlueXP  操作。 
+
+
+| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | 德国地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务进行通信以在Azure上执行特定的BlueXP  操作。 
+
+
+| https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 政府地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务进行通信以在Azure上执行特定的BlueXP  操作。 
+
+
+| https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 政府DoD地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务进行通信以在Azure上执行特定的BlueXP  操作。 
+|===
+
+
+==== NetApp AutoSupport的出站Internet访问
+
 Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、NetApp会主动监控系统运行状况并向NetApp技术支持发送消息。
 
 路由和防火墙策略必须允许通过 HTTP/HTTPS 流量访问以下端点，以便 Cloud Volumes ONTAP 可以发送 AutoSupport 消息：

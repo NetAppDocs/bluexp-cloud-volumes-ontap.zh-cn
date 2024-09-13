@@ -17,7 +17,7 @@ summary: 您可以从NetApp 支持站点 下载Azure映像摘要文件。
 Azure映像摘要文件可从下载 https://mysupport.netapp.com/site/["NetApp 支持站点"^]。下载文件为tar.gz格式、其中包含用于图像签名验证的文件。
 
 .步骤
-. 转至 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp 支持站点 上的Cloud Volumes ONTAP产品页面"^] 并在"Downloads"(下载)部分下下载所需的软件版本。
+. 转至 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp 支持站点 上的Cloud Volumes ONTAP产品页面"^]、并在"Downloads"(下载)部分下下载所需的软件版本。
 . 在Cloud Volumes ONTAP下载页面下，单击Azure映像摘要文件的*下载按钮*以下载第三次评估报告。 Gz文件。
 +
 image::screenshot_cloud_volumes_ontap_tar.gz.png[屏幕截图Cloud Volumes ONTAP tar.gz]

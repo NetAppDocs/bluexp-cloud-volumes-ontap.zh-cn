@@ -402,6 +402,9 @@ endif::gcp[]
 
 基于节点的许可是上一代许可模式，可用于按节点许可 Cloud Volumes ONTAP 。此许可模式不适用于新客户。按节点充电已被上述按容量充电方法所取代。
 
+
+IMPORTANT: NetApp不久将弃用基于节点的许可、并将替换为基于容量的许可证。有关信息，请参见 https://mysupport.netapp.com/info/communications/CPC-00589.html["中国共产党中央政治局常委、国务院"^]。
+
 现有客户仍可使用基于节点的许可：
 
 * 如果您的许可证处于活动状态，则 BYOL 仅可用于许可证续订。

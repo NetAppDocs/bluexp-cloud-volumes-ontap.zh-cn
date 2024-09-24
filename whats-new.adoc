@@ -77,9 +77,9 @@ Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许�
 
 
 
-=== Azure上Flash Cache支持的最低ONTAP版本
+=== 在Azure上支持Flash Cache的最低版本
 
-在Azure上配置Flash Cache所需的最低ONTAP版本为9.13.1GA。您只能使用.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash ONTAP 9。
+在Azure 9.13.1 GA上配置Flash Cache所需的最低Cloud Volumes ONTAP版本。您只能使用.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash ONTAP 9。
 
 有关支持的配置，请参见 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure 中支持的配置"^]。
 

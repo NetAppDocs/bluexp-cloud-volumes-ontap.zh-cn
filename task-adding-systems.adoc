@@ -38,4 +38,4 @@ endif::aws[]
 
 
 .结果
-BlueXP会将Cloud Volumes ONTAP 实例添加到工作空间中。
+BlueXP  会将Cloud Volumes ONTAP实例添加到项目或工作空间中。

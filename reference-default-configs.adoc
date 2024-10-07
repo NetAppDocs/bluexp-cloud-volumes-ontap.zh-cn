@@ -117,7 +117,7 @@ NOTE: 由于云提供商的要求、Cloud Volumes ONTAP 默认禁用LIF故障转
 1,000 ％
 
 
-NOTE: 帐户管理员可以从 " 设置 " 页面修改此值。
+NOTE: BlueXP  组织或帐户管理员可以从"设置"页面修改此值。
 
 
 

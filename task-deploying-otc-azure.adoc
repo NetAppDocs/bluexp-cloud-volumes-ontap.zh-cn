@@ -22,7 +22,7 @@ summary: 您可以通过在BlueXP中创建Cloud Volumes ONTAP 工作环境在Azu
 [[licensing]]
 * 已启动且正在运行的连接器。
 +
-** 您应具有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["与工作空间关联的连接器"^]。
+** 您应具有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["与您的项目或工作空间关联的Connector"^]。
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["您应做好准备，使 Connector 始终保持运行"^]。
 
 

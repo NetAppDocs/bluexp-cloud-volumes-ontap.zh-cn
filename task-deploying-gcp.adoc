@@ -25,7 +25,7 @@ summary: 您可以在单系统配置中启动 Cloud Volumes ONTAP ，也可以�
 [[licensing]]
 * 已启动且正在运行的连接器。
 +
-** 您应具有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["与工作空间关联的连接器"^]。
+** 您应具有 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["与您的项目或工作空间关联的Connector"^]。
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["您应做好准备，使 Connector 始终保持运行"^]。
 ** 与 Connector 关联的服务帐户 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["应具有所需权限"^]
 

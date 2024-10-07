@@ -18,7 +18,7 @@ summary: 只需几步即可开始使用适用于 AWS 的 Cloud Volumes ONTAP 。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 创建连接器
 [role="quick-margin-para"]
-如果您没有 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["连接器"^] 但是，客户管理员需要创建一个。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["了解如何在 AWS 中创建连接器"^]
+如果您还没有 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["连接器"^]、则需要创建一个。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["了解如何在 AWS 中创建连接器"^]
 
 [role="quick-margin-para"]
 请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在无法访问Internet的位置手动安装Connector"^]

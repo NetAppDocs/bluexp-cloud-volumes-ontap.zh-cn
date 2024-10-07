@@ -52,7 +52,7 @@ Digital Advisor用户界面完全集成在BlueXP中。
 +
 image:screenshot_aiq_digital_advisor.png["BlueXP中的Digital Advisor用户界面的屏幕截图。"]
 
-* 如果您尚未在BlueXP  中注册NSS帐户、请立即注册NSS帐户、然后会显示Digital Advisor UI。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["管理与BlueXP帐户关联的NSS凭据"]有关说明、请参见。
+* 如果您尚未在BlueXP  中注册NSS帐户、请立即注册NSS帐户、然后会显示Digital Advisor UI。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["管理与BlueXP  组织或帐户关联的NSS凭据"]有关说明、请参见。
 
 
 

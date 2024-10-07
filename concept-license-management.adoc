@@ -55,7 +55,7 @@ image:screenshot_warning.gif["屏幕截图：显示了包含警告图标的 Clou
 
 您可以选择工作环境来查看消息。
 
-如果您是帐户管理员且已启用此选项、则BlueXP会在通过电子邮件发送给您的Cloud Volumes ONTAP 报告中显示许可证到期警告：
+如果您是BlueXP  组织或帐户管理员且启用了以下选项、则BlueXP  会在通过电子邮件发送给您的Cloud Volumes ONTAP报告中包含许可证到期警告：
 
 image:screenshot_cvo_report.gif["用户配置文件面板的屏幕截图，其中显示了通过电子邮件启用 Cloud Volumes ONTAP 报告的复选框。"]
 

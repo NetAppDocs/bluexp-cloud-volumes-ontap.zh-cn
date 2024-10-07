@@ -63,7 +63,6 @@
   <block id="7ca1af679f0ba86814f2ad58a578cb7c" category="doc">在 Azure 中启动 Cloud Volumes ONTAP</block>
   <block id="17871dd6725112548c5735d13d60d639" category="paragraph">要创建工作环境，您需要满足以下要求。</block>
   <block id="ad1cc9fdb978e0b0a5e397b3152a1867" category="list-text">已启动且正在运行的连接器。</block>
-  <block id="86836b73bcaa40dc1dd7e8f91fc43a4d" category="inline-link">与工作空间关联的连接器</block>
   <block id="c501058ef93efe907f1517f309ec8be3" category="inline-link">您应做好准备，使 Connector 始终保持运行</block>
   <block id="72fa1e29e831adb71ca0ce01f7356dc9" category="list-text">了解要使用的配置。</block>
   <block id="754f5b76b77778c181ca6deb0a7427f4" category="inline-link-macro">规划 Cloud Volumes ONTAP 配置</block>
@@ -316,7 +315,6 @@
   <block id="f6cbbbc9e9149bb78c53313174eb28d9" category="list-text">它将卷放置在现有聚合上、该聚合具有足够的可用空间。</block>
   <block id="7ccfe00acc90cab3a221abcd0e06e287" category="list-text">它通过为该聚合购买更多磁盘将卷放在现有聚合上。</block>
   <block id="ff52d7b5160ddfeee7db2d2f1f0a1049" category="list-text">它为新聚合购买磁盘并将卷置于该聚合上。</block>
-  <block id="65d07c0479237159daf22849e998b18c" category="admonition">帐户管理员可以从 * 设置 * 页面修改可用空间阈值。</block>
   <block id="954f6e939470d2d9311a80662ca4d02c" category="section-title">AWS 中聚合的磁盘大小选择</block>
   <block id="bb9369920f48ccd809746c237f259822" category="cell">聚合编号</block>
   <block id="f308e6ca453d47a2876df6eae740d8f8" category="cell">Disk size</block>
@@ -530,10 +528,7 @@
   <block id="4df04bd818b4ec915902bb9d71d89e11" category="summary">在 AWS 中启动 Cloud Volumes ONTAP 时，您可以从多个实例或类型中进行选择。如果您确定实例类型的大小不足或过大，则可以随时更改此实例类型。</block>
   <block id="58cfda201064f1899f15aad3e019b071" category="doc">更改 Cloud Volumes ONTAP 的 EC2 实例类型</block>
   <block id="64001104830dfdff90f2cf316af055f4" category="list-text">更改实例类型可能会影响 AWS 服务费用。</block>
-  <block id="f9ca6b49a548c69b9daaf623a10c70fe" category="summary">帐户管理员可以删除 Cloud Volumes ONTAP 工作环境以将其移至其他系统或对发现问题进行故障排除。</block>
   <block id="345811bf0383d75dd95a07e487d8b29b" category="doc">删除 Cloud Volumes ONTAP 工作环境</block>
-  <block id="8a5743c35b84714fc6fe40c2cfab576b" category="list-text">在另一个工作空间中重新发现它</block>
-  <block id="c0745336f44247c724e2de0e640b4daa" category="list-text">如果在初始查找期间遇到问题，请重新发现该问题</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
   <block id="06a685f653628719e2e70fedf9b250a9" category="section-title">重新设计的卷向导</block>
   <block id="dd787088b52e69b3d8bf590e16c8413c" category="paragraph">现在，在通过 * 高级分配 * 选项在特定聚合上创建卷时，可以使用我们最近推出的创建新卷向导。</block>
@@ -985,7 +980,6 @@
   <block id="4d200fce73a8e1cc965cfc2c43343824" category="cell">增长</block>
   <block id="28b33b30d7c1127731011723d33cb7b4" category="cell">最大自动大小</block>
   <block id="5ef67d561c87b75c490a77fb2ccd576c" category="paragraph">1,000 ％</block>
-  <block id="10a0d1a2787b3f038f91904cd1b22f54" category="admonition">帐户管理员可以从 " 设置 " 页面修改此值。</block>
   <block id="2cc9fef60411d02c15d46fa0b52befa1" category="cell">安全风格</block>
   <block id="94b9335f1c20156d2e7785c21e3d8e25" category="cell">适用于 CIFS 卷的 NTFS UNIX （用于 NFS 卷）</block>
   <block id="1033f0fcb6f954b31285e3125235434e" category="cell">空间保证风格</block>
@@ -2678,9 +2672,6 @@
   <block id="ec10c0d50369bfb68fa19c871a22d0f7" category="paragraph">Cloud Volumes ONTAP 不支持从*集群&gt;设置*页面自动更新固件。</block>
   <block id="f4e1c06a7a7ddbaea4c2d3349dc0b815" category="paragraph">此外、不支持从System Manager进行基于角色的访问控制。</block>
   <block id="7540b63d6f9cc399be4f74cff91bcaf7" category="paragraph">打开Cloud Volumes ONTAP 工作环境、然后单击高级视图选项。</block>
-  <block id="bb1ef255816e8724de2a508f11ab6faa" category="list-text">在"画布"页面上、双击Cloud Volumes ONTAP 系统的名称。</block>
-  <block id="a31b079030fd3d406e06a9ce180abf58" category="list-text">在右上角、单击*切换到高级视图*。</block>
-  <block id="4764848a2e939676e46196b57ed3d239" category="inline-image-macro">Cloud Volumes ONTAP 工作环境的屏幕截图、其中显示了切换到高级视图选项。</block>
   <block id="74d668d6c47cd0c55c4ff8f77ad621bd" category="list-text">如果显示确认消息、请通读该消息并单击*关闭*。</block>
   <block id="f0da217269d7f8fb37fd503f586df2ef" category="list-text">使用System Manager管理Cloud Volumes ONTAP。</block>
   <block id="9091c5cdacecb3d4082594d5d5a31855" category="section-title">有关使用System Manager的帮助</block>
@@ -3138,7 +3129,6 @@
   <block id="57852986cd3f5ad7ac21806a5411e80c" category="paragraph"><block ref="42b118f18012057fcf20af94d08351c2" category="inline-link-macro-rx"></block>。请注意、您不需要为HA调解器创建安全组。BlueXP可以为您提供这种服务。</block>
   <block id="491260bf43eaf4240ea4e86f9ccd88c2" category="list-text">使用BlueXP API创建新的Cloud Volumes ONTAP 工作环境。</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加一个NetApp 支持站点 帐户、然后注册获取支持。</block>
-  <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">注册您的BlueXP帐户ID支持订阅(您的20位960xxxxxxxxx序列号、位于BlueXP的支持资源页面上)。</block>
   <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">这是您在BlueXP中使用的任何服务的单一支持订阅ID。必须注册每个BlueXP帐户级别的支持订阅。</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">这些序列号通常称为_PAYGO序列号、并由BlueXP在部署Cloud Volumes ONTAP 时生成。</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">通过这些操作、BlueXP可以使用您的NSS帐户执行许可证下载、软件升级验证和未来支持注册等操作。</block>
@@ -3150,7 +3140,6 @@
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">加入BlueXP社区、关注正在进行的讨论或创建新的讨论。</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">您当前正在查看的BlueXP文档。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服务*：选择与问题描述 关联的服务。例如、当特定于技术支持问题描述 时、如果服务中包含工作流或功能、则为BlueXP。</block>
-  <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作环境列表属于您在服务顶部横幅中选择的BlueXP帐户、工作空间和Connector的范围。</block>
   <block id="442a1ebc0b1897741c68b149d0cff869" category="paragraph">通过BlueXP免费使用此服务。</block>
   <block id="c88f764485548292578f2128d1953adc" category="paragraph">如果BlueXP通知您无法发送AutoSupport 消息、 <block ref="b6432223d87858d9cd4e446578247e88" category="inline-link-macro-rx"></block>。</block>
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">请注意、BlueXP会在HA对上创建SVM管理LIF、但不会在Azure中的单节点系统上创建。</block>
@@ -3211,10 +3200,8 @@
   <block id="a1dcab351cc07567761909076e0664c8" category="paragraph">当BlueXP在AWS中为Cloud Volumes ONTAP 创建新聚合时、随着系统中聚合的数量增加、它会逐渐增加聚合中的磁盘大小。BlueXP会执行此操作、以确保您可以在系统达到AWS允许的最大数据磁盘数之前利用系统的最大容量。</block>
   <block id="0324104f71311abe508e504d778bc57c" category="paragraph">例如、BlueXP可能会选择以下磁盘大小：</block>
   <block id="d4a9c8ba8bf84d6db4571dbd344dcbaf" category="paragraph">您可以自行管理聚合、而不是让BlueXP为您管理聚合。 <block ref="2414ef63108c7ecff38292e17ac61802" category="inline-link-macro-rx"></block>，您可以创建包含特定数量磁盘的新聚合，向现有聚合添加磁盘以及在特定聚合中创建卷。</block>
-  <block id="6c79cf02eee66f58213ada5570b62345" category="paragraph">客户管理员可以选择BlueXP是否通知您存储容量决策、或者BlueXP是否自动管理您的容量需求。</block>
   <block id="285c2353d7e4311eda264e18d4088019" category="list-text">如果某个聚合达到容量阈值且有空间容纳更多磁盘、则BlueXP会自动为该聚合购买新磁盘、以便卷可以继续增长。</block>
   <block id="64705a9631169f2d9e4b9999578694d2" category="list-text">如果聚合中的卷数超过12小时、则BlueXP会将其删除。</block>
-  <block id="972fa623b0e87f35c9ebd90cd251cc2c" category="paragraph">如果帐户管理员将容量管理模式设置为手动、则在必须决定容量时、BlueXP会显示"需要操作"消息。自动模式中描述的相同示例适用于手动模式，但您可以接受这些操作。</block>
   <block id="19d775edcaac93a63ae82c037f339d34" category="paragraph">创建Cloud Volumes ONTAP 工作环境时、BlueXP会提示您订阅Azure Marketplace中提供的协议。然后、该订阅将与工作环境关联以进行收费。您可以对其他工作环境使用相同的订阅。</block>
   <block id="60fa85f272e116effea35da2e9f082ca" category="paragraph">在 AWS 中启动 Cloud Volumes ONTAP 系统时，您可以使用启用数据加密<block ref="8fc3b96c90d2dea9ee9936bb213df75b" category="inline-link-rx"></block>。BlueXP使用客户主密钥(CMK)请求数据密钥。</block>
   <block id="ebd8c4eb477873e4c257280548d7c9d2" category="paragraph">虽然Google Cloud Storage始终会在数据写入磁盘之前对数据进行加密、但您可以使用BlueXP API创建一个使用_customer-managed encryption keys_的Cloud Volumes ONTAP 系统。这些密钥可通过云密钥管理服务在 GCP 中生成和管理。 <block ref="b83dc7fec32255cd403d0d565b48432e" category="inline-link-macro-rx"></block>。</block>
@@ -3264,7 +3251,6 @@
   <block id="e7b3f56c45c6705f279b059a9274225d" category="list-text">如果需要、请单击*切换到标准视图*以通过BlueXP返回到标准管理。</block>
   <block id="0828553b7174743f116345861b5c6bc0" category="summary">您可以发现现有Cloud Volumes ONTAP 系统并将其添加到BlueXP中。如果您部署了新的BlueXP系统、则可以执行此操作。</block>
   <block id="5838355f0487c8b48bcad7c6bcae87af" category="doc">将现有Cloud Volumes ONTAP 系统添加到BlueXP</block>
-  <block id="b518e1d4e9d8729a5ddeeb3439018240" category="paragraph">BlueXP会将Cloud Volumes ONTAP 实例添加到工作空间中。</block>
   <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">如果为Cloud Volumes ONTAP 系统配置的容量超过500 GiB、则BlueXP会将该系统转换为Essentials软件包。</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">NetApp BlueXP网站</block>
   <block id="490f0cb4ab517a2c88f9d425fc84b42d" category="paragraph">有关定价的详细信息，请访问<block ref="c412404f1934ae5bd4e59f00ec0e79b9" category="inline-link-rx"></block>。</block>
@@ -3286,9 +3272,6 @@
   <block id="18f662e89926d99c2d0078857e1e0594" category="paragraph">如果启用了数据分层的聚合尚不存在、则BlueXP将为卷创建一个新聚合。</block>
   <block id="15772334d40a5e0ec433c7a427e96777" category="paragraph">例如，您可以选择小于 10% 的可用空间，以确保您正在利用所购买的容量。然后、当需要额外容量时、BlueXP可以为您购买额外的磁盘(直到达到聚合的磁盘限制为止)。</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">一个屏幕截图、显示了BlueXP控制台右上角的设置图标。</block>
-  <block id="6b51126e31989dbd35d983caab04ff08" category="paragraph">删除Cloud Volumes ONTAP 工作环境会将其从BlueXP中删除。它不会删除 Cloud Volumes ONTAP 系统。您可以在以后重新发现工作环境。</block>
-  <block id="c3d8bc113694ac5e1b1bc6903d5f4777" category="paragraph">通过从BlueXP中删除工作环境、您可以执行以下操作：</block>
-  <block id="017482efc6f3c5791be39e26da43f9c3" category="list-text">从另一个BlueXP系统重新发现它</block>
   <block id="fefa70b1c4e33b9a37d96658b2133389" category="paragraph">BlueXP会删除工作环境。用户可以随时从 " 画布 " 页面重新发现此工作环境。</block>
   <block id="0e90b6bbef3911eccc0d09b6e4087aff" category="summary">从BlueXP升级Cloud Volumes ONTAP 以访问最新的新功能和增强功能。在升级软件之前，您应准备好 Cloud Volumes ONTAP 系统。</block>
   <block id="61560599f4747b091e1abc457824f639" category="section-title">仅从BlueXP升级</block>
@@ -3370,7 +3353,6 @@
   <block id="06ee8b77544c5bac42bd6a3cee53faa8" category="inline-link-macro">自行获取文件、然后手动将文件上传到BlueXP</block>
   <block id="f6d8831894dd9ceec3499ea4cc9471a5" category="paragraph">如果BlueXP无法通过安全Internet连接访问许可证文件、您可以 <block ref="84fd371027e1f6d314f08a99e74bc5ec" category="inline-link-macro-rx"></block>。</block>
   <block id="4a0b3afafb018d6588148939edd762fb" category="paragraph">BlueXP会在基于节点的许可证到期前30天显示警告、并在许可证到期后再次显示警告。下图显示了用户界面中显示的 30 天到期警告：</block>
-  <block id="a5e653a54b839ff1cd287d93b221928e" category="paragraph">如果您是帐户管理员且已启用此选项、则BlueXP会在通过电子邮件发送给您的Cloud Volumes ONTAP 报告中显示许可证到期警告：</block>
   <block id="d2563fcd4b4b3ec541ca3e59420d1fc7" category="paragraph">在联系NetApp代表续订基于节点的BYOL订阅时、BlueXP会自动从NetApp获取新许可证并将其安装在Cloud Volumes ONTAP 系统上。</block>
   <block id="c8ce4a03cda52de4d81a6d52e83dcfc7" category="paragraph">BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。</block>
   <block id="7dfb6c2c87a3491ee04b30bc313e53c5" category="summary">通过BlueXP、您可以管理卷和CIFS服务器。它还会提示您移动卷以避免容量问题。</block>
@@ -3390,7 +3372,6 @@
   <block id="d0502ee159adf47b0d3fcb82ee37bdf6" category="paragraph">以下策略提供了BlueXP从外部AWS帐户使用CMK所需的权限。请务必在 " 资源 " 部分中修改区域和帐户 ID 。</block>
   <block id="0853921f611064d44675e4508e0fae9e" category="list-text">部署 Cloud Volumes ONTAP 系统时，您需要选择初始磁盘大小。之后、您可以让BlueXP为您管理系统的容量、但如果您要自行构建聚合、请注意以下事项：</block>
   <block id="1fb183d03128aa46689bbfc76f997a80" category="paragraph">您可以通过BlueXP为Cloud Volumes ONTAP 选择写入速度设置、但Google Cloud中的高可用性(HA)对除外。在选择写入速度之前、您应该了解正常和高设置之间的差异、以及使用高速写入速度时的风险和建议。 <block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>。</block>
-  <block id="6c0797d233e4d06751298d2e5dc34c2b" category="summary">帐户管理员可以在BlueXP中启用一项设置、以防止在Azure维护事件期间出现Cloud Volumes ONTAP 存储交还问题。启用此设置后， Cloud Volumes ONTAP 将否决 CIFS 锁定并重置活动 CIFS 会话。</block>
   <block id="9d9d5448fe99790931a55c5e19b2bf67" category="paragraph">请注意以下有关BlueXP为您部署的Azure组件的信息：</block>
   <block id="156a3c6e72f6f36b96ffa2a53bc4b125" category="list-text">从Cloud Volumes ONTAP 9.7开始、BlueXP为HA对创建的存储帐户为通用v2存储帐户。</block>
   <block id="5891037085a8d7a4e0c6d1c1177dc1b1" category="paragraph">创建Cloud Volumes ONTAP 工作环境时、BlueXP会提示您订阅AWS Marketplace中提供的协议。然后、该订阅将与工作环境关联以进行收费。您可以对其他工作环境使用相同的订阅。</block>
@@ -3482,7 +3463,6 @@
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您拥有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户同时添加。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">从支持注册页面找到您的帐户ID序列号。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">复制上述第2步中的帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。</block>
-  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
   <block id="5ad10cfb674234136c181d096cb59522" category="paragraph-title">所需权限</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一个</block>
@@ -3958,7 +3938,6 @@
   <block id="71b669d4d19df676d975ef4911ded7af" category="paragraph"><block ref="71b669d4d19df676d975ef4911ded7af" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a98606dee1787dfd2471d2ef8adeb680" category="list-text">在"画布"页面上、双击要注册的系统的名称。</block>
   <block id="24901c53838efd4b9981ed8ffd510413" category="list-text">在概述选项卡上、单击功能面板、然后单击*支持注册*旁边的铅笔图标。</block>
-  <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6200e275553fcb2d81141061804129aa" category="list-text">在"画布"页面上、双击您配置为勒索软件保护的系统的名称。</block>
   <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">在概述选项卡上、单击功能面板、然后单击*勒索软件保护*旁边的铅笔图标。</block>
   <block id="d0b1fe5e5e43d6e24cc20f730b8d1742" category="paragraph">您可以通过BlueXP中管理卷面板下的_Mount Command_选项轻松识别正确的IP地址。</block>
@@ -4093,7 +4072,6 @@
   <block id="eaf72ee058835b38b417b55e2fb1c0af" category="section-title">现在、在访问BlueXP而未订阅商城时会显示通知</block>
   <block id="5cc1493ad28334fdb28f7ed57f0e1d41" category="paragraph">现在、只要您在BlueXP中访问Cloud Volumes ONTAP 而没有市场订阅、就会显示一条通知。通知中指出："需要在此工作环境下进行商城订阅、以符合Cloud Volumes ONTAP 条款和条件。"</block>
   <block id="37532cd27e3c53471b1caed0ba1f90ed" category="section-title">下载使用情况报告</block>
-  <block id="819d4e1e06bcd4bb3249b60d928ccacc" category="paragraph">帐户管理员可以从BlueXP中的电子钱包下载四份使用情况报告。这些使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可捕获某个时间点的数据、并可轻松与他人共享。</block>
   <block id="c2b73e18a5b530a547ba48a8177d13c3" category="inline-image-macro">屏幕截图显示了Digital Wallet Cloud Volumes ONTAP 基于容量的许可证页面、并突出显示了使用情况报告按钮。</block>
   <block id="a1a4a48254cf8eb8962fbd995f5e7ea8" category="paragraph"><block ref="a1a4a48254cf8eb8962fbd995f5e7ea8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d11dcbec58d47bd13de1dcccfbd640ff" category="paragraph">以下报告可供下载。显示的容量值以TiB为单位。</block>
@@ -4229,7 +4207,6 @@
   <block id="75d1c443711b08a199c506b32994abb0" category="list-text">确认已正确配置AWS KMS：<block ref="f749e141a9bc2497fcae9da71d1642a2" prefix=" " category="inline-code"></block></block>
   <block id="1c142855c45200a3708ef65c3268eec2" category="list-text"><block ref="1c142855c45200a3708ef65c3268eec2" category="inline-link-rx"></block></block>
   <block id="397ffdb5938226b30ba8ac366de2e9e8" category="admonition">您可以从"设置"&gt;"凭据"页面管理与您的帐户关联的Google Cloud Marketplace订阅。<block ref="25a63af7fcac406c493b77c0d7e5fb9d" category="inline-link-rx"></block></block>
-  <block id="7ef184d0a25c921e8936a55ef2228d47" category="list-text">您应具有<block ref="87a737e218a7cfa50705d42e9e237efc" category="inline-link-rx"></block>。</block>
   <block id="1845477dcbb7ef435ebb5a4583a0ca21" category="list-text"><block ref="4828fd92a1c9aba9084b9fdcf398bed8" category="inline-link-rx"></block>。</block>
   <block id="4d0d11f252798b1130fe9f60f2d2e318" category="list-text">与 Connector 关联的服务帐户<block ref="5646254c2ac34b48f56ed296d6fb66e7" category="inline-link-rx"></block></block>
   <block id="d84cee0d6767da802f9effadbbc51142" category="list-text">如果出现提示，<block ref="1ca84fde12203c4cfd29d288d7a6cf61" category="inline-link-rx"></block>。</block>
@@ -4238,7 +4215,6 @@
   <block id="dabcd93c47c69ecf7688c43957686bb7" category="cell">如果您计划使用 <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> 或<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> 服务，您需要启用 * 服务帐户 * 开关，然后选择具有预定义存储管理员角色的服务帐户。</block>
   <block id="5355322e972163adefa502954b34d25c" category="paragraph">以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。  或者，也可以按照中的步骤进行订阅<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> 部分。</block>
   <block id="200bfa431a059f9cb12bdce777845a7e" category="admonition">此连接器还需要一个系统磁盘。<block ref="d20acabc118cd0226229fe484509d871" category="inline-link-rx"></block>。</block>
-  <block id="f4e04685569a1b4c66fdec145eb96e7a" category="paragraph">如果您没有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="5b9d2e73755e0f28771296de88f8a39a" category="inline-link-rx"></block></block>
   <block id="3e15a93b8abafd714d90153ac66e4e82" category="paragraph">请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。<block ref="dfc982bbe2dfabd644ac809e4b468ae7" category="inline-link-rx"></block></block>
   <block id="687a1e66717978102d4e4948c08968d3" category="list-text"><block ref="687a1e66717978102d4e4948c08968d3" category="inline-link-rx"></block></block>
   <block id="25e7b507c919c21847b291c84a88ba36" category="paragraph"><block ref="73e1a6a2075a5d292111b694a644abf3" category="inline-link-rx"></block>。</block>
@@ -4266,7 +4242,6 @@
   <block id="2ffa17dd74caa90edaf33636b3e374b1" category="paragraph"><block ref="792ba555e1629fb9b0b5e00711256a74" category="inline-link-rx"></block>。</block>
   <block id="7881621c3d4c91216ebe58ee1cdc87e0" category="paragraph"><block ref="52c47b6a301b0fb242044f1b14c5f663" category="inline-link-rx"></block>。</block>
   <block id="3965802fcf5e10ce9592a0a18652be93" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。<block ref="844cb231ba4a790d05c855a31c806f9e" category="inline-link-rx"></block>。</block>
-  <block id="0da43a7e3c6cfdde29516fa9349ef93a" category="paragraph">如果您没有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="f726618e636b13d16a9541b596528791" category="inline-link-rx"></block></block>
   <block id="170e894372aa99f8bb588bbbfc2f83a2" category="paragraph">Cloud Volumes ONTAP 需要一个 Google Cloud 服务帐户，用于两种目的。第一种情况是启用时 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 在 Google Cloud 中将冷数据分层到低成本对象存储。第二种情况是在启用时<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> 将卷备份到低成本对象存储。</block>
   <block id="d1f72998703f2af51bbb1dec019398b4" category="list-text"><block ref="d1f72998703f2af51bbb1dec019398b4" category="inline-link-rx"></block></block>
   <block id="3cb240573738469f968b56e81fec4027" category="list-text"><block ref="3cb240573738469f968b56e81fec4027" category="inline-link-rx"></block></block>
@@ -4274,7 +4249,6 @@
   <block id="f9f4082179938e25ee1e3141d4b4b61d" category="paragraph"><block ref="f9f4082179938e25ee1e3141d4b4b61d" category="inline-link-rx"></block></block>
   <block id="882d5f98206dd8157654127073c920f2" category="paragraph"><block ref="882d5f98206dd8157654127073c920f2" category="inline-link-rx"></block></block>
   <block id="f870932f389b07a18c35e61ebc668c91" category="paragraph"><block ref="161ab28684c427e4961f0c360c1dbce7" category="inline-link-rx"></block>。</block>
-  <block id="781a31b225d61ebbabe5dd84830d307a" category="list-text">您应具有<block ref="531433bd83668140eff1dc8bd40e140e" category="inline-link-rx"></block>。</block>
   <block id="0a878535ad1a6e2ef955aba255e762cd" category="list-text">如果出现提示，<block ref="b03d5bfc016d24f5269c25486d5c5105" category="inline-link-rx"></block>。</block>
   <block id="d4632b36f41d4764afe08f6aac9dbe34" category="cell">选择与要部署此系统的帐户关联的 AWS 凭据。您还可以关联 AWS Marketplace 订阅以用于此 Cloud Volumes ONTAP 系统。
 
@@ -4293,7 +4267,6 @@
   <block id="f647c880dd21951d680e6e9b7ad216f0" category="list-text"><block ref="f647c880dd21951d680e6e9b7ad216f0" category="inline-link-rx"></block></block>
   <block id="31506a250b099663a98d7d365371bda0" category="paragraph">权限在中提供<block ref="7aa097bb85d23c6d9f43a1db610a79f9" category="inline-link-rx"></block>、但如果您使用云密钥管理服务的备用项目、则可能不会应用此功能。</block>
   <block id="f0b4f84896926e6a2dbb48986fffd0a3" category="paragraph">请参见<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 有关使用 GcpEncryption 参数的详细信息，请参见。</block>
-  <block id="5e63427212d46e66573f6836a121c981" category="list-text">您应具有<block ref="23c123e19aaff4cb6a27a7cf5d59d5b7" category="inline-link-rx"></block>。</block>
   <block id="d0300fe715ef3a2a319549645d5e495a" category="list-text">如果出现提示，<block ref="6f74113a1b8936f1de2d51353c7d64fb" category="inline-link-rx"></block>。</block>
   <block id="7eb393339c85197e4c21e6d90a00ba99" category="cell">您可以选择不同的 Azure 凭据和不同的 Azure 订阅以用于此 Cloud Volumes ONTAP 系统。您需要将 Azure Marketplace 订阅与选定 Azure 订阅关联，才能部署按需购买的 Cloud Volumes ONTAP 系统。<block ref="98943363349c15c5ca45ca1071953478" category="inline-link-rx"></block>。</block>
   <block id="9f7853ed9e8e024ede0e0d721f07b3c2" category="admonition">如果您正在使用的 Azure 帐户具有<block ref="20fa32895c3c822e36a026ce606da187" category="inline-link-rx"></block>、在部署失败或删除时、BlueXP会从资源组中删除Cloud Volumes ONTAP 资源。</block>
@@ -4340,7 +4313,6 @@
   <block id="5283eaab3828494686529450a3e27866" category="admonition">您可以从"设置"&gt;"凭据"页面管理与AWS帐户关联的AWS Marketplace订阅。<block ref="5931c62f88ce2287706818af3a9a64b7" category="inline-link-rx"></block></block>
   <block id="4c1dfec10f54a14c066eb4fde624e32b" category="paragraph"><block ref="4c1dfec10f54a14c066eb4fde624e32b" category="inline-link-rx"></block></block>
   <block id="875ddb644dbb19174e249bb15473dd4b" category="paragraph">默认情况下、权限包括在自定义角色中。<block ref="b7d06976ba0f29792527e383824a0357" category="inline-link-rx"></block></block>
-  <block id="f9a3a3f013c1705985786496412a0de0" category="paragraph">如果您没有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 但是，客户管理员需要创建一个。<block ref="de51f8f797fd6bb6357ef338b87ca66d" category="inline-link-rx"></block></block>
   <block id="de6c35943505135e58a4af4389b1768d" category="list-text"><block ref="de6c35943505135e58a4af4389b1768d" category="inline-link-rx"></block></block>
   <block id="9ae78035ef81aaff6187ef9a11cd1f03" category="list-text"><block ref="9ae78035ef81aaff6187ef9a11cd1f03" category="inline-link-rx"></block></block>
   <block id="08922f23ed9079ed0750935efad792c1" category="admonition">正在查找有关连接器的信息？<block ref="a05739e7bce05bd7a830b46920675255" category="inline-link-rx"></block></block>
@@ -4361,25 +4333,18 @@
   <block id="46f41748d329a2f863d5f787b783bcc5" category="section-title">Cloud Volumes ONTAP升级版本选择器更新</block>
   <block id="25c3dcdd6e2c69b30eba973a10e656d8" category="paragraph">现在、您可以通过Upgrade Cloud Volumes ONTAP页面选择升级到最新可用的Cloud Volumes ONTAP版本或更早版本。</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">注册这两种类型的序列号可实现打开支持服务单和自动生成案例等功能。要完成注册、请按如下所述将NetApp 支持站点(NSS)帐户添加到BlueXP中。</block>
-  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">注册BlueXP帐户以获得NetApp支持</block>
-  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">要注册支持并激活支持授权、BlueXP帐户中的一个用户必须将NetApp 支持站点 帐户与其BlueXP登录名关联。如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">选择*添加NSS凭证*，然后按照NetApp 支持站点(NSS)鉴定提示进行操作。</block>
-  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">“资源”页面应显示您的帐户已注册支持。</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">屏幕截图、显示帐户序列号、绿色复选框以及注册支持的文本。</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">请注意、其他BlueXP用户如果没有将NetApp 支持站点 帐户与其BlueXP登录关联、则不会看到此相同的支持注册状态。但是、这并不意味着您的BlueXP帐户未注册支持。只要帐户中有一个用户执行了这些步骤、您的帐户即已注册。</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是现有许可证和序列号但拥有_no_ nss帐户的现有NetApp客户、则需要创建一个NSS帐户并将其与BlueXP登录关联。</block>
   <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">完成下的步骤、将新的NSS帐户与BlueXP登录关联起来 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">拥有NetApp 支持站点 帐户后、通过完成下的步骤将帐户与BlueXP登录关联起来 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">关联Cloud Volumes ONTAP支持的NSS凭据</block>
-  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">要为Cloud Volumes ONTAP启用以下关键工作流、需要将NetApp 支持站点 凭据与BlueXP帐户相关联：</block>
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">注册按需购买Cloud Volumes ONTAP系统以获得支持</block>
   <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">要激活对系统的支持并访问 NetApp 技术支持资源，需要提供 NSS 帐户。</block>
   <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">自带许可证时部署Cloud Volumes ONTAP (BYOL)</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">需要提供您的NSS帐户、以便BlueXP可以上传您的许可证密钥并为您购买的期限启用订阅。这包括自动更新期限续订。</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">将Cloud Volumes ONTAP 软件升级到最新版本</block>
-  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">将NSS凭据与BlueXP帐户关联与与与BlueXP用户登录关联的NSS帐户不同。</block>
-  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">这些NSS凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
   <block id="b164b6fd89d2aa03544d045cf180f639" category="admonition">在通过BlueXP通知升级Cloud Volumes ONTAP之前、您必须具有NetApp 支持站点 帐户。</block>
   <block id="1284a776b9f3feb49d88b74d4068f85f" category="inline-link">支持的升级路径列表</block>
   <block id="08c727e5413b02eb0e2eaebdfa595ec1" category="admonition">默认情况下、Upgrade Cloud Volumes ONTAP页面会选择要升级的最新可用Cloud Volumes ONTAP版本。如果可用，可以通过单击*选择旧版本*来选择旧版本的Cloud Volumes ONTAP进行升级。
@@ -4818,7 +4783,6 @@
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">用于管理现有连接器的BlueXP设置和管理文档</block>
   <block id="4954156ba208adf3ff1ee232d2f1d15f" category="list-text">在BlueXP控制台的右上角，单击设置图标，然后选择*BlueXP Cloud Volumes ONTAP设置*。</block>
   <block id="6f0bb9f0803011314813e6aad3d926bf" category="list-text">在BlueXP控制台的右上角，单击*设置*图标，然后选择* Cloud Volumes ONTAP设置*。</block>
-  <block id="d4b0cdcc1cd5c09a803de195e4f82296" category="paragraph">要修改Cloud Volumes ONTAP设置、需要帐户管理员权限。</block>
   <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">"Settings"(设置)图标下的Cloud Volumes ONTAP设置选项的屏幕截图。</block>
   <block id="970af11c442d109ac4d016f7c57f63fb" category="paragraph">基于容量的许可以 _package_ 的形式提供。创建Cloud Volumes ONTAP工作环境时、您可以根据业务需求从多个许可包中进行选择。如果在创建工作环境后需求发生变化、您可以随时更改软件包。例如、您可以从Essentials软件包更改为Professional软件包。</block>
   <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">详细了解基于容量的许可包</block>
@@ -5225,8 +5189,6 @@
   <block id="5f15094e671a035a778fece655f06e61" category="paragraph"><block ref="5f15094e671a035a778fece655f06e61" category="inline-link-rx"></block></block>
   <block id="32f75f1208336b30711f2ec6de39a1fc" category="paragraph">有关详细信息、请参见 <block ref="b7c27672c14c5e155c3668c279ee7b61" category="inline-link-macro-rx"></block> 。</block>
   <block id="b338852ebd9326ccdeb8b123fd6da04b" category="paragraph">有关通过ONTAP配置NVMe的详细信息，请参阅<block ref="098dbc2eb8745ab6d9f97f7915a11b1f" category="inline-link-rx"></block>。</block>
-  <block id="8c79ce7ab82c8c7e3fb9c6e8a73f8960" category="inline-link">管理与BlueXP帐户关联的NSS凭据</block>
-  <block id="7b51a76793878f7d481efef00217b58d" category="list-text">如果您尚未在BlueXP  中注册NSS帐户、请立即注册NSS帐户、然后会显示Digital Advisor UI。<block ref="2e0be3991c50bd5125dbe2a2cf81dbe9" category="inline-link-rx"></block>有关说明、请参见。</block>
   <block id="394af58b8754c06314d43b854dc5006f" category="inline-link">此常见问题解答</block>
   <block id="9c89822027b6c9736a75d3187c897d4d" category="admonition">截至 2021 年 12 月 3 日， NetApp 已采用一种新方法为 NSS 帐户注册凭据。有关详细信息，请参阅<block ref="e276cbae6a7bedd32258cb1ce27fb2ac" category="inline-link-rx"></block>。如果您的 NSS 帐户使用旧的凭据集，则需要将此帐户更新为新凭据。</block>
   <block id="61631dd1eb0609d79c27c109e55de5c8" category="paragraph">有关详细信息、请参见<block ref="f2e318b984927d4781fb278ddc8ba233" category="inline-link-rx"></block> 。</block>
@@ -5532,4 +5494,35 @@
   <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1</block>
   <block id="af4dea59253c9d0600f1101e032482c5" category="section-title">在Azure上支持Flash Cache的最低版本</block>
   <block id="5fac3a4dd391ba31a160710474f8d3ca" category="paragraph">在Azure 9.13.1 GA上配置Flash Cache所需的最低Cloud Volumes ONTAP版本。您只能使用.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash ONTAP 9。</block>
+  <block id="8fc1b74aa1cb89da788e1a3b937438ab" category="inline-link">管理与BlueXP  组织或帐户关联的NSS凭据</block>
+  <block id="0a9512563ef00ba173bf4d1987a1f552" category="list-text">如果您尚未在BlueXP  中注册NSS帐户、请立即注册NSS帐户、然后会显示Digital Advisor UI。<block ref="8f95cc662e4499eb8830300ad24f55ec" category="inline-link-rx"></block>有关说明、请参见。</block>
+  <block id="1e1afd2f9a7fa2af16b23f683618733b" category="paragraph">如果您是BlueXP  组织或帐户管理员且启用了以下选项、则BlueXP  会在通过电子邮件发送给您的Cloud Volumes ONTAP报告中包含许可证到期警告：</block>
+  <block id="8a8ee41cf69f911a5c51c63f6944e0f4" category="paragraph">BlueXP  组织或帐户管理员可以选择BlueXP  是通知您存储容量决策、还是BlueXP  自动为您管理容量要求。</block>
+  <block id="ac6a4b4a7a4ea40f9e636500c27fed17" category="paragraph">如果BlueXP  组织或帐户管理员将容量管理模式设置为手动、则在必须做出容量决策时、BlueXP  会显示"需要执行操作"消息。自动模式中描述的相同示例适用于手动模式，但您可以接受这些操作。</block>
+  <block id="7304f4ac552bd3e3d0492d4e82a018f9" category="admonition">BlueXP  组织或帐户管理员可以从"设置"页面修改此值。</block>
+  <block id="eb2678f353ff539b66368cd255510a82" category="paragraph">BlueXP  会将Cloud Volumes ONTAP实例添加到项目或工作空间中。</block>
+  <block id="1a5004d2fa68d798618b010b203f89db" category="list-text">在Canvas页面上、选择一个Cloud Volumes ONTAP系统。</block>
+  <block id="44b7ffdcf84f31c030ae673e3b4e8e6e" category="list-text">从右侧面板的*Services*下，找到*System Manager*并选择*Open*。</block>
+  <block id="6b453c5a4f7ed569fc8308df07f9f55e" category="inline-link">与您的项目或工作空间关联的Connector</block>
+  <block id="92455adcaed0397e116713826842263e" category="list-text">您应具有<block ref="9ac26cef53fc939f0eabea87d0a20d0b" category="inline-link-rx"></block>。</block>
+  <block id="da4a01a210193b125dfc666408271f05" category="list-text">您应具有<block ref="ed7feedfc897899b3fc46d7ce71fcc71" category="inline-link-rx"></block>。</block>
+  <block id="99da55f75b576041bd0ecb4a67a80145" category="list-text">您应具有<block ref="c7245aebeaa9e29276c27826151d1fe3" category="inline-link-rx"></block>。</block>
+  <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">工作环境列表位于您在服务顶部横幅中选择的BlueXP  组织(或帐户)、项目(或工作空间)和连接器的范围内。</block>
+  <block id="170574f4e6ba709d098c4a4be82b5b5d" category="paragraph">如果您还没有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block>、则需要创建一个。<block ref="5b9d2e73755e0f28771296de88f8a39a" category="inline-link-rx"></block></block>
+  <block id="6014b56086204cb4138c06c749738750" category="paragraph">如果您还没有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block>、则需要创建一个。<block ref="de51f8f797fd6bb6357ef338b87ca66d" category="inline-link-rx"></block></block>
+  <block id="fc3c49204ea80962c13d4c1253bc4233" category="paragraph">如果您还没有<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block>、则需要创建一个。<block ref="f726618e636b13d16a9541b596528791" category="inline-link-rx"></block></block>
+  <block id="bcb02fe5bf814bc0d9811e97deeace94" category="paragraph">您可以从BlueXP  电子钱包下载四份使用情况报告。这些使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可捕获某个时间点的数据、并可轻松与他人共享。</block>
+  <block id="5191bfc9223abca582d03a9624285426" category="paragraph">要修改Cloud Volumes ONTAP设置、需要BlueXP  组织或帐户管理员Privileges。</block>
+  <block id="6f090304d383de4e4dbb3962c1e017a6" category="summary">BlueXP  组织或帐户管理员可以在BlueXP  中启用一项设置、以防止在Azure维护事件期间发生Cloud Volumes ONTAP存储交还问题。启用此设置后， Cloud Volumes ONTAP 将否决 CIFS 锁定并重置活动 CIFS 会话。</block>
+  <block id="13bc5f7a1694c99080887fc158305f22" category="summary">您可以删除Cloud Volumes ONTAP工作环境以将其移至其他系统或对发现问题进行故障排除。</block>
+  <block id="3190585bde0246e7c6210b18809971f4" category="paragraph">删除Cloud Volumes ONTAP 工作环境会将其从BlueXP中删除。它不会删除 Cloud Volumes ONTAP 系统。您可以稍后重新发现工作环境，例如，在初始发现期间出现问题时。</block>
+  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">注册BlueXP  帐户序列号(20位960xxxxxxxxx序列号位于BlueXP  的支持资源页面)。</block>
+  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">注册BlueXP  以获得NetApp支持</block>
+  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">要注册支持并激活支持授权、您的BlueXP  组织中的一个用户(或帐户)必须将NetApp支持站点帐户与其BlueXP  登录名关联。如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
+  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">“资源”页面应显示您的BlueXP  组织已注册支持。</block>
+  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">请注意、其他BlueXP用户如果没有将NetApp 支持站点 帐户与其BlueXP登录关联、则不会看到此相同的支持注册状态。但是、这并不意味着您的BlueXP  组织未注册支持。只要组织中有一个用户执行了这些步骤、您的组织就已注册。</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这将加快处理速度。</block>
+  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">要为Cloud Volumes ONTAP启用以下关键工作流、需要将NetApp支持站点凭据与您的BlueXP  组织相关联：</block>
+  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">将NSS凭据与您的BlueXP  组织相关联与与与BlueXP  用户登录相关联的NSS帐户不同。</block>
+  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">这些NSS凭据与您的特定BlueXP  组织ID相关联。属于BlueXP  组织的用户可以从*Support &gt; NSS Management*访问这些凭据。</block>
 </blocks>

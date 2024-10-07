@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-ha.html 
 keywords: high availability, HA, mediator, concepts, understanding, overview, availability zones, AZs, takeover, giveback, rpo, rto, floating ip, nondisruptive, ha pairs, node, nodes, synchronous, resync, recovery point objective, recovery time objective, nas, nfs, cifs, floating ip address, route tables, iscsi, mpio, alua, failover, mount, remount, failure, data access, access, ip address, performance 
-summary: Cloud Volumes ONTAP High Availability （ HA ）配置提供无中断操作和容错功能。在 AWS 中，数据会在两个节点之间同步镜像。 
+summary: 'Cloud Volumes ONTAP高可用性(HA)配置可提供无中断运行和容错功能。在 AWS 中，数据会在两个节点之间同步镜像。' 
 ---
 = AWS 中的高可用性对
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP High Availability （ HA ）配置提供无中断�
 
 
 [role="lead"]
-Cloud Volumes ONTAP High Availability （ HA ）配置提供无中断操作和容错功能。在 AWS 中，数据会在两个节点之间同步镜像。
+Cloud Volumes ONTAP高可用性(HA)配置可提供无中断运行和容错功能。在 AWS 中，数据会在两个节点之间同步镜像。
 
 
 
@@ -60,7 +60,7 @@ NOTE: 对于 Cloud Volumes ONTAP 9.10.0 及更早版本，在调解器上安装�
 
 == RPO 和 RTO
 
-HA 配置可保持数据的高可用性，如下所示：
+HA配置可按如下所示保持数据的高可用性：
 
 * 恢复点目标（ RPO ）为 0 秒。您的数据在传输过程中不会丢失数据。
 * 恢复时间目标(Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery如果发生中断、数据应在120秒或更短时间内可用。

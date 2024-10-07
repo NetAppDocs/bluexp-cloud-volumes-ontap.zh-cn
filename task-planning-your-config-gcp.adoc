@@ -202,7 +202,7 @@ TIP: 此连接器还需要一个系统磁盘。 https://docs.netapp.com/us-en/bl
 
 == 选择写入速度
 
-您可以通过BlueXP为Cloud Volumes ONTAP 选择写入速度设置、但Google Cloud中的高可用性(HA)对除外。在选择写入速度之前、您应该了解正常和高设置之间的差异、以及使用高速写入速度时的风险和建议。 link:concept-write-speed.html["了解有关写入速度的更多信息。"]。
+通过BlueXP 、您可以为Cloud Volumes ONTAP选择写入速度设置、但Google Cloud中的高可用性(HA)对除外。在选择写入速度之前、您应该了解正常和高设置之间的差异、以及使用高速写入速度时的风险和建议。link:concept-write-speed.html["了解有关写入速度的更多信息。"](英文)
 
 
 

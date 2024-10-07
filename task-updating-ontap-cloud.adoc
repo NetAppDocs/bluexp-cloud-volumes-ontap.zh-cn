@@ -307,7 +307,8 @@ image:screenshots_aggregate_details_state.png["屏幕抓图：显示查看聚合
 
 当有新版本的Cloud Volumes ONTAP 可用时、BlueXP会在Cloud Volumes ONTAP 工作环境中显示通知：
 
-image:screenshot_overview_upgrade.png["屏幕截图：显示选择工作环境后在 \" 画布 \" 页面中显示的 \" 新版本可用 \" 通知。"]
+
+NOTE: 在通过BlueXP通知升级Cloud Volumes ONTAP之前、您必须具有NetApp 支持站点 帐户。
 
 您可以从此通知开始升级过程、通过从 S3 存储区获取软件映像、安装映像、然后重新启动系统来自动执行该过程。
 
@@ -323,21 +324,22 @@ Cloud Volumes ONTAP 系统上不得执行诸如卷或聚合创建等BlueXP操作
 +
 image:screenshot_overview_upgrade.png["屏幕截图显示了\"Upgrade Now！\" 链接。"]
 
-. 如果有新版本、请单击*立即升级！*
-+
-
-NOTE: 在通过BlueXP通知升级Cloud Volumes ONTAP之前、您必须具有NetApp 支持站点 帐户。
-
-. 在Upgrade Cloud Volumes ONTAP 页面中、阅读EULA、然后选择*我阅读并批准EULA *。
-. 单击 * 升级 * 。
-+
-
-NOTE: 默认情况下、Upgrade Cloud Volumes ONTAP页面会选择要升级的最新可用Cloud Volumes ONTAP版本。如果可用，可以通过单击*选择旧版本*来选择旧版本的Cloud Volumes ONTAP进行升级。
-请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#supported-upgrade-paths["支持的升级路径列表"^] 根据您当前的Cloud Volumes ONTAP版本选择相应的升级路径。
-
+. 如果要升级已安装的Cloud Volumes ONTAP版本，请单击*立即升级!*默认情况下、您会看到最新的兼容升级版本。
 +
 image:screenshot_upgrade_select_versions.png["升级Cloud Volumes ONTAP版本页面的屏幕截图。"]
 
++
+如果要升级到其他版本，请单击*选择其他版本*。您会看到列出的最新Cloud Volumes ONTAP版本也与系统上安装的版本兼容。例如、系统上安装的版本为9.12.1P3、并且提供了以下兼容版本：
+
++
+** 9.12.1P4 9.12.1P14
+** 9.13.1. 9.13.1P1 You 9.13.1P1为默认升级版本、9.12.1P13、9.13.1P14、9.13.1. 9.13.1P1为其他可用版本。
+
+
+. 或者，您可以单击*all versions*输入要升级到的另一个版本(例如，已安装版本的下一个修补程序)。有关当前Cloud Volumes ONTAP版本的兼容升级路径，请参阅link:task-updating-ontap-cloud.html#supported-upgrade-paths["支持的升级路径"]。
+. 单击*Save*，然后单击*Apply*。image:screenshot_upgrade_other_versions.png["显示可升级版本的屏幕截图。"]
+. 在Upgrade Cloud Volumes ONTAP 页面中、阅读EULA、然后选择*我阅读并批准EULA *。
+. 单击 * 升级 * 。
 . 要检查升级状态，请单击设置图标并选择*Timeline*。
 
 

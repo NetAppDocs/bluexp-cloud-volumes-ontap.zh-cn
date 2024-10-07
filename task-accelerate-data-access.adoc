@@ -26,8 +26,6 @@ BlueXP可通过管理FlexCache卷 link:https://docs.netapp.com/us-en/bluexp-volu
 * http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["在 System Manager 中创建 FlexCache 卷"^]
 
 
-BlueXP为所有新的Cloud Volumes ONTAP系统生成FlexCache许可证。此许可证包含 500 GiB 的使用量限制。
-
 video::PBNPVRUeT1o[youtube,width=848,height=480]
 
 
@@ -58,7 +56,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 . *密钥管理服务*：创建FlexCache卷之前，请验证是否已在Cloud Volumes ONTAP系统上正确配置密钥管理服务。此配置对于FlexCache卷对初始卷中的数据进行解密至关重要。
-. *许可*：确认Cloud Volumes ONTAP系统上有有效的FlexCache许可证并已激活。BlueXP会为所有新的Cloud Volumes ONTAP系统生成一个FlexCache许可证、其使用量限制为500 GiB。
+. *许可*：确认Cloud Volumes ONTAP系统上有有效的FlexCache许可证并已激活。
 . * ONTAP版本*：确保Cloud Volumes ONTAP系统的ONTAP版本支持带有加密卷的FlexCache。有关详细信息、请参见最新 https://docs.netapp.com/us-en/ontap/release-notes/index.html["《 ONTAP 发行说明》"^] 或兼容性列表。
 . *网络配置*：确保网络配置允许初始卷和FlexCache卷之间无缝通信。这包括在云环境中正确路由和DNS解析。
 

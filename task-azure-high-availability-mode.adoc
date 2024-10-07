@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-azure-high-availability-mode.html 
 keywords: high availability mode, EnableHighAvailabilityMode, action required, nfsv4 
-summary: 应启用Microsoft Azure的高可用性模式、以缩短计划外故障转移时间并为Cloud Volumes ONTAP 启用NFSv4支持。 
+summary: 应启用Microsoft Azure的高可用性模式、以减少计划外故障转移时间、并为Cloud Volumes ONTAP启用NFSv4支持。 
 ---
 = 在Azure中启用高可用性模式
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: 应启用Microsoft Azure的高可用性模式、以缩短计划外故�
 
 
 [role="lead"]
-应启用Microsoft Azure的高可用性模式、以缩短计划外故障转移时间并为Cloud Volumes ONTAP 启用NFSv4支持。
+应启用Microsoft Azure的高可用性模式、以减少计划外故障转移时间、并为Cloud Volumes ONTAP启用NFSv4支持。
 
-从Cloud Volumes ONTAP 9.10.1版开始、我们缩短了在Microsoft Azure中运行的Cloud Volumes ONTAP HA对的计划外故障转移时间、并增加了对NFSv4的支持。要使这些增强功能可供Cloud Volumes ONTAP 使用、您需要在Azure订阅上启用高可用性功能。
+从Cloud Volumes ONTAP 9.10.1版开始、我们缩短了在Microsoft Azure中运行的Cloud Volumes ONTAP HA对的计划外故障转移时间、并增加了对NFSv4的支持。要使这些增强功能可用于Cloud Volumes ONTAP、您需要在Azure订阅上启用高可用性功能。
 
 如果需要在Azure订阅上启用此功能、BlueXP将在"需要操作"消息中提示您提供这些详细信息。
 

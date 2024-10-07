@@ -3295,8 +3295,6 @@
   <block id="b17fb4ec590936924c5159395f1b9182" category="paragraph">如果您创建的卷使用GP3或IO1磁盘、则BlueXP会自动在启用了弹性卷的聚合上创建此卷。有关详细信息，请参见 <block ref="e432ed6cbb90ef2b99ca3ebe7006e953" category="inline-xref-macro-rx"></block>。</block>
   <block id="4ddeb33245dab065e616a7abf58b631c" category="paragraph">创建聚合时、BlueXP将提示您输入聚合的容量大小。这与其他配置不同、在这些配置中、您可以选择磁盘大小和磁盘数量。</block>
   <block id="51cbce0195f13997e34cad7a23a2b638" category="paragraph">虽然BlueXP会根据需要自动向聚合添加容量、但您可以手动增加容量。</block>
-  <block id="c01bba3f5cf220440d62298c4287d655" category="paragraph">现在、订阅将链接到您的BlueXP帐户、并可在创建Cloud Volumes ONTAP 工作环境时进行选择。</block>
-  <block id="ae187bda8f85dfd75202915fcca6b90d" category="paragraph">订阅将与您的BlueXP帐户解除链接、并且在创建Cloud Volumes ONTAP 工作环境时无法再选择此订阅。</block>
   <block id="e3d629eecd6e06869848c53ac5c75380" category="summary">虽然Google Cloud Storage始终会在数据写入磁盘之前对数据进行加密、但您可以使用BlueXP API创建使用客户管理的加密密钥的Cloud Volumes ONTAP 系统。这些密钥可通过云密钥管理服务在 GCP 中生成和管理。</block>
   <block id="a14be990a5564462179a98a679a9f0da" category="paragraph">虽然Google Cloud Storage始终会在数据写入磁盘之前对数据进行加密、但您可以使用BlueXP API创建一个使用_customer-managed encryption keys_的Cloud Volumes ONTAP 系统。这些密钥可通过云密钥管理服务在 GCP 中生成和管理。</block>
   <block id="77418670efb657c3155eab4b410f6842" category="list-text">确保在存储密钥的项目中、BlueXP Connector服务帐户在项目级别具有正确的权限。</block>
@@ -5530,4 +5528,6 @@
   <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数据保护和安全功能将随Cloud Volumes ONTAP许可证一起提供、无需额外费用。新定价模式适用于新订阅和现有订阅AWS、Azure和Google Cloud的BYOL和PAYGO/市场订阅。基于容量的许可证和基于节点的许可证均包含适用于所有配置的ARP和WORM、包括单节点和高可用性(HA)对、无需额外费用。</block>
   <block id="9da5d2f7e476f47c6a26d4ededfa4837" category="paragraph">现在、对于在Azure托管磁盘上运行的高可用性部署、Cloud Volumes ONTAP支持16 TiB和32 TiB磁盘大小。</block>
   <block id="c4603a2a1f5be3fcdbe4e7ce09178104" category="sidebar">启用高可用性模式</block>
+  <block id="7c27c9e51d561399ee84fb8d2259328c" category="paragraph">现在、订阅可链接到您的BlueXP  组织或帐户、并可在创建Cloud Volumes ONTAP工作环境时进行选择。</block>
+  <block id="287c693dd0bc6ec48aa0fc3f4b950a9e" category="paragraph">订阅与您的BlueXP  组织或帐户取消链接、在创建Cloud Volumes ONTAP工作环境时无法再选择。</block>
 </blocks>

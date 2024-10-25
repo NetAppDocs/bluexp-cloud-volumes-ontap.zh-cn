@@ -23,7 +23,7 @@ Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择
 新客户可以使用以下许可选项。
 
 基于容量的许可:: 按配置的容量为您的NetApp帐户中的多个Cloud Volumes ONTAP 系统付费。包括购买附加云数据服务的功能。
-Keystone订阅:: 基于订阅的按需购买服务，可为 HA 对提供无缝的混合云体验。
+Keystone订阅:: 一种基于订阅的按需购买服务、可为高可用性(HA)对提供无缝的混合云体验。
 
 
 先前的逐节点许可模式仍然适用于已购买许可证或已订阅有效的 Marketplace 的现有客户。
@@ -121,7 +121,7 @@ endif::gcp[]
 
 ==== 要点
 
-在多种不同配置中按容量为 Cloud Volumes ONTAP 付费。
+您可以在多种不同配置中按容量付费：
 
 * 选择 Cloud Volumes ONTAP 配置：
 +
@@ -130,6 +130,26 @@ endif::gcp[]
 
 
 * 增加 NetApp 的任何云数据服务，但需额外付费
+
+
+许可完全取决于在Cloud Volumes ONTAP系统中创建的卷类型：
+
+* Essentials单节点：仅使用一个ONTAP节点在Cloud Volumes ONTAP系统上创建的读/写卷。
+* Essentials HA：使用两个ONTAP节点的读/写卷、这些节点可以相互故障转移以实现无中断数据访问。
+* Essentials辅助单节点：仅使用一个ONTAP节点在Cloud Volumes ONTAP系统上创建的数据保护(DP)类型卷(通常为只读SnapMirror或SnapVault目标卷)。
++
+
+NOTE: 如果只读/DP卷成为主卷、则BlueXP  会将其视为主数据、并根据卷处于读/写模式的时间计算收费成本。当卷再次设为只读/DP时、BlueXP  会再次将其视为二级数据、并使用数字钱包中最匹配的许可证进行相应收费。
+
+* Essentials二级HA：在使用两个ONTAP节点的Cloud Volumes ONTAP系统上创建的数据保护(DP)类型的卷(通常为只读SnapMirror或SnapVault目标卷)、这些节点可以相互故障转移以实现无中断数据访问。
+
+
+请注意以下几点：
+
+* 最低收费：至少具有一个主(读写)卷的每个提供数据的Storage VM至少需要支付4 TiB的费用。对于Essentials包、此最低费用不适用于仅具有二级(数据保护)卷的Storage VM。
+* 超额：如果超过许可容量、将按市场价格收取超额费用、优先使用其他许可证的可用容量。
+* FlexClone和FlexCache卷：FlexClone卷不计费。源和目标FlexCache卷被视为主数据、并根据配置的空间进行收费。
+* HA对收费：对于HA对、仅会按节点上配置的容量收费。同步镜像到配对节点的数据不计费。
 
 
 
@@ -403,7 +423,7 @@ endif::gcp[]
 基于节点的许可是上一代许可模式，可用于按节点许可 Cloud Volumes ONTAP 。此许可模式不适用于新客户。按节点充电已被上述按容量充电方法所取代。
 
 
-IMPORTANT: NetApp不久将弃用基于节点的许可、并将替换为基于容量的许可证。有关信息，请参见 https://mysupport.netapp.com/info/communications/CPC-00589.html["中国共产党中央政治局常委、国务院"^]。
+IMPORTANT: NetApp不久将终止提供基于节点的许可。终止提供后、需要将基于节点的许可证转换为基于容量的许可证。有关信息，请参见 https://mysupport.netapp.com/info/communications/CPC-00589.html["中国共产党中央政治局常委、国务院"^]。
 
 现有客户仍可使用基于节点的许可：
 

@@ -153,18 +153,18 @@ NOTE: 有关哪些特定主机配置支持AUA的信息、请参见 http://mysupp
 
 === AWS本地区域
 
-AWS本地区域是一种基础架构部署、其中存储、计算、数据库和其他精选AWS服务位于靠近大城市和行业区域的位置。借助AWS Local Zones、您可以将AWS服务拉近与您的距离、从而缩短工作负载的延迟并在本地维护数据库。
+AWS本地区域是一种基础架构部署、其中存储、计算、数据库和其他精选AWS服务位于靠近大城市和行业区域的位置。借助AWS Local Zones、您可以将AWS服务拉近与您的距离、从而缩短工作负载的延迟并在本地维护数据库。在Cloud Volumes ONTAP上、
 
 您可以在AWS本地区域中部署单个AZ或多个AZ配置。
 
 
-NOTE: 在标准模式下使用BlueXP时、支持AWS本地区域。目前、在受限模式或专用模式下使用BlueXP时、不支持AWS本地区域。
+NOTE: 在标准模式和私有模式下使用BlueXP  时、支持AWS本地区域。目前、在受限模式下使用BlueXP  时不支持AWS本地区域。
 
 
 
 ==== AWS本地区域配置示例
 
-以下是示例配置：
+Cloud Volumes ONTAP仅支持在AWS本地区域中进行HA部署。以下是示例配置：
 
 * 单个可用性区域：集群节点和调解器位于同一个本地区域中。
 * 多个可用性区域
@@ -184,9 +184,7 @@ NOTE: 在标准模式下使用BlueXP时、支持AWS本地区域。目前、在�
 
 ==== 支持的磁盘和实例类型
 
-唯一支持的磁盘类型为gp2。
-
-当前支持以下大小为x大 到4x大 的EC2实例类型系列：
+唯一支持的磁盘类型为gp2。当前支持以下大小为x大 到4x大 的EC2实例类型系列：
 
 * M5
 * C5.
@@ -195,7 +193,7 @@ NOTE: 在标准模式下使用BlueXP时、支持AWS本地区域。目前、在�
 * R5d.
 
 
-有关受支持的的最新完整详细信息，请参见AWS文档link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["本地区域中的EC2实例类型"^]。
+Cloud Volumes ONTAP仅支持这些配置。在Cloud Volumes ONTAP的AWS本地区域配置中选择任何其他磁盘类型或EC2实例可能会导致部署失败。有关的最新完整详细信息，请参见AWS文档link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["本地区域中的EC2实例类型"^]。
 
 
 

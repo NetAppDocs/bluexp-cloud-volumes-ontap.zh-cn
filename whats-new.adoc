@@ -51,7 +51,7 @@ NOTE: 在受限模式下使用BlueXP  时、不支持AWS本地区域。
 
 从此版本开始、当您尝试使用BlueXP  通知升级Cloud Volumes ONTAP时、将收到有关要使用的默认版本、最新版本和兼容版本的指导。此外、现在您可以选择与Cloud Volumes ONTAP实例兼容的最新修补程序或主要版本、也可以手动输入要升级的版本。
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["升级 Cloud Volumes ONTAP 软件"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["升级 Cloud Volumes ONTAP 软件"]
 
 
 
@@ -72,8 +72,8 @@ WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数�
 
 详细了解这些功能：
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["提高防范勒索软件的能力"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM 存储"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["提高防范勒索软件的能力"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM 存储"]
 
 
 
@@ -292,20 +292,14 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["了解此
 
 === Azure中的新区域支持
 
-
-
-==== 单一可用性区域区域支持
-
+.单一可用性区域区域支持
 现在、以下地区支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署高可用性单可用性区域：
 
 * 特拉维夫
 * 米兰
 
 
-
-
-==== 多可用性区域区域支持
-
+.多可用性区域区域支持
 以下地区现在支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署高可用性多可用性区域：
 
 * 印度中部

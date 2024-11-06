@@ -5374,8 +5374,6 @@
   <block id="3817bf50b7761fc5155c59e4a334d37a" category="list-text">如果您的当前帐户不包含这些功能、您现在可以选择WORM和ARP、无需额外费用。</block>
   <block id="1974af11cb1ac87d0b58d8696f893e4d" category="list-text">所有新客户的Cloud Volumes ONTAP产品均不包括WORM和ARP费用。</block>
   <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">详细了解这些功能：</block>
-  <block id="a7cf7c6eee288b3a91bcae2e6522aa7a" category="list-text"><block ref="a7cf7c6eee288b3a91bcae2e6522aa7a" category="inline-link-rx"></block></block>
-  <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
   <block id="2a57c4c48ac4fed7319e97ba358228fe" category="paragraph">Google Cloud映像验证符合增强的NetApp安全要求。我们对生成映像的脚本进行了更改、以便使用为此任务专门生成的私钥在整个过程中对映像进行签名。您可以使用Google Cloud的签名摘要和公共证书验证Google Cloud映像的完整性、该证书可通过下载以获取<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block>特定版本。</block>
   <block id="92d90815a32824fbae3b0e1cc8bbf0bf" category="inline-link">中国共产党中央政治局常委、国务院</block>
   <block id="c4dbcb8cfcc96461b41d3911e9d893a3" category="paragraph">Cloud Volumes ONTAP节点需要出站Internet访问才能联系以下端点进行日常操作。</block>
@@ -5516,7 +5514,6 @@
   <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024年10月7日</block>
   <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">增强了选择升级版本的用户体验</block>
   <block id="76723ae6fdfacae29242fdb7085394b0" category="paragraph">从此版本开始、当您尝试使用BlueXP  通知升级Cloud Volumes ONTAP时、将收到有关要使用的默认版本、最新版本和兼容版本的指导。此外、现在您可以选择与Cloud Volumes ONTAP实例兼容的最新修补程序或主要版本、也可以手动输入要升级的版本。</block>
-  <block id="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="paragraph"><block ref="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="inline-link-rx"></block></block>
   <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数据保护和安全功能将随Cloud Volumes ONTAP许可证一起提供、无需额外费用。新定价模式适用于新订阅和现有订阅AWS、Azure和Google Cloud的BYOL和PAYGO/市场订阅。基于容量的许可证和基于节点的许可证均包含适用于所有配置的ARP和WORM、包括单节点和高可用性(HA)对、无需额外费用。</block>
   <block id="9da5d2f7e476f47c6a26d4ededfa4837" category="paragraph">现在、对于在Azure托管磁盘上运行的高可用性部署、Cloud Volumes ONTAP支持16 TiB和32 TiB磁盘大小。</block>
   <block id="c4603a2a1f5be3fcdbe4e7ce09178104" category="sidebar">启用高可用性模式</block>
@@ -5548,4 +5545,7 @@
   <block id="e8ae21b110baed89680dca18585c158c" category="section-title">本地区域支持在私有模式下使用Amazon Web Services</block>
   <block id="b32702079d81c2fd1e39448319edfa06" category="paragraph">现在、BlueXP  支持在私有模式下使用AWS本地区域进行Cloud Volumes ONTAP高可用性(HA)部署。以前仅限于标准模式的支持现已扩展为包括专用模式。</block>
   <block id="648169096ce56c8569ce36a4abebe9c7" category="admonition">在受限模式下使用BlueXP  时、不支持AWS本地区域。</block>
+  <block id="7a73f560e215c4ff952d3384c5435ae9" category="list-text"><block ref="7a73f560e215c4ff952d3384c5435ae9" category="inline-link-rx"></block></block>
+  <block id="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="list-text"><block ref="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="inline-link-rx"></block></block>
+  <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
 </blocks>

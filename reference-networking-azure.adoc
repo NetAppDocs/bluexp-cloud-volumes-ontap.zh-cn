@@ -225,8 +225,9 @@ TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/bluex
 
 在创建工作环境并选择预定义的安全组时、您可以选择允许以下其中一个范围内的流量：
 
-* *仅选定vNet *：入站流量的源是Cloud Volumes ONTAP 系统的vNet子网范围以及Connector所在的vNet的子网范围。这是建议的选项。
-* 所有VNets*：入站流量的源为0.0.0.0/0 IP范围。
+* *仅限选定的vNet*：入站流量的源是Cloud Volumes ONTAP系统的vNet的子网范围和连接器所在的vNet的子网范围。这是建议的选项。
+* *All VSets*：入站流量的源IP范围为0.0.0.0/0。
+* *已禁用*：此选项限制对存储帐户的公共网络访问、并禁用Cloud Volumes ONTAP系统的数据分层。如果由于安全法规和策略的原因，即使在同一个vNet中也不应公开您的专用IP地址，则建议使用此选项。
 
 
 [cols="4*"]
@@ -311,12 +312,15 @@ TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/bluex
 
 在创建工作环境并选择预定义的安全组时、您可以选择允许以下其中一个范围内的流量：
 
-* *仅选定vNet *：入站流量的源是Cloud Volumes ONTAP 系统的vNet子网范围以及Connector所在的vNet的子网范围。这是建议的选项。
-* 所有VNets*：入站流量的源为0.0.0.0/0 IP范围。
+* *仅限选定的vNet*：入站流量的源是Cloud Volumes ONTAP系统的vNet的子网范围和连接器所在的vNet的子网范围。这是建议的选项。
+* *All VSets*：入站流量的源IP范围为0.0.0.0/0。
 
 
 
 NOTE: 与单节点系统相比， HA 系统的入站规则更少，因为入站数据流量通过 Azure 标准负载平衡器。因此，来自负载平衡器的流量应处于打开状态，如 "AllowAzureLoadBalancerInBound" 规则中所示。
+
+* *已禁用*：此选项限制对存储帐户的公共网络访问、并禁用Cloud Volumes ONTAP系统的数据分层。如果由于安全法规和策略的原因，即使在同一个vNet中也不应公开您的专用IP地址，则建议使用此选项。
+
 
 [cols="4*"]
 |===

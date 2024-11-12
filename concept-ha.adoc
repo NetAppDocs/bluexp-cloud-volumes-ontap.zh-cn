@@ -164,7 +164,11 @@ NOTE: 在标准模式和私有模式下使用BlueXP  时、支持AWS本地区�
 
 ==== AWS本地区域配置示例
 
-Cloud Volumes ONTAP仅支持在AWS本地区域中进行HA部署。以下是示例配置：
+AWS中的Cloud Volumes ONTAP在一个可用性区域中仅支持高可用性(HA)模式。不支持单节点部署。
+
+Cloud Volumes ONTAP不支持在AWS本地区域中进行数据分层、云分层和非限定实例。
+
+以下是示例配置：
 
 * 单个可用性区域：集群节点和调解器位于同一个本地区域中。
 * 多个可用性区域
@@ -193,7 +197,10 @@ Cloud Volumes ONTAP仅支持在AWS本地区域中进行HA部署。以下是示�
 * R5d.
 
 
-Cloud Volumes ONTAP仅支持这些配置。在Cloud Volumes ONTAP的AWS本地区域配置中选择任何其他磁盘类型或EC2实例可能会导致部署失败。有关的最新完整详细信息，请参见AWS文档link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["本地区域中的EC2实例类型"^]。
+
+NOTE: Cloud Volumes ONTAP仅支持这些配置。在AWS本地区域配置中选择不受支持的磁盘类型或非限定实例可能会导致部署失败。由于缺少连接、无法在AWS本地区域中将数据分层到AWS S3。
+
+有关的最新完整详细信息，请参见AWS文档link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["本地区域中的EC2实例类型"^]。
 
 
 

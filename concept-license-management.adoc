@@ -14,7 +14,7 @@ summary: 具有基于节点的 BYOL 的每个 Cloud Volumes ONTAP 系统都必�
 
 
 [role="lead"]
-具有基于节点的 BYOL 的每个 Cloud Volumes ONTAP 系统都必须安装一个系统许可证，并具有有效的订阅。BlueXP通过管理许可证并在许可证到期前显示警告来简化此过程。
+每个具有基于节点的自带许可证(BYOL)的Cloud Volumes ONTAP系统都必须安装一个具有有效订阅的系统许可证。BlueXP通过管理许可证并在许可证到期前显示警告来简化此过程。
 
 
 TIP: 基于节点的许可证是上一代 BYOL for Cloud Volumes ONTAP 。基于节点的许可证仅可用于许可证续订。

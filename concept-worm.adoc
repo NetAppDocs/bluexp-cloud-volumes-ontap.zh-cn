@@ -16,6 +16,8 @@ summary: 您可以在 Cloud Volumes ONTAP 系统上激活一次写入、多次�
 [role="lead"]
 您可以在 Cloud Volumes ONTAP 系统上激活一次写入、多次读取（ WORM ）存储、以在指定的保留期内以未经修改的形式保留文件。云 WORM 存储由 SnapLock 技术提供支持，这意味着 WORM 文件在文件级别受到保护。
 
+WORM功能可与自带许可证(Bring Your O自己 的许可证、BYOL)和适用于您的许可证的市场订阅一起使用、无需额外付费。请联系您的NetApp销售代表、将WORM添加到您的当前许可证中。
+
 
 
 == WORM 存储的工作原理
@@ -39,7 +41,7 @@ summary: 您可以在 Cloud Volumes ONTAP 系统上激活一次写入、多次�
 创建新的Cloud Volumes ONTAP 工作环境时、系统会提示您启用或禁用WORM存储：
 
 * 如果在创建工作环境时启用了WORM存储、则从BlueXP创建的每个卷都会启用WORM。但是、您可以使用ONTAP系统管理器或ONTAP命令行界面创建已禁用WORM的卷。
-* 如果在创建工作环境时禁用WORM存储、则通过BlueXP 、ONTAP系统管理器或ONTAP命令行界面创建的每个卷都会禁用WORM。如果要在创建期间未启用的Cloud Volumes ONTAP 工作环境中启用WORM、则必须向NetApp支持部门创建一个支持服务单以获得帮助。
+* 如果在创建工作环境时禁用WORM存储、则通过BlueXP 、ONTAP系统管理器或ONTAP命令行界面创建的每个卷都会禁用WORM。
 
 
 
@@ -58,11 +60,38 @@ summary: 您可以在 Cloud Volumes ONTAP 系统上激活一次写入、多次�
 
 
 
+== 在Cloud Volumes ONTAP工作环境中启用WORM
+
+在BlueXP  上创建Cloud Volumes ONTAP工作环境时、您可以启用WORM存储。如果在创建工作环境期间未启用WORM、则也可以在该环境上启用WORM。启用WORM后、您将无法禁用它。
+
+.关于此任务
+* WORm在ONTAP 9 10.1及更高版本上受支持。
+* ONTAP 9 11.1及更高版本支持带有备份的WORm。
+
+
+.步骤
+. 在"画布"页面上、双击要启用WORM的工作环境的名称。
+. 在概述选项卡上，单击功能面板，然后单击*WORM*旁边的铅笔图标。
++
+如果系统上已启用WORM、则铅笔图标将被禁用。
+
+. 在*WORM*页面上，设置集群Compliance时钟的保留期限。
++
+有关详细信息，请参阅 https://docs.netapp.com/us-en/ontap/snaplock/initialize-complianceclock-task.html["ONTAP文档：初始化Compliance时钟"^]。
+
+. 单击*设置*。
+
+
+.完成后
+您可以在功能面板上验证*WORM*的状态。启用WORM后、SnapLock许可证将自动安装在集群上。您可以在ONTAP系统管理器上查看SnapLock许可证。
+
+
+
 == 正在删除WORM文件
 
 您可以使用特权删除功能在保留期间删除WORM文件。
 
-有关说明，请参见 https://docs.netapp.com/us-en/ontap/snaplock/delete-worm-files-concept.html["ONTAP 文档"^]
+有关说明，请参阅 https://docs.netapp.com/us-en/ontap/snaplock/delete-worm-files-concept.html["ONTAP 文档"^]。
 
 
 

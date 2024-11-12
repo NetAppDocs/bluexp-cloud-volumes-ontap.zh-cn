@@ -48,7 +48,7 @@ link:task-deploying-gcp.html["查看在Google Cloud中启动Cloud Volumes ONTAP 
 
 Essentials 和 Professional 软件包可用于以下消费模式：
 
-* 从 NetApp 购买的许可证（ BYOL ）
+* 从NetApp购买的许可证(自带许可证(BYOL))
 * 从Google Cloud Marketplace订阅每小时按需购买(PAYGO)
 * 年度合同
 

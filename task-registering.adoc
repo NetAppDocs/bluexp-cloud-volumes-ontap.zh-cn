@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP PAYGO 系统附带 NetApp 提供的支持，但您�
 
 
 [role="lead"]
-Cloud Volumes ONTAP PAYGO 系统附带 NetApp 提供的支持，但您必须先向 NetApp 注册这些系统以激活支持。
+Cloud Volumes ONTAP按需购买(PAYGO)系统附带NetApp支持、但您必须先向NetApp注册系统、以激活支持。
 
 要使用任何方法升级 ONTAP 软件，需要向 NetApp 注册 PAYGO 系统 link:task-updating-ontap-cloud.html["本页介绍"]。
 

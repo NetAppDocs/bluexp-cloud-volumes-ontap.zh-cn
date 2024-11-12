@@ -170,7 +170,7 @@ BlueXP提供了两种升级Cloud Volumes ONTAP 的方法：
 
 === 支持注册
 
-要使用本页所述的任何方法升级软件、必须向NetApp支持部门注册Cloud Volumes ONTAP。此适用场景既适用于 PAYGO ，也适用于 BYOL 。您需要link:task-registering.html["手动注册 PAYGO 系统"]，而BYOL系统默认已注册。
+要使用本页所述的任何方法升级软件、必须向NetApp支持部门注册Cloud Volumes ONTAP。这既适用于按需购买(PAYGO)、也适用于自带许可证(BYOL)。您需要link:task-registering.html["手动注册 PAYGO 系统"]，而BYOL系统默认已注册。
 
 
 TIP: 未注册支持的系统仍会收到新版本可用时在BlueXP中显示的软件更新通知。但是，您需要先注册系统，然后才能升级软件。

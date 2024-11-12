@@ -18,7 +18,7 @@ summary: 在BlueXP电子钱包中管理基于节点的许可证、以确保每�
 
 基于节点的许可证 _ 是上一代许可模式（不适用于新客户）：
 
-* 从 NetApp 购买的 BYOL 许可证
+* 自带许可证(BYOL)许可证、此许可证是从NetApp购买的
 * 从云提供商的市场订阅每小时按需购买（ PAYGO ）
 
 
@@ -231,3 +231,6 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["了
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deleting-working-env.html["了解如何删除Cloud Volumes ONTAP 工作环境"]。
 
 
+
+.相关主题
+链接：link:concept-licensing.html#end-of-availability-of-node-based-licenses["基于节点的许可证终止提供"] link:task-convert-node-capacity.html["将基于节点的许可证转换为基于容量的许可证"]

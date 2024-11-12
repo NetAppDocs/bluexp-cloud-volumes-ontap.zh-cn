@@ -51,7 +51,7 @@ link:task-deploying-otc-aws.html["查看在AWS中启动Cloud Volumes ONTAP 的�
 
 Essentials 和 Professional 软件包可用于以下消费模式：
 
-* 从 NetApp 购买的许可证（ BYOL ）
+* 从NetApp购买的许可证(自带许可证(BYOL))
 * AWS Marketplace提供的每小时按需购买(PAYGO)订阅
 * AWS Marketplace的年度合同
 

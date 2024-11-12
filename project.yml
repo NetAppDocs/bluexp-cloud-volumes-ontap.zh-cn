@@ -204,6 +204,8 @@ sidebar:
         url: "/task-updating-ontap-cloud.html"
       - title: 注册按需购买系统
         url: "/task-registering.html"
+      - title: 转换基于节点的许可证
+        url: "/task-convert-node-capacity.html"
       - title: 停止并启动系统
         url: "/task-managing-state.html"
       - title: 同步系统时间
@@ -260,7 +262,11 @@ sidebar:
   - title: 概念
     entries:
     - title: 许可
-      url: "/concept-licensing.html"
+      entries:
+      - title: Cloud Volumes ONTAP中的许可
+        url: "/concept-licensing.html"
+      - title: 有关基于容量的许可证的更多信息
+        url: "/concept-licensing-charging.html"
     - title: 存储
       entries:
       - title: 客户端协议

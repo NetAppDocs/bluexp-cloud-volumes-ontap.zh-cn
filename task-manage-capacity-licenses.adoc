@@ -44,10 +44,10 @@ BlueXP数字钱包可显示帐户中的总已用容量以及按许可包计算�
 .步骤
 . 从BlueXP导航菜单中、选择*监管>数字电子钱包*。
 . 在* Cloud Volumes ONTAP 基于容量的许可证*选项卡上、保持选中状态。
-. 查看软件包摘要、其中显示了已用容量、预提交的总容量和总PAYGO容量。
+. 查看软件包摘要、其中显示了已用容量、预先提交的总容量和按需购买(PAYGO)总容量。
 +
 ** _Total consumed capacity_是您的NetApp帐户中所有Cloud Volumes ONTAP 系统的总已配置容量。费用根据每个卷的配置大小计算、而不考虑卷中的本地、已用、已存储或有效空间。
-** _Total precommitted capacity_是您从NetApp购买的总许可容量(BYOL或Marketplace合同)。
+** _Total pre-已 提交容量_是您从NetApp购买的总许可容量(自带许可证(BYOL)或Marketplace合同)。
 ** _Total PAYGO_是使用云市场订阅的总配置容量。只有在已用容量高于许可容量或BlueXP电子钱包中没有BYOL许可证时、才会使用通过PAYGO充电。
 +
 以下是BlueXP电子钱包中的Cloud Volumes ONTAP 软件包摘要示例：

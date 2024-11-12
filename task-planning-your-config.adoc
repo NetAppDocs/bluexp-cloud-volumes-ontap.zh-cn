@@ -38,15 +38,15 @@ Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择
 
 === 选择一个受支持的本地区域
 
-包括新加坡在内的某些AWS本地区域支持Cloud Volumes ONTAP。选择本地区域是可选的。
+选择本地区域是可选的。包括新加坡在内的某些AWS本地区域支持Cloud Volumes ONTAP。AWS中的Cloud Volumes ONTAP在一个可用性区域中仅支持高可用性(HA)模式。不支持单节点部署。
+
+
+NOTE: Cloud Volumes ONTAP不支持在AWS本地区域中进行数据分层和云分层。此外、不支持实例不符合Cloud Volumes ONTAP要求的本地区域。例如、迈阿密不可用作本地区域、因为它只有不受支持且不符合条件的Gen6实例。
 
 link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["查看本地区域的完整列表"^]。
 必须先启用本地区域、然后才能在这些区域中创建和管理资源。
 
 link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["了解如何启用本地区域"^]。
-
-
-NOTE: Phoenix不是受支持的本地区域。
 
 
 
@@ -102,7 +102,7 @@ EBS 磁盘类型:: 在较高级别上、 EBS 磁盘类型之间的区别如下�
 * _Throughput Optimized HDD （ st1 ） _ 磁盘适用于需要以更低价格实现快速一致吞吐量的频繁访问的工作负载。
 +
 
-NOTE: 使用吞吐量优化型 HDD （ st1 ）时，不建议将数据分层到对象存储。
+NOTE: 由于缺少连接、无法在AWS本地区域中将数据分层到AWS S3。
 
 
 

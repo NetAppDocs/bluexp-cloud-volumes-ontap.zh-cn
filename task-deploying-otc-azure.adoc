@@ -146,6 +146,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 请注意以下事项：
 
 +
+** 如果在vNet中禁用了对存储帐户的公开访问、则无法在Cloud Volumes ONTAP系统中启用数据分层。有关信息，请参见 link:reference-networking-azure.html#security-group-rules["安全组规则"]。
 ** 磁盘类型用于初始卷。您可以为后续卷选择不同的磁盘类型。
 ** 磁盘大小适用于初始聚合中的所有磁盘以及使用简单配置选项时BlueXP创建的任何其他聚合。您可以使用高级分配选项创建使用不同磁盘大小的聚合。
 +
@@ -386,6 +387,7 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 +
 有关选择磁盘大小的帮助，请参见link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["在Azure中调整系统大小"^]。
 
+** 如果在vNet中禁用了对存储帐户的公开访问、则无法在Cloud Volumes ONTAP系统中启用数据分层。有关信息，请参见 link:reference-networking-azure.html#security-group-rules["安全组规则"]。
 ** 您可以在创建或编辑卷时选择特定的卷分层策略。
 ** 如果禁用数据分层，则可以在后续聚合上启用它。
 +

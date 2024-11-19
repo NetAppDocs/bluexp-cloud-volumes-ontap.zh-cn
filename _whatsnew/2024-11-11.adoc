@@ -20,7 +20,7 @@ BlueXP  已弃用使用基于节点的许可证部署Cloud Volumes ONTAP系统�
 
 NetApp认识到以下独特的许可要求符合合同义务和运营需求、并将在这些情况下继续支持基于节点的许可证：
 
-* USPS客户
+* 美国公共部门客户
 * 在私有模式下部署
 * 在AWS中部署Cloud Volumes ONTAP的中国地区
 * 如果您拥有有效且未过期的By-Node自带许可证(BYOL许可证)

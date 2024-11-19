@@ -67,23 +67,28 @@ South Central US          southcentralus       (US) South Central US
 ----
 
 
-. 查看下表中相应虚拟机部署类型的SKU名称。
+. 查看下表中相应Cloud Volumes ONTAP版本和VM部署类型的SKU名称。
 +
 在设置商城图片的URN时、SKU名称将用作"skuName"变量的值。
 
 +
-例如、单节点部署应使用"ONTAP _Cloud BYOL" SKU名称。
+例如、使用Cloud Volumes ONTAP 9.12.09的所有单节点部署都应使用 `ontap_cloud_byol`作为SKU名称。
 
 +
-[cols="1,1"]
+[cols="1,1,1"]
 |===
-| 虚拟机部署类型 | SKU名称 
 
 
-| 单个节点 | ONTAP云BYOL 
+| * Cloud Volumes ONTAP版本* | *VM部署类型* | *SKU名称* 
 
 
-| 高可用性 | ONTAP云BYOL_ha 
+| 9.15.1. 9.16.0 | 通过BlueXP  进行所有部署 | ONTAP云 
+
+
+| 9.12.1. | 单个节点 | ONTAP云BYOL 
+
+
+| 9.12.1. | 高可用性 | ONTAP云BYOL_ha 
 |===
 . 映射ONTAP版本和Azure Marketplace映像后、通过Azure Cloud Shell或Azure命令行界面从Azure Marketplace导出VHD文件。
 
@@ -94,7 +99,7 @@ South Central US          southcentralus       (US) South Central US
 
 . 从Azure Cloud Shell中、将市场映像导出到vhd (image2、例如9150.01000024.65090105.vhd)、然后下载到本地计算机(例如Linux计算机或Windows PC)。
 +
-.单击以显示
+.查看步骤
 [%collapsible]
 ====
 [source]
@@ -150,7 +155,7 @@ PS /home/user1> Remove-AzDisk -ResourceGroupName $diskRG -DiskName $diskName
 
 . 从本地Linux计算机通过Azure命令行界面将市场映像导出到vhd。
 +
-.单击以显示
+.查看步骤
 [%collapsible]
 ====
 [source]

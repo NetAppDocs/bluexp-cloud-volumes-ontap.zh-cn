@@ -276,7 +276,7 @@ NetApp已计划终止提供(EOA)并支持(EOS)基于节点的许可。在EOA和E
 .除外事项
 NetApp认识到某些情况需要特别注意、基于节点的许可的EOA和EOS不适用于以下情况：
 
-* USPS客户
+* 美国公共部门客户
 * 在私有模式下部署
 * 在AWS中部署Cloud Volumes ONTAP的中国地区
 

@@ -384,7 +384,6 @@
   <block id="5031fdddd713681aa180d7bfa60b1f72" category="paragraph">确保 Cloud Volumes ONTAP 的网络安全组规则允许负载平衡器为在上述步骤 4 中创建的运行状况探测发送 TCP 探测。请注意，默认情况下允许这样做。</block>
   <block id="a094ded8d387643804f456ad69ef9c4e" category="section-title">创建 Storage VM 和 LIF</block>
   <block id="9b08db40ecf3304d34c7dadb34a6d2c2" category="list-text">创建 Storage VM 和指向 Storage VM 的路由。</block>
-  <block id="120f35ca25d8256725ff2b7eb89df365" category="list-text">创建数据 LIF ：</block>
   <block id="622931dd0b6724a34dfe5a4f99b9a820" category="list-text">使用以下命令在节点 1 上创建 NAS LIF 。</block>
   <block id="604199268b7709a557c60a09df0624bf" category="list-text">使用以下命令在节点 1 上创建 iSCSI LIF 。</block>
   <block id="67694021a675f2be09781b9b9c744e99" category="list-text">可选：在节点 1 上创建 Storage VM 管理 LIF 。</block>
@@ -2264,7 +2263,6 @@
   <block id="0212110e6e591f399e46a0a33621323b" category="paragraph">此管理 LIF 可连接到 SnapCenter 等管理工具。</block>
   <block id="3fc61f795c4036debc9bbee70495f5d3" category="list-text">如果要创建 SVM 管理 LIF ，请重复这些步骤以创建其他 IP 地址。</block>
   <block id="556696d309aaf81ce29c6a76f8f8a503" category="section-title">HA 对</block>
-  <block id="8ebc8557356a6ebd39c4dd48a6f84931" category="paragraph">如何为 HA 对分配 IP 地址取决于您使用的存储协议。</block>
   <block id="bd88ed594712224b8e3f79251707158b" category="paragraph">您需要创建以下 IP 地址：</block>
   <block id="959519864abf23eb751637cd9762312f" category="list-text">一个 IP 地址，用于从节点 1 访问 iSCSI 数据 LIF</block>
   <block id="72b179a0d02f32caa6ee9d21826a4a30" category="list-text">一个 IP 地址，用于从节点 2 访问 iSCSI 数据 LIF</block>
@@ -2282,7 +2280,6 @@
   <block id="b41808a70de11f6ad8400c22ebe933f1" category="paragraph">如何在 HA 对上创建 Storage VM 和 LIF 取决于所使用的存储协议。</block>
   <block id="83871791a7611e5a981ec0b38a662078" category="list-text">使用以下命令在节点 2 上创建 iSCSI LIF 。</block>
   <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">使用以下命令在节点 2 上创建 NAS LIF 。</block>
-  <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">创建 NAS 数据 LIF ：</block>
   <block id="1d690a933c240dda520f6527f56da475" category="paragraph">从 9.7 版开始，特定 Cloud Volumes ONTAP 配置支持多个 Storage VM 。转至<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。</block>
   <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">*仅选定VPC*：入站流量的源筛选器是Cloud Volumes ONTAP 系统VPC的子网范围以及连接器所在VPC的子网范围。这是建议的选项。</block>
   <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">所有VPC*：入站流量的源筛选器为0.0.0.0/0 IP范围。</block>
@@ -3829,7 +3826,6 @@
   <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">支持单节点系统。</block>
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">支持直接从 NetApp 购买的许可证。</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">适用于Cloud Volumes ONTAP 的全局区域映射</block>
-  <block id="8a83d5aff252fbe923fc5b8ce4cab9f9" category="paragraph">DNS通信需要iSCSI LIF。为此，我们使用了 iSCSI LIF ，因为它不会在故障转移时迁移。</block>
   <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">您需要在负载平衡器中创建以下IP地址：</block>
   <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">每个VM各自NIC 0中节点1上的iSCSI LIF的一个IP地址</block>
   <block id="6f2174023153761cdb987311021eaf2b" category="list-text">仅为数据和SVM LIF创建所需数量的前端IP配置：</block>
@@ -3842,7 +3838,6 @@
   <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">单击刚刚创建的IP配置的名称、将"Assignment"更改为"Static"、然后单击*保存*。</block>
   <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">输入以下命令以访问高级模式。</block>
-  <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">创建iSCSI LIF以提供DNS通信：</block>
   <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">HA调解器的预定义安全组包括以下入站规则。</block>
   <block id="52554fb81854d42f02280f83a1067574" category="cell">连接器的CIDR</block>
   <block id="cdbb82146d412877f64f943229bd9533" category="cell">AWS EC2实例上连接器的IP地址</block>
@@ -4726,7 +4721,6 @@
   <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">"Settings"(设置)图标下的Cloud Volumes ONTAP设置选项的屏幕截图。</block>
   <block id="970af11c442d109ac4d016f7c57f63fb" category="paragraph">基于容量的许可以 _package_ 的形式提供。创建Cloud Volumes ONTAP工作环境时、您可以根据业务需求从多个许可包中进行选择。如果在创建工作环境后需求发生变化、您可以随时更改软件包。例如、您可以从Essentials软件包更改为Professional软件包。</block>
   <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">详细了解基于容量的许可包</block>
-  <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">更改收费方法不会影响是通过从NetApp (BYOL)购买的许可证还是从云提供商的市场(按需购买)购买许可证来收费。</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXP始终首先尝试使用许可证付费。如果许可证不可用、则会按商城订阅收费。BYOL到商城订阅不需要"转换"、反之亦然。</block>
   <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">虽然BlueXP中管理的产品和服务的实际使用情况和计量始终以GiB和TiB计算、但术语GB/GiB和TB/TiB可互换使用。这反映在云商城商品信息、报价、商品说明以及其他支持文档中</block>
   <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">虽然BlueXP中管理的产品和服务的实际使用情况和计量始终以GiB和TiB计算、但术语GB/GiB和TB/TiB可互换使用。这反映在云商城商品信息、报价、商品说明以及其他支持文档中。</block>
@@ -5495,7 +5489,6 @@
   <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
   <block id="059b6fdd2ea839d9327c322a4c87e168" category="doc">基于节点的许可证终止提供</block>
   <block id="73dfeef5d38f87e4c1d9e4b6417db109" category="paragraph">NetApp已计划终止基于Cloud Volumes ONTAP节点的许可的可用性(EOA)和支持结束(EOS)。从2024年11月11日开始、基于节点的许可证的有限可用性已终止。基于节点的许可支持将于2024年12月31日结束。在基于节点的许可证EOA之后、您应使用BlueXP  许可证转换工具过渡到基于容量的许可模式。</block>
-  <block id="412842ace3db013f5cc3f99342aac206" category="paragraph">对于年度或长期承诺、NetApp建议您在EOA日期或许可证到期日期之前联系NetApp代表、以确保满足过渡的前提条件。如果您没有Cloud Volumes ONTAP节点的长期合同、并根据按需PAYGO订阅运行系统、则在EOS日期之前规划您的转换非常重要。对于长期合同和PAYGO订阅、您可以使用BlueXP  许可证转换工具进行无缝转换。</block>
   <block id="90df487d076cd9295a7192268b4439ee" category="inline-link">基于节点的许可证终止提供</block>
   <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link">将基于节点的许可证转换为基于容量的许可证</block>
   <block id="2293617fe352e42e5a1e5d757463cb39" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="5987d844b1ad687ea551a96a31c7c0df" category="inline-link-rx"></block></block>
@@ -5513,7 +5506,6 @@
   <block id="c11ad5eeb4b3088d2c151593e9c1204e" category="paragraph">现在、您可以选择限制对Azure上Cloud Volumes ONTAP系统的存储帐户的公开访问。通过禁用访问、您可以确保您的专用IP地址不会被泄露、即使在同一个vNet中也是如此、只要您需要遵守组织的安全策略即可。此选项还会为Cloud Volumes ONTAP系统禁用数据分层、并适用于单节点和高可用性对。</block>
   <block id="69e89afe4b2013c34ff51df883ddc022" category="paragraph"><block ref="9064ea2dae3c9dc76b91a834ab88d8bf" category="inline-link-rx"></block>(英文)</block>
   <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">部署Cloud Volumes ONTAP后启用WORm</block>
-  <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">之前、您可以在BlueXP  上创建Cloud Volumes ONTAP工作环境时启用WORM存储。现在、BlueXP  为您提供了在工作环境中启用WORM的选项、即使在创建期间未启用WORM也是如此。启用WORM后、您将无法禁用它。</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">在Cloud Volumes ONTAP工作环境中启用WORM</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
   <block id="2db5c6d1af8e977d496e788510cbddd0" category="paragraph">您可以在创建工作环境时选择一个存储类、然后可以随时对其进行更改。有关更改存储类的说明，请参见<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
@@ -5645,8 +5637,17 @@
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAP版本*</block>
   <block id="a3a1c7f3820a8886078a2878a83c8362" category="cell">*VM部署类型*</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">*SKU名称*</block>
-  <block id="30076581de6d5b6ad148c87cd00ad956" category="cell">9.15.1. 9.16.0</block>
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">通过BlueXP  进行所有部署</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP云</block>
   <block id="23364a1412324aba4675105eacf57908" category="example-title">查看步骤</block>
+  <block id="ff98fd719f758a17955852024475db39" category="paragraph">对于年度或长期承诺、NetApp建议您在EOA日期或许可证到期日期之前联系NetApp代表、以确保满足过渡的前提条件。如果您没有Cloud Volumes ONTAP节点的长期合同、并根据按需按需购买(PAYGO)订阅运行系统、则必须在EOS日期之前规划您的转换。对于长期合同和PAYGO订阅、您可以使用BlueXP  许可证转换工具进行无缝转换。</block>
+  <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">现在、您可以使用BlueXP  在现有Cloud Volumes ONTAP系统上激活一次写入、多次读取(Write On一次 读取、Read M众多、WORM)存储。通过此功能、您可以灵活地在工作环境中启用WORM、即使在创建WORM期间未启用WORM也是如此。启用后、您将无法禁用WORM。</block>
+  <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">更改收费方法不会影响是通过从NetApp (BYOL)购买的许可证还是通过云提供商的市场按需购买(PAYGO)订阅来收费。</block>
+  <block id="deeb890dedc65f3ba1539e8c0083a08b" category="paragraph">对于高可用性(HA)对、您应访问集群中的每个Storage VM (SVM)、并在nic0下为每个SVM创建相应的IP。如何为 HA 对分配 IP 地址取决于您使用的存储协议。在HA模式下、用户必须确保正确配置IP地址以支持故障转移和冗余、这对于保持存储系统的高可用性和可靠性至关重要。</block>
+  <block id="d40f712a330c4835a0ab9b70db06051b" category="list-text">SVM管理LIF的可选IP地址</block>
+  <block id="534113954d7a54ea89ef88fa230b7146" category="paragraph">即使未使用iSCSI协议、DNS通信也需要iSCSI LUN。为此，我们使用了 iSCSI LIF ，因为它不会在故障转移时迁移。</block>
+  <block id="779dc7c57d3ba82d3f1438a241a8770a" category="inline-link-macro">以前的过程</block>
+  <block id="7e5f8351d1e24c2cf0c0d5fbc956ea2b" category="list-text">创建数据生命周期。在此步骤中、您将使用在中分配的IP<block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>作为数据生命周期。</block>
+  <block id="e5da8bd8aa33e128edc30f4d0c6082f4" category="list-text">创建iSCSI LUN以提供DNS通信。即使未使用iSCSI协议、DNS通信也需要iSCSI LUN。</block>
+  <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">创建NAS数据生命周期。在此步骤中、您将使用在中分配的IP<block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>作为数据生命周期。</block>
 </blocks>

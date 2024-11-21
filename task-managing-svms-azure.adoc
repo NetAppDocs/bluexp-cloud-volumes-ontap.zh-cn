@@ -66,7 +66,7 @@ NOTE: 要执行其他与NIC相关的任务、您可以在Azure中分配具有适
 
 === HA 对
 
-如何为 HA 对分配 IP 地址取决于您使用的存储协议。
+对于高可用性(HA)对、您应访问集群中的每个Storage VM (SVM)、并在nic0下为每个SVM创建相应的IP。如何为 HA 对分配 IP 地址取决于您使用的存储协议。在HA模式下、用户必须确保正确配置IP地址以支持故障转移和冗余、这对于保持存储系统的高可用性和可靠性至关重要。
 
 [role="tabbed-block"]
 ====
@@ -78,7 +78,7 @@ NOTE: 要执行其他与NIC相关的任务、您可以在Azure中分配具有适
 
 * 一个 IP 地址，用于从节点 1 访问 iSCSI 数据 LIF
 * 一个 IP 地址，用于从节点 2 访问 iSCSI 数据 LIF
-* Storage VM （ SVM ）管理 LIF 的可选 IP 地址
+* SVM管理LIF的可选IP地址
 +
 此管理 LIF 可连接到 SnapCenter 等管理工具。
 
@@ -111,7 +111,7 @@ NOTE: 要执行其他与NIC相关的任务、您可以在Azure中分配具有适
 * 一个 IP 地址，用于从节点 2 访问 NAS 数据 LIF
 * Storage VM （ SVM ）管理 LIF 的可选 IP 地址
 +
-DNS通信需要iSCSI LIF。为此，我们使用了 iSCSI LIF ，因为它不会在故障转移时迁移。
+即使未使用iSCSI协议、DNS通信也需要iSCSI LUN。为此，我们使用了 iSCSI LIF ，因为它不会在故障转移时迁移。
 
 +
 此管理 LIF 可连接到 SnapCenter 等管理工具。
@@ -434,7 +434,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. 创建数据 LIF ：
+. 创建数据生命周期。在此步骤中、您将使用在中分配的IPlink:task-managing-svms-azure.html#ha-pair["以前的过程"]作为数据生命周期。
 +
 .. 使用以下命令在节点 1 上创建 iSCSI LIF 。
 +
@@ -519,7 +519,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. 创建数据 LIF ：
+. 创建数据生命周期。在此步骤中、您将使用在中分配的IPlink:task-managing-svms-azure.html#ha-pair["以前的过程"]作为数据生命周期。
 +
 .. 使用以下命令在节点 1 上创建 NAS LIF 。
 +
@@ -535,7 +535,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -service-policy def
 ----
 
 
-. 创建iSCSI LIF以提供DNS通信：
+. 创建iSCSI LUN以提供DNS通信。即使未使用iSCSI协议、DNS通信也需要iSCSI LUN。
 +
 .. 使用以下命令在节点 1 上创建 iSCSI LIF 。
 +
@@ -629,7 +629,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. 创建 NAS 数据 LIF ：
+. 创建NAS数据生命周期。在此步骤中、您将使用在中分配的IPlink:task-managing-svms-azure.html#ha-pair["以前的过程"]作为数据生命周期。
 +
 .. 使用以下命令在节点 1 上创建 NAS LIF 。
 +
@@ -645,7 +645,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -service-policy def
 ----
 
 
-. 创建iSCSI LIF以提供DNS通信：
+. 创建iSCSI LUN以提供DNS通信。即使未使用iSCSI协议、DNS通信也需要iSCSI LUN。
 +
 .. 使用以下命令在节点 1 上创建 iSCSI LIF 。
 +

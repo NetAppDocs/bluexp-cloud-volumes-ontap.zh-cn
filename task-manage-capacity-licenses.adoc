@@ -199,7 +199,7 @@ NOTE: 有关如何获取许可证文件的详细信息，请参见 https://docs.
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["详细了解基于容量的许可包"^]。
 
 .关于此任务
-* 更改收费方法不会影响是通过从NetApp (BYOL)购买的许可证还是从云提供商的市场(按需购买)购买许可证来收费。
+* 更改收费方法不会影响是通过从NetApp (BYOL)购买的许可证还是通过云提供商的市场按需购买(PAYGO)订阅来收费。
 +
 BlueXP始终首先尝试使用许可证付费。如果许可证不可用、则会按商城订阅收费。BYOL到商城订阅不需要"转换"、反之亦然。
 

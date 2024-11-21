@@ -82,7 +82,7 @@ South Central US          southcentralus       (US) South Central US
 | * Cloud Volumes ONTAP版本* | *VM部署类型* | *SKU名称* 
 
 
-| 9.15.1. 9.16.0 | 通过BlueXP  进行所有部署 | ONTAP云 
+| 9.15.1 | 通过BlueXP  进行所有部署 | ONTAP云 
 
 
 | 9.12.1. | 单个节点 | ONTAP云BYOL 

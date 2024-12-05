@@ -505,7 +505,6 @@
   <block id="57f882d4d9318a77bccc1fe367a42ab5" category="paragraph">AutoSupport 会主动监控系统的运行状况，并向 NetApp 技术支持发送消息。默认情况下，每个节点都启用了 AutoSupport ，以便使用 HTTPS 传输协议向技术支持发送消息。最好验证 AutoSupport 是否可以发送这些消息。</block>
   <block id="c02079af34ef1373b8c0dab638269666" category="inline-link">ONTAP 文档：设置 AutoSupport</block>
   <block id="da66c21006cc6190b5b7b0242c6631b6" category="paragraph">确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见<block ref="f07c60ff969cb7b0a1c8ac04b7cc5791" category="inline-link-rx"></block>。</block>
-  <block id="499ff401ab7023a3297fee865d79a8f9" category="doc">在 GCP 中规划 VPC 服务控制</block>
   <block id="51864fc98a7ac79ddec9d933162b734b" category="inline-link">了解有关 Google Cloud VPC 服务控制的更多信息</block>
   <block id="1ea7fcd26fa8ab32a75247310351f611" category="paragraph">通过 VPC 服务控制，您可以控制对受信任边界以外 Google 管理的服务的访问，阻止来自不受信任位置的数据访问以及降低未经授权的数据传输风险。<block ref="a3874a083385bdd3c92e9cffcd9eea61" category="inline-link-rx"></block>。</block>
   <block id="17472965181a18d7ed0cb4275177cffe" category="section-title">NetApp 服务如何与 VPC 服务控制进行通信</block>
@@ -5526,8 +5525,6 @@
   <block id="3c7a90227f7481790a6d7eb5b1a274ea" category="list-text">*PAYGO*：按需购买(PAYGO)订阅是云提供商市场上按小时订阅的服务。</block>
   <block id="2b0470da2a26cbbea5d95f4e261d82ee" category="paragraph">有关将基于节点的许可证转换为基于容量的许可证的信息、请参见</block>
   <block id="7af9b0ab22150a40b2c1c451de82db3c" category="section-title">定价和支持的配置</block>
-  <block id="f05f2e524280a4aaf976825a1f6748f6" category="inline-link-macro">按容量许可证收费</block>
-  <block id="6c418172eb2db3f08bae6e40862aa940" category="paragraph">有关详细信息，请参见 <block ref="28d08582e43bd81e1450bd514123324f" category="inline-link-macro-rx"></block>。</block>
   <block id="a9949f1e97b05bac6285563868b6954a" category="admonition">要进行BlueXP  备份和恢复、需要订阅按需购买(PAYGO)、但使用此服务不会产生任何费用。有关为BlueXP  备份和恢复设置许可的详细信息，请参阅<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>。</block>
   <block id="05e7dd258874d61cb2bb985c9da9a17d" category="paragraph">NetApp已计划终止提供(EOA)并支持(EOS)基于节点的许可。在EOA和EOS之后、需要将基于节点的许可证转换为基于容量的许可证。</block>
   <block id="8c6aee7f6d39fa3bea95c2ae09851a7a" category="paragraph">有关信息，请参见<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>。</block>
@@ -5650,4 +5647,6 @@
   <block id="7e5f8351d1e24c2cf0c0d5fbc956ea2b" category="list-text">创建数据生命周期。在此步骤中、您将使用在中分配的IP<block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>作为数据生命周期。</block>
   <block id="e5da8bd8aa33e128edc30f4d0c6082f4" category="list-text">创建iSCSI LUN以提供DNS通信。即使未使用iSCSI协议、DNS通信也需要iSCSI LUN。</block>
   <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">创建NAS数据生命周期。在此步骤中、您将使用在中分配的IP<block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>作为数据生命周期。</block>
+  <block id="c023c17ce97ef2fee30e2cb2aa0cd81a" category="paragraph">有关详细信息，请参见 <block ref="7e81f0f3d7f6d88b77289e1baaf5eecf" category="inline-link-macro-rx"></block>。</block>
+  <block id="c0131b1cf44af0fec95135e45a801bbe" category="doc">在Google Cloud中规划VPC服务控件</block>
 </blocks>

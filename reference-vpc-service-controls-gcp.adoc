@@ -4,7 +4,7 @@ permalink: reference-vpc-service-controls-gcp.html
 keywords: vpc, service controls, vpc-sc, google, psc, private service connect 
 summary: 选择使用VPC服务控制锁定Google环境时、您应了解BlueXP和Cloud Volumes ONTAP 如何与Google API交互、以及如何配置服务参数以部署BlueXP和Cloud Volumes ONTAP。 
 ---
-= 在 GCP 中规划 VPC 服务控制
+= 在Google Cloud中规划VPC服务控件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -100,7 +100,7 @@ endif::gcp[]
 * 增加 NetApp 的任何云数据服务，但需额外付费
 
 
-有关详细信息，请参见 link:licensing-charging.html["按容量许可证收费"]。
+有关详细信息，请参见 link:concept-licensing-charging.html["有关基于容量的许可证的更多信息"]。
 
 
 

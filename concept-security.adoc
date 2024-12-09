@@ -93,7 +93,7 @@ ifdef::azure[]
 
 === Azure 存储服务加密
 
-数据会使用在 Azure 中的 Cloud Volumes ONTAP 上自动加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 存储服务加密"^] 使用 Microsoft 管理的密钥。
+使用Microsoft托管密钥在Azure中的Cloud Volumes ONTAP上自动加密数据 https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure 存储服务加密"^]。
 
 如果愿意，您可以使用自己的加密密钥。 link:task-set-up-azure-encryption.html["了解如何设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥"]。
 

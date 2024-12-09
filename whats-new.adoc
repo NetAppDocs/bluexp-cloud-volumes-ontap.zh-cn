@@ -20,6 +20,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2024年12月9日
+
+
+
+=== 已针对Azure更新受支持的VM列表、以符合最佳实践
+
+在Azure中部署新的Cloud Volumes ONTAP实例时、不再可在BlueXP  上选择DS_v2和ES_v3计算机系列。这些系列将仅在旧的现有系统中保留和支持。只有从9.12.1版本开始、Azure才支持全新部署Cloud Volumes ONTAP。建议您切换到ES_v4或与Cloud Volumes ONTAP 9.12.1及更高版本兼容的任何其他系列。但是、通过API进行新部署时、可以使用DS_v2和ES_v3系列计算机。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^]
+
+
+
 == 2024年11月11日
 
 
@@ -78,7 +90,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabl
 
 
 
-=== N1系列机器无法在BlueXP  上选择
+=== 已针对Google Cloud更新受支持的VM列表、以符合最佳实践
 
 在Google Cloud中部署新的Cloud Volumes ONTAP实例时、无法再在BlueXP  上选择n1系列计算机。n1系列机器将保留下来、并且仅在旧的现有系统中受支持。只有从9.8版开始、Google Cloud才支持全新部署Cloud Volumes ONTAP。建议您切换到与Cloud Volumes ONTAP 9.8及更高版本兼容的n2系列机器类型。但是、n1系列计算机将可用于通过API执行的新部署。
 
@@ -1410,7 +1422,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9100-relnotes["了解此版本
 
 === Azure 中由客户管理的加密密钥
 
-数据会使用在 Azure 中的 Cloud Volumes ONTAP 上自动加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 存储服务加密"^] 使用 Microsoft 管理的密钥。但是，您现在可以通过完成以下步骤来使用自己的客户管理的加密密钥：
+使用Microsoft托管密钥在Azure中的Cloud Volumes ONTAP上自动加密数据 https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure 存储服务加密"^]。但是，您现在可以通过完成以下步骤来使用自己的客户管理的加密密钥：
 
 . 从 Azure 创建密钥存储，然后在该存储中生成密钥。
 . 在BlueXP中、使用API创建使用密钥的Cloud Volumes ONTAP 工作环境。

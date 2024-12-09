@@ -14,13 +14,13 @@ summary: 在 Azure 中的 Cloud Volumes ONTAP 上使用 Azure 存储服务加密
 
 
 [role="lead"]
-数据会使用在 Azure 中的 Cloud Volumes ONTAP 上自动加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 存储服务加密"] 使用 Microsoft 管理的密钥。但是，您可以按照此页面上的步骤使用自己的加密密钥。
+在 Azure 中的 Cloud Volumes ONTAP 上使用 Azure 存储服务加密和 Microsoft 管理的密钥自动对数据进行加密。但是，您可以按照此页面上的步骤使用自己的加密密钥。
 
 
 
 == 数据加密概述
 
-Cloud Volumes ONTAP 数据在 Azure 中使用自动加密 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 存储服务加密"^]。默认实施使用 Microsoft 管理的密钥。无需设置。
+Cloud Volumes ONTAP数据在Azure中使用自动加密 https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure 存储服务加密"^]。默认实施使用 Microsoft 管理的密钥。无需设置。
 
 如果要在 Cloud Volumes ONTAP 中使用客户管理的密钥，则需要完成以下步骤：
 

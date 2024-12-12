@@ -60,13 +60,7 @@ Cloud Volumes ONTAP支持 https://www.netapp.com/pdf.html?item=/media/17070-ds-3
 
 外部密钥管理器支持 NVE 和 NAE 。
 
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[]
 
 在设置外部密钥管理器后，新聚合会默认启用 NetApp 聚合加密（ NAE ）。默认情况下，不属于 NAE 聚合的新卷将启用 NetApp 卷加密（ NVE ）（例如，如果您有在设置外部密钥管理器之前创建的现有聚合）。
 

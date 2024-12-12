@@ -3110,7 +3110,6 @@
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">如果业务需要、您还可以禁用专用链路连接。如果禁用此链接、则BlueXP会将Cloud Volumes ONTAP 配置为使用服务端点。</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">如果您尝试在Azure资源组中部署第二个Cloud Volumes ONTAP HA对、则BlueXP会遇到连接问题。</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">在部署Cloud Volumes ONTAP 时、BlueXP会创建一个提供数据的Storage VM。某些配置支持额外的 Storage VM 。 <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>。</block>
-  <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">从BlueXP 3.9.5版开始、将在初始Storage VM上启用逻辑空间报告。如果以逻辑方式报告空间，则 ONTAP 会报告卷空间，以便存储效率功能节省的所有物理空间也会报告为已用空间。</block>
   <block id="0dbf08a19cabe7472c89a9c1e7157737" category="list-text">BlueXP会自动在Cloud Volumes ONTAP 上安装以下ONTAP 功能许可证：</block>
   <block id="11d111ac1cc9cf65f25ba47f1cd4b23b" category="paragraph">下表列出了BlueXP与默认设置不同的卷属性：</block>
   <block id="8e2921a1922b2a0ecfbeec5648e2a4ab" category="cell">由BlueXP设置的值</block>
@@ -5184,7 +5183,6 @@
   <block id="a868fdec3895d3124b3057eb37731062" category="paragraph">您应该已准备好选择配置并从管理员处获取 AWS 网络信息。有关详细信息，请参见 <block ref="b2852d75c9a2b653b1ca3941854c33b3" category="inline-link-macro-rx"></block>。</block>
   <block id="11eabc4c2e02ada201e4f8ce94a56167" category="paragraph">有关详细信息，请参见 <block ref="517e0808f26a9b41dd03b24bae4c07de" category="inline-link-macro-rx"></block>。</block>
   <block id="c95e55331ee9ea930a177638f6578513" category="cell">选择 * 使用 Active Directory 域 * 以使用 Active Directory DNS 配置 NTP 服务器。如果需要使用其他地址配置 NTP 服务器，则应使用 API 。有关详细信息、请参见<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 。请注意，只有在创建 CIFS 服务器时才能配置 NTP 服务器。在创建 CIFS 服务器后，它不可配置。</block>
-  <block id="89a2456bdd5480899e2d6a3ee4ee019c" category="paragraph">有关详细信息，请参阅 <block ref="24fc9da0f00ff5ec38c6b3fffe9cc77c" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
   <block id="66962b0e026c08cab80e01e87da346a8" category="paragraph">有关部署模式的概述，请参见<block ref="ac890ff87988e1f4fe9ed78d7a128a29" category="inline-link-macro-rx"></block>。</block>
   <block id="f83835b81bb53fd1da3358b2d3599219" category="paragraph">该区域中所有 VPC 的 IP 地址必须位于 CIDR 块之外。有关更多详细信息，请参见<block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>。</block>
   <block id="597ca2dc5fd01a4decfca37440543f47" category="paragraph">如果有多个路由表、则选择正确的路由表非常重要。否则，某些客户端可能无法访问 Cloud Volumes ONTAP HA 对。有关路由表的详细信息，请参阅<block ref="8ed06851f50fcdbded65cb78f986bfa5" category="inline-link-rx"></block>。</block>
@@ -5202,7 +5200,6 @@
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure网站：产品按地区提供</block>
   <block id="e4eaa3d391d7d55d8c20cbf06dc81915" category="list-text">对于多个可用性分区、请为节点1选择区域、vNet、子网、分区、并为节点2选择分区。</block>
   <block id="407f144abfa1ac000a5a8035a2a3eb77" category="paragraph">有关选择磁盘大小的帮助，请参见<block ref="693042947faf99c4ded2e1854ea1714d" category="inline-link-macro-rx"></block>。</block>
-  <block id="561bec0387138d2b07f137df6774960c" category="paragraph">有关详细信息，请参阅 <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block> 和 <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>。</block>
   <block id="8f2f3f69e91b562b368312a0d9a50b10" category="admonition">有关如何通过Google Cloud导出图像的详细信息，请参阅<block ref="c7e947f0888e30efd1d729c87ccc8502" category="inline-link-rx"></block>。</block>
   <block id="dffa64286b22863be6fb6ce536cfea25" category="list-text">在多可用性区域(AZ)中部署Cloud Volumes ONTAP HA时、应配置传输网关。有关说明，请参阅<block ref="8ed1c74f676e6267bda3930e176fcde5" category="inline-link-macro-rx"></block>。</block>
   <block id="6242dbff130ee0bc438bfa60a5b4de51" category="paragraph">BlueXP可提供符合您的工作负载要求的预配置软件包、您也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。有关信息，请参见 <block ref="01a63aaf870d7f59ca64d1c54c969d0e" category="inline-link-macro-rx"></block>。</block>
@@ -5652,4 +5649,14 @@
   <block id="c97a482803062120aadcb028bb25c6d1" category="paragraph">Cloud Volumes ONTAP数据在Azure中使用自动加密<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block>。默认实施使用 Microsoft 管理的密钥。无需设置。</block>
   <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024年12月9日</block>
   <block id="c02b5fa56aae4296da253938ec788b53" category="paragraph">使用Microsoft托管密钥在Azure中的Cloud Volumes ONTAP上自动加密数据<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block>。但是，您现在可以通过完成以下步骤来使用自己的客户管理的加密密钥：</block>
+  <block id="a12f9b162c1d705866995451c3607b7a" category="paragraph">ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[]</block>
+  <block id="2da8645e38c3d4f73ccf32db700949e1" category="inline-link">知识库文章：CVO支持哪些实时存储效率功能？</block>
+  <block id="d3f3737cc08ede35a7833c219be7cf96" category="paragraph">从BlueXP 3.9.5版开始、将在初始Storage VM上启用逻辑空间报告。如果以逻辑方式报告空间，则 ONTAP 会报告卷空间，以便存储效率功能节省的所有物理空间也会报告为已用空间。有关实时存储效率功能的信息、请参阅知识库文章<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
+  <block id="2036e42877d5092c3afda2b202817932" category="list-text">NFS ifdef：：aws[] endif：：aws[] ifdef：：azure[] endif：：azure[]</block>
+  <block id="a9a68a4c2a3e1d9ea3aa0198251e51b3" category="paragraph">有关详细信息，请参阅<block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block>、<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>和<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
+  <block id="ee7f44a3ee50a804694c28101731c80b" category="paragraph">有关详细信息，请参阅<block ref="24fc9da0f00ff5ec38c6b3fffe9cc77c" category="inline-link-macro-rx"></block>、<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>和<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
+  <block id="9b5ca9f023a445b9980873fe985b03c2" category="paragraph">有关详细信息，请参阅<block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block>、<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>和<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
+  <block id="1d7416ead0f5e395552a7bea35bb1485" category="paragraph">ifcp：：aws[] endif：：aws[] ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[] ifdef：：aws[] endif：：：aws[] ifdef：：azure[] endef：：：azure[] if:gcp[]</block>
+  <block id="86402869cd4d06d1574d76517f21f563" category="paragraph">通过基于容量的许可，您可以按每 TiB 容量为 Cloud Volumes ONTAP 付费。基于容量的许可以_package的形式提供：Essentials、Optimized/Professional包。</block>
+  <block id="318162ad2b4d0154510a1c3fe1ca774b" category="paragraph">Essentials、Optimized"和"Professional "包可用于以下消费模式：</block>
 </blocks>

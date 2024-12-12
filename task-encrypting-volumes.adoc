@@ -18,26 +18,4 @@ Cloud Volumes ONTAP 支持 NetApp 卷加密（ NVE ）和 NetApp 聚合加密（
 
 外部密钥管理器支持 NVE 和 NAE 。
 
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
-
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+ifcp：：aws[] endif：：aws[] ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[] ifdef：：aws[] endif：：：aws[] ifdef：：azure[] endef：：：azure[] if:gcp[]

@@ -14,9 +14,9 @@ summary: 应启用Microsoft Azure的高可用性模式、以减少计划外故�
 
 
 [role="lead"]
-应启用Microsoft Azure的高可用性模式、以减少计划外故障转移时间、并为Cloud Volumes ONTAP启用NFSv4支持。
+应启用Microsoft Azure的高可用性(HA)模式、以减少计划外故障转移时间、并为Cloud Volumes ONTAP启用NFSv4支持。在此模式下、在CIFS和NFSv4客户端上执行计划外故障转移期间、Cloud Volumes ONTAP HA节点可以实现较低(60秒)的恢复时间目标(Recovery Time客观、Recovery Time目标、Recovery Time目标)。
 
-从Cloud Volumes ONTAP 9.10.1版开始、我们缩短了在Microsoft Azure中运行的Cloud Volumes ONTAP HA对的计划外故障转移时间、并增加了对NFSv4的支持。要使这些增强功能可用于Cloud Volumes ONTAP、您需要在Azure订阅上启用高可用性功能。
+从Cloud Volumes ONTAP 9.10.1开始、我们减少了在Microsoft Azure中运行的Cloud Volumes ONTAP HA对的计划外故障转移时间、并增加了对NFSv4的支持。要使这些增强功能可用于Cloud Volumes ONTAP、您需要在Azure订阅上启用高可用性功能。
 
 如果需要在Azure订阅上启用此功能、BlueXP将在"需要操作"消息中提示您提供这些详细信息。
 
@@ -24,7 +24,9 @@ summary: 应启用Microsoft Azure的高可用性模式、以减少计划外故�
 
 * Cloud Volumes ONTAP HA 对的高可用性没有问题。此 Azure 功能可与 ONTAP 配合使用，以减少客户端观察到的 NFS 协议因计划外故障转移事件而发生的应用程序中断时间。
 * 启用此功能不会对 Cloud Volumes ONTAP HA 对造成中断。
-* 在 Azure 订阅上启用此功能不会将问题发生原因给其他 VM 。
+* 在Azure订阅上启用此功能不会对其他VM造成问题。
+* Cloud Volumes ONTAP会在CIFS和NFS客户端上的集群和SVM管理LI故障转移期间使用内部Azure负载平衡器。
+* 启用HA模式后、BlueXP  每12小时扫描一次系统、以更新内部Azure负载平衡器规则。
 
 
 拥有"所有者"权限的Azure用户可以从Azure命令行界面启用此功能。

@@ -228,7 +228,9 @@ BlueXP更改了Cloud Volumes ONTAP 系统的充电方法。
 
 == 删除基于容量的许可证
 
-如果基于容量的许可证已过期且不再使用，则可以随时将其删除。
+如果基于容量的许可证已过期且不再使用、您可以随时将其删除。
+
+要了解在许可证到期或删除许可证时Cloud Volumes ONTAP数据会发生什么情况，请参见 https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/FAQs_on_Cloud_Volumes_ONTAP_license_expiry["此知识库(KB)文章"^]。
 
 .步骤
 . 从BlueXP导航菜单中、选择*监管>数字电子钱包*。

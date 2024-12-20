@@ -265,7 +265,7 @@ sidebar:
       entries:
       - title: Cloud Volumes ONTAP中的许可
         url: "/concept-licensing.html"
-      - title: 有关基于容量的许可证的更多信息
+      - title: 详细了解基于容量的许可证
         url: "/concept-licensing-charging.html"
     - title: 存储
       entries:

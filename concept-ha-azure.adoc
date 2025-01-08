@@ -50,6 +50,9 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 
 
+NOTE: 从Cloud Volumes ONTAP 9.15.0P1开始、新的高可用性对部署不再支持Azure页面Blobs。如果您当前在现有高可用性对部署中使用Azure页面Blobs、则可以迁移到Edsv4系列VM和Edsv5系列VM中较新的VM实例类型。link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["详细了解Azure中支持的配置"^](英文)
+
+
 
 === 使用共享受管磁盘的HA单可用性区域配置
 

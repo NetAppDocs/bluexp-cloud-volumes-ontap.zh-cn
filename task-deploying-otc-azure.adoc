@@ -393,6 +393,10 @@ NOTE: 如果选定版本具有较新的候选版本、通用可用性或修补�
 +
 link:concept-data-tiering.html["了解有关数据分层的更多信息。"^]。
 
+** 从Cloud Volumes ONTAP 9.15.0P1开始、新的高可用性对部署不再支持Azure页面Blobs。如果您当前在现有高可用性对部署中使用Azure页面Blobs、则可以迁移到Edsv4系列VM和Edsv5系列VM中较新的VM实例类型。
++
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["详细了解Azure中支持的配置"^](英文)
+
 
 
 . *写入速度和WORM*：

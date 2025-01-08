@@ -5665,4 +5665,8 @@
   <block id="2ee1fa7be03c13720193e0dad8935652" category="inline-link">此知识库(KB)文章</block>
   <block id="6e9d07c33afe89ea437bf8c34df37d42" category="paragraph">要了解在许可证到期或删除许可证时Cloud Volumes ONTAP数据会发生什么情况，请参见<block ref="388c9f5ba0fdf002c4eb313c08420e05" category="inline-link-rx"></block>。</block>
   <block id="89f1c05b91f27a0ccc4736c51deee49f" category="paragraph">转换后的许可证的到期日期与Cloud Volumes ONTAP许可证相同。</block>
+  <block id="11c433da09cca9cd7d57ed81e1cd6310" category="inline-link-macro">详细了解Azure中支持的配置</block>
+  <block id="9601655a1a70b76faca1edfd7d7dff06" category="admonition">从Cloud Volumes ONTAP 9.15.0P1开始、新的高可用性对部署不再支持Azure页面Blobs。如果您当前在现有高可用性对部署中使用Azure页面Blobs、则可以迁移到Edsv4系列VM和Edsv5系列VM中较新的VM实例类型。<block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="096eb93e7b28ed2b978956821258d0c8" category="list-text">从Cloud Volumes ONTAP 9.15.0P1开始、新的高可用性对部署不再支持Azure页面Blobs。如果您当前在现有高可用性对部署中使用Azure页面Blobs、则可以迁移到Edsv4系列VM和Edsv5系列VM中较新的VM实例类型。</block>
+  <block id="32fc2dbe6ce23818c00cefccab1d6097" category="paragraph"><block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>(英文)</block>
 </blocks>

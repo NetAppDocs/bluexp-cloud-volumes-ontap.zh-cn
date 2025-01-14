@@ -4,7 +4,7 @@ permalink: concept-licensing-charging.html
 keywords: capacity-based license charging, consumption for licenses, pricing for licenses, CVO licensing, CVO charging 
 summary: 熟悉基于容量的许可证的收费、使用模式、定价和配置。 
 ---
-= 详细了解基于容量的许可证
+= 详细了解Cloud Volumes ONTAP基于容量的许可证
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

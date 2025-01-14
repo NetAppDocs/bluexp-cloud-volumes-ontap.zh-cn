@@ -221,9 +221,6 @@ Cloud Volumes ONTAP需要出站Internet访问才能联系各种端点进行日�
 
 
 
-| \https://keyvault-production-aks.vault.azure.net | 密钥库 | 用于从Azure密钥存储中检索客户端机密密钥、以便与S3存储分段进行通信以处理元数据。Cloud Volumes ONTAP服务在内部使用此组件。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP服务不可用。 
-
-
 | https://cloudmanager.cloud.netapp.com/tenancy | 租户 | 用于从BlueXP  租户中检索Cloud Volumes ONTAP资源以授权资源和用户。 | 标准模式和受限模式。 | Cloud Volumes ONTAP资源和用户未获得授权。 
 
 

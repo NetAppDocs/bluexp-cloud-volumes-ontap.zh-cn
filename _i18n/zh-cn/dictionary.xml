@@ -834,7 +834,6 @@
   <block id="907c78338365697be8fd8d4a130503c8" category="admonition">使用吞吐量优化型 HDD （ st1 ）时，不建议将数据分层到对象存储。</block>
   <block id="f7c94a9d0c1e0feee8c2687a0f8fa5ad" category="list-text">Capacity tier</block>
   <block id="7672a092783c4348b96b40ea2dcf6681" category="list-text">存储类</block>
-  <block id="31089fb1bcdba9204af0a200bd8dcfab" category="inline-link-macro">将非活动数据分层到低成本对象存储</block>
   <block id="d40a00133c09c6d1518e8f39dc3b963e" category="paragraph">数据分层的存储类是系统范围的，而不是每个卷。</block>
   <block id="176cd61977ca55fd13eff7c7ba3659f5" category="section-title">Azure 中的数据分层</block>
   <block id="9f5e7587dc37b317df0faf00f072c5b5" category="paragraph">在 Azure 中启用数据分层后， Cloud Volumes ONTAP 会将 Azure 托管磁盘用作热数据的性能层，并将 Azure Blob 存储用作非活动数据的容量层。</block>
@@ -1881,8 +1880,6 @@
   <block id="afe7022770dc53fd2a2de81727d4343a" category="list-text">要使用客户管理的加密密钥对存储分段进行加密，请启用 Google Cloud 存储分段以使用此密钥。</block>
   <block id="030b67ae86ab61438eb6b00a3ade8e7a" category="inline-link-macro">了解如何在 Cloud Volumes ONTAP 中使用客户管理的加密密钥</block>
   <block id="d9c32a88801cedef2b665ed828d3ec26" category="paragraph"><block ref="c6d38e0757454a32ebb960ce7a42b88f" category="inline-link-macro-rx"></block>。</block>
-  <block id="350a5f4a5776c36c5a3cd04127fb4fe5" category="section-title">在实施要求后启用数据分层</block>
-  <block id="75a38ac7969fd8d12bc86993fd41536a" category="section-title">确保在聚合上启用分层</block>
   <block id="d1795f03cc65928e7e6c681acf520582" category="paragraph">必须在聚合上启用数据分层，才能在卷上启用数据分层。您应了解新卷和现有卷的要求。</block>
   <block id="a424b516a0915a28d7aed2e00bd7621a" category="list-text">* 新卷 *</block>
   <block id="7837a0921d66e4bb13eaadfbd4e230b5" category="list-text">* 现有卷 *</block>
@@ -1891,30 +1888,25 @@
   <block id="a81d10975a3cf570e21398a50ce230b9" category="list-text">单击聚合的操作菜单并选择 * 附加云层 * 。</block>
   <block id="d868c846c4dcadf6cfa6658140d5efcf" category="list-text">选择要附加的云层，然后单击 * 保存 * 。</block>
   <block id="a323b1a6695991c4c107a123436089fb" category="paragraph">现在，您可以在新卷和现有卷上启用数据分层，如下一节所述。</block>
-  <block id="4378a09b2897cb95172610f9ab82105b" category="section-title">对读写卷中的数据进行分层</block>
   <block id="38f85b7b21b44c9b59780ab299932eff" category="paragraph">Cloud Volumes ONTAP 可以将读写卷上的非活动数据分层到经济高效的对象存储中，从而腾出性能层来存储热数据。</block>
   <block id="39bd65df7752a24493d186f47c1c4bcd" category="cell">创建新卷</block>
   <block id="e0e02b01eefffa92ef6dd41ca0bfddaa" category="cell">单击 * 添加新卷 * 。</block>
   <block id="182706d5a3d41050c9687bc12322e932" category="cell">修改现有卷</block>
   <block id="8e18d8c821310741023d16bcccb5aa95" category="list-text">选择分层策略。</block>
-  <block id="bbef357c8db2518419bffde441df9910" category="section-title">对数据保护卷中的数据进行分层</block>
   <block id="f7ace3ec87f10c0e3afcafcb4cf7b425" category="paragraph">Cloud Volumes ONTAP 可以将数据从数据保护卷分层到容量层。如果激活目标卷、则数据将在读取时逐渐移动到性能层。</block>
   <block id="29e71d65fc647320e822efb6ec422c56" category="list-text">在 " 画布 " 页面上，选择包含源卷的工作环境，然后将其拖动到要将该卷复制到的工作环境。</block>
   <block id="43d764b69e7c6b24a451e0f6a58ed33d" category="list-text">按照提示操作、直至到达分层页面并启用到对象存储的数据分层。</block>
   <block id="9f873d6c6a1788f5273861c45a8e56fa" category="inline-image-macro">复制卷时显示 S3 分层选项的屏幕快照。</block>
   <block id="b69cef59fd529fdd17b7e8981c791ce2" category="paragraph"><block ref="b69cef59fd529fdd17b7e8981c791ce2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f7a02f565e0f68ea031041e7e890314" category="inline-link">将数据复制到云中或从云中复制数据</block>
-  <block id="d2ceebd2cbebfd9830eac76d28a12b82" category="section-title">更改分层数据的存储类</block>
   <block id="685b93acf24fff38428d46b5ddbc90bf" category="paragraph">部署 Cloud Volumes ONTAP 后，您可以通过更改 30 天内未访问的非活动数据的存储类来降低存储成本。如果您确实访问数据，访问成本会更高，因此在更改存储类之前，必须考虑到这一点。</block>
   <block id="923cfd28dcb7b052c5d38988ebb71dcd" category="paragraph">分层数据的存储类在系统范围内—不是每个卷的 ​it 。</block>
   <block id="6ce76737e6ad455cc49c865bc6d2c466" category="list-text">在工作环境中，单击菜单图标，然后单击 * 存储类 * 或 * Blob 存储分层 * 。</block>
   <block id="5bb29017b3feae0bd72d137d95ec631c" category="list-text">选择一个存储类，然后单击 * 保存 * 。</block>
-  <block id="2cca3ca6096bf8fb9c832683c582250c" category="section-title">更改数据分层的可用空间比率</block>
   <block id="0f25882e78be6d7c0e2d9cd5c7808fb5" category="paragraph">数据分层的可用空间比率用于定义将数据分层到对象存储时， Cloud Volumes ONTAP SSD/HDD 上需要多少可用空间。默认设置为 10% 的可用空间，但您可以根据需要调整此设置。</block>
   <block id="2aa3b7e505c0c56df0a2f60f7d4f87cc" category="paragraph">此比率对于灾难恢复场景非常重要，因为从对象存储读取数据时， Cloud Volumes ONTAP 会将数据移至 SSD/HDD 以提高性能。如果空间不足，则 Cloud Volumes ONTAP 无法移动数据。在更改比率时，请考虑这一点，以便满足您的业务需求。</block>
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">在 * 容量 * 下，单击 * 聚合容量阈值 - 数据分层的可用空间比率 * 。</block>
   <block id="c389556b61d8e54624252a2563fdfc17" category="list-text">根据需要更改可用空间比率，然后单击 * 保存 * 。</block>
-  <block id="24c979ae168264040ca2c88e59f2902a" category="section-title">更改自动分层策略的冷却期</block>
   <block id="77ac5bdafcd5300a46db8d23117433c1" category="paragraph">冷却期是指卷中的用户数据在被视为 " 冷 " 并移至对象存储之前必须保持非活动状态的天数。</block>
   <block id="15d3560479839db873ba3a7d6309b50c" category="paragraph">自动分层策略的默认冷却期为 31 天。您可以按如下所示更改冷却期：</block>
   <block id="07c1e6ebf913a40fd18f3f57f20d6d68" category="list-text">9.8 或更高版本： 2 天到 183 天</block>
@@ -5108,7 +5100,6 @@
   <block id="db9ff71bc9bf52beb98f0d113ff7ccbf" category="inline-link">Microsoft Azure文档：了解有关Azure Blot存储访问层的更多信息</block>
   <block id="2071f090de049a0bafd6e8e9ebc886a4" category="inline-link">Google Cloud文档：存储类</block>
   <block id="b7394e89ab52c2644e6abe3428b0bdee" category="paragraph">如果您确实访问数据，访问成本会更高，因此在更改存储类之前，请考虑这一点。要了解更多信息，请参阅<block ref="3f6491f63b376fc9e505b3fd50e825aa" category="inline-link-rx"></block>。</block>
-  <block id="2fb88c61a4ec945d000763abb10cbd1d" category="paragraph">有关说明和支持的配置列表，请参见<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="38850f8a756c82c89e87237ed4f91234" category="inline-image-macro">一个概念图、其中显示了一个负载平衡器、用于管理来自BlueXP  和客户端的传入流量、一个vmss Flex中的两个Cloud Volumes ONTAP节点、用于启动数据的SSD磁盘以及用于客户数据的页面Blobs。</block>
   <block id="fb33ca393b61decaf86e6a0dccadd3c1" category="paragraph"><block ref="fb33ca393b61decaf86e6a0dccadd3c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fff8d8adf9a040085ccf70ab0f209712" category="list-text">单个可用性区域中的VM</block>
@@ -5369,7 +5360,6 @@
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud</block>
   <block id="08c0a2896fee0160c8083277678851f6" category="cell">政府DoD地区</block>
   <block id="98179c4c799c9419b4ba6f502cd22783" category="cell">BlueXP  部署模式</block>
-  <block id="7b8d76983ab84b3978e67a05e145f16e" category="cell">用于从Azure密钥存储中检索客户端机密密钥、以便与S3存储分段进行通信以处理元数据。Cloud Volumes ONTAP服务在内部使用此组件。</block>
   <block id="f235e1a740b92e59100dda0cf4e3d76b" category="cell">\https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1</block>
   <block id="342804fdcc569427f0c6f21b0757653d" category="cell">Google Cloud (商业用途)。</block>
   <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">与Google Cloud服务通信。</block>
@@ -5494,10 +5484,7 @@
   <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">部署Cloud Volumes ONTAP后启用WORm</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">在Cloud Volumes ONTAP工作环境中启用WORM</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
-  <block id="2db5c6d1af8e977d496e788510cbddd0" category="paragraph">您可以在创建工作环境时选择一个存储类、然后可以随时对其进行更改。有关更改存储类的说明，请参见<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="930e999bb64aeb9cc71cdd63d9f4948c" category="paragraph">如果您不打算访问容量层中的非活动数据、则可以选择_coo_存储层、其中的非活动数据将保留至少30天。您也可以选择_cold层、其中非活动数据将存储至少90天。根据您的存储要求和成本考虑、您可以选择最适合您需求的层。将存储层更改为_cool或_cold时、非活动容量层数据将直接移至冷存储层或冷存储层。与热层相比、冷层和冷层的存储成本更低、但访问成本更高、因此在更改存储层之前应考虑这一点。请参阅<block ref="30699d9b3a005c39386e73a7c4627191" category="inline-link-rx"></block>。</block>
-  <block id="3bb51211db193484b68905ef8f68ac0f" category="paragraph">您可以在创建工作环境时选择一个存储层、之后可以随时对其进行更改。有关更改存储层的详细信息，请参见<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
-  <block id="546c7b1d0701c3dcea6eb887ba9a499b" category="paragraph">您可以在创建工作环境时选择一个存储层、之后可以随时对其进行更改。有关更改存储类的详细信息，请参见<block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>。</block>
   <block id="8c26cfdad94fa97c367b921f4702fcea" category="paragraph">您可以将HA对用作主动-主动配置(即两个节点均为客户端提供数据)、也可以使用主动-被动配置(即、被动节点仅在接管主动节点的存储后才会响应数据请求)。</block>
   <block id="fa317d8412b494ed6cf39e304ca9a341" category="paragraph">AWS中的Cloud Volumes ONTAP在一个可用性区域中仅支持高可用性(HA)模式。不支持单节点部署。</block>
   <block id="eb99da0ddbfd6f5a24a511ef8df7c577" category="paragraph">Cloud Volumes ONTAP不支持在AWS本地区域中进行数据分层、云分层和非限定实例。</block>
@@ -5531,7 +5518,6 @@
   <block id="0fda23bdfd335df1f36c51b87bc2b780" category="paragraph">对于这些特定情形、NetApp将提供支持、以满足符合合同义务和运营需求的独特许可要求。</block>
   <block id="913f6cd3e420105c804151f182c6938f" category="admonition">即使在这些情况下、基于节点的新许可证和许可证续订的有效期也最长为自批准之日起一年。</block>
   <block id="5be0251ff1848cd4d292e0a684e70539" category="section-title">许可证转换</block>
-  <block id="a3562fcfc4a85274195b7100a2a26d71" category="paragraph">通过BlueXP 、可以通过许可证转换工具将基于节点的许可证无缝转换为基于容量的许可证。有关基于节点的许可的EOA的信息，请参见<block ref="1ef8ea114dcf1680f435cb8143e047b7" category="inline-link-macro-rx"></block>。</block>
   <block id="67b50b6cd5ac50e92192638dab47bddc" category="paragraph">在过渡之前、最好先熟悉这两种许可模式之间的差异。基于节点的许可包括每个ONTAP实例的固定容量、这可能会限制灵活性。另一方面、基于容量的许可允许在多个实例之间共享存储池、从而提高灵活性、优化资源利用率、并降低重新分配工作负载时可能面临的经济处罚。基于容量的充电可根据不断变化的存储需求进行无缝调整。</block>
   <block id="9deed5641b081a08e814b22533f5376e" category="paragraph">要了解如何执行此转换，请参见<block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block>。</block>
   <block id="2840378978873ef766f1cf65e35e8874" category="admonition">不支持将系统从基于容量的许可转换为基于节点的许可。</block>
@@ -5669,4 +5655,25 @@
   <block id="9601655a1a70b76faca1edfd7d7dff06" category="admonition">从Cloud Volumes ONTAP 9.15.0P1开始、新的高可用性对部署不再支持Azure页面Blobs。如果您当前在现有高可用性对部署中使用Azure页面Blobs、则可以迁移到Edsv4系列VM和Edsv5系列VM中较新的VM实例类型。<block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="096eb93e7b28ed2b978956821258d0c8" category="list-text">从Cloud Volumes ONTAP 9.15.0P1开始、新的高可用性对部署不再支持Azure页面Blobs。如果您当前在现有高可用性对部署中使用Azure页面Blobs、则可以迁移到Edsv4系列VM和Edsv5系列VM中较新的VM实例类型。</block>
   <block id="32fc2dbe6ce23818c00cefccab1d6097" category="paragraph"><block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="a1d3242487e006d5790b1572e34a22f0" category="inline-link-macro">将非活动数据分层到低成本对象存储</block>
+  <block id="c4232fd6e7b3110c40c884976710003f" category="paragraph">您可以在创建工作环境时选择一个存储类、然后可以随时对其进行更改。有关更改存储类的说明，请参见<block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="7605a01088a25de348f9b1bf778bb57d" category="paragraph">您可以在创建工作环境时选择一个存储层、之后可以随时对其进行更改。有关更改存储层的详细信息，请参见<block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="14eefbeb9f44a2759fdf3f12b232390d" category="paragraph">您可以在创建工作环境时选择一个存储层、之后可以随时对其进行更改。有关更改存储类的详细信息，请参见<block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9d2b1ce92a5b5e640b96ff8b087951c" category="paragraph">有关说明和支持的配置列表，请参见<block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9e29c9db65cd5278aaf851dd73ff92f" category="doc">详细了解Cloud Volumes ONTAP基于容量的许可证</block>
+  <block id="a8c501f77feee17c50fcd08e17a9c892" category="paragraph">通过BlueXP 、可以通过许可证转换工具将基于节点的许可证无缝转换为基于容量的许可证。有关基于节点的许可的EOA的信息，请参见<block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block>。</block>
+  <block id="d582c826d3814a85fb4b333a4fe7d017" category="section-title">在满足要求后启用数据层</block>
+  <block id="f405b2e27c94adfd81c23f7e45ff0d6a" category="section-title">确保已在聚合上启用层</block>
+  <block id="dff0c181874d8c9c189ebadee034e447" category="section-title">对读写卷中的数据进行分层</block>
+  <block id="dd8a8744e35ea92bb2b505dcb4f9298a" category="section-title">对数据保护卷中的数据进行分层</block>
+  <block id="334c664b1a356000015bfee8f7c166af" category="section-title">更改分层数据的存储类</block>
+  <block id="1fbd47af266b41d696dc1bcb8bd7c267" category="section-title">更改数据层的可用空间比率</block>
+  <block id="39b1c94860491dd4e9c223d992664703" category="section-title">更改auto层策略的冷却期</block>
+  <block id="a746df8d8a8e535afbdb1fa2b85acc7d" category="section-title">在停用工作环境时删除S3存储分段</block>
+  <block id="56abe7aac633cd3c0025ef3e203a5fcd" category="paragraph">停用Cloud Volumes ONTAP工作环境时、您可以删除数据分层的S3存储分段。</block>
+  <block id="dd29a3dfa7d0b08f5d6c195c15c1198b" category="paragraph">只有在以下情况下、才能删除S3存储分段：</block>
+  <block id="da7394763f52e8449cc5b4cf2cfde0ed" category="list-text">此时将从BlueXP  中删除Cloud Volume ONTAP工作环境。</block>
+  <block id="d2d3ec1947496479a509e0bb5fb4ff4f" category="list-text">此时、所有对象都会从存储分段中删除、而S3存储分段为空。</block>
+  <block id="dee6c945054b27877b8f184c2904e708" category="inline-link">ONTAP命令行界面：vserver object-store-server b分 段delete</block>
+  <block id="308afc6d4a9db3e5427a33ad1e32b3be" category="paragraph">停用Cloud Volumes ONTAP工作环境时、不会自动删除为该环境创建的S3存储分段。相反、它会保持孤立状态、以防止任何意外数据丢失。您可以删除存储分段中的对象、然后再删除S3存储分段本身或将其保留以供日后使用。请参阅<block ref="68bba29ef3429f4e3e6e1695929c5629" category="inline-link-rx"></block>。</block>
 </blocks>

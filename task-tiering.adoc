@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering.html 
-keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements 
+keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket 
 summary: 通过将热数据的 SSD 或 HDD 性能层与非活动数据的对象存储容量层相结合，您可以降低 Cloud Volumes ONTAP 的存储成本。数据分层由 FabricPool 技术提供支持。 
 ---
 = 将非活动数据分层到低成本对象存储
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 确保已启用分层的聚合
 [role="quick-margin-para"]
-必须在聚合上启用数据分层，才能在卷上启用数据分层。您应了解新卷和现有卷的要求。 <<确保在聚合上启用分层,了解更多信息。>>。
+必须在聚合上启用数据分层，才能在卷上启用数据分层。您应了解新卷和现有卷的要求。 <<Ensuring that tiering is enabled on aggregates,了解更多信息。>>。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 创建，修改或复制卷时，请选择分层策略
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ endif::gcp[]
 * 您无需为容量层创建对象存储。BlueXP可以为您提供这种服务。
 * 您无需在系统级别启用数据分层。
 +
-在创建系统时、BlueXP会为冷数据创建一个对象存储、 <<在实施要求后启用数据分层,只要没有连接或权限问题>>。之后，您只需在卷上启用数据分层（在某些情况下， <<确保在聚合上启用分层,在聚合上>>）。
+在创建系统时、BlueXP会为冷数据创建一个对象存储、 <<Enabling data tiering after implementing the requirements,只要没有连接或权限问题>>。之后，您只需在卷上启用数据分层（在某些情况下， <<Ensuring that tiering is enabled on aggregates,在聚合上>>）。
 
 
 
@@ -193,7 +193,7 @@ endif::gcp[]
 
 
 
-=== 在实施要求后启用数据分层
+=== 在满足要求后启用数据层
 
 只要不存在连接或权限问题、BlueXP就会在创建系统时为冷数据创建一个对象存储。如果您在创建系统之前未实施上述要求、则需要通过API或ONTAP系统管理器手动启用分层、以创建对象存储。
 
@@ -202,7 +202,7 @@ NOTE: 未来的Cloud Volumes ONTAP版本将提供通过BlueXP用户界面启用�
 
 
 
-== 确保在聚合上启用分层
+== 确保已在聚合上启用层
 
 必须在聚合上启用数据分层，才能在卷上启用数据分层。您应了解新卷和现有卷的要求。
 
@@ -306,7 +306,7 @@ image:screenshot_replication_tiering.gif["复制卷时显示 S3 分层选项的�
 
 
 
-== 更改数据分层的可用空间比率
+== 更改数据层的可用空间比率
 
 数据分层的可用空间比率用于定义将数据分层到对象存储时， Cloud Volumes ONTAP SSD/HDD 上需要多少可用空间。默认设置为 10% 的可用空间，但您可以根据需要调整此设置。
 
@@ -328,7 +328,7 @@ image:screenshot_settings_icon.png["一个屏幕截图、显示了BlueXP控制�
 
 
 
-== 更改自动分层策略的冷却期
+== 更改auto层策略的冷却期
 
 如果您使用 _auto_tiering 策略在 Cloud Volumes ONTAP 卷上启用了数据分层，则可以根据业务需求调整默认冷却期。仅支持使用ONTAP命令行界面和API执行此操作。
 
@@ -343,3 +343,17 @@ image:screenshot_settings_icon.png["一个屏幕截图、显示了BlueXP控制�
 .步骤
 . 创建卷或修改现有卷时，请在 API 请求中使用 _minimumCoolingDays_ 参数。
 
+
+
+
+== 在停用工作环境时删除S3存储分段
+
+停用Cloud Volumes ONTAP工作环境时、您可以删除数据分层的S3存储分段。
+
+只有在以下情况下、才能删除S3存储分段：
+
+* 此时将从BlueXP  中删除Cloud Volume ONTAP工作环境。
+* 此时、所有对象都会从存储分段中删除、而S3存储分段为空。
+
+
+停用Cloud Volumes ONTAP工作环境时、不会自动删除为该环境创建的S3存储分段。相反、它会保持孤立状态、以防止任何意外数据丢失。您可以删除存储分段中的对象、然后再删除S3存储分段本身或将其保留以供日后使用。请参阅 https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["ONTAP命令行界面：vserver object-store-server b分 段delete"^]。

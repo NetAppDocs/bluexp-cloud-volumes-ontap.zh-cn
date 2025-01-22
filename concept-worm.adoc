@@ -114,6 +114,6 @@ WORM功能可与自带许可证(Bring Your O自己 的许可证、BYOL)和适用
 * 除了可信存储管理员模式之外， Cloud Volumes ONTAP 中的 WORM 存储还隐式地在 " 可信云管理员 " 模式下运行。云管理员可以直接从云提供商中删除或编辑云存储、从而在WORM数据到期之前将其删除。
 
 
-.相关信息
+.相关链接
 * link:reference-worm-snaplock.html["为WORM存储创建防篡改Snapshot副本"]
 

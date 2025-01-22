@@ -193,3 +193,8 @@ Category: kms_wrapped_key_status
 
 . 确认卷已正确创建和加密。如果是、则` is-encrypted`参数将显示为`true`。`vol show -vserver _svm_name_-fields is-encrypted`
 
+
+.相关链接
+* link:task-set-up-azure-encryption.html["设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥"]
+* https://learn.microsoft.com/en-us/azure/key-vault/general/overview["Microsoft Azure文档：关于Azure密钥存储"^]
+

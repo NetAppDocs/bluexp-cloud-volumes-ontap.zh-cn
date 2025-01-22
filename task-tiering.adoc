@@ -20,7 +20,7 @@ summary: 通过将热数据的 SSD 或 HDD 性能层与非活动数据的对象�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 选择支持的配置
 [role="quick-margin-para"]
-支持大多数配置。如果您的 Cloud Volumes ONTAP 系统运行的是最新版本，则最好继续操作。 link:task-tiering.html#configurations-that-support-data-tiering["了解更多信息。"]。
+支持大多数配置。如果您的Cloud Volumes ONTAP系统运行的是最新版本、则可以继续操作。link:task-tiering.html#configurations-that-support-data-tiering["了解更多信息。"](英文)
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 确保 Cloud Volumes ONTAP 与对象存储之间的连接
 [role="quick-margin-list"]
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 确保已启用分层的聚合
 [role="quick-margin-para"]
-必须在聚合上启用数据分层，才能在卷上启用数据分层。您应了解新卷和现有卷的要求。 <<Ensuring that tiering is enabled on aggregates,了解更多信息。>>。
+要在卷上启用数据层、应在聚合上启用数据层。您应了解新卷和现有卷的要求。<<Ensuring that tiering is enabled on aggregates,了解更多信息。>>(英文)
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 创建，修改或复制卷时，请选择分层策略
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ endif::gcp[]
 * 您无需为容量层创建对象存储。BlueXP可以为您提供这种服务。
 * 您无需在系统级别启用数据分层。
 +
-在创建系统时、BlueXP会为冷数据创建一个对象存储、 <<Enabling data tiering after implementing the requirements,只要没有连接或权限问题>>。之后，您只需在卷上启用数据分层（在某些情况下， <<Ensuring that tiering is enabled on aggregates,在聚合上>>）。
+BlueXP  在创建系统时为冷数据创建对象存储<<Enabling data tiering after implementing the requirements,只要没有连接或权限问题>>。之后、您只需在卷上启用数据分层(在某些情况下、还可以启用<<Ensuring that tiering is enabled on aggregates,在聚合上>>)。
 
 
 
@@ -162,7 +162,7 @@ ifdef::azure[]
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-默认情况下、权限包括在自定义角色中。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"^]
+默认情况下、自定义角色包括权限。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"^]
 
 endif::azure[]
 
@@ -212,7 +212,7 @@ NOTE: 未来的Cloud Volumes ONTAP版本将提供通过BlueXP用户界面启用�
 
 * * 现有卷 *
 +
-如果要在现有卷上启用数据分层，则需要确保在底层聚合上启用数据分层。如果现有聚合未启用数据分层、则需要使用ONTAP系统管理器将现有聚合附加到对象存储。
+要在现有卷上启用数据分层、请确保已在底层聚合上启用此功能。如果现有聚合未启用数据分层、则需要使用ONTAP系统管理器将现有聚合附加到对象存储。
 
 
 
@@ -356,4 +356,4 @@ image:screenshot_settings_icon.png["一个屏幕截图、显示了BlueXP控制�
 * 此时、所有对象都会从存储分段中删除、而S3存储分段为空。
 
 
-停用Cloud Volumes ONTAP工作环境时、不会自动删除为该环境创建的S3存储分段。相反、它会保持孤立状态、以防止任何意外数据丢失。您可以删除存储分段中的对象、然后再删除S3存储分段本身或将其保留以供日后使用。请参阅 https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["ONTAP命令行界面：vserver object-store-server b分 段delete"^]。
+停用Cloud Volumes ONTAP工作环境时、不会自动删除为该环境创建的S3存储分段。相反、它会保持孤立状态、以防止任何意外数据丢失。您可以删除存储分段中的对象、然后删除S3存储分段本身或将其保留以供日后使用。请参阅 https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["ONTAP命令行界面：vserver object-store-server b分 段delete"^]。

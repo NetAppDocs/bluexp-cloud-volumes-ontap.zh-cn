@@ -196,15 +196,15 @@ https://cloud.google.com/vpc/docs/packet-mirroring["数据包镜像"^] 必须在
 
 === 出站 Internet 访问
 
-Cloud Volumes ONTAP节点需要出站Internet访问才能访问外部端点以执行各种功能。如果在安全要求严格的环境中阻止这些端点、则Cloud Volumes ONTAP将无法正常运行。
+Cloud Volumes ONTAP系统需要出站Internet访问才能访问外部端点以执行各种功能。如果在安全要求严格的环境中阻止这些端点、则Cloud Volumes ONTAP将无法正常运行。
+
+BlueXP  连接器还会与多个端点联系以执行日常操作、并与BlueXP  基于Web的控制台联系。有关BlueXP  端点的信息，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["查看从Connector连接的端点"^]和 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["准备网络以使用BlueXP控制台"^]。
 
 
 
 ==== Cloud Volumes ONTAP端点
 
-Cloud Volumes ONTAP需要出站Internet访问才能联系各种端点进行日常操作。
-
-以下端点特定于Cloud Volumes ONTAP。此外、连接器还会与多个端点联系以执行日常操作、并与基于Web的BlueXP  控制台联系。请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["查看从Connector连接的端点"^] 和 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["准备网络以使用BlueXP控制台"^]。
+Cloud Volumes ONTAP使用这些端点与各种服务进行通信。
 
 [cols="5*"]
 |===

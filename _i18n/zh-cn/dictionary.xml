@@ -5288,12 +5288,9 @@
   <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">详细了解这些功能：</block>
   <block id="2a57c4c48ac4fed7319e97ba358228fe" category="paragraph">Google Cloud映像验证符合增强的NetApp安全要求。我们对生成映像的脚本进行了更改、以便使用为此任务专门生成的私钥在整个过程中对映像进行签名。您可以使用Google Cloud的签名摘要和公共证书验证Google Cloud映像的完整性、该证书可通过下载以获取<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block>特定版本。</block>
   <block id="92d90815a32824fbae3b0e1cc8bbf0bf" category="inline-link">中国共产党中央政治局常委、国务院</block>
-  <block id="c4dbcb8cfcc96461b41d3911e9d893a3" category="paragraph">Cloud Volumes ONTAP节点需要出站Internet访问才能联系以下端点进行日常操作。</block>
   <block id="760b52b586ad97b520ea1071bb2f9839" category="section-title">Cloud Volumes ONTAP端点</block>
-  <block id="26d5c70af8a128834ad7ae9714c92190" category="paragraph">Cloud Volumes ONTAP需要出站Internet访问才能联系各种端点进行日常操作。</block>
   <block id="5d17fe0f5737fcf131ca89bbb8891fd6" category="inline-link">查看从Connector连接的端点</block>
   <block id="13ba2efb4fd4a349dae9e57188cc7124" category="inline-link">准备网络以使用BlueXP控制台</block>
-  <block id="1633003ddfc1abefd1ac5659e539f81c" category="paragraph">以下端点特定于Cloud Volumes ONTAP。此外、连接器还会与多个端点联系以执行日常操作、并与基于Web的BlueXP  控制台联系。请参阅<block ref="0a8949f1130beab385180d157118cad5" category="inline-link-rx"></block> 和<block ref="979bd9d5982d3343248cd50bd0e0a8e2" category="inline-link-rx"></block>。</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端点</block>
   <block id="b5d798aa448124265adcb904b18f9ca3" category="cell">适用于</block>
   <block id="2579d10862aa7770a64b058fb84ce858" category="cell">BlueXP部署模式</block>
@@ -5665,7 +5662,6 @@
   <block id="40785b143c7b01389082916cdddfec97" category="paragraph">如果您访问数据、访问成本会更高、因此请在更改存储类之前考虑这一点。<block ref="0c2470317fad27a81908b0930cf9e62d" category="inline-link-rx"></block>(英文)。</block>
   <block id="cf4245b9ee7a6fb38d76a96f7ceabbb7" category="section-title">提供基于容量的许可证</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="inline-link">了解连接器</block>
-  <block id="a5daa3d40ac8970760795069627b96f6" category="paragraph">要为Cloud Volumes ONTAP系统提供PAYGO和BYOL许可证、需要启动并运行BlueXP  Connector。有关详细信息，请参阅<block ref="f8567339606c01cec8a34e44063abbd0" category="inline-link-rx"></block>。</block>
   <block id="06afa66cf6eca938a45be835a47030e1" category="list-title">相关链接</block>
   <block id="0d09904ade23c96d36078b02e246f1d8" category="list-text"><block ref="0d09904ade23c96d36078b02e246f1d8" category="inline-link-macro-rx"></block></block>
   <block id="526c6a5f29679ba9d316867c249d9130" category="inline-link">Microsoft Azure文档：关于Azure密钥存储</block>
@@ -5685,4 +5681,8 @@
   <block id="8ce366e694d5c3c3c27249c7cedf502e" category="paragraph">默认情况下、自定义角色包括权限。<block ref="b7d06976ba0f29792527e383824a0357" category="inline-link-rx"></block></block>
   <block id="97cc667ec30a818b8495fe4772b6f90d" category="paragraph">要在现有卷上启用数据分层、请确保已在底层聚合上启用此功能。如果现有聚合未启用数据分层、则需要使用ONTAP系统管理器将现有聚合附加到对象存储。</block>
   <block id="6b18d3e430bd8e9cf2e82762b16ab491" category="paragraph">停用Cloud Volumes ONTAP工作环境时、不会自动删除为该环境创建的S3存储分段。相反、它会保持孤立状态、以防止任何意外数据丢失。您可以删除存储分段中的对象、然后删除S3存储分段本身或将其保留以供日后使用。请参阅<block ref="68bba29ef3429f4e3e6e1695929c5629" category="inline-link-rx"></block>。</block>
+  <block id="4d4be0bddb2eb1eb628ff206715d74e9" category="paragraph">要为Cloud Volumes ONTAP系统提供PAYGO和BYOL许可证、需要启动并运行BlueXP  连接器。有关详细信息，请参阅<block ref="f8567339606c01cec8a34e44063abbd0" category="inline-link-rx"></block>。</block>
+  <block id="70dfa56e7de1c3a338c88fe5bed4fe14" category="paragraph">Cloud Volumes ONTAP系统需要出站Internet访问才能访问外部端点以执行各种功能。如果在安全要求严格的环境中阻止这些端点、则Cloud Volumes ONTAP将无法正常运行。</block>
+  <block id="6a4145e8bef527d8870a20695d55d74f" category="paragraph">BlueXP  连接器还会与多个端点联系以执行日常操作、并与BlueXP  基于Web的控制台联系。有关BlueXP  端点的信息，请参阅<block ref="0a8949f1130beab385180d157118cad5" category="inline-link-rx"></block>和<block ref="979bd9d5982d3343248cd50bd0e0a8e2" category="inline-link-rx"></block>。</block>
+  <block id="54df7aa57f75c8fe24e8c54795f38fa6" category="paragraph">Cloud Volumes ONTAP使用这些端点与各种服务进行通信。</block>
 </blocks>

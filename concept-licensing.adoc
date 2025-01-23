@@ -154,7 +154,7 @@ NOTE: 要进行BlueXP  备份和恢复、需要订阅按需购买(PAYGO)、但�
 
 === 提供基于容量的许可证
 
-要为Cloud Volumes ONTAP系统提供PAYGO和BYOL许可证、需要启动并运行BlueXP  Connector。有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#impact-on-cloud-volumes-ontap["了解连接器"^]。
+要为Cloud Volumes ONTAP系统提供PAYGO和BYOL许可证、需要启动并运行BlueXP  连接器。有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#impact-on-cloud-volumes-ontap["了解连接器"^]。
 
 
 

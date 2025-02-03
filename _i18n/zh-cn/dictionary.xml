@@ -525,7 +525,6 @@
   <block id="58cfda201064f1899f15aad3e019b071" category="doc">更改 Cloud Volumes ONTAP 的 EC2 实例类型</block>
   <block id="64001104830dfdff90f2cf316af055f4" category="list-text">更改实例类型可能会影响 AWS 服务费用。</block>
   <block id="345811bf0383d75dd95a07e487d8b29b" category="doc">删除 Cloud Volumes ONTAP 工作环境</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
   <block id="06a685f653628719e2e70fedf9b250a9" category="section-title">重新设计的卷向导</block>
   <block id="dd787088b52e69b3d8bf590e16c8413c" category="paragraph">现在，在通过 * 高级分配 * 选项在特定聚合上创建卷时，可以使用我们最近推出的创建新卷向导。</block>
   <block id="c4abca012bce01614c5a65c5b0e6ecd6" category="inline-link-macro">了解如何在特定聚合上创建卷</block>
@@ -5213,7 +5212,6 @@
   <block id="adecfde5f36fbd5be401c7db8b8d5979" category="paragraph">有关详细信息，请参见<block ref="61c2f059d82ddc0e246df7b9944d49f4" category="inline-link-rx"></block>。</block>
   <block id="a1cef748bfeca5013ccdcfd54bd3e225" category="paragraph">有关如何使用ONTAP系统管理器和ONTAP命令行界面启用ARP的详细信息，请参阅<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="acdfc619ad459d4ab0532bb87b6d7fca" category="summary">启用此Microsoft Azure功能可在SAZ中部署HA。</block>
-  <block id="12d6e3573a8a3e22461317ae16813b4a" category="paragraph">要在本地冗余存储(LRS)单一可用性区域中部署VM实例、您应激活<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block>订阅的Microsoft功能。在HA模式下、此功能有助于在同一可用性区域的不同容错域中部署节点。</block>
   <block id="e290db697594a259148850f7bb013a47" category="paragraph">除非激活此功能、否则不会进行分区部署、先前的LRS非分区部署将生效。</block>
   <block id="492c71bc471f165a3195703edddf3149" category="paragraph">有关在单个可用性区域中部署VM的信息，请参见<block ref="c9a9063659db2ec9460653bbe2cdb792" category="inline-link-macro-rx"></block>。</block>
   <block id="c3f8ce3d677b4ec2cfbd8d1b970709ef" category="paragraph">以Privileges为"所有者"的用户身份执行以下步骤：</block>
@@ -5685,4 +5683,7 @@
   <block id="70dfa56e7de1c3a338c88fe5bed4fe14" category="paragraph">Cloud Volumes ONTAP系统需要出站Internet访问才能访问外部端点以执行各种功能。如果在安全要求严格的环境中阻止这些端点、则Cloud Volumes ONTAP将无法正常运行。</block>
   <block id="6a4145e8bef527d8870a20695d55d74f" category="paragraph">BlueXP  连接器还会与多个端点联系以执行日常操作、并与BlueXP  基于Web的控制台联系。有关BlueXP  端点的信息，请参阅<block ref="0a8949f1130beab385180d157118cad5" category="inline-link-rx"></block>和<block ref="979bd9d5982d3343248cd50bd0e0a8e2" category="inline-link-rx"></block>。</block>
   <block id="54df7aa57f75c8fe24e8c54795f38fa6" category="paragraph">Cloud Volumes ONTAP使用这些端点与各种服务进行通信。</block>
+  <block id="23507528d9eb5706668d0e76ef371e2a" category="paragraph">要在本地冗余存储(LRS)单可用性区域(AZ)中部署VM实例、您应激活订阅的Microsoft<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block>功能。在高可用性(HA)模式下、此功能有助于在同一可用性区域的不同容错域中部署节点。</block>
+  <block id="9d72c2bef829db2eecf218dce9aa0f18" category="doc">Cloud Volumes ONTAP 中的新增功能</block>
+  <block id="8cd62eba7c68cffeab4caeac1efd39a3" category="sidebar">配置Cloud Volumes ONTAP以创建AWS放置组</block>
 </blocks>

@@ -4,7 +4,7 @@ permalink: task-administer-advanced-view.html
 keywords: system manager, advanced view, access system manager, load system manager, use system manager, cloud tiering 
 summary: 如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用ONTAP 系统管理器来执行此操作、该管理器是随ONTAP 系统提供的一个管理界面。我们直接在BlueXP中提供了System Manager界面、因此您无需离开BlueXP即可进行高级管理。 
 ---
-= 使用高级视图管理Cloud Volumes ONTAP
+= 使用System Manager管理Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ summary: 如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用
 
 == 功能
 
-通过BlueXP中的高级视图、您可以访问其他管理功能：
+您可以执行以下管理功能：
 
 * 高级存储管理
 +
@@ -48,7 +48,7 @@ summary: 如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用
 
 == 支持的配置
 
-在标准云区域中、Cloud Volumes ONTAP 9.10.0及更高版本支持通过ONTAP System Manager进行高级管理。
+Cloud Volumes ONTAP 9.10.0及更高版本支持在标准云区域中通过ONTAP System Manager进行高级管理。
 
 在GovCloud地区或无法访问出站Internet的地区不支持System Manager集成。
 
@@ -60,7 +60,7 @@ Cloud Volumes ONTAP 不支持System Manager界面中显示的一些功能：
 
 * BlueXP层
 +
-Cloud Volumes ONTAP 不支持BlueXP层服务。创建卷时、必须直接从BlueXP的标准视图设置将数据分层到对象存储。
+Cloud Volumes ONTAP不支持BlueXP  层服务。创建卷时、您应直接从BlueXP  的标准视图设置数据到对象存储的层。
 
 * 层
 +
@@ -68,7 +68,7 @@ System Manager不支持聚合管理(包括本地层和云层)。您必须直接�
 
 * 固件升级
 +
-Cloud Volumes ONTAP 不支持从*集群>设置*页面自动更新固件。
+Cloud Volumes ONTAP不支持从*集群>设置*页面自动更新固件。
 
 
 
@@ -76,14 +76,39 @@ Cloud Volumes ONTAP 不支持从*集群>设置*页面自动更新固件。
 
 
 
-== 如何开始使用
+== 配置用于访问System Manager的身份验证
 
-打开Cloud Volumes ONTAP 工作环境、然后单击高级视图选项。
+作为管理员、您可以为从BlueXP  访问ONTAP系统管理器的用户激活身份验证。您可以根据ONTAP用户角色确定适当的访问权限级别、并根据需要启用或禁用身份验证。如果启用身份验证、则用户在每次从BlueXP  访问System Manager或重新加载页面时都需要输入其ONTAP用户凭据、因为BlueXP  不会将这些凭据存储在内部。如果禁用身份验证、则用户可以使用BlueXP  管理员凭据访问System Manager。
+
+
+NOTE: 无论Cloud Volumes ONTAP工作环境或BlueXP  项目如何、此设置都适用于组织或帐户中的ONTAP用户的每个BlueXP  连接器。
+
+.所需权限
+您需要获得BlueXP  组织或帐户管理员Privileges才能修改用于Cloud Volumes ONTAP用户身份验证的BlueXP  连接器设置。
+
+.步骤
+. 从BlueXP标题中选择*连接器*下拉列表。
+. 选择*管理连接器*。
+. 单击所需连接器的操作菜单image:icon-action.png["椭圆图标"]，然后选择*Edit Connecter*。
+. 在*强制用户凭据*下，选中*启用/禁用*复选框。默认情况下、身份验证处于禁用状态。
++
+
+NOTE: 如果将此值设置为*Enable*，则身份验证将重置，您必须修改任何现有工作流以适应此更改。
+
+. 单击 * 保存 * 。
+
+
+
+
+== 开始使用System Manager
+
+您可以从Cloud Volumes ONTAP工作环境访问ONTAP系统管理器。
 
 .步骤
 . 从左侧导航菜单中、选择*存储>画布*。
 . 在Canvas页面上、选择一个Cloud Volumes ONTAP系统。
-. 从右侧面板的*Services*下，找到*System Manager*并选择*Open*。
+. 从右侧面板中，选择*服务> System Manager > Open*。
+. 如果出现提示，请输入您的ONTAP用户凭据，然后单击*Login"。
 . 如果显示确认消息、请通读该消息并单击*关闭*。
 . 使用System Manager管理Cloud Volumes ONTAP。
 . 如果需要、请单击*切换到标准视图*以通过BlueXP返回到标准管理。
@@ -95,6 +120,8 @@ Cloud Volumes ONTAP 不支持从*集群>设置*页面自动更新固件。
 
 如果在Cloud Volumes ONTAP 中使用System Manager需要帮助、请参见 https://docs.netapp.com/us-en/ontap/index.html["ONTAP 文档"^] 了解分步说明。以下链接可能会有所帮助：
 
+* https://docs.netapp.com/us-en/ontap/ontap-security-hardening/roles-applications-authentication.html["ONTAP角色、应用程序和身份验证"^]
+* https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-system-manager-browser-task.html["使用 System Manager 访问集群"^](英文)
 * https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["卷和LUN管理"^]
 * https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["网络管理"^]
 * https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["数据保护"^]

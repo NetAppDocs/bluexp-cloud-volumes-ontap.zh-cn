@@ -16,7 +16,7 @@ summary: 通过BlueXP、您可以管理卷和CIFS服务器。它还会提示您�
 [role="lead"]
 通过BlueXP、您可以管理卷和CIFS服务器。它还会提示您移动卷以避免容量问题。
 
-您可以在BlueXP标准视图或高级视图中管理卷。"标准"视图提供了一组有限的选项来修改卷。高级视图提供高级管理功能、例如克隆、调整大小、更改反勒索软件设置、分析、保护和活动跟踪以及跨层移动卷。有关信息，请参见 link:task-administer-advanced-view.html["使用高级视图管理Cloud Volumes ONTAP"]。
+您可以在BlueXP  标准视图中管理卷、也可以通过BlueXP  中的ONTAP系统管理器管理卷、以实现高级卷管理。"标准"视图提供了一组有限的选项来修改卷。System Manager可提供高级管理功能、例如克隆、调整大小、更改反勒索软件设置、分析、保护和活动跟踪以及跨层移动卷。有关信息，请参见 link:task-administer-advanced-view.html["使用System Manager管理Cloud Volumes ONTAP"]。
 
 
 
@@ -126,10 +126,10 @@ NOTE: BlueXP会将卷移动到使用选定磁盘类型进行分层的现有聚�
 
 默认情况下，卷在空间不足时会自动增长到最大大小。默认值为1、000、这意味着卷可以增长到其大小的11倍。此值可在连接器的设置中进行配置。
 
-如果需要调整卷大小、可以从BlueXP中的高级视图执行此操作。
+如果需要调整卷大小、可以从BlueXP  中的ONTAP系统管理器执行此操作。
 
 .步骤
-. 打开高级视图、通过ONTAP系统管理器调整卷大小。请参阅 link:task-administer-advanced-view.html#how-to-get-started["如何开始使用"]。
+. 单击系统管理器视图、通过ONTAP系统管理器调整卷大小。请参阅 link:task-administer-advanced-view.html#how-to-get-started["如何开始使用"]。
 . 从左侧导航菜单中、选择*存储>卷*。
 . 从卷列表中、确定应调整大小的卷。
 . 单击选项图标 image:screenshot_gallery_options.gif["kabob 图标"]。

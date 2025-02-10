@@ -20,6 +20,39 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2025年2月10日
+
+
+
+=== 已启用用户身份验证、可从BlueXP  访问System Manager
+
+现在、作为BlueXP  管理员、您可以为从BlueXP  访问ONTAP系统管理器的ONTAP用户激活身份验证。您可以通过编辑BlueXP  连接器设置来启用此选项。此选项可用于标准模式和专用模式。
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["使用System Manager管理Cloud Volumes ONTAP"^](英文)
+
+
+
+=== BlueXP  高级视图已重命名为System Manager
+
+通过ONTAP系统管理器从BlueXP  高级管理Cloud Volumes ONTAP的选项已从*高级视图*重命名为*系统管理器*。
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["使用System Manager管理Cloud Volumes ONTAP"^](英文)
+
+
+
+=== 利用BlueXP  数字钱包简化许可证管理方式
+
+现在、您可以使用BlueXP  电子钱包中改进的导航点来体验简化的Cloud Volumes ONTAP许可证管理：
+
+* 通过*监管>电子钱包>概述/数据服务许可证*选项卡轻松访问您的Cloud Volumes ONTAP许可证信息。
+* 单击*概述*选项卡中"Cloud Volume ONTAP面板上的*查看*、全面了解基于容量的许可证。通过此高级视图、您可以详细了解许可证和订阅。
+* 如果您更喜欢上一个界面，可以单击*切换到原有视图*按钮按类型查看许可证详细信息，并修改许可证的收费方法。
+
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["管理基于容量的许可证"^](英文)
+
+
+
 == 2024年12月9日
 
 

@@ -30,9 +30,9 @@ Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择
 
 == 选择支持的区域
 
-大多数 AWS 地区均支持 Cloud Volumes ONTAP 。 https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]。
+大多数AWS地区均支持Cloud Volumes ONTAP。 https://bluexp.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^](英文)。
 
-必须先启用较新的 AWS 区域，然后才能在这些区域中创建和管理资源。 https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["了解如何启用区域"^]。
+必须先启用较新的AWS区域、然后才能在这些区域中创建和管理资源。 https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["AWS文档：了解如何启用区域"^](英文)。
 
 
 

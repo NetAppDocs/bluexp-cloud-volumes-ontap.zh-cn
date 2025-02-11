@@ -182,7 +182,6 @@
   <block id="a89897d61f59af926b4d06d06e8b2884" category="summary">部署 Cloud Volumes ONTAP 时、您可以选择符合工作负载要求的预配置系统、也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。</block>
   <block id="70cc6814c68e3ce95f7b70c2f1ea3e9d" category="paragraph">在 Google Cloud 中部署 Cloud Volumes ONTAP 时，您可以选择符合工作负载要求的预配置系统，也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">查看支持的区域的完整列表</block>
-  <block id="cdbc190f457d5caf189142ea336d2259" category="paragraph">大多数 Google Cloud 地区均支持 Cloud Volumes ONTAP 。<block ref="b20bc1eb7525b24c91ae87786e46adca" category="inline-link-rx"></block>。</block>
   <block id="34a3fb1f13bd543905a9f22e8469763d" category="inline-link-macro">了解 Cloud Volumes ONTAP 的许可选项</block>
   <block id="64efea6517490623e51052b533085d96" category="paragraph">Cloud Volumes ONTAP 支持多种计算机类型，具体取决于您选择的许可证类型。</block>
   <block id="9ee8a2504ba9f03aae4b30973ea35ad4" category="inline-link">GCP 中支持的 Cloud Volumes ONTAP 配置</block>
@@ -1395,7 +1394,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
   <block id="53a519b7a61b6af057f2717112606b16" category="inline-link">《 S3 配置高级指南》</block>
   <block id="6d44008242ba7ea63431fdc2a35e3bfd" category="summary">在 Azure 中部署 Cloud Volumes ONTAP 时，您可以选择符合工作负载要求的预配置系统，也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。</block>
-  <block id="88a397c48e684bb909af786b6f5aea86" category="paragraph">大多数 Microsoft Azure 地区均支持 Cloud Volumes ONTAP 。<block ref="b20bc1eb7525b24c91ae87786e46adca" category="inline-link-rx"></block>。</block>
   <block id="00d6f59010ef5b4445142547ef7725f2" category="paragraph">Cloud Volumes ONTAP 支持多种 VM 类型，具体取决于您选择的许可证类型。</block>
   <block id="a09c3a7be8e7dc42776a7b03793d536c" category="inline-link">支持 Azure 中 Cloud Volumes ONTAP 的配置</block>
   <block id="9f8b4558b07e0b8fb83871b783e78430" category="inline-link">Azure 中 Cloud Volumes ONTAP 的存储限制</block>
@@ -1946,9 +1944,6 @@
   <block id="bfb824288ae0c3e5dd2481cb36146ceb" category="list-text">管理磁盘和聚合（高级分配）</block>
   <block id="d510ccf57ef7fde29b73e1d6d9cf5c72" category="paragraph">在存储交还完成且工作环境的状态恢复为正常后，这些操作将再次可用。</block>
   <block id="72d7d9fbd92253175591abfdb19dc6a1" category="summary">在 AWS 中部署 Cloud Volumes ONTAP 时，您可以选择符合工作负载要求的预配置系统，也可以创建自己的配置。如果您选择自己的配置、则应了解可用的选项。</block>
-  <block id="af510d6a7a30587243cc07000a8ff59a" category="paragraph">大多数 AWS 地区均支持 Cloud Volumes ONTAP 。<block ref="b20bc1eb7525b24c91ae87786e46adca" category="inline-link-rx"></block>。</block>
-  <block id="37c70997814f20525df54f05b63b82ef" category="inline-link">了解如何启用区域</block>
-  <block id="20f4e542fc804667ca2377386269841c" category="paragraph">必须先启用较新的 AWS 区域，然后才能在这些区域中创建和管理资源。<block ref="37189395d1b647ca4eabf700b1185d58" category="inline-link-rx"></block>。</block>
   <block id="63c78fe4096c032cda667cb626771016" category="paragraph">Cloud Volumes ONTAP 支持多种实例类型，具体取决于您选择的许可证类型。</block>
   <block id="d4f1750ecbae7aeb8e4608c6adadf1b3" category="inline-link">AWS 中支持的 Cloud Volumes ONTAP 配置</block>
   <block id="22cb0da70aef15be2f870ac70af6492c" category="inline-link">AWS 中 Cloud Volumes ONTAP 的存储限制</block>
@@ -2274,7 +2269,6 @@
   <block id="986ef6cfb21ad2831a7ae053e3f0506e" category="list-text">米兰(欧洲-西部8)—仅限单节点</block>
   <block id="00f803da9ac7d98ccbfd2178a95625ee" category="list-text">圣地亚哥(南美洲-西1)—仅限单节点</block>
   <block id="d1ce20099e22fd96c2217da218a20a9e" category="inline-link">查看Cloud Volumes ONTAP 支持的区域的完整列表</block>
-  <block id="efb1786cdf88244f9480e15cb039f942" category="paragraph"><block ref="efb1786cdf88244f9480e15cb039f942" category="inline-link-rx"></block></block>
   <block id="8184a89f6d67aafd228ddc002e159ce5" category="section-title">在Google Cloud中支持n2-standard-16</block>
   <block id="86a3a073b385c5ae85e4523282be3124" category="paragraph">从9.10.1版开始、Google Cloud中的Cloud Volumes ONTAP 现在支持n2-standard-16计算机类型。</block>
   <block id="4994b2bf1bd5c0153c9dc0077a84b5a7" category="inline-link">在Google Cloud中查看支持的Cloud Volumes ONTAP 配置</block>
@@ -4047,7 +4041,6 @@
   <block id="62a206849a655c43470ec1fbe25e35c1" category="list-text">如果您在此工作环境上启用了BlueXP分类、并且没有其他工作环境使用此服务、则需要删除此服务的实例。</block>
   <block id="a69f417641ff2d2784782a6898f8f2de" category="inline-link">了解有关BlueXP分类实例的更多信息</block>
   <block id="ae45517d4d9ba30bece696a3b49d1b3f" category="doc">管理Keystone订阅</block>
-  <block id="5da6315cfe65abaef2d0e00c90898ddc" category="list-text">返回到* Keystone订阅*查看您的订阅。</block>
   <block id="3d6aabe991edb10f282fd60995e725ca" category="inline-image-macro">显示Keystone订阅列表的屏幕截图。</block>
   <block id="6fd94fda3665b39867817d4700d184e8" category="paragraph"><block ref="6fd94fda3665b39867817d4700d184e8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c5889acf4592b2ce675b7e0be182268e" category="paragraph">这些限制特定于BlueXP中的Cloud Volumes ONTAP 管理。要查看 Cloud Volumes ONTAP 软件本身的限制，<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
@@ -4523,7 +4516,6 @@
   <block id="4bb37917188b518967d0e67a2b819327" category="paragraph">通过BlueXP数字顾问信息板、您可以监控Keystone订阅使用情况并生成报告。</block>
   <block id="20ea4c62f4c9e4254314fe7fbbef0319" category="inline-link">详细了解监控订阅使用情况</block>
   <block id="d7105dd212dc96a8b292b6b48f84916f" category="paragraph"><block ref="d7105dd212dc96a8b292b6b48f84916f" category="inline-link-rx"></block></block>
-  <block id="28ca5cda5cdef790c457097830d81ca5" category="paragraph">如果您不想再将Keystone订阅与BlueXP结合使用、则可以取消订阅链接。请注意，您只能取消链接未附加到现有 Cloud Volumes ONTAP 订阅的订阅。</block>
   <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">2023年11月1日</block>
   <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">现在、Google Cloud支持沙特阿拉伯地区</block>
   <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">现在、适用于Cloud Volumes ONTAP的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持沙特阿拉伯地区。</block>
@@ -5701,4 +5693,13 @@
   <block id="d117724162371ab94db86f4cbcd703ae" category="paragraph">如果需要调整卷大小、可以从BlueXP  中的ONTAP系统管理器执行此操作。</block>
   <block id="41e16b15d9c9cc44372d27b0cfe659ad" category="list-text">单击系统管理器视图、通过ONTAP系统管理器调整卷大小。请参阅 <block ref="1bf7174b0a06a67edc83de5c18b2bf58" category="inline-link-macro-rx"></block>。</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">2025年2月10日</block>
+  <block id="1ce97cc664bad2b8b354b3220e6331e7" category="list-text">选择*Keystone订阅*。</block>
+  <block id="23698106a2d9dc1f2df20e97a71a625c" category="list-text">返回到*Keystone订阅*选项卡查看您的订阅。</block>
+  <block id="436fa170392050162dd4653f969cf048" category="paragraph">如果您不想再将Keystone订阅与BlueXP  结合使用、则可以取消订阅链接。请注意，您只能取消链接未附加到现有 Cloud Volumes ONTAP 订阅的订阅。</block>
+  <block id="e242baa97428f1acdd0a43c0f27ecf0e" category="paragraph">大多数Microsoft Azure区域均支持Cloud Volumes ONTAP。<block ref="0de6b81e82e22001f2c59ffd34a8aeac" category="inline-link-rx"></block>(英文)。</block>
+  <block id="c24e9fc1263121db1bb6501931efe09c" category="paragraph">大多数Google Cloud地区均支持Cloud Volumes ONTAP。<block ref="0de6b81e82e22001f2c59ffd34a8aeac" category="inline-link-rx"></block>(英文)。</block>
+  <block id="77616d628efddeba1fd424b939777229" category="paragraph">大多数AWS地区均支持Cloud Volumes ONTAP。<block ref="0de6b81e82e22001f2c59ffd34a8aeac" category="inline-link-rx"></block>(英文)。</block>
+  <block id="77ccb62da3cbac8ecfb3dcda7b4635b9" category="inline-link">AWS文档：了解如何启用区域</block>
+  <block id="fef606ad68172c64f478d929b8842876" category="paragraph">必须先启用较新的AWS区域、然后才能在这些区域中创建和管理资源。<block ref="b7b79d9a35f355344e562154976e1f3d" category="inline-link-rx"></block>(英文)。</block>
+  <block id="c1a328cf0660e851f6654745d3aca99e" category="paragraph"><block ref="c1a328cf0660e851f6654745d3aca99e" category="inline-link-rx"></block></block>
 </blocks>

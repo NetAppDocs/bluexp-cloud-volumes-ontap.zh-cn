@@ -65,4 +65,4 @@ NOTE: Cloud Volumes ONTAP 中包含 ONTAP 功能的许可证。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["查看支持的 Cloud Volumes ONTAP 配置"^]
 
-https://cloud.netapp.com/ontap-cloud["了解有关 Cloud Volumes ONTAP 的更多信息"^]
+https://bluexp.netapp.com/ontap-cloud["了解有关 Cloud Volumes ONTAP 的更多信息"^]

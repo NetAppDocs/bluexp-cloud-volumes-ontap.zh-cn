@@ -64,7 +64,7 @@ link:task-manage-capacity-licenses.html["了解如何更改充电方法"]。
 
 == 定价和支持的配置
 
-有关定价的详细信息，请访问 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP网站"^]。
+有关定价的详细信息，请访问 https://bluexp.netapp.com/pricing/["NetApp BlueXP网站"^]。
 
 Cloud Volumes ONTAP 9.7 及更高版本提供了基于容量的许可包。
 

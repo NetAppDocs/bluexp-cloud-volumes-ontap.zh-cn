@@ -64,7 +64,7 @@ link:concept-licensing.html#capacity-based-licensing["了解有关基于容量�
 通过从NetApp购买许可证(BYOL)预付费用、以便在任何云提供商中部署Cloud Volumes ONTAP 系统。
 
 .步骤
-. https://cloud.netapp.com/contact-cds["要获取许可证，请联系 NetApp 销售人员"^]
+. https://bluexp.netapp.com/contact-cds["要获取许可证，请联系 NetApp 销售人员"^]
 . https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["将您的NetApp 支持站点 帐户添加到BlueXP"^]
 +
 BlueXP会自动查询NetApp的许可服务、以获取与您的NetApp 支持站点 帐户关联的许可证的详细信息。如果没有错误、BlueXP会自动将许可证添加到电子钱包中。

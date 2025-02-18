@@ -1,0 +1,13 @@
+= Azure Marketplace Direct部署简介
+:allow-uri-read: 
+
+
+
+
+=== Azure Marketplace Direct部署简介
+
+现在、您可以利用Azure Marketplace直接部署功能直接从Azure Marketplace轻松快速地部署Cloud Volumes ONTAP。通过这种简化的方法、您可以探索环境中Cloud Volumes ONTAP的核心特性和功能、而无需设置BlueXP  连接器或满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他入门标准。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["了解Azure中的Cloud Volumes ONTAP部署选项"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["从Azure Marketplace部署Cloud Volumes ONTAP"^]
+

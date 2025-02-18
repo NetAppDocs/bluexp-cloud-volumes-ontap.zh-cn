@@ -92,7 +92,7 @@ Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、
 
 如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。
 
-确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 文档：设置 AutoSupport"^]。
+确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参阅 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP文档：设置AutoSupport"^]。
 
 如果BlueXP通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
 
@@ -449,7 +449,7 @@ NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
 | TCP | 3128 | 节点管理 LIF | 连接器 | 如果出站Internet连接不可用、则通过Connector上的代理服务器发送AutoSupport 消息 
 
 
-| 配置备份 | HTTP | 80 | 节点管理 LIF | \http：//occm/offboxconfig <connector-IP-address> | 将配置备份发送到Connector。 link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["了解配置备份文件"^]。 
+| 配置备份 | HTTP | 80 | 节点管理 LIF | \http：//occm/offboxconfig <connector-IP-address> | 将配置备份发送到Connector。link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["ONTAP 文档"^](英文) 
 
 
 | DHCP | 68 | UDP | 节点管理 LIF | DHCP | 首次设置 DHCP 客户端 

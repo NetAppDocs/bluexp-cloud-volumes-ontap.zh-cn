@@ -150,7 +150,9 @@ BlueXP提供了两种升级Cloud Volumes ONTAP 的方法：
 
 === 修补程序版本
 
-从2024年1月开始、只有作为Cloud Volumes ONTAP三个最新版本的修补程序版本的修补程序升级才可在BlueXP中使用。我们使用最新的GA版本来确定要在BlueXP中显示的三个最新版本。例如、如果当前GA版本为9.13.1、则BlueXP中会显示9.11.1-9.13.1的修补程序。如果要升级到9.11.1或更低版本的修补程序版本、则需要使用手动升级操作步骤 <<从 URL 上提供的映像升级,下载ONTAP映像>>。
+从2024年1月开始、只有当BlueXP  的三个最新版本的有修补程序版本时、才能在Cloud Volumes ONTAP中进行修补程序升级。如果RC或GA版本不可部署、则偶尔会提供修补程序版本以供部署。
+
+我们使用最新的GA版本来确定要在BlueXP中显示的三个最新版本。例如、如果当前GA版本为9.13.1、则BlueXP中会显示9.11.1-9.13.1的修补程序。如果要升级到9.11.1或更低版本的修补程序版本，则需要使用手动升级过程<<从 URL 上提供的映像升级,下载ONTAP映像>>。
 
 作为修补程序(P)版本的一般规则、您可以从一个版本升级到当前版本或下一个版本的任何P版本。
 
@@ -227,7 +229,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-in
 
 在许多情况下、升级HA对不会造成中断、并且I/O不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。
 
-在升级期间、面向会话的协议可能会对某些方面的客户端和应用程序产生发生原因不利影响。有关详细信息、 https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["请参阅ONTAP文档"^]
+在升级期间、面向会话的协议可能会对某些方面的客户端和应用程序产生发生原因不利影响。有关详细信息、请参见 https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["ONTAP 文档"^]
 
 
 
@@ -235,7 +237,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-in
 
 必须在 Cloud Volumes ONTAP HA 对上启用自动交还（这是默认设置）。否则，操作将失败。
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["ONTAP 9 文档：用于配置自动交还的命令"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["ONTAP文档：用于配置自动交还的命令"^]
 
 
 
@@ -289,9 +291,9 @@ image:screenshots_aggregate_details_state.png["屏幕抓图：显示查看聚合
 
 === 验证所有的SIFs是否都位于主端口上
 
-在升级之前、所有的生命周期都必须位于主端口上。请参见ONTAP文档 link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["验证所有的SIFs是否都位于主端口上"]。
+在升级之前、所有的生命周期都必须位于主端口上。请参见ONTAP文档 link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["验证所有的SIFs是否都位于主端口上"^]。
 
-如果发生升级失败错误、请参见 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["知识库文章Cloud Volumes ONTAP升级失败"]。
+如果出现升级失败错误，请参阅知识库(KB)文章link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["Cloud Volumes ONTAP升级失败"^]。
 
 
 

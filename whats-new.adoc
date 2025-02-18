@@ -20,6 +20,20 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2025年2月18日
+
+
+
+=== Azure Marketplace Direct部署简介
+
+现在、您可以利用Azure Marketplace直接部署功能直接从Azure Marketplace轻松快速地部署Cloud Volumes ONTAP。通过这种简化的方法、您可以探索环境中Cloud Volumes ONTAP的核心特性和功能、而无需设置BlueXP  连接器或满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他入门标准。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["了解Azure中的Cloud Volumes ONTAP部署选项"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["从Azure Marketplace部署Cloud Volumes ONTAP"^]
+
+
+
+
 == 2025年2月10日
 
 
@@ -213,7 +227,7 @@ Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许�
 
 === 在Azure上支持Flash Cache的最低版本
 
-在Azure 9.13.1 GA上配置Flash Cache所需的最低Cloud Volumes ONTAP版本。您只能使用.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash ONTAP 9。
+在Azure 9.13.1 GA上配置Flash Cache所需的最低Cloud Volumes ONTAP版本。您只能使用9.13.1 9.13.1GA及更高版本在Azure中的Cloud Volumes ONTAP系统上部署Flash Cache。
 
 有关支持的配置，请参见 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure 中支持的配置"^]。
 
@@ -655,6 +669,10 @@ Azure中的澳大利亚东部地区现在支持在Cloud Volumes ONTAP 9.12.1 GA�
 
 == 2023年4月4日
 
+
+
+=== 支持中国地区的AWS
+
 从Cloud Volumes ONTAP 9.12.1 GA开始、AWS现在支持中国地区、如下所示。
 
 * 支持单节点系统。
@@ -716,14 +734,12 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volume
 
 
 
-=== 中国地区支持
+=== 在Azure中支持中国地区
 
-从Cloud Volumes ONTAP 9.12.1 GA开始、Azure现在支持中国地区支持、如下所示。
+现在、在Azure中部署Cloud Volumes ONTAP 9.12.1 GA 9.13.0 GA的单节点支持中国北部3地区。这些地区仅支持直接从NetApp购买的许可证(BYOL许可证)。
 
-* 中国北部3支持Cloud Volumes ONTAP。
-* 支持单节点系统。
-* 支持直接从 NetApp 购买的许可证。
 
+NOTE: 仅支持在中国地区全新部署Cloud Volumes ONTAP 9.12.1 GA 9.13.0 GA。您可以将这些版本升级到更高的修补程序和Cloud Volumes ONTAP版本。如果要在中国地区部署更高版本的Cloud Volumes ONTAP、请联系NetApp支持部门。
 
 有关地区可用性，请参阅link:https://bluexp.netapp.com/cloud-volumes-global-regions["适用于Cloud Volumes ONTAP 的全局区域映射"^]。
 
@@ -884,7 +900,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9121-relnotes["了解此版本
 
 现在、在Google云平台中运行9.12.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统上均包含ONTAP S3许可证。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP文档：了解如何配置和管理S3对象存储服务"^]
 
 
 
@@ -906,7 +922,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解
 
 NDMP-copy现已通过认证、可与云卷ONTAP 配合使用。
 
-有关如何配置和使用NDMP https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP 配置概述"]的信息，请参见。
+有关如何配置和使用NDMP的信息，请参阅 https://docs.netapp.com/us-en/ontap/ndmp/index.html["ONTAP文档：NDMP配置概述"]。
 
 
 
@@ -1008,7 +1024,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/ma
 通过Azure Marketplace订阅付费时、Azure中的Cloud Volumes ONTAP 可使用两个基于容量的新许可包：
 
 * *优化*：单独为已配置的容量和I/O操作付费
-* *边缘缓存*：许可 https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache"^]
+* *Edge缓存*：许可 https://bluexp.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache"^]
 
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["了解有关这些许可包的更多信息"]。
@@ -1041,7 +1057,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-vol
 
 现在、在AWS中运行版本9.11.0或更高版本的新Cloud Volumes ONTAP 系统和现有系统中提供了ONTAP S3许可证。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP文档：了解如何配置和管理S3对象存储服务"^]
 
 
 
@@ -1057,7 +1073,7 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["查看Cloud Volumes ONTA
 
 现在、在Azure中运行版本9.9.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统中提供了ONTAP S3许可证。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP文档：了解如何配置和管理S3对象存储服务"^]
 
 
 
@@ -1255,7 +1271,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/ma
 
 现在，首发特惠价已过期，您将需要为使用 WORM 存储付费。根据 WORM 卷的总配置容量，每小时进行一次充电。此适用场景 新的和现有的 Cloud Volumes ONTAP 系统。
 
-https://cloud.netapp.com/pricing["了解 WORM 存储的定价"^]。
+https://bluexp.netapp.com/pricing["了解 WORM 存储的定价"^](英文)
 
 
 

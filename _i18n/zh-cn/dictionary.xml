@@ -500,8 +500,6 @@
   <block id="a8e111d8043785d9d556635c64194b73" category="paragraph">Cloud Volumes ONTAP 会使用新配置重新启动。</block>
   <block id="f6e43df1ac65ed84364d47e2313ea212" category="doc">验证 AutoSupport 设置</block>
   <block id="57f882d4d9318a77bccc1fe367a42ab5" category="paragraph">AutoSupport 会主动监控系统的运行状况，并向 NetApp 技术支持发送消息。默认情况下，每个节点都启用了 AutoSupport ，以便使用 HTTPS 传输协议向技术支持发送消息。最好验证 AutoSupport 是否可以发送这些消息。</block>
-  <block id="c02079af34ef1373b8c0dab638269666" category="inline-link">ONTAP 文档：设置 AutoSupport</block>
-  <block id="da66c21006cc6190b5b7b0242c6631b6" category="paragraph">确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参见<block ref="f07c60ff969cb7b0a1c8ac04b7cc5791" category="inline-link-rx"></block>。</block>
   <block id="51864fc98a7ac79ddec9d933162b734b" category="inline-link">了解有关 Google Cloud VPC 服务控制的更多信息</block>
   <block id="1ea7fcd26fa8ab32a75247310351f611" category="paragraph">通过 VPC 服务控制，您可以控制对受信任边界以外 Google 管理的服务的访问，阻止来自不受信任位置的数据访问以及降低未经授权的数据传输风险。<block ref="a3874a083385bdd3c92e9cffcd9eea61" category="inline-link-rx"></block>。</block>
   <block id="17472965181a18d7ed0cb4275177cffe" category="section-title">NetApp 服务如何与 VPC 服务控制进行通信</block>
@@ -683,7 +681,6 @@
   <block id="785248b65164fa7ba3b7948c05afc1cc" category="section-title">将文件提交到 WORM</block>
   <block id="3fd6e3cd7f26f44db79e5d9fabdbeda0" category="paragraph">您可以使用应用程序通过 NFS 或 CIFS 将文件提交到 WORM ，或者使用 ONTAP CLI 自动将文件提交到 WORM 。您还可以使用 WORM 附加文件来保留增量写入的数据，例如日志信息。</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">ONTAP 文档</block>
-  <block id="2ac4966affb9011f1fb5a6ed61d6f091" category="paragraph">在 Cloud Volumes ONTAP 系统上激活 WORM 存储后，必须使用 ONTAP CLI 对 WORM 存储进行所有管理。有关说明，请参见<block ref="19be2c027fd298807ecd24728f87bdff" category="inline-link-rx"></block>。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">Cloud Volumes ONTAP 中的 WORM 存储在 " 可信存储管理员 " 模式下运行。虽然 WORM 文件不受更改或修改的影响，但集群管理员可以删除卷，即使这些卷包含未过期的 WORM 数据也是如此。</block>
   <block id="c65544a3678422a2d15f8bc1a12dec12" category="doc">创建 FlexVol 卷</block>
@@ -742,8 +739,6 @@
   <block id="c8448275713faf6fe02a71468ed251d8" category="summary">事件管理系统收集并显示有关 ONTAP 系统上发生的事件的信息。要接收事件通知，您可以为特定事件严重性设置事件目标和事件路由。</block>
   <block id="b1bf30693cbd3a53c3081b47d5526717" category="doc">配置 EMS</block>
   <block id="ae72beb81d5834d2f01cddc522f75aab" category="paragraph">事件管理系统（ EMS ）收集并显示有关 ONTAP 系统上发生的事件的信息。要接收事件通知、您可以为特定事件严重性设置事件目标（电子邮件地址、 SNMP 陷阱主机或系统日志服务器）和事件路由。</block>
-  <block id="46925fd4c2b4930c3863c62cca684413" category="inline-link">ONTAP 文档： EMS 配置概述</block>
-  <block id="bdc1026c750da5883d7bee46c7156d32" category="paragraph">您可以使用 CLI 配置 EMS 。有关说明，请参见<block ref="cfa65ffd4dc12651fc66d20e17906b5f" category="inline-link-rx"></block>。</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">快速入门</block>
   <block id="627dbb600651aad7173ae13133dfe740" category="summary">Cloud Volumes ONTAP PAYGO 系统附带 NetApp 提供的支持，但您必须先向 NetApp 注册这些系统以激活支持。</block>
   <block id="a37ea04c3e1568f7c0e8e6abc9104d40" category="doc">注册按需购买的系统</block>
@@ -819,7 +814,6 @@
   <block id="81a04b1e875d3a2de5542007c35718a3" category="admonition">Cloud Volumes ONTAP 中包含 ONTAP 功能的许可证。</block>
   <block id="48df723a306cd6c57aedad219f454d85" category="inline-link">查看支持的 Cloud Volumes ONTAP 配置</block>
   <block id="cf0a6f286be266af220bb56bf7b6365c" category="inline-link">了解有关 Cloud Volumes ONTAP 的更多信息</block>
-  <block id="5a2555dcf0776f4107419f613e0a9582" category="paragraph"><block ref="5a2555dcf0776f4107419f613e0a9582" category="inline-link-rx"></block></block>
   <block id="dfd4955ec9706a8b05865bd0aa3ab14f" category="summary">通过将冷数据自动分层到低成本的对象存储，降低存储成本。</block>
   <block id="c1b0fccfdff9ac3307a1dde73fefce36" category="paragraph">通过将非活动数据自动分层到低成本的对象存储，降低存储成本。活动数据保留在高性能 SSD 或 HDD 中，而非活动数据则分层到低成本对象存储中。这使您可以回收主存储上的空间并缩减二级存储。</block>
   <block id="4a399275f88e7ce2505e96b9b7f521b9" category="inline-image-macro">这是一个概念图像，显示了流向 EBS 存储的热数据以及流向 S3 存储的非活动数据。</block>
@@ -1788,7 +1782,6 @@
   <block id="529bcec2b9675b3cb0a81186e626a92b" category="list-text">源和目标 FlexCache 卷被视为主数据，并根据配置的空间进行收费。</block>
   <block id="07e1d66babe77070cc76a4e637c9f26d" category="section-title">如何开始使用</block>
   <block id="e8e4b0657c553a7e676cdc5f933acb44" category="inline-link">要获取许可证，请联系 NetApp 销售人员</block>
-  <block id="9740246e7721e1c54946ab07fff5f1b1" category="list-text"><block ref="9740246e7721e1c54946ab07fff5f1b1" category="inline-link-rx"></block></block>
   <block id="69c3857459c8cf827b42c61c1b02fdd2" category="paragraph">一种按需购买，基于订阅的服务，可为那些倾向于采用运营支出消费模式而不是前期资本支出或租赁模式的客户提供无缝的混合云体验。</block>
   <block id="aad2b08c0103cffcbb5efae0a56ee747" category="paragraph">每个单独的 Cloud Volumes ONTAP 系统通过磁盘和对象存储分层支持高达 2 PiB 的容量。</block>
   <block id="b2e75bbfb9933bc21b7f875e8676641d" category="inline-link">请联系 NetApp</block>
@@ -2105,7 +2098,6 @@
   <block id="fa1ae707ae125c3e33b5791a0beb374e" category="sidebar">添加现有系统</block>
   <block id="a9e825fa00a6490b83a7ab53e320af9a" category="sidebar">删除工作环境</block>
   <block id="be62ee4908c8d3dca05c47093c17858d" category="sidebar">删除系统</block>
-  <block id="0edcab2caeaab556e980f6a3212d51d3" category="sidebar">更改 EC2 实例类型</block>
   <block id="a96911d11ce21851c5394b372bc85f56" category="sidebar">更改 HA 对的路由表</block>
   <block id="8b1d624f794355ece665dd67c7ae9471" category="sidebar">更改 Azure 虚拟机类型</block>
   <block id="1755d74bde1ae25f7eaa96466419ce0c" category="sidebar">覆盖 CIFS 锁定</block>
@@ -2141,7 +2133,6 @@
   <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022 年 4 月 3 日</block>
   <block id="0f132f66e81cbab588044405a33dc058" category="section-title">为 WORM 存储充电</block>
   <block id="10142c9d88b9419ee393574e858e86c8" category="inline-link">了解 WORM 存储的定价</block>
-  <block id="074dbf8cc93ccd34e86e3e2e8f2a1e3a" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block>。</block>
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
   <block id="5c46bd67ae4b5c23f9c243b5f396c088" category="section-title">2022 年 2 月 6 日</block>
   <block id="96ce026f2bc7496743369db3f0e33981" category="section-title">选择现有 Azure 资源组</block>
@@ -2187,7 +2178,6 @@
   <block id="1ecf939f833364bdd59ce6237b13389d" category="paragraph">客户端可以使用 NFS 和 SMB 协议访问相同的文件。</block>
   <block id="b4fdd997b1f33e0d4c6964444c2bf399" category="section-title">SMB</block>
   <block id="11b07e87cde6233c7e410399ad203deb" category="paragraph">SMB 是 Windows 系统的传统文件访问协议。客户端可以使用 SMB 2.0 ， SMB 2.1 ， SMB 3.0 和 SMB 3.1.1 协议访问 ONTAP 卷中的文件。与 NFS 一样，支持混合使用多种权限模式。</block>
-  <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">了解如何在 ONTAP 中配置和管理 S3 对象存储服务</block>
   <block id="cad02caeb4ee636c87f28b0bb1263080" category="inline-link-macro">了解支持的客户端协议和版本</block>
   <block id="f0ddee23dd0d83f105bbdaa15ff5d87a" category="paragraph"><block ref="43c09f3d08ec80b50648a2a905bca06c" category="inline-link-macro-rx"></block>。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">帮助菜单的屏幕截图，其中列出的第一个选项为支持</block>
@@ -2486,9 +2476,6 @@
   <block id="1455e8ac365afc8611ea8516bddd1769" category="list-text"><block ref="1455e8ac365afc8611ea8516bddd1769" category="inline-link-macro-rx"></block></block>
   <block id="7ed9c1f7193f7727cfac5a7b6f0c1266" category="summary">将Azure密钥存储用于第三方密钥管理服务。</block>
   <block id="d3c0e82fe05c62b621815b706b024e29" category="doc">使用Azure密钥存储管理密钥</block>
-  <block id="35b16ddf568bd70f42e0bcb19f2a533c" category="inline-link-macro">Azure 密钥存储（ AKV ）</block>
-  <block id="2f8fe9f0bb3ca6b63c1111b1fd670f9e" category="paragraph">您可以使用 <block ref="9061d13c3fae693003c080b827f91c1c" category="inline-link-macro-rx"></block> 保护Azure部署应用程序中的ONTAP 加密密钥。</block>
-  <block id="4294aa58822f061e77d8da0c76ebf94d" category="inline-link-macro">NetApp 卷加密（ NVE ）密钥</block>
   <block id="b80b61bef9c57d9979c8a0a11310d79b" category="paragraph">可以使用命令行界面或ONTAP REST API启用使用AKV的密钥管理。</block>
   <block id="e99dab450e193aa16ab181a9cbb70701" category="paragraph">使用AKV时、请注意、默认情况下、数据SVM LIF用于与云密钥管理端点进行通信。节点管理网络用于与云提供商的身份验证服务(login.microsoftonline.com)进行通信。如果集群网络配置不正确，集群将无法正确利用密钥管理服务。</block>
   <block id="0dbc3b305b67f45cc077782f1bde33be" category="list-text">Cloud Volumes ONTAP 必须运行9.10.1或更高版本</block>
@@ -2614,7 +2601,6 @@
   <block id="74d668d6c47cd0c55c4ff8f77ad621bd" category="list-text">如果显示确认消息、请通读该消息并单击*关闭*。</block>
   <block id="f0da217269d7f8fb37fd503f586df2ef" category="list-text">使用System Manager管理Cloud Volumes ONTAP。</block>
   <block id="9091c5cdacecb3d4082594d5d5a31855" category="section-title">有关使用System Manager的帮助</block>
-  <block id="29b2dad08499788ccf25f529167b3782" category="paragraph">如果在Cloud Volumes ONTAP 中使用System Manager需要帮助、请参见<block ref="e4712fca3ed0fd9138bc58dbf36327e9" category="inline-link-rx"></block> 了解分步说明。以下链接可能会有所帮助：</block>
   <block id="b9cf2d579e6b088870d384fe9910b52f" category="inline-link">卷和LUN管理</block>
   <block id="8fc667c489390551a74eb985b297d37a" category="list-text"><block ref="8fc667c489390551a74eb985b297d37a" category="inline-link-rx"></block></block>
   <block id="3e49e5936cffd2e96856c25fa0417df2" category="inline-link">网络管理</block>
@@ -2848,7 +2834,6 @@
   <block id="e1d61ff8b15b12854145940279164504" category="paragraph">总共有六个系统。然后、您的帐户中还可以再添加14个系统。</block>
   <block id="03021ab228ad1d1c921bbf536e2913a4" category="section-title">查看帐户中的已用容量</block>
   <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link-macro">了解Essentials软件包的收费信息</block>
-  <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
   <block id="5844b24c31c1897efda5443d984702f8" category="list-text">在* Cloud Volumes ONTAP 基于节点的许可证*选项卡上、从下拉列表中选择*基于节点的许可证*。</block>
   <block id="8152540df51584ebf79193211a381d46" category="paragraph">现在、在AWS中运行版本9.11.0或更高版本的新Cloud Volumes ONTAP 系统和现有系统中提供了ONTAP S3许可证。</block>
   <block id="f225a4f57ea32da8b983d7bffd20b6eb" category="paragraph">现在、在Azure中运行版本9.9.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统中提供了ONTAP S3许可证。</block>
@@ -2933,7 +2918,6 @@
   <block id="84b9d69f0957a24ce7fbed46c5b0ab12" category="paragraph">通过Azure Marketplace订阅付费时、Azure中的Cloud Volumes ONTAP 可使用两个基于容量的新许可包：</block>
   <block id="99c581fb257fff513bc65272d605290f" category="list-text">*优化*：单独为已配置的容量和I/O操作付费</block>
   <block id="e4bdb4038975db929f91098fe2d7ec12" category="inline-link">Cloud Volumes Edge Cache</block>
-  <block id="acc34707a7642d8ca31b72c25ca50920" category="list-text">*边缘缓存*：许可<block ref="1bc1fd590dd203d9bb10cdd372d8de71" category="inline-link-rx"></block></block>
   <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">了解有关这些许可包的更多信息</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">如果您在云提供商的市场上有私人优惠或合同、则更改为合同中未包含的收费方式将导致对BYOL (如果您从NetApp购买了许可证)或PAYGO进行收费。</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HA对及其组件的概念映像。</block>
@@ -3165,7 +3149,6 @@
   <block id="5838355f0487c8b48bcad7c6bcae87af" category="doc">将现有Cloud Volumes ONTAP 系统添加到BlueXP</block>
   <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">如果为Cloud Volumes ONTAP 系统配置的容量超过500 GiB、则BlueXP会将该系统转换为Essentials软件包。</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">NetApp BlueXP网站</block>
-  <block id="490f0cb4ab517a2c88f9d425fc84b42d" category="paragraph">有关定价的详细信息，请访问<block ref="c412404f1934ae5bd4e59f00ec0e79b9" category="inline-link-rx"></block>。</block>
   <block id="4f6ffa2529265a9e4fcff29a28a16ebe" category="paragraph">对于至少具有一个主(读写)卷的每个提供数据的Storage VM、最低费用为4 TiB。如果主卷的总和小于4 TiB、则BlueXP会将4 TiB的最低费用应用于该Storage VM。</block>
   <block id="3116f8acc3e396f2ab1859f3fbe8234e" category="summary">您可以从BlueXP停止并启动Cloud Volumes ONTAP 来管理您的云计算成本。</block>
   <block id="d4cf496f112c8443c55c77f819b95b4b" category="paragraph">您可能希望在特定时间间隔内关闭 Cloud Volumes ONTAP 以降低计算成本。您可以将BlueXP配置为在特定时间自动关闭并重新启动系统、而不是手动执行此操作。</block>
@@ -3358,7 +3341,6 @@
   <block id="ea55da5ec5028d99103c938ded49761c" category="paragraph">现在、您可以在同一Azure订阅中将工作环境从一个资源组移动到Azure中的其他资源组。</block>
   <block id="b6a2ac7b66db8e93b936023f17401626" category="section-title">NDMP副本认证</block>
   <block id="c348c640ca478b45f3a3d9e14bb0695b" category="paragraph">NDMP-copy现已通过认证、可与云卷ONTAP 配合使用。</block>
-  <block id="ab5a83d8e39547c5fb30a1fda984aebb" category="inline-link">NDMP 配置概述</block>
   <block id="5e7de773a189ac8974753f9ce70a3dc5" category="section-title">支持Azure的受管磁盘加密</block>
   <block id="a09181ba1488df77bf9950cb483e97e8" category="paragraph">添加了一个新的Azure权限、现在允许您在创建时对所有受管磁盘进行加密。</block>
   <block id="a81c707e35ab82b2b21b18864fb458e9" category="sidebar">移动资源组</block>
@@ -3453,7 +3435,6 @@
   <block id="2e40430d8621fa0117dad7bd5bd6ce3d" category="list-text">_Managed Disks_最大 磁盘大小为32 TiB</block>
   <block id="ec3e0203f4a9c74546691ee9a62623bb" category="summary">Cloud Volumes ONTAP 支持iSCSI、NFS、SMB、NVMe-TCP和S3客户端协议。</block>
   <block id="ad18d9aa7c4c9bdbf86e39bd6dd5b727" category="section-title">NVMe-TCP</block>
-  <block id="a441b4ab4a68e599e4c2acbfa61f336e" category="inline-link">为NVMe配置Storage VM</block>
   <block id="607cc86a46864bcd2f3a17351fea91fe" category="section-title">HA单可用性区域配置、包含页面blob</block>
   <block id="28440751cbe2a16368822f02f298a2f4" category="section-title">使用共享受管磁盘的HA单可用性区域配置</block>
   <block id="293e907786c443731eb5950da1a59417" category="paragraph">在共享受管磁盘上运行的Cloud Volumes ONTAP HA单可用性区域配置包括以下组件：</block>
@@ -3639,8 +3620,6 @@
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自助支持选项</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">向NetApp支持部门创建案例</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在*资源*页面上、在技术支持下选择一个可用选项：</block>
-  <block id="5db69347f06a9f63ed1f4c90e8b874e5" category="inline-link-macro">了解S3多协议的工作原理</block>
-  <block id="e48cc3153e7d667d87986f8e162ea872" category="paragraph"><block ref="8674fe872330e1769235c43fb746c3f7" category="inline-link-macro-rx"></block>。<block ref="5b24747aa1a4fd51dbcea213f97833c7" category="inline-link-macro-rx"></block>。</block>
   <block id="2ff4be1dced06cb9c588fc9e6efd1009" category="cell">为 CIFS 服务器提供名称解析的 DNS 服务器的 IP 地址。列出的 DNS 服务器必须包含为 CIFS 服务器将加入的域定位 Active Directory LDAP 服务器和域控制器所需的服务位置记录（服务位置记录）。ifdef：：gcp]]如果您正在配置Google Managed Active Directory、则默认情况下可以使用169.254.169.254 IP地址访问AD。字节名称：：：gcp[]</block>
   <block id="0031307525b9c7232536c8489912acba" category="list-text">要将 Azure AD 域服务配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=AADDC Computers * 或 * OU=AADDC Users* 。<block ref="6cfd09a964ae125f104125f00208f340" category="inline-link-macro-rx"></block></block>
   <block id="8c69b575c72fa1fcd5f27c44ebda605c" category="list-text">要将 Google Managed Microsoft AD 配置为 Cloud Volumes ONTAP 的 AD 服务器，请在此字段中输入 * OU=Computers ， OU=Cloud* 。<block ref="1b7ab571d5a2f9c86fda846ee11b6c13" category="inline-link-macro-rx"></block></block>
@@ -3762,9 +3741,6 @@
   <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">支持Google Cloud按许可证配置</block>
   <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">了解更多信息 <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>。</block>
   <block id="0eeac28a6eb03f47165f3c65b5e13cea" category="section-title">2023年3月13日</block>
-  <block id="5eeac325d343b1bb90074e1be60dd1ae" category="section-title">中国地区支持</block>
-  <block id="f3818f17dde36b1601ccfef8ceab6cbe" category="paragraph">从Cloud Volumes ONTAP 9.12.1 GA开始、Azure现在支持中国地区支持、如下所示。</block>
-  <block id="49b72186e2fe2638cbb520201b58bc02" category="list-text">中国北部3支持Cloud Volumes ONTAP。</block>
   <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">支持单节点系统。</block>
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">支持直接从 NetApp 购买的许可证。</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">适用于Cloud Volumes ONTAP 的全局区域映射</block>
@@ -3787,8 +3763,6 @@
   <block id="724eda1c857fb38707e74b7c407fdcba" category="list-text">Cloud Volumes ONTAP 使用HTTP将配置备份发送到连接器。</block>
   <block id="ff8a62cd0fc83b5c732cfd1ccb079e42" category="cell">配置备份</block>
   <block id="6f86fcaf171105846a04e6ca4d0b7f0b" category="cell">\http：//occm/offboxconfig &lt;connector-IP-address&gt;</block>
-  <block id="bbacf5ab57ba08e16b08f7b20295279f" category="inline-link-macro">了解配置备份文件</block>
-  <block id="2ffb2b9a3d63d4562dc012fb7ccbe8f0" category="cell">将配置备份发送到Connector。 <block ref="60ef96540660b8c0ada3ca23fe3c6d48" category="inline-link-macro-rx"></block>。</block>
   <block id="91927d042dca36bab1fa5fb92c667147" category="paragraph">备份可从\http://ipaddress/occm/offboxconfig/访问、其中_ipaddress_是Connector主机的IP地址。</block>
   <block id="498c90636197dec64c0feb8b682990f2" category="list-text">*单节点* BlueXP将4个IP地址分配给单节点系统：</block>
   <block id="a28292fa77dc234022cd48bc08becd01" category="list-text">NAS LIF</block>
@@ -3936,7 +3910,6 @@
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">启用正常写入速度后，我们缩短了在 Microsoft Azure 或 Google Cloud 中部署 Cloud Volumes ONTAP 工作环境所需的时间。现在，部署时间平均缩短 3-4 分钟。</block>
   <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">从BlueXP导航菜单中、选择*监管&gt;数字电子钱包*。</block>
   <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">选择* Keystone*。</block>
-  <block id="ece137c555d8c53c8378fee53f6273c4" category="paragraph">可使用AKV进行保护 <block ref="defc94716dcceab396c0509ed7db9366" category="inline-link-macro-rx"></block> 仅适用于数据SVM。</block>
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">详细了解如何管理基于节点的许可证</block>
   <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>。</block>
   <block id="ed40352f9ed490b733344d4ac872054a" category="list-text">恢复时间目标(Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery Time目标、Recovery如果发生中断、数据应在120秒或更短时间内可用。</block>
@@ -4259,12 +4232,9 @@
   <block id="ede53fbba4985444af96fca9c3cc6371" category="paragraph">Cloud Volumes ONTAP现在支持自动防兰软件保护(ARP)。Cloud Volumes ONTAP 9.12.1及更高版本支持ARP。</block>
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自主勒索软件保护</block>
   <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAP支持自动勒索软件保护(ARP)功能、此功能可对工作负载执行分析、以主动检测可能指示勒索软件攻击的异常活动并发出警告。</block>
-  <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">启用自主勒索软件保护</block>
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">正在删除WORM文件</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">您可以使用特权删除功能在保留期间删除WORM文件。</block>
   <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">在许多情况下、升级HA对不会造成中断、并且I/O不会中断。在此无中断升级过程中，每个节点会同时进行升级，以继续为客户端提供 I/O 。</block>
-  <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">请参阅ONTAP文档</block>
-  <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">在升级期间、面向会话的协议可能会对某些方面的客户端和应用程序产生发生原因不利影响。有关详细信息、<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。</block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">选择*用户凭据*。</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">要确认注册过程是否成功，请选择帮助图标，然后选择*Support*。</block>
@@ -4527,7 +4497,6 @@
   <block id="a710c8d7ee654ea3241f1b07f9f7de05" category="list-text"><block ref="de989a17a1629831650b134e00461edd" category="inline-xref-macro-rx"></block></block>
   <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">验证所有的SIFs是否都位于主端口上</block>
   <block id="4a0d5f4ccd3c4d2acc213b54daf63f9e" category="inline-link-macro">验证所有的SIFs是否都位于主端口上</block>
-  <block id="0754aed90b1b7e3ecf810f88321b76f5" category="paragraph">在升级之前、所有的生命周期都必须位于主端口上。请参见ONTAP文档 <block ref="e645c13326fab640068fe44ceb8154ff" category="inline-link-macro-rx"></block>。</block>
   <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023年11月8日</block>
   <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">以下更改是在连接器3.9.35版本中推出的。</block>
   <block id="bbb4cf526641d95bbb8ab8bada56fa79" category="section-title">现在、AWS支持特拉维夫地区</block>
@@ -4569,8 +4538,6 @@
   <block id="9f9a7e011920aed7b91c7f5809cef3df" category="paragraph">包含页面块的Azure HA单一可用性区域</block>
   <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">使用共享托管磁盘的Azure HA单个可用性区域</block>
   <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA具有多个可用性区域、其中包含共享托管磁盘</block>
-  <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">知识库文章Cloud Volumes ONTAP升级失败</block>
-  <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">如果发生升级失败错误、请参见 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>。</block>
   <block id="9239af3d88d2e7788330e1bb0d8cd044" category="list-text"><block ref="9239af3d88d2e7788330e1bb0d8cd044" category="inline-link-rx"></block></block>
   <block id="fd9107be3db2a4144e054c68a7eab15f" category="section-title">2024年1月8日</block>
   <block id="dba248d0d18e6170f9bd4a4286edda53" category="section-title">为Azure多个可用性区域配置新VM</block>
@@ -4591,7 +4558,6 @@
   <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
   <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">修补程序版本</block>
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">下载ONTAP映像</block>
-  <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">从2024年1月开始、只有作为Cloud Volumes ONTAP三个最新版本的修补程序版本的修补程序升级才可在BlueXP中使用。我们使用最新的GA版本来确定要在BlueXP中显示的三个最新版本。例如、如果当前GA版本为9.13.1、则BlueXP中会显示9.11.1-9.13.1的修补程序。如果要升级到9.11.1或更低版本的修补程序版本、则需要使用手动升级操作步骤 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0b450f5a78908e6b78f5c13bf6b0da4" category="paragraph">作为修补程序(P)版本的一般规则、您可以从一个版本升级到当前版本或下一个版本的任何P版本。</block>
   <block id="8f3a7aeceb3049764382da1a82a27238" category="list-text">使用应用程序注册后保存的客户端ID和租户ID启用Azure密钥存储：<block ref="5e256216aa762875258d90fbe836b7b2" prefix=" " category="inline-code"></block></block>
   <block id="27546657617543a3f0cd8927c3f369c8" category="admonition">。<block ref="ee5ecb949ba751e6c3f7b03d02fc2819" prefix=" " category="inline-code"></block> 值必须使用<block ref="b5fd887d199c5a44249b4fce7085da7f" prefix=" " category="inline-code"></block> 格式。</block>
@@ -4989,13 +4955,7 @@
   <block id="94e8787c12810b52b1dafd18f754c4a3" category="list-text"><block ref="94e8787c12810b52b1dafd18f754c4a3" category="inline-link-macro-rx"></block></block>
   <block id="e77931c1eab4b02e332e8adcfabae636" category="summary">您可以在Cloud Volumes ONTAP系统上为一次写入、多次读取(Write On一次 读取、Read M众多、WORM)文件创建防篡改Snapshot副本、并在特定保留期限内保留未修改的快照。</block>
   <block id="6e6590dbc5a26f05df18072791d9b8ef" category="paragraph">您可以在Cloud Volumes ONTAP系统上为一次写入、多次读取(Write On一次 读取、Read M众多、WORM)文件创建防篡改Snapshot副本、并在特定保留期限内保留未修改的快照。此功能由SnapLock技术提供支持、可提供额外的数据保护和合规性层。</block>
-  <block id="1cdc86424105b619c0cd794f3e3e1bb7" category="inline-link">配置 SnapLock</block>
-  <block id="d088e424d5a800a3cb54bc96fb0a9c73" category="paragraph">确保用于创建Snapshot副本的卷是SnapLock卷。有关在卷上启用SnapLock保护的信息，请参见<block ref="470bf72b50c89f315aab21d3052967c7" category="inline-link-rx"></block>。</block>
-  <block id="13fcde979e424d1a2afce52cb95b218a" category="inline-link">管理本地 Snapshot 副本概述</block>
-  <block id="ee79fd5aa5578bbab6916cd20d44a9c9" category="list-text">从SnapLock卷创建Snapshot副本。有关使用命令行界面或System Manager创建Snapshot副本的信息，请参阅<block ref="ee5fb8999e3924754f251f2ee21d7022" category="inline-link-rx"></block>。</block>
   <block id="0a5ed9372feb916f9a88f937e9589fd0" category="paragraph">Snapshot副本会继承卷的WORM属性、从而使其不受篡改。底层SnapLock技术可确保在指定保留期限结束之前、快照不会被编辑和删除。</block>
-  <block id="72400cb7d5b84ae782642ca107c294fc" category="inline-link">设置保留时间</block>
-  <block id="36be19b900f54f5ac76441b806662cbc" category="list-text">如果需要编辑这些快照、您可以修改保留期限。有关信息，请参见<block ref="d77f965b297f4a355ed017017c294a22" category="inline-link-rx"></block>。</block>
   <block id="1e130656f520fa6c2ea0d619d4efcc6b" category="admonition">即使Snapshot副本在特定保留期限内受到保护、集群管理员也可以删除源卷、因为Cloud Volumes ONTAP中的WORM存储在"可信存储管理员"模式下运行。此外、值得信赖的云管理员可以通过在云存储资源上运行来删除WORM数据。</block>
   <block id="459e9ae782f83a2cbafe2a1b4b586f00" category="section-title">在源站加密后使用FlexCache</block>
   <block id="64c813604a577df1cdc73d1151096659" category="paragraph">在初始卷已加密的Cloud Volumes ONTAP系统上配置FlexCache时、需要执行其他步骤、以确保FlexCache卷可以正确访问和缓存加密数据。</block>
@@ -5026,7 +4986,6 @@
   <block id="6a42c267e29187643b9edeeabe6a9d85" category="inline-link">AWS文档：详细了解AWS中的Elelic Volumes</block>
   <block id="5f15094e671a035a778fece655f06e61" category="paragraph"><block ref="5f15094e671a035a778fece655f06e61" category="inline-link-rx"></block></block>
   <block id="32f75f1208336b30711f2ec6de39a1fc" category="paragraph">有关详细信息、请参见 <block ref="b7c27672c14c5e155c3668c279ee7b61" category="inline-link-macro-rx"></block> 。</block>
-  <block id="b338852ebd9326ccdeb8b123fd6da04b" category="paragraph">有关通过ONTAP配置NVMe的详细信息，请参阅<block ref="098dbc2eb8745ab6d9f97f7915a11b1f" category="inline-link-rx"></block>。</block>
   <block id="394af58b8754c06314d43b854dc5006f" category="inline-link">此常见问题解答</block>
   <block id="9c89822027b6c9736a75d3187c897d4d" category="admonition">截至 2021 年 12 月 3 日， NetApp 已采用一种新方法为 NSS 帐户注册凭据。有关详细信息，请参阅<block ref="e276cbae6a7bedd32258cb1ce27fb2ac" category="inline-link-rx"></block>。如果您的 NSS 帐户使用旧的凭据集，则需要将此帐户更新为新凭据。</block>
   <block id="61631dd1eb0609d79c27c109e55de5c8" category="paragraph">有关详细信息、请参见<block ref="f2e318b984927d4781fb278ddc8ba233" category="inline-link-rx"></block> 。</block>
@@ -5151,7 +5110,6 @@
   <block id="876b7b2bfe7f51f31d3ade24031d8d87" category="list-text">与高级SSD托管磁盘相比、_高级SSD v2托管磁盘_可提供更高的性能、更低的延迟和更低的成本。</block>
   <block id="53f2af2e8ae61560d74c47e9e4c8c21b" category="paragraph">有关这些磁盘<block ref="ca509247942fc20500f88391a8457ede" category="inline-link-rx"></block>的使用情形的详细信息，请参见。</block>
   <block id="adecfde5f36fbd5be401c7db8b8d5979" category="paragraph">有关详细信息，请参见<block ref="61c2f059d82ddc0e246df7b9944d49f4" category="inline-link-rx"></block>。</block>
-  <block id="a1cef748bfeca5013ccdcfd54bd3e225" category="paragraph">有关如何使用ONTAP系统管理器和ONTAP命令行界面启用ARP的详细信息，请参阅<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>。</block>
   <block id="acdfc619ad459d4ab0532bb87b6d7fca" category="summary">启用此Microsoft Azure功能可在SAZ中部署HA。</block>
   <block id="e290db697594a259148850f7bb013a47" category="paragraph">除非激活此功能、否则不会进行分区部署、先前的LRS非分区部署将生效。</block>
   <block id="492c71bc471f165a3195703edddf3149" category="paragraph">有关在单个可用性区域中部署VM的信息，请参见<block ref="c9a9063659db2ec9460653bbe2cdb792" category="inline-link-macro-rx"></block>。</block>
@@ -5194,7 +5152,6 @@
   <block id="d0919052593ec746b8c6db33185c346a" category="paragraph">请参阅 <block ref="c4565a71ea8a0d887af2819b613695ab" category="inline-link-macro-rx"></block>。</block>
   <block id="bf07606a9b1dcfb8986c0dfa7e7acf90" category="paragraph">有关随Cloud Volumes ONTAP自动安装的ONTAP功能许可证的详细信息，请参阅<block ref="b52187fa58ecb7339b44c015afe1a53b" category="inline-link-macro-rx"></block>。</block>
   <block id="0c3b75998af156d79139a5d58ce3e940" category="paragraph">有关详细信息，请参阅 <block ref="40105eada44e788e7e7b2f6a3662e9b3" category="inline-link-macro-rx"></block>。</block>
-  <block id="879d073710741f985860274175b1a953" category="paragraph">有关如何配置和使用NDMP<block ref="9c57f7cf04e123991a3c88e286feb189" category="inline-link-rx"></block>的信息，请参见。</block>
   <block id="a0a58ed3f539424b6c64463b7e8c6a6d" category="paragraph">有关此新功能的详细信息，请参阅<block ref="d02c006bc52cfaf2532a010e03aa1ef3" category="inline-link-rx"></block>。</block>
   <block id="caf47538a5b97cacf4aba3098b6f9924" category="section-title">2024 年 8 月 23 日</block>
   <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">现在、AWS支持加拿大西部地区</block>
@@ -5211,7 +5168,6 @@
   <block id="e09953ef98be5a0cd4cc4ad0c288c775" category="paragraph">从Cloud Volumes ONTAP 9.15.1开始、您可以在Azure的单可用性区域(Single Availability Zones、AZs)中以HA模式部署虚拟机(VM)实例。您需要选择支持此部署的区域和区域。如果分区或区域不支持分区部署、则会遵循之前的LRS非分区部署模式。要了解共享受管磁盘支持的配置，请参见<block ref="2148c58538cc3adf327c3ade110b8487" category="inline-link-macro-rx"></block>。</block>
   <block id="e378925ca7c13e386e5c5d854097dc26" category="inline-link">Cloud Volumes ONTAP通知</block>
   <block id="72b3ada156bb3b51f9862f1754d974d2" category="list-text"><block ref="72b3ada156bb3b51f9862f1754d974d2" category="inline-link-rx"></block></block>
-  <block id="ea7b4173339bef8c2570812171d360a0" category="paragraph">您可以使用备份重新配置Cloud Volumes ONTAP系统。有关配置备份的详细信息，请参见<block ref="49fe905ea86eeb386daebc5876800d6b" category="inline-link-rx"></block>。</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
   <block id="cdd78645b017b927a25b5449e345f823" category="section-title">WORm和ARP功能不再收费</block>
   <block id="8ddfd051601ea88c75625c16c542a149" category="paragraph">此外、BlueXP  还会<block ref="891e111023ee3cccd4407be6ddd24c21" prefix=" " category="inline-code"></block>通过从NAS数据Lifs中删除以下服务并将其添加到iSCSI数据Lifs来修改数据Storage VM上的策略：</block>
@@ -5302,7 +5258,6 @@
   <block id="3f00eb5ab0ade2cfadc9848704073f92" category="list-text">不能与最后六个密码相同</block>
   <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1</block>
   <block id="af4dea59253c9d0600f1101e032482c5" category="section-title">在Azure上支持Flash Cache的最低版本</block>
-  <block id="5fac3a4dd391ba31a160710474f8d3ca" category="paragraph">在Azure 9.13.1 GA上配置Flash Cache所需的最低Cloud Volumes ONTAP版本。您只能使用.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash ONTAP 9。</block>
   <block id="8fc1b74aa1cb89da788e1a3b937438ab" category="inline-link">管理与BlueXP  组织或帐户关联的NSS凭据</block>
   <block id="0a9512563ef00ba173bf4d1987a1f552" category="list-text">如果您尚未在BlueXP  中注册NSS帐户、请立即注册NSS帐户、然后会显示Digital Advisor UI。<block ref="8f95cc662e4499eb8830300ad24f55ec" category="inline-link-rx"></block>有关说明、请参见。</block>
   <block id="1e1afd2f9a7fa2af16b23f683618733b" category="paragraph">如果您是BlueXP  组织或帐户管理员且启用了以下选项、则BlueXP  会在通过电子邮件发送给您的Cloud Volumes ONTAP报告中包含许可证到期警告：</block>
@@ -5455,9 +5410,7 @@
   <block id="b474fb933ed760adc08677bc4bc42339" category="paragraph">如果系统上已启用WORM、则铅笔图标将被禁用。</block>
   <block id="fe19c26d9707943e3d7c9c5da6083944" category="list-text">在*WORM*页面上，设置集群Compliance时钟的保留期限。</block>
   <block id="78e3f451c302e6f4fc3497680e508ed4" category="inline-link">ONTAP文档：初始化Compliance时钟</block>
-  <block id="40a4c252d21fe44c5babb5cd38a59474" category="paragraph">有关详细信息，请参阅<block ref="e2235bff328f7d7d636e45c1db9cf9c0" category="inline-link-rx"></block>。</block>
   <block id="0488bab91fb4582b53a14eb8fc2a032b" category="paragraph">您可以在功能面板上验证*WORM*的状态。启用WORM后、SnapLock许可证将自动安装在集群上。您可以在ONTAP系统管理器上查看SnapLock许可证。</block>
-  <block id="b0af18cd69843e047afd09d32ac1cd7f" category="paragraph">有关说明，请参阅<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block>。</block>
   <block id="560c2ebf5fdf3cdbb830bad54eafda28" category="list-text">NetApp卷加密(仅适用于自带许可证(BYOL)或注册按需购买(PAYGO)系统)</block>
   <block id="7f5d518134ff332807df54a0d0660a08" category="list-text">*仅限选定的vNet*：入站流量的源是Cloud Volumes ONTAP系统的vNet的子网范围和连接器所在的vNet的子网范围。这是建议的选项。</block>
   <block id="cd8b82367babbe39683e8fb9f0c22ed5" category="list-text">*All VSets*：入站流量的源IP范围为0.0.0.0/0。</block>
@@ -5702,4 +5655,182 @@
   <block id="77ccb62da3cbac8ecfb3dcda7b4635b9" category="inline-link">AWS文档：了解如何启用区域</block>
   <block id="fef606ad68172c64f478d929b8842876" category="paragraph">必须先启用较新的AWS区域、然后才能在这些区域中创建和管理资源。<block ref="b7b79d9a35f355344e562154976e1f3d" category="inline-link-rx"></block>(英文)。</block>
   <block id="c1a328cf0660e851f6654745d3aca99e" category="paragraph"><block ref="c1a328cf0660e851f6654745d3aca99e" category="inline-link-rx"></block></block>
+  <block id="880b804508da0afe757f8198fd3eb1c3" category="doc">Azure Marketplace Direct部署简介</block>
+  <block id="365aa2bac7413987a05e356d504aee0f" category="paragraph">现在、您可以利用Azure Marketplace直接部署功能直接从Azure Marketplace轻松快速地部署Cloud Volumes ONTAP。通过这种简化的方法、您可以探索环境中Cloud Volumes ONTAP的核心特性和功能、而无需设置BlueXP  连接器或满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他入门标准。</block>
+  <block id="f56439b6bdbca147476a375ebacfef1d" category="inline-link">了解Azure中的Cloud Volumes ONTAP部署选项</block>
+  <block id="29a97b99a51928e5b93f84b989f0c2a0" category="list-text"><block ref="29a97b99a51928e5b93f84b989f0c2a0" category="inline-link-rx"></block></block>
+  <block id="e94250a733abb8fd0b0ca35ccdcc534f" category="inline-link">从Azure Marketplace部署Cloud Volumes ONTAP</block>
+  <block id="2f3a59a024a5fa5e6d9049c44506f8b0" category="list-text"><block ref="2f3a59a024a5fa5e6d9049c44506f8b0" category="inline-link-rx"></block></block>
+  <block id="a0edf395a381b81009a4d551086625d0" category="paragraph">NetApp提供了两种在Azure上部署Cloud Volumes ONTAP的选项：通过NetApp BlueXP  或通过Azure市场。Cloud Volumes ONTAP传统上依靠BlueXP  进行部署和流程编排。从Cloud Volumes ONTAP 9.16.1开始、您可以利用Azure Marketplace直接部署、这是一个简化的流程、可以访问一组有限但仍然强大的Cloud Volumes ONTAP功能和选项。</block>
+  <block id="dbb1a2747246b2326a1cd9883fa179ae" category="paragraph">直接从Azure市场部署Cloud Volumes ONTAP时、您无需设置BlueXP  连接器、也无需满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他安全和启用标准。在Azure市场中、只需单击几下鼠标、即可快速部署Cloud Volumes ONTAP、并了解其在您环境中的核心特性和功能。</block>
+  <block id="7f307020214b0601581a2750d70801ff" category="paragraph">下面是这两个选项之间的功能比较：</block>
+  <block id="e380306ab83464e152f5fd1b794098b0" category="cell">Azure Marketplace</block>
+  <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="cell">BlueXP</block>
+  <block id="d001c47858581c979ac478e49c9661c4" category="cell">*入职*</block>
+  <block id="c0245bda3ab2426b357c2f1dbac18fe4" category="cell">更短、更简单、直接部署所需的准备工作最少</block>
+  <block id="3629ee21db77809980881173196b6920" category="cell">安装过程更长、包括安装BlueXP  连接器</block>
+  <block id="636c10440b3c39954000427bfee3a509" category="cell">*支持的Storage Virtual Machine (SVM)实例*</block>
+  <block id="09a2f54a8d3829f6b3cdbfc1227246d2" category="cell">Edsv5和LsV3</block>
+  <block id="79bd8865b968021aedfe3ebf1eea0e3b" category="cell">完整的Storage VM选项。<block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
+  <block id="ee998db55a5373c890946748cb8dafeb" category="cell">* 许可证 *</block>
+  <block id="2c99fb634374338e105960f8a1b01571" category="cell">免费许可证</block>
+  <block id="e6e0b8e1dd9ccebda94836b190cc1c77" category="cell">任何基于容量的许可证。<block ref="4fd1dcab53132be8e410673d29b53538" category="inline-link-macro-rx"></block></block>
+  <block id="428eea5cc7bf289506af6d5e059f1a20" category="cell">* NetApp支持*</block>
+  <block id="4bc8b4ce0c74999ac10508fff58bdeaa" category="cell">不包括</block>
+  <block id="82fa7a33a32b18464bd3a090c891bc47" category="cell">可用、具体取决于许可证类型</block>
+  <block id="97b94c75518b90d30aeab5f6ccdd903e" category="cell">* 容量 *</block>
+  <block id="a700ac3c20e9523bbc1d89ec2d907a05" category="cell">最多500 GiB</block>
+  <block id="41ff7c8fade25eb094e88e5a9447cd08" category="cell">可根据配置进行扩展</block>
+  <block id="68e9aab7af501f6875be788d480cd0fc" category="cell">*部署模式*</block>
+  <block id="dc2f4e4f561f191caeb82e054307bad1" category="cell">在单可用性区域(AZ)中部署高可用性(HA)模式</block>
+  <block id="a01239357970ee2f3c9b0ae82f000882" category="cell">所有受支持的配置、包括单节点和HA模式、单个和多个AZ部署</block>
+  <block id="6ad49b55b0f22972c69ce75487b03ec0" category="cell">*支持的磁盘类型*</block>
+  <block id="953ec42d55d92f9461f261e97a4988ca" category="cell">高级SSD v2托管磁盘</block>
+  <block id="82937f78304eedae83e4294e46ec82d1" category="cell">更广泛的支持。<block ref="d885f47b57984f77086a82e981d7153e" category="inline-link-macro-rx"></block></block>
+  <block id="bfb8a408ec0b30952859aae497c8465f" category="cell">*写入速度(快速写入模式)*</block>
+  <block id="aa7f77e663b832d5b0e544c5511e680c" category="cell">不支持</block>
+  <block id="19b9f88bee6a130060c37e3d1c50fe9a" category="inline-link-macro">了解Cloud Volumes ONTAP中的写入速度</block>
+  <block id="d7fe41c4cf1810f4da29f8b06cd593f8" category="cell">支持、具体取决于您的配置。<block ref="96a05499aae8e920518c99e8492584b9" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="d9ec06f53e7680c118a0ed4df5b96fb4" category="cell">*业务处理能力*</block>
+  <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">不可用</block>
+  <block id="84871953bd62b8893190ef7a6962abe7" category="cell">可通过BlueXP  使用、具体取决于许可证类型</block>
+  <block id="9f8a1e65db2a7b7add1c13eab2e7329d" category="cell">*支持的SVM*数量</block>
+  <block id="48a427743a75b4fdda65b3d4d32ffdb8" category="cell">每个部署一个SVM</block>
+  <block id="0e0d07c97eb79ac52552a16c7231cce9" category="inline-link-macro">支持的SVM数量</block>
+  <block id="2eb6409010ba79c9ad22a8548be0934e" category="cell">多个SVM、具体取决于您的配置。<block ref="b161301467d6eb73d25f41f1916e22c1" category="inline-link-macro-rx"></block></block>
+  <block id="bf20643c9f32bd3279ba875a287ff155" category="cell">*正在更改实例类型*</block>
+  <block id="eaa4dc5078017a5c5bebf383ab6f5124" category="cell">支持</block>
+  <block id="c1ffbcc6fe6835d480213a54893f3a0a" category="cell">* FabricPool分层*</block>
+  <block id="3e829bef915f1e80385b2044bc0d9818" category="paragraph">未来、BlueXP  连接器将能够发现通过Azure Marketplace Direct部署进行的部署、届时您可以体验Cloud Volumes ONTAP的全面管理和流程编排功能。</block>
+  <block id="c86757d7a9f77beb628cb57feb3d6c11" category="list-text">Azure Marketplace直接部署：<block ref="1186fe96c0993d10ed337eff0bc3c77c" category="inline-link-macro-rx"></block></block>
+  <block id="26e7a962794b94b9597de6c446a143e5" category="list-text">BlueXP  部署：<block ref="be01ed4f242b2cf3f55d254dc6769252" category="inline-link-macro-rx"></block></block>
+  <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP文档</block>
+  <block id="21acfe57538558ae589d802f879549af" category="list-text"><block ref="21acfe57538558ae589d802f879549af" category="inline-link-rx"></block></block>
+  <block id="83203972f5f610a8b6edfbaf07008eb2" category="inline-link-macro">ONTAP文档：了解S3多协议的工作原理</block>
+  <block id="6cd0c6e49e7da9df4ec8ac28e99ac268" category="inline-link-macro">ONTAP文档：了解如何在ONTAP中配置和管理S3对象存储服务</block>
+  <block id="0beeb4ae08209eddf791d03de9fcf654" category="paragraph"><block ref="47bbca2f135630a58718ba92e2c739ed" category="inline-link-macro-rx"></block>(英文)<block ref="3c369a9b68ac3984a3598ff92fe5ee61" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="0c4ab7dbbb0c4e5098fca90084a314bb" category="inline-link">ONTAP文档：为NVMe配置Storage VM</block>
+  <block id="86658a348e09419591c8b4b3fa13e84e" category="paragraph">有关通过ONTAP配置NVMe的详细信息，请参阅<block ref="0585d9dca18b467d388c2056c53b835d" category="inline-link-rx"></block>。</block>
+  <block id="52906f1209df0124eec881e5eb61417c" category="paragraph">有关定价的详细信息，请访问<block ref="e895de279f6fc60faafa4c289938d19f" category="inline-link-rx"></block>。</block>
+  <block id="28c15f6c1c01609f6c18ebd86b65b462" category="paragraph"><block ref="28c15f6c1c01609f6c18ebd86b65b462" category="inline-link-rx"></block></block>
+  <block id="49e35df1608bc4ec8dda47be9031b77e" category="inline-link">有关SnapLock的ONTAP文档</block>
+  <block id="a30d432611fbd01e1559279ca4b99466" category="paragraph">在 Cloud Volumes ONTAP 系统上激活 WORM 存储后，必须使用 ONTAP CLI 对 WORM 存储进行所有管理。有关说明，请参阅<block ref="4043230af2751621c7cbfb902f557f9b" category="inline-link-rx"></block>。</block>
+  <block id="5afd7faa54f59a71c368ed1ec6f70424" category="paragraph">有关详细信息，请参阅<block ref="e2235bff328f7d7d636e45c1db9cf9c0" category="inline-link-rx"></block>。</block>
+  <block id="4a8c07c4ad40bfc58107322f23f285d7" category="paragraph">有关说明，请参阅<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block>。</block>
+  <block id="ec3c5303b35558311f89630fcd334372" category="paragraph">您可以使用备份重新配置Cloud Volumes ONTAP系统。有关配置备份的详细信息，请参阅<block ref="23e6d6fd8ffe7d9840e6f16c55e560a8" category="inline-link-rx"></block>。</block>
+  <block id="3fa85a72fa6129f493f73fd51c5d3577" category="inline-link">ONTAP文档：设置AutoSupport</block>
+  <block id="624816c9fe7ea9b487697f42ef1d812e" category="paragraph">确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参阅<block ref="0ec547f9fa42cb2a8601b4546d54623e" category="inline-link-rx"></block>。</block>
+  <block id="d9455e663ee4d7ee8d4fde8ab0c8def2" category="cell">将配置备份发送到Connector。<block ref="e7adb9f4d0632ec8e24f773b41678da0" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="318611e2babf08c501f3b90bb9564292" category="cell">将配置备份发送到Connector。<block ref="e7adb9f4d0632ec8e24f773b41678da0" category="inline-link-macro-rx"></block></block>
+  <block id="7301ea4031b8cc11bedbfe33aa4223f7" category="inline-link">ONTAP文档：配置SnapLock</block>
+  <block id="62ab7812142877418a93e9a9571683b7" category="paragraph">确保用于创建Snapshot副本的卷是SnapLock卷。有关在卷上启用SnapLock保护的信息，请参阅<block ref="dbff22e1ead18b313d4c85a7040b4632" category="inline-link-rx"></block>。</block>
+  <block id="30687154e500e26c7422266de90ef8e5" category="inline-link">ONTAP文档：管理本地Snapshot副本概述</block>
+  <block id="7721f96f7d942d86d4ccbd75d84b96e6" category="list-text">从SnapLock卷创建Snapshot副本。有关使用命令行界面或System Manager创建Snapshot副本的信息，请参阅<block ref="86b08b38508e13631604912001510b86" category="inline-link-rx"></block>。</block>
+  <block id="efc9b6df7e16500f225ab9e43707aa6e" category="inline-link">ONTAP文档：设置保留时间</block>
+  <block id="2e936d789afa6c8e13ad633d0aa9fc21" category="list-text">如果需要编辑这些快照、您可以修改保留期限。有关信息，请参阅<block ref="ae33c2fccf15e81f09562d7040255f90" category="inline-link-rx"></block>。</block>
+  <block id="17f109d8784abebb462709998b4d5af7" category="paragraph">如果您在将System Manager与Cloud Volumes ONTAP结合使用时需要帮助、请参阅<block ref="e4712fca3ed0fd9138bc58dbf36327e9" category="inline-link-rx"></block>以获取分步说明。以下几个ONTAP文档链接可能会有所帮助：</block>
+  <block id="727d6ec7c143ece348a58c5723f2f025" category="inline-link-macro">Microsoft 文档</block>
+  <block id="52551c1b1e03dbb599f1daaac72cce32" category="paragraph">您可以使用Azure密钥存储(Azure Key Vault、KV)在Azure部署的应用程序中保护ONTAP加密密钥。请参阅<block ref="707992a98b7184a2ac6780a78fdd8ed2" category="inline-link-macro-rx"></block>。</block>
+  <block id="4215bf476fb5508d2ab2817180f62fbb" category="paragraph">只能使用NetApp保护数据SVM的数据卷加密(NVE)密钥。有关详细信息，请参阅<block ref="bcad4305f4f69666b0e9823206c949af" category="inline-link-macro-rx"></block>。</block>
+  <block id="abf596ebbf2c64b882e111278a49b1e5" category="inline-link">ONTAP文档：EMS配置概述</block>
+  <block id="f0bf9f15eadaf8491da2934af661a352" category="paragraph">您可以使用 CLI 配置 EMS 。有关说明，请参阅<block ref="f10f254becd5d3115751852411e7271e" category="inline-link-rx"></block>。</block>
+  <block id="1507fff81105771ed80d838ecc7c825f" category="paragraph">从Cloud Volumes ONTAP 9.161开始、您可以使用Azure Marketplace直接部署从Azure Marketplace快速轻松地部署Cloud Volumes ONTAP、并在您的环境中探索其核心特性和功能。</block>
+  <block id="530e18594ace7f1432d409c00afc2454" category="inline-link-macro">了解BlueXP  和市场上的Cloud Volumes ONTAP产品</block>
+  <block id="c6291eec01d7eef87347f05c5b6cc5e0" category="paragraph">有关此服务的详细信息，请参见<block ref="1d59ccb0a322b44874ad6d716be992b6" category="inline-link-macro-rx"></block>。</block>
+  <block id="b11556db62f78035a974fcf2af350b0c" category="paragraph">使用Azure Marketplace Direct部署部署的Cloud Volumes ONTAP实例具有以下属性：</block>
+  <block id="307fba28eaa68023634ac12efe78443d" category="list-text">最新的Cloud Volumes ONTAP版本(9.161或更高版本)。</block>
+  <block id="87449344416c32f88eeb38f3bd00e092" category="list-text">Cloud Volumes ONTAP的免费许可证、限制为500 GiB的已配置容量。此许可证不含NetApp支持、也没有到期日期。</block>
+  <block id="152058aae87c0f08791efa9a9cbd8167" category="inline-link-macro">灵活的业务流程模式</block>
+  <block id="2d7152ef687c52f17a34fdc2c6507d86" category="list-text">在单个可用性区域(AZ)中以高可用性(HA)模式配置的两个节点、使用默认序列号进行配置。Storage Virtual Machine (SVM)部署在中<block ref="76b8e7a3e49d5a96c336355428b9cbdd" category="inline-link-macro-rx"></block>。</block>
+  <block id="860574f2fb3649a1d434d1ed47437a59" category="list-text">默认情况下为实例创建的聚合。</block>
+  <block id="c612116a8947c7a85f4c8fb5064a1e13" category="list-text">一个配置容量为500 GiB的高级SSD v2托管磁盘以及一个根磁盘和一个数据磁盘。</block>
+  <block id="bd3fadb8d8a7028f57bf2694979cf325" category="list-text">部署了一个数据SVM、其中包含NFS、CIFS、iSCSI和NVMe/TCP数据服务。不配置其他SVM。</block>
+  <block id="92a96188cb68658c1989215bfbbe6ca3" category="list-text">根据默认序列号安装NFS、CIFS (SMB)、iSCSI、反勒索软件(ARW)、SnapLock和SnapMirror的许可证。</block>
+  <block id="1859d20023fcb6341021ebf7fdf710be" category="inline-link">ONTAP温度敏感型存储效率(TSSE)</block>
+  <block id="76211bb727300454e196855a3a4cc957" category="list-text"><block ref="71b0933f11acfc38fdafc96583ed09c6" category="inline-link-rx"></block>、卷加密和外部密钥管理默认处于启用状态。</block>
+  <block id="e028eb7a88e0ab56d3961355b9bc2c4b" category="list-text">不支持以下功能：</block>
+  <block id="47f64097ec44c9f18f4025941f2e4436" category="list-text">FabricPool 分层</block>
+  <block id="4bfa0affcddbe689db2e9788d1cf9ade" category="list-text">更改实例类型</block>
+  <block id="b578dbfdde2bda79f859ef35aa53672e" category="list-text">快速写入模式</block>
+  <block id="cea379dc708683105165e44b4cd1a6aa" category="list-text">确保您拥有有效的Azure Marketplace订阅。</block>
+  <block id="a01bb8da3018252a01366ddb6767e8a3" category="inline-link-macro">在一个AZ中部署HA</block>
+  <block id="a781986959cc3ba0aeb86b96df8f4449" category="inline-link-macro">为Cloud Volumes ONTAP设置Azure网络</block>
+  <block id="02ba5c8a00de1d81760f01a1677a04d1" category="list-text">确保满足Azure中的的的网络连接要求<block ref="83ccac9ef63ed88da88c49dabd89eaa8" category="inline-link-macro-rx"></block>。请参阅 <block ref="76989abbcca6152c60f49caf5e88bdee" category="inline-link-macro-rx"></block>。</block>
+  <block id="6b499511e63bc63aeaf41ffb911727ea" category="list-text">要部署Cloud Volumes ONTAP、需要为您分配以下Azure角色之一：</block>
+  <block id="071bd33533e6092144bb50c1b0b8d505" category="inline-link">Azure文档：Azure内置角色</block>
+  <block id="068105edf4f90a809a1a0b09ebd9aa3b" category="list-text"><block ref="bba2348631bbaef062b73dde6b38fdc1" prefix=" " category="inline-code"></block>具有默认权限的角色。有关详细信息，请参阅<block ref="656d4d3b734edb131dd8d505ce126804" category="inline-link-rx"></block>。</block>
+  <block id="eadcc69c7c4aaa007ecec6edc6cfb9aa" category="inline-link">Azure文档：Azure自定义角色</block>
+  <block id="028c4d838c478ed22e4508cd6603b882" category="list-text">具有以下权限的自定义RBAC角色。有关详细信息，请参阅<block ref="df94db26fafeb9c8bc7eaec980b4df61" category="inline-link-rx"></block>。</block>
+  <block id="6766a739ae4fb6afa77da370f15622b7" category="paragraph">"权限"：[｛"Actions"：[Microsoft.AAD/reg2/action"、"Microsoft.Resources/뚩 阅/resourceGroups/write" Microsoft.Network/loadBalancers/write"、"Microsoft.ClassicCompute/virtualMachines/write" Microsoft.Compute/capacityReservationGroups/deploy/action"、"Microsoft.ClassicCompute/virtualMachines/networkInterfaces/AssociatedNetworkSecurityGroups/write" Microsoft.Compute/virtualMachines/write"、"Microsoft.Network/networkInterfaces/write" Microsoft.Compute/virtualMachines/extensions/write" Microsoft.Network/virtualNetworks/write" Microsoft.Network/virtualNetworks/read" Microsoft.Network/networkSecurityGroups/read" Microsoft.Network/virtualNetworks/subnets/read"、"Microsoft.ClassicCompute/virtualMachines/dataGroups" Microsoft.Network/networkSecurityGroups/write" Microsoft.Compute/disks/write" Microsoft.Compute/virtualMachineScaleSets/write" Microsoft.Network/virtualNetworks/subnets/write"</block>
+  <block id="645a169438346f46551a9b4ac5ab1e57" category="inline-link">Azure文档：适用于存储的Azure权限</block>
+  <block id="68e01e68bf1f5bcd729c6bd4e46062e7" category="admonition">如果您已将资源提供程序"Microsoft.storage"注册到您的订阅、则不需要此<block ref="a5247130ddf1c1aec9bf97e04b90b259" prefix=" " category="inline-code"></block>权限。有关详细信息，请参阅<block ref="d3458bbe37b36b18531c528f928d76ce" category="inline-link-rx"></block>。</block>
+  <block id="fea8870db28737c6ef35d9b3e3a2ba87" category="list-text">在Azure Marketplace站点中、搜索NetApp产品。</block>
+  <block id="bf8fb42f05fc0f00389a7a6bd708fddd" category="list-text">选择* NetApp Cloud Volumes ONTAP Direct*。</block>
+  <block id="18d9eb94444bbb5cc63acb692f56ca87" category="list-text">单击*Create/*以启动部署向导。</block>
+  <block id="3ad50573794660103eccc594ba3fb4f0" category="list-text">选择一个计划。“*计划*”列表通常显示Cloud Volumes ONTAP的最新版本。</block>
+  <block id="37d38a578c31bc624a3f4d4de8fb8daa" category="list-text">在*Basices*选项卡中，提供以下详细信息：</block>
+  <block id="3bc9feb66cc347505afe61a873233a22" category="list-text">*订阅*：选择订阅。部署将链接到订阅编号。</block>
+  <block id="7c68030358e9e2caf23b3aab867e6b7d" category="list-text">*资源组*：使用现有资源组或创建新资源组。资源组有助于在一个Cloud Volumes ONTAP实例的一个组中分配所有资源、例如磁盘和SVM。</block>
+  <block id="a68271a0eca397a1733f43d9c2db3356" category="list-text">*地区*：选择一个支持在单个AZ中部署Azure HA的地区。您只能在列表中看到可用的区域。</block>
+  <block id="ba0d4387254dca94fa0fcfe4ade5fe3e" category="list-text">*大小*：为受支持的高级SSD v2托管磁盘选择SVM大小。</block>
+  <block id="c2b7578dc59578ac85fb03cf8268371d" category="list-text">*Zone*:为您选择的区域选择一个区域。</block>
+  <block id="d238bcae22b45e47039da0f3a61c5465" category="list-text">*管理员密码*：设置密码。部署完成后、您可以使用此管理员密码登录到系统。</block>
+  <block id="3ee712a8a2fc736d7fea56d098428b49" category="list-text">*确认密码*：重新输入同一密码进行确认。</block>
+  <block id="76049127e5a35bcacc366dbba3fcd012" category="list-text">在*Network*选项卡中，添加虚拟网络和子网，或从列表中选择它们。</block>
+  <block id="beb9742d3af86abdfb96c1b92296dbed" category="admonition">为了符合Microsoft Azure的限制、您应在设置新虚拟网络时创建新子网。同样、如果选择现有网络、则应选择现有子网。</block>
+  <block id="ec59632a759fd9d999b1a4e4d0cf5162" category="inline-link-macro">Azure 的安全组规则</block>
+  <block id="86fbc4f50ccae241848cc6f4e9d301a5" category="list-text">要选择预定义的网络安全组，请选择*Yes*。选择*否*以分配具有所需流量规则的预定义Azure网络安全组。有关详细信息，请参阅 <block ref="b83f4b69c5474d6356073245c46bbc05" category="inline-link-macro-rx"></block>。</block>
+  <block id="1df3f99789b2fb9d4336ffb0d02c87bf" category="inline-link-macro">为Cloud Volumes ONTAP单个AZ部署启用Azure功能</block>
+  <block id="2c01d75f7ab3854f30dad654b7836fd5" category="inline-link-macro">在Azure中为Cloud Volumes ONTAP启用高可用性模式</block>
+  <block id="b445825d2f2ddce17b30d5dbc127bb53" category="list-text">在*高级*选项卡中，确认是否已设置此部署所需的两个Azure功能。请参阅<block ref="47d2b322282e9494b913fdbd50384f10" category="inline-link-macro-rx"></block>和<block ref="a99c16252f5b965dd7864967fa4d6812" category="inline-link-macro-rx"></block>。</block>
+  <block id="f7dce7f10f1f8cc2b434e0510f469742" category="list-text">您可以在*Tags *选项卡中为资源或资源组定义名称和值对。</block>
+  <block id="e5c4df6a4568a2a580b8a3e5b40577b6" category="list-text">在*Review + cree*选项卡中，查看详细信息并开始部署。</block>
+  <block id="cc2ec1706a6cfca4d87ce071f6ae3f37" category="paragraph">选择通知图标以查看部署进度。部署Cloud Volumes ONTAP后、您可以查看列出的SVM以执行操作。</block>
+  <block id="a981e8fb9c5e87d40185a70a414d57e2" category="paragraph">一旦可以访问、请使用ONTAP系统管理器或ONTAP命令行界面使用您设置的管理员凭据登录到SVM。之后、您可以创建卷、LUN或共享、并开始利用Cloud Volumes ONTAP的存储功能。</block>
+  <block id="5a8751283cd95032ddf0ec56f5bb1224" category="paragraph">直接通过Azure市场进行的Cloud Volumes ONTAP部署不包括NetApp的支持。如果在部署期间出现任何问题、您可以单独进行故障排除并解决这些问题。</block>
+  <block id="e9ad8cb2d3f7ad7951cb5e2ccdf98fcc" category="list-text">在Azure Marketplace站点上、转到*启动诊断&gt;串行日志*。</block>
+  <block id="3473bcdf09ad8e881f1d60433d0651a8" category="list-text">下载并调查串行日志。</block>
+  <block id="7afbb0eb51f3278f46cb4b6d919cf956" category="list-text">要进行故障排除、请参阅产品文档和知识库(KB)文章。</block>
+  <block id="31ba7b19ca3c214876b7398219977647" category="inline-link">Azure Marketplace文档</block>
+  <block id="e6a36c01dbb836e81ba8524516c15d96" category="list-text"><block ref="e6a36c01dbb836e81ba8524516c15d96" category="inline-link-rx"></block></block>
+  <block id="7a4e9cb5597c0c38152cde29a5ffea15" category="inline-link">NetApp 文档</block>
+  <block id="f34c4068e7529dd122f3896aa32177fd" category="list-text"><block ref="f34c4068e7529dd122f3896aa32177fd" category="inline-link-rx"></block></block>
+  <block id="86b2dcafcdf6ee11674f3d4ddea97474" category="inline-link">NetApp知识库文章</block>
+  <block id="d59a7dcaf690c69cf296b9028f3f23e7" category="list-text"><block ref="d59a7dcaf690c69cf296b9028f3f23e7" category="inline-link-rx"></block></block>
+  <block id="d63debd9b7cca1569364adb67c91139c" category="paragraph">有关创建存储的详细信息、请参见ONTAP文档：</block>
+  <block id="a7990163cdb69ec56c7894fb740c39f4" category="inline-link">为NFS创建卷</block>
+  <block id="11b78ce46efdc9e2efbd8793427bbe2a" category="list-text"><block ref="11b78ce46efdc9e2efbd8793427bbe2a" category="inline-link-rx"></block></block>
+  <block id="bdc686f7a4ed97680bfbb983348b58c8" category="inline-link">为iSCSI创建LUN</block>
+  <block id="f2e2a9d8fec39c5ee52d89218d616aa0" category="list-text"><block ref="f2e2a9d8fec39c5ee52d89218d616aa0" category="inline-link-rx"></block></block>
+  <block id="5eb1845d8b80c05b8cd63e308b13e96b" category="inline-link">为CIFS创建共享</block>
+  <block id="624a019a8e50c4a7143df34f2ca60327" category="list-text"><block ref="624a019a8e50c4a7143df34f2ca60327" category="inline-link-rx"></block></block>
+  <block id="77e31285eee4947e5d6f245a2743d957" category="admonition">对于中国地区、只有Cloud Volumes ONTAP 9.12.1 GA 9.13.0 GA才支持单节点部署。您可以将这些版本升级到更高的修补程序和Cloud Volumes ONTAP版本。如果要在中国地区部署更高版本的Cloud Volumes ONTAP、请联系NetApp支持部门。这些地区仅支持直接从NetApp购买的许可证。</block>
+  <block id="c97ed7681a179d7bc87ce8f8eed5c351" category="inline-link">ONTAP文档：启用自动防软件保护</block>
+  <block id="f508651fe98cc3415eb1f58ed2bed8a0" category="paragraph">有关如何使用ONTAP系统管理器和ONTAP命令行界面启用ARP的详细信息，请参阅<block ref="b15a4c9c991d002f8e900421f382aab3" category="inline-link-rx"></block>。</block>
+  <block id="c444f079b1cbf4fc53cc057613986256" category="list-text"><block ref="c444f079b1cbf4fc53cc057613986256" category="inline-link-rx"></block></block>
+  <block id="2142c4ab10191c496a086a7d28f367b2" category="paragraph">从2024年1月开始、只有当BlueXP  的三个最新版本的有修补程序版本时、才能在Cloud Volumes ONTAP中进行修补程序升级。如果RC或GA版本不可部署、则偶尔会提供修补程序版本以供部署。</block>
+  <block id="d882df107977218a2a21f24cccd043be" category="paragraph">我们使用最新的GA版本来确定要在BlueXP中显示的三个最新版本。例如、如果当前GA版本为9.13.1、则BlueXP中会显示9.11.1-9.13.1的修补程序。如果要升级到9.11.1或更低版本的修补程序版本，则需要使用手动升级过程<block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>。</block>
+  <block id="8be96b1513bcc4cba6d116c6fadae03e" category="paragraph">在升级期间、面向会话的协议可能会对某些方面的客户端和应用程序产生发生原因不利影响。有关详细信息、请参见<block ref="cdbdbf5a432fcf5ba249c90b32cf3ed8" category="inline-link-rx"></block></block>
+  <block id="9930910a33866fa82deb1be7c517546a" category="inline-link">ONTAP文档：用于配置自动交还的命令</block>
+  <block id="ff525f179cf0bc6fb95ab7411dc703b4" category="paragraph"><block ref="ff525f179cf0bc6fb95ab7411dc703b4" category="inline-link-rx"></block></block>
+  <block id="8fda8ae444d07a63fe4b689762310748" category="paragraph">在升级之前、所有的生命周期都必须位于主端口上。请参见ONTAP文档 <block ref="480f9b77a2af4b7dbdd11b406ffe87a3" category="inline-link-macro-rx"></block>。</block>
+  <block id="83868cfd5eeba1376a1bc6c43435038c" category="inline-link-macro">Cloud Volumes ONTAP升级失败</block>
+  <block id="365e2f0e844be8d1f01fa41f528466dc" category="paragraph">如果出现升级失败错误，请参阅知识库(KB)文章<block ref="f1bbb27b34f8f3ae80472a395f84afd9" category="inline-link-macro-rx"></block>。</block>
+  <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025年2月18日</block>
+  <block id="fc9af2fdc2f2f8dfff2ec6534dd63c1a" category="paragraph">在Azure 9.13.1 GA上配置Flash Cache所需的最低Cloud Volumes ONTAP版本。您只能使用9.13.1 9.13.1GA及更高版本在Azure中的Cloud Volumes ONTAP系统上部署Flash Cache。</block>
+  <block id="7e05b6b897bc796c472e8ff108657518" category="section-title">支持中国地区的AWS</block>
+  <block id="6a0a3b4a70751949aff5d08a618793d7" category="section-title">在Azure中支持中国地区</block>
+  <block id="d9275343917167133b5d4b9c0f788071" category="paragraph">现在、在Azure中部署Cloud Volumes ONTAP 9.12.1 GA 9.13.0 GA的单节点支持中国北部3地区。这些地区仅支持直接从NetApp购买的许可证(BYOL许可证)。</block>
+  <block id="8bd7cd8ca4a0f6685fc0baed4ead4dd1" category="admonition">仅支持在中国地区全新部署Cloud Volumes ONTAP 9.12.1 GA 9.13.0 GA。您可以将这些版本升级到更高的修补程序和Cloud Volumes ONTAP版本。如果要在中国地区部署更高版本的Cloud Volumes ONTAP、请联系NetApp支持部门。</block>
+  <block id="093148786d1a31fd0a192e71709f0922" category="inline-link">ONTAP文档：了解如何配置和管理S3对象存储服务</block>
+  <block id="0c3f43bec2f6fa7d6a2774e7e460e607" category="paragraph"><block ref="0c3f43bec2f6fa7d6a2774e7e460e607" category="inline-link-rx"></block></block>
+  <block id="f95cfd3f78902927fdf2b36f71fd3d14" category="inline-link">ONTAP文档：NDMP配置概述</block>
+  <block id="25d5ff4689a1026f322311bc3051ec8f" category="paragraph">有关如何配置和使用NDMP的信息，请参阅<block ref="b4c37f031604033056dedb105a470e07" category="inline-link-rx"></block>。</block>
+  <block id="f5b6a4f9fa9546ad87a66d4b329c48ca" category="list-text">*Edge缓存*：许可<block ref="750127709cc754e243313cd0fefb37f3" category="inline-link-rx"></block></block>
+  <block id="4365e30d77f5d09dc0920c7810111567" category="paragraph"><block ref="413fcdbad34c678371dd9dcd495f514c" category="inline-link-rx"></block>(英文)</block>
+  <block id="ac3d6636314efc1e17f29c3e409b0f9c" category="sidebar">了解您的部署选项</block>
+  <block id="3a02e985ca8f29995c51ae66b1b831f2" category="sidebar">开始使用BlueXP </block>
+  <block id="124dec3164ac7246452cc1456ff82f96" category="sidebar">开始进入市场</block>
+  <block id="669267b794602d81727aa564e9017e49" category="sidebar">从市场上部署Cloud Volumes ONTAP</block>
+  <block id="3afa4906e9f87a509c6412a260310879" category="sidebar">在AWS中使用EC2实例</block>
 </blocks>

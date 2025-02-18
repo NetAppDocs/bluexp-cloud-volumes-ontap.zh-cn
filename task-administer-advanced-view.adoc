@@ -118,7 +118,7 @@ NOTE: 如果将此值设置为*Enable*，则身份验证将重置，您必须修
 
 == 有关使用System Manager的帮助
 
-如果在Cloud Volumes ONTAP 中使用System Manager需要帮助、请参见 https://docs.netapp.com/us-en/ontap/index.html["ONTAP 文档"^] 了解分步说明。以下链接可能会有所帮助：
+如果您在将System Manager与Cloud Volumes ONTAP结合使用时需要帮助、请参阅 https://docs.netapp.com/us-en/ontap/index.html["ONTAP 文档"^]以获取分步说明。以下几个ONTAP文档链接可能会有所帮助：
 
 * https://docs.netapp.com/us-en/ontap/ontap-security-hardening/roles-applications-authentication.html["ONTAP角色、应用程序和身份验证"^]
 * https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-system-manager-browser-task.html["使用 System Manager 访问集群"^](英文)

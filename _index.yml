@@ -68,12 +68,12 @@ indexpage:
     - title: 支持的云区域
       url: https://bluexp.netapp.com/cloud-volumes-global-regions
     - title: 计算器
-      url: https://cloud.netapp.com/calculator-hub
+      url: https://bluexp.netapp.com/calculator-hub
   - title: 博客社区
     links:
     - title: NetApp 社区
       url: https://community.netapp.com/t5/Cloud-Volumes-ONTAP/bd-p/CloudVolumes
     - title: BlueXP网站博客
-      url: https://cloud.netapp.com/blog/topic/cloud-volumes-ontap
+      url: https://bluexp.netapp.com/blog/topic/cloud-volumes-ontap
     - title: 云网络研讨会
-      url: https://cloud.netapp.com/events
+      url: https://bluexp.netapp.com/events

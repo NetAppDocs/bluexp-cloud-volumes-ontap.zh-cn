@@ -53,7 +53,7 @@ Cloud Volumes ONTAP使用这些端点与各种服务进行通信。
 
 
 
-| \https://keyvault-production-aks.vault.azure.net | 密钥库 | 用于从Azure密钥存储中检索客户端机密密钥、以便与S3存储分段进行通信以处理元数据。Cloud Volumes ONTAP服务在内部使用此组件。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP服务不可用。 
+| https://vault.azure.net[] | 密钥库 | 用于在使用客户管理密钥(CMK)时从Azure密钥库检索客户端密钥。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP服务不可用。 
 
 
 | https://cloudmanager.cloud.netapp.com/tenancy | 租户 | 用于从BlueXP  租户中检索Cloud Volumes ONTAP资源以授权资源和用户。 | 标准模式和受限模式。 | Cloud Volumes ONTAP资源和用户未获得授权。 
@@ -82,7 +82,7 @@ Cloud Volumes ONTAP使用这些端点与各种服务进行通信。
 
 Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、NetApp会主动监控系统运行状况并向NetApp技术支持发送消息。
 
-路由和防火墙策略必须允许通过 HTTP/HTTPS 流量访问以下端点，以便 Cloud Volumes ONTAP 可以发送 AutoSupport 消息：
+路由和防火墙策略必须允许HTTPS流量传输到以下端点、Cloud Volumes ONTAP才能发送AutoSupport消息：
 
 * https://support.netapp.com/aods/asupmessage
 * https://support.netapp.com/asupprod/post/1.0/postAsup

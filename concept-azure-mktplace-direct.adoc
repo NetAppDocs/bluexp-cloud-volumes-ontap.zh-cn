@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-NetApp提供了两种在Azure上部署Cloud Volumes ONTAP的选项：通过NetApp BlueXP  或通过Azure市场。Cloud Volumes ONTAP传统上依靠BlueXP  进行部署和流程编排。从Cloud Volumes ONTAP 9.16.1开始、您可以利用Azure Marketplace直接部署、这是一个简化的流程、可以访问一组有限但仍然强大的Cloud Volumes ONTAP功能和选项。
+NetApp提供了两个在Azure上部署Cloud Volumes ONTAP的选项。Cloud Volumes ONTAP传统上依靠BlueXP  进行部署和流程编排。从Cloud Volumes ONTAP 9.16.1开始、您可以利用Azure Marketplace直接部署、这是一个简化的流程、可以访问一组有限但仍然强大的Cloud Volumes ONTAP功能和选项。
 
 直接从Azure市场部署Cloud Volumes ONTAP时、您无需设置BlueXP  连接器、也无需满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他安全和启用标准。在Azure市场中、只需单击几下鼠标、即可快速部署Cloud Volumes ONTAP、并了解其在您环境中的核心特性和功能。
 
@@ -28,7 +28,7 @@ NetApp提供了两种在Azure上部署Cloud Volumes ONTAP的选项：通过NetAp
 | *入职* | 更短、更简单、直接部署所需的准备工作最少 | 安装过程更长、包括安装BlueXP  连接器 
 
 
-| *支持的Storage Virtual Machine (SVM)实例* | Edsv5和LsV3 | 完整的Storage VM选项。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^] 
+| *支持的Storage Virtual Machine (Storage VM)实例* | Edsv5和Lsv3 | 完整的Storage VM选项。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^] 
 
 
 | * 许可证 * | 免费许可证 | 任何基于容量的许可证。link:concept-licensing.html["Cloud Volumes ONTAP 许可"] 
@@ -52,7 +52,7 @@ NetApp提供了两种在Azure上部署Cloud Volumes ONTAP的选项：通过NetAp
 | *业务处理能力* | 不可用 | 可通过BlueXP  使用、具体取决于许可证类型 
 
 
-| *支持的SVM*数量 | 每个部署一个SVM | 多个SVM、具体取决于您的配置。link:task-managing-svms-azure.html#supported-number-of-storage-vms["支持的SVM数量"] 
+| *支持的Storage VM*数量 | 每个部署一个 | 多个Storage VM、具体取决于您的配置。link:task-managing-svms-azure.html#supported-number-of-storage-vms["支持的 Storage VM 数量"] 
 
 
 | *正在更改实例类型* | 不支持 | 支持 
@@ -60,7 +60,7 @@ NetApp提供了两种在Azure上部署Cloud Volumes ONTAP的选项：通过NetAp
 
 | * FabricPool分层* | 不支持 | 支持 
 |===
-未来、BlueXP  连接器将能够发现通过Azure Marketplace Direct部署进行的部署、届时您可以体验Cloud Volumes ONTAP的全面管理和流程编排功能。
+未来、BlueXP  连接器将能够识别通过Azure Marketplace Direct部署进行的部署。这样、您就可以利用BlueXP  提供的增强功能。
 
 .相关链接
 * Azure Marketplace直接部署：link:task-deploy-cvo-azure-mktplc.html["从Azure Marketplace部署Cloud Volumes ONTAP"]

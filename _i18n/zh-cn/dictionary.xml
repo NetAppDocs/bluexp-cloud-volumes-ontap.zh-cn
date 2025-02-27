@@ -1661,7 +1661,6 @@
   <block id="412590af9448ac66459e9c3d686de880" category="doc">Azure 中的 Cloud Volumes ONTAP 的网络要求</block>
   <block id="72928bd9aacf64df0eb1285c03f5f5c0" category="section-title">Cloud Volumes ONTAP 的要求</block>
   <block id="098d8cb8c4a1291e10ee07b333610f24" category="paragraph">在 Azure 中必须满足以下网络连接要求。</block>
-  <block id="a882b8d486f84abfbb2472c835d49dbf" category="paragraph">路由和防火墙策略必须允许通过 HTTP/HTTPS 流量访问以下端点，以便 Cloud Volumes ONTAP 可以发送 AutoSupport 消息：</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="section-title">IP 地址</block>
   <block id="0af87aead9b1478c9d33afc90cbcbf02" category="section-title">安全连接到 Azure 服务</block>
   <block id="87b7d9ff8a42dbb6c0bcd13ae09f6010" category="section-title">连接到其他 ONTAP 系统</block>
@@ -1776,7 +1775,6 @@
   <block id="30603aec25d6436b9b4c18f5e88da521" category="paragraph">在此许可模式下，每个单独的 Cloud Volumes ONTAP 系统可通过磁盘和对象存储分层支持多达 2 个 PIB 的容量。</block>
   <block id="28d17a1ec8598824eb0c46f1ef2668af" category="paragraph">对于许可证本身，没有最大容量限制。</block>
   <block id="25827e83a178b9b140976a356e0ea48a" category="section-title">有关充电的注意事项</block>
-  <block id="c1092325501599c6dcc90500081a2184" category="list-text">如果您超出 BYOL 容量或许可证到期，则会根据您的市场订阅按每小时费率向您收取超额费用。</block>
   <block id="55675f6a5328a3c661aa2daa971f7c76" category="list-text">对于 HA 对，您只需为节点上的已配置容量付费。您无需为同步镜像到配对节点的数据付费。</block>
   <block id="e61eacf9a2b260a46a8935478c8a063d" category="list-text">FlexClone 卷使用的容量不会向您收取费用。</block>
   <block id="529bcec2b9675b3cb0a81186e626a92b" category="list-text">源和目标 FlexCache 卷被视为主数据，并根据配置的空间进行收费。</block>
@@ -3368,7 +3366,6 @@
   <block id="6b2eadbbc64d8760da4136e28da230c2" category="list-text">*选择一个位置*：选择* Amazon Web Services*和* Cloud Volumes ONTAP HA*。</block>
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">在Cloud Volumes ONTAP 中、BlueXP不支持S3</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP不支持对Storage VM进行灾难恢复</block>
-  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的内容</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">所需的Google Cloud权限</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">什么是Flash Cache？</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 创建连接器</block>
@@ -5198,9 +5195,7 @@
   <block id="b5f4badb0c4d684d68e611a2bcca58e8" category="list-text">Cloud Volumes ONTAP服务</block>
   <block id="437fe4cf0ba94eac0cc14bbc45cbe74f" category="list-text">ONTAP服务</block>
   <block id="43ede35f19d46142596efa16b1ee32c5" category="list-text">协议和代理服务</block>
-  <block id="f08159fec04f3c63047352bdded5b5ff" category="cell">\https://keyvault-production-aks.vault.azure.net</block>
   <block id="cce8a0225002a3fa8095ed8782f394a3" category="cell">密钥库</block>
-  <block id="3d41451698b9c800b8f44837a532d5db" category="cell">用于从Azure密钥存储中检索客户端机密密钥、以便与S3存储分段进行通信以处理元数据。Cloud Volumes ONTAP服务在内部使用此组件。</block>
   <block id="bcf88b7ababd6bfaff375da727117c30" category="cell">标准模式、受限模式和专用模式。</block>
   <block id="f4308ae3bc914b647813d26d0551a6ba" category="cell">Cloud Volumes ONTAP服务不可用。</block>
   <block id="648b7f3d6699305c92d33129e6ea00fe" category="cell">https://cloudmanager.cloud.netapp.com/tenancy</block>
@@ -5328,11 +5323,6 @@
   <block id="788e4b8f4de48df585a507f6facd4562" category="list-text">Essentials辅助单节点：仅使用一个ONTAP节点在Cloud Volumes ONTAP系统上创建的数据保护(DP)类型卷(通常为只读SnapMirror或SnapVault目标卷)。</block>
   <block id="7d16eeb76acfceb848e2519cce58c471" category="admonition">如果只读/DP卷成为主卷、则BlueXP  会将其视为主数据、并根据卷处于读/写模式的时间计算收费成本。当卷再次设为只读/DP时、BlueXP  会再次将其视为二级数据、并使用数字钱包中最匹配的许可证进行相应收费。</block>
   <block id="7e634413e3c77c89dba2562f5b7c1937" category="list-text">Essentials二级HA：在使用两个ONTAP节点的Cloud Volumes ONTAP系统上创建的数据保护(DP)类型的卷(通常为只读SnapMirror或SnapVault目标卷)、这些节点可以相互故障转移以实现无中断数据访问。</block>
-  <block id="8bf4a89637b88a17fe1be4dad5d23488" category="paragraph">请注意以下几点：</block>
-  <block id="71f51fd779e6f30ac906929b2dcb02df" category="list-text">最低收费：至少具有一个主(读写)卷的每个提供数据的Storage VM至少需要支付4 TiB的费用。对于Essentials包、此最低费用不适用于仅具有二级(数据保护)卷的Storage VM。</block>
-  <block id="42a9ff8d7662759290ac08e2ee0929f4" category="list-text">超额：如果超过许可容量、将按市场价格收取超额费用、优先使用其他许可证的可用容量。</block>
-  <block id="f93da9b042a7ade0f4d86a091309ed87" category="list-text">FlexClone和FlexCache卷：FlexClone卷不计费。源和目标FlexCache卷被视为主数据、并根据配置的空间进行收费。</block>
-  <block id="371519ace7adec1f0d1a909854d1cbec" category="list-text">HA对收费：对于HA对、仅会按节点上配置的容量收费。同步镜像到配对节点的数据不计费。</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024年10月25日</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">在Google Cloud中部署新的Cloud Volumes ONTAP实例时、无法再在BlueXP  上选择n1系列计算机。n1系列机器将保留下来、并且仅在旧的现有系统中受支持。只有从9.8版开始、Google Cloud才支持全新部署Cloud Volumes ONTAP。建议您切换到与Cloud Volumes ONTAP 9.8及更高版本兼容的n2系列机器类型。但是、n1系列计算机将可用于通过API执行的新部署。</block>
   <block id="e55067e1e9c0716bdbc0866b4393aa68" category="paragraph"><block ref="55218e2079fe45aad8bd65bcb61a1a9f" category="inline-link-rx"></block>(英文)</block>
@@ -5661,16 +5651,12 @@
   <block id="29a97b99a51928e5b93f84b989f0c2a0" category="list-text"><block ref="29a97b99a51928e5b93f84b989f0c2a0" category="inline-link-rx"></block></block>
   <block id="e94250a733abb8fd0b0ca35ccdcc534f" category="inline-link">从Azure Marketplace部署Cloud Volumes ONTAP</block>
   <block id="2f3a59a024a5fa5e6d9049c44506f8b0" category="list-text"><block ref="2f3a59a024a5fa5e6d9049c44506f8b0" category="inline-link-rx"></block></block>
-  <block id="a0edf395a381b81009a4d551086625d0" category="paragraph">NetApp提供了两种在Azure上部署Cloud Volumes ONTAP的选项：通过NetApp BlueXP  或通过Azure市场。Cloud Volumes ONTAP传统上依靠BlueXP  进行部署和流程编排。从Cloud Volumes ONTAP 9.16.1开始、您可以利用Azure Marketplace直接部署、这是一个简化的流程、可以访问一组有限但仍然强大的Cloud Volumes ONTAP功能和选项。</block>
-  <block id="dbb1a2747246b2326a1cd9883fa179ae" category="paragraph">直接从Azure市场部署Cloud Volumes ONTAP时、您无需设置BlueXP  连接器、也无需满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他安全和启用标准。在Azure市场中、只需单击几下鼠标、即可快速部署Cloud Volumes ONTAP、并了解其在您环境中的核心特性和功能。</block>
   <block id="7f307020214b0601581a2750d70801ff" category="paragraph">下面是这两个选项之间的功能比较：</block>
   <block id="e380306ab83464e152f5fd1b794098b0" category="cell">Azure Marketplace</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="cell">BlueXP</block>
   <block id="d001c47858581c979ac478e49c9661c4" category="cell">*入职*</block>
   <block id="c0245bda3ab2426b357c2f1dbac18fe4" category="cell">更短、更简单、直接部署所需的准备工作最少</block>
   <block id="3629ee21db77809980881173196b6920" category="cell">安装过程更长、包括安装BlueXP  连接器</block>
-  <block id="636c10440b3c39954000427bfee3a509" category="cell">*支持的Storage Virtual Machine (SVM)实例*</block>
-  <block id="09a2f54a8d3829f6b3cdbfc1227246d2" category="cell">Edsv5和LsV3</block>
   <block id="79bd8865b968021aedfe3ebf1eea0e3b" category="cell">完整的Storage VM选项。<block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="ee998db55a5373c890946748cb8dafeb" category="cell">* 许可证 *</block>
   <block id="2c99fb634374338e105960f8a1b01571" category="cell">免费许可证</block>
@@ -5694,14 +5680,9 @@
   <block id="d9ec06f53e7680c118a0ed4df5b96fb4" category="cell">*业务处理能力*</block>
   <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">不可用</block>
   <block id="84871953bd62b8893190ef7a6962abe7" category="cell">可通过BlueXP  使用、具体取决于许可证类型</block>
-  <block id="9f8a1e65db2a7b7add1c13eab2e7329d" category="cell">*支持的SVM*数量</block>
-  <block id="48a427743a75b4fdda65b3d4d32ffdb8" category="cell">每个部署一个SVM</block>
-  <block id="0e0d07c97eb79ac52552a16c7231cce9" category="inline-link-macro">支持的SVM数量</block>
-  <block id="2eb6409010ba79c9ad22a8548be0934e" category="cell">多个SVM、具体取决于您的配置。<block ref="b161301467d6eb73d25f41f1916e22c1" category="inline-link-macro-rx"></block></block>
   <block id="bf20643c9f32bd3279ba875a287ff155" category="cell">*正在更改实例类型*</block>
   <block id="eaa4dc5078017a5c5bebf383ab6f5124" category="cell">支持</block>
   <block id="c1ffbcc6fe6835d480213a54893f3a0a" category="cell">* FabricPool分层*</block>
-  <block id="3e829bef915f1e80385b2044bc0d9818" category="paragraph">未来、BlueXP  连接器将能够发现通过Azure Marketplace Direct部署进行的部署、届时您可以体验Cloud Volumes ONTAP的全面管理和流程编排功能。</block>
   <block id="c86757d7a9f77beb628cb57feb3d6c11" category="list-text">Azure Marketplace直接部署：<block ref="1186fe96c0993d10ed337eff0bc3c77c" category="inline-link-macro-rx"></block></block>
   <block id="26e7a962794b94b9597de6c446a143e5" category="list-text">BlueXP  部署：<block ref="be01ed4f242b2cf3f55d254dc6769252" category="inline-link-macro-rx"></block></block>
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP文档</block>
@@ -5734,20 +5715,14 @@
   <block id="4215bf476fb5508d2ab2817180f62fbb" category="paragraph">只能使用NetApp保护数据SVM的数据卷加密(NVE)密钥。有关详细信息，请参阅<block ref="bcad4305f4f69666b0e9823206c949af" category="inline-link-macro-rx"></block>。</block>
   <block id="abf596ebbf2c64b882e111278a49b1e5" category="inline-link">ONTAP文档：EMS配置概述</block>
   <block id="f0bf9f15eadaf8491da2934af661a352" category="paragraph">您可以使用 CLI 配置 EMS 。有关说明，请参阅<block ref="f10f254becd5d3115751852411e7271e" category="inline-link-rx"></block>。</block>
-  <block id="1507fff81105771ed80d838ecc7c825f" category="paragraph">从Cloud Volumes ONTAP 9.161开始、您可以使用Azure Marketplace直接部署从Azure Marketplace快速轻松地部署Cloud Volumes ONTAP、并在您的环境中探索其核心特性和功能。</block>
   <block id="530e18594ace7f1432d409c00afc2454" category="inline-link-macro">了解BlueXP  和市场上的Cloud Volumes ONTAP产品</block>
   <block id="c6291eec01d7eef87347f05c5b6cc5e0" category="paragraph">有关此服务的详细信息，请参见<block ref="1d59ccb0a322b44874ad6d716be992b6" category="inline-link-macro-rx"></block>。</block>
   <block id="b11556db62f78035a974fcf2af350b0c" category="paragraph">使用Azure Marketplace Direct部署部署的Cloud Volumes ONTAP实例具有以下属性：</block>
   <block id="307fba28eaa68023634ac12efe78443d" category="list-text">最新的Cloud Volumes ONTAP版本(9.161或更高版本)。</block>
   <block id="87449344416c32f88eeb38f3bd00e092" category="list-text">Cloud Volumes ONTAP的免费许可证、限制为500 GiB的已配置容量。此许可证不含NetApp支持、也没有到期日期。</block>
   <block id="152058aae87c0f08791efa9a9cbd8167" category="inline-link-macro">灵活的业务流程模式</block>
-  <block id="2d7152ef687c52f17a34fdc2c6507d86" category="list-text">在单个可用性区域(AZ)中以高可用性(HA)模式配置的两个节点、使用默认序列号进行配置。Storage Virtual Machine (SVM)部署在中<block ref="76b8e7a3e49d5a96c336355428b9cbdd" category="inline-link-macro-rx"></block>。</block>
   <block id="860574f2fb3649a1d434d1ed47437a59" category="list-text">默认情况下为实例创建的聚合。</block>
   <block id="c612116a8947c7a85f4c8fb5064a1e13" category="list-text">一个配置容量为500 GiB的高级SSD v2托管磁盘以及一个根磁盘和一个数据磁盘。</block>
-  <block id="bd3fadb8d8a7028f57bf2694979cf325" category="list-text">部署了一个数据SVM、其中包含NFS、CIFS、iSCSI和NVMe/TCP数据服务。不配置其他SVM。</block>
-  <block id="92a96188cb68658c1989215bfbbe6ca3" category="list-text">根据默认序列号安装NFS、CIFS (SMB)、iSCSI、反勒索软件(ARW)、SnapLock和SnapMirror的许可证。</block>
-  <block id="1859d20023fcb6341021ebf7fdf710be" category="inline-link">ONTAP温度敏感型存储效率(TSSE)</block>
-  <block id="76211bb727300454e196855a3a4cc957" category="list-text"><block ref="71b0933f11acfc38fdafc96583ed09c6" category="inline-link-rx"></block>、卷加密和外部密钥管理默认处于启用状态。</block>
   <block id="e028eb7a88e0ab56d3961355b9bc2c4b" category="list-text">不支持以下功能：</block>
   <block id="47f64097ec44c9f18f4025941f2e4436" category="list-text">FabricPool 分层</block>
   <block id="4bfa0affcddbe689db2e9788d1cf9ade" category="list-text">更改实例类型</block>
@@ -5770,9 +5745,7 @@
   <block id="3ad50573794660103eccc594ba3fb4f0" category="list-text">选择一个计划。“*计划*”列表通常显示Cloud Volumes ONTAP的最新版本。</block>
   <block id="37d38a578c31bc624a3f4d4de8fb8daa" category="list-text">在*Basices*选项卡中，提供以下详细信息：</block>
   <block id="3bc9feb66cc347505afe61a873233a22" category="list-text">*订阅*：选择订阅。部署将链接到订阅编号。</block>
-  <block id="7c68030358e9e2caf23b3aab867e6b7d" category="list-text">*资源组*：使用现有资源组或创建新资源组。资源组有助于在一个Cloud Volumes ONTAP实例的一个组中分配所有资源、例如磁盘和SVM。</block>
   <block id="a68271a0eca397a1733f43d9c2db3356" category="list-text">*地区*：选择一个支持在单个AZ中部署Azure HA的地区。您只能在列表中看到可用的区域。</block>
-  <block id="ba0d4387254dca94fa0fcfe4ade5fe3e" category="list-text">*大小*：为受支持的高级SSD v2托管磁盘选择SVM大小。</block>
   <block id="c2b7578dc59578ac85fb03cf8268371d" category="list-text">*Zone*:为您选择的区域选择一个区域。</block>
   <block id="d238bcae22b45e47039da0f3a61c5465" category="list-text">*管理员密码*：设置密码。部署完成后、您可以使用此管理员密码登录到系统。</block>
   <block id="3ee712a8a2fc736d7fea56d098428b49" category="list-text">*确认密码*：重新输入同一密码进行确认。</block>
@@ -5785,8 +5758,6 @@
   <block id="b445825d2f2ddce17b30d5dbc127bb53" category="list-text">在*高级*选项卡中，确认是否已设置此部署所需的两个Azure功能。请参阅<block ref="47d2b322282e9494b913fdbd50384f10" category="inline-link-macro-rx"></block>和<block ref="a99c16252f5b965dd7864967fa4d6812" category="inline-link-macro-rx"></block>。</block>
   <block id="f7dce7f10f1f8cc2b434e0510f469742" category="list-text">您可以在*Tags *选项卡中为资源或资源组定义名称和值对。</block>
   <block id="e5c4df6a4568a2a580b8a3e5b40577b6" category="list-text">在*Review + cree*选项卡中，查看详细信息并开始部署。</block>
-  <block id="cc2ec1706a6cfca4d87ce071f6ae3f37" category="paragraph">选择通知图标以查看部署进度。部署Cloud Volumes ONTAP后、您可以查看列出的SVM以执行操作。</block>
-  <block id="a981e8fb9c5e87d40185a70a414d57e2" category="paragraph">一旦可以访问、请使用ONTAP系统管理器或ONTAP命令行界面使用您设置的管理员凭据登录到SVM。之后、您可以创建卷、LUN或共享、并开始利用Cloud Volumes ONTAP的存储功能。</block>
   <block id="5a8751283cd95032ddf0ec56f5bb1224" category="paragraph">直接通过Azure市场进行的Cloud Volumes ONTAP部署不包括NetApp的支持。如果在部署期间出现任何问题、您可以单独进行故障排除并解决这些问题。</block>
   <block id="e9ad8cb2d3f7ad7951cb5e2ccdf98fcc" category="list-text">在Azure Marketplace站点上、转到*启动诊断&gt;串行日志*。</block>
   <block id="3473bcdf09ad8e881f1d60433d0651a8" category="list-text">下载并调查串行日志。</block>
@@ -5804,7 +5775,6 @@
   <block id="f2e2a9d8fec39c5ee52d89218d616aa0" category="list-text"><block ref="f2e2a9d8fec39c5ee52d89218d616aa0" category="inline-link-rx"></block></block>
   <block id="5eb1845d8b80c05b8cd63e308b13e96b" category="inline-link">为CIFS创建共享</block>
   <block id="624a019a8e50c4a7143df34f2ca60327" category="list-text"><block ref="624a019a8e50c4a7143df34f2ca60327" category="inline-link-rx"></block></block>
-  <block id="77e31285eee4947e5d6f245a2743d957" category="admonition">对于中国地区、只有Cloud Volumes ONTAP 9.12.1 GA 9.13.0 GA才支持单节点部署。您可以将这些版本升级到更高的修补程序和Cloud Volumes ONTAP版本。如果要在中国地区部署更高版本的Cloud Volumes ONTAP、请联系NetApp支持部门。这些地区仅支持直接从NetApp购买的许可证。</block>
   <block id="c97ed7681a179d7bc87ce8f8eed5c351" category="inline-link">ONTAP文档：启用自动防软件保护</block>
   <block id="f508651fe98cc3415eb1f58ed2bed8a0" category="paragraph">有关如何使用ONTAP系统管理器和ONTAP命令行界面启用ARP的详细信息，请参阅<block ref="b15a4c9c991d002f8e900421f382aab3" category="inline-link-rx"></block>。</block>
   <block id="c444f079b1cbf4fc53cc057613986256" category="list-text"><block ref="c444f079b1cbf4fc53cc057613986256" category="inline-link-rx"></block></block>
@@ -5828,9 +5798,33 @@
   <block id="25d5ff4689a1026f322311bc3051ec8f" category="paragraph">有关如何配置和使用NDMP的信息，请参阅<block ref="b4c37f031604033056dedb105a470e07" category="inline-link-rx"></block>。</block>
   <block id="f5b6a4f9fa9546ad87a66d4b329c48ca" category="list-text">*Edge缓存*：许可<block ref="750127709cc754e243313cd0fefb37f3" category="inline-link-rx"></block></block>
   <block id="4365e30d77f5d09dc0920c7810111567" category="paragraph"><block ref="413fcdbad34c678371dd9dcd495f514c" category="inline-link-rx"></block>(英文)</block>
-  <block id="ac3d6636314efc1e17f29c3e409b0f9c" category="sidebar">了解您的部署选项</block>
   <block id="3a02e985ca8f29995c51ae66b1b831f2" category="sidebar">开始使用BlueXP </block>
   <block id="124dec3164ac7246452cc1456ff82f96" category="sidebar">开始进入市场</block>
-  <block id="669267b794602d81727aa564e9017e49" category="sidebar">从市场上部署Cloud Volumes ONTAP</block>
   <block id="3afa4906e9f87a509c6412a260310879" category="sidebar">在AWS中使用EC2实例</block>
+  <block id="62c9277e75aee50ddfb792de79bd94d3" category="doc">现在、新西兰北部地区在Azure中受支持</block>
+  <block id="81ae8423a213b8c9bbcb79aee6ae0af8" category="paragraph">现在、对于Cloud Volumes ONTAP 9.12.1 GA及更高版本的单节点和高可用性(HA)配置、Azure支持新西兰北部地区。请注意、此区域不支持Lsv3实例类型。</block>
+  <block id="b717ddfb2f9a28b7e4673751144693cc" category="paragraph">有关所有受支持地区的列表，请参阅<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
+  <block id="7c2f2acb2655a9e7f8ab7f69bbd0d731" category="paragraph">NetApp提供了两个在Azure上部署Cloud Volumes ONTAP的选项。Cloud Volumes ONTAP传统上依靠BlueXP  进行部署和流程编排。从Cloud Volumes ONTAP 9.16.1开始、您可以利用Azure Marketplace直接部署、这是一个简化的流程、可以访问一组有限但仍然强大的Cloud Volumes ONTAP功能和选项。</block>
+  <block id="89191ae1b044d97b766a182a1727fae4" category="paragraph">直接从Azure市场部署Cloud Volumes ONTAP时、您无需设置BlueXP  连接器、也无需满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他安全和启用标准。在Azure市场中、只需单击几下鼠标、即可快速部署Cloud Volumes ONTAP、并了解其在您环境中的核心特性和功能。</block>
+  <block id="73081e15ff5559e197b273ea471c9aeb" category="cell">*支持的Storage Virtual Machine (Storage VM)实例*</block>
+  <block id="55f3f90910bdc78c8b57d6f9c6044843" category="cell">Edsv5和Lsv3</block>
+  <block id="94302f254b4d602be77fb6e28556ecec" category="cell">*支持的Storage VM*数量</block>
+  <block id="212ecc3006afeac1a27b275b3e8556b8" category="cell">每个部署一个</block>
+  <block id="e3e6a1af04ec174dc41385d29bdd8865" category="cell">多个Storage VM、具体取决于您的配置。<block ref="85b54da0356d83997931fab8f38013e5" category="inline-link-macro-rx"></block></block>
+  <block id="ebd233c7db02fa141c56a433554bbe06" category="paragraph">未来、BlueXP  连接器将能够识别通过Azure Marketplace Direct部署进行的部署。这样、您就可以利用BlueXP  提供的增强功能。</block>
+  <block id="dcfe8b86806ea8eca7c3c29e1d2f915c" category="paragraph">如果您超过BYOL容量或许可证过期、则系统将根据您的商城订阅按小时费率向您收取超额费用。超额费用按市场价格收费、优先使用其他许可证中的可用容量。</block>
+  <block id="8683a88ed22af0c318a9eb6a4fb30537" category="paragraph">路由和防火墙策略必须允许HTTPS流量传输到以下端点、Cloud Volumes ONTAP才能发送AutoSupport消息：</block>
+  <block id="d5788def9bc230ba887427df9594dd27" category="cell"><block ref="d5788def9bc230ba887427df9594dd27" category="inline-link-rx"></block></block>
+  <block id="b1905fad16d0cb92c82e293f1516f810" category="cell">用于在使用客户管理密钥(CMK)时从Azure密钥库检索客户端密钥。</block>
+  <block id="c01c238e45c56b0625dc393a96942f4a" category="paragraph">从Cloud Volumes ONTAP 9.161开始、您可以使用Azure Marketplace Direct部署来快速轻松地部署Cloud Volumes ONTAP。在Azure市场中、只需单击几下鼠标、即可快速部署Cloud Volumes ONTAP、并了解其在您环境中的核心特性和功能。</block>
+  <block id="35acff494427083599ef0a6b5f200d8d" category="list-text">在单个可用性区域(AZ)中以高可用性(HA)模式配置的两个节点、使用默认序列号进行配置。Storage Virtual Machine (Storage VM)部署在中<block ref="76b8e7a3e49d5a96c336355428b9cbdd" category="inline-link-macro-rx"></block>。</block>
+  <block id="b7c4cebe2d8448d4f2e4b92843f79d47" category="list-text">部署了一个数据Storage VM、其中包含NFS、CIFS、iSCSI和NVMe/TCP数据服务。您不能添加任何其他数据Storage VM。</block>
+  <block id="5d98b60eeef8b1f07d860cd9f9341d93" category="list-text">已安装NFS、CIFS (SMB)、iSCSI、反勒索软件(ARW)、SnapLock和SnapMirror的许可证。</block>
+  <block id="5679d39cc8e25e0711af5b5bd3de1661" category="inline-link">ONTAP温度敏感型存储效率(TSSE)</block>
+  <block id="6567e2b7c35d280cea9f3ce8b354c3ae" category="list-text"><block ref="bf02a27a555eff9ad7fe3308b8b66545" category="inline-link-rx"></block>、卷加密和外部密钥管理默认处于启用状态。</block>
+  <block id="5858787d64dc0052d6813b6039e8ad5a" category="list-text">*资源组*：使用现有资源组或创建新资源组。资源组有助于在一个Cloud Volumes ONTAP实例的一个组中分配所有资源、例如磁盘和Storage VM。</block>
+  <block id="00185d9967c9ce9bd7de3a2330aea4ed" category="list-text">*大小*：为受支持的高级SSD v2托管磁盘选择Storage VM大小。</block>
+  <block id="0573433fb185b84611f18e3f6e506cd2" category="paragraph">选择通知图标以查看部署进度。部署Cloud Volumes ONTAP后、您可以查看列出的Storage VM以执行操作。</block>
+  <block id="20a0bd63dc9b064c0cedc40d649eb29a" category="paragraph">一旦可以访问、请使用ONTAP系统管理器或ONTAP命令行界面使用您设置的管理员凭据登录到Storage VM。之后、您可以创建卷、LUN或共享、并开始利用Cloud Volumes ONTAP的存储功能。</block>
+  <block id="1c3093638c74eef35618192ff8049216" category="admonition">对于中国地区、只有Cloud Volumes ONTAP 9.12.1 GA 9.13.0 GA才支持单节点部署。您可以将这些版本升级到更高的修补程序和Cloud Volumes ONTAP版本。如果要在中国地区部署更高版本的Cloud Volumes ONTAP、请联系NetApp支持部门。中国地区仅支持直接从NetApp购买的许可证、不支持市场订阅。</block>
 </blocks>

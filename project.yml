@@ -73,7 +73,7 @@ sidebar:
     - title: 开始使用 Microsoft Azure
       flavor: azure
       entries:
-      - title: 了解您的部署选项
+      - title: 了解Azure中的Cloud Volumes ONTAP部署选项
         url: "/concept-azure-mktplace-direct.html"
       - title: 开始使用BlueXP 
         entries:
@@ -112,9 +112,7 @@ sidebar:
           - title: 追加信息
             url: "/reference-image-verification-links.html"
       - title: 开始进入市场
-        entries:
-        - title: 从市场上部署Cloud Volumes ONTAP
-          url: "/task-deploy-cvo-azure-mktplc.html"
+        url: "/task-deploy-cvo-azure-mktplc.html"
     - title: 开始使用 Google Cloud
       flavor: gcp
       entries:

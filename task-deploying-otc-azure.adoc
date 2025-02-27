@@ -16,7 +16,7 @@ summary: 您可以通过在BlueXP中创建Cloud Volumes ONTAP 工作环境在Azu
 [role="lead"]
 您可以通过在BlueXP中创建Cloud Volumes ONTAP 工作环境在Azure中启动单节点系统或HA对。
 
-.您需要的内容
+.开始之前
 要创建工作环境，您需要满足以下要求。
 
 [[licensing]]
@@ -98,7 +98,7 @@ TIP: 如果要使用WORM和数据分层、则必须禁用BlueXP备份和恢复�
 . *位置*：选择一个区域、可用性区域、vNet和子网、然后选中此复选框以确认连接器与目标位置之间的网络连接。
 +
 
-NOTE: 对于中国地区、只有Cloud Volumes ONTAP 9.12.1 GA 9.13.0 GA才支持单节点部署。您可以将这些版本升级到更高的修补程序和Cloud Volumes ONTAP版本。如果要在中国地区部署更高版本的Cloud Volumes ONTAP、请联系NetApp支持部门。这些地区仅支持直接从NetApp购买的许可证。
+NOTE: 对于中国地区、只有Cloud Volumes ONTAP 9.12.1 GA 9.13.0 GA才支持单节点部署。您可以将这些版本升级到更高的修补程序和Cloud Volumes ONTAP版本。如果要在中国地区部署更高版本的Cloud Volumes ONTAP、请联系NetApp支持部门。中国地区仅支持直接从NetApp购买的许可证、不支持市场订阅。
 
 . *连接*：选择一个新资源组或现有资源组、然后选择是使用预定义的安全组还是使用您自己的资源组。
 +

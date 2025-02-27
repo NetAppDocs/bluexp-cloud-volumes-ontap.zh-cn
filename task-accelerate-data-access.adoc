@@ -33,7 +33,7 @@ video::PBNPVRUeT1o[youtube,width=848,height=480]
 
 在初始卷已加密的Cloud Volumes ONTAP系统上配置FlexCache时、需要执行其他步骤、以确保FlexCache卷可以正确访问和缓存加密数据。
 
-.您需要的内容
+.开始之前
 . *加密设置*：确保源卷已完全加密且正常运行。对于Cloud Volumes ONTAP系统、这涉及到与云专用密钥管理服务集成。
 
 

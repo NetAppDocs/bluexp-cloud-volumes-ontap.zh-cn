@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-从Cloud Volumes ONTAP 9.161开始、您可以使用Azure Marketplace直接部署从Azure Marketplace快速轻松地部署Cloud Volumes ONTAP、并在您的环境中探索其核心特性和功能。
+从Cloud Volumes ONTAP 9.161开始、您可以使用Azure Marketplace Direct部署来快速轻松地部署Cloud Volumes ONTAP。在Azure市场中、只需单击几下鼠标、即可快速部署Cloud Volumes ONTAP、并了解其在您环境中的核心特性和功能。
 
 有关此服务的详细信息，请参见link:concept-azure-mktplace-direct.html["了解BlueXP  和市场上的Cloud Volumes ONTAP产品"]。
 
@@ -23,11 +23,11 @@ summary:
 
 * 最新的Cloud Volumes ONTAP版本(9.161或更高版本)。
 * Cloud Volumes ONTAP的免费许可证、限制为500 GiB的已配置容量。此许可证不含NetApp支持、也没有到期日期。
-* 在单个可用性区域(AZ)中以高可用性(HA)模式配置的两个节点、使用默认序列号进行配置。Storage Virtual Machine (SVM)部署在中link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["灵活的业务流程模式"]。
+* 在单个可用性区域(AZ)中以高可用性(HA)模式配置的两个节点、使用默认序列号进行配置。Storage Virtual Machine (Storage VM)部署在中link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["灵活的业务流程模式"]。
 * 默认情况下为实例创建的聚合。
 * 一个配置容量为500 GiB的高级SSD v2托管磁盘以及一个根磁盘和一个数据磁盘。
-* 部署了一个数据SVM、其中包含NFS、CIFS、iSCSI和NVMe/TCP数据服务。不配置其他SVM。
-* 根据默认序列号安装NFS、CIFS (SMB)、iSCSI、反勒索软件(ARW)、SnapLock和SnapMirror的许可证。
+* 部署了一个数据Storage VM、其中包含NFS、CIFS、iSCSI和NVMe/TCP数据服务。您不能添加任何其他数据Storage VM。
+* 已安装NFS、CIFS (SMB)、iSCSI、反勒索软件(ARW)、SnapLock和SnapMirror的许可证。
 * https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAP温度敏感型存储效率(TSSE)"^]、卷加密和外部密钥管理默认处于启用状态。
 * 不支持以下功能：
 +
@@ -67,9 +67,9 @@ NOTE: 如果您已将资源提供程序"Microsoft.storage"注册到您的订阅�
 . 在*Basices*选项卡中，提供以下详细信息：
 +
 ** *订阅*：选择订阅。部署将链接到订阅编号。
-** *资源组*：使用现有资源组或创建新资源组。资源组有助于在一个Cloud Volumes ONTAP实例的一个组中分配所有资源、例如磁盘和SVM。
+** *资源组*：使用现有资源组或创建新资源组。资源组有助于在一个Cloud Volumes ONTAP实例的一个组中分配所有资源、例如磁盘和Storage VM。
 ** *地区*：选择一个支持在单个AZ中部署Azure HA的地区。您只能在列表中看到可用的区域。
-** *大小*：为受支持的高级SSD v2托管磁盘选择SVM大小。
+** *大小*：为受支持的高级SSD v2托管磁盘选择Storage VM大小。
 ** *Zone*:为您选择的区域选择一个区域。
 ** *管理员密码*：设置密码。部署完成后、您可以使用此管理员密码登录到系统。
 ** *确认密码*：重新输入同一密码进行确认。
@@ -90,9 +90,9 @@ NOTE: 为了符合Microsoft Azure的限制、您应在设置新虚拟网络时�
 
 
 .完成后
-选择通知图标以查看部署进度。部署Cloud Volumes ONTAP后、您可以查看列出的SVM以执行操作。
+选择通知图标以查看部署进度。部署Cloud Volumes ONTAP后、您可以查看列出的Storage VM以执行操作。
 
-一旦可以访问、请使用ONTAP系统管理器或ONTAP命令行界面使用您设置的管理员凭据登录到SVM。之后、您可以创建卷、LUN或共享、并开始利用Cloud Volumes ONTAP的存储功能。
+一旦可以访问、请使用ONTAP系统管理器或ONTAP命令行界面使用您设置的管理员凭据登录到Storage VM。之后、您可以创建卷、LUN或共享、并开始利用Cloud Volumes ONTAP的存储功能。
 
 
 

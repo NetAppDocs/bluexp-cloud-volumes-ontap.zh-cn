@@ -235,7 +235,7 @@ Cloud Volumes ONTAP使用这些端点与各种服务进行通信。
 
 Cloud Volumes ONTAP 需要对NetApp AutoSupport 进行出站Internet访问、NetApp会主动监控系统的运行状况并向NetApp技术支持发送消息。
 
-路由和防火墙策略必须允许通过 HTTP/HTTPS 流量访问以下端点，以便 Cloud Volumes ONTAP 可以发送 AutoSupport 消息：
+路由和防火墙策略必须允许HTTPS流量传输到以下端点、Cloud Volumes ONTAP才能发送AutoSupport消息：
 
 * https://support.netapp.com/aods/asupmessage
 * https://support.netapp.com/asupprod/post/1.0/postAsup

@@ -16,7 +16,7 @@ summary: 您可以从Azure Marketplace导出ONTAP映像、以验证VHD文件的�
 [role="lead"]
 将该vHD映像发布到Azure云后、NetApp将不再管理该映像。而是将发布的映像放置在Azure Marketplace上。在Azure Marketplace上暂存并发布映像时、Azure会更改到VHD的前导1 MB和结尾512 B。要验证该VHD文件的签名、需要首先从Azure Marketplace导出由Azure修改的VHD映像。
 
-.您需要的内容
+.开始之前
 您必须在系统上安装所需的程序。
 
 * 已安装Azure命令行界面、或者可随时通过Azure门户使用Azure Cloud Shell。

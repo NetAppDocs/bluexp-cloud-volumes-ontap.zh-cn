@@ -16,7 +16,19 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 [role="lead"]
 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
-此页面上介绍的增强功能专用于支持Cloud Volumes ONTAP 管理的BlueXP功能。要了解 Cloud Volumes ONTAP 软件本身的新增功能， https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["转至《 Cloud Volumes ONTAP 发行说明》"^]
+此页面上介绍的增强功能专用于支持Cloud Volumes ONTAP 管理的BlueXP功能。要了解Cloud Volumes ONTAP软件本身的新增功能，请访问 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["转至《 Cloud Volumes ONTAP 发行说明》"^]。
+
+
+
+== 2025年3月6日
+
+
+
+=== Cloud Volumes ONTAP 9.16.1 GA
+
+现在、您可以使用BlueXP  在Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.16.1正式发布版。但是、此版本不可在AWS中部署和升级。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 
@@ -24,7 +36,7 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
-=== 现在、新西兰北部地区在Azure中受支持
+=== 在Azure中支持新西兰北部地区
 
 现在、对于Cloud Volumes ONTAP 9.12.1 GA及更高版本的单节点和高可用性(HA)配置、Azure支持新西兰北部地区。请注意、此区域不支持Lsv3实例类型。
 
@@ -223,7 +235,7 @@ WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数�
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.15.1正式发布版。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^](英文)
 
 
 
@@ -259,7 +271,7 @@ Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许�
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.09。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9150-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^](英文)
 
 
 

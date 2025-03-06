@@ -259,7 +259,7 @@ image:screenshot_cot_vol.gif["屏幕截图：显示为 Cloud Volumes ONTAP 实�
 |===
 . * 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能，并根据需要更改卷分层策略。
 +
-有关详细信息，请参阅 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"^] 和 link:concept-data-tiering.html["数据分层概述"^]。
+有关详细信息，请参阅link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["选择卷使用情况配置文件"^]、link:concept-data-tiering.html["数据分层概述"^]和 https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/What_Inline_Storage_Efficiency_features_are_supported_with_CVO#["知识库文章：CVO支持哪些实时存储效率功能？"^]
 
 . * 审核并批准 * ：审核并确认您的选择。
 +

@@ -28,7 +28,7 @@ NetApp提供了两个在Azure上部署Cloud Volumes ONTAP的选项。Cloud Volum
 | *入职* | 更短、更简单、直接部署所需的准备工作最少 | 安装过程更长、包括安装BlueXP  连接器 
 
 
-| *支持的Storage Virtual Machine (Storage VM)实例* | Edsv5和Lsv3 | 完整的Storage VM选项。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^] 
+| *支持的虚拟机(VM)类型* | Edsv5和Lsv3 | 完整的VM类型。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^] 
 
 
 | * 许可证 * | 免费许可证 | 任何基于容量的许可证。link:concept-licensing.html["Cloud Volumes ONTAP 许可"] 

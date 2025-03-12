@@ -20,6 +20,22 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2025年3月12日
+
+
+
+=== Azure中的多可用性区域部署支持新区域
+
+以下地区现在支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署HA多可用性区域：
+
+* 位于美国中部
+* 美国弗吉尼亚州政府(美国政府区域-弗吉尼亚州)
+
+
+有关所有地区的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
+
+
+
 == 2025年3月6日
 
 

@@ -36,6 +36,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2025年3月10日
+
+
+
+=== 通过Azure中的API自动创建Storage VM
+
+现在、您可以使用BlueXP  API为Azure中的Cloud Volumes ONTAP创建、重命名和删除其他提供数据的Storage VM。如果您需要使用Storage VM进行管理、则使用API可以自动执行Storage VM创建过程、包括配置所需的网络接口、LIF和管理LIF。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["在Azure中管理为Cloud Volumes ONTAP提供数据的Storage VM"^]
+
+
+
 == 2025年3月6日
 
 
@@ -129,7 +141,7 @@ NetApp已计划终止基于Cloud Volumes ONTAP节点的许可的可用性(EOA)�
 
 对于年度或长期承诺、NetApp建议您在EOA日期或许可证到期日期之前联系NetApp代表、以确保满足过渡的前提条件。如果您没有Cloud Volumes ONTAP节点的长期合同、并根据按需按需购买(PAYGO)订阅运行系统、则必须在EOS日期之前规划您的转换。对于长期合同和PAYGO订阅、您可以使用BlueXP  许可证转换工具进行无缝转换。
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["基于节点的许可证终止提供"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["将基于节点的许可证转换为基于容量的许可证"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["基于节点的许可证终止提供"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["将基于Cloud Volumes ONTAP节点的许可证转换为基于容量的许可证"^]
 
 
 
@@ -225,7 +237,7 @@ WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数�
 
 详细了解这些功能：
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["提高防范勒索软件的能力"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["为Cloud Volumes ONTAP启用NetApp勒索软件保护解决方案"]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM 存储"]
 
 

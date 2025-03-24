@@ -4,7 +4,7 @@ permalink: concept-security.html
 keywords: security, encryption, antivirus, concepts, key managers, safenet, kms, keys, vscan, encrypt, key management service, cmk, customer master key, data at rest, data-at-rest, netapp storage encryption, certificate signing request, csr, certificate, ca certificate, virus, scan, virus scan, certificate authority, netapp volume encryption, nve, volume encryption, key management server, ransomware, fpolicy, snapshots 
 summary: Cloud Volumes ONTAP 支持数据加密，并提供防病毒和勒索软件保护。 
 ---
-= 安全性
+= 了解Cloud Volumes ONTAP数据加密和勒索软件保护
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -64,7 +64,7 @@ ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[]
 
 在设置外部密钥管理器后，新聚合会默认启用 NetApp 聚合加密（ NAE ）。默认情况下，不属于 NAE 聚合的新卷将启用 NetApp 卷加密（ NVE ）（例如，如果您有在设置外部密钥管理器之前创建的现有聚合）。
 
-设置受支持的密钥管理器是唯一必需的步骤。有关设置说明，请参见 link:task-encrypting-volumes.html["使用 NetApp 加密解决方案对卷进行加密"]。
+设置受支持的密钥管理器是唯一必需的步骤。有关设置说明，请参阅link:task-encrypting-volumes.html["使用NetApp加密解决方案对卷进行加密"]。
 
 ifdef::aws[]
 

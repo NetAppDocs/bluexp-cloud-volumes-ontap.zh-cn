@@ -4,7 +4,7 @@ permalink: concept-aws-elastic-volumes.html
 keywords: elastic volumes, ev, ebs elastic volumes, ebs, amazon ebs, disk growth 
 summary: 通过Cloud Volumes ONTAP 聚合支持Amazon EBS弹性卷功能、可提高性能并增加容量、同时支持BlueXP根据需要自动增加底层磁盘容量。 
 ---
-= AWS中的弹性卷
+= 了解Cloud Volumes ONTAP对AWS Elelic Volumes的支持
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-manage-aggregates.html
 keywords: aggregates, delete aggregates, add disks, view aggregates 
 summary: 您可以通过添加磁盘，查看聚合相关信息以及删除聚合来自行管理聚合。 
 ---
-= 管理聚合
+= 管理Cloud Volumes ONTAP集群的聚合
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

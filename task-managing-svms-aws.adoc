@@ -4,7 +4,7 @@ permalink: task-managing-svms-aws.html
 keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported 
 summary: Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其视为 SVM 或 SVM 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但某些配置支持额外的 Storage VM 。 
 ---
-= 在 AWS 中为 Cloud Volumes ONTAP 创建提供数据的 Storage VM
+= 在AWS中管理为Cloud Volumes ONTAP提供数据的Storage VM
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

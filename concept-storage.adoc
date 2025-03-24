@@ -4,7 +4,7 @@ permalink: concept-storage.html
 keywords: storage, capacity, volumes, aggregates, raw capacity, usable capacity 
 summary: 了解 Cloud Volumes ONTAP 如何使用云存储可以帮助您了解存储成本。 
 ---
-= 磁盘和聚合
+= 用于Cloud Volumes ONTAP集群的磁盘和聚合
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -45,7 +45,7 @@ EBS 存储:: 在 AWS 中，一个聚合最多可以包含 6 个大小相同的�
 --
 最大磁盘大小为 16 TiB 。
 
-底层 EBS 磁盘类型可以是通用 SSD （ GP3 或 GP2 ），配置的 IOPS SSD （ IO1 ）或吞吐量优化型 HDD （ st1 ）。您可以将 EBS 磁盘与 Amazon S3 配对 link:concept-data-tiering.html["将非活动数据分层到低成本对象存储"]。
+底层 EBS 磁盘类型可以是通用 SSD （ GP3 或 GP2 ），配置的 IOPS SSD （ IO1 ）或吞吐量优化型 HDD （ st1 ）。您可以将EBS磁盘与Amazon S3配对到link:concept-data-tiering.html["低成本对象存储"]。
 
 
 NOTE: 使用吞吐量优化型 HDD （ st1 ）时，不建议将数据分层到对象存储。
@@ -83,7 +83,7 @@ ifdef::azure[]
 每个受管磁盘类型的最大磁盘大小为 32 TiB 。
 
 +
-您可以将受管磁盘与 Azure Blob 存储配对 link:concept-data-tiering.html["将非活动数据分层到低成本对象存储"]。
+您可以将托管磁盘与Azure Blb存储配对到link:concept-data-tiering.html["低成本对象存储"]。
 
 
 
@@ -117,7 +117,7 @@ ifdef::gcp[]
 
 在Google Cloud中、一个聚合最多可以包含6个大小相同的磁盘。最大磁盘大小为 64 TiB 。
 
-磁盘类型可以是 _zonal SSD persistent disks_、 _zonal balanced_persistent disks_或 _zonal standard persistent disks_。您可以将永久性磁盘与 Google 存储分段配对 link:concept-data-tiering.html["将非活动数据分层到低成本对象存储"]。
+磁盘类型可以是 _zonal SSD persistent disks_、 _zonal balanced_persistent disks_或 _zonal standard persistent disks_。您可以将具有Google存储分段的永久性磁盘与配对link:concept-data-tiering.html["低成本对象存储"]。
 
 * 相关链接 *
 

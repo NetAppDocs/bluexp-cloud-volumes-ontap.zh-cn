@@ -4,7 +4,7 @@ permalink: concept-worm.html
 keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage, tiering 
 summary: 您可以在 Cloud Volumes ONTAP 系统上激活一次写入、多次读取（ WORM ）存储、以在指定的保留期内以未经修改的形式保留文件。云 WORM 存储由 SnapLock 技术提供支持，这意味着 WORM 文件在文件级别受到保护。 
 ---
-= WORM 存储
+= 了解Cloud Volumes ONTAP上的WORM存储
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

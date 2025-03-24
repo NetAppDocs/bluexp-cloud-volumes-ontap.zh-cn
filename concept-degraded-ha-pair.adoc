@@ -4,7 +4,7 @@ permalink: concept-degraded-ha-pair.html
 keywords: storage takeover, storage giveback, degraded, degraded status, degraded state, ha pair, ha takeover, takeover, giveback 
 summary: 如果 HA 对中的某个节点不可用，则另一个节点将为其配对节点提供数据，以提供持续的数据服务。这称为存储接管。在存储交还完成之前，无法执行多项操作。 
 ---
-= 接管期间操作不可用
+= 当Cloud Volumes ONTAP HA对中的节点脱机时、操作不可用
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

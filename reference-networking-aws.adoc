@@ -4,7 +4,7 @@ permalink: reference-networking-aws.html
 keywords: networking, network, requirements, connection, connections, vpc, security group, security groups, subnets, vpn, internet, nat, s3, dns, ad, active directory, az, availability zone, floating IP, floating, SVM, management LIF, route, route tables, proxy, HTTP, private, tier, s3 endpoint, tiering, storage tier, storage tiering, proxy server, nat device, vpn, snapmanager, snapcenter, iscsi, nfs, cifs, nas, san, outbound, inbound, connections, autosupport, ha, ha pair, high availability 
 summary: BlueXP负责为Cloud Volumes ONTAP 设置网络组件、例如IP地址、网络掩码和路由。您需要确保出站 Internet 访问可用，有足够的专用 IP 地址可用，正确的连接到位等。 
 ---
-= AWS 中的 Cloud Volumes ONTAP 的网络要求
+= 为Cloud Volumes ONTAP设置AWS网络
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ BlueXP负责为Cloud Volumes ONTAP 设置网络组件、例如IP地址、网络�
 
 == 一般要求
 
-以下要求必须在 AWS 中满足。
+确保您已在AWS中满足以下要求。
 
 
 

@@ -4,7 +4,7 @@ permalink: task-azure-download-digest-file.html
 keywords: Azure, image, image signature, download, digest file, decompress, Linux, Mac OS, md5, sha256 
 summary: 您可以从NetApp 支持站点 下载Azure映像摘要文件。 
 ---
-= 下载Azure映像摘要文件
+= 下载适用于Cloud Volumes ONTAP的Azure Marketplace映像摘要
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

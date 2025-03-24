@@ -50,7 +50,7 @@ sidebar:
         url: "/task-planning-your-config.html"
       - title: 设置网络
         entries:
-        - title: 网络要求
+        - title: 设置AWS网络
           url: "/reference-networking-aws.html"
         - title: 设置 AWS 传输网关
           url: "/task-setting-up-transit-gateway.html"
@@ -109,8 +109,6 @@ sidebar:
               url: "/task-file-verification-linux.html"
             - title: Mac OS文件签名验证
               url: "/task-file-verification-mac.html"
-          - title: 追加信息
-            url: "/reference-image-verification-links.html"
       - title: 开始进入市场
         url: "/task-deploy-cvo-azure-mktplc.html"
     - title: 开始使用 Google Cloud
@@ -178,13 +176,13 @@ sidebar:
       entries:
       - title: 在BlueXP中使用Storage VM
         url: "/task-managing-svms.html"
-      - title: 在 AWS 中创建 Storage VM
+      - title: 在AWS中管理Storage VM
         flavor: aws
         url: "/task-managing-svms-aws.html"
-      - title: 在 Azure 中创建 Storage VM
+      - title: 在Azure中管理Storage VM
         flavor: azure
         url: "/task-managing-svms-azure.html"
-      - title: 在Google Cloud中创建Storage VM
+      - title: 在Google Cloud中管理Storage VM
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
       - title: 设置SVM灾难恢复

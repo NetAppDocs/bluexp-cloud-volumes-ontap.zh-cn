@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="29e5950813e59366056c85a091ad2206" category="summary">指定 NTP 服务器可同步网络中各个系统之间的时间，这有助于防止因时间差异而出现问题。</block>
-  <block id="8b3aeec8c25c17c966b0b882195c6050" category="doc">使用 NTP 同步系统时间</block>
   <block id="1f1f850efa98e498783a03f31030e23a" category="summary">您可以查看性能结果、帮助您确定哪些工作负载适合 Cloud Volumes ONTAP 。</block>
   <block id="9446a98ad14416153cc4d45ab8b531bf" category="doc">性能</block>
   <block id="ca44b259d90e5dbd104777ac11dfa9a8" category="section-title">性能技术报告</block>
@@ -60,7 +59,6 @@
   <block id="263ea6b60f41887bb746f383ec4bb424" category="paragraph">正确解决数据丢失问题描述后，您可以清除 NVFAIL 状态，卷将可用于数据访问。</block>
   <block id="440a43d295102d579da0f78b165052a6" category="list-text">清除 NVFAIL 状态</block>
   <block id="b0ed905668b5ca4fe39a1e3a130692a9" category="list-text">`vol modify -volume &lt;vol-name&gt; -in-nvfailed-state false`</block>
-  <block id="7ca1af679f0ba86814f2ad58a578cb7c" category="doc">在 Azure 中启动 Cloud Volumes ONTAP</block>
   <block id="17871dd6725112548c5735d13d60d639" category="paragraph">要创建工作环境，您需要满足以下要求。</block>
   <block id="ad1cc9fdb978e0b0a5e397b3152a1867" category="list-text">已启动且正在运行的连接器。</block>
   <block id="c501058ef93efe907f1517f309ec8be3" category="inline-link">您应做好准备，使 Connector 始终保持运行</block>
@@ -137,7 +135,6 @@
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="list-title">完成后</block>
   <block id="1e57268fd975664444ddbda428e56bf7" category="list-text">如果配置了 CIFS 共享、请授予用户或组对文件和文件夹的权限、并验证这些用户是否可以访问该共享并创建文件。</block>
   <block id="d3a8708751ac3ed361daf8babcdabcc4" category="paragraph">配额允许您限制或跟踪用户、组或 qtree 使用的磁盘空间和文件数量。</block>
-  <block id="049a8722d9a2366145bef1fc4b429506" category="doc">管理 Cloud Volumes ONTAP 的状态</block>
   <block id="43a0c13e1a1befde3ea78446dc73bc97" category="section-title">计划自动关闭 Cloud Volumes ONTAP</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">关于此任务</block>
   <block id="4df66712f957d539001edc73bbb48742" category="list-text">此任务会安排 HA 对中两个节点的自动关闭。</block>
@@ -251,8 +248,6 @@
   <block id="0bf3330853877ab4b76b4f1e00d3ace2" category="list-text">NVE 一次对一个卷的空闲数据进行加密。每个数据卷都有自己唯一的加密密钥。</block>
   <block id="988d5e992ea371904581e6f8ad13bac7" category="list-text">NAE 是 NVE 的扩展—它对每个卷的数据进行加密，并且这些卷在聚合中共享一个密钥。NAE 还允许对聚合中所有卷之间的公用块进行重复数据删除。</block>
   <block id="e1bf87c98edd3bee07d170ae8b118aeb" category="paragraph">在设置外部密钥管理器后，新聚合会默认启用 NetApp 聚合加密（ NAE ）。默认情况下，不属于 NAE 聚合的新卷将启用 NetApp 卷加密（ NVE ）（例如，如果您有在设置外部密钥管理器之前创建的现有聚合）。</block>
-  <block id="7d0e2e1d7651a009804fe72f40cbe851" category="inline-link-macro">使用 NetApp 加密解决方案对卷进行加密</block>
-  <block id="c72ccd5a97e66dfed845a067416a28fe" category="paragraph">设置受支持的密钥管理器是唯一必需的步骤。有关设置说明，请参见 <block ref="c1c73aa6d8632695e64032f90002d60a" category="inline-link-macro-rx"></block>。</block>
   <block id="d200c22f00ca54467dc4ad3823710388" category="inline-link">AWS 密钥管理服务（ KMS ）</block>
   <block id="b7e9ad250523d385d7738ce667a69f9f" category="admonition">创建 Cloud Volumes ONTAP 系统后，您无法更改 AWS 数据加密方法。</block>
   <block id="e9993ec838a8efa5cfb29506f884deca" category="inline-link-macro">设置 AWS KMS</block>
@@ -301,7 +296,6 @@
   <block id="74c223c0ac10d19fc933bf44bdfae707" category="list-text">* 连接 * ：为 HA 配置选择四个不同的 VPC ，每个 VPC 中选择一个子网，然后选择防火墙策略。</block>
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">详细了解网络要求</block>
   <block id="7e1b099e8ddd48733a860e9dc84718f9" category="paragraph"><block ref="81d7ec58de725abfb78667b4f46a89ab" category="inline-link-macro-rx"></block>。</block>
-  <block id="243c363888d8a767b0c39057fd91bece" category="doc">删除 Cloud Volumes ONTAP 系统</block>
   <block id="ab3fdba113c7d85bf4272c78761ef0b8" category="inline-link">如有必要，删除备份</block>
   <block id="57cbefe39109ab51b31e818f9ce6d9c4" category="list-text">删除 Cloud Volumes ONTAP 工作环境。</block>
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">在 " 画布 " 页面上，双击要删除的 Cloud Volumes ONTAP 工作环境的名称。</block>
@@ -335,55 +329,9 @@
   <block id="20610cb7f9c01ec73f383961d032fd84" category="section-title">通过自动容量管理来管理 LUN</block>
   <block id="4a09d3372bdfe35169604b0ed1fbee82" category="section-title">手动容量管理</block>
   <block id="0ca27a1b4f5a64b823a04f58a204d499" category="summary">Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其视为 SVM 或 SVM 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但某些配置支持额外的 Storage VM 。</block>
-  <block id="65cc3fef2113d2e1d1f636ab8cb02386" category="doc">在 Azure 中为 Cloud Volumes ONTAP 创建提供数据的 Storage VM</block>
-  <block id="479c3296d54e6f4715be2e37ee57edf1" category="paragraph">Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其识别为 _svm_ 或 _vserver_ 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但在 Azure 中运行 Cloud Volumes ONTAP 时，支持其他 Storage VM 。</block>
-  <block id="a58a1a73a0fc2d46b2c8d3212a81b76b" category="paragraph">要创建其他提供数据的 Storage VM ，您需要在 Azure 中分配 IP 地址，然后运行 ONTAP 命令来创建 Storage VM 和数据 LIF 。</block>
   <block id="bbf8762fd7719517f7567e338ea9aa0b" category="section-title">支持的 Storage VM 数量</block>
   <block id="61a207d9bd50b686e92d93d0f36e5fd4" category="paragraph">所有其他 Cloud Volumes ONTAP 配置均支持一个提供数据的 Storage VM 和一个用于灾难恢复的目标 Storage VM 。如果源 Storage VM 发生中断，您可以激活目标 Storage VM 以进行数据访问。</block>
-  <block id="bc2d82be5ce2a751775a44460f5f36ae" category="section-title">在 Azure 中分配 IP 地址</block>
-  <block id="2c1d1f56d207e6b42d7866029b8f4f38" category="list-text">登录到 Azure 门户并打开 * 虚拟机 * 服务。</block>
-  <block id="dd5a058a2c46a43106332205c45a30ee" category="list-text">单击 Cloud Volumes ONTAP VM 的名称。</block>
-  <block id="e63661b2472f7f4dc8a5b7065ca6d208" category="list-text">单击 * 网络连接 * 。</block>
-  <block id="1610b48e6b730ea719aa58edd2bd7f8f" category="list-text">单击 nic0 的网络接口名称。</block>
-  <block id="b19099ea0de1f8c1bb7e71583234b1f4" category="list-text">在 * 设置 * 下，单击 * IP 配置 * 。</block>
-  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">单击 * 添加 * 。</block>
-  <block id="9c13fa64c3b08e53658431a53f9c6b28" category="list-text">输入 IP 配置的名称，选择 * 动态 * ，然后单击 * 确定 * 。</block>
-  <block id="4835f23f6ce17d26f5e908f04392b0e7" category="list-text">单击刚刚创建的 IP 配置的名称，将 * 分配 * 更改为 * 静态 * ，然后单击 * 保存 * 。</block>
-  <block id="42986462673b87a9a58e425c4a99bb91" category="paragraph">最好使用静态 IP 地址，因为静态 IP 可确保 IP 地址不会更改，这有助于防止应用程序发生不必要的中断。</block>
-  <block id="69aaba68c1c7e074c02079ece294e4ca" category="list-text">如果要创建 SVM 管理 LIF ，请在节点 1 上重复这些步骤。</block>
-  <block id="b961dd3512f483e2a3c032644c80c59b" category="paragraph">复制刚刚创建的专用 IP 地址。在为新 Storage VM 创建 LIF 时，您需要指定这些 IP 地址。</block>
-  <block id="de6c446eec02722de82f7d7eaffa3970" category="paragraph">在创建 Storage VM 和分配 LIF 之前，必须在 Azure 中将 iSCSI IP 地址分配给 nic0 。iSCSI 的 IP 分配给 nic0 ，而不是负载平衡器，因为 iSCSI 使用 ALUA 进行故障转移。</block>
-  <block id="27f352c696e29cd9fd0f401648ff9862" category="list-text">单击节点 1 的 Cloud Volumes ONTAP VM 的名称。</block>
-  <block id="160ff1b01bd06e8151784b706f33a6a1" category="list-text">在节点 2 上重复上述步骤。</block>
-  <block id="7be0ecb9e73595d673d5fbaed0cb6378" category="list-text">在 Azure 门户中，打开 * 负载平衡器 * 服务。</block>
-  <block id="8097feb21f6c4186704bf26f92131fe0" category="list-text">单击 HA 对的负载平衡器的名称。</block>
-  <block id="91755019ec4f9b4503c2abd1e2018220" category="list-text">在 * 设置 * 下，单击 * 前端 IP 配置 * 。</block>
-  <block id="fde48a87720c7f4a7b3fe579cf70ce21" category="inline-image-macro">在选择了名称和子网的 Azure 门户中添加前端 IP 地址的屏幕截图。</block>
-  <block id="0da801a9d3d38ccf39fc77f357cbd875" category="list-text">单击刚刚创建的前端 IP 配置的名称，将 * 分配 * 更改为 * 静态 * ，然后单击 * 保存 * 。</block>
-  <block id="0f21ca89d8c8b745954f3d9e19a0dd80" category="list-text">为刚刚创建的每个前端 IP 添加运行状况探测。</block>
-  <block id="1b45149e0b23a41687b2084ae6d33a48" category="list-text">在负载平衡器的 * 设置 * 下，单击 * 运行状况探针 * 。</block>
-  <block id="dc5af89bd23317abec464d2c75aeaac1" category="list-text">输入运行状况探测的名称，并输入介于 63005 和 65000 之间的端口号。保留其他字段的默认值。</block>
-  <block id="8d5ccc6064bf24d956199fe629c8a705" category="paragraph">端口号必须介于 63005 和 65000 之间，这一点很重要。例如，如果要创建三个运行状况探测，则可以输入端口号为 63005 ， 63006 和 63007 的探测。</block>
-  <block id="3f158195d787a76b9930725abf90217b" category="inline-image-macro">在输入名称和端口的 Azure 门户中添加运行状况探针的屏幕截图。</block>
-  <block id="7221eeb99a62a5c16a91eaad3abc1af7" category="paragraph"><block ref="7221eeb99a62a5c16a91eaad3abc1af7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0f0494656b267aab37751c30e5a8a07e" category="list-text">为每个前端 IP 创建新的负载平衡规则。</block>
-  <block id="f11380e89562c6ffb0067deb927a00ee" category="list-text">在负载平衡器的 * 设置 * 下，单击 * 负载平衡规则 * 。</block>
-  <block id="b46de1ad1e07b7775bace9bf4917a405" category="list-text">单击 * 添加 * 并输入所需信息：</block>
-  <block id="a914e28fc43d170da9c2b2b78518eb37" category="list-text">* 名称 * ：输入规则的名称。</block>
-  <block id="1e4efbe4a8dfa84e3f6f93e1573c601e" category="list-text">* IP 版本 * ：选择 * IPv4 * 。</block>
-  <block id="1ddd50f122f73d126a4cb3fee90d2b7b" category="list-text">* 前端 IP 地址 * ：选择刚刚创建的前端 IP 地址之一。</block>
-  <block id="8328ee96d378b2984c58f116fcccd3a6" category="list-text">* 高可用性端口 * ：启用此选项。</block>
-  <block id="741c2eb7c095a3b40a6d1715966dbeb6" category="list-text">* 后端池 * ：保留已选择的默认后端池。</block>
-  <block id="9e72535253d8088038289763956d0b16" category="list-text">* 运行状况探测 * ：选择为选定前端 IP 创建的运行状况探测。</block>
-  <block id="36703ed8697639a53fe06da2f1d77acc" category="list-text">* 会话持久性 * ：选择 * 无 * 。</block>
-  <block id="f1830206581ce60d04d4025551d9e990" category="list-text">* 浮动 IP* ：选择 * 已启用 * 。</block>
-  <block id="0763674e9bf55481025f48bd27d7aa67" category="inline-image-macro">在 Azure 门户中添加负载平衡规则以及上述字段的屏幕截图。</block>
-  <block id="4dfb9365c6db058f009ea80d9ad1d88a" category="paragraph"><block ref="4dfb9365c6db058f009ea80d9ad1d88a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5031fdddd713681aa180d7bfa60b1f72" category="paragraph">确保 Cloud Volumes ONTAP 的网络安全组规则允许负载平衡器为在上述步骤 4 中创建的运行状况探测发送 TCP 探测。请注意，默认情况下允许这样做。</block>
-  <block id="a094ded8d387643804f456ad69ef9c4e" category="section-title">创建 Storage VM 和 LIF</block>
   <block id="9b08db40ecf3304d34c7dadb34a6d2c2" category="list-text">创建 Storage VM 和指向 Storage VM 的路由。</block>
-  <block id="622931dd0b6724a34dfe5a4f99b9a820" category="list-text">使用以下命令在节点 1 上创建 NAS LIF 。</block>
-  <block id="604199268b7709a557c60a09df0624bf" category="list-text">使用以下命令在节点 1 上创建 iSCSI LIF 。</block>
   <block id="67694021a675f2be09781b9b9c744e99" category="list-text">可选：在节点 1 上创建 Storage VM 管理 LIF 。</block>
   <block id="8ec18a80b08142a9ee538b8ce4350b54" category="summary">随着存储需求的变化，您可能需要更改 Cloud Volumes ONTAP 系统的配置。例如，您可以在 " 按需购买 " 配置之间进行更改，更改实例或 VM 类型等。</block>
   <block id="c2c088d1045cc3d76d132b248c4445c1" category="doc">修改系统写入速度</block>
@@ -683,7 +631,6 @@
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">ONTAP 文档</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">Cloud Volumes ONTAP 中的 WORM 存储在 " 可信存储管理员 " 模式下运行。虽然 WORM 文件不受更改或修改的影响，但集群管理员可以删除卷，即使这些卷包含未过期的 WORM 数据也是如此。</block>
-  <block id="c65544a3678422a2d15f8bc1a12dec12" category="doc">创建 FlexVol 卷</block>
   <block id="9a78a69978c460378acf553a1b850e91" category="paragraph">有关卷配置的一些注意事项：</block>
   <block id="f6624758e1ac18d59af363d92430c58d" category="inline-xref">使用 IQN 从主机连接到 LUN</block>
   <block id="b4bf394344d874ef0478f5ed2de8136f" category="inline-link-macro">Cloud Volumes ONTAP for AWS 的网络要求</block>
@@ -727,7 +674,6 @@
   <block id="8da4ea7971e73407bb70003f96f11e26" category="admonition">对于部署在多个 AWS 可用性区域中的 HA 对，您必须使用卷所在节点的浮动 IP 地址将卷挂载到客户端。</block>
   <block id="0585816464c7ee31f3fffe3d7a12fcb1" category="section-title">创建卷后</block>
   <block id="2d136412703a915f2b3b47846e42252a" category="summary">您可以通过添加磁盘，查看聚合相关信息以及删除聚合来自行管理聚合。</block>
-  <block id="08648df35499562b62cbf1ab3e9bf7ec" category="doc">管理聚合</block>
   <block id="05c1f921312a3701ff4fe737635bbfb0" category="paragraph">如果要删除聚合、必须先删除聚合中的卷。</block>
   <block id="47a29d3d79731f5f3ac2e35595cdd5a9" category="list-text">在 " 画布 " 页面上，双击要管理聚合的 Cloud Volumes ONTAP 工作环境。</block>
   <block id="4ee08bb978546541b2d29cc9458a50b6" category="list-text">管理聚合：</block>
@@ -741,7 +687,6 @@
   <block id="ae72beb81d5834d2f01cddc522f75aab" category="paragraph">事件管理系统（ EMS ）收集并显示有关 ONTAP 系统上发生的事件的信息。要接收事件通知、您可以为特定事件严重性设置事件目标（电子邮件地址、 SNMP 陷阱主机或系统日志服务器）和事件路由。</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">快速入门</block>
   <block id="627dbb600651aad7173ae13133dfe740" category="summary">Cloud Volumes ONTAP PAYGO 系统附带 NetApp 提供的支持，但您必须先向 NetApp 注册这些系统以激活支持。</block>
-  <block id="a37ea04c3e1568f7c0e8e6abc9104d40" category="doc">注册按需购买的系统</block>
   <block id="969ea14c5bc8e5c519f2569d0b7e4ead" category="inline-link-macro">本页介绍</block>
   <block id="145677a5a159dfbbd80d693eb835dd56" category="paragraph">要使用任何方法升级 ONTAP 软件，需要向 NetApp 注册 PAYGO 系统 <block ref="a298d5e88f2fe29dd7b686b16fbea686" category="inline-link-macro-rx"></block>。</block>
   <block id="17a487ae56e17c3c175366c070697ba7" category="inline-link">了解如何添加 NetApp 支持站点帐户</block>
@@ -756,7 +701,6 @@
   <block id="b23d86c1b874ee74dd85f24b658848b7" category="paragraph"><block ref="b23d86c1b874ee74dd85f24b658848b7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2180cb7bd670dcd385a7b5e609212943" category="list-text">在登录提示符处，输入管理员帐户的密码。</block>
   <block id="4760896a3351a42c072a61eb664108e5" category="summary">您可以修改 AWS 路由表，其中包含部署在多个 AWS 可用性区域中的 HA 对的浮动 IP 地址的路由。如果新的 NFS 或 CIFS 客户端需要访问 AWS 中的 HA 对，则可以执行此操作。</block>
-  <block id="f431a02cb5c1646114365a3adfa4233b" category="doc">更改多个 AZs 中 HA 对的路由表</block>
   <block id="89cac051c93d21ebf3a23db9a240bbd1" category="paragraph">您可以修改 AWS 路由表，其中包含部署在多个 AWS 可用性区域（ AZs ）中的 HA 对的浮动 IP 地址的路由。如果新的 NFS 或 CIFS 客户端需要访问 AWS 中的 HA 对，则可以执行此操作。</block>
   <block id="ce501a2e9d8b238043619a3db4abc141" category="list-text">修改选定路由表的列表，然后单击 * 保存 * 。</block>
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Azure 区域对</block>
@@ -1115,7 +1059,6 @@
   <block id="444f10b28a63ab25d9664d0647602d07" category="list-text">Cloud Volumes ONTAP 不支持在重新启动后重新恢复缓存。</block>
   <block id="fa6508c512d74f7de26a21390af6951b" category="doc">AWS 中的 Cloud Volumes ONTAP 的网络要求</block>
   <block id="a1a264e616e24563d4b8f8b5795ea403" category="section-title">一般要求</block>
-  <block id="3091fa13c48831b4d7d6e8b6cb4b5bb1" category="paragraph">以下要求必须在 AWS 中满足。</block>
   <block id="5908bdfb58aef23bebf7df36d49b9dfb" category="section-title">Cloud Volumes ONTAP 节点的出站 Internet 访问</block>
   <block id="ea42efb0eb933b55c2c4a89d521450df" category="list-text">https://support.netapp.com/aods/asupmessage</block>
   <block id="139bae98c3a8ead645c078cb26b93bd1" category="list-text">https://support.netapp.com/asupprod/post/1.0/postAsup</block>
@@ -1326,7 +1269,6 @@
   <block id="876f62e75a1f45f9bc7d03ac9a0db173" category="paragraph">请注意， 32 是一个示例值。应使用的值取决于 NAT 配置以及可以同时拥有的会话数。</block>
   <block id="4ae719205766e20198cc595136cbf10c" category="inline-link">了解有关 /ocem/config API 调用的更多信息</block>
   <block id="5ac123f6eee32c0fe88eeab92338a1a4" category="summary">FlexCache 卷是一种存储卷，用于缓存原始卷或源卷中的 NFS 读取数据。后续读取缓存的数据会加快对该数据的访问速度。</block>
-  <block id="d5ce201ca4cc42ba6b38e9166bcef415" category="doc">利用 FlexCache 卷加快数据访问速度</block>
   <block id="90c624683582774042156c98858d14dc" category="paragraph">您可以使用 FlexCache 卷加快数据访问速度，或者从访问量较多的卷卸载流量。FlexCache 卷有助于提高性能，尤其是在客户端需要重复访问相同数据时，因为可以直接提供数据，而无需访问原始卷。FlexCache 卷非常适合读取密集型系统工作负载。</block>
   <block id="29e15f4a6477b08e72892d33f28001ce" category="inline-link">《 FlexCache 卷加快数据访问高级指南》</block>
   <block id="f2a7a46cc845b377d163ce816c723b41" category="list-text"><block ref="f2a7a46cc845b377d163ce816c723b41" category="inline-link-rx"></block></block>
@@ -1355,8 +1297,6 @@
   <block id="faba202f20e7ef67ff97d9097e268982" category="section-title">AWS 存储</block>
   <block id="699a53f8b6c691bbc6e437ae620685f7" category="paragraph">在 AWS 中， Cloud Volumes ONTAP 将 EBS 存储用于用户数据，并将本地 NVMe 存储用作某些 EC2 实例类型的 Flash Cache 。</block>
   <block id="274282151718f163e0f1ba6da8588d2f" category="list-text">EBS 存储</block>
-  <block id="3b4f2c0ef76da93b9a05416912b2ab5e" category="inline-link-macro">将非活动数据分层到低成本对象存储</block>
-  <block id="c2bd9a205e3f7a9d01f0534822cbff80" category="paragraph">底层 EBS 磁盘类型可以是通用 SSD （ GP3 或 GP2 ），配置的 IOPS SSD （ IO1 ）或吞吐量优化型 HDD （ st1 ）。您可以将 EBS 磁盘与 Amazon S3 配对 <block ref="767b2bdd82880da72a9a5d87e1fd40da" category="inline-link-macro-rx"></block>。</block>
   <block id="97329aff812b28715c211efe44a78032" category="list-text">本地 NVMe 存储</block>
   <block id="d972474de88f813a7a04eb9b78f672ee" category="list-text">某些 EC2 实例类型包括本地 NVMe 存储， Cloud Volumes ONTAP 将其用作 <block ref="453179a92f33277aeed8bea1597d5257" category="inline-link-macro-rx"></block>。</block>
   <block id="338e0e62b3ed08d62699895c11d29a14" category="paragraph">* 相关链接 *</block>
@@ -1373,7 +1313,6 @@
   <block id="cc9198979434b483c842956cafd0f2b9" category="list-text">标准 SSD 受管磁盘 _ 可为需要低 IOPS 的工作负载提供稳定一致的性能。</block>
   <block id="3bd02bf5ff179461fb4f60bda2ac3a05" category="list-text">如果您不需要高 IOPS 并希望降低成本， _Standard HDD 受管磁盘 _ 是一个不错的选择。</block>
   <block id="aba7d83fbcf4393f33b8acf1f6ff00a3" category="paragraph">每个受管磁盘类型的最大磁盘大小为 32 TiB 。</block>
-  <block id="bb648ece982c20c24a62b827d539a0d3" category="paragraph">您可以将受管磁盘与 Azure Blob 存储配对 <block ref="767b2bdd82880da72a9a5d87e1fd40da" category="inline-link-macro-rx"></block>。</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="list-text">HA 对</block>
   <block id="d84a1b6afc8f4cdf056ef6e53b716320" category="inline-link">Microsoft Azure 文档： Azure 托管磁盘类型</block>
   <block id="42c993d25b60960c2e27841e9528829e" category="list-text"><block ref="42c993d25b60960c2e27841e9528829e" category="inline-link-rx"></block></block>
@@ -1382,7 +1321,6 @@
   <block id="54239851395044f4ec26756a8da66c66" category="inline-link-macro">了解如何在 Azure 中为您的系统选择磁盘类型和磁盘大小</block>
   <block id="97c5e7276e2eb176107d121083f55cb9" category="list-text"><block ref="97c5e7276e2eb176107d121083f55cb9" category="inline-link-macro-rx"></block></block>
   <block id="7d190e1289a34549215a87ba75ca22b3" category="inline-link">查看 Azure 中 Cloud Volumes ONTAP 的存储限制</block>
-  <block id="e261e4463ca8a8d53b2ed70156b40345" category="paragraph">磁盘类型可以是 _zonal SSD persistent disks_、 _zonal balanced_persistent disks_或 _zonal standard persistent disks_。您可以将永久性磁盘与 Google 存储分段配对 <block ref="767b2bdd82880da72a9a5d87e1fd40da" category="inline-link-macro-rx"></block>。</block>
   <block id="6371ae3dff33e72574b28de08b0185ce" category="section-title">RAID 类型</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">已知限制确定了本产品版本不支持的平台、设备或功能、或者这些平台、设备或功能无法与产品正确交互操作。仔细审查这些限制。</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
@@ -1415,7 +1353,6 @@
   <block id="a7ebde4ba503ec21f33259cc56ce827f" category="cell">Azure 信息</block>
   <block id="a2f3899afcc452f690cc60c38609343a" category="cell">虚拟网络（ VNet ）</block>
   <block id="23e95605ee0aa909f15e50833d6671a9" category="cell">网络安全组（如果使用您自己的组）</block>
-  <block id="0c0c93dcca58dc6ba5a46ef2bf56980b" category="doc">提高防范勒索软件的能力</block>
   <block id="6fd2a34cb3ac050adc4e4ef8cbaf3727" category="list-text">实施 NetApp 解决方案 for 勒索软件：</block>
   <block id="630bed2396b7232862aa978bb71ea4a6" category="list-text">如果卷未启用 Snapshot 策略，请单击 * 激活 Snapshot 策略 * 。</block>
   <block id="939f63aeda74246a5fa38c869770bd7c" category="paragraph">NetApp Snapshot 技术可为勒索软件补救提供业内最佳的解决方案。成功恢复的关键在于从未受感染的备份中还原。Snapshot 副本为只读副本，可防止勒索软件损坏。它们还可以提供创建单个文件副本或完整灾难恢复解决方案映像的粒度。</block>
@@ -1426,7 +1363,6 @@
   <block id="56a50532d8da2bebb09d6190c126140c" category="doc">管理基于容量的许可证</block>
   <block id="93ed65a89f306426be7980ddc22595e8" category="paragraph">_capacity-based licenses_ 使您能够按每 TiB 容量为 Cloud Volumes ONTAP 付费。</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">单击 * 添加许可证 * 。</block>
-  <block id="d39a322c0902d3bf2bf75781b1e1c8ab" category="doc">创建用于数据分层和备份的服务帐户</block>
   <block id="5632566b6a310163e5233af96d1f233d" category="paragraph">Cloud Volumes ONTAP 使用服务帐户访问和管理一个分层数据存储分段和另一个备份存储分段。</block>
   <block id="ab6fcc124e86604f6bab5da13aaea51a" category="inline-link">转到服务帐户页面</block>
   <block id="7dc4b63dc4834aecd751b91ed3de3d39" category="list-text">在 Google Cloud 控制台中，<block ref="72863ecd427c906452e0c3d21111bdac" category="inline-link-rx"></block>。</block>
@@ -1442,7 +1378,6 @@
   <block id="a5058cd0a38eec60b5f0bd65c76814ee" category="paragraph">稍后在创建 Cloud Volumes ONTAP 工作环境时，您需要选择服务帐户。</block>
   <block id="280ee264bbde91d0e35a15c5c017570d" category="inline-image-macro">详细信息和凭据页面的屏幕截图，您可以在其中为 Cloud Volumes ONTAP 启用服务帐户。</block>
   <block id="391642837451179291d9fd13ff003fec" category="paragraph"><block ref="391642837451179291d9fd13ff003fec" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0daeee03840a908c7a9d415a97549f99" category="doc">在 AWS 中为 Cloud Volumes ONTAP 创建提供数据的 Storage VM</block>
   <block id="cec354b08dcbe847db5c3affb7ef61d9" category="paragraph">要创建其他提供数据的 Storage VM ，您需要在 AWS 中分配 IP 地址，然后根据 Cloud Volumes ONTAP 配置运行 ONTAP 命令。</block>
   <block id="de46d59a02fe19ad1b544dca44f92e5f" category="section-title">验证配置限制</block>
   <block id="88543976e7398b72c1b340809002ebef" category="paragraph">每个 EC2 实例支持每个网络接口的最大专用 IPv4 地址数。在 AWS 中为新 Storage VM 分配 IP 地址之前，您需要验证此限制。</block>
@@ -1658,7 +1593,6 @@
   <block id="92d6097e791c2b01c7cc0104f3a00d02" category="inline-link">Google Cloud 文档：使用客户管理的加密密钥</block>
   <block id="8d6456bdd46775a0bde58d79fa727b86" category="paragraph">有关详细信息，请参见<block ref="0d1fec14af342ac3f0970d5f69f9ea12" category="inline-link-rx"></block></block>
   <block id="4d5272b77be8e6cf2d9611b8c660d0aa" category="list-text">创建工作环境时，请在 API 请求中使用 "GcpEncryption" 参数。</block>
-  <block id="412590af9448ac66459e9c3d686de880" category="doc">Azure 中的 Cloud Volumes ONTAP 的网络要求</block>
   <block id="72928bd9aacf64df0eb1285c03f5f5c0" category="section-title">Cloud Volumes ONTAP 的要求</block>
   <block id="098d8cb8c4a1291e10ee07b333610f24" category="paragraph">在 Azure 中必须满足以下网络连接要求。</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="section-title">IP 地址</block>
@@ -1756,7 +1690,6 @@
   <block id="895dacd81cbc05951744c0bce981546c" category="list-text">每个 Cloud Volumes ONTAP 系统的已配置容量限制为 500 GiB 。</block>
   <block id="46cb473c7acee70e9be90113f3acce9d" category="list-text">在任何云提供商中，每个 NetApp 帐户最多可以使用 10 个 Cloud Volumes ONTAP 系统以及免费提供的产品。</block>
   <block id="2b5b1f6feb7719bc282a3518f33b1784" category="paragraph">配置容量小于 500 GiB 的任何其他系统都会保留在 Freemium 上（只要这些系统是使用 Freemium 产品部署的）。</block>
-  <block id="6602afb860a6cca23c3b75bf601365eb" category="inline-link-macro">在 AWS 中启动 Cloud Volumes ONTAP</block>
   <block id="68935a38790e91889cd56742a47079f3" category="paragraph">例如，您可以购买一个 20 TiB 许可证，部署四个 Cloud Volumes ONTAP 系统，然后为每个系统分配一个 5 TiB 卷，总共 20 TiB 。该容量可供在该帐户中部署的每个 Cloud Volumes ONTAP 系统上的卷使用。</block>
   <block id="6cc9f034206d1e740ca9a065330721b4" category="list-text">选择 Cloud Volumes ONTAP 配置：</block>
   <block id="d7a4c9387784a4f0820a7a6500b673bc" category="list-text">单节点或 HA 系统</block>
@@ -1888,7 +1821,6 @@
   <block id="07c1e6ebf913a40fd18f3f57f20d6d68" category="list-text">9.8 或更高版本： 2 天到 183 天</block>
   <block id="a6f44cada6b6ce69a44f85c0c202e270" category="list-text">9.7 或更早版本： 2 天到 63 天</block>
   <block id="2e1602577b506088aeed8165e506d1e4" category="list-text">创建卷或修改现有卷时，请在 API 请求中使用 _minimumCoolingDays_ 参数。</block>
-  <block id="95d79008b0be56c31d097e76b7584763" category="doc">更改 Cloud Volumes ONTAP 的密码</block>
   <block id="aec821c01e23f20e98a9438c7d2dd253" category="summary">在 Azure 中的 Cloud Volumes ONTAP 上使用 Azure 存储服务加密和 Microsoft 管理的密钥自动对数据进行加密。但是，您可以按照此页面上的步骤使用自己的加密密钥。</block>
   <block id="e76c0365dfa8d6b43992d790f582e6c4" category="doc">设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥</block>
   <block id="56d8602584b412c6fa4268dd3cbf0ccb" category="section-title">数据加密概述</block>
@@ -1924,7 +1856,6 @@
   <block id="6507ffa8d8b9388092f62e253e32e85d" category="paragraph">`发布 /azure/vsa/cluster-environments`</block>
   <block id="c9a9b22c97e2474e63fdb09a6f5f4a75" category="paragraph">您有一个新的 Cloud Volumes ONTAP 系统，该系统配置为使用客户管理的密钥进行数据加密。</block>
   <block id="e23ee9601514984c6adb31b5a38af712" category="summary">如果 HA 对中的某个节点不可用，则另一个节点将为其配对节点提供数据，以提供持续的数据服务。这称为存储接管。在存储交还完成之前，无法执行多项操作。</block>
-  <block id="a92aeaf26ae88668d7b9643f7ccf01dd" category="doc">接管期间操作不可用</block>
   <block id="94f8a286fcfa150fec1e77af71cae0fb" category="paragraph">如果 HA 对中的某个节点不可用，则另一个节点将为其配对节点提供数据，以提供持续的数据服务。这称为 _storage takeover_ 。在存储交还完成之前，无法执行多项操作。</block>
   <block id="1495aff13d83bf6cf950ed804e0d4cb8" category="list-text">许可证更改</block>
   <block id="cc21131b33239eda72cd487aa4957919" category="list-text">实例或 VM 类型更改</block>
@@ -1980,7 +1911,6 @@
   <block id="b5fc4208e494804d1484996e111220af" category="summary">您可以在单系统配置中启动 Cloud Volumes ONTAP 实例，也可以在 AWS 中作为 HA 对启动。</block>
   <block id="45fa74d97bba23976f6236bb8a583eb3" category="paragraph">您可以在单系统配置中或在 AWS 中作为 HA 对启动 Cloud Volumes ONTAP 。</block>
   <block id="70bc0792aaac2d1fe5c19e375b615c8f" category="list-text">用于 CIFS 配置的 DNS 和 Active Directory 。</block>
-  <block id="9ae9e2a95a93a162ede8aa13ce31e809" category="section-title">在 AWS 中启动单节点 Cloud Volumes ONTAP 系统</block>
   <block id="5f9fae15ed0e9699a97ede914a14bdc5" category="list-text">* 选择一个位置 * ：选择 * Amazon Web Services* 和 * Cloud Volumes ONTAP Single Node* 。</block>
   <block id="2548b207aecb436cf10911e9afefdeb4" category="list-text">* 详细信息和凭据 * ：可选择更改 AWS 凭据和订阅，输入工作环境名称，根据需要添加标记，然后输入密码。</block>
   <block id="130d74c3ba60e43c646b8d2ae2e189f7" category="cell">添加标记</block>
@@ -2000,7 +1930,6 @@
   <block id="bef2f3bc1b5f6b5fc3eaabff818b8b07" category="inline-link">Cloud Volumes ONTAP 节点的策略要求</block>
   <block id="a6fcc094aa2aa8328784bade825b168a" category="inline-link-macro">了解数据分层的工作原理</block>
   <block id="92a1203fc5511fdb287e0ca1b80062ce" category="list-text">* 使用情况配置文件，磁盘类型和分层策略 * ：选择是否要启用存储效率功能并根据需要编辑卷分层策略。</block>
-  <block id="a32a5939a1bb08953d44c08ef33a7ad2" category="section-title">在 AWS 中启动 Cloud Volumes ONTAP HA 对</block>
   <block id="54092d74685a14050a9f2b1e926a5091" category="paragraph">目前， AWS 前向不支持 HA 对。</block>
   <block id="f99d3ff891644fe10f4d30e423d81b2e" category="list-text">* 服务 * ：保持服务处于启用状态或禁用不想在此 Cloud Volumes ONTAP 系统中使用的单个服务。</block>
   <block id="3dc0546ee23c197fd25bc3ef988c8a30" category="list-text">* 高可用性部署模式 * ：选择一个高可用性配置。</block>
@@ -2020,7 +1949,6 @@
   <block id="2fa232ecbdaf28ec3392678c733c074e" category="list-text"><block ref="2fa232ecbdaf28ec3392678c733c074e" category="inline-link-rx"></block></block>
   <block id="1a523ba4ece9125275b92ebb41e3cf23" category="doc">Cloud Volumes ONTAP 文档</block>
   <block id="f71bca1a74e3009d7cff4912558ab628" category="summary">设置 AWS 传输网关，以使 NAS 客户端能够从 Cloud Volumes ONTAP 所在的 VPC 外部访问浮动 IP 地址。这一点很有用，因为发生故障时，浮动 IP 会自动在节点之间迁移。</block>
-  <block id="d2a72b7b5a38468116ebf74213d0a809" category="doc">为多个 AZs 中的 HA 对设置 AWS 传输网关</block>
   <block id="3ff5b1c89b5d16ccd4334e837046b7f5" category="paragraph">如果 Cloud Volumes ONTAP HA 配置分布在多个 AWS 可用性区域中，则从 VPC 内部访问 NAS 数据需要浮动 IP 地址。这些浮动 IP 地址可以在发生故障时在节点之间迁移，但无法从 VPC 外部本机访问。独立的专用 IP 地址可从 VPC 外部提供数据访问，但不提供自动故障转移。</block>
   <block id="241d70a75eb5d661a8828f65cd4e9d26" category="paragraph">集群管理接口和可选 SVM 管理 LIF 也需要浮动 IP 地址。</block>
   <block id="d3d3abbe2493275b166373e96277e54a" category="paragraph">如果您设置了 AWS 传输网关，则可以从 HA 对所在的 VPC 外部访问浮动 IP 地址。这意味着 VPC 外部的 NAS 客户端和 NetApp 管理工具可以访问浮动 IP 。</block>
@@ -2065,7 +1993,6 @@
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
   <block id="685696bac287df7f060481b8cef44de8" category="sidebar">开始使用 Amazon Web Services</block>
   <block id="bbf1a68fc5e370127fe0c3f1622dced3" category="sidebar">规划您的配置</block>
-  <block id="9251700e586dc1a410f2e755a8643751" category="sidebar">网络要求</block>
   <block id="f9d148736ba8ad65073e2ae083e6442a" category="sidebar">设置 AWS 传输网关</block>
   <block id="1649f10406b5e0e0054f2cb76197f63a" category="sidebar">开始使用 Microsoft Azure</block>
   <block id="97eaaff53e693fb413bacbae932f73ac" category="sidebar">使用密钥设置加密</block>
@@ -2082,8 +2009,6 @@
   <block id="ef30733ef9c11950550b941e42eb12ee" category="sidebar">聚合管理</block>
   <block id="a3b2fca1fd4e5f7a29fc618d28e362b5" category="sidebar">管理现有聚合</block>
   <block id="bf36a77b5166293d07ef75b2861c69ad" category="sidebar">Storage VM 管理</block>
-  <block id="793d843cbee3c0bc480f847deda745af" category="sidebar">在 AWS 中创建 Storage VM</block>
-  <block id="922bed213cdb4b4d7392798c192a158b" category="sidebar">在 Azure 中创建 Storage VM</block>
   <block id="70e13d4c7cf86628120bf15bf7b67fc7" category="sidebar">安全性和数据加密</block>
   <block id="900a7d1cbee7ee0ec36bcd1f657e3d33" category="sidebar">使用 NetApp 加密对卷进行加密</block>
   <block id="d586076d8407175a440d65cf7ae51ba3" category="sidebar">改进勒索软件保护</block>
@@ -2207,30 +2132,8 @@
   <block id="97106e7449f4966fc1e4b3b78d425110" category="section-title">已删除 System Manager 链接</block>
   <block id="249f6fd27ec465f7b6af7dc12178a1ea" category="paragraph">我们已删除先前在 Cloud Volumes ONTAP 工作环境中提供的 System Manager 链接。</block>
   <block id="1979125e36e7d7c49ca297e15301d908" category="inline-link">了解有关连接到 System Manager 的更多信息</block>
-  <block id="5e10fd94744d67ee9b4af8576d7d871b" category="paragraph">从 9.9.0 版开始，特定 Cloud Volumes ONTAP 配置支持多个 Storage VM 。转至<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。</block>
-  <block id="b06a344c267b8ee73a6d4d78ace617ea" category="paragraph">在创建 Storage VM 和分配 LIF 之前，您需要在 Azure 中分配 IP 地址。</block>
   <block id="0ecbfe2cb5b1df888639e1751cec905a" category="section-title">单节点系统</block>
-  <block id="d9fa1bba25e264315bb45a5db857089c" category="list-text">Storage VM （ SVM ）管理 LIF 的可选 IP 地址</block>
-  <block id="0212110e6e591f399e46a0a33621323b" category="paragraph">此管理 LIF 可连接到 SnapCenter 等管理工具。</block>
-  <block id="3fc61f795c4036debc9bbee70495f5d3" category="list-text">如果要创建 SVM 管理 LIF ，请重复这些步骤以创建其他 IP 地址。</block>
   <block id="556696d309aaf81ce29c6a76f8f8a503" category="section-title">HA 对</block>
-  <block id="bd88ed594712224b8e3f79251707158b" category="paragraph">您需要创建以下 IP 地址：</block>
-  <block id="959519864abf23eb751637cd9762312f" category="list-text">一个 IP 地址，用于从节点 1 访问 iSCSI 数据 LIF</block>
-  <block id="72b179a0d02f32caa6ee9d21826a4a30" category="list-text">一个 IP 地址，用于从节点 2 访问 iSCSI 数据 LIF</block>
-  <block id="92e91b161b0371348686cd8b37ca5028" category="paragraph">用于 NFS 的 IP 地址会在负载平衡器中分配，以便在发生故障转移事件时， IP 地址可以迁移到另一个节点。</block>
-  <block id="8560b84a5b55caac8c8ef30051a197e5" category="list-text">一个 IP 地址，用于从节点 1 访问 NAS 数据 LIF</block>
-  <block id="aba6d4795536d5c4e61cf75ce0ddd22c" category="list-text">一个 IP 地址，用于从节点 2 访问 NAS 数据 LIF</block>
-  <block id="7a5be31086b3ad69d1c6b2c5abafcc64" category="list-text">为从节点 1 访问数据 LIF 创建一个前端 IP 配置，为从节点 2 访问数据 LIF 创建另一个前端 IP 配置，并为 Storage VM （ SVM ）管理 LIF 创建另一个可选前端 IP 。</block>
-  <block id="c09d6988bf61135b41e7b195d446e2b9" category="paragraph">用于 SMB 数据的 IP 地址会在负载平衡器中分配，以便在发生故障转移事件时， IP 地址可以迁移到另一个节点。</block>
-  <block id="5aa1fc4c5c5e3c602f89524b94fcaf47" category="list-text">节点 2 上 iSCSI LIF 的一个 IP 地址</block>
-  <block id="d31b2ca2df7d7ec89a597cf3ff166e6d" category="paragraph">DNS 和 SMB 通信需要 iSCSI LIF 。为此，我们使用了 iSCSI LIF ，因为它不会在故障转移时迁移。</block>
-  <block id="3ad6e3f460248126da5c801e403088c1" category="paragraph">在 Azure 中分配 IP 地址后，您可以在单节点系统或 HA 对上创建新的 Storage VM 。</block>
-  <block id="5683cfda0c67cd1651e904160b0a5460" category="paragraph">如何在单节点系统上创建 Storage VM 和 LIF 取决于所使用的存储协议。</block>
-  <block id="2d376cf045c4838856b9429d7fecf7a5" category="paragraph">按照以下步骤创建新的 Storage VM 以及所需的 LIF 。</block>
-  <block id="070ee68a98b928bc45bc4178848e21da" category="list-text">创建数据 LIF ：</block>
-  <block id="b41808a70de11f6ad8400c22ebe933f1" category="paragraph">如何在 HA 对上创建 Storage VM 和 LIF 取决于所使用的存储协议。</block>
-  <block id="83871791a7611e5a981ec0b38a662078" category="list-text">使用以下命令在节点 2 上创建 iSCSI LIF 。</block>
-  <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">使用以下命令在节点 2 上创建 NAS LIF 。</block>
   <block id="1d690a933c240dda520f6527f56da475" category="paragraph">从 9.7 版开始，特定 Cloud Volumes ONTAP 配置支持多个 Storage VM 。转至<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。</block>
   <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">*仅选定VPC*：入站流量的源筛选器是Cloud Volumes ONTAP 系统VPC的子网范围以及连接器所在VPC的子网范围。这是建议的选项。</block>
   <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">所有VPC*：入站流量的源筛选器为0.0.0.0/0 IP范围。</block>
@@ -2343,8 +2246,6 @@
   <block id="7a023e7d56fe92fdfa3e74151ef7e333" category="paragraph">使用 SSH 连接到 Cloud Volumes ONTAP 的主机必须与 Cloud Volumes ONTAP 建立网络连接。例如、您可能需要从云提供商网络中的跳转主机进行SSH。</block>
   <block id="85ec9558f558eed2eff28acdf93d0e5d" category="paragraph">您可以使用云提供商提供的采用原生 加密的NetApp加密解决方案、在虚拟机管理程序级别对数据进行加密。这样做会提供双重加密，这对于非常敏感的数据可能是理想的选择。访问加密数据时，加密数据会进行两次未加密，一次在虚拟机管理程序级别（使用云提供商的密钥），然后再次使用 NetApp 加密解决方案（使用外部密钥管理器的密钥）。</block>
   <block id="154811f59111df605f6aebc9999a1135" category="paragraph">外部密钥管理器支持 NVE 和 NAE 。</block>
-  <block id="f6ff5ec319049af5e46c8b306858252c" category="doc">覆盖Azure中Cloud Volumes ONTAP HA对的CIFS锁定</block>
-  <block id="d17c4281542937487475a76b3afea508" category="doc">Google Cloud 中的高可用性对</block>
   <block id="f406c9d6eeead7db4c0d7c4436e4365f" category="paragraph">Google Cloud中的Cloud Volumes ONTAP HA配置包括以下组件：</block>
   <block id="3844834e9306a66948e49d6149c5a299" category="section-title">Google Cloud中的数据分层</block>
   <block id="f6535844f45781691afa19e3fe67a627" category="paragraph">在Google Cloud中启用数据分层时、Cloud Volumes ONTAP 会将永久性磁盘用作热数据的性能层、并将Google Cloud存储分段用作非活动数据的容量层。</block>
@@ -2488,9 +2389,7 @@
   <block id="e4919e440eb9972cf98c256c8354da12" category="list-text">验证是否已为数据SVM创建DNS服务：`vserver services name-service dns show`</block>
   <block id="68f0035d3c55f26e0ec12ed454908a6e" category="list-text">检查密钥管理器的状态：`security key-manager external azure check` The output will look like：</block>
   <block id="776c67d51f3f1c503c9062c9d812c2b7" category="list-text">确认卷已正确创建和加密。如果是、则` is-encrypted`参数将显示为`true`。`vol show -vserver _svm_name_-fields is-encrypted`</block>
-  <block id="0741b6c1237f126924ebdaa3fe6dbc4e" category="doc">使用Google的云密钥管理服务管理密钥</block>
   <block id="0dbdff8ed1ef0e78c4dc84ace48205d6" category="inline-link-macro">Google Cloud Platform 的密钥管理服务（ Cloud KMS ）</block>
-  <block id="2f7905ac71167519792d73f964942175" category="paragraph">您可以使用 <block ref="4ef7b266bd9680469191a283388836d8" category="inline-link-macro-rx"></block> 在部署了Google Cloud Platform的应用程序中保护ONTAP 加密密钥。</block>
   <block id="41a2c826f6f02a44a93533524c99b84e" category="list-text">只能在数据SVM上配置Cloud KMS</block>
   <block id="105e3d12938c631bc5d8ab6f6b628e1c" category="list-text">有效的Google Cloud Platform订阅</block>
   <block id="d21cbe89c10e8cddec31594493146dcf" category="list-text">下载服务帐户JSON密钥：`gcloud iam service-accounts keys create key-file -iam-account=_sa-name_@_project-id_.iam.gserviceaccount.com`</block>
@@ -2629,11 +2528,8 @@
   <block id="3b45d0097165753cbe807b39e8e38550" category="paragraph">请注意、Cloud Volumes ONTAP 支持使用IO1磁盘的Amazon EBS弹性卷功能。 <block ref="2f34fac6c8e3e7a84b963b75a5591f20" category="inline-link-macro-rx"></block>。</block>
   <block id="44bacb29285bcdcf27b752d7b6c9e182" category="inline-link-macro">Amazon EBS弹性卷功能</block>
   <block id="a611a569997e8479ac56d19e1a51785f" category="paragraph">如上所述、支持Amazon EBS弹性卷功能的Cloud Volumes ONTAP 配置不支持选择磁盘大小。 <block ref="2f34fac6c8e3e7a84b963b75a5591f20" category="inline-link-macro-rx"></block>。</block>
-  <block id="ab446ebd1f851655193779b7c50f3533" category="paragraph">在创建 Storage VM 并分配 LIF 之前，必须在 Azure 中将 IP 地址分配给 nic0 。</block>
-  <block id="19c2f8be3dc9f0749efedd54317e259b" category="paragraph">您需要为数据 LIF 访问创建一个 IP 地址，并为 Storage VM （ SVM ）管理 LIF 创建另一个可选 IP 地址。此管理 LIF 可连接到 SnapCenter 等管理工具。</block>
   <block id="6705d4b1a3db9cb88b17655dcca33de5" category="list-text">如果您运行的是Cloud Volumes ONTAP 9.11.1或更高版本、请修改此Storage VM的网络服务策略。</block>
   <block id="7acb007d1fa18c791042f54b5a8aa8ee" category="paragraph">需要修改服务、因为它可以确保Cloud Volumes ONTAP 可以使用iSCSI LIF进行出站管理连接。</block>
-  <block id="a22063e6d541a4b1d385c3d940e03996" category="doc">在Google Cloud中为Cloud Volumes ONTAP 创建数据服务Storage VM</block>
   <block id="77701b3d3cb3179bddf053dbed6e2e43" category="paragraph">从9.11.1版开始、Google Cloud中的特定Cloud Volumes ONTAP 配置支持多个Storage VM。转至<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 验证您的 Cloud Volumes ONTAP 版本支持的 Storage VM 数量。</block>
   <block id="8272f5b23e79d0ee33bd5151dcddc454" category="section-title">创建Storage VM</block>
   <block id="a0ffc61dcb224c763f02ac751ef98179" category="inline-image-macro">Google云控制台的屏幕截图、您可以在其中通过添加IP范围来编辑Cloud Volumes ONTAP 的网络接口。</block>
@@ -2646,17 +2542,14 @@
   <block id="29788364ff656936651870f4b1c88537" category="list-text">可选：通过指定在Google Cloud中添加的IP地址来创建Storage VM管理LIF。</block>
   <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">NetApp 提供的策略</block>
   <block id="8786838db6c83df6feac856057d2e141" category="list-text">使用以下API调用创建Storage VM：</block>
-  <block id="78beb47b48fe8b17a288b32a8942a187" category="paragraph">`POST /ocem/api/GCP/ha/work-environment/｛we ID｝/SVM/`</block>
   <block id="995ddfd1247131c9653edbf829fa6e28" category="paragraph">请求正文应包括以下内容：</block>
   <block id="b93afa1b577022f0769bc7e27b5bcd75" category="section-title">管理HA对上的Storage VM</block>
   <block id="c97c5ffc330239a3245482bb4881877a" category="section-title">重命名Storage VM</block>
   <block id="e0867a20bdb8328df5da5826abffd2f7" category="paragraph">如果需要、您可以随时更改Storage VM的名称。</block>
   <block id="369a2d15e783c13b71dafb712d78bd30" category="list-text">使用以下API调用重命名Storage VM：</block>
-  <block id="a8e13a4a2ae779d87c425f89f896c8d6" category="paragraph">`PUT /ocem/api/GCP/ha/working-environments/｛we ID｝/SVM`</block>
   <block id="ce9c0fa786ae9e9debeb029c1c0a4c92" category="section-title">删除Storage VM</block>
   <block id="60bf8baad4677ce21f08a45b132bf6a5" category="paragraph">如果您不再需要Storage VM、可以将其从Cloud Volumes ONTAP 中删除。</block>
   <block id="730a4c8af06cfa818a6cf7829358b200" category="list-text">使用以下API调用删除Storage VM：</block>
-  <block id="cf85e355c90a5d24771cdce3003c6914" category="paragraph">`delete /occm/api/GCP/ha/working-environments/｛we_ID｝/SVM/｛svm_name｝`</block>
   <block id="393573258ab237c6e22e3d4cc7580951" category="doc">AWS中的弹性卷</block>
   <block id="e654f7a86a4458b9cd662267e0f29b52" category="section-title">优势</block>
   <block id="8e6dc23c6a05e7c3276ca6dbb41fd75d" category="list-text">磁盘动态增长</block>
@@ -2716,7 +2609,6 @@
   <block id="9a66c0f1a4025f785048bbe94328bb75" category="paragraph">有关磁盘类型和磁盘大小的帮助、请参见 <block ref="01a63aaf870d7f59ca64d1c54c969d0e" category="inline-link-macro-rx"></block>。</block>
   <block id="288c077296ee94f93986165c88b4098b" category="paragraph">有关磁盘类型和磁盘大小的帮助、请参见 <block ref="5b77fb1a990fdf84a9316de6ea1967b8" category="inline-link-macro-rx"></block>。</block>
   <block id="11efa46f237387b311e6ed482756ac49" category="cell">9.11.1</block>
-  <block id="748337dd27473691346f53855d193c97" category="sidebar">在Google Cloud中创建Storage VM</block>
   <block id="e8d0dae7c2f60648015da9b6a5d0e0ed" category="sidebar">AWS管理</block>
   <block id="cd8085e85d4fffcfec2ecbbe17e419ed" category="sidebar">Azure管理</block>
   <block id="c871aaf8a95c147d6774c7ccaf68c0eb" category="sidebar">Google Cloud管理</block>
@@ -2730,8 +2622,6 @@
   <block id="cfdfdba6990e94ddaae28fd71b33c102" category="paragraph">创建Cloud Volumes ONTAP 工作环境时、系统会提示您选择此服务帐户。</block>
   <block id="4094070de63eb60a22dafb42ecab40fb" category="paragraph">如果您在部署期间未选择服务帐户、则需要关闭Cloud Volumes ONTAP 、转到Google云控制台、然后将服务帐户附加到Cloud Volumes ONTAP 实例。然后、您可以按照下一节所述启用数据分层。</block>
   <block id="870789b9d0beec538c84e00432400091" category="list-text">在Google Cloud中、转至Cloud Volumes ONTAP 实例并为每个LIF添加一个IP地址到nic0。</block>
-  <block id="b961ba228f0253598e8fe47f55865219" category="list-text">输入前端IP的名称、选择Cloud Volumes ONTAP HA对的子网、并保留*动态*选项、在具有可用性区域的区域中、保留*区域冗余*选项、以确保在区域发生故障时IP地址仍然可用。</block>
-  <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
   <block id="594cb44c6500d8855ad820b0653e02c7" category="section-title">PAYGO和BYOL之间的更改</block>
   <block id="a704128156d562fe5860508e9584ee34" category="paragraph">不支持将系统从PAYGO单节点许可转换为BYOL单节点许可(反之亦然)。如果要在按需购买订阅和BYOL订阅之间切换、则需要部署新系统并将现有系统中的数据复制到新系统。</block>
   <block id="7f7c7e70efe0e6e29f5d0b207145f30e" category="list-text">创建新的 Cloud Volumes ONTAP 工作环境。</block>
@@ -2748,7 +2638,6 @@
   <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例如：</block>
   <block id="4803d974c37e8a3895fbff420f579823" category="summary">Cloud Volumes ONTAP 使用Azure专用链路连接到其关联的存储帐户。如果需要、您可以禁用Azure专用链路、而改用服务端点。</block>
   <block id="3b7d5a44ee60c424b0f9531a36f99994" category="section-title">专用链路连接的工作原理</block>
-  <block id="ae271afdca3c7d6785a9aefa74e6c80e" category="doc">管理Connector上的容量设置</block>
   <block id="b62aaf3fb48f9f8f103dc68c41211be5" category="paragraph">每个连接器都有设置、用于确定其如何管理Cloud Volumes ONTAP 的聚合容量。</block>
   <block id="4edc935aeaaf3923beb2e4249e6c56f3" category="paragraph">这些设置会影响由连接器管理的所有Cloud Volumes ONTAP 系统。如果您有另一个连接器、则可以对其进行不同的配置。</block>
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">在*容量*下、修改以下任何设置：</block>
@@ -2799,13 +2688,9 @@
   <block id="13cc2ad9256954007d04ae6bbe5845a9" category="list-text">*底层存储资源*：选择磁盘类型、配置底层存储、然后选择是否启用数据分层。</block>
   <block id="657441166e098e3ac2d1fbeca0be5a8c" category="list-text">磁盘类型适用于初始卷(和聚合)。您可以为后续卷(和聚合)选择不同的磁盘类型。</block>
   <block id="771f877f73ed39c1ce2849efb746d509" category="list-text">基于容量的许可</block>
-  <block id="2a30ccbe01f425f3a2807267dff4fc33" category="list-text">按配置的容量为您的NetApp帐户中的多个Cloud Volumes ONTAP 系统付费。包括购买附加云数据服务的功能。</block>
   <block id="b03772ed11df6476bff4de403713f8c3" category="paragraph">通过基于容量的许可包、您可以按每TiB容量为Cloud Volumes ONTAP 付费。此许可证与您的 NetApp 帐户关联，您可以使用此许可证向多个系统收取费用，前提是可通过此许可证获得足够的容量。</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">基于容量的许可以 _package_ 的形式提供。部署Cloud Volumes ONTAP 系统时、您可以根据业务需求从多个许可包中进行选择。</block>
   <block id="27fe4eb3edbaff8f250e2d51f7462681" category="section-title">软件包</block>
-  <block id="5f50ddf0fbe0f1f7d019d566c86cfe73" category="paragraph">以下基于容量的软件包可用于Cloud Volumes ONTAP。</block>
-  <block id="6784815d06685b36d779b24581ccfa66" category="inline-xref">最低费用</block>
-  <block id="011b0e1cd1e0161097d616babc107976" category="paragraph">系统转换为Essentials软件包后、即会显示 <block ref="22eeec54b04ebfde4307a78d36fd52ee" category="inline-xref-macro-rx"></block> 适用。</block>
   <block id="4d55f77f062bf48891bd0f749c36a36d" category="section-title">要点</block>
   <block id="9e8b160226c9fe22a910c782ce5076e2" category="section-title">专业人员</block>
   <block id="0d007d44f30aa9582772f6ca7709803f" category="paragraph">按容量为任意类型的Cloud Volumes ONTAP 配置付费、备份不受限制。</block>
@@ -2846,7 +2731,6 @@
   <block id="63e4eec15ba75260d01771611989182b" category="inline-link">查看AWS的最新Connector策略</block>
   <block id="ea03ff7045a27cd5d2c4f32dcc1e5c1a" category="inline-link">查看Azure的最新Connector策略</block>
   <block id="0f0088348e85cdf82b3a00d88879bc4d" category="inline-link">查看Connector的Azure权限</block>
-  <block id="75c41138bbd7704a1e0b806bef4b58ac" category="doc">为Cloud Volumes ONTAP 设置IAM角色</block>
   <block id="07561162983a030769cc8563b6143a06" category="inline-link-macro">了解如何在C2S中部署Cloud Volumes ONTAP</block>
   <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">转到AWS IAM控制台。</block>
   <block id="222ddb2f355a49f64fb3858123f2b97b" category="open-title">标准区域</block>
@@ -3006,7 +2890,6 @@
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您拥有客户级别的帐户、则可以添加一个或多个NSS帐户。</block>
   <block id="752a2c1ba3bb227b061216ee70132a08" category="paragraph">有两个可用路径。正确的路径取决于您的Connector版本。</block>
   <block id="93f9a2aa0331918bf3f1a44fb42f791e" category="list-text">`/opt/application/netapp/cloudmanager/ontap/images/`</block>
-  <block id="9a34c8001fb2a94f36b91cd1711ee39f" category="paragraph">在 HA 对上创建 Storage VM 后，最好等待 12 小时，然后再在该 SVM 上配置存储。从Cloud Volumes ONTAP 9.10.1版开始、BlueXP会每12小时扫描一次HA对的负载平衡器设置。如果存在新的SVM、则BlueXP将启用一个设置、以缩短计划外故障转移时间。</block>
   <block id="270bb1237f850224c48374b974319501" category="list-text">选择BlueXP是否通知您存储容量决策、或者BlueXP是否自动管理您的容量需求。</block>
   <block id="852626f9cf83320fbc75df58841d66dc" category="paragraph">如果无法通过出站Internet连接发送AutoSupport 消息、则BlueXP会自动将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。</block>
   <block id="91cd8e22887ec705f7a0b7a46d810004" category="paragraph">如果出站连接不可用、并且BlueXP无法将您的Cloud Volumes ONTAP 系统配置为使用此连接器作为代理服务器、您将从BlueXP收到一条通知、标题为"&lt;工作环境名称&gt;无法发送AutoSupport 消息"。</block>
@@ -3112,7 +2995,6 @@
   <block id="0793fb2aa91da8227ea7295e5891ea57" category="paragraph"><block ref="0793fb2aa91da8227ea7295e5891ea57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="27f1a07e4eef2fc0ab102135404da657" category="paragraph">下图示例显示了 VPC 1 的路由表。它包括一条指向浮动 IP 地址和客户端所在 VPC 2 的路由。在部署HA对时、BlueXP会自动将浮动IP添加到路由表中。</block>
   <block id="d9bc9104669da346ed2fadb2cb686999" category="paragraph">BlueXP将启动Cloud Volumes ONTAP 实例。您可以跟踪时间链中的进度。</block>
-  <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">在BlueXP中管理Storage VM</block>
   <block id="891665afb192ec7434051075c05e3e2f" category="list-text">在BlueXP中、确定集群管理接口的IP地址：</block>
   <block id="68e3d383b46bd2d1a96c2a6b2ddbc3f5" category="admonition">如果HA对中的节点不可用、则BlueXP中工作环境的状态为_Degraded_.</block>
   <block id="71279608104bfad0fd0c8e38e3fe117b" category="paragraph">无法从BlueXP存储接管执行以下操作：</block>
@@ -3144,7 +3026,6 @@
   <block id="af97eb7a8d1a683de73e48cc402e070d" category="paragraph">System Manager不支持聚合管理(包括本地层和云层)。您必须直接从BlueXP的标准视图管理聚合。</block>
   <block id="e7b3f56c45c6705f279b059a9274225d" category="list-text">如果需要、请单击*切换到标准视图*以通过BlueXP返回到标准管理。</block>
   <block id="0828553b7174743f116345861b5c6bc0" category="summary">您可以发现现有Cloud Volumes ONTAP 系统并将其添加到BlueXP中。如果您部署了新的BlueXP系统、则可以执行此操作。</block>
-  <block id="5838355f0487c8b48bcad7c6bcae87af" category="doc">将现有Cloud Volumes ONTAP 系统添加到BlueXP</block>
   <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">如果为Cloud Volumes ONTAP 系统配置的容量超过500 GiB、则BlueXP会将该系统转换为Essentials软件包。</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">NetApp BlueXP网站</block>
   <block id="4f6ffa2529265a9e4fcff29a28a16ebe" category="paragraph">对于至少具有一个主(读写)卷的每个提供数据的Storage VM、最低费用为4 TiB。如果主卷的总和小于4 TiB、则BlueXP会将4 TiB的最低费用应用于该Storage VM。</block>
@@ -3410,10 +3291,8 @@
   <block id="1fa9c43c980d3d603988b83d77f02065" category="list-text">SVM管理IP</block>
   <block id="381055790b65562046260a73d644d222" category="list-text">一个用于调解器启动数据的10 GiB标准永久性磁盘</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="section-title">下一步行动</block>
-  <block id="5d23d48e0afadebb8bb8d4e3def99de4" category="section-title">在Azure中启动单节点Cloud Volumes ONTAP 系统</block>
   <block id="56bdc4ea1c452fac2f0ec7899a4e3d21" category="paragraph">如果要在Azure中启动单节点Cloud Volumes ONTAP 系统、则需要在BlueXP中创建单节点工作环境。</block>
   <block id="5e65ccaa7b0cffc728e485801bdd8092" category="list-text">*选择位置*：选择* Microsoft Azure*和* Cloud Volumes ONTAP 单节点*。</block>
-  <block id="68367d4408e943b9268a7a6d4314fb0a" category="section-title">在Azure中启动Cloud Volumes ONTAP HA对</block>
   <block id="09848d903bbdcfa49dca87e8854aad0d" category="paragraph">如果要在Azure中启动Cloud Volumes ONTAP HA对、则需要在BlueXP中创建HA工作环境。</block>
   <block id="dee0e0a28a4db505910f0cae119590db" category="list-text">*高可用性部署模式*：</block>
   <block id="e1ab7b9a326aaddbde429e4c50909456" category="list-text">选择*单个可用性区域*或*多个可用性区域*。</block>
@@ -3498,7 +3377,6 @@
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">适用于 Google Cloud 的 Cloud Volumes Service</block>
   <block id="806bf55e3fada643423a5e8b443a821f" category="summary">设置Google Cloud网络、以便Cloud Volumes ONTAP 系统可以正常运行。</block>
-  <block id="b2a93ab6944b01da98f77474158de584" category="doc">Google Cloud中Cloud Volumes ONTAP 的网络连接要求</block>
   <block id="589257f6242e3a6232a5f72f7867c4b6" category="inline-link-macro">了解HA对在Google Cloud中的工作原理</block>
   <block id="c8e39b92d04aae2c3a6d3e6f428d480e" category="paragraph">如果要部署 HA 对，则应执行此操作 <block ref="135d51832239d75e9eff2c1e7574765f" category="inline-link-macro-rx"></block>。</block>
   <block id="26cc43b1e094bf317e2d9013491cb9af" category="paragraph">必须在Google Cloud中满足以下要求。</block>
@@ -3542,17 +3420,8 @@
   <block id="0a44bfce0bc775d87f0ac6a57bdba584" category="list-text">根据需要激活一次写入、多次读取(WORM)存储。</block>
   <block id="6aeb3713e488b71d0dcbb96914a7951f" category="paragraph">如果为Cloud Volumes ONTAP 9.7及更低版本启用了数据分层、则无法启用WORM。启用WORM和分层后、将阻止还原或降级到Cloud Volumes ONTAP 9.8。</block>
   <block id="02675533e5e8f922a01de0dd3f2892ad" category="list-text">如果激活了WORM存储、请选择保留期限。</block>
-  <block id="4b80314a98cf05dbcb3b2c5f33f9e79f" category="paragraph">默认情况下、只要放置组在HA单个可用性区域工作环境的创建过程中失败、部署就会失败并回滚。如果Cloud Volumes ONTAP 节点和调解器实例不存在、则创建放置组也会失败并回滚。</block>
-  <block id="65f98964e7d8889df16715139a88da9d" category="paragraph">您可以在放置组创建失败时绕过回滚过程、并通过配置app.conf文件允许部署继续进行。绕过回滚过程后、部署将成功完成、系统将生成通知、指出放置组创建失败、状态为"未完成"。</block>
-  <block id="8dbf64cf105a5f307a9741aab14c6d90" category="section-title">在放置组出现故障时禁用回滚</block>
-  <block id="103d8850bfd2b5f919a2c306256386e7" category="paragraph">要关闭放置组故障、必须将"rollback-on-placement-group-failure"标志设置为"false"。</block>
   <block id="53db5515d90522545dd9493db83f9ad7" category="list-text">使用SSH连接到Connector主机并登录。</block>
-  <block id="e5d0a443064f8c75bf5b7e1c953ec5f9" category="list-text">通过将"rollback-on-placement-group-failure"参数的值更改为"false"来编辑app.conf：</block>
-  <block id="6b90ec112441f6a2ffc873da4c8cb544" category="admonition">默认情况下、rollback-on-placement-group-failure参数设置为"True"。</block>
-  <block id="abb2030a97b8fa0f26925ca21ccacdce" category="paragraph">不需要重新启动。</block>
-  <block id="254d5c87d5ab437395f866390ea49cd0" category="doc">在 Google Cloud 中启动 Cloud Volumes ONTAP</block>
   <block id="952f472ceaa325aaac5f1352ed448f4e" category="paragraph">您可以在单节点配置中启动Cloud Volumes ONTAP 、也可以在Google Cloud中作为HA对启动。</block>
-  <block id="733156037751f70e529112a458e8ade6" category="section-title">在Google Cloud中启动单节点系统</block>
   <block id="ee5b769fad1fe9446cc03d19d0a3d607" category="paragraph">在BlueXP中创建工作环境、以便在Google Cloud中启动Cloud Volumes ONTAP。</block>
   <block id="aeeff95df93d5139e77aaa023ae4f78d" category="cell">BlueXP使用工作环境名称来命名Cloud Volumes ONTAP 系统和Google Cloud VM实例。如果您选择了预定义安全组的前缀，则它还会使用该名称作为前缀。</block>
   <block id="a4bf88119cf04fd8c616db4b8cc720b8" category="cell">标签是指Google Cloud资源的元数据。BlueXP会将这些标签添加到与该系统关联的Cloud Volumes ONTAP 系统和Google云资源中。在创建工作环境时，您最多可以从用户界面添加四个标签，然后可以在创建后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标签。有关标签的信息，请参见<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>。</block>
@@ -3562,7 +3431,6 @@
   <block id="bb74d89743a44b4a44d7b815ee74a08e" category="inline-link">使用9.6设置和添加用于数据分层的Google Cloud帐户</block>
   <block id="cd6afa4ed61f071f47165012e4286043" category="list-text">如果禁用数据分层、则可以在后续聚合上启用该功能、但您需要关闭系统并从Google Cloud控制台添加服务帐户。</block>
   <block id="5e80d11354160f3330ae3fb0f2186edf" category="list-text">单击*更多信息*可查看有关支持和BlueXP将购买的Google Cloud资源的详细信息。</block>
-  <block id="f23467ff8f84fc95ca2baa4b362c7865" category="section-title">在Google Cloud中启动HA对</block>
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud中的数据分层*：选择是否在初始聚合上启用数据分层、为分层数据选择存储类、然后选择具有预定义的存储管理员角色的服务帐户。</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">配置放置组创建</block>
   <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
@@ -3626,7 +3494,6 @@
   <block id="1589be55d1846040de3b3619fc377b4a" category="paragraph">要避免容量问题、必须移动卷；但是、BlueXP无法为您执行此操作、因为系统已达到磁盘限制。</block>
   <block id="38e756f76c74b5075bf08a75f76e4554" category="paragraph">要避免容量问题、必须移动两个或更多卷；但是、BlueXP无法为您执行此操作。</block>
   <block id="1ee6f28ca24808cbfb56feaccf1c3e53" category="summary">通过Google Cloud命令行将导出的映像转换为disk.raw格式。</block>
-  <block id="4924fff9a6684704aac6ccb1ed5fd97d" category="doc">在Google Cloud上将图像转换为原始格式</block>
   <block id="e42cb7ec1fc839883e3e4e1864b30d87" category="inline-link">NetApp 支持站点 (NSS)</block>
   <block id="ac16be4e1060792bdf37f35e6cc518f9" category="paragraph">用于部署新实例、升级或正在现有映像中使用的映像将通过与客户端共享<block ref="c1c4e3e8a814891940b982f96af89878" category="inline-link-rx"></block>。签名摘要和证书可通过NSS门户下载。确保您下载的是与NetApp支持共享的映像对应的正确版本的摘要和证书。例如、9.13.0映像将具有9.13.0签名的摘要和证书、可在NSS上使用。</block>
   <block id="7a8f498eae5977019b0d0c0d3ef013c0" category="section-title">为什么需要执行此步骤？</block>
@@ -3647,7 +3514,6 @@
   <block id="7687a452778371a352ce867b57724b93" category="inline-link">有关导出映像的Google Cloud文档</block>
   <block id="e6b411af64f8108d8230e8dc4d5ed17e" category="cell">9.13.0</block>
   <block id="01277cd6d5e8d9a803f07b849cedae4b" category="summary">验证Google Cloud映像文件签名文件。</block>
-  <block id="5567cef37155e1157348c6775226af57" category="doc">Google Cloud映像验证概述</block>
   <block id="248cdc66c441a6612309f6e2ce80a63c" category="inline-link">NSS</block>
   <block id="5745e537e1e3a11e00e50f67820a46a1" category="admonition">Cloud Volumes ONTAP 软件9.13.0或更高版本支持Google Cloud映像验证。</block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理支持案例(预览)</block>
@@ -3674,7 +3540,6 @@
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">如果使用HA对、则从9.13.0版开始、Cloud Volumes ONTAP 支持对多种VM类型使用高写入速度。转至<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> 可查看支持高写入速度的 VM 类型。</block>
   <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">安装了多租户加密密钥管理(MTEKM)许可证、从Cloud Volumes ONTAP 9.12.1 GA开始。</block>
   <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">通过Cloud Volumes ONTAP 映像摘要文件工具验证导出的Google云映像文件签名。</block>
-  <block id="f2381744b9c03db11d49cbcc38dd048d" category="doc">验证Google Cloud签名的映像</block>
   <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">要验证导出的Google Cloud签名映像、必须从NSS下载映像摘要文件以验证disk.raw文件和摘要文件内容。</block>
   <block id="c81429443fac6104f46abd88cff6840a" category="section-title">签名映像验证工作流摘要</block>
   <block id="89367ca4743c16d95c687430c6a0d9cc" category="paragraph">下面简要介绍了Google Cloud签名映像验证工作流过程。</block>
@@ -3698,7 +3563,6 @@
   <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">访问Connector上的BlueXP控制台</block>
   <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">添加未分配的许可证</block>
   <block id="44579e142f1f753a153dbb19dac8125c" category="summary">使用OpenSSL根据摘要文件内容验证Google Cloud下载的disk.raw文件。</block>
-  <block id="4768a2782def76fdf9b074232676aba9" category="doc">使用OpenSSL验证disk.raw文件和摘要文件内容</block>
   <block id="9790936d7b09c3cf187b770347ee60d1" category="paragraph">您可以根据通过提供的摘要文件内容验证Google Cloud下载的disk.raw文件<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> 使用OpenSSL。</block>
   <block id="64bba92e74e274ead8d4e951ad8c9d3a" category="admonition">用于验证映像的OpenSSL命令与Linux、Mac OS和Windows计算机兼容。</block>
   <block id="c275ec11ecf674a6672183664681e98f" category="list-text">使用OpenSSL验证证书。</block>
@@ -3740,18 +3604,6 @@
   <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">支持单节点系统。</block>
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">支持直接从 NetApp 购买的许可证。</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">适用于Cloud Volumes ONTAP 的全局区域映射</block>
-  <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">您需要在负载平衡器中创建以下IP地址：</block>
-  <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">每个VM各自NIC 0中节点1上的iSCSI LIF的一个IP地址</block>
-  <block id="6f2174023153761cdb987311021eaf2b" category="list-text">仅为数据和SVM LIF创建所需数量的前端IP配置：</block>
-  <block id="b31c05988fa937699345307f0d088b5e" category="list-text">对于iSCSI LIF、请为NIC0添加IP地址。</block>
-  <block id="d8268f30cad7ca754b650b30d5a9fb20" category="list-text">在设置下、单击* IP配置*。</block>
-  <block id="f14404f1eb77db8c34dfa687da4e9969" category="inline-image-macro">Azure门户中IP配置页面的屏幕截图</block>
-  <block id="d3f503b2101b1859a2272746e61a2bca" category="paragraph"><block ref="d3f503b2101b1859a2272746e61a2bca" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d8292c375cfd1e8785887fa2307c216e" category="list-text">输入IP配置的名称、选择动态、然后单击*确定*。</block>
-  <block id="d139a8131606839195ad605bafe04b07" category="inline-image-macro">添加IP配置窗口的屏幕截图</block>
-  <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">单击刚刚创建的IP配置的名称、将"Assignment"更改为"Static"、然后单击*保存*。</block>
-  <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">输入以下命令以访问高级模式。</block>
   <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">HA调解器的预定义安全组包括以下入站规则。</block>
   <block id="52554fb81854d42f02280f83a1067574" category="cell">连接器的CIDR</block>
   <block id="cdbb82146d412877f64f943229bd9533" category="cell">AWS EC2实例上连接器的IP地址</block>
@@ -4074,7 +3926,6 @@
   <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">这是系统生成的ID、映射到您的电子邮件。在* NSS Management*页面上、您可以从显示电子邮件 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要刷新登录凭据令牌、则中还会提供一个*更新凭据*选项 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
   <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="be9422df375517187d0426d4361fafa6" category="paragraph">连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需权限包括在中<block ref="24390b04eaeaec89ce5246eaa294abc3" category="inline-link-rx"></block>。</block>
   <block id="af13749595f5960a363d1c58fc759656" category="paragraph"><block ref="4610c02b1fca3398eed82ad29d834f6a" category="inline-link-macro-rx"></block>。</block>
   <block id="fef38ae672e04cfca804a3528b0c02b9" category="paragraph"><block ref="ae94ab44d9cabcaf642548c08d913cf9" category="inline-link-rx"></block>。</block>
   <block id="78b9037265070d084c1d8bcd663811e7" category="paragraph"><block ref="78b9037265070d084c1d8bcd663811e7" category="inline-link-rx"></block></block>
@@ -4441,7 +4292,6 @@
   <block id="44c305a704023f5d643a06ce08c03402" category="section-title">启用增强型网络连接</block>
   <block id="2aed0ca02213325feada0ee707489e81" category="inline-link-macro">如何在AWS Cloud Volumes ONTAP实例上启用SR-IOV或ENA等增强型网络</block>
   <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">要升级到Cloud Volumes ONTAP 9.8及更高版本、您必须在运行C4、M4或R4实例类型的集群上启用_enhanced networking _。要启用ENA、请参阅知识库文章 <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>。</block>
-  <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Microsoft Azure文档</block>
   <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">包括使用BlueXP备份和恢复的无限卷备份、但仅适用于使用专业版软件包的Cloud Volumes ONTAP系统。</block>
   <block id="f4b04af639ebf32754e26b928989f33f" category="inline-link">为BlueXP备份和恢复设置许可</block>
   <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">2023年10月23日</block>
@@ -4645,7 +4495,6 @@
   <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">您不能再使用模板创建卷、也不能编辑卷的标记。这些操作与BlueXP修复服务相关联、该服务不再可用。</block>
   <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">* 详细信息，保护和标记 * ：输入有关卷的基本详细信息并选择 Snapshot 策略。</block>
   <block id="4acf56e531f894043e53d2da10087d5a" category="summary">与标准AWS区域类似、您可以在AWS机密云和Top机密云环境中使用BlueXP部署Cloud Volumes ONTAP、为云存储提供企业级功能。AWS机密云和顶级机密云区域是特定于美国的封闭区域智能社区；此页面上的说明仅适用于AWS机密云和Top机密云区域用户。</block>
-  <block id="ac2f9ab20179404cb2925b0bc93ed4f9" category="doc">在AWS机密云和顶级机密云区域部署Cloud Volumes ONTAP</block>
   <block id="ff2c9914d275ee17c3f22e89e7ca1ef7" category="inline-link-macro">AWS机密云</block>
   <block id="a864a931bf30f7ad758b78e4a2cb264c" category="inline-link-macro">AWS云的绝密</block>
   <block id="89975f41f547e90460689ab0da3b0ba1" category="paragraph">与标准AWS区域类似、您可以在中使用BlueXP <block ref="2be032dbfb43d4ebf124ecec1e312c2a" category="inline-link-macro-rx"></block> 和中的 <block ref="9d779d36eb480c9dfb9170b409a86842" category="inline-link-macro-rx"></block> 部署Cloud Volumes ONTAP、它可为云存储提供企业级功能。AWS机密云和Top机密云是美国特定的封闭区域智能社区；此页面上的说明仅适用于AWS机密云和Top机密云区域用户。</block>
@@ -4801,7 +4650,6 @@
   <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">在标准模式下使用BlueXP时、支持AWS本地区域。目前、在受限模式或专用模式下使用BlueXP时、不支持AWS本地区域。</block>
   <block id="dd9c0a56896702fcd7616d8a05a5734b" category="example-title">单击以显示</block>
   <block id="66477356c169bae503b8e5b68efae8f9" category="summary">在Mac OS上、通过Cloud Volumes ONTAP映像摘要文件工具验证导出的vHD文件签名</block>
-  <block id="f2dc1728581c6da0e20498b1ddc33375" category="doc">Mac OS上的文件签名验证</block>
   <block id="7dfe290ea310f3175330a9ea2e3f87f9" category="paragraph">您可以按照以下步骤验证已导出的Mac OS的vHD文件签名。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支持站点</block>
   <block id="182f014f4c613a2ea00430b0555c0cfe" category="list-text">从下载Azure Image Digest文件<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> 并提取摘要文件(.sig)、公共密钥证书文件(.pem)和链证书文件(.pem)。</block>
@@ -4830,7 +4678,6 @@
   <block id="43d4aabb0efd580944e1beb8c4db11b8" category="list-text">常规CLI语句如下所示：</block>
   <block id="c9fd91db7f23dc5a00305ec8fc9ab1fe" category="list-text">如果两个文件都匹配、OpenSSL命令行界面工具会显示"Verified Ok"消息、如果不匹配、则会显示"Verification Failure"消息。</block>
   <block id="ab1fa593a9d1b960b00310273793f399" category="summary">通过Linux上的Cloud Volumes ONTAP映像摘要文件工具验证导出的vHD文件签名</block>
-  <block id="b0c7ab0c2b10d16b69a121eb12047c21" category="doc">Linux上的文件签名验证</block>
   <block id="81a109e7e4df0170a877c862452626e0" category="paragraph">您可以按照以下步骤验证已导出的Linux的VHD文件签名。</block>
   <block id="99f6987f9f2f12754bef6acd4538d2b1" category="list-text">删除前1 MB (1048576字节)和后512字节的vHD文件。</block>
   <block id="3b31a12051ccfe742940ab733efa90d2" category="paragraph">如果使用"tail"、则选项"-c +K"将输出以指定文件的K有权 字节开头的字节。因此、1048交由"尾部-c"处理。</block>
@@ -4840,7 +4687,6 @@
   <block id="51bbda97c30ecb8962c4be9cf6e522a3" category="doc">新部署支持的ONTAP版本</block>
   <block id="e6e83b7fc493536990c5a90ed0363355" category="list-text">9.12.09 P1</block>
   <block id="bc7b48cc8cbeb831f1e1c92e4edd2a73" category="summary">验证Azure HD映像文件签名文件。</block>
-  <block id="cbb113be9bdc758fab3f1f20b2d70fb1" category="doc">Azure映像验证概述</block>
   <block id="855546822713dfa86f90e0f04d628460" category="paragraph">Azure映像验证符合增强的NetApp安全要求。虽然验证映像文件是一个简单的过程、但Azure映像签名验证确实需要对众所周知的Azure HD映像文件进行特殊处理、因为Azure Marketplace会进行更改。</block>
   <block id="dc9332f8d6da3cf29879331701e1392b" category="admonition">Cloud Volumes ONTAP软件9.12.09或更高版本支持Azure映像验证。</block>
   <block id="87a09a86dbf9477334c237c696cbf41c" category="section-title">Azure对已发布的VHD文件的更改</block>
@@ -4849,7 +4695,6 @@
   <block id="8d1e285a8c66f27a66a5b99050840700" category="paragraph"><block ref="8d1e285a8c66f27a66a5b99050840700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8c0945efb6cfc754835754066079f778" category="paragraph">例如、上图显示了一个大小为10 GB的vHD文件。但是、NetApp签名部分会标记为绿色、大小为10 GB - 1 MB - 512 B。</block>
   <block id="489b496cbe75299f2e7a58a43404a586" category="summary">您可以从Azure Marketplace导出ONTAP映像、以验证VHD文件的签名。</block>
-  <block id="00d40efb33e0ee105c97fed4c5722515" category="doc">从Azure Marketplace导出映像</block>
   <block id="7aa3d9edd6d375ddf241b7e3af36818a" category="paragraph">将该vHD映像发布到Azure云后、NetApp将不再管理该映像。而是将发布的映像放置在Azure Marketplace上。在Azure Marketplace上暂存并发布映像时、Azure会更改到VHD的前导1 MB和结尾512 B。要验证该VHD文件的签名、需要首先从Azure Marketplace导出由Azure修改的VHD映像。</block>
   <block id="05cd2a2bb059643c43d9e767a4032a24" category="paragraph">您必须在系统上安装所需的程序。</block>
   <block id="0bcf8212654f6e73defd0e810da79d80" category="list-text">已安装Azure命令行界面、或者可随时通过Azure门户使用Azure Cloud Shell。</block>
@@ -4889,10 +4734,6 @@
   <block id="97a4e219dca6e7d10f98bae2e8bffec5" category="paragraph"><block ref="b51e72d129db508138e20f7a4f67c8ee" category="inline-link-rx"></block>。</block>
   <block id="f66bd8eaa3bcbb435906ae79cf48d6a6" category="paragraph"><block ref="8873bd645a0966abedb61ab5d87b1fb7" category="inline-link-rx"></block>。</block>
   <block id="ea949d9a7c8d0243148a6ff1179b5684" category="paragraph"><block ref="ea949d9a7c8d0243148a6ff1179b5684" category="inline-link-rx"></block></block>
-  <block id="a82d7316122aa2922142d92274736324" category="summary">参考链接Azure映像验证</block>
-  <block id="fd4d7ac54ce50ee523c51c89d6bbd1b8" category="doc">从何处查找有关Azure映像验证的追加信息</block>
-  <block id="27e5cdda0e1aa3ec5a2dda81e23a8bb1" category="paragraph">查看以下链接、了解有关Azure映像验证的追加信息。通过以下链接可访问非NetApp站点。</block>
-  <block id="d95867deadfe690e40f42068d6b59df8" category="section-title">参考资料</block>
   <block id="05c789229ae9c06f891314c500b8a66f" category="inline-link">页面错误博客：如何使用OpenSSL进行签名和验证</block>
   <block id="6c725cff14a48db0cca266746daa5dd6" category="list-text"><block ref="6c725cff14a48db0cca266746daa5dd6" category="inline-link-rx"></block></block>
   <block id="0e6945600d86c2e68fa37166775efd63" category="inline-link">使用Azure Marketplace映像为Azure Stack Edge Pro GPU创建VM映像| Microsoft了解</block>
@@ -4912,7 +4753,6 @@
   <block id="e15cc8414d8d61bbcd5fd0d0eccda0f7" category="sidebar">图像导出</block>
   <block id="ea676e4072617197b2e26d0a11c13554" category="sidebar">Linux文件签名验证</block>
   <block id="088e8318708fce80162f63284a86929f" category="sidebar">Mac OS文件签名验证</block>
-  <block id="0f68b904e33d9ac04605aecc958bcf52" category="sidebar">追加信息</block>
   <block id="c803b37d9c2a34c73d0b86de8cae9ac8" category="paragraph"><block ref="c803b37d9c2a34c73d0b86de8cae9ac8" category="inline-link-rx"></block></block>
   <block id="bbe2b5062d2c900ca465f9eb12592a92" category="paragraph">如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见<block ref="a1765820625d1912b35ab79a3305fdea" category="inline-link-rx"></block>。</block>
   <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
@@ -5094,8 +4934,6 @@
   <block id="4855acbd91be04daa7cfbcfc6779e8fc" category="paragraph">有关信息，请参见 <block ref="7f365a8b545ccbb9e9433fd7ab85acf6" category="inline-link-macro-rx"></block>。</block>
   <block id="00ca87b823c9fbffa58cc1470a0fc184" category="paragraph">您可以直接通过BlueXP  中的"Volumes"(卷)选项卡通过ONTAP系统管理器或ONTAP命令行界面查看创建的FlexGroup卷。与为FlexVol 卷提供的信息相同、BlueXP通过专用的卷图块提供有关已创建的跳蚤组卷的详细信息。在卷磁贴下、您可以通过图标的悬停文本来标识每个FlexGroup 卷组。此外、您还可以通过卷模式列在卷列表视图下标识FlexGroup 卷并对其进行排序。</block>
   <block id="704ce057086edc7f390e72f33febfb03" category="list-text">可选：转至适用于Cloud Volumes ONTAP的ONTAP命令行界面并运行*network interface show*以确认每个IP地址都在使用中。</block>
-  <block id="210737c390cb0d28243061081a9b7c4a" category="admonition">要执行其他与NIC相关的任务、您可以在Azure中分配具有适当权限的网络贡献者角色或自定义角色。有关这些NIC相关权限的详细信息，请参阅<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>。</block>
-  <block id="61576418077bcd8f8092882074c7da4e" category="admonition">只能在NIC0下为每个相应的SVM创建前端IP。有关如何将IP地址添加到SVM网件0的详细信息、请参阅"步骤7 [Hyperlink ]"</block>
   <block id="448ebe9e1f128098ee0a86ff8eada021" category="paragraph">如果许可证支持、您可以在单节点系统或HA对上创建多个Storage VM。请注意、您必须使用BlueXP  API在HA对上创建Storage VM、而可以使用ONTAP系统管理器或ONTAP命令行界面在单节点系统上创建Storage VM。</block>
   <block id="0bc83530bf1c3dfbdf7ae1a46191b416" category="paragraph">您必须使用BlueXP API在Google Cloud中的Cloud Volumes ONTAP 系统上创建Storage VM。需要使用API (而不是ONTAP系统管理器或ONTAP命令行界面)、因为BlueXP  会为Storage VM配置所需的LIF服务以及出站SMB/CCIFS通信所需的iSCSI LIF。</block>
   <block id="3fddfb3310c868dbd37067b4e4c94bc2" category="paragraph">BlueXP  支持通过ONTAP系统管理器或ONTAP命令行界面创建的任何其他Storage VM。</block>
@@ -5156,7 +4994,6 @@
   <block id="fd4ec163c1cf6efd42bc780358b7fb84" category="list-text">选定区域和区域支持高级SSD v2托管磁盘。有关受支持地区的信息，请参阅<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>。</block>
   <block id="a9b7d8164fa6256aced367d79aa2abab" category="inline-link-macro">Microsoft.Compute/VMOrchestratorZonalMultiFD功能</block>
   <block id="218949100f9bb1c7fe8ef525701547a0" category="list-text">此订阅已注册到Microsoft <block ref="b47370f17ae59423c751ec1694c9ca74" category="inline-link-macro-rx"></block>.</block>
-  <block id="d63d6372ae20eb19f707718f270a6b48" category="list-text"><block ref="d63d6372ae20eb19f707718f270a6b48" category="inline-link-macro-rx"></block></block>
   <block id="fadac06c68e9ffce4bb17bd0d6ec5f2b" category="paragraph">满足以下条件时、您可以在单个可用性区域中部署HA对并使用高级SSD v2托管磁盘：</block>
   <block id="ed0e2426cd36bf5b4eb9a140ae9a7508" category="list-text">对于单个可用性区域、请选择Azure区域、可用性区域、vNet和子网。</block>
   <block id="e09953ef98be5a0cd4cc4ad0c288c775" category="paragraph">从Cloud Volumes ONTAP 9.15.1开始、您可以在Azure的单可用性区域(Single Availability Zones、AZs)中以HA模式部署虚拟机(VM)实例。您需要选择支持此部署的区域和区域。如果分区或区域不支持分区部署、则会遵循之前的LRS非分区部署模式。要了解共享受管磁盘支持的配置，请参见<block ref="2148c58538cc3adf327c3ade110b8487" category="inline-link-macro-rx"></block>。</block>
@@ -5286,7 +5123,6 @@
   <block id="d2a65c4b3d7d612fe9fcff1cd53a7468" category="summary">应启用Microsoft Azure的高可用性模式、以减少计划外故障转移时间、并为Cloud Volumes ONTAP启用NFSv4支持。</block>
   <block id="5bc18ee7996a6b2f47f52d9c0d64c84c" category="doc">在Azure中启用高可用性模式</block>
   <block id="3cad9b9a9f4d8a66f7f9dabc18c3c350" category="list-text">注册高可用性模式功能：</block>
-  <block id="55b69e64ede595e0a10eefb4d9199033" category="paragraph">只要布局组创建失败、Cloud Volumes ONTAP就会失败、并在一个可用性区域(AZ)中回滚新部署的AWS高可用性(HA)配置。如果需要、您可以通过配置放置组来强制成功完成部署、以便在创建失败时绕过回滚过程。</block>
   <block id="43c795154e3b7bf74f7abd49f2e26e1a" category="paragraph">通过BlueXP 、您可以为Cloud Volumes ONTAP选择写入速度设置、但Google Cloud中的高可用性(HA)对除外。在选择写入速度之前、您应该了解正常和高设置之间的差异、以及使用高速写入速度时的风险和建议。<block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="473579de7dd820e9afa2d1deba8066a3" category="paragraph">下面是几个示例：</block>
   <block id="f7cd19fdb1155c901cb27faf15e77439" category="list-text">如果要升级已安装的Cloud Volumes ONTAP版本，请单击*立即升级!*默认情况下、您会看到最新的兼容升级版本。</block>
@@ -5321,14 +5157,12 @@
   <block id="e8ae21b110baed89680dca18585c158c" category="section-title">本地区域支持在私有模式下使用Amazon Web Services</block>
   <block id="b32702079d81c2fd1e39448319edfa06" category="paragraph">现在、BlueXP  支持在私有模式下使用AWS本地区域进行Cloud Volumes ONTAP高可用性(HA)部署。以前仅限于标准模式的支持现已扩展为包括专用模式。</block>
   <block id="648169096ce56c8569ce36a4abebe9c7" category="admonition">在受限模式下使用BlueXP  时、不支持AWS本地区域。</block>
-  <block id="7a73f560e215c4ff952d3384c5435ae9" category="list-text"><block ref="7a73f560e215c4ff952d3384c5435ae9" category="inline-link-rx"></block></block>
   <block id="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="list-text"><block ref="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="inline-link-rx"></block></block>
   <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
   <block id="059b6fdd2ea839d9327c322a4c87e168" category="doc">基于节点的许可证终止提供</block>
   <block id="73dfeef5d38f87e4c1d9e4b6417db109" category="paragraph">NetApp已计划终止基于Cloud Volumes ONTAP节点的许可的可用性(EOA)和支持结束(EOS)。从2024年11月11日开始、基于节点的许可证的有限可用性已终止。基于节点的许可支持将于2024年12月31日结束。在基于节点的许可证EOA之后、您应使用BlueXP  许可证转换工具过渡到基于容量的许可模式。</block>
   <block id="90df487d076cd9295a7192268b4439ee" category="inline-link">基于节点的许可证终止提供</block>
   <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link">将基于节点的许可证转换为基于容量的许可证</block>
-  <block id="2293617fe352e42e5a1e5d757463cb39" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="5987d844b1ad687ea551a96a31c7c0df" category="inline-link-rx"></block></block>
   <block id="a4b4a128b8ea43df8551a18d37b0bfcd" category="section-title">从BlueXP  中删除基于节点的部署</block>
   <block id="04b144a0be31129b4ac9a0f2751271d9" category="paragraph">BlueXP  已弃用使用基于节点的许可证部署Cloud Volumes ONTAP系统的选项。除了少数特殊情况之外、您不能对任何云提供商的Cloud Volumes ONTAP部署使用基于节点的许可证。</block>
   <block id="11c97a8e296f1428a1d4c9a2253b1bfb" category="paragraph">NetApp认识到以下独特的许可要求符合合同义务和运营需求、并将在这些情况下继续支持基于节点的许可证：</block>
@@ -5354,7 +5188,6 @@
   <block id="54a223dbcc3dca4a58e9e5bc292e0c6b" category="paragraph">有关的最新完整详细信息，请参见AWS文档<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>。</block>
   <block id="8d4ac812d0760131bc0db9a92eb2b512" category="paragraph">每个具有基于节点的自带许可证(BYOL)的Cloud Volumes ONTAP系统都必须安装一个具有有效订阅的系统许可证。BlueXP通过管理许可证并在许可证到期前显示警告来简化此过程。</block>
   <block id="2316a1561b1b51c9eb0f231cb338cf48" category="summary">熟悉基于容量的许可证的收费、使用模式、定价和配置。</block>
-  <block id="13dba612a4f942a80cbc82c5f678d57c" category="doc">有关基于容量的许可证的更多信息</block>
   <block id="24382072604813ac4ccf773eac088de7" category="paragraph">您应熟悉基于容量的许可证的收费和容量使用情况</block>
   <block id="14f508f0826944b504efb176670357e8" category="list-text">*BYOL*：自带许可证(BYOL)。从NetApp购买的一种许可证、可用于在任何云提供商中部署Cloud Volumes ONTAP。</block>
   <block id="3c7a90227f7481790a6d7eb5b1a274ea" category="list-text">*PAYGO*：按需购买(PAYGO)订阅是云提供商市场上按小时订阅的服务。</block>
@@ -5380,7 +5213,6 @@
   <block id="913f6cd3e420105c804151f182c6938f" category="admonition">即使在这些情况下、基于节点的新许可证和许可证续订的有效期也最长为自批准之日起一年。</block>
   <block id="5be0251ff1848cd4d292e0a684e70539" category="section-title">许可证转换</block>
   <block id="67b50b6cd5ac50e92192638dab47bddc" category="paragraph">在过渡之前、最好先熟悉这两种许可模式之间的差异。基于节点的许可包括每个ONTAP实例的固定容量、这可能会限制灵活性。另一方面、基于容量的许可允许在多个实例之间共享存储池、从而提高灵活性、优化资源利用率、并降低重新分配工作负载时可能面临的经济处罚。基于容量的充电可根据不断变化的存储需求进行无缝调整。</block>
-  <block id="9deed5641b081a08e814b22533f5376e" category="paragraph">要了解如何执行此转换，请参见<block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block>。</block>
   <block id="2840378978873ef766f1cf65e35e8874" category="admonition">不支持将系统从基于容量的许可转换为基于节点的许可。</block>
   <block id="eb6b8681b70b8bdf10f97c0999d1a166" category="paragraph">WORM功能可与自带许可证(Bring Your O自己 的许可证、BYOL)和适用于您的许可证的市场订阅一起使用、无需额外付费。请联系您的NetApp销售代表、将WORM添加到您的当前许可证中。</block>
   <block id="860927af902beb1428465c4ff2b73981" category="list-text">如果在创建工作环境时禁用WORM存储、则通过BlueXP 、ONTAP系统管理器或ONTAP命令行界面创建的每个卷都会禁用WORM。</block>
@@ -5465,15 +5297,6 @@
   <block id="23364a1412324aba4675105eacf57908" category="example-title">查看步骤</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">现在、您可以使用BlueXP  在现有Cloud Volumes ONTAP系统上激活一次写入、多次读取(Write On一次 读取、Read M众多、WORM)存储。通过此功能、您可以灵活地在工作环境中启用WORM、即使在创建WORM期间未启用WORM也是如此。启用后、您将无法禁用WORM。</block>
   <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">更改收费方法不会影响是通过从NetApp (BYOL)购买的许可证还是通过云提供商的市场按需购买(PAYGO)订阅来收费。</block>
-  <block id="deeb890dedc65f3ba1539e8c0083a08b" category="paragraph">对于高可用性(HA)对、您应访问集群中的每个Storage VM (SVM)、并在nic0下为每个SVM创建相应的IP。如何为 HA 对分配 IP 地址取决于您使用的存储协议。在HA模式下、用户必须确保正确配置IP地址以支持故障转移和冗余、这对于保持存储系统的高可用性和可靠性至关重要。</block>
-  <block id="d40f712a330c4835a0ab9b70db06051b" category="list-text">SVM管理LIF的可选IP地址</block>
-  <block id="534113954d7a54ea89ef88fa230b7146" category="paragraph">即使未使用iSCSI协议、DNS通信也需要iSCSI LUN。为此，我们使用了 iSCSI LIF ，因为它不会在故障转移时迁移。</block>
-  <block id="779dc7c57d3ba82d3f1438a241a8770a" category="inline-link-macro">以前的过程</block>
-  <block id="7e5f8351d1e24c2cf0c0d5fbc956ea2b" category="list-text">创建数据生命周期。在此步骤中、您将使用在中分配的IP<block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>作为数据生命周期。</block>
-  <block id="e5da8bd8aa33e128edc30f4d0c6082f4" category="list-text">创建iSCSI LUN以提供DNS通信。即使未使用iSCSI协议、DNS通信也需要iSCSI LUN。</block>
-  <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">创建NAS数据生命周期。在此步骤中、您将使用在中分配的IP<block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>作为数据生命周期。</block>
-  <block id="c023c17ce97ef2fee30e2cb2aa0cd81a" category="paragraph">有关详细信息，请参见 <block ref="7e81f0f3d7f6d88b77289e1baaf5eecf" category="inline-link-macro-rx"></block>。</block>
-  <block id="c0131b1cf44af0fec95135e45a801bbe" category="doc">在Google Cloud中规划VPC服务控件</block>
   <block id="fa055d94084c7095d6c7ec354ec44857" category="doc">已针对Google Cloud更新受支持的VM列表、以符合最佳实践</block>
   <block id="497e698cad27d6346959de7394ab5df8" category="doc">已针对Azure更新受支持的VM列表、以符合最佳实践</block>
   <block id="a295598082ec4c1c06fb5a3e2ad3e1d1" category="paragraph">在Azure中部署新的Cloud Volumes ONTAP实例时、不再可在BlueXP  上选择DS_v2和ES_v3计算机系列。这些系列将仅在旧的现有系统中保留和支持。只有从9.12.1版本开始、Azure才支持全新部署Cloud Volumes ONTAP。建议您切换到ES_v4或与Cloud Volumes ONTAP 9.12.1及更高版本兼容的任何其他系列。但是、通过API进行新部署时、可以使用DS_v2和ES_v3系列计算机。</block>
@@ -5830,8 +5653,6 @@
   <block id="3c0acb220a6d083f589c0e9d2c4bb5b9" category="paragraph">密码必须遵守一些规则。新密码：</block>
   <block id="c3b8a6ca2fd73fcdea07816d50da5780" category="list-text">不应包含该词<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block></block>
   <block id="381979ed7a4bb72f3b0208ee434d237f" category="list-text">长度必须介于8到50个字符之间</block>
-  <block id="035cd612f5f182c28849afc511825894" category="list-text">必须至少包含一个英文字母和一个数字</block>
-  <block id="823f5f4ed700cc35a2027d5df0c8706e" category="list-text">不应包含以下特殊字符：<block ref="172ce81fb34a8026a9711811fececc33" prefix=" " category="inline-code"></block></block>
   <block id="e574fef1a46f15b3c69233f51519d7cf" category="paragraph">有关详细信息，请参阅<block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block>、<block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>和<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
   <block id="401117ae72e5a93172e8ce8c23c7676d" category="cell">9.16.1 (仅适用于Azure和Google Cloud)</block>
   <block id="c06b363f3dfd3ad2d628083406a0a1ac" category="paragraph">此页面上介绍的增强功能专用于支持Cloud Volumes ONTAP 管理的BlueXP功能。要了解Cloud Volumes ONTAP软件本身的新增功能，请访问<block ref="708e09e3f2783926556b9c6d77f63a27" category="inline-link-rx"></block>。</block>
@@ -5841,4 +5662,144 @@
   <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">位于美国中部</block>
   <block id="7a6df46ff8e25ac610f60f312512afa4" category="list-text">美国弗吉尼亚州政府(美国政府区域-弗吉尼亚州)</block>
   <block id="0de5f5ade75808b90faefd69873b4b3c" category="section-title">2025年3月12日</block>
+  <block id="cded3209819889817786a4170eb0e49c" category="inline-link">为Cloud Volumes ONTAP启用NetApp勒索软件保护解决方案</block>
+  <block id="d2675df83ff2fbafe199fb06a1fd5d56" category="list-text"><block ref="d2675df83ff2fbafe199fb06a1fd5d56" category="inline-link-rx"></block></block>
+  <block id="c2e10e9222f5db93eded2cefa02c0ef5" category="inline-link">将基于Cloud Volumes ONTAP节点的许可证转换为基于容量的许可证</block>
+  <block id="0fc6c6e7c7c886fe493ee21e8e7be67d" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="b3c563b157608d2aec77c4e8d2c32e61" category="inline-link-rx"></block></block>
+  <block id="322a339b221056f32120ffd18077d44d" category="doc">通过Azure中的API自动创建Storage VM</block>
+  <block id="aa1c2167957b1092da7e43e77867748c" category="paragraph">现在、您可以使用BlueXP  API为Azure中的Cloud Volumes ONTAP创建、重命名和删除其他提供数据的Storage VM。如果您需要使用Storage VM进行管理、则使用API可以自动执行Storage VM创建过程、包括配置所需的网络接口、LIF和管理LIF。</block>
+  <block id="4a688a36b1b8761ed6587867f87a2cc3" category="inline-link">在Azure中管理为Cloud Volumes ONTAP提供数据的Storage VM</block>
+  <block id="efef8f9f364ee7668a530080a3464383" category="paragraph"><block ref="efef8f9f364ee7668a530080a3464383" category="inline-link-rx"></block></block>
+  <block id="36b957c17f5c2834f27a8de7ecccad90" category="doc">了解如何将AutoSupport和数字顾问用于Cloud Volumes ONTAP</block>
+  <block id="a813237b7fa0fd426e65b5e81ab565df" category="doc">了解Cloud Volumes ONTAP对AWS Elelic Volumes的支持</block>
+  <block id="367721c6da74417e71470676fd55bfec" category="doc">适用于Cloud Volumes ONTAP的Azure Marketplace图像签名验证</block>
+  <block id="7e2d94ca440b9c349d09b9e01c8c90ab" category="doc">适用于Cloud Volumes ONTAP的Azure Marketplace映像验证</block>
+  <block id="b3b8964875bb6d67dab64d2f1d39b3aa" category="doc">Cloud Volumes ONTAP支持的客户端协议</block>
+  <block id="84fbe7f88bb3a63bec3ffcbda024a860" category="doc">了解如何在AWS、Azure或Google Cloud中使用Cloud Volumes ONTAP进行数据分层</block>
+  <block id="46d42323928c4276f41709f7eacfb86f" category="doc">当Cloud Volumes ONTAP HA对中的节点脱机时、操作不可用</block>
+  <block id="25706862d682c182f521566815ee29c5" category="doc">了解如何在Cloud Volumes ONTAP中验证Google Cloud图像</block>
+  <block id="2aeb1ad45e4734cce6c9fcee5eb6f0d0" category="doc">适用于Cloud Volumes ONTAP的Google Cloud图像签名验证</block>
+  <block id="94e9d73297e9233a06c7fdb791f653bc" category="doc">了解Azure中的Cloud Volumes ONTAP HA对</block>
+  <block id="d0dd3fdc32191c28bcc7f6feca9ffe44" category="doc">了解Google Cloud中的Cloud Volumes ONTAP HA对</block>
+  <block id="b35c9dba2b9bdb409d9ac4b1e08d35b4" category="doc">了解AWS中的Cloud Volumes ONTAP HA对</block>
+  <block id="be02aeef4770b69cefbe40935aba2797" category="doc">Cloud Volumes ONTAP 许可</block>
+  <block id="95b5ae6b0af18840a3741634cd325668" category="list-text">按配置的容量为您的NetApp帐户中的多个Cloud Volumes ONTAP 系统付费。包括购买附加云数据服务的功能。有关基于容量的许可证中使用模式的详细信息，请参见<block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>。</block>
+  <block id="c3f0a05442b6c8a72739ff963cfeed7f" category="paragraph">以下基于容量的软件包可用于Cloud Volumes ONTAP。有关基于容量的许可证包的详细信息，请参见<block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>。</block>
+  <block id="19a5330bf6f5eac370d1103981c5a834" category="inline-link-macro">最小充电量</block>
+  <block id="b0890bcc109876c5e12a5adec396926f" category="paragraph">一旦将系统转换为Essentials软件包、就会应用。<block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block></block>
+  <block id="f6d538cae99e0f8fa45e7e8780358583" category="paragraph">要了解如何执行此转换，请参见<block ref="3fdaa70059ad7f9b695791d3dfebbc25" category="inline-link-macro-rx"></block>。</block>
+  <block id="1a7468dd02c2c074fc65d2ee7db41483" category="doc">了解Cloud Volumes ONTAP工作负载的性能监控</block>
+  <block id="554a0d7666ec33e45169ab1eed7eb037" category="doc">了解Cloud Volumes ONTAP数据加密和勒索软件保护</block>
+  <block id="0a1772ef9617fc577288f8a885c2938c" category="inline-link-macro">使用NetApp加密解决方案对卷进行加密</block>
+  <block id="f750b4d8a7bae05db59f399386bae8b4" category="paragraph">设置受支持的密钥管理器是唯一必需的步骤。有关设置说明，请参阅<block ref="3dccf04b19d6c7766062818a9209af46" category="inline-link-macro-rx"></block>。</block>
+  <block id="bf5dc703fb5ff1a19ddeb7cf2f15648c" category="doc">Cloud Volumes ONTAP存储管理</block>
+  <block id="d58231e89f55bf4653c26dafb2cd1a75" category="doc">用于Cloud Volumes ONTAP集群的磁盘和聚合</block>
+  <block id="137a4f9c2770404d0739c4ea093147a2" category="inline-link-macro">低成本对象存储</block>
+  <block id="197b31f211e5bcf8a6c50c64a00209b0" category="paragraph">底层 EBS 磁盘类型可以是通用 SSD （ GP3 或 GP2 ），配置的 IOPS SSD （ IO1 ）或吞吐量优化型 HDD （ st1 ）。您可以将EBS磁盘与Amazon S3配对到<block ref="8ea89944316dc5317d2fdef703995c09" category="inline-link-macro-rx"></block>。</block>
+  <block id="98fa1980d4ceb972751f579468dd1eac" category="paragraph">您可以将托管磁盘与Azure Blb存储配对到<block ref="8ea89944316dc5317d2fdef703995c09" category="inline-link-macro-rx"></block>。</block>
+  <block id="530728335b6eef1c9412262b7a737998" category="inline-link-macro">在Azure中启动Cloud Volumes ONTAP HA对</block>
+  <block id="648475bb12c1629374962b8e96fa671f" category="list-text"><block ref="648475bb12c1629374962b8e96fa671f" category="inline-link-macro-rx"></block></block>
+  <block id="45809dd0cadbd32c815238886deddf7a" category="paragraph">磁盘类型可以是 _zonal SSD persistent disks_、 _zonal balanced_persistent disks_或 _zonal standard persistent disks_。您可以将具有Google存储分段的永久性磁盘与配对<block ref="8ea89944316dc5317d2fdef703995c09" category="inline-link-macro-rx"></block>。</block>
+  <block id="398200b3f60c4e3e7a3b7cae683fbd49" category="doc">了解Cloud Volumes ONTAP上的WORM存储</block>
+  <block id="0d7f1e80b69fb06179f8f4e82af3b4d2" category="doc">Cloud Volumes ONTAP支持的默认配置</block>
+  <block id="bdb9f0bd802608490113cecb46963491" category="doc">为Cloud Volumes ONTAP设置AWS网络</block>
+  <block id="48a88a6a697e4dc4a6da4cec716d1400" category="paragraph">确保您已在AWS中满足以下要求。</block>
+  <block id="8163eb1a73467820de782c3a3ebd563a" category="doc">为Cloud Volumes ONTAP设置Google Cloud网络</block>
+  <block id="cb059927a7527646b4cd68cb3220f2ea" category="doc">适用于Cloud Volumes ONTAP的AWS安全组入站和出站规则</block>
+  <block id="c7c36710c319ba2646765acbeed52820" category="doc">Cloud Volumes ONTAP部署支持的ONTAP版本</block>
+  <block id="03b6a8927e57dee9e13ce3e743433f8c" category="doc">设置VPC服务控件以在Google Cloud中部署Cloud Volumes ONTAP</block>
+  <block id="d22f5ca5f04b85906e5c03f0a8f0354d" category="doc">在Cloud Volumes ONTAP上为WORM文件创建防篡改Snapshot副本</block>
+  <block id="816ad715f74514ea0e194c106b673bf0" category="doc">在Cloud Volumes ONTAP系统上使用FlexCache卷加快数据访问速度</block>
+  <block id="e1d184508c5a07e34d4799a6df05b20e" category="doc">将现有Cloud Volumes ONTAP系统添加到BlueXP </block>
+  <block id="bd38f10049f751a48716a3340ced5706" category="doc">使用AWS密钥管理服务管理Cloud Volumes ONTAP加密密钥</block>
+  <block id="ec50d6cbb7b13703598a5b1e88bc013b" category="doc">下载适用于Cloud Volumes ONTAP的Azure Marketplace映像摘要</block>
+  <block id="cd77a4de9d5cef0b54e9b8a8803001ee" category="doc">从Azure Marketplace导出适用于Cloud Volumes ONTAP的HD映像</block>
+  <block id="890da2408e0505fbcfccbfee39ec96e9" category="doc">使用Azure密钥存储管理Cloud Volumes ONTAP加密密钥</block>
+  <block id="733ed8eca6d49536d616b96f190c0f55" category="doc">在AWS中修改Cloud Volumes ONTAP系统的EC2实例类型</block>
+  <block id="109fc4688092b7a195c632a007223a37" category="doc">更改Cloud Volumes ONTAP集群管理员密码</block>
+  <block id="c33283e89e8cd329189a883e4e8f4053" category="list-text">必须至少包含一个英文字母和一个数字</block>
+  <block id="c2ffca846e9e6726f5fcc838afa7cba5" category="list-text">不应包含以下特殊字符：<block ref="4981b6e6dc1b6d6cbf5e189886588934" prefix=" " category="inline-code"></block></block>
+  <block id="82bd762491ef3ae271a0ea595966e322" category="doc">修改多个AWS As中Cloud Volumes ONTAP HA对的路由表</block>
+  <block id="70484016d5d0bccccca7b3643c1e1cb3" category="doc">为Cloud Volumes ONTAP系统配置EMS</block>
+  <block id="ce61224c44993a5d74a14a814d63a141" category="doc">在AWS单个AWS中为Cloud Volumes ONTAP HA对配置布局组创建</block>
+  <block id="40e4e6d3852024f0e6a0da75b4eb51d7" category="paragraph">如果创建布局组失败、AWS单可用性区域(AZ)中的Cloud Volumes ONTAP高可用性(HA)部署可能会失败并回滚。如果Cloud Volumes ONTAP节点和调解器实例不可用、则创建布局组也会失败、并且部署将回滚。为了避免这种情况、您可以修改配置、以便即使布局组创建失败也能完成部署。</block>
+  <block id="d184531e79cb1894504e475c084ea277" category="paragraph">绕过回滚过程后、Cloud Volumes ONTAP部署过程将成功完成、并通知您放置组创建未完成。</block>
+  <block id="686735252f557ef703d19ff54b0dfe6f" category="list-text">导航到<block ref="678ffe0122c1675f1a5ee93c014ea09c" prefix=" " category="inline-code"></block>。</block>
+  <block id="94f47533af71e506ca6e46f5d41e5281" category="list-text">通过将参数值更<block ref="dcf0e663f730f50abe895b75152d74d3" prefix=" " category="inline-code"></block>改为<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>进行编辑<block ref="578c313f5cd6eb30b5ac7297c331bb28" prefix=" " category="inline-code"></block>。此参数的默认值为<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>。</block>
+  <block id="0b5251f1883e3ec824d9a78806b343fd" category="list-text">保存文件并注销 Connector 。您不需要重新启动Connector。</block>
+  <block id="955118bb1928f31528e6d1c6032614da" category="doc">从主机系统连接到Cloud Volumes ONTAP上的LUN</block>
+  <block id="c90097da93864447e404b17f479c8d12" category="doc">为Cloud Volumes ONTAP系统创建聚合</block>
+  <block id="656c43863fb350bd8a6512b458eb5468" category="doc">在Cloud Volumes ONTAP系统上创建FlexVol volume</block>
+  <block id="fd73c5858f758b5eb182a71086750cc2" category="doc">为Cloud Volumes ONTAP创建Google Cloud服务帐户</block>
+  <block id="0c533f9c8b7c3cfb052c90c911c8a5aa" category="doc">从BlueXP  中删除Cloud Volumes ONTAP系统</block>
+  <block id="956ed8c59362d82aacc7c1ccc24ee128" category="doc">在AWS共享子网中部署Cloud Volumes ONTAP HA对</block>
+  <block id="e16981ff1ca4ae7d06bc78f8dba0cdf6" category="section-title">在Google Cloud中启动单节点系统</block>
+  <block id="9e2bbff4e12af07e156a6163f9f58350" category="section-title">在Google Cloud中启动HA对</block>
+  <block id="212827cc745af4d5fcc5f8b6fbc59a86" category="section-title">在AWS中启动单节点Cloud Volumes ONTAP系统</block>
+  <block id="52931339f9480af5b0fb9841710f9d8e" category="section-title">在AWS中启动Cloud Volumes ONTAP HA对</block>
+  <block id="253f14f70b008cf9e9d1e6143593db65" category="section-title">在Azure中启动单节点Cloud Volumes ONTAP系统</block>
+  <block id="815c7816169ce0181021470fc851ad75" category="doc">对Cloud Volumes ONTAP系统使用Azure专用链路或服务端点</block>
+  <block id="3f8a964f1b4371b109b271e17740eb42" category="doc">使用NetApp加密解决方案对Cloud Volumes ONTAP上的卷进行加密</block>
+  <block id="7e2f4ea87cd4ef2400c67d3a6b35c0e4" category="doc">验证适用于Linux上Cloud Volumes ONTAP的Azure Marketplace映像签名</block>
+  <block id="eb0bf51905bf265524b4344e372f0021" category="doc">在MAC操作系统上验证Cloud Volumes ONTAP的Azure Marketplace映像签名</block>
+  <block id="a6c30282f56568ee9b5729642207a5b5" category="doc">将Google Cloud图像转换为Cloud Volumes ONTAP的原始格式</block>
+  <block id="240de91fb65f5d6acac3d891ccd57289" category="doc">在AWS机密云或AWS顶级机密云中部署Cloud Volumes ONTAP</block>
+  <block id="e35e4a3b0dde1d61e0fbd30f69e261c0" category="doc">使用Google Cloud KMS管理Cloud Volumes ONTAP加密密钥</block>
+  <block id="b6be3318c0d7ae71f2c9a963e3341a7a" category="paragraph">您可以使用<block ref="4ef7b266bd9680469191a283388836d8" category="inline-link-macro-rx"></block>保护Google Cloud Platform部署的应用程序中的Cloud Volumes ONTAP加密密钥。</block>
+  <block id="672b15aae3fb8b2bff49215a29073bfc" category="doc">管理Cloud Volumes ONTAP集群的聚合</block>
+  <block id="05fef605ad17853dff22052e9ab0016f" category="doc">管理Cloud Volumes ONTAP的基于容量的许可</block>
+  <block id="3687f4296c72de96f1ced46ad440ddf0" category="doc">管理连接器上的Cloud Volumes ONTAP聚合容量</block>
+  <block id="29808fc25dc24e47f398e7f013845bb1" category="doc">通过BlueXP  管理Keystone订阅</block>
+  <block id="160221c1e99e53b72af8a65c2440852b" category="doc">管理Cloud Volumes ONTAP基于节点的许可</block>
+  <block id="76872305ddb703eedd7fbe3e66263d83" category="doc">为Cloud Volumes ONTAP设置Storage VM灾难恢复</block>
+  <block id="ebf191006a9d83c300a0958f0a72be71" category="doc">管理Cloud Volumes ONTAP系统上的卷</block>
+  <block id="20dbf2654bc1d1d73fb4b7331f8fa8cf" category="doc">启动和停止Cloud Volumes ONTAP系统</block>
+  <block id="edbb04641be355c373bb6dcba79285c5" category="doc">在AWS中管理为Cloud Volumes ONTAP提供数据的Storage VM</block>
+  <block id="6c06918c853ceff156bfa91e6f728521" category="paragraph">Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其识别为 _svm_ 或 _vserver_ 。默认情况下、Cloud Volumes ONTAP配置有一个Storage VM、但在Azure中运行Cloud Volumes ONTAP时、您可以创建其他Storage VM。</block>
+  <block id="a085c0a61467db1db666585d6c91ebba" category="paragraph">要在Azure上创建和管理其他提供数据的Storage VM、应使用BlueXP  API。这是因为API可自动执行创建Storage VM和配置所需网络接口的过程。创建Storage VM时、BlueXP  会配置所需的LIF服务以及从Storage VM进行出站SMB/Cifs通信所需的iSCSI LIF。</block>
+  <block id="7147a143d2af533e058f535a19e1223d" category="paragraph">从Cloud Volumes ONTAP 9.0.0开始、根据您的许可证、特定配置支持多个Storage VM。请参见<block ref="17601f6b0c4702ab7b2568d76b48bf40" category="inline-link-rx"></block>以验证您的Cloud Volumes ONTAP版本支持的Storage VM数量。</block>
+  <block id="c0bc1a321126780ce6dd98fe7445b54b" category="paragraph">所有Cloud Volumes ONTAP先前版本的9.9.0均支持一个提供数据的Storage VM和一个用于灾难恢复的目标Storage VM。如果源 Storage VM 发生中断，您可以激活目标 Storage VM 以进行数据访问。</block>
+  <block id="d614d92be13a98e84d160b41e3cc3192" category="paragraph">要为Cloud Volumes ONTAP创建和管理Storage VM、此连接器需要特定权限。所需的权限包括在中<block ref="7dc648b1297c419be8c55b589146f4e1" category="inline-link-rx"></block>。</block>
+  <block id="d77aca129ef05e1d8e6c8f148746dce9" category="paragraph">根据您的配置和许可证类型、您可以使用BlueXP  API在单节点系统上或高可用性(HA)配置中创建多个Storage VM。</block>
+  <block id="ee24c5eec6ef0b71321a4b5ab8c7c8eb" category="paragraph">在使用API创建Storage VM并配置所需的网络接口时、BlueXP  还会修改<block ref="891e111023ee3cccd4407be6ddd24c21" prefix=" " category="inline-code"></block>数据Storage VM上的策略、方法是从NAS数据LIF中删除以下服务、然后将其添加到用于出站管理连接的iSCSI数据LIF中：</block>
+  <block id="8706f6ead181f6948eb97f37a1eb2445" category="paragraph">使用以下API调用在单节点系统上创建Storage VM。</block>
+  <block id="3fdacbfd71cad923423d9367166e8e10" category="paragraph"><block ref="c9cca6b9ba2558d529f121eb1e013395" prefix="" category="inline-code"></block></block>
+  <block id="6b6d0dcd4030cb1778fc115dbc546a6d" category="paragraph">使用以下API调用在Azure HA配置中创建Storage VM：</block>
+  <block id="ffed8e594be63a1704331cda026451ec" category="paragraph"><block ref="332a159c5eb24709f786ad048b2b2fc8" prefix="" category="inline-code"></block></block>
+  <block id="546e719c658c5e1549c21e8288af2461" category="section-title">管理单节点系统和HA对上的Storage VM</block>
+  <block id="2d9a7bdb8e630290a3ab4f21dc7b190b" category="paragraph">通过使用BlueXP  API、您可以在单节点和HA配置中重命名和删除Storage VM。</block>
+  <block id="292926f0684b9510b55c12943203a47a" category="paragraph">要重命名Storage VM、您应提供现有Storage VM和新Storage VM的名称作为参数。</block>
+  <block id="e313c8cca3b79dbc79cbcfe63c3d6efb" category="list-text">使用以下API调用重命名单节点系统上的Storage VM：</block>
+  <block id="163713240b16088767c6e8dd70caefde" category="paragraph"><block ref="d3fe545ac501d33a61917e447e4f0069" prefix="" category="inline-code"></block></block>
+  <block id="5fb2806cc031c54b3af655dfffd8fd1e" category="list-text">使用以下API调用重命名HA配置中的Storage VM：</block>
+  <block id="f80f88eb929c0d4cd5386633be23cf21" category="paragraph"><block ref="d138335618e0186622605f96b9b3b0d1" prefix="" category="inline-code"></block></block>
+  <block id="c92f0160e249d6660e4b4262409aea6c" category="paragraph">在单节点或HA配置中、如果Storage VM不具有任何活动卷、则可以将其删除。</block>
+  <block id="a3590d03d962ac5b789854576b314e57" category="list-text">使用以下API调用删除单节点系统上的Storage VM：</block>
+  <block id="eba2f559f6f185c3ecb4fd32a7acf4c8" category="paragraph"><block ref="f72e53a28ab0632263c72933e322d2a6" prefix="" category="inline-code"></block></block>
+  <block id="55aa553ec7b227afb3f22326cbc74d66" category="list-text">使用以下API调用删除HA配置中的Storage VM：</block>
+  <block id="ab5ee533b7c08abc987c74ffd54477b9" category="paragraph"><block ref="4bd28f76ace2927734ae3d3abcca1009" prefix="" category="inline-code"></block></block>
+  <block id="914fe95f5aa6c2bb4ed60cded696ac13" category="doc">在Google Cloud中管理为Cloud Volumes ONTAP提供数据的Storage VM</block>
+  <block id="29840bff9430e52461cf42481774b929" category="paragraph">连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需的权限包括在中<block ref="fef452a667b371049bf1cd426aa1994a" category="inline-link-rx"></block>。</block>
+  <block id="3fab6f26ccc1354a7fda62c947fe176d" category="paragraph"><block ref="4ae3965c67ec8b00b8c07c6aa50d0d55" prefix="" category="inline-code"></block></block>
+  <block id="491f4afb4d76ae587fca5e7ac986bec8" category="paragraph"><block ref="6c678c0fbac1c8687769d59bba8c2b43" prefix="" category="inline-code"></block></block>
+  <block id="f6c911e7dfb2a5f8d5a5d0776d47d0cf" category="paragraph"><block ref="ead0722cb022f93c950a941d0eae1560" prefix="" category="inline-code"></block></block>
+  <block id="991acdf01923b94a0bcf31d5d24b6095" category="doc">管理Cloud Volumes ONTAP的Storage VM</block>
+  <block id="47b81d0548595de2006c8db7b6c6d963" category="doc">在Azure控制台中移动Cloud Volumes ONTAP的Azure资源组</block>
+  <block id="8de7967775f0cf82161d1d5411115f1c" category="doc">覆盖Azure中Cloud Volumes ONTAP HA对的CIFS锁定</block>
+  <block id="a594296c21b04d237d645fb5ddbfd992" category="doc">为Cloud Volumes ONTAP启用NetApp勒索软件保护解决方案</block>
+  <block id="b8d0933e4595c12a05c25d72334bd141" category="doc">注册Cloud Volumes ONTAP按需购买系统</block>
+  <block id="b64a4e5c2983a08c1181a6a3a8d64492" category="doc">从BlueXP  中删除Cloud Volumes ONTAP工作环境</block>
+  <block id="7b2ff2cd0d40ee5016ce479175c970a7" category="doc">在Azure中为Cloud Volumes ONTAP启用VMOrchestratorDAlMultiFD</block>
+  <block id="84a333a53e4f22cbaaa6d41a10b81021" category="doc">为Cloud Volumes ONTAP节点设置AWS IAM角色</block>
+  <block id="24558fa2d9e2dec026acbaef1270de6f" category="doc">设置Cloud Volumes ONTAP以在AWS中使用客户管理的密钥</block>
+  <block id="88f49ea08cc48c12826d7601b30c9af6" category="doc">为Cloud Volumes ONTAP HA对设置AWS传输网关</block>
+  <block id="b50f1f0d50a2ec5cb27990e7dcd7bc5a" category="doc">使用NTP服务器同步Cloud Volumes ONTAP系统时间</block>
+  <block id="dc856ecc0acf613e6f450c313f378cfd" category="doc">将非活动Cloud Volumes ONTAP数据分层到低成本对象存储</block>
+  <block id="aac1d92c6e4f6da425fffda1a43bb38b" category="doc">验证Cloud Volumes ONTAP的AutoSupport设置</block>
+  <block id="bd915a4eab5328d0dbd80804cc09ee0a" category="doc">使用OpenSSL验证Cloud Volumes ONTAP的Google Cloud映像disk.RAW文件</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
+  <block id="eccf4730c0054498e1b7d5cab926e79f" category="sidebar">设置AWS网络</block>
+  <block id="7533d0f4870d29edf1d705a15d4f71e3" category="sidebar">在AWS中管理Storage VM</block>
+  <block id="db5cf7834d39ce63219e28d402aeb9c2" category="sidebar">在Azure中管理Storage VM</block>
+  <block id="137413da40700294b3660243904ade25" category="sidebar">在Google Cloud中管理Storage VM</block>
 </blocks>

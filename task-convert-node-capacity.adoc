@@ -4,7 +4,7 @@ permalink: task-convert-node-capacity.html
 keywords: license conversion, convert node-based to capacity based, by-node to by-capacity, bluexp license conversion for node based 
 summary: '基于节点的许可证终止提供(EOA)后、您应使用BlueXP  许可证转换工具过渡到基于容量的许可模式。' 
 ---
-= 将基于节点的许可证转换为基于容量的许可证
+= 将基于Cloud Volumes ONTAP节点的许可证转换为基于容量的许可证
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

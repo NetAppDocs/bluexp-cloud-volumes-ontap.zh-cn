@@ -4,7 +4,7 @@ permalink: task-change-ec2-instance.html
 keywords: ec2 instance type, change ec2 instance type, change instance type, modify instance type, modify ec2 instance, amazon ec2 
 summary: 在 AWS 中启动 Cloud Volumes ONTAP 时，您可以从多个实例或类型中进行选择。如果您确定实例类型的大小不足或过大，则可以随时更改此实例类型。 
 ---
-= 更改 Cloud Volumes ONTAP 的 EC2 实例类型
+= 在AWS中修改Cloud Volumes ONTAP系统的EC2实例类型
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

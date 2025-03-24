@@ -4,7 +4,7 @@ permalink: task-verify-autosupport.html
 keywords: autosupport, set up autosupport, test autosupport, asup, test asup 
 summary: AutoSupport 会主动监控系统的运行状况，并向 NetApp 技术支持发送消息。默认情况下，每个节点都启用了 AutoSupport ，以便使用 HTTPS 传输协议向技术支持发送消息。最好验证 AutoSupport 是否可以发送这些消息。 
 ---
-= 验证 AutoSupport 设置
+= 验证Cloud Volumes ONTAP的AutoSupport设置
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

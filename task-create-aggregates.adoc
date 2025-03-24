@@ -4,7 +4,7 @@ permalink: task-create-aggregates.html
 keywords: storage, provisioning, aggregates, provision, create, advanced allocation, creating aggregates, adding an aggregate, add an aggregate, create an aggregate 
 summary: 您可以自行创建聚合、也可以让BlueXP在创建卷时为您执行此操作。自行创建聚合的优势在于，您可以选择底层磁盘大小，从而根据需要的容量或性能对聚合进行大小调整。 
 ---
-= 创建聚合
+= 为Cloud Volumes ONTAP系统创建聚合
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -1,0 +1,11 @@
+= 通过Azure中的API自动创建Storage VM
+:allow-uri-read: 
+
+
+
+
+=== 通过Azure中的API自动创建Storage VM
+
+现在、您可以使用BlueXP  API为Azure中的Cloud Volumes ONTAP创建、重命名和删除其他提供数据的Storage VM。如果您需要使用Storage VM进行管理、则使用API可以自动执行Storage VM创建过程、包括配置所需的网络接口、LIF和管理LIF。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["在Azure中管理为Cloud Volumes ONTAP提供数据的Storage VM"^]

@@ -4,7 +4,7 @@ permalink: task-google-key-manager.html
 keywords: google cloud, encryption, NVE, NetApp volume encryption, KMIP, GCP, GCP KMS, key manager service, encryption 
 summary: 利用Google的密钥管理服务提供第三方密钥管理服务。 
 ---
-= 使用Google的云密钥管理服务管理密钥
+= 使用Google Cloud KMS管理Cloud Volumes ONTAP加密密钥
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 利用Google的密钥管理服务提供第三方密钥管理服务。
 
 
 [role="lead"]
-您可以使用 link:https://cloud.google.com/kms/docs["Google Cloud Platform 的密钥管理服务（ Cloud KMS ）"^] 在部署了Google Cloud Platform的应用程序中保护ONTAP 加密密钥。
+您可以使用link:https://cloud.google.com/kms/docs["Google Cloud Platform 的密钥管理服务（ Cloud KMS ）"^]保护Google Cloud Platform部署的应用程序中的Cloud Volumes ONTAP加密密钥。
 
 可以使用ONTAP命令行界面或ONTAP REST API启用云KMS的密钥管理。
 

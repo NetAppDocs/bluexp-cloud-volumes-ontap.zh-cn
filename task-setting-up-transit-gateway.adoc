@@ -4,7 +4,7 @@ permalink: task-setting-up-transit-gateway.html
 keywords: transit gateway, aws, amazon web services, transit gateway, floating ip, client access, nas, outside, vpc, virtual private cloud, route table 
 summary: 设置 AWS 传输网关，以使 NAS 客户端能够从 Cloud Volumes ONTAP 所在的 VPC 外部访问浮动 IP 地址。这一点很有用，因为发生故障时，浮动 IP 会自动在节点之间迁移。 
 ---
-= 为多个 AZs 中的 HA 对设置 AWS 传输网关
+= 为Cloud Volumes ONTAP HA对设置AWS传输网关
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-connect-lun.html
 keywords: lun, connect lun, iscsi lun, target iqn, iqn 
 summary: 创建iSCSI卷时、BlueXP会自动为您创建LUN。我们通过为每个卷仅创建一个 LUN 来简化此过程，因此无需进行管理。创建卷后，请使用 IQN 从主机连接到 LUN 。 
 ---
-= 将 LUN 连接到主机
+= 从主机系统连接到Cloud Volumes ONTAP上的LUN
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

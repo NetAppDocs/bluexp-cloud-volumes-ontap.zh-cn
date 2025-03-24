@@ -4,7 +4,7 @@ permalink: task-managing-svms-gcp.html
 keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported, create svm, create storage vm, create vserver 
 summary: Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其视为 SVM 或 SVM 。默认情况下， Cloud Volumes ONTAP 配置有一个 Storage VM ，但某些配置支持额外的 Storage VM 。 
 ---
-= 在Google Cloud中为Cloud Volumes ONTAP 创建数据服务Storage VM
+= 在Google Cloud中管理为Cloud Volumes ONTAP提供数据的Storage VM
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -114,12 +114,12 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 需要修改服务、因为它可以确保Cloud Volumes ONTAP 可以使用iSCSI LIF进行出站管理连接。
 
 .所需的Google Cloud权限
-连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需权限包括在中 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp 提供的策略"]。
+连接器需要特定的权限来创建和管理Cloud Volumes ONTAP HA对的Storage VM。所需的权限包括在中 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp 提供的策略"^]。
 
 .步骤
 . 使用以下API调用创建Storage VM：
 +
-`POST /ocem/api/GCP/ha/work-environment/｛we ID｝/SVM/`
+`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
 
 +
 请求正文应包括以下内容：
@@ -146,7 +146,7 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 .步骤
 . 使用以下API调用重命名Storage VM：
 +
-`PUT /ocem/api/GCP/ha/working-environments/｛we ID｝/SVM`
+`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
 请求正文应包括以下内容：
@@ -170,6 +170,6 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 .步骤
 . 使用以下API调用删除Storage VM：
 +
-`delete /occm/api/GCP/ha/working-environments/｛we_ID｝/SVM/｛svm_name｝`
+`DELETE /gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
 

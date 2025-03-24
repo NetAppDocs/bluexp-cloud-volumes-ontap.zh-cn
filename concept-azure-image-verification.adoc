@@ -4,7 +4,7 @@ permalink: concept-azure-image-verification.html
 keywords: Azure, image, VHD, image signature file, 
 summary: 验证Azure HD映像文件签名文件。 
 ---
-= Azure映像验证概述
+= 适用于Cloud Volumes ONTAP的Azure Marketplace映像验证
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -28,3 +28,13 @@ Azure会修改前1 MB (1048576字节)和后512字节的vHD文件。NetApp映像�
 image:screenshot_azure_vhd_10gb.png["显示Azure对10 GB的VHD文件的交替的图像"]
 
 例如、上图显示了一个大小为10 GB的vHD文件。但是、NetApp签名部分会标记为绿色、大小为10 GB - 1 MB - 512 B。
+
+.相关链接
+* https://pagefault.blog/2019/04/22/how-to-sign-and-verify-using-openssl/["页面错误博客：如何使用OpenSSL进行签名和验证"^]
+* https://docs.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-machine-marketplace-image["使用Azure Marketplace映像为Azure Stack Edge Pro GPU创建VM映像| Microsoft了解"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-vhd-to-storage-account["使用Azure命令行界面将受管磁盘导出/复制到存储帐户| Microsoft了解"^]
+* https://learn.microsoft.com/en-us/azure/cloud-shell/quickstart["Azure Cloud Shell快速入门—闪存| Microsoft了解"^]
+* https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["如何安装Azure命令行界面| Microsoft了解"^]
+* https://learn.microsoft.com/en-us/cli/azure/storage/blob/copy?view=azure-cli-latest#az-storage-blob-copy-start["AZ存储Blob副本| Microsoft了解"^]
+* https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli["使用Azure命令行界面登录—登录和身份验证| Microsoft学习"^]
+

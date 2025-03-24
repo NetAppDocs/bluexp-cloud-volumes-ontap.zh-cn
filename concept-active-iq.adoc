@@ -4,7 +4,7 @@ permalink: concept-active-iq.html
 keywords: autosupport, digital advisor, active iq digital advisor, telemetry 
 summary: ONTAP 的 AutoSupport 组件会收集遥测数据并将其发送以供分析。Digital Advisor可分析来自AutoSupport的数据、并提供主动式维护和优化。借助人工智能、Digital Advisor可以识别潜在问题并帮助您在影响业务之前解决这些问题。 
 ---
-= AutoSupport和数字顾问
+= 了解如何将AutoSupport和数字顾问用于Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

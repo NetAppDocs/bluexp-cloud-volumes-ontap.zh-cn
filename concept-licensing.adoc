@@ -22,7 +22,7 @@ Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择
 
 新客户可以使用以下许可选项。
 
-基于容量的许可:: 按配置的容量为您的NetApp帐户中的多个Cloud Volumes ONTAP 系统付费。包括购买附加云数据服务的功能。
+基于容量的许可:: 按配置的容量为您的NetApp帐户中的多个Cloud Volumes ONTAP 系统付费。包括购买附加云数据服务的功能。有关基于容量的许可证中使用模式的详细信息，请参见link:concept-licensing-charging.html["详细了解基于容量的许可证"]。
 Keystone订阅:: 一种基于订阅的按需购买服务、可为高可用性(HA)对提供无缝的混合云体验。
 
 
@@ -48,7 +48,7 @@ NOTE: 虽然BlueXP中管理的产品和服务的实际使用情况和计量始�
 
 === 软件包
 
-以下基于容量的软件包可用于Cloud Volumes ONTAP。
+以下基于容量的软件包可用于Cloud Volumes ONTAP。有关基于容量的许可证包的详细信息，请参见link:concept-licensing-charging.html["详细了解基于容量的许可证"]。
 
 有关以下基于容量的软件包支持的VM类型列表、请参见：
 
@@ -78,7 +78,7 @@ endif::gcp[]
 * 在任何云提供商中，每个 NetApp 帐户最多可以使用 10 个 Cloud Volumes ONTAP 系统以及免费提供的产品。
 * 如果为Cloud Volumes ONTAP 系统配置的容量超过500 GiB、则BlueXP会将该系统转换为Essentials软件包。
 +
-系统转换为Essentials软件包后、即会显示 <<有关充电的注意事项,最低费用>> 适用。
+一旦将系统转换为Essentials软件包、就会应用。link:concept-licensing-charging.html#minimum-charge["最小充电量"]
 
 +
 配置容量小于 500 GiB 的任何其他系统都会保留在 Freemium 上（只要这些系统是使用 Freemium 产品部署的）。
@@ -99,8 +99,6 @@ endif::gcp[]
 
 * 增加 NetApp 的任何云数据服务，但需额外付费
 
-
-有关详细信息，请参见 link:concept-licensing-charging.html["有关基于容量的许可证的更多信息"]。
 
 
 
@@ -300,7 +298,7 @@ NOTE: 即使在这些情况下、基于节点的新许可证和许可证续订�
 
 在过渡之前、最好先熟悉这两种许可模式之间的差异。基于节点的许可包括每个ONTAP实例的固定容量、这可能会限制灵活性。另一方面、基于容量的许可允许在多个实例之间共享存储池、从而提高灵活性、优化资源利用率、并降低重新分配工作负载时可能面临的经济处罚。基于容量的充电可根据不断变化的存储需求进行无缝调整。
 
-要了解如何执行此转换，请参见link:task-convert-node-capacity.html["将基于节点的许可证转换为基于容量的许可证"]。
+要了解如何执行此转换，请参见link:task-convert-node-capacity.html["将基于Cloud Volumes ONTAP节点的许可证转换为基于容量的许可证"]。
 
 
 NOTE: 不支持将系统从基于容量的许可转换为基于节点的许可。

@@ -4,7 +4,7 @@ permalink: task-manage-svm-dr.html
 keywords: storage virtual machine, vserver, svm, storage vm, svm dr, disaster recovery, svm disaster recovery, storage vm dr 
 summary: BlueXP不为Storage VM灾难恢复提供任何设置或编排支持。您必须使用 System Manager 或 CLI 。 
 ---
-= 设置SVM灾难恢复
+= 为Cloud Volumes ONTAP设置Storage VM灾难恢复
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-moving-resource-groups-azure.html
 keywords: move resource groups, azure, remove working environment, resource groups, azure console, Azure subscriptions 
 summary: Cloud Volumes ONTAP 支持Azure资源组移动、但工作流仅在Azure控制台中执行。 
 ---
-= 移动资源组
+= 在Azure控制台中移动Cloud Volumes ONTAP的Azure资源组
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

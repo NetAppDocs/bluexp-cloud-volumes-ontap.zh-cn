@@ -4,36 +4,19 @@ permalink: task-configure-placement-group-failure-aws.html
 keywords: placement group, failure, HA single zone, app.conf, rollback, AWS 
 summary: Cloud Volumes ONTAP 使用Azure专用链路连接到其关联的存储帐户。如果需要、您可以禁用Azure专用链路、而改用服务端点。 
 ---
-= 为AWS HA Single AZ配置放置组创建
-:hardbreaks:
+= 在AWS单个AWS中为Cloud Volumes ONTAP HA对配置布局组创建
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]
-只要布局组创建失败、Cloud Volumes ONTAP就会失败、并在一个可用性区域(AZ)中回滚新部署的AWS高可用性(HA)配置。如果需要、您可以通过配置放置组来强制成功完成部署、以便在创建失败时绕过回滚过程。
+如果创建布局组失败、AWS单可用性区域(AZ)中的Cloud Volumes ONTAP高可用性(HA)部署可能会失败并回滚。如果Cloud Volumes ONTAP节点和调解器实例不可用、则创建布局组也会失败、并且部署将回滚。为了避免这种情况、您可以修改配置、以便即使布局组创建失败也能完成部署。
 
-
-
-== 概述
-
-默认情况下、只要放置组在HA单个可用性区域工作环境的创建过程中失败、部署就会失败并回滚。如果Cloud Volumes ONTAP 节点和调解器实例不存在、则创建放置组也会失败并回滚。
-
-您可以在放置组创建失败时绕过回滚过程、并通过配置app.conf文件允许部署继续进行。绕过回滚过程后、部署将成功完成、系统将生成通知、指出放置组创建失败、状态为"未完成"。
-
-
-
-=== 在放置组出现故障时禁用回滚
-
-要关闭放置组故障、必须将"rollback-on-placement-group-failure"标志设置为"false"。
+绕过回滚过程后、Cloud Volumes ONTAP部署过程将成功完成、并通知您放置组创建未完成。
 
 .步骤
 . 使用SSH连接到Connector主机并登录。
-. 导航到以下目录： /opt/application/netapp/cloudmanager/docker_occm/data
-. 通过将"rollback-on-placement-group-failure"参数的值更改为"false"来编辑app.conf：
+. 导航到 `/opt/application/netapp/cloudmanager/docker_occm/data`。
+. 通过将参数值更 `rollback-on-placement-group-failure`改为 `false`进行编辑 `app.conf`。此参数的默认值为 `true`。
 +
 [listing]
 ----
@@ -45,12 +28,5 @@ summary: Cloud Volumes ONTAP 使用Azure专用链路连接到其关联的存储�
     }
 }
 ----
-+
-
-NOTE: 默认情况下、rollback-on-placement-group-failure参数设置为"True"。
-
-. 保存文件并注销 Connector 。
-+
-不需要重新启动。
-
+. 保存文件并注销 Connector 。您不需要重新启动Connector。
 

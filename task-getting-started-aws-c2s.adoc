@@ -4,7 +4,7 @@ permalink: task-getting-started-aws-c2s.html
 keywords: commercial cloud services, c2s, secret cloud, top secret cloud, aws secret region, BlueXP 
 summary: 与标准AWS区域类似、您可以在AWS机密云和Top机密云环境中使用BlueXP部署Cloud Volumes ONTAP、为云存储提供企业级功能。AWS机密云和顶级机密云区域是特定于美国的封闭区域智能社区；此页面上的说明仅适用于AWS机密云和Top机密云区域用户。 
 ---
-= 在AWS机密云和顶级机密云区域部署Cloud Volumes ONTAP
+= 在AWS机密云或AWS顶级机密云中部署Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

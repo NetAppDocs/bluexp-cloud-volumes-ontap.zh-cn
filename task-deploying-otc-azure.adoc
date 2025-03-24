@@ -49,7 +49,7 @@ link:task-set-up-licensing-azure.html["了解如何设置许可"^]。
 ====
 
 
-== 在Azure中启动单节点Cloud Volumes ONTAP 系统
+== 在Azure中启动单节点Cloud Volumes ONTAP系统
 
 如果要在Azure中启动单节点Cloud Volumes ONTAP 系统、则需要在BlueXP中创建单节点工作环境。
 

@@ -4,7 +4,7 @@ permalink: reference-versions.html
 keywords: versions, supported versions, new versions, cloud volumes ontap version 
 summary: 通过BlueXP、您可以在创建新的ONTAP 工作环境时从多个不同的Cloud Volumes ONTAP 版本中进行选择。 
 ---
-= 新部署支持的ONTAP版本
+= Cloud Volumes ONTAP部署支持的ONTAP版本
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

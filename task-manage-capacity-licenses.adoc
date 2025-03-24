@@ -4,7 +4,7 @@ permalink: task-manage-capacity-licenses.html
 keywords: license, licensing, capacity license, capacity based license, add license, install license, digital wallet 
 summary: 通过BlueXP数字钱包管理基于容量的许可证、确保您的NetApp帐户具有足够的容量来支持您的Cloud Volumes ONTAP 系统。 
 ---
-= 管理基于容量的许可证
+= 管理Cloud Volumes ONTAP的基于容量的许可
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

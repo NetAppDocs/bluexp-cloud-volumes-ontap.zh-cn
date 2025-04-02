@@ -20,6 +20,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2025年3月28日
+
+
+
+=== 为Cloud Volumes ONTAP 9.14.1启用了专用模式部署
+
+现在、您可以在AWS、Azure和Google Cloud中以私有模式部署Cloud Volumes ONTAP 9.14.1。Cloud Volumes ONTAP 9.14.1的单节点和高可用性(HA)部署均启用了专用模式。
+
+有关私有模式部署的详细信息，请参见https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["了解BlueXP部署模式"^]。
+
+
+
 == 2025年3月12日
 
 

@@ -5360,11 +5360,6 @@
   <block id="7fc21546461474a1cc543852dc120330" category="paragraph">如果在启动Cloud Volumes ONTAP实例时遇到任何问题、请查看失败消息。您还可以选择工作环境并单击重新创建环境。</block>
   <block id="d036b4a2aa80729ab508e1851458f506" category="cell">选择要用于此 Cloud Volumes ONTAP 系统的 AWS 凭据和 Marketplace 订阅。单击 * 添加订阅 * 将选定凭据与新的 AWS Marketplace 订阅关联。订阅可以是一份年度合同，也可以是按小时付费的 Cloud Volumes ONTAP 。如果您直接从NetApp购买了许可证(自带许可证(BYOL))、则不需要订阅AWS。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>(英文)</block>
   <block id="fc687f57dc8188e5dad217858c078354" category="section-title">Cloud Volumes ONTAP中的密钥轮换</block>
-  <block id="c8f70aa37f5c88b6da2024d42bae9616" category="paragraph">如果您创建新版本的密钥、Cloud Volumes ONTAP会自动使用最新版本的密钥、从而确保您的数据始终安全无虞、而无需手动更新。</block>
-  <block id="7463254e31b93d5b76992c84139a17de" category="list-text">在Azure门户中导航到密钥存储。</block>
-  <block id="d6cff41b1c8a33920bc46aba04b89485" category="list-text">选择要旋转的键。</block>
-  <block id="38b4782700181268adc6819ae7534a0f" category="list-text">单击*New Version*生成密钥的新版本。</block>
-  <block id="d35d0e531d2de4587a8bd21e51823f97" category="paragraph">创建新版本后、Cloud Volumes ONTAP会自动检测并使用最新版本的密钥进行加密。</block>
   <block id="d2a95dd3692cce58be8541add2bc6897" category="paragraph">支持大多数配置。如果您的Cloud Volumes ONTAP系统运行的是最新版本、则可以继续操作。<block ref="f2e6a88e181ee9519c72412b23fc6e17" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="1a59c4cde0b6364677026791f943ea0f" category="paragraph">要在卷上启用数据层、应在聚合上启用数据层。您应了解新卷和现有卷的要求。<block ref="7beee552935977f4dc8f9885d22b65a0" category="inline-xref-macro-rx"></block>(英文)</block>
   <block id="c64796eb83e1bb434daed77e0937d1b4" category="paragraph">BlueXP  在创建系统时为冷数据创建对象存储<block ref="dbb78a2cc39acf14e084217f8235322a" category="inline-xref-macro-rx"></block>。之后、您只需在卷上启用数据分层(在某些情况下、还可以启用<block ref="7f499208f2ff911432bf2cd70bde52dd" category="inline-xref-macro-rx"></block>)。</block>
@@ -5802,4 +5797,17 @@
   <block id="7533d0f4870d29edf1d705a15d4f71e3" category="sidebar">在AWS中管理Storage VM</block>
   <block id="db5cf7834d39ce63219e28d402aeb9c2" category="sidebar">在Azure中管理Storage VM</block>
   <block id="137413da40700294b3660243904ade25" category="sidebar">在Google Cloud中管理Storage VM</block>
+  <block id="5920daf334ecef8057dd1e1d15f6124e" category="doc">为Cloud Volumes ONTAP 9.14.1启用了专用模式部署</block>
+  <block id="f2035db09bb2be2db0508915fa584149" category="paragraph">现在、您可以在AWS、Azure和Google Cloud中以私有模式部署Cloud Volumes ONTAP 9.14.1。Cloud Volumes ONTAP 9.14.1的单节点和高可用性(HA)部署均启用了专用模式。</block>
+  <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">了解BlueXP部署模式</block>
+  <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">有关私有模式部署的详细信息，请参见<block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>。</block>
+  <block id="210dc676779eae6698e4064fd965bda8" category="paragraph">您应在Azure门户上配置加密密钥。有关配置密钥和设置密钥轮换的信息、请参阅以下Microsoft Azure文档主题：</block>
+  <block id="348c2304e1a6efb529d00b9bacd96a8e" category="inline-link">在Azure密钥存储中配置加密密钥自动轮换</block>
+  <block id="f4d57411fbf6c0075178b1e3767b496e" category="list-text"><block ref="f4d57411fbf6c0075178b1e3767b496e" category="inline-link-rx"></block></block>
+  <block id="881f8c1da4935c7dbe1f6d696a16cd9c" category="inline-link">Azure PowerShell—启用客户管理的密钥</block>
+  <block id="4a9f4b73b48b26dea345a1977b58dd51" category="list-text"><block ref="4a9f4b73b48b26dea345a1977b58dd51" category="inline-link-rx"></block></block>
+  <block id="a15076d8f5fd9af7af6dec9ab282588e" category="inline-link">已在Azure门户上启用密钥轮换</block>
+  <block id="71b5648e677d1a5ebf3d343f3c10eb54" category="admonition">配置密钥后，请确保您拥有<block ref="7b90d7bac505d4641bd5cd9a13a09c6c" category="inline-link-rx"></block>，以便Cloud Volumes ONTAP可以使用新密钥。</block>
+  <block id="5b41754d54a59a01d58e45b59544d3a6" category="paragraph">在创建并启用新版本的密钥时、Cloud Volumes ONTAP会自动检测并使用最新版本进行加密、从而确保您的数据始终安全、而无需手动更新。</block>
+  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
 </blocks>

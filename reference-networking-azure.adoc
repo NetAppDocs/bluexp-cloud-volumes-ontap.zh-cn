@@ -62,19 +62,19 @@ Cloud Volumes ONTAP使用这些端点与各种服务进行通信。
 | https://support．NetApp．com/aods/asupmessage \https://support．Asupprod/post/1.0/postAsup NetApp | AutoSupport | 用于将AutoSupport遥测数据发送到NetApp支持。 | 标准模式和受限模式。 | AutoSupport信息仍然未传送。 
 
 
-| https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 公共区域 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务进行通信以在Azure上执行特定的BlueXP  操作。 
+| https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 公共区域 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务通信以在Azure中执行特定的BlueXP  操作。 
 
 
-| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 中国地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务进行通信以在Azure上执行特定的BlueXP  操作。 
+| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 中国地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务通信以在Azure中执行特定的BlueXP  操作。 
 
 
-| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | 德国地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务进行通信以在Azure上执行特定的BlueXP  操作。 
+| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | 德国地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务通信以在Azure中执行特定的BlueXP  操作。 
 
 
-| https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 政府地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务进行通信以在Azure上执行特定的BlueXP  操作。 
+| https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 政府地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务通信以在Azure中执行特定的BlueXP  操作。 
 
 
-| https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 政府DoD地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务进行通信以在Azure上执行特定的BlueXP  操作。 
+| https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 政府DoD地区 | 与Azure服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Azure服务通信以在Azure中执行特定的BlueXP  操作。 
 |===
 
 

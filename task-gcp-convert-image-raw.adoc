@@ -20,7 +20,7 @@ summary: 通过Google Cloud命令行将导出的映像转换为disk.raw格式。
 
 == 为什么需要执行此步骤？
 
-无法直接下载Google Cloud中的映像。要根据签名摘要和证书验证映像、您需要有一种机制来比较这两个文件并下载映像。要执行此操作、您必须将映像导出/转换为disk.raw格式、并将结果保存在Google Cloud的存储分段中。disk.raw文件会在该过程中进行tarbred和gzipped。
+无法直接下载Google Cloud中的映像。要根据签名摘要和证书验证映像、您需要有一种机制来比较这两个文件并下载映像。为此、您必须将图像导出/转换为disk.RAW格式、并将结果保存在Google Cloud的存储分段中。disk.raw文件会在该过程中进行tarbred和gzipped。
 
 用户/服务帐户需要具有执行以下操作的权限：
 

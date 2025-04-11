@@ -34,7 +34,7 @@ Flash Cache 通过实时智能缓存最近读取的用户数据和 NetApp 元数
 
 ifdef::aws[]
 
-* 在AWS上为Cloud Volumes ONTAP 9.12.0或更早版本配置Flash Cache时、必须在所有卷上禁用数据压缩、才能利用Flash Cache的性能改进。部署或升级到Cloud Volumes ONTAP 9.12.1或更高版本时、不需要禁用数据压缩。
+* 在AWS中为Cloud Volumes ONTAP 9.12.0或更早版本配置Flash Cache时、必须在所有卷上禁用数据压缩、才能利用Flash Cache的性能改进。部署或升级到Cloud Volumes ONTAP 9.12.1或更高版本时、不需要禁用数据压缩。
 +
 从BlueXP创建卷时选择"无存储效率"、或者先创建卷、然后再创建卷 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["使用命令行界面禁用数据压缩"^]。
 

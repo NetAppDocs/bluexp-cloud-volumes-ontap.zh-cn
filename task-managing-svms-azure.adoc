@@ -16,7 +16,7 @@ summary: Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供�
 [role="lead"]
 Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和数据服务。您可能会将其识别为 _svm_ 或 _vserver_ 。默认情况下、Cloud Volumes ONTAP配置有一个Storage VM、但在Azure中运行Cloud Volumes ONTAP时、您可以创建其他Storage VM。
 
-要在Azure上创建和管理其他提供数据的Storage VM、应使用BlueXP  API。这是因为API可自动执行创建Storage VM和配置所需网络接口的过程。创建Storage VM时、BlueXP  会配置所需的LIF服务以及从Storage VM进行出站SMB/Cifs通信所需的iSCSI LIF。
+要在Azure中创建和管理其他提供数据的Storage VM、应使用BlueXP  API。这是因为API可自动执行创建Storage VM和配置所需网络接口的过程。创建Storage VM时、BlueXP  会配置所需的LIF服务以及从Storage VM进行出站SMB/Cifs通信所需的iSCSI LIF。
 
 
 
@@ -25,9 +25,6 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 从Cloud Volumes ONTAP 9.0.0开始、根据您的许可证、特定配置支持多个Storage VM。请参见 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["《 Cloud Volumes ONTAP 发行说明》"^]以验证您的Cloud Volumes ONTAP版本支持的Storage VM数量。
 
 所有Cloud Volumes ONTAP先前版本的9.9.0均支持一个提供数据的Storage VM和一个用于灾难恢复的目标Storage VM。如果源 Storage VM 发生中断，您可以激活目标 Storage VM 以进行数据访问。
-
-.开始之前
-要为Cloud Volumes ONTAP创建和管理Storage VM、此连接器需要特定权限。所需的权限包括在中 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["NetApp 提供的策略"^]。
 
 
 
@@ -45,6 +42,9 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 * `management-nis-client`
 
 
+.开始之前
+要为Cloud Volumes ONTAP创建Storage VM、此连接器需要特定权限。所需的权限包括在中 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["NetApp 提供的策略"^]。
+
 
 
 === 单节点系统
@@ -53,7 +53,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 `POST /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
-请求正文应包括以下内容：
+在请求正文中包括以下参数：
 
 [source, json]
 ----
@@ -65,11 +65,11 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 === HA 对
 
-使用以下API调用在Azure HA配置中创建Storage VM：
+使用以下API调用在HA对上创建Storage VM：
 
 `POST /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
-请求正文应包括以下内容：
+在请求正文中包括以下参数：
 
 [source, json]
 ----
@@ -83,11 +83,14 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 通过使用BlueXP  API、您可以在单节点和HA配置中重命名和删除Storage VM。
 
+.开始之前
+连接器需要特定权限才能管理Cloud Volumes ONTAP的Storage VM。所需的权限包括在中 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["NetApp 提供的策略"^]。
+
 
 
 === 重命名Storage VM
 
-要重命名Storage VM、您应提供现有Storage VM和新Storage VM的名称作为参数。
+要重命名Storage VM、应提供现有Storage VM和新Storage VM的名称作为参数。
 
 .步骤
 * 使用以下API调用重命名单节点系统上的Storage VM：
@@ -95,7 +98,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 `PUT /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
 +
-请求正文应包括以下内容：
+在请求正文中包括以下参数：
 
 +
 [source, json]
@@ -105,12 +108,12 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
   "svmName": "OldSvmName"
 }
 ----
-* 使用以下API调用重命名HA配置中的Storage VM：
+* 使用以下API调用重命名HA对上的Storage VM：
 +
 `PUT /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
-请求正文应包括以下内容：
+在请求正文中包括以下参数：
 
 +
 [source, json]
@@ -133,7 +136,7 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 +
 `DELETE /azure/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
-* 使用以下API调用删除HA配置中的Storage VM：
+* 使用以下API调用删除HA对上的Storage VM：
 +
 `DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 

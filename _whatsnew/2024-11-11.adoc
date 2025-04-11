@@ -40,7 +40,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.ht
 
 === 用于限制公众对Azure存储帐户的访问的选项
 
-现在、您可以选择限制对Azure上Cloud Volumes ONTAP系统的存储帐户的公开访问。通过禁用访问、您可以确保您的专用IP地址不会被泄露、即使在同一个vNet中也是如此、只要您需要遵守组织的安全策略即可。此选项还会为Cloud Volumes ONTAP系统禁用数据分层、并适用于单节点和高可用性对。
+现在、您可以选择限制对Azure中Cloud Volumes ONTAP系统的存储帐户的公开访问。通过禁用访问、您可以确保您的专用IP地址不会被泄露、即使在同一个vNet中也是如此、只要您需要遵守组织的安全策略即可。此选项还会为Cloud Volumes ONTAP系统禁用数据分层、并适用于单节点和高可用性对。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["安全组规则"^](英文)
 

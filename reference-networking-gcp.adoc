@@ -40,7 +40,14 @@ summary: 设置Google Cloud网络、以便Cloud Volumes ONTAP 系统可以正常
 
 ==== 专用 IP 地址
 
-BlueXP会将3或4个专用IP地址分配给Google Cloud中的单节点系统。
+对于Google Cloud中的单节点系统、BlueXP  会为以下项分配专用IP地址：
+
+* Node
+* 集群
+* Storage VM
+* 数据NAS LIF
+* 数据iSCSI LIF
+
 
 如果您使用 API 部署 Cloud Volumes ONTAP 并指定以下标志，则可以跳过创建 Storage VM （ SVM ）管理 LIF ：
 
@@ -227,7 +234,7 @@ Cloud Volumes ONTAP使用这些端点与各种服务进行通信。
 | https://support．NetApp．com/aods/asupmessage \https://support．Asupprod/post/1.0/postAsup NetApp | AutoSupport | 用于将AutoSupport遥测数据发送到NetApp支持。 | 标准模式和受限模式。 | AutoSupport信息仍然未传送。 
 
 
-| \https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1 | Google Cloud (商业用途)。 | 与Google Cloud服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Google Cloud服务进行通信、以便在Google Cloud上执行特定的BlueXP  操作。 
+| \https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1 | Google Cloud (商业用途)。 | 与Google Cloud服务通信。 | 标准模式、受限模式和专用模式。 | Cloud Volumes ONTAP无法与Google Cloud服务进行通信以在Google Cloud中执行特定的BlueXP  操作。 
 |===
 
 

@@ -20,6 +20,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2025年4月14日
+
+
+
+=== 通过Google Cloud中的API自动创建Storage VM
+
+现在、您可以使用BlueXP  API在Google Cloud中自动创建Storage VM。您一直在Cloud Volumes ONTAP高可用性(HA)配置中使用此功能、现在也可以在单节点部署中使用此功能。通过使用BlueXP  API、您可以轻松地在Google Cloud环境中创建、重命名和删除其他提供数据的Storage VM、而无需手动配置所需的网络接口、LUN和管理LUN。这种自动化可简化Storage VM的管理过程。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["在Google Cloud中管理为Cloud Volumes ONTAP提供数据的Storage VM"^]
+
+
+
 == 2025年3月28日
 
 
@@ -122,7 +134,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-ad
 
 现在、您可以使用BlueXP  电子钱包中改进的导航点来体验简化的Cloud Volumes ONTAP许可证管理：
 
-* 通过*监管>电子钱包>概述/数据服务许可证*选项卡轻松访问您的Cloud Volumes ONTAP许可证信息。
+* 通过*监管>电子钱包>概述/直接许可证*选项卡轻松访问您的Cloud Volumes ONTAP许可证信息。
 * 单击*概述*选项卡中"Cloud Volume ONTAP面板上的*查看*、全面了解基于容量的许可证。通过此高级视图、您可以详细了解许可证和订阅。
 * 如果您更喜欢上一个界面，可以单击*切换到原有视图*按钮按类型查看许可证详细信息，并修改许可证的收费方法。
 
@@ -183,7 +195,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.ht
 
 === 用于限制公众对Azure存储帐户的访问的选项
 
-现在、您可以选择限制对Azure上Cloud Volumes ONTAP系统的存储帐户的公开访问。通过禁用访问、您可以确保您的专用IP地址不会被泄露、即使在同一个vNet中也是如此、只要您需要遵守组织的安全策略即可。此选项还会为Cloud Volumes ONTAP系统禁用数据分层、并适用于单节点和高可用性对。
+现在、您可以选择限制对Azure中Cloud Volumes ONTAP系统的存储帐户的公开访问。通过禁用访问、您可以确保您的专用IP地址不会被泄露、即使在同一个vNet中也是如此、只要您需要遵守组织的安全策略即可。此选项还会为Cloud Volumes ONTAP系统禁用数据分层、并适用于单节点和高可用性对。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["安全组规则"^](英文)
 
@@ -289,9 +301,9 @@ Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许�
 
 
 
-=== 在Azure上支持Flash Cache的最低版本
+=== Azure中Flash Cache的最低版本支持
 
-在Azure 9.13.1 GA上配置Flash Cache所需的最低Cloud Volumes ONTAP版本。您只能使用9.13.1 9.13.1GA及更高版本在Azure中的Cloud Volumes ONTAP系统上部署Flash Cache。
+在Azure 9.13.1 GA中配置Flash Cache所需的最低Cloud Volumes ONTAP版本。您只能使用9.13.1 9.13.1GA及更高版本在Azure中的Cloud Volumes ONTAP系统上部署Flash Cache。
 
 有关支持的配置，请参见 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure 中支持的配置"^]。
 

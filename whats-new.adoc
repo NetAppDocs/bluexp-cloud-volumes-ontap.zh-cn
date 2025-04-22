@@ -20,6 +20,22 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 
 
 
+== 2025年4月16日
+
+
+
+=== Azure中支持的新区域
+
+现在、您可以在以下地区的Azure中的单个和多个可用性区域中部署Cloud Volumes ONTAP 9.12.1 GA及更高版本。其中包括支持单节点和高可用性(HA)部署。
+
+* 西班牙中部
+* 墨西哥中部
+
+
+有关所有地区的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
+
+
+
 == 2025年4月14日
 
 
@@ -29,6 +45,18 @@ summary: 了解BlueXP中Cloud Volumes ONTAP 管理的新增功能。
 现在、您可以使用BlueXP  API在Google Cloud中自动创建Storage VM。您一直在Cloud Volumes ONTAP高可用性(HA)配置中使用此功能、现在也可以在单节点部署中使用此功能。通过使用BlueXP  API、您可以轻松地在Google Cloud环境中创建、重命名和删除其他提供数据的Storage VM、而无需手动配置所需的网络接口、LUN和管理LUN。这种自动化可简化Storage VM的管理过程。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["在Google Cloud中管理为Cloud Volumes ONTAP提供数据的Storage VM"^]
+
+
+
+== 2025年4月3日
+
+
+
+=== 支持在AWS中使用Cloud Volumes ONTAP 9.13.1.
+
+现在、您可以在中国地区的AWS中部署Cloud Volumes ONTAP 9.13.1.其中包括支持单节点和高可用性(HA)部署。部署Cloud Volumes ONTAP 9.13.1.后、您可以将其升级到更高版本。仅支持直接从NetApp购买的许可证。
+
+有关地区可用性，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["适用于Cloud Volumes ONTAP 的全局区域映射"^]。
 
 
 
@@ -311,7 +339,7 @@ Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许�
 
 === 免费试用商城订阅已弃用
 
-在云提供商的市场中、30天自动免费试用按需购买订阅将不再适用于Cloud Volumes ONTAP。任何类型的商城订阅(PAYGO或年度合同)的收费将从首次使用时起激活、没有任何免费试用期。
+在云提供商的市场中、适用于按需购买订阅的30天自动免费试用或评估版许可证将不再在Cloud Volumes ONTAP中提供。任何类型的商城订阅(PAYGO或年度合同)的收费将从首次使用时起激活、没有任何免费试用期。
 
 
 

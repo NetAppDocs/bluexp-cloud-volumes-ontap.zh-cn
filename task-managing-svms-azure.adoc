@@ -18,6 +18,8 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 
 要在Azure中创建和管理其他提供数据的Storage VM、应使用BlueXP  API。这是因为API可自动执行创建Storage VM和配置所需网络接口的过程。创建Storage VM时、BlueXP  会配置所需的LIF服务以及从Storage VM进行出站SMB/Cifs通信所需的iSCSI LIF。
 
+有关运行Cloud Volumes ONTAP API调用的信息，请参见 https://docs.netapp.com/us-en/bluexp-automation/cm/your_api_call.html#step-1-select-the-identifie["您的第一次API调用"^]。
+
 
 
 == 支持的 Storage VM 数量
@@ -140,4 +142,9 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 +
 `DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
+
+
+.相关信息
+* https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["准备使用 API"^]
+* https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Cloud Volumes ONTAP工作流"^]
 

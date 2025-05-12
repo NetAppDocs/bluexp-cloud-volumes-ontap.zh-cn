@@ -18,7 +18,9 @@ NetApp提供了两个在Azure上部署Cloud Volumes ONTAP的选项。Cloud Volum
 
 直接从Azure市场部署Cloud Volumes ONTAP时、您无需设置BlueXP  连接器、也无需满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他安全和启用标准。在Azure市场中、只需单击几下鼠标、即可快速部署Cloud Volumes ONTAP、并了解其在您环境中的核心特性和功能。
 
-下面是这两个选项之间的功能比较：
+在Azure市场中完成部署后、您可以在BlueXP  中发现这些系统。发现后、您可以将其作为工作环境进行管理、并利用所有BlueXP  功能。请参阅 link:task-deploy-cvo-azure-mktplc.html["在BlueXP  中发现已部署的系统"]。
+
+下面是这两个选项之间的功能比较。请注意、通过Azure Marketplace部署的独立实例在BlueXP  中发现时、其功能会发生变化。
 
 [cols="3*"]
 |===
@@ -28,7 +30,12 @@ NetApp提供了两个在Azure上部署Cloud Volumes ONTAP的选项。Cloud Volum
 | *入职* | 更短、更简单、直接部署所需的准备工作最少 | 安装过程更长、包括安装BlueXP  连接器 
 
 
-| *支持的虚拟机(VM)类型* | Edsv5和Lsv3 | 完整的VM类型。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^] 
+| *支持的虚拟机(VM)类型*  a| 
+EDS_v5和LS_v3实例类型
+
+
+NOTE: Azure Marketplace中的HA配置支持L8s_v3实例类型、但BlueXP  中不支持此类型。BlueXP  在发现期间无法正确检测到它。
+| 完整的VM类型。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^] 
 
 
 | * 许可证 * | 免费许可证 | 任何基于容量的许可证。link:concept-licensing.html["Cloud Volumes ONTAP 许可"] 
@@ -60,8 +67,6 @@ NetApp提供了两个在Azure上部署Cloud Volumes ONTAP的选项。Cloud Volum
 
 | * FabricPool分层* | 不支持 | 支持 
 |===
-未来、BlueXP  连接器将能够识别通过Azure Marketplace Direct部署进行的部署。这样、您就可以利用BlueXP  提供的增强功能。
-
 .相关链接
 * Azure Marketplace直接部署：link:task-deploy-cvo-azure-mktplc.html["从Azure Marketplace部署Cloud Volumes ONTAP"]
 * BlueXP  部署：link:task-getting-started-azure.html["在 Azure 中快速启动 Cloud Volumes ONTAP"]

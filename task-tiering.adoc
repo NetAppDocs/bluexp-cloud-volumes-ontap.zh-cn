@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering.html 
-keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket 
+keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket, tenant, multi-tenant tiering 
 summary: 通过将热数据的 SSD 或 HDD 性能层与非活动数据的对象存储容量层相结合，您可以降低 Cloud Volumes ONTAP 的存储成本。数据分层由 FabricPool 技术提供支持。 
 ---
 = 将非活动Cloud Volumes ONTAP数据分层到低成本对象存储
@@ -47,15 +47,15 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 确保已启用分层的聚合
 [role="quick-margin-para"]
-要在卷上启用数据层、应在聚合上启用数据层。您应了解新卷和现有卷的要求。<<Ensuring that tiering is enabled on aggregates,了解更多信息。>>(英文)
+要在卷上启用数据层、应在聚合上启用数据层。您应了解新卷和现有卷的要求。<<确保已在聚合上启用层,了解更多信息。>>(英文)
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 创建，修改或复制卷时，请选择分层策略
 [role="quick-margin-para"]
 在创建、修改或复制卷时、BlueXP会提示您选择分层策略。
 
 [role="quick-margin-list"]
-* link:task-tiering.html#tiering-data-from-read-write-volumes["对读写卷上的数据进行分层"]
-* link:task-tiering.html#tiering-data-from-data-protection-volumes["分层数据保护卷上的数据"]
+* link:task-tiering.html#tier-data-from-read-write-volumes["对读写卷中的数据进行分层"]
+* link:task-tiering.html#tier-data-from-data-protection-volumes["对数据保护卷中的数据进行分层"]
 
 
 [NOTE]
@@ -65,7 +65,7 @@ endif::gcp[]
 * 您无需为容量层创建对象存储。BlueXP可以为您提供这种服务。
 * 您无需在系统级别启用数据分层。
 +
-BlueXP  在创建系统时为冷数据创建对象存储<<Enabling data tiering after implementing the requirements,只要没有连接或权限问题>>。之后、您只需在卷上启用数据分层(在某些情况下、还可以启用<<Ensuring that tiering is enabled on aggregates,在聚合上>>)。
+BlueXP  在创建系统时为冷数据创建对象存储<<在满足要求后启用数据层,只要没有连接或权限问题>>。之后、您只需在卷上启用数据分层(在某些情况下、还可以启用<<确保已在聚合上启用层,在聚合上>>)。
 
 
 
@@ -163,6 +163,17 @@ ifdef::azure[]
 "Microsoft.Network/routeTables/join/action",
 ----
 默认情况下、自定义角色包括权限。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"^]
+
+
+
+=== 为Azure租户分层数据的要求
+
+您可以使用同一个Connector为多个Azure租户分层数据。要在Cloud Volumes ONTAP工作环境由一个租户创建而Connector由另一个租户创建的情况下为Azure租户启用分层、请确保满足以下条件：
+
+* 您已在BlueXP  中输入两个租户的凭据以进行交叉验证。请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["管理BlueXP的Azure凭据和市场订阅"^]。
+* 您已在两个租户之间启用虚拟网络(vNet)对等 https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview["在Azure门户上"^]。要使Connector能够访问另一租户的存储帐户、必须执行此操作。
+* 您必须link:task-enabling-private-link.html#disable-azure-private-links-and-use-service-endpoints-instead["已禁用Azure专用链路"]使用子网服务端点。
+
 
 endif::azure[]
 

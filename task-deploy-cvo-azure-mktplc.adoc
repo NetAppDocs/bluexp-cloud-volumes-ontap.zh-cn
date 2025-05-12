@@ -14,12 +14,12 @@ summary:
 
 
 [role="lead"]
-从Cloud Volumes ONTAP 9.161开始、您可以使用Azure Marketplace Direct部署来快速轻松地部署Cloud Volumes ONTAP。在Azure市场中、只需单击几下鼠标、即可快速部署Cloud Volumes ONTAP、并了解其在您环境中的核心特性和功能。
+您可以使用Azure Marketplace Direct部署快速轻松地部署Cloud Volumes ONTAP。在Azure市场中、只需单击几下鼠标、即可快速部署Cloud Volumes ONTAP、并了解其在您环境中的核心特性和功能。
 
 有关此服务的详细信息，请参见link:concept-azure-mktplace-direct.html["了解BlueXP  和市场上的Cloud Volumes ONTAP产品"]。
 
 .关于此任务
-使用Azure Marketplace Direct部署部署的Cloud Volumes ONTAP实例具有以下属性：
+使用Azure Marketplace Direct部署部署的Cloud Volumes ONTAP系统具有这些属性。请注意、通过Azure Marketplace部署的独立实例在BlueXP  中发现时、其功能会发生变化。
 
 * 最新的Cloud Volumes ONTAP版本(9.161或更高版本)。
 * Cloud Volumes ONTAP的免费许可证、限制为500 GiB的已配置容量。此许可证不含NetApp支持、也没有到期日期。
@@ -27,12 +27,12 @@ summary:
 * 默认情况下为实例创建的聚合。
 * 一个配置容量为500 GiB的高级SSD v2托管磁盘以及一个根磁盘和一个数据磁盘。
 * 部署了一个数据Storage VM、其中包含NFS、CIFS、iSCSI和NVMe/TCP数据服务。您不能添加任何其他数据Storage VM。
-* 已安装NFS、CIFS (SMB)、iSCSI、反勒索软件(ARW)、SnapLock和SnapMirror的许可证。
+* 已安装NFS、CIFS (SMB)、iSCSI、自动防兰软件保护(ARP)、SnapLock和SnapMirror的许可证。
 * https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAP温度敏感型存储效率(TSSE)"^]、卷加密和外部密钥管理默认处于启用状态。
 * 不支持以下功能：
 +
 ** FabricPool 分层
-** 更改实例类型
+** 更改Storage VM类型
 ** 快速写入模式
 
 
@@ -67,7 +67,7 @@ NOTE: 如果您已将资源提供程序"Microsoft.storage"注册到您的订阅�
 . 在*Basices*选项卡中，提供以下详细信息：
 +
 ** *订阅*：选择订阅。部署将链接到订阅编号。
-** *资源组*：使用现有资源组或创建新资源组。资源组有助于在一个Cloud Volumes ONTAP实例的一个组中分配所有资源、例如磁盘和Storage VM。
+** *资源组*：使用现有资源组或创建新资源组。资源组有助于在Cloud Volumes ONTAP系统的一个组中分配所有资源、例如磁盘和Storage VM。
 ** *地区*：选择一个支持在单个AZ中部署Azure HA的地区。您只能在列表中看到可用的区域。
 ** *大小*：为受支持的高级SSD v2托管磁盘选择Storage VM大小。
 ** *Zone*:为您选择的区域选择一个区域。
@@ -96,9 +96,9 @@ NOTE: 为了符合Microsoft Azure的限制、您应在设置新虚拟网络时�
 
 
 
-== 故障排除
+== 解决部署问题
 
-直接通过Azure市场进行的Cloud Volumes ONTAP部署不包括NetApp的支持。如果在部署期间出现任何问题、您可以单独进行故障排除并解决这些问题。
+直接通过Azure市场部署的Cloud Volumes ONTAP系统不支持NetApp。如果在部署期间出现任何问题、您可以单独进行故障排除并解决这些问题。
 
 .步骤
 . 在Azure Marketplace站点上、转到*启动诊断>串行日志*。
@@ -111,6 +111,38 @@ NOTE: 为了符合Microsoft Azure的限制、您应在设置新虚拟网络时�
 
 
 
+
+
+
+== 在BlueXP  中发现已部署的系统
+
+您可以发现使用Azure Marketplace直接部署部署的Cloud Volumes ONTAP系统、并将其作为BlueXP  中的工作环境进行管理。BlueXP  连接器会发现系统、将其添加为工作环境、应用必要的BlueXP  许可证、并为这些系统解锁BlueXP  的全部功能。使用PSSD v2托管磁盘的单个AZ中的原始HA配置将保留下来、系统将注册到与原始部署相同的Azure订阅和资源组。
+
+.关于此任务
+在发现使用Azure Marketplace Direct部署部署的Cloud Volumes ONTAP系统时、BlueXP  连接器将执行以下任务：
+
+* 将已发现系统的免费许可证替换为基于容量的常规许可证link:concept-licensing.html#packages["免费许可证"]。
+* 保留已部署系统的现有功能、并添加BlueXP  的其他功能、例如数据保护、数据管理和安全功能。
+* 将节点上安装的许可证替换为适用于NFS、CIFS (SMB)、iSCSI、ARP、SnapLock和SnapMirror的新ONTAP许可证。
+* 将通用节点序列号转换为唯一序列号。
+* 根据需要在资源上分配新的系统标记。
+* 将实例的动态IP地址转换为静态IP地址。
+* 在已部署的系统上启用link:task-tiering.html["FabricPool 分层"]、link:task-verify-autosupport.html["AutoSupport"]和link:concept-worm.html["一次写入、多次读取"](WORM)存储的功能。您可以根据需要从BlueXP  控制台激活这些功能。
+* 将实例注册到用于发现实例的NSS帐户。
+* 为已发现的系统启用中的容量管理功能link:concept-storage-management.html#capacity-management["自动和手动模式"]。
+
+
+.开始之前
+确保在Azure Marketplace上完成部署。只有在部署完成并可供发现时、BlueXP  连接器才能发现系统。
+
+
+NOTE: Azure Marketplace直接部署支持L8s_v3实例类型。但是、对于HA配置、BlueXP  不支持此实例类型、因此在发现期间无法正确检测到它。
+
+.步骤
+在BlueXP  中、您可以按照标准过程发现现有系统。请参阅 link:task-adding-systems.html["将现有Cloud Volumes ONTAP系统添加到BlueXP "]。
+
+.完成后
+发现完成后、您可以在BlueXP  中查看列为工作环境的系统。您可以执行各种管理任务，例如link:task-manage-aggregates.html["正在扩展聚合"]、、link:task-create-volumes.html["正在添加卷"] link:task-managing-svms-azure.html["配置其他Storage VM"]和link:task-change-azure-vm.html["更改实例类型"]。
 
 .相关链接
 有关创建存储的详细信息、请参见ONTAP文档：

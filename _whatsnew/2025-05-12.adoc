@@ -1,0 +1,19 @@
+= 发现通过BlueXP  中的Azure Marketplace进行的部署
+:allow-uri-read: 
+
+
+
+
+=== 发现通过BlueXP  中的Azure Marketplace进行的部署
+
+BlueXP  现在可以直接通过Azure市场发现部署的Cloud Volumes ONTAP系统。这意味着、您现在可以像添加任何其他Cloud Volumes ONTAP系统一样、在BlueXP  中将这些系统作为工作环境进行添加和管理。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["从Azure Marketplace部署Cloud Volumes ONTAP"^]
+
+
+
+=== 能够为Azure租户分层数据
+
+现在、在Cloud Volumes ONTAP工作环境由一个租户创建而BlueXP  连接器由另一个租户创建的情况下、您可以为Azure租户启用分层。通过使用此功能、您可以使用同一个Connector为多个Azure租户分层数据。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["为Azure租户分层数据的要求"^]

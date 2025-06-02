@@ -212,12 +212,11 @@ Cloud Volumes ONTAP HA 对包括一个 HA 互连，通过该互连，每个节�
 
 === 安全组规则
 
-BlueXP会创建包含Cloud Volumes ONTAP 成功运行所需入站和出站规则的Azure安全组。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。
+BlueXP 创建 Azure 安全组，其中包括 Cloud Volumes ONTAP 成功运行的入站和出站规则。  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["查看Connector的安全组规则"^] 。
 
-Cloud Volumes ONTAP 的安全组需要入站和出站规则。
+Cloud Volumes ONTAP 的 Azure 安全组需要打开适当的端口以供节点之间进行内部通信。  https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["了解ONTAP内部端口"^] 。
 
-
-TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["查看Connector的安全组规则"^]
+我们不建议修改预定义安全组或使用自定义安全组。但是，如果您必须这样做，请注意，部署过程要求 Cloud Volumes ONTAP 系统在其自己的子网内拥有完全访问权限。部署完成后，如果您决定修改网络安全组，请确保保持集群端口和 HA 网络端口开放。这可确保 Cloud Volumes ONTAP 集群内的无缝通信（节点之间的任意对任意通信）。
 
 
 

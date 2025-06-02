@@ -82,12 +82,13 @@ ifdef::aws[]
 
 === AWS支持
 
-* 从Cloud Volumes ONTAP 9.2开始、AWS支持数据分层。
+* 从 Cloud Volumes ONTAP 9.2 开始，AWS 支持数据分层。
 * 性能层可以是通用 SSD （ GP3 或 GP2 ）或配置的 IOPS SSD （ IO1 ）。
 +
 
-NOTE: 使用吞吐量优化型 HDD （ st1 ）时，不建议将数据分层到对象存储。
+NOTE: 使用吞吐量优化 HDD (st1) 时，我们不建议将数据分层到对象存储。
 
+* 非活动数据将分层存储到 Amazon S3 存储桶。不支持分层存储到其他提供商。
 
 
 endif::aws[]
@@ -105,6 +106,7 @@ ifdef::azure[]
 
 
 * 性能层可以是高级SSD受管磁盘、标准SSD受管磁盘或标准HDD受管磁盘。
+* 非活动数据已分层存储至 Microsoft Azure Blob。不支持分层存储至其他提供商。
 
 
 endif::azure[]
@@ -115,8 +117,9 @@ ifdef::gcp[]
 
 === 支持Google Cloud
 
-* 从Cloud Volumes ONTAP 9.6开始、Google Cloud支持数据分层。
+* 从 Cloud Volumes ONTAP 9.6 开始，Google Cloud 支持数据分层。
 * 性能层可以是 SSD 永久性磁盘，平衡永久性磁盘或标准永久性磁盘。
+* 非活动数据将分层存储至 Google Cloud Storage。不支持分层存储至其他提供商。
 
 
 endif::gcp[]

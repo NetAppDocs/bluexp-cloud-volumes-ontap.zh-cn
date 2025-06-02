@@ -52,17 +52,40 @@ endif::gcp[]
 
 === NetApp 加密解决方案（ NVE 和 NAE ）
 
-Cloud Volumes ONTAP支持 https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp 卷加密（ NVE ）和 NetApp 聚合加密（ NAE ）"^]。NVE 和 NAE 是基于软件的解决方案，支持（ FIPS ） 140-2 合规的卷空闲数据加密。NVE 和 NAE 都使用 AES 256 位加密。
+Cloud Volumes ONTAP支持 https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp 卷加密（ NVE ）和 NetApp 聚合加密（ NAE ）"^]。NVE 和 NAE 是基于软件的解决方案，可实现符合 (FIPS) 140-2 标准的卷静态数据加密。NVE 和 NAE 都使用 AES 256 位加密。
 
 * NVE 一次对一个卷的空闲数据进行加密。每个数据卷都有自己唯一的加密密钥。
 * NAE 是 NVE 的扩展—它对每个卷的数据进行加密，并且这些卷在聚合中共享一个密钥。NAE 还允许对聚合中所有卷之间的公用块进行重复数据删除。
 
 
-外部密钥管理器支持 NVE 和 NAE 。
+Cloud Volumes ONTAP 支持 NVE 和 NAE，并支持 AWS、Azure 和 Google Cloud 提供的外部密钥管理服务 (EKM)，包括 Fortanix 等第三方解决方案。与 ONTAP 不同，Cloud Volumes ONTAP 的加密密钥是在云提供商端生成的，而不是在 ONTAP 中生成的。
 
-ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[]
+Cloud Volumes ONTAP 使用 ONTAP 所使用的标准密钥管理互操作性协议 (KMIP) 服务。有关受支持服务的更多信息，请参阅 https://imt.netapp.com/imt/#welcome["互操作性表工具"^] 。
 
-在设置外部密钥管理器后，新聚合会默认启用 NetApp 聚合加密（ NAE ）。默认情况下，不属于 NAE 聚合的新卷将启用 NetApp 卷加密（ NVE ）（例如，如果您有在设置外部密钥管理器之前创建的现有聚合）。
+如果您使用 NVE，则可以选择使用云提供商的密钥保管库来保护 ONTAP 加密密钥：
+
+ifdef::aws[]
+
+* AWS 密钥管理服务（ KMS ）
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+* Azure 密钥存储（ AKV ）
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud密钥管理服务
+
+
+endif::gcp[]
+
+在设置外部密钥管理器后，新聚合会默认启用 NetApp 聚合加密（ NAE ）。不属于 NAE 聚合的新卷默认启用 NVE（例如，如果您有在设置外部密钥管理器之前创建的现有聚合）。
 
 设置受支持的密钥管理器是唯一必需的步骤。有关设置说明，请参阅link:task-encrypting-volumes.html["使用NetApp加密解决方案对卷进行加密"]。
 

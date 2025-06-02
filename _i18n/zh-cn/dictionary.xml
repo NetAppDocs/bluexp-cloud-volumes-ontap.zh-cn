@@ -247,7 +247,6 @@
   <block id="1948af9c9d5426628760bb0ef4a35cdf" category="inline-link">NetApp 卷加密（ NVE ）和 NetApp 聚合加密（ NAE ）</block>
   <block id="0bf3330853877ab4b76b4f1e00d3ace2" category="list-text">NVE 一次对一个卷的空闲数据进行加密。每个数据卷都有自己唯一的加密密钥。</block>
   <block id="988d5e992ea371904581e6f8ad13bac7" category="list-text">NAE 是 NVE 的扩展—它对每个卷的数据进行加密，并且这些卷在聚合中共享一个密钥。NAE 还允许对聚合中所有卷之间的公用块进行重复数据删除。</block>
-  <block id="e1bf87c98edd3bee07d170ae8b118aeb" category="paragraph">在设置外部密钥管理器后，新聚合会默认启用 NetApp 聚合加密（ NAE ）。默认情况下，不属于 NAE 聚合的新卷将启用 NetApp 卷加密（ NVE ）（例如，如果您有在设置外部密钥管理器之前创建的现有聚合）。</block>
   <block id="d200c22f00ca54467dc4ad3823710388" category="inline-link">AWS 密钥管理服务（ KMS ）</block>
   <block id="b7e9ad250523d385d7738ce667a69f9f" category="admonition">创建 Cloud Volumes ONTAP 系统后，您无法更改 AWS 数据加密方法。</block>
   <block id="e9993ec838a8efa5cfb29506f884deca" category="inline-link-macro">设置 AWS KMS</block>
@@ -2209,14 +2208,12 @@
   <block id="c64a8243194a73e3972f291aa54a6a53" category="list-text">对于Google Cloud、您需要为专用Google Access配置子网并设置服务帐户。 <block ref="ae7c1d949803baa5d291fbd909b9d2e1" category="inline-xref-macro-rx"></block>。</block>
   <block id="aac3150f303991246792d1b76e543f1f" category="paragraph">您可以在使用特定配置和功能时启用数据分层。</block>
   <block id="ec4c1907e0b1b3ab9bfe34d9898d0723" category="section-title">AWS支持</block>
-  <block id="9a546a1baaebd3e2af69af4e1f807ea9" category="list-text">从Cloud Volumes ONTAP 9.2开始、AWS支持数据分层。</block>
   <block id="049a56718afb4bc754cebf8a5567c3c8" category="section-title">支持 Azure</block>
   <block id="f16872b2bf28c8dcda252e8197cc1a5e" category="list-text">Azure支持数据分层、如下所示：</block>
   <block id="c7f6ec5d95cafd0132e2322cbdca7f47" category="list-text">使用单节点系统时为9.4版</block>
   <block id="146aae59b5e422bc518402fc01301883" category="list-text">使用HA对的9.6版</block>
   <block id="c22e6c8e140bb405c574c67bff9bd946" category="list-text">性能层可以是高级SSD受管磁盘、标准SSD受管磁盘或标准HDD受管磁盘。</block>
   <block id="783e44882ef395447a1b422181ebb3d4" category="section-title">支持Google Cloud</block>
-  <block id="c0a92ff7cf6e8a1570f1775a4a7c563d" category="list-text">从Cloud Volumes ONTAP 9.6开始、Google Cloud支持数据分层。</block>
   <block id="0285440088a9a63b47028bcc1bccb076" category="section-title">功能互操作性</block>
   <block id="6c30ec25f9c157f6acd5cb63a6abee29" category="list-text">其中一个聚合对对象使用的命名方案较旧。两个聚合必须使用相同的名称格式。</block>
   <block id="181e3299a212253d089ee23c58a37a10" category="list-text">现在、所有云提供商市场均可提供Essentials软件包和专业软件包。</block>
@@ -3946,7 +3943,6 @@
   <block id="4c1dfec10f54a14c066eb4fde624e32b" category="paragraph"><block ref="4c1dfec10f54a14c066eb4fde624e32b" category="inline-link-rx"></block></block>
   <block id="de6c35943505135e58a4af4389b1768d" category="list-text"><block ref="de6c35943505135e58a4af4389b1768d" category="inline-link-rx"></block></block>
   <block id="9ae78035ef81aaff6187ef9a11cd1f03" category="list-text"><block ref="9ae78035ef81aaff6187ef9a11cd1f03" category="inline-link-rx"></block></block>
-  <block id="08922f23ed9079ed0750935efad792c1" category="admonition">正在查找有关连接器的信息？<block ref="a05739e7bce05bd7a830b46920675255" category="inline-link-rx"></block></block>
   <block id="081496cbc3abd2aa45670e7415b9b307" category="list-text"><block ref="081496cbc3abd2aa45670e7415b9b307" category="inline-link-rx"></block></block>
   <block id="72a0c1f7935cbaab164295a8fac378d8" category="list-text"><block ref="72a0c1f7935cbaab164295a8fac378d8" category="inline-link-rx"></block></block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -4342,7 +4338,6 @@
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Azure 中支持的配置</block>
   <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
-  <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP会创建包含Cloud Volumes ONTAP 成功运行所需入站和出站规则的Azure安全组。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。</block>
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP会创建AWS安全组、其中包含Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要参考端口进行测试，或者如果您希望使用自己的安全组。</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP会创建Google Cloud防火墙规则、其中包括Cloud Volumes ONTAP 成功运行所需的入站和出站规则。您可能需要引用这些端口来进行测试、或者希望使用自己的防火墙规则。</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">可通过ONTAP系统管理器和ONTAP命令行界面为卷配置ARP。</block>
@@ -4755,7 +4750,6 @@
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">K8s选项卡在先前版本中已弃用、现已删除。</block>
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">NAE不能使用AKV。NAE需要外部支持的KMIP服务器。</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAP节点每15分钟轮询一次ARV、以确认可访问性和密钥可用性。此轮询周期不可配置、在轮询尝试连续四次失败(总共1小时)后、卷将置于脱机状态。</block>
-  <block id="368b5e8e02b8134e8d1009fff74bf2bc" category="paragraph">Cloud Volumes ONTAP支持<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>。NVE 和 NAE 是基于软件的解决方案，支持（ FIPS ） 140-2 合规的卷空闲数据加密。NVE 和 NAE 都使用 AES 256 位加密。</block>
   <block id="f21def4319b19574f5ca7ab45389822b" category="paragraph">+请注意、优化包不支持BYOL。</block>
   <block id="e2299e8e355a9b503858d1f8d800ccaa" category="paragraph">对于Essentials软件包、最低4 TiB容量费用不适用于仅包含二级(数据保护)卷的Storage VM。例如、如果您的Storage VM包含1 TiB的二级数据、则只需为1 TiB的数据付费。对于所有其他非Essentials封装类型(优化型和专业型)、无论卷类型如何、最低容量充电均为4 TiB。</block>
   <block id="ea4ba4158f6b2b895b0418072f2ba06d" category="paragraph">基于节点的许可是上一代许可模式，可用于按节点许可 Cloud Volumes ONTAP 。此许可模式不适用于新客户。按节点充电已被上述按容量充电方法所取代。</block>
@@ -5243,7 +5237,6 @@
   <block id="c97a482803062120aadcb028bb25c6d1" category="paragraph">Cloud Volumes ONTAP数据在Azure中使用自动加密<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block>。默认实施使用 Microsoft 管理的密钥。无需设置。</block>
   <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024年12月9日</block>
   <block id="c02b5fa56aae4296da253938ec788b53" category="paragraph">使用Microsoft托管密钥在Azure中的Cloud Volumes ONTAP上自动加密数据<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block>。但是，您现在可以通过完成以下步骤来使用自己的客户管理的加密密钥：</block>
-  <block id="a12f9b162c1d705866995451c3607b7a" category="paragraph">ifdef：：azure[] endif：：azure[] ifdef：：gcp[] endif：：gcp[]</block>
   <block id="2da8645e38c3d4f73ccf32db700949e1" category="inline-link">知识库文章：CVO支持哪些实时存储效率功能？</block>
   <block id="d3f3737cc08ede35a7833c219be7cf96" category="paragraph">从BlueXP 3.9.5版开始、将在初始Storage VM上启用逻辑空间报告。如果以逻辑方式报告空间，则 ONTAP 会报告卷空间，以便存储效率功能节省的所有物理空间也会报告为已用空间。有关实时存储效率功能的信息、请参阅知识库文章<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
   <block id="2036e42877d5092c3afda2b202817932" category="list-text">NFS ifdef：：aws[] endif：：aws[] ifdef：：azure[] endif：：azure[]</block>
@@ -5850,4 +5843,26 @@
   <block id="5dc4c869682b55bd825dbd766c5a91c6" category="inline-link-macro">已禁用Azure专用链路</block>
   <block id="56942c64ec21bc5186a25c20b4c9231e" category="list-text">您必须<block ref="d1486d850c17a7ded1dee71bca015a76" category="inline-link-macro-rx"></block>使用子网服务端点。</block>
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
+  <block id="389d4c98e2d0499c2e4e750430434afb" category="doc">为Cloud Volumes ONTAP 9.15.1启用了专用模式部署</block>
+  <block id="bce4906e9d915e525cd382b520b71325" category="paragraph">现在、您可以在AWS、Azure和Google Cloud中以私有模式部署Cloud Volumes ONTAP 9.15.1。Cloud Volumes ONTAP 9.15.1的单节点和高可用性(HA)部署均启用了专用模式。</block>
+  <block id="8d85a6720847d90489976db4cc2c4e48" category="paragraph">Cloud Volumes ONTAP支持<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>。NVE 和 NAE 是基于软件的解决方案，可实现符合 (FIPS) 140-2 标准的卷静态数据加密。NVE 和 NAE 都使用 AES 256 位加密。</block>
+  <block id="3d9f78a1ff8b79063296498224874e6c" category="paragraph">Cloud Volumes ONTAP 支持 NVE 和 NAE，并支持 AWS、Azure 和 Google Cloud 提供的外部密钥管理服务 (EKM)，包括 Fortanix 等第三方解决方案。与 ONTAP 不同，Cloud Volumes ONTAP 的加密密钥是在云提供商端生成的，而不是在 ONTAP 中生成的。</block>
+  <block id="918d32b75f0ab883abba3a8dc0c3ae8d" category="inline-link">互操作性表工具</block>
+  <block id="fc018227cf021b5cfd4d7696a41f346a" category="paragraph">Cloud Volumes ONTAP 使用 ONTAP 所使用的标准密钥管理互操作性协议 (KMIP) 服务。有关受支持服务的更多信息，请参阅<block ref="728e4ee339d5763542973002d2a82dc7" category="inline-link-rx"></block> 。</block>
+  <block id="37368004332f325820087f73466f8e6c" category="paragraph">如果您使用 NVE，则可以选择使用云提供商的密钥保管库来保护 ONTAP 加密密钥：</block>
+  <block id="35b16ddf568bd70f42e0bcb19f2a533c" category="list-text">Azure 密钥存储（ AKV ）</block>
+  <block id="f0daa22edb6ee8b88bae0e5a21b552ec" category="list-text">Google Cloud密钥管理服务</block>
+  <block id="81f72afb3ba5f2e16cf373b5ea887aec" category="paragraph">在设置外部密钥管理器后，新聚合会默认启用 NetApp 聚合加密（ NAE ）。不属于 NAE 聚合的新卷默认启用 NVE（例如，如果您有在设置外部密钥管理器之前创建的现有聚合）。</block>
+  <block id="9d7d08ead80432c8e527b130cf457a7d" category="paragraph">BlueXP 创建 Azure 安全组，其中包括 Cloud Volumes ONTAP 成功运行的入站和出站规则。 <block ref="a05739e7bce05bd7a830b46920675255" category="inline-link-rx"></block> 。</block>
+  <block id="52fa9133415c22fe3227f02c5bdc7bdb" category="inline-link">了解ONTAP内部端口</block>
+  <block id="72cb359256f1b923869ffe5643075163" category="paragraph">Cloud Volumes ONTAP 的 Azure 安全组需要打开适当的端口以供节点之间进行内部通信。 <block ref="9235b6a724dccf5c41be51f4736123ae" category="inline-link-rx"></block> 。</block>
+  <block id="e3f7f3a3bb47d39a7fd58de8d5070b2b" category="paragraph">我们不建议修改预定义安全组或使用自定义安全组。但是，如果您必须这样做，请注意，部署过程要求 Cloud Volumes ONTAP 系统在其自己的子网内拥有完全访问权限。部署完成后，如果您决定修改网络安全组，请确保保持集群端口和 HA 网络端口开放。这可确保 Cloud Volumes ONTAP 集群内的无缝通信（节点之间的任意对任意通信）。</block>
+  <block id="552d4863308abc19f380cc04022d6ad3" category="admonition">源是 Cloud Volumes ONTAP 系统的接口（IP 地址）。</block>
+  <block id="8dbd909e72408c020853ce0f323f1faa" category="list-text">从 Cloud Volumes ONTAP 9.2 开始，AWS 支持数据分层。</block>
+  <block id="bb76865f22c7023c27866da2d50e30b0" category="admonition">使用吞吐量优化 HDD (st1) 时，我们不建议将数据分层到对象存储。</block>
+  <block id="0baa9fabb663d0426d677bdef48cab76" category="list-text">非活动数据将分层存储到 Amazon S3 存储桶。不支持分层存储到其他提供商。</block>
+  <block id="9d04d4aae5bc77b320eddf498e3e1a4c" category="list-text">非活动数据已分层存储至 Microsoft Azure Blob。不支持分层存储至其他提供商。</block>
+  <block id="4fa4358b6bad8118578db6b5c02a52db" category="list-text">从 Cloud Volumes ONTAP 9.6 开始，Google Cloud 支持数据分层。</block>
+  <block id="bae7cc0d7e8eb757103bffb3f43417c4" category="list-text">非活动数据将分层存储至 Google Cloud Storage。不支持分层存储至其他提供商。</block>
+  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">2025年5月29日</block>
 </blocks>

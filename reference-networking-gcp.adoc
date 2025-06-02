@@ -407,7 +407,7 @@ TIP: 正在查找有关连接器的信息？ https://docs.netapp.com/us-en/bluex
 如果您需要严格的出站流量规则、则可以使用以下信息仅打开 Cloud Volumes ONTAP 出站通信所需的端口。
 
 
-NOTE: 源是 Cloud Volumes ONTAP 系统上的接口（ IP 地址）。
+NOTE: 源是 Cloud Volumes ONTAP 系统的接口（IP 地址）。
 
 [cols="10,10,6,20,20,34"]
 |===

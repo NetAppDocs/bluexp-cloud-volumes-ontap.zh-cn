@@ -14,7 +14,7 @@ summary: BlueXP不为Storage VM灾难恢复提供任何设置或编排支持。�
 
 
 [role="lead"]
-BlueXP不为Storage VM (SVM)灾难恢复提供任何设置或流程编排支持。您必须使用ONTAP系统管理器或ONTAP命令行界面。
+BlueXP 不提供存储虚拟机 (SVM) 灾难恢复的设置或编排支持。要执行这些任务，请使用 ONTAP System Manager 或 ONTAP CLI。
 
 如果在两个Cloud Volumes ONTAP系统之间设置SnapMirror SVM复制、则复制必须在两个HA对系统或两个单节点系统之间进行。您不能在HA对和单节点系统之间设置SnapMirror SVM复制。
 

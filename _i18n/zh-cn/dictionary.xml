@@ -2251,7 +2251,6 @@
   <block id="98084fb337b1b2cf4cb9e5af0b0ef9b1" category="list-text">Cloud Volumes ONTAP 系统会将非活动数据分层到一个Blob容器中。</block>
   <block id="f7c5c3f829ba75eb23b7c60381fd4f74" category="list-text">访问层：热</block>
   <block id="c89729007f1266a456e5a1133a9f58e9" category="list-text">性能：标准</block>
-  <block id="dc4d23da133e198d425564262ad6976b" category="list-text">冗余：本地冗余存储(LRS)</block>
   <block id="2f546189dda4bc24c6d8f6ed71c57a36" category="list-text">帐户：StorageV2 (通用v2)</block>
   <block id="e0d679a04a2c140c65cff67ffbfd8444" category="list-text">Require secure transfer for REST API operations：enabled</block>
   <block id="4fbd5770a6fd5de01bbbcf2a407118d7" category="list-text">存储帐户密钥访问：已启用</block>
@@ -2355,7 +2354,6 @@
   <block id="b80b61bef9c57d9979c8a0a11310d79b" category="paragraph">可以使用命令行界面或ONTAP REST API启用使用AKV的密钥管理。</block>
   <block id="e99dab450e193aa16ab181a9cbb70701" category="paragraph">使用AKV时、请注意、默认情况下、数据SVM LIF用于与云密钥管理端点进行通信。节点管理网络用于与云提供商的身份验证服务(login.microsoftonline.com)进行通信。如果集群网络配置不正确，集群将无法正确利用密钥管理服务。</block>
   <block id="0dbc3b305b67f45cc077782f1bde33be" category="list-text">Cloud Volumes ONTAP 必须运行9.10.1或更高版本</block>
-  <block id="3db7729c3f93b51e237e9f64f77736ce" category="list-text">已安装卷加密（ VE ）许可证</block>
   <block id="941d09f50e1c95a1d21454ff759fc757" category="list-text">您必须是集群管理员或SVM管理员</block>
   <block id="4da5254130066f3f3262c3aa07f10759" category="list-text">Active Azure订阅</block>
   <block id="0c7af18d6ac0bf65ef1d6aec6f629263" category="list-text">只能在数据SVM上配置AKV</block>
@@ -2367,8 +2365,6 @@
   <block id="68f0035d3c55f26e0ec12ed454908a6e" category="list-text">检查密钥管理器的状态：`security key-manager external azure check` The output will look like：</block>
   <block id="776c67d51f3f1c503c9062c9d812c2b7" category="list-text">确认卷已正确创建和加密。如果是、则` is-encrypted`参数将显示为`true`。`vol show -vserver _svm_name_-fields is-encrypted`</block>
   <block id="0dbdff8ed1ef0e78c4dc84ace48205d6" category="inline-link-macro">Google Cloud Platform 的密钥管理服务（ Cloud KMS ）</block>
-  <block id="41a2c826f6f02a44a93533524c99b84e" category="list-text">只能在数据SVM上配置Cloud KMS</block>
-  <block id="105e3d12938c631bc5d8ab6f6b628e1c" category="list-text">有效的Google Cloud Platform订阅</block>
   <block id="d21cbe89c10e8cddec31594493146dcf" category="list-text">下载服务帐户JSON密钥：`gcloud iam service-accounts keys create key-file -iam-account=_sa-name_@_project-id_.iam.gserviceaccount.com`</block>
   <block id="82e39d2f55f4956d1929bbcff0b210aa" category="list-text">切换到高级权限级别：`set -privilege advanced`</block>
   <block id="6deefebfd83493611afe8675c6d1ce7b" category="list-text">创建CMEE条目：`security key-manager external gcp enable -vserver _svm_name_-project-id _project_-key-ring-name _key_ring_name_-key-ring-location _key_ring_location_-key-name _key_name_`</block>
@@ -2413,8 +2409,6 @@
   <block id="254f642527b45bc260048e30704edb39" category="section-title">Configuration</block>
   <block id="d8cc118193ca8f7de894de3aa3760c8b" category="inline-link-macro">创建对称GCP密钥环和密钥</block>
   <block id="f510135977c794727163a8e714df5b99" category="list-text">在Google Cloud环境中、 <block ref="7ea8c432087c9eb8393041b63739b4b6" category="inline-link-macro-rx"></block>。</block>
-  <block id="43b2c0508e829808a52d205609043890" category="list-text">为Cloud Volumes ONTAP 服务帐户创建自定义角色。</block>
-  <block id="df877e8ddc7d9aae543dcf9650ab2c34" category="list-text">将自定义角色分配给云KMS密钥和Cloud Volumes ONTAP 服务帐户：`gcloud kms keys add-iam-policy-binding _key_name_-keyring _key_ring_name_-location _key_location_-member serviceAccount：_service_account_Name_-role projects_custom_id_/role/kmsRole`</block>
   <block id="d8787bda3ae35a469afc376610816a6a" category="list-text">为数据SVM创建DNS。`dns create -domains C._&lt;project&gt;_.internal -name-servers _server_address_-vserver _svm_name_`</block>
   <block id="1601dadf3d75da8ab487484480cbf4ef" category="list-text">可选：创建一个卷以测试加密`vol create _volume_name_-aggregate _aggregate_-vserver _vserver_name_-size 10G`</block>
   <block id="401a8aaa330fe64d45395192c047e1ed" category="paragraph">Cloud Volumes ONTAP 支持 NetApp 卷加密（ NVE ）和 NetApp 聚合加密（ NAE ）。NVE和NAE是基于软件的解决方案、支持FIPS 140-2合规的卷空闲数据加密。 <block ref="d36456219fc3d98cd4133816e30fd33f" category="inline-link-macro-rx"></block>。</block>
@@ -3486,7 +3480,6 @@
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*查看案例*：查看有关特定案例的完整详细信息。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">屏幕截图、显示在表的最后一列中选择菜单后可以执行的操作。</block>
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">如果使用HA对、则从9.13.0版开始、Cloud Volumes ONTAP 支持对多种VM类型使用高写入速度。转至<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> 可查看支持高写入速度的 VM 类型。</block>
-  <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">安装了多租户加密密钥管理(MTEKM)许可证、从Cloud Volumes ONTAP 9.12.1 GA开始。</block>
   <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">通过Cloud Volumes ONTAP 映像摘要文件工具验证导出的Google云映像文件签名。</block>
   <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">要验证导出的Google Cloud签名映像、必须从NSS下载映像摘要文件以验证disk.raw文件和摘要文件内容。</block>
   <block id="c81429443fac6104f46abd88cff6840a" category="section-title">签名映像验证工作流摘要</block>
@@ -5865,4 +5858,17 @@
   <block id="4fa4358b6bad8118578db6b5c02a52db" category="list-text">从 Cloud Volumes ONTAP 9.6 开始，Google Cloud 支持数据分层。</block>
   <block id="bae7cc0d7e8eb757103bffb3f43417c4" category="list-text">非活动数据将分层存储至 Google Cloud Storage。不支持分层存储至其他提供商。</block>
   <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">2025年5月29日</block>
+  <block id="af06b9862164f62f5ee6325272d44053" category="list-text">冗余：根据 Cloud Volume ONTAP 部署</block>
+  <block id="9a5070a4f48a9f2a4059c8b0f6fabc0f" category="list-text">单一可用区：本地冗余存储 (LRS)</block>
+  <block id="c43f742471855ab4046c8e23e0d8fe4e" category="list-text">多可用区域：区域冗余存储（ZRS）</block>
+  <block id="76246533f5983ea5fd5d33c0515bcb4d" category="list-text">您的系统应该运行 Cloud Volumes ONTAP 9.10.1 或更高版本</block>
+  <block id="7f41679ba0e676db7de59363a178d7d6" category="list-text">您必须使用数据 SVM。CloudKMS 只能在数据 SVM 上配置。</block>
+  <block id="6c167007d611da9626ecac9c168c7e8a" category="list-text">应在 SVM 上安装卷加密 (VE) 许可证</block>
+  <block id="26a7c42662e416d13cb36f80c1950dfa" category="list-text">从 Cloud Volumes ONTAP 9.12.1 GA 开始，还应安装多租户加密密钥管理 (MTEKM) 许可证</block>
+  <block id="843cdd13756df08efb884f520d2add09" category="list-text">需要有效的 Google Cloud Platform 订阅</block>
+  <block id="7c10ba4172019b4730c14e61275bafac" category="list-text">为 Cloud KMS 密钥和 Cloud Volumes ONTAP 服务帐户分配自定义角色。</block>
+  <block id="2428f19901807b70d43261121dafcf93" category="list-text">创建自定义角色：</block>
+  <block id="f193581eeaf23b712b81e0023faf5954" category="list-text">分配您创建的自定义角色： <block ref="1bc6114e9ddb3402400afe0f18264312" prefix=" " category="inline-code"></block></block>
+  <block id="2ca4641842d5ce20115dfc5ed991df9a" category="admonition">如果您使用的是 Cloud Volumes ONTAP 9.13.0 或更高版本，则无需创建自定义角色。您可以分配预定义的<block ref="73ac35632bb1fe345fd295d7683fcbee" category="inline-link-rx"></block><block ref="8f1f4fa398a38c70f01951f69f3c2a1f" prefix="[" category="inline-code"></block> ^] 角色。</block>
+  <block id="07bc73dbf27c2d6ca6dd4dcbb64687bf" category="paragraph">BlueXP 不提供存储虚拟机 (SVM) 灾难恢复的设置或编排支持。要执行这些任务，请使用 ONTAP System Manager 或 ONTAP CLI。</block>
 </blocks>

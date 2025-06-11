@@ -19,15 +19,12 @@ summary: 利用Google的密钥管理服务提供第三方密钥管理服务。
 使用Cloud KMS时、请注意、默认情况下、数据SVM的LIF用于与云密钥管理端点进行通信。节点管理网络用于与云提供商的身份验证服务(oauth2.googleapis.com)进行通信。如果集群网络配置不正确，集群将无法正确利用密钥管理服务。
 
 .开始之前
-* Cloud Volumes ONTAP 必须运行9.10.1或更高版本
-* 已安装卷加密（ VE ）许可证
-* 安装了多租户加密密钥管理(MTEKM)许可证、从Cloud Volumes ONTAP 9.12.1 GA开始。
+* 您的系统应该运行 Cloud Volumes ONTAP 9.10.1 或更高版本
+* 您必须使用数据 SVM。CloudKMS 只能在数据 SVM 上配置。
 * 您必须是集群管理员或SVM管理员
-* 有效的Google Cloud Platform订阅
-
-
-.限制
-* 只能在数据SVM上配置Cloud KMS
+* 应在 SVM 上安装卷加密 (VE) 许可证
+* 从 Cloud Volumes ONTAP 9.12.1 GA 开始，还应安装多租户加密密钥管理 (MTEKM) 许可证
+* 需要有效的 Google Cloud Platform 订阅
 
 
 
@@ -36,7 +33,9 @@ summary: 利用Google的密钥管理服务提供第三方密钥管理服务。
 
 .Google Cloud
 . 在Google Cloud环境中、 link:https://cloud.google.com/kms/docs/creating-keys["创建对称GCP密钥环和密钥"^]。
-. 为Cloud Volumes ONTAP 服务帐户创建自定义角色。
+. 为 Cloud KMS 密钥和 Cloud Volumes ONTAP 服务帐户分配自定义角色。
++
+.. 创建自定义角色：
 +
 [listing]
 ----
@@ -47,7 +46,14 @@ gcloud iam roles create kmsCustomRole
     --permissions=cloudkms.cryptoKeyVersions.get,cloudkms.cryptoKeyVersions.list,cloudkms.cryptoKeyVersions.useToDecrypt,cloudkms.cryptoKeyVersions.useToEncrypt,cloudkms.cryptoKeys.get,cloudkms.keyRings.get,cloudkms.locations.get,cloudkms.locations.list,resourcemanager.projects.get
     --stage=GA
 ----
-. 将自定义角色分配给云KMS密钥和Cloud Volumes ONTAP 服务帐户：`gcloud kms keys add-iam-policy-binding _key_name_-keyring _key_ring_name_-location _key_location_-member serviceAccount：_service_account_Name_-role projects_custom_id_/role/kmsRole`
+.. 分配您创建的自定义角色： 
+`gcloud kms keys add-iam-policy-binding _key_name_ --keyring _key_ring_name_ --location _key_location_ --member serviceAccount:_service_account_Name_ --role projects/_customer_project_id_/roles/kmsCustomRole`
++
+
+NOTE: 如果您使用的是 Cloud Volumes ONTAP 9.13.0 或更高版本，则无需创建自定义角色。您可以分配预定义的[`cloudkms.cryptoKeyEncrypterDecrypter` ^] 角色。
+
+
+
 . 下载服务帐户JSON密钥：`gcloud iam service-accounts keys create key-file -iam-account=_sa-name_@_project-id_.iam.gserviceaccount.com`
 
 

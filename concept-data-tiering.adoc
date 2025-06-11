@@ -84,7 +84,12 @@ BlueXP将使用以下设置创建存储帐户：
 
 * 访问层：热
 * 性能：标准
-* 冗余：本地冗余存储(LRS)
+* 冗余：根据 Cloud Volume ONTAP 部署
++
+** 单一可用区：本地冗余存储 (LRS)
+** 多可用区域：区域冗余存储（ZRS）
+
+
 * 帐户：StorageV2 (通用v2)
 * Require secure transfer for REST API operations：enabled
 * 存储帐户密钥访问：已启用

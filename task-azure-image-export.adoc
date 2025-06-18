@@ -14,48 +14,37 @@ summary: 您可以从Azure Marketplace导出ONTAP映像、以验证VHD文件的�
 
 
 [role="lead"]
-将该vHD映像发布到Azure云后、NetApp将不再管理该映像。而是将发布的映像放置在Azure Marketplace上。在Azure Marketplace上暂存并发布映像时、Azure会更改到VHD的前导1 MB和结尾512 B。要验证该VHD文件的签名、需要首先从Azure Marketplace导出由Azure修改的VHD映像。
+VHD 映像发布到 Azure 云后，将不再由 NetApp 管理。而是将发布的映像放置在Azure Marketplace上。当映像在 Azure 市场上暂存并发布时，Azure 会修改 VHD 开头的 1 MB 空间和结尾的 512 字节空间。要验证 VHD 文件的签名，您需要从 Azure 市场导出 Azure 修改后的 VHD 映像。
 
 .开始之前
-您必须在系统上安装所需的程序。
-
-* 已安装Azure命令行界面、或者可随时通过Azure门户使用Azure Cloud Shell。
-+
-
-NOTE: 有关如何安装Azure命令行界面的详细信息，请参阅 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azure文档：如何安装Azure命令行界面"^]。
-
-
+确保系统上已安装 Azure CLI，或者可通过 Azure 门户使用 Azure Cloud Shell。有关如何安装 Azure CLI 的详细信息，请参阅 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azure 文档：如何安装 Azure CLI"^] 。
 
 .步骤
-. 使用version_readme文件的内容将ONTAP版本映射到Azure Marketplace映像版本。
+. 使用 _version_readme_ 文件的内容，将系统上的 Cloud Volumes ONTAP 版本映射到 Azure 市场映像版本。CloudVolumes ONTAP 版本表示为 `buildname` Azure 市场镜像版本表示为 `version`在版本映射中。
 +
-对于version_readme文件中列出的每个版本映射、ONTAP版本以"budname"表示、Azure Marketplace映像版本以"version"表示。
+在以下示例中，Cloud Volumes ONTAP 版本 `9.15.0P1`映射到 Azure 市场映像版本 `9150.01000024.05090105` 。此Azure Marketplace映像版本稍后用于设置映像URN。
 
 +
-例如、在以下version_readme文件中、ONTAP版本"9.15.0P1"映射到Azure Marketplace映像版本"9150.01000024.65090105"。此Azure Marketplace映像版本稍后用于设置映像URN。
-
-+
-[listing]
+[source, cli]
 ----
 [
-    {
-        "buildname": "9.15.0P1",
-        "publisher": "netapp",
-        "version": "9150.01000024.05090105"
-    }
+ "buildname": "9.15.0P1",
+    "publisher": "netapp",
+     "version": "9150.01000024.05090105"
+
 ]
 ----
-. 确定要创建VM的区域名称。
+. 确定要在其中创建虚拟机的区域。区域名称将用作 `locName`设置市场镜像的 URN 变量。要列出可用区域，请运行以下命令：
 +
-在设置商城图片的URN时、此区域名称用作"locName"变量的值。
+[source, cli]
+----
+az account list-locations -o table
+----
++
+在此表中，区域名称出现在 `Name`场地。
 
 +
-.. 要接收可用区域的列表、请输入 `az account list-locations -o table` 命令：
-+
-在下表中、区域名称称为"名称"字段。
-
-+
-[listing]
+[source, cli]
 ----
 $ az account list-locations -o table
 DisplayName               Name                 RegionalDisplayName
@@ -65,12 +54,7 @@ East US 2                 eastus2              (US) East US 2
 South Central US          southcentralus       (US) South Central US
 ...
 ----
-
-
-. 查看下表中相应Cloud Volumes ONTAP版本和VM部署类型的SKU名称。
-+
-SKU名称是设置商城图片的URN时"skuName"变量的值。
-
+. 请查看下表中对应 Cloud Volumes ONTAP 版本和虚拟机部署类型的 SKU 名称。SKU名称用作 `skuName`设置市场图像的 URN 时的变量。
 +
 例如、使用Cloud Volumes ONTAP 9.12.09的所有单节点部署都应使用 `ontap_cloud_byol`作为SKU名称。
 
@@ -96,22 +80,20 @@ SKU名称是设置商城图片的URN时"skuName"变量的值。
 
 | 9.12.1. | 高可用性 | ONTAP云BYOL_ha 
 |===
-. 映射ONTAP版本和Azure Marketplace映像后、通过Azure Cloud Shell或Azure命令行界面从Azure Marketplace导出VHD文件。
+. 映射 ONTAP 版本和 Azure 市场映像后，使用 Azure Cloud Shell 或 Azure CLI 从 Azure 市场导出 VHD 文件。
 
 
 
 
-== 通过Azure门户上的Azure Cloud Shell导出VHD文件
+== 使用 Linux 上的 Azure Cloud Shell 导出 VHD 文件
 
-. 从Azure Cloud Shell中、将市场映像导出到vhd (image2、例如9150.01000024.65090105.vhd)、然后下载到本地计算机(例如Linux计算机或Windows PC)。
+从 Azure Cloud Shell 中，将市场镜像导出为 VHD 文件（例如，_9150.01000024.05090105.vhd_），然后将其下载到本地 Linux 系统。执行以下步骤从 Azure 市场获取 VHD 镜像。
+
+.步骤
+. 设置市场镜像的 URN 和其他参数。URN格式为 `<publisher>:<offer>:<sku>:<version>` 。或者，您可以列出 NetApp 市场图像来确认正确的图像版本。
 +
-.查看步骤
-[%collapsible]
-====
-[source]
+[source, cli]
 ----
-#Azure Cloud Shell on Azure portal to get VHD image from Azure Marketplace
-a) Set the URN and other parameters of the marketplace image. URN is with format "<publisher>:<offer>:<sku>:<version>". Optionally, a user can list NetApp marketplace images to confirm the proper image version.
 PS /home/user1> $urn="netapp:netapp-ontap-cloud:ontap_cloud_byol:9150.01000024.05090105"
 PS /home/user1> $locName="eastus2"
 PS /home/user1> $pubName="netapp"
@@ -124,17 +106,21 @@ PS /home/user1> Get-AzVMImage -Location $locName -PublisherName $pubName -Offer 
 9.150.20240213
 9150.01000024.05090105
 ...
-
-b) Create a new managed disk from the Marketplace image with the matching image version
+----
+. 从具有匹配映像版本市场映像创建新的托管磁盘：
++
+[source, cli]
+----
 PS /home/user1> $diskName = “9150.01000024.05090105-managed-disk"
 PS /home/user1> $diskRG = “fnf1”
 PS /home/user1> az disk create -g $diskRG -n $diskName --image-reference $urn
 PS /home/user1> $sas = az disk grant-access --duration-in-seconds 3600 --access-level Read --name $diskName --resource-group $diskRG
 PS /home/user1> $diskAccessSAS = ($sas | ConvertFrom-Json)[0].accessSas
-
-c) Export a VHD from the managed disk to Azure Storage
-Create a container with proper access level. As an example, a container named 'vm-images' with 'Container' access level is used here.
-Get storage account access key, on Azure portal, 'Storage Accounts'/'examplesaname'/'Access Key'/'key1'/'key'/'show'/<copy>.
+----
+. 将 VHD 文件从托管磁盘导出到 Azure 存储。创建具有适当访问级别的容器。在本例中，我们使用了名为 `vm-images`和 `Container`访问级别。从 Azure 门户获取存储帐户访问密钥：*存储帐户 > _examplesaname_ > 访问密钥 > _key1_ > _key_ > 显示 > _<copy>_*
++
+[source, cli]
+----
 PS /home/user1> $storageAccountName = “examplesaname”
 PS /home/user1> $containerName = “vm-images”
 PS /home/user1> $storageAccountKey = "<replace with the above access key>"
@@ -142,35 +128,42 @@ PS /home/user1> $destBlobName = “9150.01000024.05090105.vhd”
 PS /home/user1> $destContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
 PS /home/user1> Start-AzureStorageBlobCopy -AbsoluteUri $diskAccessSAS -DestContainer $containerName -DestContext $destContext -DestBlob $destBlobName
 PS /home/user1> Get-AzureStorageBlobCopyState –Container $containerName –Context $destContext -Blob $destBlobName
+----
+. 将生成的映像下载到你的 Linux 系统。使用 `wget`下载VHD文件的命令：
++
+[source, cli]
+----
+wget <URL of filename/Containers/vm-images/9150.01000024.05090105.vhd>
+----
++
+URL 遵循标准格式。为了实现自动化，您可以按如下所示派生 URL 字符串。或者，您可以使用 Azure CLI  `az`命令获取 URL。示例 URL： https://examplesaname.blob.core.windows.net/vm-images/9150.01000024.05090105.vhd[]
 
-d) Download the generated image to your server, e.g., a Linux machine.
-Use "wget <URL of file examplesaname/Containers/vm-images/9150.01000024.05090105.vhd>".
-The URL is organized in a formatted way. For automation tasks, the following example could be used to derive the URL string. Otherwise, Azure CLI 'az' command could be issued to get the URL, which is not covered in this guide. URL Example:
-https://examplesaname.blob.core.windows.net/vm-images/9150.01000024.05090105.vhd
-
-e) Clean up the managed disk
+. 清理托管磁盘
++
+[source, cli]
+----
 PS /home/user1> Revoke-AzDiskAccess -ResourceGroupName $diskRG -DiskName $diskName
 PS /home/user1> Remove-AzDisk -ResourceGroupName $diskRG -DiskName $diskName
 ----
-====
 
 
 
 
-== 通过Azure命令行界面从本地Linux计算机导出VHD文件
+== 使用 Linux 上的 Azure CLI 导出 VHD 文件
 
-. 从本地Linux计算机通过Azure命令行界面将市场映像导出到vhd。
+使用本地 Linux 系统的 Azure CLI 将市场映像导出到 VHD 文件。
+
+.步骤
+. 登录到 Azure CLI 并列出市场图像：
 +
-.查看步骤
-[%collapsible]
-====
-[source]
+[source, cli]
 ----
-#Azure CLI on local Linux machine to get VHD image from Azure Marketplace
-a) Login Azure CLI and list marketplace images
 % az login --use-device-code
-To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code XXXXXXXXX to authenticate.
-
+----
+. 要登录，请使用网络浏览器打开页面 https://microsoft.com/devicelogin[]并输入验证码。
++
+[source, cli]
+----
 % az vm image list --all --publisher netapp --offer netapp-ontap-cloud --sku ontap_cloud_byol
 ...
 {
@@ -182,8 +175,11 @@ To sign in, use a web browser to open the page https://microsoft.com/devicelogin
 "version": "9150.01000024.05090105"
 },
 ...
-
-b) Create a new managed disk from the Marketplace image with the matching image version
+----
+. 从具有匹配映像版本的市场映像创建新的托管磁盘。
++
+[source, cli]
+----
 % export urn="netapp:netapp-ontap-cloud:ontap_cloud_byol:9150.01000024.05090105"
 % export diskName="9150.01000024.05090105-managed-disk"
 % export diskRG="new_rg_your_rg"
@@ -192,13 +188,21 @@ b) Create a new managed disk from the Marketplace image with the matching image 
 {
   "accessSas": "https://md-xxxxxx.blob.core.windows.net/xxxxxxx/abcd?sv=2018-03-28&sr=b&si=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxx&sigxxxxxxxxxxxxxxxxxxxxxxxx"
 }
-
 % export diskAccessSAS="https://md-xxxxxx.blob.core.windows.net/xxxxxxx/abcd?sv=2018-03-28&sr=b&si=xxxxxxxx-xxxx-xx-xx-xx&sigxxxxxxxxxxxxxxxxxxxxxxxx"
-#To automate the process, the SAS needs to be extracted from the standard output. This is not included in this guide.
+----
++
+为了实现流程自动化，需要从标准输出中提取 SAS。请参阅相关文档以获取指导。
 
-c) export vhd from managed disk
-Create a container with proper access level. As an example, a container named 'vm-images' with 'Container' access level is used here.
-Get storage account access key, on Azure portal, 'Storage Accounts'/'examplesaname'/'Access Key'/'key1'/'key'/'show'/<copy>. There should be az command that can achieve the same, but this is not included in this guide.
+. 从托管磁盘导出 VHD 文件。
++
+.. 创建一个具有适当访问级别的容器。在本例中，容器名为 `vm-images`和 `Container`使用访问级别。
+.. 从 Azure 门户获取存储帐户访问密钥：*存储帐户 > _examplesaname_ > 访问密钥 > _key1_ > _key_ > 显示 > _<copy>_*
++
+您还可以使用 `az`此步骤的命令。
+
++
+[source, cli]
+----
 % export storageAccountName="examplesaname"
 % export containerName="vm-images"
 % export storageAccountKey="xxxxxxxxxx"
@@ -217,8 +221,13 @@ Get storage account access key, on Azure portal, 'Storage Accounts'/'examplesana
   "version": "2020-06-12",
   "version_id": null
 }
+----
 
-#to check the status of the blob copying
+
+. 检查 blob 副本的状态。
++
+[source, cli]
+----
 % az storage blob show --name $destBlobName --container-name $containerName --account-name $storageAccountName
 
 ....
@@ -233,15 +242,21 @@ Get storage account access key, on Azure portal, 'Storage Accounts'/'examplesana
       "statusDescription": null
     },
 ....
+----
+. 将生成的图像下载到您的 Linux 服务器。
++
+[source, cli]
+----
+wget <URL of file examplesaname/Containers/vm-images/9150.01000024.05090105.vhd>
+----
++
+URL 遵循标准格式。为了实现自动化，您可以按如下所示派生 URL 字符串。或者，您可以使用 Azure CLI  `az`命令获取 URL。示例 URL： https://examplesaname.blob.core.windows.net/vm-images/9150.01000024.05090105.vhd[]
 
-d) Download the generated image to your server, e.g., a Linux machine.
-Use "wget <URL of file examplesaname/Containers/vm-images/9150.01000024.05090105.vhd>".
-The URL is organized in a formatted way. For automation tasks, the following example could be used to derive the URL string. Otherwise, Azure CLI 'az' command could be issued to get the URL, which is not covered in this guide. URL Example:
-https://examplesaname.blob.core.windows.net/vm-images/9150.01000024.05090105.vhd
-
-e) Clean up the managed disk
+. 清理托管磁盘
++
+[source, cli]
+----
 az disk revoke-access --name $diskName --resource-group $diskRG
 az disk delete --name $diskName --resource-group $diskRG --yes
 ----
-====
 

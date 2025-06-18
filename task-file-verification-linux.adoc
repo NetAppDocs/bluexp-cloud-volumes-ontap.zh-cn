@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-file-verification-linux.html 
 keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, Linux 
-summary: 通过Linux上的Cloud Volumes ONTAP映像摘要文件工具验证导出的vHD文件签名 
+summary: 通过 Linux 上的 Cloud Volumes ONTAP 映像摘要文件工具验证导出的 VHD 文件签名 
 ---
 = 验证适用于Linux上Cloud Volumes ONTAP的Azure Marketplace映像签名
 :hardbreaks:
@@ -14,38 +14,34 @@ summary: 通过Linux上的Cloud Volumes ONTAP映像摘要文件工具验证导�
 
 
 [role="lead"]
-您可以按照以下步骤验证已导出的Linux的VHD文件签名。
+在 Linux 上验证导出的 VHD 文件签名包括验证信任链、编辑文件和验证签名。
 
 .步骤
-. 从下载Azure Image Digest文件 https://mysupport.netapp.com/site/["NetApp 支持站点"^] 并提取摘要文件(.sig)、公共密钥证书文件(.pem)和链证书文件(.pem)。
+. 从下载 Azure 映像文件 https://mysupport.netapp.com/site/["NetApp 支持站点"^]并提取摘要（.sig）文件、公钥证书（.pem）文件和链证书（.pem）文件。
 +
-请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["下载Azure映像摘要文件"^] 有关详细信息 ...
+有关详细信息、请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["下载 Azure 映像摘要文件"^] 。
 
 . 验证信任链。
 +
-[listing]
+[source, cli]
 ----
 % openssl verify -CAfile Certificate-Chain-9.15.0P1_azure.pem Certificate-9.15.0P1_azure.pem
 Certificate-9.15.0P1_azure.pem: OK
 ----
-. 删除前1 MB (1048576字节)和后512字节的vHD文件。
+. 删除 VHD 文件开头的 1 MB（1,048,576 字节）和结尾的 512 字节。使用 `tail` ， 这 `-c +K`选项从文件的第 K 个字节开始生成字节。因此，它将 1048577 传递给 `tail -c` 。
 +
-如果使用"tail"、则选项"-c +K"将输出以指定文件的K有权 字节开头的字节。因此、1048交由"尾部-c"处理。
-
-+
-[listing]
+[source, cli]
 ----
 % tail -c +1048577 ./9150.01000024.05090105.vhd > ./sign.tmp.tail
 % head -c -512 ./sign.tmp.tail > sign.tmp
 % rm ./sign.tmp.tail
 ----
-. 使用openssl从证书中提取公共密钥、并使用签名文件和公共密钥验证条带化文件(ssign.tmp)。
+. 使用 OpenSSL 从证书中提取公钥，并使用签名文件和公钥验证剥离的文件（sign.tmp）。
 +
-如果输入文件通过验证、则会显示命令
-"验证正常"。否则、将显示"Verification Failure"(验证失败)。
+命令提示符根据验证结果显示指示成功或失败的消息。
 
 +
-[listing]
+[source, cli]
 ----
 % openssl x509 -pubkey -noout -in ./Certificate-9.15.0P1_azure.pem > ./Code-Sign-Cert-Public-key.pub
 
@@ -57,7 +53,7 @@ Verification Failure
 ----
 . 清理工作空间。
 +
-[listing]
+[source, cli]
 ----
 % rm ./9150.01000024.05090105.vhd ./sign.tmp
 % rm *.sig *.pub *.pem

@@ -92,14 +92,14 @@ NOTE: 这是您为BlueXP设置的服务帐户、 link:https://docs.netapp.com/us
 
 单击 * 添加订阅 * 将选定凭据与订阅关联。
 
-要创建按需购买的Cloud Volumes ONTAP 系统、您需要从Google云市场中选择与Cloud Volumes ONTAP 订阅关联的Google云项目。
+要创建按使用量付费的 Cloud Volumes ONTAP 系统，您需要从 Google Cloud 市场中选择与 Cloud Volumes ONTAP 订阅相关联的 Google Cloud 项目。
 
 |===
 +
-以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。或者，也可以按照中的步骤进行订阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["将Marketplace订阅与Google Cloud凭据关联"^] 部分。
+以下视频演示了如何将按需付费的市场订阅与您的 Google Cloud 项目关联。或者，您也可以按照位于 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["将Marketplace订阅与Google Cloud凭据关联"^]部分。
 
 +
-.从Google Cloud Marketplace订阅BlueXP
+.从 Google Cloud 市场订阅 BlueXP
 video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * 服务 * ：选择要在此系统上使用的服务。要选择BlueXP备份和恢复或使用BlueXP分层、您必须已在步骤3中指定服务帐户。
 +
@@ -332,10 +332,10 @@ NOTE: 这是您为BlueXP设置的服务帐户、 link:https://docs.netapp.com/us
 
 |===
 +
-以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。  或者，也可以按照中的步骤进行订阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["将Marketplace订阅与Google Cloud凭据关联"^] 部分。
+以下视频演示了如何将按需付费的市场订阅与您的 Google Cloud 项目关联。或者，您也可以按照位于 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["将市场订阅与 Google Cloud 凭据关联"^]部分。
 
 +
-.从Google Cloud Marketplace订阅BlueXP
+.从 Google Cloud 市场订阅 BlueXP
 video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * 服务 * ：选择要在此系统上使用的服务。要选择BlueXP备份和恢复或使用BlueXP分层、您必须已在步骤3中指定服务帐户。
 +

@@ -167,17 +167,6 @@ ifdef::azure[]
 ----
 默认情况下、自定义角色包括权限。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"^]
 
-
-
-=== 为Azure租户分层数据的要求
-
-您可以使用同一个Connector为多个Azure租户分层数据。要在Cloud Volumes ONTAP工作环境由一个租户创建而Connector由另一个租户创建的情况下为Azure租户启用分层、请确保满足以下条件：
-
-* 您已在BlueXP  中输入两个租户的凭据以进行交叉验证。请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["管理BlueXP的Azure凭据和市场订阅"^]。
-* 您已在两个租户之间启用虚拟网络(vNet)对等 https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview["在Azure门户上"^]。要使Connector能够访问另一租户的存储帐户、必须执行此操作。
-* 您必须link:task-enabling-private-link.html#disable-azure-private-links-and-use-service-endpoints-instead["已禁用Azure专用链路"]使用子网服务端点。
-
-
 endif::azure[]
 
 ifdef::gcp[]

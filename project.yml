@@ -93,21 +93,21 @@ sidebar:
           url: "/task-saz-feature.html"
         - title: 在 Azure 中启动 Cloud Volumes ONTAP
           url: "/task-deploying-otc-azure.html"
-        - title: Azure平台映像验证
+        - title: 验证 Azure 平台映像
           entries:
           - title: 概述
             url: "/concept-azure-image-verification.html"
-          - title: 下载Azure映像摘要文件
+          - title: 下载 Azure 映像文件
             url: "/task-azure-download-digest-file.html"
-          - title: 图像导出
+          - title: 导出 Azure 映像文件
             url: "/task-azure-image-export.html"
-          - title: 文件签名验证
+          - title: 验证文件签名
             entries:
-            - title: 文件签名验证
+            - title: 了解文件签名验证
               url: "/concept-azure-file-sig-verify.html"
-            - title: Linux文件签名验证
+            - title: 在 Linux 上验证文件签名
               url: "/task-file-verification-linux.html"
-            - title: Mac OS文件签名验证
+            - title: 在 macOS 上验证文件签名
               url: "/task-file-verification-mac.html"
       - title: 开始进入市场
         url: "/task-deploy-cvo-azure-mktplc.html"

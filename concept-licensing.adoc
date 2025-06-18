@@ -42,7 +42,7 @@ NOTE: 如果没有许可证、则不支持使用已获得许可的功能。
 基于容量的许可以 _package_ 的形式提供。部署Cloud Volumes ONTAP 系统时、您可以根据业务需求从多个许可包中进行选择。
 
 
-NOTE: 虽然BlueXP中管理的产品和服务的实际使用情况和计量始终以GiB和TiB计算、但术语GB/GiB和TB/TiB可互换使用。这反映在云商城商品信息、报价、商品说明以及其他支持文档中。
+NOTE: 虽然BlueXP中管理的产品和服务的实际使用情况和计量始终以GiB和TiB计算、但术语GB/GiB和TB/TiB可互换使用。这反映在云市场列表、价格报价、列表描述和其他支持文档中。
 
 
 
@@ -115,14 +115,14 @@ endif::gcp[]
 
 ifdef::azure[]
 
-* 在Azure Marketplace中以按需购买或按年订约的形式提供
+* 在 Azure 市场上可以按使用量付费或按年合同形式购买
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* 在Google Cloud Marketplace中以按需购买或按年订约的形式提供
+* 可在 Google Cloud 市场中以按使用量付费或年度合同的形式购买
 
 
 endif::gcp[]

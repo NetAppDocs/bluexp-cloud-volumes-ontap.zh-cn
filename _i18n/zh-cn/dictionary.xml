@@ -1895,7 +1895,6 @@
   <block id="130d74c3ba60e43c646b8d2ae2e189f7" category="cell">添加标记</block>
   <block id="ab2bc7358191e02d5aacdd2ddaa4233d" category="inline-link">AWS 文档：标记 Amazon EC2 资源</block>
   <block id="6fc1b99ffd833c6c5570d86706e4dda3" category="cell">编辑凭据</block>
-  <block id="966af22a27db9cf9c8aed1bfaa29bceb" category="paragraph">以下视频介绍如何将按需购买的 Marketplace 订阅与您的 AWS 凭据相关联：</block>
   <block id="6101eef8fd3b11affed5baa0379eb7b5" category="inline-link-macro">AWS 工作表</block>
   <block id="6f27ddf091b10f1dfd4ab13be0759ec7" category="paragraph">如果您有 AWS 前台，则可以通过选择前台 VPC 在该前台部署单节点 Cloud Volumes ONTAP 系统。体验与 AWS 中的任何其他 VPC 相同。</block>
   <block id="94b720129da1fad395a78adb9dd8004f" category="list-text">* 数据加密 * ：不选择数据加密或 AWS 管理的加密。</block>
@@ -2965,12 +2964,10 @@
   <block id="d44d4a8594e5151de6fa4ee089278b67" category="cell">AWS 标记是 AWS 资源的元数据。BlueXP会将标记添加到Cloud Volumes ONTAP 实例以及与该实例关联的每个AWS资源。在创建工作环境时，最多可以从用户界面添加四个标签，然后可以在创建工作环境后添加更多标签。请注意，在创建工作环境时， API 不会将您限制为四个标记。有关标记的信息，请参见<block ref="9bd250e03cdf80384a24635f16673602" category="inline-link-rx"></block>。</block>
   <block id="2549a5df32120cf6ac614914f42ef32c" category="inline-link">了解如何向BlueXP添加其他AWS凭据</block>
   <block id="355c7a22767b9f2dd149515d08cc5490" category="inline-image-macro">一个屏幕截图、显示当AWS帐户已订阅但特定IAM用户可能未订阅时适用于Cloud Volumes ONTAP 的BlueXP订阅页面。</block>
-  <block id="074d1b398f4753f3d064cfd562af4ed8" category="admonition">如果多个 IAM 用户在同一个 AWS 帐户中工作，则每个用户都需要订阅。第一个用户订阅后， AWS Marketplace 会通知后续用户他们已订阅，如下图所示。虽然已为 AWS _account_ 订阅，但每个 IAM 用户都需要将自己与该订阅关联起来。如果您看到以下消息、请单击*单击此处*链接以转到BlueXP网站并完成此过程。<block ref="42077b282858282a6d1d166f9467abaf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87ef523f982611ded33c8785ffdd2634" category="list-text">* IAM角色*：最好保留默认选项、让BlueXP为您创建角色。</block>
   <block id="9f2afa6e18a40ed2f547b1e2d13fee8e" category="list-text">如果您选择GP2或st1磁盘、则可以为初始聚合中的所有磁盘以及BlueXP在使用简单配置选项时创建的任何其他聚合选择一个磁盘大小。您可以使用高级分配选项创建使用不同磁盘大小的聚合。</block>
   <block id="de39a020e8e0c1962c8c0dfa6467fd71" category="list-text">单击*更多信息*可查看有关支持和BlueXP将购买的AWS资源的详细信息。</block>
   <block id="e1bc841e2651c6522307e17c20df7a4d" category="paragraph">如果要在AWS中启动Cloud Volumes ONTAP HA对、则需要在BlueXP中创建HA工作环境。</block>
-  <block id="3a03e3e7da257bcd5d5826004cd5b227" category="admonition">如果多个 IAM 用户在同一个 AWS 帐户中工作，则每个用户都需要订阅。第一个用户订阅后， AWS Marketplace 会通知后续用户他们已订阅，如下图所示。虽然已为 AWS _account_ 订阅，但每个 IAM 用户都需要将自己与该订阅关联起来。如果您看到以下消息、请单击*单击此处*链接以转到BlueXP网站并完成此过程。<block ref="5176b925004072644ad0f4d50d425bc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="08716c56b69c38a1d4f3bf5e2aa2e5c8" category="paragraph">BlueXP将启动Cloud Volumes ONTAP HA对。您可以跟踪时间链中的进度。</block>
   <block id="e8d7251c93bb0bbd59e5b2aca177a1a6" category="summary">如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用ONTAP 系统管理器来执行此操作、该管理器是随ONTAP 系统提供的一个管理界面。我们直接在BlueXP中提供了System Manager界面、因此您无需离开BlueXP即可进行高级管理。</block>
   <block id="af97eb7a8d1a683de73e48cc402e070d" category="paragraph">System Manager不支持聚合管理(包括本地层和云层)。您必须直接从BlueXP的标准视图管理聚合。</block>
@@ -3292,8 +3289,6 @@
   <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">在Google云市场中、Cloud Volumes ONTAP 可以通过按需购买或按年订立的合同获得经过优化且基于边缘缓存容量的许可包。</block>
   <block id="fced3090ff990434831b838f07c6a3a7" category="paragraph">新的Cloud Volumes ONTAP 部署不再包括多租户加密密钥管理(MTEKM)许可证。</block>
   <block id="a1299d36f8821164c4414c1a5ab986dd" category="inline-link-macro">Cloud Volumes ONTAP 的默认配置</block>
-  <block id="d4a6e54c4d6405336cdeb07c50490008" category="list-text">在Azure Marketplace中以按需购买或按年订约的形式提供</block>
-  <block id="18daf9881514241d393343911b3c6b0d" category="list-text">在Google Cloud Marketplace中以按需购买或按年订约的形式提供</block>
   <block id="3ee54ac340ad12860ef4b993b12b351c" category="summary">通过BlueXP、您可以在创建新的ONTAP 工作环境时从多个不同的Cloud Volumes ONTAP 版本中进行选择。</block>
   <block id="94a06e39ad7d8a5f30a29ceb12e0cf9d" category="list-text">9.12.1 RC1</block>
   <block id="b783301cf6b68b7d026b486472da6add" category="list-text">9.12.0 P1</block>
@@ -3411,7 +3406,6 @@
   <block id="a329f820fccae25ebe98d73c85c8006c" category="inline-image-macro">显示三个选定服务的服务端点的屏幕截图</block>
   <block id="892728a8cb7d01d3a80f6c63ad7a3b1a" category="paragraph"><block ref="892728a8cb7d01d3a80f6c63ad7a3b1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b430d19ce10cad3c93da5d1a58ae5da" category="list-text">在ONTAP 中进入高级权限模式：<block ref="b18455e94f1f10f091d6cc4ad2e0507e" prefix=" " category="inline-code"></block></block>
-  <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">如果<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 状态不是<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>、SVM无法使用所需的所有连接和权限访问Azure密钥存储服务。确保您的Azure网络策略和路由不会阻止您的专用vNet访问Azure KeyVault公共端点。如果有、请考虑使用Azure私有端点从vNet中访问密钥存储。您可能还需要在SVM上添加静态主机条目、以解析端点的专用IP地址。</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">。<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 将报告<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 初始配置时。其状态将更改为<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 对第一个卷进行加密后。</block>
   <block id="dd1852694a70af4fe454fcf679ab1071" category="inline-link-macro">Azure区域对</block>
   <block id="ab83b37918dd75da5385d47425e5a41b" category="paragraph">如果您的企业需要、您可以更改BlueXP中的设置、以便将Cloud Volumes ONTAP 配置为使用服务端点、而不是Azure专用链路。更改此设置将适用场景 添加您创建的新Cloud Volumes ONTAP 系统。仅支持服务端点 <block ref="143d2b52aa05d0c2b5e02a98661c9a57" category="inline-link-macro-rx"></block> 在连接器和Cloud Volumes ONTAP VNets之间。</block>
@@ -3480,7 +3474,6 @@
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*查看案例*：查看有关特定案例的完整详细信息。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">屏幕截图、显示在表的最后一列中选择菜单后可以执行的操作。</block>
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">如果使用HA对、则从9.13.0版开始、Cloud Volumes ONTAP 支持对多种VM类型使用高写入速度。转至<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> 可查看支持高写入速度的 VM 类型。</block>
-  <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">通过Cloud Volumes ONTAP 映像摘要文件工具验证导出的Google云映像文件签名。</block>
   <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">要验证导出的Google Cloud签名映像、必须从NSS下载映像摘要文件以验证disk.raw文件和摘要文件内容。</block>
   <block id="c81429443fac6104f46abd88cff6840a" category="section-title">签名映像验证工作流摘要</block>
   <block id="89367ca4743c16d95c687430c6a0d9cc" category="paragraph">下面简要介绍了Google Cloud签名映像验证工作流过程。</block>
@@ -3505,7 +3498,6 @@
   <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">添加未分配的许可证</block>
   <block id="44579e142f1f753a153dbb19dac8125c" category="summary">使用OpenSSL根据摘要文件内容验证Google Cloud下载的disk.raw文件。</block>
   <block id="9790936d7b09c3cf187b770347ee60d1" category="paragraph">您可以根据通过提供的摘要文件内容验证Google Cloud下载的disk.raw文件<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> 使用OpenSSL。</block>
-  <block id="64bba92e74e274ead8d4e951ad8c9d3a" category="admonition">用于验证映像的OpenSSL命令与Linux、Mac OS和Windows计算机兼容。</block>
   <block id="c275ec11ecf674a6672183664681e98f" category="list-text">使用OpenSSL验证证书。</block>
   <block id="72d3302ad6fe92c7f4d817235e6ec413" category="list-text">将下载的disk.raw文件、签名和证书置于目录中。</block>
   <block id="f059e79846663b1827b8520855050095" category="list-text">使用OpenSSL从证书中提取公共密钥。</block>
@@ -3842,9 +3834,7 @@
   <block id="4d0d11f252798b1130fe9f60f2d2e318" category="list-text">与 Connector 关联的服务帐户<block ref="5646254c2ac34b48f56ed296d6fb66e7" category="inline-link-rx"></block></block>
   <block id="d84cee0d6767da802f9effadbbc51142" category="list-text">如果出现提示，<block ref="1ca84fde12203c4cfd29d288d7a6cf61" category="inline-link-rx"></block>。</block>
   <block id="422d2c91120cb9ddd1c3fd41a284e77a" category="admonition">这是您为BlueXP设置的服务帐户、 <block ref="d8e8dd577fee44652d34a1d1f4c2ce4b" category="inline-link-macro-rx"></block>。</block>
-  <block id="703803ff5402f92147fbc2904ced4f23" category="paragraph">以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。或者，也可以按照中的步骤进行订阅<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> 部分。</block>
   <block id="dabcd93c47c69ecf7688c43957686bb7" category="cell">如果您计划使用 <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> 或<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> 服务，您需要启用 * 服务帐户 * 开关，然后选择具有预定义存储管理员角色的服务帐户。</block>
-  <block id="5355322e972163adefa502954b34d25c" category="paragraph">以下视频介绍了如何将按需购买的Marketplace订阅与Google Cloud项目关联。  或者，也可以按照中的步骤进行订阅<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> 部分。</block>
   <block id="200bfa431a059f9cb12bdce777845a7e" category="admonition">此连接器还需要一个系统磁盘。<block ref="d20acabc118cd0226229fe484509d871" category="inline-link-rx"></block>。</block>
   <block id="3e15a93b8abafd714d90153ac66e4e82" category="paragraph">请注意、如果要在无法访问Internet的子网中部署Cloud Volumes ONTAP 、则需要手动安装此连接器并访问此连接器上运行的BlueXP用户界面。<block ref="dfc982bbe2dfabd644ac809e4b468ae7" category="inline-link-rx"></block></block>
   <block id="687a1e66717978102d4e4948c08968d3" category="list-text"><block ref="687a1e66717978102d4e4948c08968d3" category="inline-link-rx"></block></block>
@@ -3879,11 +3869,6 @@
   <block id="882d5f98206dd8157654127073c920f2" category="paragraph"><block ref="882d5f98206dd8157654127073c920f2" category="inline-link-rx"></block></block>
   <block id="f870932f389b07a18c35e61ebc668c91" category="paragraph"><block ref="161ab28684c427e4961f0c360c1dbce7" category="inline-link-rx"></block>。</block>
   <block id="0a878535ad1a6e2ef955aba255e762cd" category="list-text">如果出现提示，<block ref="b03d5bfc016d24f5269c25486d5c5105" category="inline-link-rx"></block>。</block>
-  <block id="d4632b36f41d4764afe08f6aac9dbe34" category="cell">选择与要部署此系统的帐户关联的 AWS 凭据。您还可以关联 AWS Marketplace 订阅以用于此 Cloud Volumes ONTAP 系统。
-
-单击 * 添加订阅 * 将选定凭据与新的 AWS Marketplace 订阅关联。订阅可以是一份年度合同，也可以是按小时付费的 Cloud Volumes ONTAP 。
-
-<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>。</block>
   <block id="f55b18eeaddb29e4e968d14603f99e82" category="list-text"><block ref="f55b18eeaddb29e4e968d14603f99e82" category="inline-link-rx"></block></block>
   <block id="d7e4497b251053c3a95e730a472e0f1a" category="list-text"><block ref="d7e4497b251053c3a95e730a472e0f1a" category="inline-link-rx"></block></block>
   <block id="f647c880dd21951d680e6e9b7ad216f0" category="list-text"><block ref="f647c880dd21951d680e6e9b7ad216f0" category="inline-link-rx"></block></block>
@@ -4254,9 +4239,7 @@
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">单击*保存规则*以应用更改。</block>
   <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">源集群和目标集群应能够访问同一个虚拟网络(vNet)。目标集群是Azure中的Cloud Volumes ONTAP系统。源集群可以是Azure中的Cloud Volumes ONTAP系统、也可以是ONTAP系统。</block>
   <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">要移动现有SnapMirror复制关系、必须先中断现有SnapMirror复制关系、然后再创建新的SnapMirror复制关系。</block>
-  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">从Google Cloud Marketplace订阅BlueXP</block>
   <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">从Azure Marketplace订阅BlueXP</block>
-  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">从AWS Marketplace订阅BlueXP</block>
   <block id="c27b8e6a4f797d237583ca6d38a92cd6" category="summary">通过启用要用于Cloud Volumes ONTAP的订阅以及请求更改订阅服务级别的承诺容量、从BlueXP数字钱包管理Keystone订阅。请求增加服务级别的容量可为内部ONTAP集群或Cloud Volumes ONTAP系统提供更多存储。</block>
   <block id="52ba144dbaac8239e9b6d8e287db93dc" category="doc">管理Keystone订阅</block>
   <block id="a3b1d6e06d4fd8ccc20c61ce51e45853" category="paragraph">NetApp Keystone是一项基于订阅的灵活按需购买服务、可为更喜欢运营支出而非資本支出或租赁的客户提供混合云体验。</block>
@@ -4389,7 +4372,6 @@
   <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">详细了解基于容量的许可包</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXP始终首先尝试使用许可证付费。如果许可证不可用、则会按商城订阅收费。BYOL到商城订阅不需要"转换"、反之亦然。</block>
   <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">虽然BlueXP中管理的产品和服务的实际使用情况和计量始终以GiB和TiB计算、但术语GB/GiB和TB/TiB可互换使用。这反映在云商城商品信息、报价、商品说明以及其他支持文档中</block>
-  <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">虽然BlueXP中管理的产品和服务的实际使用情况和计量始终以GiB和TiB计算、但术语GB/GiB和TB/TiB可互换使用。这反映在云商城商品信息、报价、商品说明以及其他支持文档中。</block>
   <block id="1a09137ca087e36b72504f4276c7cd08" category="list-text">分层数据的默认存储类为 _Standard Storage_ 类。如果数据不常访问，您可以通过更改为 _Nearline Storage_ 或 _Coldline Storage_ 来降低存储成本。更改存储类时、后续的非活动数据将直接移动到选定的类。</block>
   <block id="0d79695d01dd236a00fcb17dec14227f" category="admonition">更改存储类时、任何现有的非活动数据都将保留默认存储类。要更改现有非活动数据的存储类、必须手动执行指定。</block>
   <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
@@ -4585,82 +4567,24 @@
   <block id="d3f932730561572a0dc4f8911dc7b758" category="paragraph">如果您运行的是Connector 3.9.36或更低版本、则需要将以下权限添加到AWS EC2控制台中的AWS Connector角色：</block>
   <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">在标准模式下使用BlueXP时、支持AWS本地区域。目前、在受限模式或专用模式下使用BlueXP时、不支持AWS本地区域。</block>
   <block id="dd9c0a56896702fcd7616d8a05a5734b" category="example-title">单击以显示</block>
-  <block id="66477356c169bae503b8e5b68efae8f9" category="summary">在Mac OS上、通过Cloud Volumes ONTAP映像摘要文件工具验证导出的vHD文件签名</block>
-  <block id="7dfe290ea310f3175330a9ea2e3f87f9" category="paragraph">您可以按照以下步骤验证已导出的Mac OS的vHD文件签名。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支持站点</block>
-  <block id="182f014f4c613a2ea00430b0555c0cfe" category="list-text">从下载Azure Image Digest文件<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> 并提取摘要文件(.sig)、公共密钥证书文件(.pem)和链证书文件(.pem)。</block>
-  <block id="3ea81971526171c18d55f5c21b99575c" category="inline-link">下载Azure映像摘要文件</block>
-  <block id="448e33b68aea58b7fecc024d2c2b5dc4" category="paragraph">请参见<block ref="5fc79e069847e547e3ea31d52f49c511" category="inline-link-rx"></block> 有关详细信息 ...</block>
   <block id="1c70ba48a8faaae47a72ab185f6f3572" category="list-text">验证信任链。</block>
-  <block id="cd01d0f8e467738f2625378653bc8d43" category="list-text">删除前1 MB (1048576字节)和后512字节的vHD文件。</block>
-  <block id="a7997886de4e4c54fffe826bcd17411e" category="paragraph">如果使用"tail"、则选项"-c +K"输出以K有权 字节开头的字节
-指定文件的。因此、1048交由"尾部-c"处理。大约需要13米
-以便在Mac OS上完成尾部命令。</block>
-  <block id="eb7e6b99b56676dfe5f808750410e68a" category="list-text">使用opensl从证书中提取公共密钥并验证条带化
-带有签名文件和公共密钥的file(sign.tmp)。</block>
-  <block id="ccde39ff9aff3f514ac48f4d13e6d0f5" category="paragraph">如果输入文件通过验证、则该命令将显示"Verification Ok"(验证正常)。
-否则、将显示"Verification Failure"(验证失败)。</block>
   <block id="7c00abf63371811634839eb405ec4038" category="list-text">清理工作空间。</block>
   <block id="4f366ac6c42231f45c88efd5aa987abb" category="cell">9.12.1.</block>
-  <block id="e7e9a24e123538eed11a70e0eeb566a1" category="summary">了解如何通过Cloud Volumes ONTAP映像摘要文件工具验证导出的vHD文件签名。</block>
-  <block id="a781d076243f95e28ab486d8c31b6ba4" category="doc">文件签名验证</block>
-  <block id="437beb58ba8cb874df3b92dce25308d4" category="paragraph">Azure映像验证过程将使用哈希函数从具有前导1 MB和末尾512 B条带化的vHD文件生成摘要。为了匹配签名操作步骤、使用SHA256进行哈希。您需要从该视频文件中删除前导1 MB和最终512 B、然后验证视频文件的其余部分。</block>
   <block id="f98e4b86cca760be2447f72ea72c4f88" category="section-title">文件签名验证工作流摘要</block>
   <block id="9454f651ecd65349c0f152b92965f048" category="paragraph">下面简要介绍了文件签名验证工作流过程。</block>
   <block id="7c00934b1da44ca90cfaed118a5c7000" category="image-alt">图形蓝色检查签名</block>
-  <block id="1e34d13948b6b17e50f7142a37354bd7" category="list-text">从公共密钥证书(.prom)提取公共密钥(.pub)。</block>
-  <block id="7879ab866e35c7b7f3b9fad5b096f64f" category="list-text">提取的公共密钥用于对摘要文件进行解密。然后、将结果与从映像文件创建的临时文件的新未加密摘要进行比较、该文件删除了前导1 MB和结束512字节。</block>
-  <block id="561627cfa40a818097c26ee0df685e81" category="paragraph">此步骤可通过以下openssl命令来实现。</block>
-  <block id="43d4aabb0efd580944e1beb8c4db11b8" category="list-text">常规CLI语句如下所示：</block>
-  <block id="c9fd91db7f23dc5a00305ec8fc9ab1fe" category="list-text">如果两个文件都匹配、OpenSSL命令行界面工具会显示"Verified Ok"消息、如果不匹配、则会显示"Verification Failure"消息。</block>
-  <block id="ab1fa593a9d1b960b00310273793f399" category="summary">通过Linux上的Cloud Volumes ONTAP映像摘要文件工具验证导出的vHD文件签名</block>
-  <block id="81a109e7e4df0170a877c862452626e0" category="paragraph">您可以按照以下步骤验证已导出的Linux的VHD文件签名。</block>
-  <block id="99f6987f9f2f12754bef6acd4538d2b1" category="list-text">删除前1 MB (1048576字节)和后512字节的vHD文件。</block>
-  <block id="3b31a12051ccfe742940ab733efa90d2" category="paragraph">如果使用"tail"、则选项"-c +K"将输出以指定文件的K有权 字节开头的字节。因此、1048交由"尾部-c"处理。</block>
-  <block id="4ca7d41e605902966252c31ef2c1bc50" category="list-text">使用openssl从证书中提取公共密钥、并使用签名文件和公共密钥验证条带化文件(ssign.tmp)。</block>
-  <block id="e4127a353155a2ad0d83da1e1edcbaa5" category="paragraph">如果输入文件通过验证、则会显示命令
-"验证正常"。否则、将显示"Verification Failure"(验证失败)。</block>
   <block id="51bbda97c30ecb8962c4be9cf6e522a3" category="doc">新部署支持的ONTAP版本</block>
   <block id="e6e83b7fc493536990c5a90ed0363355" category="list-text">9.12.09 P1</block>
   <block id="bc7b48cc8cbeb831f1e1c92e4edd2a73" category="summary">验证Azure HD映像文件签名文件。</block>
-  <block id="855546822713dfa86f90e0f04d628460" category="paragraph">Azure映像验证符合增强的NetApp安全要求。虽然验证映像文件是一个简单的过程、但Azure映像签名验证确实需要对众所周知的Azure HD映像文件进行特殊处理、因为Azure Marketplace会进行更改。</block>
-  <block id="dc9332f8d6da3cf29879331701e1392b" category="admonition">Cloud Volumes ONTAP软件9.12.09或更高版本支持Azure映像验证。</block>
   <block id="87a09a86dbf9477334c237c696cbf41c" category="section-title">Azure对已发布的VHD文件的更改</block>
-  <block id="69819291c7392ee878ca4ba0d8250573" category="paragraph">Azure会修改前1 MB (1048576字节)和后512字节的vHD文件。NetApp映像签名会跳过前导1 MB和结尾512字节、并对剩余的HD映像部分进行签名。</block>
   <block id="a1d8f8fd0a1ed092e3a32c903199e6fe" category="inline-image-macro">显示Azure对10 GB的VHD文件的交替的图像</block>
   <block id="8d1e285a8c66f27a66a5b99050840700" category="paragraph"><block ref="8d1e285a8c66f27a66a5b99050840700" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8c0945efb6cfc754835754066079f778" category="paragraph">例如、上图显示了一个大小为10 GB的vHD文件。但是、NetApp签名部分会标记为绿色、大小为10 GB - 1 MB - 512 B。</block>
   <block id="489b496cbe75299f2e7a58a43404a586" category="summary">您可以从Azure Marketplace导出ONTAP映像、以验证VHD文件的签名。</block>
-  <block id="7aa3d9edd6d375ddf241b7e3af36818a" category="paragraph">将该vHD映像发布到Azure云后、NetApp将不再管理该映像。而是将发布的映像放置在Azure Marketplace上。在Azure Marketplace上暂存并发布映像时、Azure会更改到VHD的前导1 MB和结尾512 B。要验证该VHD文件的签名、需要首先从Azure Marketplace导出由Azure修改的VHD映像。</block>
-  <block id="05cd2a2bb059643c43d9e767a4032a24" category="paragraph">您必须在系统上安装所需的程序。</block>
-  <block id="0bcf8212654f6e73defd0e810da79d80" category="list-text">已安装Azure命令行界面、或者可随时通过Azure门户使用Azure Cloud Shell。</block>
-  <block id="1d03b797e238252da705789b819d0d7c" category="inline-link">Azure文档：如何安装Azure命令行界面</block>
-  <block id="995134c4eafdfb0af4373db79dfb90cf" category="list-text">使用version_readme文件的内容将ONTAP版本映射到Azure Marketplace映像版本。</block>
-  <block id="a10146f718ca1ae9de28501f0472cee1" category="paragraph">对于version_readme文件中列出的每个版本映射、ONTAP版本以"budname"表示、Azure Marketplace映像版本以"version"表示。</block>
-  <block id="03340c307e6a7221016970d046db2a97" category="paragraph">例如、在以下version_readme文件中、ONTAP版本"9.15.0P1"映射到Azure Marketplace映像版本"9150.01000024.65090105"。此Azure Marketplace映像版本稍后用于设置映像URN。</block>
-  <block id="756c97654f989d1a779d50abe0847e31" category="list-text">确定要创建VM的区域名称。</block>
-  <block id="e03d271d662bcb0fab1d9537df279ef3" category="paragraph">在设置商城图片的URN时、此区域名称用作"locName"变量的值。</block>
-  <block id="0bcd35ecf261a40cdfb4cbae00a11aa2" category="list-text">要接收可用区域的列表、请输入<block ref="84ed3d395e738381fb9826cd0e156c91" prefix=" " category="inline-code"></block> 命令：</block>
-  <block id="30bf950af492b8ab681c83ec104628f7" category="paragraph">在下表中、区域名称称为"名称"字段。</block>
   <block id="b2b27ade506086d79b3e7defdb321673" category="cell">ONTAP云BYOL</block>
   <block id="68593f3fae72dbec1b29acfd76c1aa17" category="cell">ONTAP云BYOL_ha</block>
-  <block id="fc7898b425992521a2ae92bc34f6fa79" category="list-text">映射ONTAP版本和Azure Marketplace映像后、通过Azure Cloud Shell或Azure命令行界面从Azure Marketplace导出VHD文件。</block>
-  <block id="4192872f9b14e75090d91ad3b58d627e" category="section-title">通过Azure门户上的Azure Cloud Shell导出VHD文件</block>
-  <block id="7809e31621ae0deb07b629189d23bb1f" category="list-text">从Azure Cloud Shell中、将市场映像导出到vhd (image2、例如9150.01000024.65090105.vhd)、然后下载到本地计算机(例如Linux计算机或Windows PC)。</block>
-  <block id="ce9805281812d5566785ffa90edc97c3" category="section-title">通过Azure命令行界面从本地Linux计算机导出VHD文件</block>
-  <block id="39ed6293eab956c9455664d389299103" category="list-text">从本地Linux计算机通过Azure命令行界面将市场映像导出到vhd。</block>
-  <block id="96bd5fbfab590d16a7e4f221d5efbe02" category="summary">您可以从NetApp 支持站点 下载Azure映像摘要文件。</block>
-  <block id="c94570a50f1ce2dc5922d4591072ac73" category="paragraph">Azure映像摘要文件可从下载<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>。下载文件为tar.gz格式、其中包含用于图像签名验证的文件。</block>
   <block id="d3722e7531fbbcdfe3ca8955ec26bed2" category="inline-link">NetApp 支持站点 上的Cloud Volumes ONTAP产品页面</block>
-  <block id="27363a072eabeaf6d8f44930f92fec72" category="list-text">在Cloud Volumes ONTAP下载页面下，单击Azure映像摘要文件的*下载按钮*以下载第三次评估报告。 Gz文件。</block>
   <block id="697ac446273be6ad7395fbb843a37765" category="image-alt">屏幕截图Cloud Volumes ONTAP tar.gz</block>
-  <block id="5b7b593c571013e3aad0faa73cd02227" category="list-text">对于Linux和MacOS、您必须执行以下操作才能为下载的Azure Image Digest文件获取md5sum和手机256sum。</block>
-  <block id="719b12f978ea8563ea430f99e4edbe65" category="list-text">对于md5sum、输入<block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block> 命令：</block>
-  <block id="1bdb05c72c1193c8d7770deac3a7119c" category="list-text">对于"数额 为256SUM"的、输入<block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block> 命令：</block>
-  <block id="074df801eea148714f051719110d791a" category="list-text">验证<block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block> 和<block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block> 值与Azure Image Digest File下载匹配。</block>
-  <block id="d25f22bb422f625ed7957622cda0ccdf" category="list-text">在Linux和Mac OS上、执行<block ref="b83523a8ca29d91ebd710492f899931c" prefix=" " category="inline-code"></block> 命令以提取tar.gz文件。</block>
-  <block id="db1a854223ab47e95d5013d13683efbb" category="paragraph">提取的第三次评估报告。 GZ文件包含摘要文件(.sig)、公共密钥证书文件(.prom)和链证书文件(.prom)。</block>
-  <block id="73443c640d5252fdbab1820bcca19262" category="paragraph">*列出untar tar.gz文件的结果*</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="section-title">2024年6月10日</block>
   <block id="1601188d2b39087206296933e9255990" category="section-title">Cloud Volumes ONTAP 9.12.1.</block>
   <block id="c6ee0c74323b0d984d764b4be950bd87" category="paragraph">BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.09。</block>
@@ -4684,11 +4608,6 @@
   <block id="9510056d5bb6540c58fdbfa856eb74cb" category="list-text"><block ref="9510056d5bb6540c58fdbfa856eb74cb" category="inline-link-rx"></block></block>
   <block id="bc3bc1db6420b2b20ed5fd575461af53" category="inline-link">使用Azure命令行界面登录—登录和身份验证| Microsoft学习</block>
   <block id="c49d114e973270aafd10c3c90200f635" category="list-text"><block ref="c49d114e973270aafd10c3c90200f635" category="inline-link-rx"></block></block>
-  <block id="3ce3a6bc20350062d124e844899c78cb" category="sidebar">Azure平台映像验证</block>
-  <block id="df87714369784ad20a87cf1ecab656c0" category="sidebar">下载Azure映像摘要文件</block>
-  <block id="e15cc8414d8d61bbcd5fd0d0eccda0f7" category="sidebar">图像导出</block>
-  <block id="ea676e4072617197b2e26d0a11c13554" category="sidebar">Linux文件签名验证</block>
-  <block id="088e8318708fce80162f63284a86929f" category="sidebar">Mac OS文件签名验证</block>
   <block id="c803b37d9c2a34c73d0b86de8cae9ac8" category="paragraph"><block ref="c803b37d9c2a34c73d0b86de8cae9ac8" category="inline-link-rx"></block></block>
   <block id="bbe2b5062d2c900ca465f9eb12592a92" category="paragraph">如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见<block ref="a1765820625d1912b35ab79a3305fdea" category="inline-link-rx"></block>。</block>
   <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
@@ -4753,7 +4672,6 @@
   <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">免费试用商城订阅已弃用</block>
   <block id="6a42c267e29187643b9edeeabe6a9d85" category="inline-link">AWS文档：详细了解AWS中的Elelic Volumes</block>
   <block id="5f15094e671a035a778fece655f06e61" category="paragraph"><block ref="5f15094e671a035a778fece655f06e61" category="inline-link-rx"></block></block>
-  <block id="32f75f1208336b30711f2ec6de39a1fc" category="paragraph">有关详细信息、请参见 <block ref="b7c27672c14c5e155c3668c279ee7b61" category="inline-link-macro-rx"></block> 。</block>
   <block id="394af58b8754c06314d43b854dc5006f" category="inline-link">此常见问题解答</block>
   <block id="9c89822027b6c9736a75d3187c897d4d" category="admonition">截至 2021 年 12 月 3 日， NetApp 已采用一种新方法为 NSS 帐户注册凭据。有关详细信息，请参阅<block ref="e276cbae6a7bedd32258cb1ce27fb2ac" category="inline-link-rx"></block>。如果您的 NSS 帐户使用旧的凭据集，则需要将此帐户更新为新凭据。</block>
   <block id="61631dd1eb0609d79c27c109e55de5c8" category="paragraph">有关详细信息、请参见<block ref="f2e318b984927d4781fb278ddc8ba233" category="inline-link-rx"></block> 。</block>
@@ -4807,7 +4725,6 @@
   <block id="06dc2fe279cba2e4225b7ea669e09ba6" category="cell">使用集群管理LIF的IP地址通过HTTP访问ONTAP系统管理器Web控制台</block>
   <block id="bf56103f759b88ed509d0a67caf77918" category="cell">通过连接器进行连接、并使用集群管理LIF的IP地址通过HTTPS访问ONTAP系统管理器Web控制台</block>
   <block id="60c74fca932643a72ec9d1ed478cb2dd" category="paragraph">此处列出的Cloud Volumes ONTAP版本以外的其他版本不适用于新部署。有关升级的信息，请参见<block ref="edc516954278e6b04bf6c1ef0d737956" category="inline-link-macro-rx"></block>。</block>
-  <block id="57330f26a1386f42b08aa33e8679785d" category="admonition">有关如何安装Azure命令行界面的详细信息，请参阅<block ref="bb8fb2fba9b918c590d549f3c97582d7" category="inline-link-rx"></block>。</block>
   <block id="bd2041168f280dc42522d734d91fff47" category="admonition">BlueXP  通过启动接管并等待交还一次更改一个节点。在此过程中、NetApp的质量保证团队对文件的写入和读取进行了测试、未发现客户端存在任何问题。随着连接发生变化、我们会在I/O级别进行一些重试、但应用程序层克服了NFS/CCIFS连接的重新布线。</block>
   <block id="5a6ab212605c11d29ddee412db34c72e" category="paragraph">有关AWS中支持的实例类型列表，请参见<block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>。</block>
   <block id="4b0969e2624ba8ba6a454be2d5629d7b" category="paragraph">如果无法从C4、M4或R4实例更改实例类型，请参阅知识库文章<block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>。</block>
@@ -5001,7 +4918,6 @@
   <block id="f235e1a740b92e59100dda0cf4e3d76b" category="cell">\https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1</block>
   <block id="342804fdcc569427f0c6f21b0757653d" category="cell">Google Cloud (商业用途)。</block>
   <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">与Google Cloud服务通信。</block>
-  <block id="12acb6948c0c5fe54c5651d99ff9fd04" category="list-text">转至<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block>、并在"Downloads"(下载)部分下下载所需的软件版本。</block>
   <block id="5ee4faea784afb4b7750a3c91c073449" category="admonition">如果没有足够的空间、则Cloud Volumes ONTAP无法移动数据、您可能会遇到性能下降的情况。任何更改都应谨慎进行。如果您不确定、请联系NetApp支持部门以获得指导。</block>
   <block id="fd8831656d484b23e386115d7264f056" category="list-text">对于HA对：</block>
   <block id="180b275121e0f37251fecae975bf46df" category="list-text">调解器实例使用两个st1 EBS卷、其中一个大约8 GiB用作根磁盘、另一个4 GiB用作数据磁盘</block>
@@ -5213,13 +5129,11 @@
   <block id="4eaed4ff800bc18688fff95b8dee6d1e" category="sidebar">转换基于节点的许可证</block>
   <block id="b8c05ba27f3f7ff64dca585f43789e57" category="sidebar">Cloud Volumes ONTAP中的许可</block>
   <block id="500984bae07aedc6c662b31a3039d462" category="list-text">美国公共部门客户</block>
-  <block id="c1c1c782703499ca8577569137202bf1" category="list-text">查看下表中相应Cloud Volumes ONTAP版本和VM部署类型的SKU名称。</block>
   <block id="90069a3873814503a767070f04f3c286" category="paragraph">例如、使用Cloud Volumes ONTAP 9.12.09的所有单节点部署都应使用<block ref="b2b27ade506086d79b3e7defdb321673" prefix=" " category="inline-code"></block>作为SKU名称。</block>
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAP版本*</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">*SKU名称*</block>
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">通过BlueXP  进行所有部署</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP云</block>
-  <block id="23364a1412324aba4675105eacf57908" category="example-title">查看步骤</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">现在、您可以使用BlueXP  在现有Cloud Volumes ONTAP系统上激活一次写入、多次读取(Write On一次 读取、Read M众多、WORM)存储。通过此功能、您可以灵活地在工作环境中启用WORM、即使在创建WORM期间未启用WORM也是如此。启用后、您将无法禁用WORM。</block>
   <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">更改收费方法不会影响是通过从NetApp (BYOL)购买的许可证还是通过云提供商的市场按需购买(PAYGO)订阅来收费。</block>
   <block id="fa055d94084c7095d6c7ec354ec44857" category="doc">已针对Google Cloud更新受支持的VM列表、以符合最佳实践</block>
@@ -5282,7 +5196,6 @@
   <block id="19fc50e68ea13a6ad812df240a74e5fb" category="list-text"><block ref="19fc50e68ea13a6ad812df240a74e5fb" category="inline-link-rx"></block></block>
   <block id="926bfb189ee8c4179f7f53993b777d90" category="paragraph">如果要在AWS中启动Cloud Volumes ONTAP、则需要在BlueXP  中创建新的工作环境。</block>
   <block id="7fc21546461474a1cc543852dc120330" category="paragraph">如果在启动Cloud Volumes ONTAP实例时遇到任何问题、请查看失败消息。您还可以选择工作环境并单击重新创建环境。</block>
-  <block id="d036b4a2aa80729ab508e1851458f506" category="cell">选择要用于此 Cloud Volumes ONTAP 系统的 AWS 凭据和 Marketplace 订阅。单击 * 添加订阅 * 将选定凭据与新的 AWS Marketplace 订阅关联。订阅可以是一份年度合同，也可以是按小时付费的 Cloud Volumes ONTAP 。如果您直接从NetApp购买了许可证(自带许可证(BYOL))、则不需要订阅AWS。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>(英文)</block>
   <block id="fc687f57dc8188e5dad217858c078354" category="section-title">Cloud Volumes ONTAP中的密钥轮换</block>
   <block id="d2a95dd3692cce58be8541add2bc6897" category="paragraph">支持大多数配置。如果您的Cloud Volumes ONTAP系统运行的是最新版本、则可以继续操作。<block ref="f2e6a88e181ee9519c72412b23fc6e17" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="8ce366e694d5c3c3c27249c7cedf502e" category="paragraph">默认情况下、自定义角色包括权限。<block ref="b7d06976ba0f29792527e383824a0357" category="inline-link-rx"></block></block>
@@ -5547,7 +5460,6 @@
   <block id="df65d9be8ade62cf7505e34c307cecad" category="cell">*支持的虚拟机(VM)类型*</block>
   <block id="b13b643af58b125fac839de04760d5f0" category="cell">完整的VM类型。<block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="97c2102867c5b54db1b773f42a540c16" category="list-text">9.16.1大会</block>
-  <block id="70e23d6e402d67f6f86de0aa757d7bf0" category="paragraph">SKU名称是设置商城图片的URN时"skuName"变量的值。</block>
   <block id="4692723666baa52294f46ef51ee4ec3f" category="cell">*虚拟机部署方法*</block>
   <block id="95392acbc8522bf81166b3d44b333fca" category="cell">9.16.1及更高版本</block>
   <block id="e6c4c5f3851cefbfb1da8daa3aff1fb0" category="cell">通过Marketplace直接部署方法</block>
@@ -5575,7 +5487,6 @@
   <block id="36b957c17f5c2834f27a8de7ecccad90" category="doc">了解如何将AutoSupport和数字顾问用于Cloud Volumes ONTAP</block>
   <block id="a813237b7fa0fd426e65b5e81ab565df" category="doc">了解Cloud Volumes ONTAP对AWS Elelic Volumes的支持</block>
   <block id="367721c6da74417e71470676fd55bfec" category="doc">适用于Cloud Volumes ONTAP的Azure Marketplace图像签名验证</block>
-  <block id="7e2d94ca440b9c349d09b9e01c8c90ab" category="doc">适用于Cloud Volumes ONTAP的Azure Marketplace映像验证</block>
   <block id="b3b8964875bb6d67dab64d2f1d39b3aa" category="doc">Cloud Volumes ONTAP支持的客户端协议</block>
   <block id="84fbe7f88bb3a63bec3ffcbda024a860" category="doc">了解如何在AWS、Azure或Google Cloud中使用Cloud Volumes ONTAP进行数据分层</block>
   <block id="46d42323928c4276f41709f7eacfb86f" category="doc">当Cloud Volumes ONTAP HA对中的节点脱机时、操作不可用</block>
@@ -5613,7 +5524,6 @@
   <block id="816ad715f74514ea0e194c106b673bf0" category="doc">在Cloud Volumes ONTAP系统上使用FlexCache卷加快数据访问速度</block>
   <block id="e1d184508c5a07e34d4799a6df05b20e" category="doc">将现有Cloud Volumes ONTAP系统添加到BlueXP </block>
   <block id="bd38f10049f751a48716a3340ced5706" category="doc">使用AWS密钥管理服务管理Cloud Volumes ONTAP加密密钥</block>
-  <block id="ec50d6cbb7b13703598a5b1e88bc013b" category="doc">下载适用于Cloud Volumes ONTAP的Azure Marketplace映像摘要</block>
   <block id="cd77a4de9d5cef0b54e9b8a8803001ee" category="doc">从Azure Marketplace导出适用于Cloud Volumes ONTAP的HD映像</block>
   <block id="890da2408e0505fbcfccbfee39ec96e9" category="doc">使用Azure密钥存储管理Cloud Volumes ONTAP加密密钥</block>
   <block id="733ed8eca6d49536d616b96f190c0f55" category="doc">在AWS中修改Cloud Volumes ONTAP系统的EC2实例类型</block>
@@ -5642,7 +5552,6 @@
   <block id="815c7816169ce0181021470fc851ad75" category="doc">对Cloud Volumes ONTAP系统使用Azure专用链路或服务端点</block>
   <block id="3f8a964f1b4371b109b271e17740eb42" category="doc">使用NetApp加密解决方案对Cloud Volumes ONTAP上的卷进行加密</block>
   <block id="7e2f4ea87cd4ef2400c67d3a6b35c0e4" category="doc">验证适用于Linux上Cloud Volumes ONTAP的Azure Marketplace映像签名</block>
-  <block id="eb0bf51905bf265524b4344e372f0021" category="doc">在MAC操作系统上验证Cloud Volumes ONTAP的Azure Marketplace映像签名</block>
   <block id="a6c30282f56568ee9b5729642207a5b5" category="doc">将Google Cloud图像转换为Cloud Volumes ONTAP的原始格式</block>
   <block id="240de91fb65f5d6acac3d891ccd57289" category="doc">在AWS机密云或AWS顶级机密云中部署Cloud Volumes ONTAP</block>
   <block id="e35e4a3b0dde1d61e0fbd30f69e261c0" category="doc">使用Google Cloud KMS管理Cloud Volumes ONTAP加密密钥</block>
@@ -5828,13 +5737,6 @@
   <block id="0b62bc8ec3e3c99207707d34c04bf762" category="list-text"><block ref="0b62bc8ec3e3c99207707d34c04bf762" category="inline-link-macro-rx"></block></block>
   <block id="feeb4931d6047ef8e401159d1c8fda09" category="list-text"><block ref="feeb4931d6047ef8e401159d1c8fda09" category="inline-link-macro-rx"></block></block>
   <block id="b2f263166e90b59fbacbe6b5ead0ba84" category="paragraph">BlueXP  在创建系统时为冷数据创建对象存储<block ref="2bc42c273736fc8d1c1cbc5e39b01160" category="inline-xref-macro-rx"></block>。之后、您只需在卷上启用数据分层(在某些情况下、还可以启用<block ref="20c714206be4f432619a9d0394b388bc" category="inline-xref-macro-rx"></block>)。</block>
-  <block id="fdcb7ccb26d6b4864ac844c920b0f5d5" category="paragraph">您可以使用同一个Connector为多个Azure租户分层数据。要在Cloud Volumes ONTAP工作环境由一个租户创建而Connector由另一个租户创建的情况下为Azure租户启用分层、请确保满足以下条件：</block>
-  <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="inline-link">管理BlueXP的Azure凭据和市场订阅</block>
-  <block id="ef83b75206a21def8410676276978aac" category="list-text">您已在BlueXP  中输入两个租户的凭据以进行交叉验证。请参阅<block ref="6ee6fc101b8550f56fdf56dce6277e28" category="inline-link-rx"></block>。</block>
-  <block id="c307dc26cbb58ad7fba2664c17cb4d16" category="inline-link">在Azure门户上</block>
-  <block id="953bd3af818813e12a62ff4db4f175eb" category="list-text">您已在两个租户之间启用虚拟网络(vNet)对等<block ref="2f75b24d24389585ccc23662dba8f117" category="inline-link-rx"></block>。要使Connector能够访问另一租户的存储帐户、必须执行此操作。</block>
-  <block id="5dc4c869682b55bd825dbd766c5a91c6" category="inline-link-macro">已禁用Azure专用链路</block>
-  <block id="56942c64ec21bc5186a25c20b4c9231e" category="list-text">您必须<block ref="d1486d850c17a7ded1dee71bca015a76" category="inline-link-macro-rx"></block>使用子网服务端点。</block>
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
   <block id="389d4c98e2d0499c2e4e750430434afb" category="doc">为Cloud Volumes ONTAP 9.15.1启用了专用模式部署</block>
   <block id="bce4906e9d915e525cd382b520b71325" category="paragraph">现在、您可以在AWS、Azure和Google Cloud中以私有模式部署Cloud Volumes ONTAP 9.15.1。Cloud Volumes ONTAP 9.15.1的单节点和高可用性(HA)部署均启用了专用模式。</block>
@@ -5871,4 +5773,97 @@
   <block id="f193581eeaf23b712b81e0023faf5954" category="list-text">分配您创建的自定义角色： <block ref="1bc6114e9ddb3402400afe0f18264312" prefix=" " category="inline-code"></block></block>
   <block id="2ca4641842d5ce20115dfc5ed991df9a" category="admonition">如果您使用的是 Cloud Volumes ONTAP 9.13.0 或更高版本，则无需创建自定义角色。您可以分配预定义的<block ref="73ac35632bb1fe345fd295d7683fcbee" category="inline-link-rx"></block><block ref="8f1f4fa398a38c70f01951f69f3c2a1f" prefix="[" category="inline-code"></block> ^] 角色。</block>
   <block id="07bc73dbf27c2d6ca6dd4dcbb64687bf" category="paragraph">BlueXP 不提供存储虚拟机 (SVM) 灾难恢复的设置或编排支持。要执行这些任务，请使用 ONTAP System Manager 或 ONTAP CLI。</block>
+  <block id="335f4b4c3f32d7fd5ea619fa6dbe4204" category="summary">了解如何通过 Cloud Volumes ONTAP 映像摘要文件工具验证导出的 VHD 文件签名。</block>
+  <block id="58b845122330da91119b6688c036350d" category="paragraph">Azure 映像验证过程会从 VHD 文件生成摘要文件，方法是先剥离开头的 1 MB 空间，再剥离结尾的 512 字节空间，然后应用哈希函数。为了与签名过程匹配，我们使用 _sha256_ 进行哈希处理。</block>
+  <block id="1fa20f0746983bcbf7a88c87a81e70e0" category="inline-link-macro">下载 Azure 映像摘要文件</block>
+  <block id="e95fe530af34929abac0d194b5a233d9" category="list-text">从<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>并提取摘要（.sig）文件、公钥证书（.pem）文件和链证书（.pem）文件。有关详细信息、请参见 <block ref="9e172761773546c07c07e8a2bfa3e401" category="inline-link-macro-rx"></block> 。</block>
+  <block id="8d0322cf231d5afd998204b4188ce3b5" category="list-text">信任链的验证。</block>
+  <block id="c5f313eb33e695440bf645428b6dc2b0" category="list-text">从公钥证书（.pem）中提取公钥（.pub）。</block>
+  <block id="0d4eaa3a100ccc68da9883a9e3662eec" category="list-text">使用提取的公钥解密摘要文件。</block>
+  <block id="e42e2d7653b106c46ae319b6738643c5" category="list-text">将结果与从镜像文件中删除开头 1 MB 和结尾 512 字节后创建的临时文件的新摘要进行比较。此步骤使用 OpenSSL 命令行工具执行。OpenSSLCLI 工具会在文件匹配成功或失败时显示相应的消息。</block>
+  <block id="adbd61b9b9edef58fd97573b9668d615" category="doc">针对 Cloud Volumes ONTAP 的 Azure Marketplace 映像验证</block>
+  <block id="ac4d6cdfd4bd3593fdc2c0bf74279483" category="paragraph">Azure映像验证符合增强的NetApp安全要求。验证镜像文件的过程很简单。但是，Azure 镜像签名验证需要特别注意 Azure VHD 镜像文件，因为它在 Azure 市场中被修改过。</block>
+  <block id="2525830fb09d21a48ca7521979921f9f" category="admonition">Cloud Volumes ONTAP 9.15.0 及更高版本支持 Azure 映像验证。</block>
+  <block id="8594c4075962a59740e91f8f6cfa48a6" category="paragraph">Azure 修改了 VHD 文件开头的 1 MB（1048576 字节）和结尾的 512 字节。NetApp对剩余的 VHD 文件进行了签名。</block>
+  <block id="2449165dac49eeffc4339a03758e395d" category="paragraph">示例中的 VHD 文件大小为 10GB。NetApp签名的部分标记为绿色（10 GB - 1 MB - 512 字节）。</block>
+  <block id="b844697174ebc8c2c2eaadf0ae1954ea" category="summary">通过 Cloud Volumes ONTAP 映像摘要文件工具验证导出的 Google Cloud 映像文件签名。</block>
+  <block id="916ff508220cd0f9544ff8e1a1538bc5" category="admonition">虽然BlueXP中管理的产品和服务的实际使用情况和计量始终以GiB和TiB计算、但术语GB/GiB和TB/TiB可互换使用。这反映在云市场列表、价格报价、列表描述和其他支持文档中。</block>
+  <block id="1718fe47f5ecc10fa0621d52cd8fcb44" category="list-text">在 Azure 市场上可以按使用量付费或按年合同形式购买</block>
+  <block id="2def4bff61cd7bfa9062cc47d2c7968d" category="list-text">可在 Google Cloud 市场中以按使用量付费或年度合同的形式购买</block>
+  <block id="b510d73bf4b9be5f22afae8b4d44a0c8" category="summary">您可以从 NetApp 支持站点下载 Azure 映像摘要文件。</block>
+  <block id="6638f6b622b4f4b4d37c4f1a1fe019bb" category="doc">下载适用于 Cloud Volumes ONTAP 的 Azure 映像文件</block>
+  <block id="8092c5aca0172beb3a5b74f7c0b1d012" category="paragraph">您可以从<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> 。</block>
+  <block id="6df1f64f45848c0bb0631283ed27ce27" category="paragraph">_tar.gz_ 文件包含镜像签名验证所需的文件。除了 _tar.gz_ 文件外，您还应该下载镜像的 _checksum_ 文件。该校验和文件包含<block ref="1bc29b36f623ba82aaf6724fd3b16718" prefix=" " category="inline-code"></block>和<block ref="d8d8a6d2e9e1fb99302b479a8fe540d4" prefix=" " category="inline-code"></block> _tar.gz_ 文件的校验和。</block>
+  <block id="0072ec12983477b835402f6aaa07db5f" category="list-text">前往<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block>并从*下载*部分下载所需的软件版本。</block>
+  <block id="4a7a4b5d2dd7a22744be0851c16f8194" category="list-text">在 Cloud Volumes ONTAP 下载页面上，单击 Azure 映像的可下载文件并下载 _tar.gz_ 文件。</block>
+  <block id="4cc94736b8108164bde72adbfd5fb5bd" category="list-text">在 Linux 上，运行<block ref="c3c22e8fbfdb4097ebad5fae427aec4a" prefix=" " category="inline-code"></block> 。</block>
+  <block id="91deda3d344b61592f9e7c5ad458786d" category="paragraph">在 macOS 上，运行<block ref="8bf5a287562075c8e1f0e1e06d0227bc" prefix=" " category="inline-code"></block> 。</block>
+  <block id="05a6c4db607bd3e72790cf5b1ad82f1f" category="list-text">验证<block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block>和<block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block>值与下载的 Azure 映像中的值匹配。</block>
+  <block id="5db71480b0c9dda6718c57c9a1b66d0e" category="list-text">在 Linux 和 macOS 上，使用以下命令提取 _tar.gz_ 文件<block ref="b83523a8ca29d91ebd710492f899931c" prefix=" " category="inline-code"></block>命令。</block>
+  <block id="8ae7ff53b84fa20c2ff41ba7151a0bb8" category="paragraph">解压后的 _tar.gz_ 文件包含摘要（_.sig_）文件、公钥证书（_.pem_）文件、链证书（_.pem_）文件。</block>
+  <block id="7926415a130a1678f0dd302e6e12b7fc" category="paragraph">*提取 tar.gz 文件后的示例输出：*</block>
+  <block id="f6dba46e078f9386beb8a4a79d76549a" category="paragraph">VHD 映像发布到 Azure 云后，将不再由 NetApp 管理。而是将发布的映像放置在Azure Marketplace上。当映像在 Azure 市场上暂存并发布时，Azure 会修改 VHD 开头的 1 MB 空间和结尾的 512 字节空间。要验证 VHD 文件的签名，您需要从 Azure 市场导出 Azure 修改后的 VHD 映像。</block>
+  <block id="ec16213617a829ae3210a6b9c0b740b9" category="inline-link">Azure 文档：如何安装 Azure CLI</block>
+  <block id="9c3f5558b03dabe44a3407603bd410c6" category="paragraph">确保系统上已安装 Azure CLI，或者可通过 Azure 门户使用 Azure Cloud Shell。有关如何安装 Azure CLI 的详细信息，请参阅<block ref="4f331e0f89427a8f7dcdb4a3b7e4c417" category="inline-link-rx"></block> 。</block>
+  <block id="face343931d4059b6c3dd78d56fb0143" category="list-text">使用 _version_readme_ 文件的内容，将系统上的 Cloud Volumes ONTAP 版本映射到 Azure 市场映像版本。CloudVolumes ONTAP 版本表示为<block ref="b5a3173cd3a7260f087f1a3b6ce8b253" prefix=" " category="inline-code"></block> Azure 市场镜像版本表示为<block ref="2af72f100c356273d46284f6fd1dfc08" prefix=" " category="inline-code"></block>在版本映射中。</block>
+  <block id="673621cd6c54925a5835c76a491a7692" category="paragraph">在以下示例中，Cloud Volumes ONTAP 版本<block ref="d9df468f7ec059062fe27406e7e15237" prefix=" " category="inline-code"></block>映射到 Azure 市场映像版本<block ref="c9ad1fa1b8f10cec0a814f0e5a67040c" prefix=" " category="inline-code"></block> 。此Azure Marketplace映像版本稍后用于设置映像URN。</block>
+  <block id="fc9e8de3d55cd0dcb193d83ed767262a" category="list-text">确定要在其中创建虚拟机的区域。区域名称将用作<block ref="2c490d0ef82a3afb83c6ec1d8db95215" prefix=" " category="inline-code"></block>设置市场镜像的 URN 变量。要列出可用区域，请运行以下命令：</block>
+  <block id="cdffbd57236bcf08f44921f8f58c219a" category="paragraph">在此表中，区域名称出现在<block ref="49ee3087348e8d44e1feda1917443987" prefix=" " category="inline-code"></block>场地。</block>
+  <block id="6b3d18349c55e7fe18acf14ca16f6283" category="list-text">请查看下表中对应 Cloud Volumes ONTAP 版本和虚拟机部署类型的 SKU 名称。SKU名称用作<block ref="54a8f9e3abd62e4fb1e4dcd2e2af6f84" prefix=" " category="inline-code"></block>设置市场图像的 URN 时的变量。</block>
+  <block id="f9e2290e145374e5b1637c66fa12a846" category="list-text">映射 ONTAP 版本和 Azure 市场映像后，使用 Azure Cloud Shell 或 Azure CLI 从 Azure 市场导出 VHD 文件。</block>
+  <block id="dd0bd5034b076be810a4df7b017f2255" category="section-title">使用 Linux 上的 Azure Cloud Shell 导出 VHD 文件</block>
+  <block id="676b9ff7477545bf846f27485d8e5e26" category="paragraph">从 Azure Cloud Shell 中，将市场镜像导出为 VHD 文件（例如，_9150.01000024.05090105.vhd_），然后将其下载到本地 Linux 系统。执行以下步骤从 Azure 市场获取 VHD 镜像。</block>
+  <block id="12a72006cb63e1b4defb45de48564692" category="list-text">设置市场镜像的 URN 和其他参数。URN格式为<block ref="32c001f242bba1a2f81974a7f26f0e64" prefix=" " category="inline-code"></block> 。或者，您可以列出 NetApp 市场图像来确认正确的图像版本。</block>
+  <block id="d65e638e11d00fc79443255884da16db" category="list-text">从具有匹配映像版本市场映像创建新的托管磁盘：</block>
+  <block id="0088c78e043b70edf9579595a2ee25d7" category="list-text">将 VHD 文件从托管磁盘导出到 Azure 存储。创建具有适当访问级别的容器。在本例中，我们使用了名为<block ref="58aaa54fc7b24aa9f47628c9303e6032" prefix=" " category="inline-code"></block>和<block ref="0e7278cda02a9c0446dcc75a4df34eb2" prefix=" " category="inline-code"></block>访问级别。从 Azure 门户获取存储帐户访问密钥：*存储帐户 &gt; _examplesaname_ &gt; 访问密钥 &gt; _key1_ &gt; _key_ &gt; 显示 &gt; _&lt;copy&gt;_*</block>
+  <block id="d58ff5368da0a9e07116d0914b0e100f" category="list-text">将生成的映像下载到你的 Linux 系统。使用<block ref="af9d83836ecf1f49c598bcb1995b3c98" prefix=" " category="inline-code"></block>下载VHD文件的命令：</block>
+  <block id="080f4e725b29a35d5b454c3ef51a6ece" category="paragraph">URL 遵循标准格式。为了实现自动化，您可以按如下所示派生 URL 字符串。或者，您可以使用 Azure CLI <block ref="cc8c0a97c2dfcd73caff160b65aa39e2" prefix=" " category="inline-code"></block>命令获取 URL。示例 URL： <block ref="57f052fbd2c31b00951e080c2b038e9f" category="inline-link-rx"></block></block>
+  <block id="e29c7c72ff42387a45d366d92342fa54" category="list-text">清理托管磁盘</block>
+  <block id="7f38ba9b55c53cbc26b23634ed761a33" category="section-title">使用 Linux 上的 Azure CLI 导出 VHD 文件</block>
+  <block id="de4a72dd00c713fbc81776255cd85070" category="paragraph">使用本地 Linux 系统的 Azure CLI 将市场映像导出到 VHD 文件。</block>
+  <block id="f253a8188a73f633062457efd8293f1e" category="list-text">登录到 Azure CLI 并列出市场图像：</block>
+  <block id="1a3e043d34cb5c7950d868f9a58de344" category="list-text">要登录，请使用网络浏览器打开页面<block ref="7e6daf26208029492cb7d0605bc1fe16" category="inline-link-rx"></block>并输入验证码。</block>
+  <block id="5db94423edb9919ea9ed6a600ca8e454" category="list-text">从具有匹配映像版本的市场映像创建新的托管磁盘。</block>
+  <block id="b003c34a5effea0208f8242b4df557b8" category="paragraph">为了实现流程自动化，需要从标准输出中提取 SAS。请参阅相关文档以获取指导。</block>
+  <block id="4f9c7172d5d5be7c41a3647575453a14" category="list-text">从托管磁盘导出 VHD 文件。</block>
+  <block id="b6002e5678a3cdd8ad75bf1a31e1bcc5" category="list-text">创建一个具有适当访问级别的容器。在本例中，容器名为<block ref="58aaa54fc7b24aa9f47628c9303e6032" prefix=" " category="inline-code"></block>和<block ref="0e7278cda02a9c0446dcc75a4df34eb2" prefix=" " category="inline-code"></block>使用访问级别。</block>
+  <block id="ddba27390d0c0fbbe854c9b12fcdf284" category="list-text">从 Azure 门户获取存储帐户访问密钥：*存储帐户 &gt; _examplesaname_ &gt; 访问密钥 &gt; _key1_ &gt; _key_ &gt; 显示 &gt; _&lt;copy&gt;_*</block>
+  <block id="13ddcbd747245998f2d13d87aea141a5" category="paragraph">您还可以使用<block ref="cc8c0a97c2dfcd73caff160b65aa39e2" prefix=" " category="inline-code"></block>此步骤的命令。</block>
+  <block id="83576ac06da530b4b3d474992ffac159" category="list-text">检查 blob 副本的状态。</block>
+  <block id="d9dfb532ad5d179e3b40189fde3f4248" category="list-text">将生成的图像下载到您的 Linux 服务器。</block>
+  <block id="7788afc9b025c22557e447eaf4dffa93" category="paragraph">如果<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block>状态不是<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> ，SVM 无法使用所有必需的连接和权限访问 Azure Key Vault 服务。请确保 Azure 网络策略和路由不会阻止专用 vNet 访问 Azure Key Vault 公共终结点。如果有、请考虑使用Azure私有端点从vNet中访问密钥存储。您可能还需要在SVM上添加静态主机条目、以解析端点的专用IP地址。</block>
+  <block id="772cd21b67a339599db9c9999d2ea60c" category="list-text">可选：如果要更新 Azure Key Vault 身份验证证书上的凭据，请使用以下命令： <block ref="a645f9ebef79ef42b1f3131cb6174f32" prefix=" " category="inline-code"></block></block>
+  <block id="ce7feeb9696e4acc1fcbb1add1f03816" category="inline-link">ONTAP 命令参考指南</block>
+  <block id="fb572fa6aa049e4489436824a209a185" category="list-text"><block ref="fb572fa6aa049e4489436824a209a185" category="inline-link-rx"></block></block>
+  <block id="0b36bcb395ebb665af56da483fd99834" category="paragraph">要创建按使用量付费的 Cloud Volumes ONTAP 系统，您需要从 Google Cloud 市场中选择与 Cloud Volumes ONTAP 订阅相关联的 Google Cloud 项目。</block>
+  <block id="d902c674e6ba950d8402617e90996b0e" category="paragraph">以下视频演示了如何将按需付费的市场订阅与您的 Google Cloud 项目关联。或者，您也可以按照位于<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block>部分。</block>
+  <block id="1500dd80d4cc6d09d5133f1b625193db" category="video-title">从 Google Cloud 市场订阅 BlueXP</block>
+  <block id="60f8e11854532d0b25fd528a7475e02d" category="inline-link">将市场订阅与 Google Cloud 凭据关联</block>
+  <block id="3582172f990671e5c9b9847ca2466e47" category="paragraph">以下视频演示了如何将按需付费的市场订阅与您的 Google Cloud 项目关联。或者，您也可以按照位于<block ref="26858d2411615dac691c2981d5338917" category="inline-link-rx"></block>部分。</block>
+  <block id="9603e35668bf73569f7fb7d8ede35b73" category="cell">选择与要部署此系统的帐户关联的 AWS 凭据。您还可以将 AWS 市场订阅关联到此 Cloud Volumes ONTAP 系统。单击“添加订阅”将选定的凭证与新的 AWS 市场订阅关联。订阅可以是一份年度合同，也可以是按小时付费的 Cloud Volumes ONTAP 。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>(英文)</block>
+  <block id="46339f2ff186a945840b15ba0f6b2973" category="paragraph">以下视频展示了如何将按使用量付费的市场订阅与您的 AWS 凭证关联：</block>
+  <block id="e649338f42e9d4b6232876c6fb010f0c" category="video-title">从 AWS 市场订阅 BlueXP</block>
+  <block id="d066267408b0996a7030fb9e612bc93c" category="admonition">如果多个 IAM 用户在同一个 AWS 帐户中工作，则每个用户都需要订阅。首位用户订阅后，AWS 市场会通知后续用户他们已订阅，如下图所示。虽然已为 AWS _account_ 订阅，但每个 IAM 用户都需要将自己与该订阅关联起来。如果您看到以下消息，请点击“点击此处”链接前往 BlueXP 网站并完成订阅流程。 <block ref="42077b282858282a6d1d166f9467abaf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab15dd8600113904e0e4998b2fb7bd69" category="list-text">*Cloud Volumes ONTAP 配置*（仅限年度 AWS 市场合同）：查看默认配置并单击*继续*或单击*更改配置*以选择您自己的配置。</block>
+  <block id="1726cdada46786ec07f15648484f3688" category="cell">选择要用于此 Cloud Volumes ONTAP 系统的 AWS 凭据和 Marketplace 订阅。单击“添加订阅”将选定的凭证与新的 AWS 市场订阅关联。订阅可以是一份年度合同，也可以是按小时付费的 Cloud Volumes ONTAP 。如果您直接从NetApp购买了许可证(自带许可证(BYOL))、则不需要订阅AWS。<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>(英文)</block>
+  <block id="e242ae1daadb676e4a23b48a94c4619d" category="admonition">如果多个 IAM 用户在同一个 AWS 帐户中工作，则每个用户都需要订阅。首位用户订阅后，AWS 市场会通知后续用户他们已订阅，如下图所示。虽然已为 AWS _account_ 订阅，但每个 IAM 用户都需要将自己与该订阅关联起来。如果您看到以下消息，请点击“点击此处”链接前往 BlueXP 网站并完成订阅流程。 <block ref="5176b925004072644ad0f4d50d425bc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="80e0ce0662b2846621d1355a00843d7d" category="summary">通过 Linux 上的 Cloud Volumes ONTAP 映像摘要文件工具验证导出的 VHD 文件签名</block>
+  <block id="11e81e6e3ef9958c0f8028f9c79e5dbe" category="paragraph">在 Linux 上验证导出的 VHD 文件签名包括验证信任链、编辑文件和验证签名。</block>
+  <block id="6339f94a77b583074840fe198737cc13" category="list-text">从下载 Azure 映像文件<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>并提取摘要（.sig）文件、公钥证书（.pem）文件和链证书（.pem）文件。</block>
+  <block id="c85b78e9ee53945bf5a3b15edfff0b5d" category="paragraph">有关详细信息、请参见<block ref="2a14363ee7293feb0b6b6ce81efa6b91" category="inline-link-rx"></block> 。</block>
+  <block id="21dadf74c218571a8ed71c1234029549" category="list-text">删除 VHD 文件开头的 1 MB（1,048,576 字节）和结尾的 512 字节。使用<block ref="7aea2552dfe7eb84b9443b6fc9ba6e01" prefix=" " category="inline-code"></block> ， 这<block ref="2040875c59e5bf4043fe4cfb86322cb2" prefix=" " category="inline-code"></block>选项从文件的第 K 个字节开始生成字节。因此，它将 1048577 传递给<block ref="f7803ce2a90e2cf20bc01f7ab2c60c5c" prefix=" " category="inline-code"></block> 。</block>
+  <block id="836d55dad864fd03171b45683d3f0afe" category="list-text">使用 OpenSSL 从证书中提取公钥，并使用签名文件和公钥验证剥离的文件（sign.tmp）。</block>
+  <block id="b40380aca2b7f94b6fd1739f23b3c19b" category="paragraph">命令提示符根据验证结果显示指示成功或失败的消息。</block>
+  <block id="a821b3210026c1d21c89671c2d45b1a4" category="summary">通过 macOS 上的 Cloud Volumes ONTAP 映像摘要文件工具验证导出的 VHD 文件签名</block>
+  <block id="a7cfd7b86c7190536d50b4749e7aadf1" category="doc">验证 macOS 上 Cloud Volumes ONTAP 的 Azure 市场映像签名</block>
+  <block id="15b1d6274a4b31b0d3be9a3bcbe74b84" category="list-text">删除 VHD 文件开头的 1MB（1,048,576 字节）和结尾的 512 字节。使用<block ref="7aea2552dfe7eb84b9443b6fc9ba6e01" prefix=" " category="inline-code"></block> ， 这<block ref="2040875c59e5bf4043fe4cfb86322cb2" prefix=" " category="inline-code"></block>选项从文件的第 K 个字节开始生成字节。因此，它将 1048577 传递给<block ref="f7803ce2a90e2cf20bc01f7ab2c60c5c" prefix=" " category="inline-code"></block> 。请注意，在 macOS 上，tail 命令可能需要大约十分钟才能完成。</block>
+  <block id="965eb67c5c4b0c477e47cea94faa6e75" category="list-text">使用 OpenSSL 从证书中提取公钥，并使用签名文件和公钥验证剥离的文件 (sign.tmp)。命令提示符将根据验证结果显示指示成功或失败的消息。</block>
+  <block id="d8272d492d8b39dd1ed365f53be37911" category="admonition">用于验证图像的 OpenSSL 命令与 Linux、macOS 和 Windows 机器兼容。</block>
+  <block id="3e751f18a3082d45e1a90f2be8a0d29b" category="sidebar">验证 Azure 平台映像</block>
+  <block id="ca0e21a7800019b9e65f270d55f99cb6" category="sidebar">下载 Azure 映像文件</block>
+  <block id="c099cdaa5ee05ab15401993690590a92" category="sidebar">导出 Azure 映像文件</block>
+  <block id="33dce177865d6e8dd6005e4540d1d852" category="sidebar">验证文件签名</block>
+  <block id="6e4a8826a7235b545d2d29f084c73624" category="sidebar">了解文件签名验证</block>
+  <block id="56f9ff2318475a5d2c7b23d83297197e" category="sidebar">在 Linux 上验证文件签名</block>
+  <block id="408c48907cb6a04176683305086c1ce2" category="sidebar">在 macOS 上验证文件签名</block>
 </blocks>

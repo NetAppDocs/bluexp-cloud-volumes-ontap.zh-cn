@@ -17,7 +17,7 @@ summary: 使用OpenSSL根据摘要文件内容验证Google Cloud下载的disk.ra
 您可以根据通过提供的摘要文件内容验证Google Cloud下载的disk.raw文件 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^] 使用OpenSSL。
 
 
-NOTE: 用于验证映像的OpenSSL命令与Linux、Mac OS和Windows计算机兼容。
+NOTE: 用于验证图像的 OpenSSL 命令与 Linux、macOS 和 Windows 机器兼容。
 
 .步骤
 . 使用OpenSSL验证证书。

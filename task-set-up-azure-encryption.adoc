@@ -100,16 +100,16 @@ Azure HA具有多个可用性区域、其中包含共享托管磁盘
 
 == Cloud Volumes ONTAP中的密钥轮换
 
-您应在Azure门户上配置加密密钥。有关配置密钥和设置密钥轮换的信息、请参阅以下Microsoft Azure文档主题：
+配置加密密钥时，必须使用 Azure 门户设置并启用自动密钥轮换。创建并启用新版本的加密密钥可确保 Cloud Volumes ONTAP 能够自动检测并使用最新的密钥版本进行加密，从而确保您的数据安全，无需手动干预。
+
+有关配置密钥和设置密钥轮换的信息、请参阅以下Microsoft Azure文档主题：
 
 * https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation["在Azure密钥存储中配置加密密钥自动轮换"^]
 * https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-customer-managed-keys-powershell#set-up-an-azure-key-vault-and-diskencryptionset-with-automatic-key-rotation-preview["Azure PowerShell—启用客户管理的密钥"^]
 
 
 
-NOTE: 配置密钥后，请确保您拥有 https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption#customer-managed-keys["已在Azure门户上启用密钥轮换"^]，以便Cloud Volumes ONTAP可以使用新密钥。
-
-在创建并启用新版本的密钥时、Cloud Volumes ONTAP会自动检测并使用最新版本进行加密、从而确保您的数据始终安全、而无需手动更新。
+NOTE: 配置密钥后，请确保已选择 https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy["_启用自动旋转_"^] ，以便 Cloud Volumes ONTAP 可以在旧密钥过期时使用新密钥。如果您未在 Azure 门户上启用此选项，Cloud Volumes ONTAP 将无法自动检测新密钥，这可能会导致存储配置出现问题。
 
 
 

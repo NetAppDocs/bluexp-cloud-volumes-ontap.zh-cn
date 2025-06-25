@@ -5609,14 +5609,10 @@
   <block id="f2035db09bb2be2db0508915fa584149" category="paragraph">现在、您可以在AWS、Azure和Google Cloud中以私有模式部署Cloud Volumes ONTAP 9.14.1。Cloud Volumes ONTAP 9.14.1的单节点和高可用性(HA)部署均启用了专用模式。</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">了解BlueXP部署模式</block>
   <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">有关私有模式部署的详细信息，请参见<block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>。</block>
-  <block id="210dc676779eae6698e4064fd965bda8" category="paragraph">您应在Azure门户上配置加密密钥。有关配置密钥和设置密钥轮换的信息、请参阅以下Microsoft Azure文档主题：</block>
   <block id="348c2304e1a6efb529d00b9bacd96a8e" category="inline-link">在Azure密钥存储中配置加密密钥自动轮换</block>
   <block id="f4d57411fbf6c0075178b1e3767b496e" category="list-text"><block ref="f4d57411fbf6c0075178b1e3767b496e" category="inline-link-rx"></block></block>
   <block id="881f8c1da4935c7dbe1f6d696a16cd9c" category="inline-link">Azure PowerShell—启用客户管理的密钥</block>
   <block id="4a9f4b73b48b26dea345a1977b58dd51" category="list-text"><block ref="4a9f4b73b48b26dea345a1977b58dd51" category="inline-link-rx"></block></block>
-  <block id="a15076d8f5fd9af7af6dec9ab282588e" category="inline-link">已在Azure门户上启用密钥轮换</block>
-  <block id="71b5648e677d1a5ebf3d343f3c10eb54" category="admonition">配置密钥后，请确保您拥有<block ref="7b90d7bac505d4641bd5cd9a13a09c6c" category="inline-link-rx"></block>，以便Cloud Volumes ONTAP可以使用新密钥。</block>
-  <block id="5b41754d54a59a01d58e45b59544d3a6" category="paragraph">在创建并启用新版本的密钥时、Cloud Volumes ONTAP会自动检测并使用最新版本进行加密、从而确保您的数据始终安全、而无需手动更新。</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
   <block id="636ef76d7d40e5ba70916ad429d2aeae" category="paragraph">现在、您可以选择限制对Azure中Cloud Volumes ONTAP系统的存储帐户的公开访问。通过禁用访问、您可以确保您的专用IP地址不会被泄露、即使在同一个vNet中也是如此、只要您需要遵守组织的安全策略即可。此选项还会为Cloud Volumes ONTAP系统禁用数据分层、并适用于单节点和高可用性对。</block>
   <block id="523a76885920f04b0204fea8be782600" category="list-text">通过*监管&gt;电子钱包&gt;概述/直接许可证*选项卡轻松访问您的Cloud Volumes ONTAP许可证信息。</block>
@@ -5866,4 +5862,8 @@
   <block id="6e4a8826a7235b545d2d29f084c73624" category="sidebar">了解文件签名验证</block>
   <block id="56f9ff2318475a5d2c7b23d83297197e" category="sidebar">在 Linux 上验证文件签名</block>
   <block id="408c48907cb6a04176683305086c1ce2" category="sidebar">在 macOS 上验证文件签名</block>
+  <block id="16af504cff5f9ca785ae3fbcae2c3d7b" category="paragraph">配置加密密钥时，必须使用 Azure 门户设置并启用自动密钥轮换。创建并启用新版本的加密密钥可确保 Cloud Volumes ONTAP 能够自动检测并使用最新的密钥版本进行加密，从而确保您的数据安全，无需手动干预。</block>
+  <block id="6505562134574bd5ec457f8041b5b41b" category="paragraph">有关配置密钥和设置密钥轮换的信息、请参阅以下Microsoft Azure文档主题：</block>
+  <block id="f630598948a04f18a70fded14127468d" category="inline-link">_启用自动旋转_</block>
+  <block id="57d9892a3d271d27b26e51e3f7d04d90" category="admonition">配置密钥后，请确保已选择<block ref="864eb32f5dc808f575a1395e038bf9e3" category="inline-link-rx"></block> ，以便 Cloud Volumes ONTAP 可以在旧密钥过期时使用新密钥。如果您未在 Azure 门户上启用此选项，Cloud Volumes ONTAP 将无法自动检测新密钥，这可能会导致存储配置出现问题。</block>
 </blocks>

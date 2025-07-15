@@ -32,9 +32,6 @@ NetApp提供了两个在Azure上部署Cloud Volumes ONTAP的选项。Cloud Volum
 
 | *支持的虚拟机(VM)类型*  a| 
 EDS_v5和LS_v3实例类型
-
-
-NOTE: Azure Marketplace中的HA配置支持L8s_v3实例类型、但BlueXP  中不支持此类型。BlueXP  在发现期间无法正确检测到它。
 | 完整的VM类型。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^] 
 
 

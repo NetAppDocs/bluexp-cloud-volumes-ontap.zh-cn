@@ -34,6 +34,9 @@ Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、
 
 如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。
 
+
+TIP: 如果您使用的是 HA 对，则 HA 调解器不需要出站 Internet 访问。
+
 确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参阅 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP文档：设置AutoSupport"^]。
 
 

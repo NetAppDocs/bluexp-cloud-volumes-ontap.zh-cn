@@ -1,0 +1,15 @@
+= 支持连接器代理的网络配置
+:allow-uri-read: 
+
+
+
+
+=== 支持连接器代理的网络配置
+
+您可以使用为BlueXP Connector 配置的代理服务器来启用从Cloud Volumes ONTAP 的出站互联网访问。BlueXPBlueXP两种类型的代理：
+
+* *显式代理*：来自Cloud Volumes ONTAP 的出站流量使用在 Connector 代理配置期间指定的代理服务器的 HTTP 地址。Connector管理员可能还配置了用户凭据和根 CA 证书以进行额外的身份验证。如果显式代理有可用的根 CA 证书，请确保使用以下方式获取相同的证书并将其上传到您的Cloud Volumes ONTAP工作环境：  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI：安全证书安装"^]命令。
+* *透明代理*：网络配置为自动通过 Connector 代理路由来自Cloud Volumes ONTAP 的出站流量。设置透明代理时，Connector 管理员只需提供用于从Cloud Volumes ONTAP连接的根 CA 证书，而无需提供代理服务器的 HTTP 地址。请确保使用以下方式获取相同的根 CA 证书并将其上传到您的Cloud Volumes ONTAP工作环境：  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI：安全证书安装"^]命令。
+
+
+有关为BlueXP Connector 配置代理服务器的信息，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["配置Connector以使用代理服务器"^] 。

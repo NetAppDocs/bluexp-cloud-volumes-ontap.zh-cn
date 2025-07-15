@@ -135,9 +135,6 @@ NOTE: 为了符合Microsoft Azure的限制、您应在设置新虚拟网络时�
 .开始之前
 确保在Azure Marketplace上完成部署。只有在部署完成并可供发现时、BlueXP  连接器才能发现系统。
 
-
-NOTE: Azure Marketplace直接部署支持L8s_v3实例类型。但是、对于HA配置、BlueXP  不支持此实例类型、因此在发现期间无法正确检测到它。
-
 .步骤
 在BlueXP  中、您可以按照标准过程发现现有系统。请参阅 link:task-adding-systems.html["将现有Cloud Volumes ONTAP系统添加到BlueXP "]。
 

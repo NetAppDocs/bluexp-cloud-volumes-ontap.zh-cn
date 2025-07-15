@@ -147,4 +147,6 @@ Storage VM 是在 ONTAP 中运行的虚拟机，可为客户端提供存储和�
 .相关信息
 * https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["准备使用 API"^]
 * https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Cloud Volumes ONTAP工作流"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-connector-identifier["获取所需的标识符"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/use_rest_apis.html["使用BlueXP REST API"^]
 

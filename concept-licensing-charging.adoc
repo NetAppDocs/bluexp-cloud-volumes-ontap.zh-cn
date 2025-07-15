@@ -102,7 +102,7 @@ Cloud Volumes ONTAP 9.7 及更高版本提供了基于容量的许可包。
 
 == 最大系统数
 
-使用基于容量的许可时、每个NetApp帐户最多只能使用20个Cloud Volumes ONTAP 系统。_system_是指Cloud Volumes ONTAP HA对、Cloud Volumes ONTAP 单节点系统或您创建的任何其他Storage VM。默认Storage VM不计入此限制。这将限制适用场景 的所有许可模式。
+使用基于容量的许可，每个BlueXP帐户的Cloud Volumes ONTAP系统的最大数量限制为 24 个。_system_是指Cloud Volumes ONTAP HA对、Cloud Volumes ONTAP 单节点系统或您创建的任何其他Storage VM。默认Storage VM不计入此限制。这将限制适用场景 的所有许可模式。
 
 例如、假设您有三个工作环境：
 
@@ -122,9 +122,11 @@ Cloud Volumes ONTAP 9.7 及更高版本提供了基于容量的许可包。
 
 总共有六个系统。然后、您的帐户中还可以再添加14个系统。
 
-如果您的大型部署需要20个以上的系统、请联系您的客户代表或销售团队。
+如果您的大型部署需要24个以上的系统、请联系您的客户代表或销售团队。
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["了解有关 NetApp 客户的更多信息"^]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["了解有关BlueXP帐户的更多信息"^](英文)
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["了解 AWS、Azure 和 Google Cloud 的存储限制"^](英文)
 
 
 

@@ -82,35 +82,23 @@ Cloud Volumes ONTAP使用这些端点与各种服务进行通信。
 |===
 
 
-==== NetApp AutoSupport的出站Internet访问
-
-Cloud Volumes ONTAP节点需要出站Internet访问才能访问外部端点以执行各种功能。如果在安全要求严格的环境中阻止这些端点、则Cloud Volumes ONTAP将无法正常运行。
-
-Cloud Volumes ONTAP 节点需要通过出站Internet访问NetApp AutoSupport 、NetApp会主动监控系统运行状况并向NetApp技术支持发送消息。
-
-路由和防火墙策略必须允许HTTPS流量传输到以下端点、Cloud Volumes ONTAP才能发送AutoSupport消息：
-
-* https://support.netapp.com/aods/asupmessage
-* https://support.netapp.com/asupprod/post/1.0/postAsup
-
-
-如果您有 NAT 实例、则必须定义允许 HTTPS 流量从私有子网传输到 Internet 的入站安全组规则。
-
-如果无法通过出站Internet连接发送AutoSupport 消息、则BlueXP会自动将您的Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
-
-如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。
-
-确认出站 Internet 访问可用后，您可以测试 AutoSupport 以确保它可以发送消息。有关说明，请参阅 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP文档：设置AutoSupport"^]。
-
-如果BlueXP通知您无法发送AutoSupport 消息、 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["对AutoSupport 配置进行故障排除"]。
-
-
-
 === HA 调解器的出站 Internet 访问
 
 HA 调解器实例必须具有与 AWS EC2 服务的出站连接、以便能够帮助进行存储故障转移。要提供连接、可以添加公共 IP 地址、指定代理服务器或使用手动选项。
 
 手动选项可以是 NAT 网关或从目标子网到 AWS EC2 服务的接口 VPC 端点。有关VPC端点的详细信息，请参见 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["AWS 文档：接口 VPC 端点（ AWS PrivateLink ）"^]。
+
+
+
+=== 支持连接器代理的网络配置
+
+您可以使用为BlueXP Connector 配置的代理服务器来启用从Cloud Volumes ONTAP 的出站互联网访问。BlueXPBlueXP两种类型的代理：
+
+* *显式代理*：来自Cloud Volumes ONTAP 的出站流量使用在 Connector 代理配置期间指定的代理服务器的 HTTP 地址。Connector管理员可能还配置了用户凭据和根 CA 证书以进行额外的身份验证。如果显式代理有可用的根 CA 证书，请确保使用以下方式获取相同的证书并将其上传到您的Cloud Volumes ONTAP工作环境：  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI：安全证书安装"^]命令。
+* *透明代理*：网络配置为自动通过 Connector 代理路由来自Cloud Volumes ONTAP 的出站流量。设置透明代理时，Connector 管理员只需提供用于从Cloud Volumes ONTAP连接的根 CA 证书，而无需提供代理服务器的 HTTP 地址。请确保使用以下方式获取相同的根 CA 证书并将其上传到您的Cloud Volumes ONTAP工作环境：  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI：安全证书安装"^]命令。
+
+
+有关为BlueXP Connector 配置代理服务器的信息，请参阅 https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["配置Connector以使用代理服务器"^] 。
 
 
 
@@ -162,10 +150,6 @@ HA 对所需的专用 IP 地址数量取决于您选择的部署模式。部署�
 
 下表提供了有关与每个专用 IP 地址关联的 LIF 的详细信息。
 
-
-
-===== 一个 AZ 中的 HA 对的 LIF
-
 [cols="20,20,20,40"]
 |===
 | LIF | 接口 | Node | 目的 
@@ -197,10 +181,6 @@ HA 对所需的专用 IP 地址数量取决于您选择的部署模式。部署�
 
 | 调解器 | eth0 | 调解器 | 节点与调解器之间的通信通道，用于协助存储接管和交还过程。 
 |===
-
-
-===== 多个 AZs 中 HA 对的 LIF
-
 [cols="20,20,20,40"]
 |===
 | LIF | 接口 | Node | 目的 
@@ -343,4 +323,9 @@ image:diagram_ha_networking.png["显示 Cloud Volumes ONTAP HA 架构中组件�
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["查看连接器的网络要求"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS中的安全组规则"^]
+
+
+.相关主题
+* link:task-verify-autosupport.html["验证Cloud Volumes ONTAP的AutoSupport设置"]
+* https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["了解ONTAP内部端口"^](英文)
 

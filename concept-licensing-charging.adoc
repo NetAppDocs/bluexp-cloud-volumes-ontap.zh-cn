@@ -23,6 +23,10 @@ summary: 熟悉基于容量的许可证的收费、使用模式、定价和配�
 基于容量的许可包可用于以下消费模式：
 
 * *BYOL*：自带许可证(BYOL)。从NetApp购买的一种许可证、可用于在任何云提供商中部署Cloud Volumes ONTAP。
++
+
+NOTE: NetApp已限制 BYOL 许可的购买、延期和续订。有关更多信息，请参阅 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAP的 BYOL 许可可用性受限"^] 。
+
 
 
 ifdef::azure[]
@@ -37,7 +41,7 @@ endif::azure[]
 
 请注意以下事项：
 
-* 如果您从 NetApp （ BYOL ）购买许可证，则还需要从云提供商的市场订阅 PAYGO 产品。
+* 如果您从NetApp购买了 BYOL 许可证，则还需要从云提供商的云市场订阅 PAYGO 产品。NetApp已限制 BYOL 许可。当您的 BYOL 许可证到期时，您需要将其替换为云市场订阅。
 +
 您的许可证始终会先付费，但在以下情况下，您将从市场上的每小时费率中扣除费用：
 
@@ -47,7 +51,7 @@ endif::azure[]
 
 
 * 如果您从某个市场签有年度合同，则您部署的 _all_ Cloud Volumes ONTAP 系统将从该合同中扣除费用。您不能将年度市场合同与 BYOL 混合搭配使用。
-* 中国地区仅支持采用BYOL的单节点系统。
+* 中国区域仅支持支持 BYOL 的单节点系统。中国区域部署不受 BYOL 许可限制。
 
 
 
@@ -148,7 +152,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["了解 AW
 
 === 过剩
 
-如果您超过BYOL容量或许可证过期、则系统将根据您的商城订阅按小时费率向您收取超额费用。超额费用按市场价格收费、优先使用其他许可证中的可用容量。
+如果您超出了 BYOL 容量，我们将根据您的市场订阅按小时费率向您收取超额费用。超额部分将按市场费率收费，并优先使用其他许可证中的可用容量。如果您的 BYOL 许可证到期，您需要通过云市场过渡到基于容量的许可模式。
 
 
 

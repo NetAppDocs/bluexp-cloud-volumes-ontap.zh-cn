@@ -17,7 +17,7 @@ summary: 具有基于节点的 BYOL 的每个 Cloud Volumes ONTAP 系统都必�
 每个具有基于节点的自带许可证(BYOL)的Cloud Volumes ONTAP系统都必须安装一个具有有效订阅的系统许可证。BlueXP通过管理许可证并在许可证到期前显示警告来简化此过程。
 
 
-TIP: 基于节点的许可证是上一代 BYOL for Cloud Volumes ONTAP 。基于节点的许可证仅可用于许可证续订。
+NOTE: 基于节点的许可证是Cloud Volumes ONTAP的上一代许可证。基于节点的许可证可以从NetApp (BYOL) 处购买，并且仅在特定情况下才可以续订许可证。
 
 link:concept-licensing.html["了解有关 Cloud Volumes ONTAP 许可选项的更多信息"]。
 
@@ -27,11 +27,12 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-l
 
 == BYOL 系统许可证
 
-基于节点的许可证可为单个节点或 HA 对提供高达 368 TiB 的容量。
+可以从NetApp购买基于节点的许可证。您可以为单节点系统或 HA 对购买的许可证数量不受限制。
 
-您可以为 Cloud Volumes ONTAP BYOL 系统购买多个许可证，以分配超过 368 TiB 的容量。例如，您可以购买两个许可证，以便为 Cloud Volumes ONTAP 分配高达 736 TiB 的容量。或者，您也可以购买四个许可证，以获得高达 1.4 PiB 的容量。
 
-您可以为单节点系统或 HA 对购买的许可证数量不受限制。
+NOTE: NetApp已限制 BYOL 许可的购买、延期和续订。有关更多信息，请参阅 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAPP的 BYOL 许可可用性受限"^] 。
+
+基于节点的许可证最多可为单个节点或 HA 对提供 368 TiB 的容量。您可能已为Cloud Volumes ONTAP BYOL 系统购买了多个许可证，以分配超过 368 TiB 的容量。例如，您可能有两个许可证，为Cloud Volumes ONTAP分配最多 736 TiB 的容量。或者，您可能有四个许可证，以获得最多 1.4 PiB 的容量。
 
 请注意，磁盘限制可能会阻止您单独使用磁盘来达到容量限制。您可以通过超出磁盘限制 link:concept-data-tiering.html["将非活动数据分层到对象存储"]。有关磁盘限制的信息，请参见 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["《 Cloud Volumes ONTAP 发行说明》中的存储限制"^]。
 
@@ -67,7 +68,7 @@ image:screenshot_cvo_report.gif["用户配置文件面板的屏幕截图，其�
 
 == 许可证续订
 
-在联系NetApp代表续订基于节点的BYOL订阅时、BlueXP会自动从NetApp获取新许可证并将其安装在Cloud Volumes ONTAP 系统上。
+如果您通过联系NetApp代表续订基于节点的 BYOL 订阅， BlueXP会自动从NetApp获取新许可证并将其安装在Cloud Volumes ONTAP系统上。
 
 如果BlueXP无法通过安全Internet连接访问许可证文件、您可以 link:task-manage-node-licenses.html["自行获取文件、然后手动将文件上传到BlueXP"]。
 

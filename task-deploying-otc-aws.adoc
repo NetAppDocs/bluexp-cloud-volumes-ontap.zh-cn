@@ -326,7 +326,7 @@ BlueXP将启动Cloud Volumes ONTAP 实例。您可以跟踪时间链中的进度
 | 用户名和密码 | 这些是 Cloud Volumes ONTAP 集群管理员帐户的凭据。您可以使用这些凭据通过ONTAP系统管理器或ONTAP命令行界面连接到Cloud Volumes ONTAP。保留默认的 _admin_ 用户名或将其更改为自定义用户名。 
 
 
-| 编辑凭据 | 选择要用于此 Cloud Volumes ONTAP 系统的 AWS 凭据和 Marketplace 订阅。单击“添加订阅”将选定的凭证与新的 AWS 市场订阅关联。订阅可以是一份年度合同，也可以是按小时付费的 Cloud Volumes ONTAP 。如果您直接从NetApp购买了许可证(自带许可证(BYOL))、则不需要订阅AWS。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["了解如何向BlueXP添加其他AWS凭据"^](英文) 
+| 编辑凭据 | 选择要用于此Cloud Volumes ONTAP系统的 AWS 凭证和市场订阅。点击“添加订阅”将所选凭证与新的 AWS 市场订阅关联。订阅可以是年度合同，也可以是按小时付费的Cloud Volumes ONTAP 。如果您直接从NetApp购买了许可证（自带许可证 (BYOL)），则无需 AWS 订阅。NetApp已限制 BYOL 许可证的购买、延期和续订。有关更多信息，请参阅 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAP的 BYOL 许可可用性受限"^] 。https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["了解如何向BlueXP添加其他AWS凭据"^] 。 
 |===
 +
 以下视频展示了如何将按使用量付费的市场订阅与您的 AWS 凭证关联：

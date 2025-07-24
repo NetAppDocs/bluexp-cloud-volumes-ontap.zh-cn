@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-licensing-google.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, optimized, paygo, pay as you go, keystone flex, keystone, digital wallet 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, bring your own license, optimized, paygo, pay as you go, keystone flex, keystone, digital wallet 
 summary: 在确定要对Cloud Volumes ONTAP 使用的许可选项后、需要执行一些步骤、然后才能在部署新系统时选择该许可选项。 
 ---
 = 在Google Cloud中为Cloud Volumes ONTAP 设置许可
@@ -62,6 +62,9 @@ link:concept-licensing.html#capacity-based-licensing["了解有关基于容量�
 === BYOL
 
 通过从NetApp购买许可证(BYOL)预付费用、以便在任何云提供商中部署Cloud Volumes ONTAP 系统。
+
+
+NOTE: NetApp已限制 BYOL 许可的购买、延期和续订。有关更多信息，请参阅 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAP的 BYOL 许可可用性受限"^] 。
 
 .步骤
 . https://bluexp.netapp.com/contact-cds["要获取许可证，请联系 NetApp 销售人员"^]

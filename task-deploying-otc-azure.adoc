@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploying-otc-azure.html 
-keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, azure, BYOL, license key, serial number, tags, azure tags, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, HA pair, associate subscription, azure marketplace, marketplace subscription, cloud data sense, cloud backup 
+keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, azure, license key, serial number, tags, azure tags, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, HA pair, associate subscription, azure marketplace, marketplace subscription, cloud data sense, cloud backup 
 summary: 您可以通过在BlueXP中创建Cloud Volumes ONTAP 工作环境在Azure中启动单个Cloud Volumes ONTAP 系统。 
 ---
 = 在 Azure 中启动 Cloud Volumes ONTAP

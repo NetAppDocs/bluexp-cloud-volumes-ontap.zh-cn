@@ -86,27 +86,20 @@ NOTE: 如果连接器和Cloud Volumes ONTAP 系统部署在不同的VN中、则�
 
 .步骤
 . 通过 SSH 连接到 Connector 主机并登录。
-. 导航到以下目录： /opt/application/netapp/cloudmanager/docker_occm/data
-. 通过使用以下关键字值对添加"user-private-dns-zone-settings"参数来编辑app.conf：
+. 导航至 `/opt/application/netapp/cloudmanager/docker_occm/data`目录。
+. 编辑 `app.conf`通过添加 `user-private-dns-zone-settings`具有以下关键字-值对的参数：
 +
-....
-"user-private-dns-zone-settings" : {
-   "resource-group" : "<resource group name of the DNS zone>",
-   "subscription" : "<subscription ID>",
-   "use-existing" : true,
-   "create-private-dns-zone-link" : true
-}
-....
+[source, cli]
+----
+ "user-private-dns-zone-settings" : {
+    "resource-group" : "<resource group name of the DNS zone>",
+    "subscription" : "<subscription ID>",
+    "use-existing" : true,
+    "create-private-dns-zone-link" : true
+ }
+----
 +
-应在与"system-id"相同的级别输入参数、如下所示：
-
-+
-....
-"system-id" : "<system ID>",
-"user-private-dns-zone-settings" : {
-....
-+
-请注意、只有当专用DNS区域与Connector订阅不同时、才需要使用subscription关键字。
+这 `subscription`仅当私有 DNS 区域与连接器的订阅不同时，才需要关键字。
 
 . 保存文件并注销 Connector 。
 +

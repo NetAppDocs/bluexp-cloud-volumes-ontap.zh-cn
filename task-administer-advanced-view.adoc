@@ -14,43 +14,31 @@ summary: 如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用
 
 
 [role="lead"]
-如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用ONTAP 系统管理器来执行此操作、该管理器是随ONTAP 系统提供的一个管理界面。我们直接在BlueXP中提供了System Manager界面、因此您无需离开BlueXP即可进行高级管理。
+Cloud Volumes ONTAP中的高级存储管理功能可通过ONTAP系统管理器 (ONTAP System Manager) 使用，它是ONTAP系统提供的管理界面。您可以直接从BlueXP访问系统管理器。
 
 
 
 == 功能
 
-您可以执行以下管理功能：
+您可以使用BlueXP中的ONTAP系统管理器执行各种存储管理功能。以下列表包含其中一些功能，但并不详尽：
 
-* 高级存储管理
-+
-管理一致性组、共享、qtree、配额和Storage VM。
-
-* 网络管理
-+
-管理IP空间、网络接口、端口集和以太网端口。
-
-* 事件和作业
-+
-查看事件日志、系统警报、作业和审核日志。
-
-* 高级数据保护
-+
-保护Storage VM、LUN和一致性组。
-
-* 主机管理
-+
-设置SAN启动程序组和NFS客户端。
-
+* 高级存储管理：管理一致性组、共享、qtree、配额和存储虚拟机。
+* 成交量变动： link:task-manage-volumes.html#move-a-volume["将卷移动到不同的聚合。"]
+* 网络管理：管理 IP 空间、网络接口、端口集和以太网端口。
+* 管理FlexGroup卷：您只能通过系统管理器创建和管理FlexGroup卷。BlueXP不支持创建BlueXPFlexGroup。
+* 事件和作业：查看事件日志、系统警报、作业和审计日志。
+* 高级数据保护：保护存储虚拟机、LUN 和一致性组。
+* 主机管理：设置 SAN 启动器组和 NFS 客户端。
+* S3 对象存储管理： Cloud Volumes ONTAP中的 S3 存储管理功能仅在 System Manager 中可用，而在BlueXP中不可用。
 
 
 
 
 == 支持的配置
 
-Cloud Volumes ONTAP 9.10.0及更高版本支持在标准云区域中通过ONTAP System Manager进行高级管理。
+* 标准云区域中的Cloud Volumes ONTAP 9.10.0 及更高版本可通过ONTAP System Manager 进行高级存储管理。
+* 在GovCloud地区或无法访问出站Internet的地区不支持System Manager集成。
 
-在GovCloud地区或无法访问出站Internet的地区不支持System Manager集成。
 
 
 
@@ -58,21 +46,11 @@ Cloud Volumes ONTAP 9.10.0及更高版本支持在标准云区域中通过ONTAP 
 
 Cloud Volumes ONTAP 不支持System Manager界面中显示的一些功能：
 
-* BlueXP层
-+
-Cloud Volumes ONTAP不支持BlueXP  层服务。创建卷时、您应直接从BlueXP  的标准视图设置数据到对象存储的层。
+* BlueXP tiering： Cloud Volumes ONTAP不支持BlueXP tiering服务。您应该在创建卷时直接从 BlueXP 的标准视图设置数据到对象存储的分层。
+* 层级：系统管理器不支持聚合管理（包括本地层级和云层级）。您必须直接从 BlueXP 的标准视图管理聚合。
+* 固件升级： Cloud Volumes ONTAP不支持从 *Cluster > Settings* 页面自动更新固件。
+* 基于角色的访问控制：系统管理器不支持基于角色的访问控制。
 
-* 层
-+
-System Manager不支持聚合管理(包括本地层和云层)。您必须直接从BlueXP的标准视图管理聚合。
-
-* 固件升级
-+
-Cloud Volumes ONTAP不支持从*集群>设置*页面自动更新固件。
-
-
-
-此外、不支持从System Manager进行基于角色的访问控制。
 
 
 

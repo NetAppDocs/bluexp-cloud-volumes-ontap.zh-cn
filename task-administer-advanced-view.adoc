@@ -50,6 +50,7 @@ Cloud Volumes ONTAP 不支持System Manager界面中显示的一些功能：
 * 层级：系统管理器不支持聚合管理（包括本地层级和云层级）。您必须直接从 BlueXP 的标准视图管理聚合。
 * 固件升级： Cloud Volumes ONTAP不支持从 *Cluster > Settings* 页面自动更新固件。
 * 基于角色的访问控制：系统管理器不支持基于角色的访问控制。
+* SMB 持续可用性 (CA)： Cloud Volumes ONTAP不支持 https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["持续可用的 SMB 共享"^]实现无中断运行。
 
 
 
@@ -103,4 +104,5 @@ NOTE: 如果将此值设置为*Enable*，则身份验证将重置，您必须修
 * https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["卷和LUN管理"^]
 * https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["网络管理"^]
 * https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["数据保护"^]
+* https://docs.netapp.com/us-en/ontap/smb-hyper-v-sql/create-continuously-available-shares-task.html["创建持续可用的 SMB 共享"^]
 

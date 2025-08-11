@@ -8,7 +8,7 @@ summary: 利用AWS的密钥管理服务提供第三方密钥管理服务。
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

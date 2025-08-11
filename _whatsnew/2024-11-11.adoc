@@ -10,7 +10,7 @@ NetApp已计划终止基于Cloud Volumes ONTAP节点的许可的可用性(EOA)�
 
 对于年度或长期承诺、NetApp建议您在EOA日期或许可证到期日期之前联系NetApp代表、以确保满足过渡的前提条件。如果您没有Cloud Volumes ONTAP节点的长期合同、并根据按需按需购买(PAYGO)订阅运行系统、则必须在EOS日期之前规划您的转换。对于长期合同和PAYGO订阅、您可以使用BlueXP  许可证转换工具进行无缝转换。
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["基于节点的许可证终止提供"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["将基于Cloud Volumes ONTAP节点的许可证转换为基于容量的许可证"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["基于节点的许可证终止提供"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["将Cloud Volumes ONTAP基于节点的许可证转换为基于容量的许可证"^]
 
 
 

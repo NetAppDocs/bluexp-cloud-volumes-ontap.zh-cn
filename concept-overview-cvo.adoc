@@ -45,7 +45,7 @@ link:https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-clou
 使用 NetApp SnapCenter 确保 NetApp Snapshot 副本的一致性。
 
 +
-https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["了解有关 SnapCenter 的更多信息"^]
+https://docs.netapp.com/us-en/snapcenter/get-started/concept_snapcenter_overview.html["了解有关 SnapCenter 的更多信息"^]
 
 * 数据安全性
 +

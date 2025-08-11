@@ -44,7 +44,6 @@ summary: '基于节点的许可证终止提供(EOA)后、您应使用BlueXP  �
 +
 ***  `Professional`如果选择作为目标软件包、则帐户应具有具有专业版软件包的BYOL许可证：
 ***  `Essentials`如果选择作为目标软件包、则帐户应具有包含Essentials软件包的BYOL许可证。
-***  `Optimized`如果选择作为目标软件包、则帐户应具有包含优化软件包的BYOL许可证。
 
 
 ** 如果目标许可证包与帐户的BYOL许可证可用性不一致、则表示基于容量的许可证可能不包括选定的许可证包。在这种情况下、我们将通过您的商城订阅向您收费。
@@ -74,25 +73,22 @@ TIP: 如果Cloud Volumes ONTAP系统已按容量付费、或者未满足任何�
 ** 专业人员
 
 
-
-
-ifdef::azure[]
-
-* 优化(适用于Azure)
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* 优化(适用于Google Cloud)
-
-
-endif::gcp[]
-
 . 如果您拥有BYOL许可证、则可以选中此复选框、以便在转换后从BlueXP  数字钱包中删除基于节点的许可证。如果转换未完成、则即使选中此复选框、许可证也不会从数字钱包中删除。如果您有商城订阅、则此选项不可用。
 . 选中此复选框以确认您了解更改的含义，然后单击*Proce*。
 
 
 .完成后
 查看新许可证序列号并验证BlueXP  数字钱包中的更改。
+
+
+
+== 不同超标量中的定价
+
+有关定价的详细信息，请访问 https://bluexp.netapp.com/pricing/["NetApp BlueXP网站"^]。
+
+有关特定超标量中的私人优惠的信息，请写信至：
+
+* AWS - awspo@netapp.com
+* Azure - azurepo@netapp.com
+* Google Cloud - gcppo@netapp.com
+

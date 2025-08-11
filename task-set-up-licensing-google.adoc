@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-licensing-google.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, bring your own license, optimized, paygo, pay as you go, keystone flex, keystone, digital wallet 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, digital wallet 
 summary: 在确定要对Cloud Volumes ONTAP 使用的许可选项后、需要执行一些步骤、然后才能在部署新系统时选择该许可选项。 
 ---
 = 在Google Cloud中为Cloud Volumes ONTAP 设置许可
@@ -44,9 +44,9 @@ link:task-deploying-gcp.html["查看在Google Cloud中启动Cloud Volumes ONTAP 
 
 == 基于容量的许可证
 
-通过基于容量的许可，您可以按每 TiB 容量为 Cloud Volumes ONTAP 付费。基于容量的许可以_package的形式提供：Essentials、Optimized/Professional包。
+基于容量的许可使您能够按 TiB 容量支付Cloud Volumes ONTAP费用。基于容量的许可以_包_的形式提供：Essentials 或 Professional 包。
 
-Essentials、Optimized"和"Professional "包可用于以下消费模式：
+Essentials 和 Professional 软件包可用于以下消费模式：
 
 * 从NetApp购买的许可证(自带许可证(BYOL))
 * 从Google Cloud Marketplace订阅每小时按需购买(PAYGO)

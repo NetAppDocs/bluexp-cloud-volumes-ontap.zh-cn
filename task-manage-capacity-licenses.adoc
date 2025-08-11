@@ -143,7 +143,7 @@ image:screenshot-digital-wallet-usage-report.png["屏幕截图显示了Digital W
 ** PAYGO总容量
 
 
-* * Cloud Volumes ONTAP软件包使用情况*：此报告包含除优化I/O软件包之外的每个软件包的以下信息：
+* * Cloud Volumes ONTAP软件包使用情况*：此报告包含每个软件包的以下信息：
 +
 ** 总已用容量
 ** 预先提交的总容量

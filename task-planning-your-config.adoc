@@ -43,10 +43,9 @@ Cloud Volumes ONTAP 提供了多种许可选项。每个选项都允许您选择
 
 NOTE: Cloud Volumes ONTAP不支持在AWS本地区域中进行数据分层和云分层。此外、不支持实例不符合Cloud Volumes ONTAP要求的本地区域。例如、迈阿密不可用作本地区域、因为它只有不受支持且不符合条件的Gen6实例。
 
-link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["查看本地区域的完整列表"^]。
-必须先启用本地区域、然后才能在这些区域中创建和管理资源。
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["AWS 文档：查看本地区域的完整列表"^] 。必须先启用本地区域，然后才能在这些区域中创建和管理资源。
 
-link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["了解如何启用本地区域"^]。
+link:https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html["AWS 文档：AWS 本地区域入门"^] 。
 
 
 
@@ -78,7 +77,7 @@ Instance type::
 * 如果您的应用程序大部分是读取的，请选择具有足够 RAM 的系统。
 +
 ** https://aws.amazon.com/ec2/instance-types/["AWS 文档： Amazon EC2 实例类型"^]
-** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS 文档： Amazon EBS 优化实例"^]
+** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS 文档：Amazon EBS 优化实例"^]
 
 
 
@@ -89,7 +88,7 @@ EBS 磁盘类型:: 在较高级别上、 EBS 磁盘类型之间的区别如下�
 --
 * 通用 SSD （ GP3 ） _ 磁盘是成本最低的 SSD ，用于平衡各种工作负载的成本和性能。性能是按 IOPS 和吞吐量定义的。Cloud Volumes ONTAP 9.7 及更高版本支持 GP3 磁盘。
 +
-选择GP3磁盘时、BlueXP会填充默认IOPS和吞吐量值、这些值可根据选定磁盘大小提供与GP2磁盘等效的性能。您可以通过增加这些值来以更高的成本获得更高的性能，但我们不支持使用较低的值，因为它可能会导致性能下降。简而言之，请坚持使用默认值或增加默认值。请勿降低。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["详细了解 GP3 磁盘及其性能"^]。
+当您选择 gp3 磁盘时， BlueXP会填写默认 IOPS 和吞吐量值，这些值根据所选磁盘大小提供与 gp2 磁盘相当的性能。您可以增加这些值以更高的成本获得更好的性能，但我们不支持较低的值，因为这会导致性能下降。简而言之，坚持默认值或增加默认值。不要降低它们。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["AWS 文档：了解有关 gp3 磁盘及其性能的更多信息"^] 。
 
 +
 请注意、Cloud Volumes ONTAP 支持使用GP3磁盘的Amazon EBS弹性卷功能。 link:concept-aws-elastic-volumes.html["了解有关Elastic Volumes支持的更多信息"]。

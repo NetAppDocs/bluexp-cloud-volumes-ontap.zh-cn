@@ -96,9 +96,14 @@ Cloud Volumes ONTAP 9.7 及更高版本提供了基于容量的许可包。
 
 == Capacity limit
 
-在此许可模式下，每个单独的 Cloud Volumes ONTAP 系统可通过磁盘和对象存储分层支持多达 2 个 PIB 的容量。
+在基于容量的许可模型中，每个Cloud Volumes ONTAP系统都支持分层到对象存储，并且总分层容量可以扩展到云提供商的存储桶限制。虽然许可证没有施加容量限制，但遵循 https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["FabricPool最佳实践"^]确保在配置和管理分层时实现最佳性能、可靠性和成本效率。
 
-对于许可证本身，没有最大容量限制。
+有关每个云提供商的容量限制的信息，请参阅其文档：
+
+* https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html["AWS 文档"^]
+* https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account["托管磁盘的 Azure 文档"^]和 https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets["Azure Blob 存储文档"^]
+* https://cloud.google.com/storage/docs/buckets["Google Cloud 文档"^]
+
 
 
 

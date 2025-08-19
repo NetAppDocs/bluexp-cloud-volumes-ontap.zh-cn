@@ -69,7 +69,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html#ena
 
 如果客户端与 Cloud Volumes ONTAP 位于同一个 vNet 中，位于对等 VNets 中，或者使用专用 VPN 或 ExpressRoute 连接到 VNet ，则客户端访问将通过专用链路进行。
 
-以下示例显示了客户端通过同一个 vNet 中的专用链路以及具有专用 VPN 或 ExpressRoute 连接的内部网络进行访问的情况。
+以下示例展示了客户端如何通过专用链接从同一 VNet 内部以及从具有专用 VPN 或 ExpressRoute 连接的本地网络进行访问。
 
 image:diagram_azure_private_link.png["一个概念映像，用于显示通过专用端点和专用链路访问 Cloud Volumes ONTAP 以及存储帐户的数据。"]
 

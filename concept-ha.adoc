@@ -126,7 +126,7 @@ image:diagram_takeover_giveback.png["在 Cloud Volumes ONTAP HA 对中显示存�
 在单个可用性区域(AZ)中部署HA配置可以确保在运行Cloud Volumes ONTAP节点的实例发生故障时数据的高可用性。所有数据均可从 VPC 外部本地访问。
 
 
-NOTE: BlueXP会创建 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 分布放置组"^] 并启动该放置组中的两个 HA 节点。放置组通过将实例分散在不同的底层硬件上，降低同时发生故障的风险。此功能可从计算角度而不是从磁盘故障角度提高冗余。
+NOTE: BlueXP创建 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 文档：AWS 分散置放群组"^]并启动该放置组中的两个 HA 节点。放置组通过将实例分布在不同的底层硬件上来降低同时发生故障的风险。此功能从计算角度而不是从磁盘故障角度提高了冗余度。
 
 
 
@@ -200,7 +200,7 @@ Cloud Volumes ONTAP不支持在AWS本地区域中进行数据分层、云分层�
 
 NOTE: Cloud Volumes ONTAP仅支持这些配置。在AWS本地区域配置中选择不受支持的磁盘类型或非限定实例可能会导致部署失败。由于缺少连接、无法在AWS本地区域中将数据分层到AWS S3。
 
-有关的最新完整详细信息，请参见AWS文档link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["本地区域中的EC2实例类型"^]。
+有关最新和完整的详细信息，请参阅 AWS 文档link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["AWS 文档：本地区域中的 EC2 实例类型"^]。
 
 
 

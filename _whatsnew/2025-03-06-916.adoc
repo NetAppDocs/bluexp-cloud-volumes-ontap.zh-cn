@@ -8,4 +8,4 @@
 
 现在、您可以使用BlueXP  在Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.16.1正式发布版。但是、此版本不可在AWS中部署和升级。
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9161-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^] 。

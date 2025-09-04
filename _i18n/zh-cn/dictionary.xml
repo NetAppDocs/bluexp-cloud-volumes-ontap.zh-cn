@@ -3985,7 +3985,6 @@
   <block id="26f51c309f5237522421f24bf4df04e0" category="list-text">工作环境名称现在包含在Storage VM和卷使用情况报告中。</block>
   <block id="fa3abcbc43662c93139af3f3f6421a6f" category="list-text">卷类型"file"现在标记为"Primary (Read/Write)"。</block>
   <block id="b259e22e76e27ad956b503941804b4c6" category="list-text">卷类型"Secondary (DP)"现在标记为"Secondary (Secondary (DP))"。</block>
-  <block id="c2282365523aa8fbb305c5432e90d5d7" category="paragraph"><block ref="6f9b2ccd962907ef2c43f6fa9517a053" category="inline-link-macro-rx"></block>。</block>
   <block id="5e167ef814cd8fe02fd01be002ffa235" category="list-text"><block ref="5e167ef814cd8fe02fd01be002ffa235" category="inline-link-macro-rx"></block></block>
   <block id="4a9ebfe4f0e3302083955176f47a9519" category="list-text">工作环境ID和名称(显示为UUID)</block>
   <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">工作负载类型</block>
@@ -5052,7 +5051,6 @@
   <block id="90069a3873814503a767070f04f3c286" category="paragraph">例如、使用Cloud Volumes ONTAP 9.12.09的所有单节点部署都应使用<block ref="b2b27ade506086d79b3e7defdb321673" prefix=" " category="inline-code"></block>作为SKU名称。</block>
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAP版本*</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">*SKU名称*</block>
-  <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">通过BlueXP  进行所有部署</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP云</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">现在、您可以使用BlueXP  在现有Cloud Volumes ONTAP系统上激活一次写入、多次读取(Write On一次 读取、Read M众多、WORM)存储。通过此功能、您可以灵活地在工作环境中启用WORM、即使在创建WORM期间未启用WORM也是如此。启用后、您将无法禁用WORM。</block>
   <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">更改收费方法不会影响是通过从NetApp (BYOL)购买的许可证还是通过云提供商的市场按需购买(PAYGO)订阅来收费。</block>
@@ -5371,9 +5369,6 @@
   <block id="df65d9be8ade62cf7505e34c307cecad" category="cell">*支持的虚拟机(VM)类型*</block>
   <block id="b13b643af58b125fac839de04760d5f0" category="cell">完整的VM类型。<block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="97c2102867c5b54db1b773f42a540c16" category="list-text">9.16.1大会</block>
-  <block id="4692723666baa52294f46ef51ee4ec3f" category="cell">*虚拟机部署方法*</block>
-  <block id="95392acbc8522bf81166b3d44b333fca" category="cell">9.16.1及更高版本</block>
-  <block id="e6c4c5f3851cefbfb1da8daa3aff1fb0" category="cell">通过Marketplace直接部署方法</block>
   <block id="8c63a56c7facb0a50c8c629b8b10d627" category="cell">ONTAP云直接</block>
   <block id="3c0acb220a6d083f589c0e9d2c4bb5b9" category="paragraph">密码必须遵守一些规则。新密码：</block>
   <block id="c3b8a6ca2fd73fcdea07816d50da5780" category="list-text">不应包含该词<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block></block>
@@ -5902,4 +5897,20 @@
   <block id="e0770826536ddaadf0db71e22667d483" category="inline-link">AWS 文档：了解有关 gp3 磁盘及其性能的更多信息</block>
   <block id="2fdd250d12304ba30564106a823a4d07" category="paragraph">当您选择 gp3 磁盘时， BlueXP会填写默认 IOPS 和吞吐量值，这些值根据所选磁盘大小提供与 gp2 磁盘相当的性能。您可以增加这些值以更高的成本获得更好的性能，但我们不支持较低的值，因为这会导致性能下降。简而言之，坚持默认值或增加默认值。不要降低它们。<block ref="7f8ffa6c4a580a433518ebbbf51360b2" category="inline-link-rx"></block> 。</block>
   <block id="556df0c07cbea0b78af68a3a3c052441" category="paragraph">新的专业套餐使您能够使用 AWS Marketplace 的年度合同捆绑Cloud Volumes ONTAP和Cloud Backup Service。按 TiB 付款。此订阅不允许您备份本地数据。</block>
+  <block id="d12fe68c4b1ba1d58975f9611e832d67" category="paragraph"><block ref="24db39f20f36cadeb40fc6fee7aff51e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="186b3997de3027cf87a351ba0a1f9bf4" category="doc">Cloud Volumes ONTAP 9.17.1 RC</block>
+  <block id="2a0942c706fe1023b055df5cfc6720d2" category="paragraph">您现在可以使用BlueXP在 Azure 和 Google Cloud 中部署和管理Cloud Volumes ONTAP 9.17.1 的候选版本 1。但此版本尚不支持在AWS中部署和升级。</block>
+  <block id="1794b1ebac03efdd38e24eb28c47629a" category="inline-link-macro">了解有关此版本Cloud Volumes ONTAP的更多信息</block>
+  <block id="e0a027f4bdcd16cda78c830ace94fc76" category="paragraph"><block ref="539cae97b36c04420caaf667f01300c8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="ae76d7929a27ed322b88161e71bfa161" category="list-text">9.17.1 RC1</block>
+  <block id="159b2c36e92d08f58049110227f49823" category="cell">*通过虚拟机部署*</block>
+  <block id="ce2276d280ca79bc5d0b33e7903a7d49" category="cell">9.17.1 及更高版本</block>
+  <block id="88c8462e1641cb3eee755100b508a86d" category="cell">Azure 市场</block>
+  <block id="b8f95e1a74252a7c5089e349f29275e8" category="cell">ontap_cloud_direct_gen2</block>
+  <block id="b8e6637325f666227e9b7e79a403ca80" category="cell">ontap_cloud_gen2</block>
+  <block id="0bd0e673df4c14cae45a11fac30c530b" category="cell">9.16.1</block>
+  <block id="652e1c6e403bbb45f405f8e8b424f73f" category="cell">BlueXP，单节点部署</block>
+  <block id="eeea8782a887558399361aec836b75d0" category="cell">BlueXP，高可用性（HA）部署</block>
+  <block id="36991a14fecff3acb300e7240e20124a" category="cell">9.17.1（仅适用于 Azure 和 Google Cloud）</block>
+  <block id="ba3c0cba3a3d15ce8426fc737476a59c" category="section-title">2025年9月4日</block>
 </blocks>
